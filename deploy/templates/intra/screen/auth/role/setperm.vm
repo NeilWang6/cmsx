@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/zh-cn-system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script> 
+</head>
+<body>
+	<style type="text/css">
+html {
+	_overflow-y: scroll
+}
+</style>
+	<link href="$intraStatic.getURI('css/jquery.treeTable.css')" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="$intraStatic.getURI('js/jquery.treetable.js')"></script>
+	<script type="text/javascript" src="$intraStatic.getURI('js/auth/role/setperm.js')"></script>
+	
+	<div class="table-list" id="load_priv">
+		<table width="100%" cellspacing="0">
+			<thead>
+				<tr>
+					<th class="text-l cu-span" style='padding-left: 30px;'><span onClick="javascript:$('input[name=menuid[]]').attr('checked', true)">全选</span>/<span onClick="javascript:$('input[name=menuid[]]').attr('checked', false)">取消</span></th>
+				</tr>
+			</thead>
+		</table>
+		<form name="myform" id="myform" method="post">
+			<input type="hidden" name="group_id" value="2">
+				<table width="100%" cellspacing="0" id="dnd-example">
+					<tbody>
+
+
+						<tr id='node-115'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='115' level='0' checked="checked"> 控制面板</td>
+						</tr>
+
+						<tr id='node-116' class="child-of-node-115">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='116' level='1' onclick='javascript:checknode(this);' checked="checked"> 系统生成</td>
+						</tr>
+
+
+
+						<tr id='node-117' class="child-of-node-116">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='117' level='2' onclick='javascript:checknode(this);' checked="checked"> 生成首页</td>
+						</tr> 
+						<tr id='node-135' class="child-of-node-115">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='135' level='1' onclick='javascript:checknode(this);' checked="checked"> 车型库管理</td>
+						</tr>
+
+
+
+						<tr id='node-136' class="child-of-node-135">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='136' level='2' onclick='javascript:checknode(this);' checked="checked"> 品牌与车系</td>
+						</tr>
+ 
+						<tr id='node-137' class="child-of-node-135">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='137' level='2' onclick='javascript:checknode(this);' checked="checked"> 车款管理</td>
+						</tr>
+ 
+						<tr id='node-138' class="child-of-node-135">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='138' level='2' onclick='javascript:checknode(this);' checked="checked"> 图库管理</td>
+						</tr>
+ 
+						<tr id='node-139' class="child-of-node-115">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='139' level='1' onclick='javascript:checknode(this);' checked="checked"> 资讯管理</td>
+						</tr>
+
+
+
+						<tr id='node-142' class="child-of-node-139">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='142' level='2' onclick='javascript:checknode(this);' checked="checked"> 文章管理</td>
+						</tr>
+ 
+						<tr id='node-140' class="child-of-node-115">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='140' level='1' onclick='javascript:checknode(this);' checked="checked"> 会员管理</td>
+						</tr>
+
+
+
+						<tr id='node-141' class="child-of-node-140">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='141' level='2' onclick='javascript:checknode(this);' checked="checked"> 经销商</td>
+						</tr>
+ 
+						<tr id='node-144' class="child-of-node-140">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='144' level='2' onclick='javascript:checknode(this);' checked="checked"> 驾校会员</td>
+						</tr>
+
+ 
+						<tr id='node-145' class="child-of-node-140">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='145' level='2' onclick='javascript:checknode(this);' checked="checked"> 租赁会员</td>
+						</tr>
+ 
+						<tr id='node-11'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='11' level='0' checked="checked"> 内容</td>
+						</tr>
+
+						<tr id='node-121' class="child-of-node-11">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='121' level='1' onclick='javascript:checknode(this);' checked="checked"> 文章管理</td>
+						</tr>
+
+
+
+						<tr id='node-19' class="child-of-node-121">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='19' level='2' onclick='javascript:checknode(this);' checked="checked"> 文章管理</td>
+						</tr>
+
+ 
+						<tr id='node-191' class="child-of-node-121">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='191' level='2' onclick='javascript:checknode(this);'> 评论管理</td>
+						</tr>
+ 
+						<tr id='node-194' class="child-of-node-121">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='194' level='2' onclick='javascript:checknode(this);'> 分类管理</td>
+						</tr>
+ 
+						<tr id='node-22' class="child-of-node-11">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='22' level='1' onclick='javascript:checknode(this);' checked="checked"> 团购管理</td>
+						</tr>
+
+
+
+						<tr id='node-24' class="child-of-node-22">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='24' level='2' onclick='javascript:checknode(this);' checked="checked"> 团购管理</td>
+						</tr>
+ 
+						<tr id='node-218' class="child-of-node-22">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='218' level='2' onclick='javascript:checknode(this);'> 团购焦点图</td>
+						</tr>
+ 
+						<tr id='node-193' class="child-of-node-22">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='193' level='2' onclick='javascript:checknode(this);' checked="checked"> 报名管理</td>
+						</tr>
+ 
+						<tr id='node-220' class="child-of-node-22">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='220' level='2' onclick='javascript:checknode(this);'> 全品牌报名</td>
+						</tr>
+ 
+						<tr id='node-23' class="child-of-node-11">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='23' level='1' onclick='javascript:checknode(this);'> 视频管理</td>
+						</tr>
+
+
+
+						<tr id='node-20' class="child-of-node-23">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='20' level='2' onclick='javascript:checknode(this);'> 视频管理</td>
+						</tr>
+ 
+						<tr id='node-195' class="child-of-node-23">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='195' level='2' onclick='javascript:checknode(this);'> 分类管理</td>
+						</tr>
+
+ 
+						<tr id='node-192' class="child-of-node-11">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='192' level='1' onclick='javascript:checknode(this);'> 图集管理</td>
+						</tr>
+
+
+
+						<tr id='node-21' class="child-of-node-192">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='21' level='2' onclick='javascript:checknode(this);'> 图集管理</td>
+						</tr>
+
+ 
+						<tr id='node-196' class="child-of-node-192">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='196' level='2' onclick='javascript:checknode(this);'> 分类管理</td>
+						</tr>
+
+ 
+						<tr id='node-197' class="child-of-node-11">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='197' level='1' onclick='javascript:checknode(this);'> 百科管理</td>
+						</tr>
+
+
+
+						<tr id='node-198' class="child-of-node-197">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='198' level='2' onclick='javascript:checknode(this);'> 百科管理</td>
+						</tr>
+ 
+						<tr id='node-199' class="child-of-node-197">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='199' level='2' onclick='javascript:checknode(this);'> 分类管理</td>
+						</tr>
+
+ 
+						<tr id='node-123' class="child-of-node-11">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='123' level='1' onclick='javascript:checknode(this);'> 专题管理</td>
+						</tr> 
+						
+						<tr id='node-41' class="child-of-node-123">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='41' level='2' onclick='javascript:checknode(this);'> 专题管理</td>
+						</tr>
+ 
+						<tr id='node-216' class="child-of-node-123">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='216' level='2' onclick='javascript:checknode(this);'> 专题分类</td>
+						</tr>
+ 
+						<tr id='node-15'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='15' level='0' checked="checked"> 广告</td>
+						</tr>
+
+						<tr id='node-124' class="child-of-node-15">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='124' level='1' onclick='javascript:checknode(this);' checked="checked"> 广告管理</td>
+						</tr>
+
+
+
+						<tr id='node-40' class="child-of-node-124">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='40' level='2' onclick='javascript:checknode(this);' checked="checked"> 广告管理</td>
+						</tr>
+ 
+						<tr id='node-101' class="child-of-node-124">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='101' level='2' onclick='javascript:checknode(this);'> 分类管理</td>
+						</tr>
+ 
+						<tr id='node-125' class="child-of-node-15">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='125' level='1' onclick='javascript:checknode(this);' checked="checked"> 友情链接</td>
+						</tr>
+
+
+
+						<tr id='node-39' class="child-of-node-125">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='39' level='2' onclick='javascript:checknode(this);' checked="checked"> 友情链接</td>
+						</tr>
+ 
+						<tr id='node-149' class="child-of-node-125">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='149' level='2' onclick='javascript:checknode(this);'> 分类管理</td>
+						</tr>
+ 
+						<tr id='node-18'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='18' level='0'> 经销商</td>
+						</tr>
+
+						<tr id='node-126' class="child-of-node-18">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='126' level='1' onclick='javascript:checknode(this);'> 基本管理</td>
+						</tr>
+
+
+
+						<tr id='node-60' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='60' level='2' onclick='javascript:checknode(this);'> 经销商管理</td>
+						</tr>
+ 
+						<tr id='node-33' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='33' level='2' onclick='javascript:checknode(this);'> 报价管理</td>
+						</tr>
+ 
+						<tr id='node-150' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='150' level='2' onclick='javascript:checknode(this);'> 在线问答</td>
+						</tr>
+ 
+						<tr id='node-151' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='151' level='2' onclick='javascript:checknode(this);'> 订购/试驾</td>
+						</tr>
+ 
+						<tr id='node-152' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='152' level='2' onclick='javascript:checknode(this);'> 销售顾问</td>
+						</tr> 
+ 
+						<tr id='node-153' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='153' level='2' onclick='javascript:checknode(this);'> 招贤纳士</td>
+						</tr>
+ 
+						<tr id='node-160' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='160' level='2' onclick='javascript:checknode(this);'> 文章管理</td>
+						</tr>
+ 
+						<tr id='node-183' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='183' level='2' onclick='javascript:checknode(this);'> 推荐经销商</td>
+						</tr>
+ 
+						<tr id='node-184' class="child-of-node-126">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='184' level='2' onclick='javascript:checknode(this);'> 汽车园区</td>
+						</tr>
+ 
+						<tr id='node-127' class="child-of-node-18">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='127' level='1' onclick='javascript:checknode(this);'> 扩展管理</td>
+						</tr>
+
+
+
+						<tr id='node-27' class="child-of-node-127">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='27' level='2' onclick='javascript:checknode(this);'> 经销商群组</td>
+						</tr>
+ 
+						<tr id='node-68' class="child-of-node-127">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='68' level='2' onclick='javascript:checknode(this);'> 经销商模板风格</td>
+						</tr>
+ 
+						<tr id='node-182' class="child-of-node-127">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='182' level='2' onclick='javascript:checknode(this);'> 基本设置</td>
+						</tr>
+ 
+						<tr id='node-13'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='13' level='0'> 车型库</td>
+						</tr>
+
+						<tr id='node-122' class="child-of-node-13">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='122' level='1' onclick='javascript:checknode(this);'> 基础数据</td>
+						</tr>
+
+
+
+						<tr id='node-73' class="child-of-node-122">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='73' level='2' onclick='javascript:checknode(this);'> 品牌与车系</td>
+						</tr>
+ 
+						<tr id='node-31' class="child-of-node-122">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='31' level='2' onclick='javascript:checknode(this);'> 车款管理</td>
+						</tr>
+ 
+						<tr id='node-32' class="child-of-node-122">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='32' level='2' onclick='javascript:checknode(this);'> 图库管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-206' class="child-of-node-13">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='206' level='1' onclick='javascript:checknode(this);'> 交互信息</td>
+						</tr>
+
+
+
+						<tr id='node-66' class="child-of-node-206">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='66' level='2' onclick='javascript:checknode(this);'> 口碑管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-202' class="child-of-node-206">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='202' level='2' onclick='javascript:checknode(this);'> 口碑印象管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-190' class="child-of-node-206">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='190' level='2' onclick='javascript:checknode(this);'> 网友油耗管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-205' class="child-of-node-13">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='205' level='1' onclick='javascript:checknode(this);'> 扩展功能</td>
+						</tr>
+
+
+
+						<tr id='node-203' class="child-of-node-205">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='203' level='2' onclick='javascript:checknode(this);'> 车型详解管理</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-204' class="child-of-node-205">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='204' level='2' onclick='javascript:checknode(this);'> 推荐车型图库</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-217' class="child-of-node-205">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='217' level='2' onclick='javascript:checknode(this);'> 品牌之家</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-96' class="child-of-node-205">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='96' level='2' onclick='javascript:checknode(this);'> 上市新车管理</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-207' class="child-of-node-205">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='207' level='2' onclick='javascript:checknode(this);'> 分类车型推荐</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-187' class="child-of-node-13">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='187' level='1' onclick='javascript:checknode(this);'> 更新数据</td>
+						</tr>
+
+
+
+						<tr id='node-188' class="child-of-node-187">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='188' level='2' onclick='javascript:checknode(this);'> 更新车型库页面</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-208'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='208' level='0'> 问答</td>
+						</tr>
+
+						<tr id='node-209' class="child-of-node-208">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='209' level='1' onclick='javascript:checknode(this);'> 设置</td>
+						</tr>
+
+
+
+						<tr id='node-213' class="child-of-node-209">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='213' level='2' onclick='javascript:checknode(this);'> 分类设置</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-210' class="child-of-node-208">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='210' level='1' onclick='javascript:checknode(this);'> 内容管理</td>
+						</tr>
+
+
+
+						<tr id='node-212' class="child-of-node-210">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='212' level='2' onclick='javascript:checknode(this);'> 问题管理</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-214' class="child-of-node-210">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='214' level='2' onclick='javascript:checknode(this);'> 答案管理</td>
+						</tr>
+
+
+
+						 
+						<tr id='node-63'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='63' level='0' checked="checked"> 二手车</td>
+						</tr>
+
+						<tr id='node-161' class="child-of-node-63">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='161' level='1' onclick='javascript:checknode(this);' checked="checked"> 商家信息</td>
+						</tr>
+
+
+
+						<tr id='node-162' class="child-of-node-161">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='162' level='2' onclick='javascript:checknode(this);' checked="checked"> 二手车商家</td>
+						</tr>
+
+ 
+						<tr id='node-163' class="child-of-node-161">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='163' level='2' onclick='javascript:checknode(this);' checked="checked"> 在线问答</td>
+						</tr>
+
+
+
+						
+						<tr id='node-164' class="child-of-node-161">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='164' level='2' onclick='javascript:checknode(this);' checked="checked"> 文章管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-165' class="child-of-node-161">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='165' level='2' onclick='javascript:checknode(this);' checked="checked"> 购车意向</td>
+						</tr>
+
+
+
+						
+						<tr id='node-166' class="child-of-node-161">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='166' level='2' onclick='javascript:checknode(this);' checked="checked"> 评估师管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-219' class="child-of-node-161">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='219' level='2' onclick='javascript:checknode(this);'> 商家推荐</td>
+						</tr>
+
+
+
+						
+						<tr id='node-130' class="child-of-node-63">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='130' level='1' onclick='javascript:checknode(this);'> 出售信息</td>
+						</tr>
+
+
+
+						<tr id='node-79' class="child-of-node-130">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='79' level='2' onclick='javascript:checknode(this);'> 车源管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-99' class="child-of-node-130">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='99' level='2' onclick='javascript:checknode(this);'> 求购管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-167' class="child-of-node-63">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='167' level='1' onclick='javascript:checknode(this);'> 商家设置</td>
+						</tr>
+
+
+
+						<tr id='node-168' class="child-of-node-167">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='168' level='2' onclick='javascript:checknode(this);'> 风格设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-169' class="child-of-node-167">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='169' level='2' onclick='javascript:checknode(this);'> 会员组设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-181' class="child-of-node-167">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='181' level='2' onclick='javascript:checknode(this);'> 基本设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-97'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='97' level='0'> 驾校</td>
+						</tr>
+
+						<tr id='node-132' class="child-of-node-97">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='132' level='1' onclick='javascript:checknode(this);'> 基本管理</td>
+						</tr>
+
+
+
+						<tr id='node-107' class="child-of-node-132">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='107' level='2' onclick='javascript:checknode(this);'> 驾校商家</td>
+						</tr>
+
+
+
+						
+						<tr id='node-108' class="child-of-node-132">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='108' level='2' onclick='javascript:checknode(this);'> 驾校报价</td>
+						</tr>
+
+
+
+						
+						<tr id='node-112' class="child-of-node-132">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='112' level='2' onclick='javascript:checknode(this);'> 驾校报名</td>
+						</tr>
+
+
+
+						
+						<tr id='node-170' class="child-of-node-132">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='170' level='2' onclick='javascript:checknode(this);'> 在线问答管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-171' class="child-of-node-132">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='171' level='2' onclick='javascript:checknode(this);'> 文章管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-200' class="child-of-node-132">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='200' level='2' onclick='javascript:checknode(this);'> 推荐驾校</td>
+						</tr>
+
+
+
+						
+						<tr id='node-172' class="child-of-node-97">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='172' level='1' onclick='javascript:checknode(this);'> 驾校设置</td>
+						</tr>
+
+
+
+						<tr id='node-173' class="child-of-node-172">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='173' level='2' onclick='javascript:checknode(this);'> 模版风格</td>
+						</tr>
+
+
+
+						
+						<tr id='node-174' class="child-of-node-172">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='174' level='2' onclick='javascript:checknode(this);'> 群组设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-179' class="child-of-node-172">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='179' level='2' onclick='javascript:checknode(this);'> 基本设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-103'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='103' level='0'> 租赁</td>
+						</tr>
+
+						<tr id='node-133' class="child-of-node-103">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='133' level='1' onclick='javascript:checknode(this);'> 基本管理</td>
+						</tr>
+
+
+
+						<tr id='node-109' class="child-of-node-133">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='109' level='2' onclick='javascript:checknode(this);'> 租赁商家</td>
+						</tr>
+
+
+
+						
+						<tr id='node-110' class="child-of-node-133">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='110' level='2' onclick='javascript:checknode(this);'> 租赁报价</td>
+						</tr>
+
+
+
+						
+						<tr id='node-111' class="child-of-node-133">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='111' level='2' onclick='javascript:checknode(this);'> 租车订单</td>
+						</tr>
+
+
+
+						
+						<tr id='node-113' class="child-of-node-133">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='113' level='2' onclick='javascript:checknode(this);'> 文章管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-178' class="child-of-node-133">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='178' level='2' onclick='javascript:checknode(this);'> 在线问答管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-201' class="child-of-node-133">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='201' level='2' onclick='javascript:checknode(this);'> 推荐公司</td>
+						</tr>
+
+
+
+						
+						<tr id='node-175' class="child-of-node-103">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='175' level='1' onclick='javascript:checknode(this);'> 租赁设置</td>
+						</tr>
+
+
+
+						<tr id='node-176' class="child-of-node-175">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='176' level='2' onclick='javascript:checknode(this);'> 模版风格</td>
+						</tr>
+
+
+
+						
+						<tr id='node-177' class="child-of-node-175">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='177' level='2' onclick='javascript:checknode(this);'> 群组设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-180' class="child-of-node-175">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='180' level='2' onclick='javascript:checknode(this);'> 基本设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-81'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='81' level='0'> 扩展</td>
+						</tr>
+
+						<tr id='node-118' class="child-of-node-81">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='118' level='1' onclick='javascript:checknode(this);'> 系统扩展</td>
+						</tr>
+
+
+
+						<tr id='node-84' class="child-of-node-118">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='84' level='2' onclick='javascript:checknode(this);'> 敏感词管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-85' class="child-of-node-118">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='85' level='2' onclick='javascript:checknode(this);'> 关键词管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-86' class="child-of-node-118">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='86' level='2' onclick='javascript:checknode(this);'> SiteMap</td>
+						</tr>
+
+
+
+						
+						<tr id='node-88' class="child-of-node-118">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='88' level='2' onclick='javascript:checknode(this);'> 来源管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-90' class="child-of-node-118">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='90' level='2' onclick='javascript:checknode(this);'> 问题举报</td>
+						</tr>
+
+
+
+						
+						<tr id='node-134' class="child-of-node-81">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='134' level='1' onclick='javascript:checknode(this);'> 功能扩展</td>
+						</tr>
+
+
+
+						<tr id='node-91' class="child-of-node-134">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='91' level='2' onclick='javascript:checknode(this);'> 扩展页面</td>
+						</tr>
+
+
+
+						
+						<tr id='node-102' class="child-of-node-134">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='102' level='2' onclick='javascript:checknode(this);'> 快捷方式</td>
+						</tr>
+
+
+
+						
+						<tr id='node-17'>
+							<td style='padding-left: 30px;'><input name='menuid[]' type='checkbox' onclick='javascript:checknode(this);' value='17' level='0' checked="checked"> 系统管理</td>
+						</tr>
+
+						<tr id='node-119' class="child-of-node-17">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='119' level='1' onclick='javascript:checknode(this);'> 基本设置</td>
+						</tr>
+
+
+
+						<tr id='node-47' class="child-of-node-119">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='47' level='2' onclick='javascript:checknode(this);'> 网站参数设置</td>
+						</tr>
+
+
+
+						
+						<tr id='node-50' class="child-of-node-119">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='50' level='2' onclick='javascript:checknode(this);'> 地区管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-52' class="child-of-node-119">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='52' level='2' onclick='javascript:checknode(this);'> 菜单管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-215' class="child-of-node-119">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='215' level='2' onclick='javascript:checknode(this);'> 邮件发送</td>
+						</tr>
+
+
+
+						
+						<tr id='node-83' class="child-of-node-119">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='83' level='2' onclick='javascript:checknode(this);'> 附件管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-147' class="child-of-node-17">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='147' level='1' onclick='javascript:checknode(this);' checked="checked"> 管理员设置</td>
+						</tr>
+
+
+
+						<tr id='node-61' class="child-of-node-147">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='61' level='2' onclick='javascript:checknode(this);' checked="checked"> 管理员管理</td>
+						</tr>
+
+
+
+						
+						<tr id='node-62' class="child-of-node-147">
+							<td style='padding-left: 30px;'>&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├─ <input type='checkbox' name='menuid[]' value='62' level='2' onclick='javascript:checknode(this);' checked="checked"> 后台管理群组</td>
+						</tr>
+
+
+
+						
+					</tbody>
+				</table>
+				<div class="btn">
+					<input type="submit" class="button" name="dosubmit" id="dosubmit" value="提交" />
+				</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>权限资源列表-管理中心</title>
+<script language="javascript" type="text/javascript">
+var rooturl='$siteDomainUrl';
+var admin_dir='intra/';
+</script>
+<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" /> 
+</head>
+<body>
+<div class="pad-lr-10">
+<div class="pad-10">
+<div class="content-menu ib-a blue line-x"> 
+<a class="add fb" href="javascript:add()"><em>添加权限资源</em></a> <span> | </span>
+<a class="on" href="listres.htm"><em>权限资源列表</em></a>  
+</div> </div> 
+</div>
+ <div class="pad-10">
+<div class="table-list">
+    <table width="100%">
+        <thead>
+            <tr>
+            <th width="40">ID</th>
+			<th align="left">名称</th>
+            <th width="130" >状态</th>
+			<th width="150">管理操作</th>
+            </tr>
+        </thead>
+		<tbody> 
+				<tr>
+					<td align='center' >34</td>
+					<td style=''>工具</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(34)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(34,'工具')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','34')">删除</a></td>
+				</tr><tr>
+					<td align='center' >128</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 系统工具</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(128)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(128,'系统工具')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','128')">删除</a></td>
+				</tr><tr>
+					<td align='center' >78</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 环境信息检测</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(78)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(78,'环境信息检测')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','78')">删除</a></td>
+				</tr><tr>
+					<td align='center' >72</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 数据库管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(72)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(72,'数据库管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','72')">删除</a></td>
+				</tr><tr>
+					<td align='center' >77</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 站长工具箱</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(77)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(77,'站长工具箱')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','77')">删除</a></td>
+				</tr><tr>
+					<td align='center' >129</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 运营支持</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(129)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(129,'运营支持')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','129')">删除</a></td>
+				</tr><tr>
+					<td align='center' >80</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 采集管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(80)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(80,'采集管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','80')">删除</a></td>
+				</tr><tr>
+					<td align='center' >67</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 流量统计</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(67)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(67,'流量统计')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','67')">删除</a></td>
+				</tr><tr>
+					<td align='center' >104</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 用户行为分析</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(104)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(104,'用户行为分析')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','104')">删除</a></td>
+				</tr> 
+		</tbody>
+     </table>
+    <div class="btn">
+	</div>
+    <div id="pages"></div> 
+</div>
+</form> 
+ </div>
+ <script type="text/javascript" src="$intraStatic.getURI('js/auth/res/listres.js')"></script> 
+</body>
+</html>

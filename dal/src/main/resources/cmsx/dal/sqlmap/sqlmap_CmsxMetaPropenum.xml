@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+
+<sqlMap namespace="CmsxMetaPropenum" >
+
+  <typeAlias alias="cmsxMetaPropenumDO" type="com.apachecms.cmsx.dal.dataobject.CmsxMetaPropenumDO" />
+  <typeAlias alias="cmsxMetaPropenumQuery" type="com.apachecms.cmsx.dal.query.CmsxMetaPropenumQuery" />
+
+  <resultMap id="cmsxMetaPropenumDOResultMap" class="cmsxMetaPropenumDO" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="catalogid" column="CATALOGID" />
+    <result property="propid" column="PROPID" />
+    <result property="propval" column="PROPVAL" />
+    <result property="propvalname" column="PROPVALNAME" />
+    <result property="ordernum" column="ORDERNUM" />
+  </resultMap>
+
+  <resultMap id="cmsxMetaPropenumQueryResultMap" class="cmsxMetaPropenumQuery" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="catalogid" column="CATALOGID" />
+    <result property="propid" column="PROPID" />
+    <result property="propval" column="PROPVAL" />
+    <result property="propvalname" column="PROPVALNAME" />
+    <result property="ordernum" column="ORDERNUM" />
+  </resultMap>
+
+  <sql id="cmsxMetaPropenum_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CATALOGID, 
+      a1.PROPID, a1.PROPVAL, a1.PROPVALNAME, a1.ORDERNUM
+  </sql>
+
+  <sql id="cmsxMetaPropenum_do_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CATALOGID, 
+      a1.PROPID, a1.PROPVAL, a1.PROPVALNAME, a1.ORDERNUM
+  </sql>
+
+  <sql id="cmsxMetaPropenum_query_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CATALOGID, 
+      a1.PROPID, a1.PROPVAL, a1.PROPVALNAME, a1.ORDERNUM
+  </sql>
+
+  <sql id="cmsxMetaPropenum_queryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="catalogid" prepend="AND" >
+        <![CDATA[  
+        CATALOGID = #catalogid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propid" prepend="AND" >
+        <![CDATA[  
+        PROPID = #propid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propval" prepend="AND" >
+        <![CDATA[  
+        PROPVAL = #propval#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propvalname" prepend="AND" >
+        <![CDATA[  
+        PROPVALNAME = #propvalname#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="ordernum" prepend="AND" >
+        <![CDATA[  
+        ORDERNUM = #ordernum#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxMetaPropenum_doQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="catalogid" prepend="AND" >
+        <![CDATA[  
+        CATALOGID = #catalogid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propid" prepend="AND" >
+        <![CDATA[  
+        PROPID = #propid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propval" prepend="AND" >
+        <![CDATA[  
+        PROPVAL = #propval#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propvalname" prepend="AND" >
+        <![CDATA[  
+        PROPVALNAME = #propvalname#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="ordernum" prepend="AND" >
+        <![CDATA[  
+        ORDERNUM = #ordernum#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxMetaPropenum_queryQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="catalogid" prepend="AND" >
+        <![CDATA[  
+        CATALOGID = #catalogid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propid" prepend="AND" >
+        <![CDATA[  
+        PROPID = #propid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propval" prepend="AND" >
+        <![CDATA[  
+        PROPVAL = #propval#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propvalname" prepend="AND" >
+        <![CDATA[  
+        PROPVALNAME = #propvalname#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="ordernum" prepend="AND" >
+        <![CDATA[  
+        ORDERNUM = #ordernum#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <insert id="insert" parameterClass="cmsxMetaPropenumDO" >
+    <selectKey resultClass="java.lang.Long" keyProperty="id">
+			SELECT
+			SEQ_CMSX_META_PROPENUM.NEXTVAL AS id FROM DUAL
+      </selectKey>
+    INSERT INTO CMSX_META_PROPENUM( ID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, MODIFY_USER, CATALOGID, 
+      PROPID, PROPVAL, PROPVALNAME, ORDERNUM)
+     VALUES ( #id#, #gmtCreate#, #gmtModified#, #createUser#, #modifyUser#, #catalogid#, 
+      #propid#, #propval#, #propvalname#, #ordernum#) 
+  </insert>
+
+  <update id="update" parameterClass="cmsxMetaPropenumDO" >
+    UPDATE CMSX_META_PROPENUM   
+    <dynamic prepend="SET" >
+      <!--
+      <isNotNull property="id" prepend="," >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      -->
+      <isNotNull property="gmtCreate" prepend="," >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="," >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="," >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="," >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="catalogid" prepend="," >
+        <![CDATA[  
+        CATALOGID = #catalogid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propid" prepend="," >
+        <![CDATA[  
+        PROPID = #propid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propval" prepend="," >
+        <![CDATA[  
+        PROPVAL = #propval#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propvalname" prepend="," >
+        <![CDATA[  
+        PROPVALNAME = #propvalname#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="ordernum" prepend="," >
+        <![CDATA[  
+        ORDERNUM = #ordernum#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+     WHERE ID = #id#  
+  </update>
+
+  <select id="findByPrimaryKey" parameterClass="java.lang.Long" resultMap="cmsxMetaPropenumDOResultMap" >
+     SELECT 
+    <include refid="cmsxMetaPropenum_do_columns" />
+    <![CDATA[  
+     FROM CMSX_META_PROPENUM a1 WHERE ID = #id#
+    ]]>  
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterClass="java.lang.Long" >
+    <![CDATA[  
+     DELETE FROM CMSX_META_PROPENUM WHERE ID = #id#
+    ]]>  
+  </delete>
+
+  <select id="countByDOExample" parameterClass="cmsxMetaPropenumDO" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_META_PROPENUM 
+    <include refid="cmsxMetaPropenum_doQueryParams" />
+  </select>
+
+  <select id="findListByDO" resultMap="cmsxMetaPropenumDOResultMap" parameterClass="cmsxMetaPropenumDO" >
+     SELECT 
+    <include refid="cmsxMetaPropenum_do_columns" />
+     FROM CMSX_META_PROPENUM a1 
+    <include refid="cmsxMetaPropenum_doQueryParams" />
+  </select>
+
+  <select id="countByQueryExample" parameterClass="cmsxMetaPropenumQuery" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_META_PROPENUM 
+    <include refid="cmsxMetaPropenum_queryQueryParams" />
+  </select>
+
+  <select id="findListByQuery" resultMap="cmsxMetaPropenumQueryResultMap" parameterClass="cmsxMetaPropenumQuery" >
+     SELECT 
+    <include refid="cmsxMetaPropenum_query_columns" />
+     FROM CMSX_META_PROPENUM a1 
+    <include refid="cmsxMetaPropenum_queryQueryParams" />
+  </select>
+</sqlMap>

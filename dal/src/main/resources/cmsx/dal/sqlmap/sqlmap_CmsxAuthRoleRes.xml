@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+
+<sqlMap namespace="CmsxAuthRoleRes" >
+
+  <typeAlias alias="cmsxAuthRoleResDO" type="com.apachecms.cmsx.dal.dataobject.CmsxAuthRoleResDO" />
+  <typeAlias alias="cmsxAuthRoleResQuery" type="com.apachecms.cmsx.dal.query.CmsxAuthRoleResQuery" />
+
+  <resultMap id="cmsxAuthRoleResDOResultMap" class="cmsxAuthRoleResDO" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="roleid" column="ROLEID" />
+    <result property="resid" column="RESID" />
+  </resultMap>
+
+  <resultMap id="cmsxAuthRoleResQueryResultMap" class="cmsxAuthRoleResQuery" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="roleid" column="ROLEID" />
+    <result property="resid" column="RESID" />
+  </resultMap>
+
+  <sql id="cmsxAuthRoleRes_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.ROLEID, 
+      a1.RESID
+  </sql>
+
+  <sql id="cmsxAuthRoleRes_do_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.ROLEID, 
+      a1.RESID
+  </sql>
+
+  <sql id="cmsxAuthRoleRes_query_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.ROLEID, 
+      a1.RESID
+  </sql>
+
+  <sql id="cmsxAuthRoleRes_queryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="AND" >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="resid" prepend="AND" >
+        <![CDATA[  
+        RESID = #resid#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxAuthRoleRes_doQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="AND" >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="resid" prepend="AND" >
+        <![CDATA[  
+        RESID = #resid#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxAuthRoleRes_queryQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="AND" >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="resid" prepend="AND" >
+        <![CDATA[  
+        RESID = #resid#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <insert id="insert" parameterClass="cmsxAuthRoleResDO" >
+    <selectKey resultClass="java.lang.Long" keyProperty="id">
+			SELECT
+			SEQ_CMSX_AUTH_ROLE_RES.NEXTVAL AS id FROM DUAL
+      </selectKey>
+    INSERT INTO CMSX_AUTH_ROLE_RES( ID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, MODIFY_USER, ROLEID, 
+      RESID)
+     VALUES ( #id#, #gmtCreate#, #gmtModified#, #createUser#, #modifyUser#, #roleid#, 
+      #resid#) 
+  </insert>
+
+  <update id="update" parameterClass="cmsxAuthRoleResDO" >
+    UPDATE CMSX_AUTH_ROLE_RES   
+    <dynamic prepend="SET" >
+      <!--
+      <isNotNull property="id" prepend="," >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      -->
+      <isNotNull property="gmtCreate" prepend="," >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="," >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="," >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="," >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="," >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="resid" prepend="," >
+        <![CDATA[  
+        RESID = #resid#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+     WHERE ID = #id#  
+  </update>
+
+  <select id="findByPrimaryKey" parameterClass="java.lang.Long" resultMap="cmsxAuthRoleResDOResultMap" >
+     SELECT 
+    <include refid="cmsxAuthRoleRes_do_columns" />
+    <![CDATA[  
+     FROM CMSX_AUTH_ROLE_RES a1 WHERE ID = #id#
+    ]]>  
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterClass="java.lang.Long" >
+    <![CDATA[  
+     DELETE FROM CMSX_AUTH_ROLE_RES WHERE ID = #id#
+    ]]>  
+  </delete>
+
+  <select id="countByDOExample" parameterClass="cmsxAuthRoleResDO" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_AUTH_ROLE_RES 
+    <include refid="cmsxAuthRoleRes_doQueryParams" />
+  </select>
+
+  <select id="findListByDO" resultMap="cmsxAuthRoleResDOResultMap" parameterClass="cmsxAuthRoleResDO" >
+     SELECT 
+    <include refid="cmsxAuthRoleRes_do_columns" />
+     FROM CMSX_AUTH_ROLE_RES a1 
+    <include refid="cmsxAuthRoleRes_doQueryParams" />
+  </select>
+
+  <select id="countByQueryExample" parameterClass="cmsxAuthRoleResQuery" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_AUTH_ROLE_RES 
+    <include refid="cmsxAuthRoleRes_queryQueryParams" />
+  </select>
+
+  <select id="findListByQuery" resultMap="cmsxAuthRoleResQueryResultMap" parameterClass="cmsxAuthRoleResQuery" >
+     SELECT 
+    <include refid="cmsxAuthRoleRes_query_columns" />
+     FROM CMSX_AUTH_ROLE_RES a1 
+    <include refid="cmsxAuthRoleRes_queryQueryParams" />
+  </select>
+</sqlMap>

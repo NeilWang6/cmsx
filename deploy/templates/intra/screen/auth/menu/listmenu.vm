@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>菜单列表-管理中心</title>
+<script language="javascript" type="text/javascript">
+var rooturl='$siteDomainUrl';
+var admin_dir='intra/';
+</script>
+<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" /> 
+</head>
+<body>
+<div class="pad-lr-10">
+<div class="pad-10">
+<div class="content-menu ib-a blue line-x"> 
+<a class="add fb" href="javascript:add()"><em>添加菜单</em></a> <span> | </span>
+<a class="on" href="?type=system&cn=hostmenu&do=list"><em>菜单列表</em></a>  
+</div> </div> 
+</div>
+ <div class="pad-10">
+<div class="table-list">
+    <table width="100%">
+        <thead>
+            <tr>
+            <th width="40">ID</th>
+			<th align="left">名称</th>
+            <th width="130" >状态</th>
+			<th width="150">管理操作</th>
+            </tr>
+        </thead>
+<tbody>
+		        <tr>
+					<td align='center' >115</td>
+					<td style=''>控制面板</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(115)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(115,'控制面板')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','115')">删除</a></td>
+				</tr><tr>
+					<td align='center' >139</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 资讯管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(139)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(139,'资讯管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','139')">删除</a></td>
+				</tr><tr>
+					<td align='center' >142</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 文章管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(142)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(142,'文章管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','142')">删除</a></td>
+				</tr><tr>
+					<td align='center' >140</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 会员管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(140)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(140,'会员管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','140')">删除</a></td>
+				</tr><tr>
+					<td align='center' >141</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 经销商</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(141)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(141,'经销商')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','141')">删除</a></td>
+				</tr><tr>
+					<td align='center' >144</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 驾校会员</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(144)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(144,'驾校会员')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','144')">删除</a></td>
+				</tr><tr>
+					<td align='center' >145</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 租赁会员</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(145)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(145,'租赁会员')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','145')">删除</a></td>
+				</tr><tr>
+					<td align='center' >135</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 车型库管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(135)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(135,'车型库管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','135')">删除</a></td>
+				</tr><tr>
+					<td align='center' >138</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 图库管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(138)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(138,'图库管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','138')">删除</a></td>
+				</tr><tr>
+					<td align='center' >137</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 车款管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(137)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(137,'车款管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','137')">删除</a></td>
+				</tr><tr>
+					<td align='center' >136</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 品牌与车系</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(136)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(136,'品牌与车系')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','136')">删除</a></td>
+				</tr><tr>
+					<td align='center' >116</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 系统生成</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(116)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(116,'系统生成')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','116')">删除</a></td>
+				</tr><tr>
+					<td align='center' >117</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 生成首页</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(117)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(117,'生成首页')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','117')">删除</a></td>
+				</tr><tr>
+					<td align='center' >11</td>
+					<td style=''>内容</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(11)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(11,'内容')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','11')">删除</a></td>
+				</tr><tr>
+					<td align='center' >121</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 文章管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(121)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(121,'文章管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','121')">删除</a></td>
+				</tr><tr>
+					<td align='center' >194</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 分类管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(194)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(194,'分类管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','194')">删除</a></td>
+				</tr><tr>
+					<td align='center' >191</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 评论管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(191)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(191,'评论管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','191')">删除</a></td>
+				</tr><tr>
+					<td align='center' >19</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 文章管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(19)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(19,'文章管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','19')">删除</a></td>
+				</tr><tr>
+					<td align='center' >22</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 团购管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(22)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(22,'团购管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','22')">删除</a></td>
+				</tr><tr>
+					<td align='center' >193</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 报名管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(193)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(193,'报名管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','193')">删除</a></td>
+				</tr><tr>
+					<td align='center' >24</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 团购管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(24)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(24,'团购管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','24')">删除</a></td>
+				</tr><tr>
+					<td align='center' >218</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 团购焦点图</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(218)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(218,'团购焦点图')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','218')">删除</a></td>
+				</tr><tr>
+					<td align='center' >220</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 全品牌报名</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(220)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(220,'全品牌报名')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','220')">删除</a></td>
+				</tr><tr>
+					<td align='center' >23</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 视频管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(23)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(23,'视频管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','23')">删除</a></td>
+				</tr><tr>
+					<td align='center' >195</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 分类管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(195)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(195,'分类管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','195')">删除</a></td>
+				</tr><tr>
+					<td align='center' >20</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 视频管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(20)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(20,'视频管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','20')">删除</a></td>
+				</tr><tr>
+					<td align='center' >197</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 百科管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(197)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(197,'百科管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','197')">删除</a></td>
+				</tr><tr>
+					<td align='center' >198</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 百科管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(198)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(198,'百科管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','198')">删除</a></td>
+				</tr><tr>
+					<td align='center' >199</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 分类管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(199)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(199,'分类管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','199')">删除</a></td>
+				</tr><tr>
+					<td align='center' >192</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 图集管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(192)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(192,'图集管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','192')">删除</a></td>
+				</tr><tr>
+					<td align='center' >196</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 分类管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(196)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(196,'分类管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','196')">删除</a></td>
+				</tr><tr>
+					<td align='center' >21</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 图集管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(21)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(21,'图集管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','21')">删除</a></td>
+				</tr><tr>
+					<td align='center' >123</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 专题管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(123)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(123,'专题管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','123')">删除</a></td>
+				</tr><tr>
+					<td align='center' >41</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 专题管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(41)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(41,'专题管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','41')">删除</a></td>
+				</tr><tr>
+					<td align='center' >216</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 专题分类</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(216)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(216,'专题分类')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','216')">删除</a></td>
+				</tr><tr>
+					<td align='center' >15</td>
+					<td style=''>广告</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(15)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(15,'广告')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','15')">删除</a></td>
+				</tr><tr>
+					<td align='center' >124</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 广告管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(124)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(124,'广告管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','124')">删除</a></td>
+				</tr><tr>
+					<td align='center' >40</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 广告管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(40)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(40,'广告管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','40')">删除</a></td>
+				</tr><tr>
+					<td align='center' >101</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 分类管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(101)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(101,'分类管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','101')">删除</a></td>
+				</tr><tr>
+					<td align='center' >125</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 友情链接</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(125)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(125,'友情链接')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','125')">删除</a></td>
+				</tr><tr>
+					<td align='center' >149</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 分类管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(149)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(149,'分类管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','149')">删除</a></td>
+				</tr><tr>
+					<td align='center' >39</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 友情链接</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(39)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(39,'友情链接')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','39')">删除</a></td>
+				</tr><tr>
+					<td align='center' >18</td>
+					<td style=''>经销商</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(18)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(18,'经销商')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','18')">删除</a></td>
+				</tr><tr>
+					<td align='center' >126</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 基本管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(126)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(126,'基本管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','126')">删除</a></td>
+				</tr><tr>
+					<td align='center' >60</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 经销商管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(60)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(60,'经销商管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','60')">删除</a></td>
+				</tr><tr>
+					<td align='center' >150</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 在线问答</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(150)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(150,'在线问答')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','150')">删除</a></td>
+				</tr><tr>
+					<td align='center' >151</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 订购/试驾</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(151)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(151,'订购/试驾')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','151')">删除</a></td>
+				</tr><tr>
+					<td align='center' >152</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 销售顾问</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(152)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(152,'销售顾问')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','152')">删除</a></td>
+				</tr><tr>
+					<td align='center' >153</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 招贤纳士</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(153)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(153,'招贤纳士')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','153')">删除</a></td>
+				</tr><tr>
+					<td align='center' >160</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 文章管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(160)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(160,'文章管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','160')">删除</a></td>
+				</tr><tr>
+					<td align='center' >183</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 推荐经销商</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(183)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(183,'推荐经销商')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','183')">删除</a></td>
+				</tr><tr>
+					<td align='center' >184</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 汽车园区</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(184)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(184,'汽车园区')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','184')">删除</a></td>
+				</tr><tr>
+					<td align='center' >33</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 报价管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(33)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(33,'报价管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','33')">删除</a></td>
+				</tr><tr>
+					<td align='center' >127</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 扩展管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(127)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(127,'扩展管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','127')">删除</a></td>
+				</tr><tr>
+					<td align='center' >27</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 经销商群组</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(27)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(27,'经销商群组')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','27')">删除</a></td>
+				</tr><tr>
+					<td align='center' >68</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 经销商模板风格</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(68)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(68,'经销商模板风格')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','68')">删除</a></td>
+				</tr><tr>
+					<td align='center' >182</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 基本设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(182)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(182,'基本设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','182')">删除</a></td>
+				</tr><tr>
+					<td align='center' >13</td>
+					<td style=''>车型库</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(13)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(13,'车型库')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','13')">删除</a></td>
+				</tr><tr>
+					<td align='center' >122</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 基础数据</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(122)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(122,'基础数据')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','122')">删除</a></td>
+				</tr><tr>
+					<td align='center' >73</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 品牌与车系</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(73)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(73,'品牌与车系')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','73')">删除</a></td>
+				</tr><tr>
+					<td align='center' >31</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 车款管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(31)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(31,'车款管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','31')">删除</a></td>
+				</tr><tr>
+					<td align='center' >32</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 图库管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(32)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(32,'图库管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','32')">删除</a></td>
+				</tr><tr>
+					<td align='center' >206</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 交互信息</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(206)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(206,'交互信息')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','206')">删除</a></td>
+				</tr><tr>
+					<td align='center' >66</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 口碑管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(66)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(66,'口碑管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','66')">删除</a></td>
+				</tr><tr>
+					<td align='center' >202</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 口碑印象管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(202)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(202,'口碑印象管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','202')">删除</a></td>
+				</tr><tr>
+					<td align='center' >190</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 网友油耗管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(190)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(190,'网友油耗管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','190')">删除</a></td>
+				</tr><tr>
+					<td align='center' >205</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 扩展功能</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(205)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(205,'扩展功能')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','205')">删除</a></td>
+				</tr><tr>
+					<td align='center' >203</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 车型详解管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(203)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(203,'车型详解管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','203')">删除</a></td>
+				</tr><tr>
+					<td align='center' >207</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 分类车型推荐</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(207)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(207,'分类车型推荐')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','207')">删除</a></td>
+				</tr><tr>
+					<td align='center' >217</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 品牌之家</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(217)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(217,'品牌之家')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','217')">删除</a></td>
+				</tr><tr>
+					<td align='center' >96</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 上市新车管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(96)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(96,'上市新车管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','96')">删除</a></td>
+				</tr><tr>
+					<td align='center' >204</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 推荐车型图库</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(204)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(204,'推荐车型图库')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','204')">删除</a></td>
+				</tr><tr>
+					<td align='center' >187</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 更新数据</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(187)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(187,'更新数据')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','187')">删除</a></td>
+				</tr><tr>
+					<td align='center' >188</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 更新车型库页面</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(188)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(188,'更新车型库页面')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','188')">删除</a></td>
+				</tr><tr>
+					<td align='center' >208</td>
+					<td style=''>问答</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(208)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(208,'问答')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','208')">删除</a></td>
+				</tr><tr>
+					<td align='center' >210</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 内容管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(210)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(210,'内容管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','210')">删除</a></td>
+				</tr><tr>
+					<td align='center' >212</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 问题管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(212)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(212,'问题管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','212')">删除</a></td>
+				</tr><tr>
+					<td align='center' >214</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 答案管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(214)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(214,'答案管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','214')">删除</a></td>
+				</tr><tr>
+					<td align='center' >209</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(209)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(209,'设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','209')">删除</a></td>
+				</tr><tr>
+					<td align='center' >211</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 积分设置</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(211)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(211,'积分设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','211')">删除</a></td>
+				</tr><tr>
+					<td align='center' >213</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 分类设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(213)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(213,'分类设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','213')">删除</a></td>
+				</tr><tr>
+					<td align='center' >63</td>
+					<td style=''>二手车</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(63)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(63,'二手车')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','63')">删除</a></td>
+				</tr><tr>
+					<td align='center' >167</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 商家设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(167)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(167,'商家设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','167')">删除</a></td>
+				</tr><tr>
+					<td align='center' >168</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 风格设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(168)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(168,'风格设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','168')">删除</a></td>
+				</tr><tr>
+					<td align='center' >169</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 会员组设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(169)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(169,'会员组设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','169')">删除</a></td>
+				</tr><tr>
+					<td align='center' >181</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 基本设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(181)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(181,'基本设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','181')">删除</a></td>
+				</tr><tr>
+					<td align='center' >130</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 出售信息</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(130)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(130,'出售信息')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','130')">删除</a></td>
+				</tr><tr>
+					<td align='center' >98</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 资讯管理</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(98)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(98,'资讯管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','98')">删除</a></td>
+				</tr><tr>
+					<td align='center' >99</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 求购管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(99)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(99,'求购管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','99')">删除</a></td>
+				</tr><tr>
+					<td align='center' >79</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 车源管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(79)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(79,'车源管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','79')">删除</a></td>
+				</tr><tr>
+					<td align='center' >59</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 用户申请</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(59)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(59,'用户申请')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','59')">删除</a></td>
+				</tr><tr>
+					<td align='center' >131</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 求购管理</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(131)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(131,'求购管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','131')">删除</a></td>
+				</tr><tr>
+					<td align='center' >161</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 商家信息</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(161)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(161,'商家信息')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','161')">删除</a></td>
+				</tr><tr>
+					<td align='center' >165</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 购车意向</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(165)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(165,'购车意向')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','165')">删除</a></td>
+				</tr><tr>
+					<td align='center' >166</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 评估师管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(166)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(166,'评估师管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','166')">删除</a></td>
+				</tr><tr>
+					<td align='center' >164</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 文章管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(164)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(164,'文章管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','164')">删除</a></td>
+				</tr><tr>
+					<td align='center' >163</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 在线问答</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(163)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(163,'在线问答')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','163')">删除</a></td>
+				</tr><tr>
+					<td align='center' >162</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 二手车商家</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(162)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(162,'二手车商家')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','162')">删除</a></td>
+				</tr><tr>
+					<td align='center' >219</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 商家推荐</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(219)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(219,'商家推荐')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','219')">删除</a></td>
+				</tr><tr>
+					<td align='center' >97</td>
+					<td style=''>驾校</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(97)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(97,'驾校')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','97')">删除</a></td>
+				</tr><tr>
+					<td align='center' >172</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 驾校设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(172)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(172,'驾校设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','172')">删除</a></td>
+				</tr><tr>
+					<td align='center' >173</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 模版风格</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(173)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(173,'模版风格')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','173')">删除</a></td>
+				</tr><tr>
+					<td align='center' >174</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 群组设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(174)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(174,'群组设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','174')">删除</a></td>
+				</tr><tr>
+					<td align='center' >179</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 基本设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(179)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(179,'基本设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','179')">删除</a></td>
+				</tr><tr>
+					<td align='center' >132</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 基本管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(132)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(132,'基本管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','132')">删除</a></td>
+				</tr><tr>
+					<td align='center' >171</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 文章管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(171)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(171,'文章管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','171')">删除</a></td>
+				</tr><tr>
+					<td align='center' >170</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 在线问答管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(170)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(170,'在线问答管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','170')">删除</a></td>
+				</tr><tr>
+					<td align='center' >200</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 推荐驾校</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(200)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(200,'推荐驾校')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','200')">删除</a></td>
+				</tr><tr>
+					<td align='center' >107</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 驾校商家</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(107)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(107,'驾校商家')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','107')">删除</a></td>
+				</tr><tr>
+					<td align='center' >112</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 驾校报名</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(112)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(112,'驾校报名')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','112')">删除</a></td>
+				</tr><tr>
+					<td align='center' >108</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 驾校报价</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(108)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(108,'驾校报价')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','108')">删除</a></td>
+				</tr><tr>
+					<td align='center' >103</td>
+					<td style=''>租赁</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(103)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(103,'租赁')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','103')">删除</a></td>
+				</tr><tr>
+					<td align='center' >133</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 基本管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(133)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(133,'基本管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','133')">删除</a></td>
+				</tr><tr>
+					<td align='center' >201</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 推荐公司</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(201)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(201,'推荐公司')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','201')">删除</a></td>
+				</tr><tr>
+					<td align='center' >178</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 在线问答管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(178)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(178,'在线问答管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','178')">删除</a></td>
+				</tr><tr>
+					<td align='center' >113</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 文章管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(113)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(113,'文章管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','113')">删除</a></td>
+				</tr><tr>
+					<td align='center' >110</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 租赁报价</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(110)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(110,'租赁报价')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','110')">删除</a></td>
+				</tr><tr>
+					<td align='center' >109</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 租赁商家</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(109)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(109,'租赁商家')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','109')">删除</a></td>
+				</tr><tr>
+					<td align='center' >111</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 租车订单</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(111)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(111,'租车订单')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','111')">删除</a></td>
+				</tr><tr>
+					<td align='center' >175</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 租赁设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(175)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(175,'租赁设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','175')">删除</a></td>
+				</tr><tr>
+					<td align='center' >176</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 模版风格</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(176)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(176,'模版风格')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','176')">删除</a></td>
+				</tr><tr>
+					<td align='center' >177</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 群组设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(177)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(177,'群组设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','177')">删除</a></td>
+				</tr><tr>
+					<td align='center' >180</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 基本设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(180)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(180,'基本设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','180')">删除</a></td>
+				</tr><tr>
+					<td align='center' >81</td>
+					<td style=''>扩展</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(81)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(81,'扩展')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','81')">删除</a></td>
+				</tr><tr>
+					<td align='center' >134</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 功能扩展</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(134)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(134,'功能扩展')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','134')">删除</a></td>
+				</tr><tr>
+					<td align='center' >91</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 扩展页面</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(91)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(91,'扩展页面')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','91')">删除</a></td>
+				</tr><tr>
+					<td align='center' >82</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 投票管理</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(82)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(82,'投票管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','82')">删除</a></td>
+				</tr><tr>
+					<td align='center' >102</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 快捷方式</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(102)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(102,'快捷方式')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','102')">删除</a></td>
+				</tr><tr>
+					<td align='center' >118</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 系统扩展</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(118)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(118,'系统扩展')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','118')">删除</a></td>
+				</tr><tr>
+					<td align='center' >84</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 敏感词管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(84)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(84,'敏感词管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','84')">删除</a></td>
+				</tr><tr>
+					<td align='center' >85</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 关键词管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(85)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(85,'关键词管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','85')">删除</a></td>
+				</tr><tr>
+					<td align='center' >86</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ SiteMap</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(86)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(86,'SiteMap')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','86')">删除</a></td>
+				</tr><tr>
+					<td align='center' >88</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 来源管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(88)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(88,'来源管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','88')">删除</a></td>
+				</tr><tr>
+					<td align='center' >89</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 管理日志</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(89)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(89,'管理日志')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','89')">删除</a></td>
+				</tr><tr>
+					<td align='center' >90</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 问题举报</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(90)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(90,'问题举报')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','90')">删除</a></td>
+				</tr><tr>
+					<td align='center' >17</td>
+					<td style=''>系统管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(17)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(17,'系统管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','17')">删除</a></td>
+				</tr><tr>
+					<td align='center' >147</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 管理员设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(147)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(147,'管理员设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','147')">删除</a></td>
+				</tr><tr>
+					<td align='center' >48</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 内容权限方案</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(48)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(48,'内容权限方案')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','48')">删除</a></td>
+				</tr><tr>
+					<td align='center' >61</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 管理员管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(61)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(61,'管理员管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','61')">删除</a></td>
+				</tr><tr>
+					<td align='center' >62</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 后台管理群组</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(62)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(62,'后台管理群组')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','62')">删除</a></td>
+				</tr><tr>
+					<td align='center' >119</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 基本设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(119)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(119,'基本设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','119')">删除</a></td>
+				</tr><tr>
+					<td align='center' >47</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 网站参数设置</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(47)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(47,'网站参数设置')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','47')">删除</a></td>
+				</tr><tr>
+					<td align='center' >215</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 邮件发送</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(215)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(215,'邮件发送')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','215')">删除</a></td>
+				</tr><tr>
+					<td align='center' >50</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 地区管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(50)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(50,'地区管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','50')">删除</a></td>
+				</tr><tr>
+					<td align='center' >52</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 菜单管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(52)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(52,'菜单管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','52')">删除</a></td>
+				</tr><tr>
+					<td align='center' >83</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 附件管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(83)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(83,'附件管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','83')">删除</a></td>
+				</tr><tr>
+					<td align='center' >34</td>
+					<td style=''>工具</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(34)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(34,'工具')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','34')">删除</a></td>
+				</tr><tr>
+					<td align='center' >128</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;├─ 系统工具</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(128)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(128,'系统工具')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','128')">删除</a></td>
+				</tr><tr>
+					<td align='center' >78</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 环境信息检测</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(78)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(78,'环境信息检测')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','78')">删除</a></td>
+				</tr><tr>
+					<td align='center' >72</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;├─ 数据库管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(72)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(72,'数据库管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','72')">删除</a></td>
+				</tr><tr>
+					<td align='center' >77</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;&nbsp;└─ 站长工具箱</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(77)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(77,'站长工具箱')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','77')">删除</a></td>
+				</tr><tr>
+					<td align='center' >129</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;└─ 运营支持</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(129)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(129,'运营支持')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','129')">删除</a></td>
+				</tr><tr>
+					<td align='center' >80</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 采集管理</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(80)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(80,'采集管理')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','80')">删除</a></td>
+				</tr><tr>
+					<td align='center' >67</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ 流量统计</td>
+					<td align='center'><font color="#006600">√</font></td>
+					<td align='center'><a href='javascript:addpid(67)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(67,'流量统计')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','67')">删除</a></td>
+				</tr><tr>
+					<td align='center' >104</td>
+					<td style=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 用户行为分析</td>
+					<td align='center'><font color="#CC0000">-</font></td>
+					<td align='center'><a href='javascript:addpid(104)'><em><strong>添加</strong></em></a> | <a href="javascript:edit(104,'用户行为分析')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('system_hostmenu','104')">删除</a></td>
+				</tr>
+
+ 
+     </tbody>
+     </table>
+    <div class="btn">
+	</div>
+    <div id="pages"></div> 
+</div>
+</form> 
+ </div>
+ <script type="text/javascript" src="$intraStatic.getURI('js/auth/menu/listmenu.js')"></script> 
+</body>
+</html>

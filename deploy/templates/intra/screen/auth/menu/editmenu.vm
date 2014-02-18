@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title> 管理中心</title>
+<script language="javascript" type="text/javascript">
+var rooturl='$siteDomainUrl';
+var admin_dir='intra/';
+</script>
+<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script> 
+<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<form method="post" id="info_post" name="info_post">
+   
+<div class="pad-lr-10">
+
+<div class="bk8"></div><div class="bk8"></div>
+
+<div class="pad_10">
+<div style='overflow-y:auto;overflow-x:hidden' class='scrolltable'>
+<table width="100%" cellspacing="0" class="table_form contentWrap">
+ 
+ 
+<tr>
+  <th width="80">所属分类</th>
+  <td>
+  <select name="pid">
+  <option value="0">顶级分类</option>
+ <option value=115 >控制面板</option><option value=139 >&nbsp;├资讯管理</option><option value=142 >&nbsp;│&nbsp;└文章管理</option><option value=140 >&nbsp;├会员管理</option><option value=141 >&nbsp;│&nbsp;├经销商</option><option value=144 >&nbsp;│&nbsp;├驾校会员</option><option value=145 >&nbsp;│&nbsp;└租赁会员</option><option value=135 >&nbsp;├车型库管理</option><option value=138 >&nbsp;│&nbsp;├图库管理</option><option value=137 >&nbsp;│&nbsp;├车款管理</option><option value=136 >&nbsp;│&nbsp;└品牌与车系</option><option value=116 >&nbsp;└系统生成</option><option value=117 >&nbsp;&nbsp;└生成首页</option><option value=11 >内容</option><option value=121 >&nbsp;├文章管理</option><option value=194 >&nbsp;│&nbsp;├分类管理</option><option value=191 >&nbsp;│&nbsp;├评论管理</option><option value=19 >&nbsp;│&nbsp;└文章管理</option><option value=22 >&nbsp;├团购管理</option><option value=193 >&nbsp;│&nbsp;├报名管理</option><option value=24 >&nbsp;│&nbsp;├团购管理</option><option value=218 >&nbsp;│&nbsp;├团购焦点图</option><option value=220 >&nbsp;│&nbsp;└全品牌报名</option><option value=23 >&nbsp;├视频管理</option><option value=195 >&nbsp;│&nbsp;├分类管理</option><option value=20 >&nbsp;│&nbsp;└视频管理</option><option value=197 >&nbsp;├百科管理</option><option value=198 >&nbsp;│&nbsp;├百科管理</option><option value=199 >&nbsp;│&nbsp;└分类管理</option><option value=192 >&nbsp;├图集管理</option><option value=196 >&nbsp;│&nbsp;├分类管理</option><option value=21 >&nbsp;│&nbsp;└图集管理</option><option value=123 >&nbsp;└专题管理</option><option value=41 >&nbsp;&nbsp;├专题管理</option><option value=216 >&nbsp;&nbsp;└专题分类</option><option value=15 >广告</option><option value=124 >&nbsp;├广告管理</option><option value=40 >&nbsp;│&nbsp;├广告管理</option><option value=101 >&nbsp;│&nbsp;└分类管理</option><option value=125 >&nbsp;└友情链接</option><option value=149 >&nbsp;&nbsp;├分类管理</option><option value=39 >&nbsp;&nbsp;└友情链接</option><option value=18 >经销商</option><option value=126 >&nbsp;├基本管理</option><option value=60 >&nbsp;│&nbsp;├经销商管理</option><option value=150 >&nbsp;│&nbsp;├在线问答</option><option value=151 >&nbsp;│&nbsp;├订购/试驾</option><option value=152 >&nbsp;│&nbsp;├销售顾问</option><option value=153 >&nbsp;│&nbsp;├招贤纳士</option><option value=160 >&nbsp;│&nbsp;├文章管理</option><option value=183 >&nbsp;│&nbsp;├推荐经销商</option><option value=184 >&nbsp;│&nbsp;├汽车园区</option><option value=33 >&nbsp;│&nbsp;└报价管理</option><option value=127 >&nbsp;└扩展管理</option><option value=27 >&nbsp;&nbsp;├经销商群组</option><option value=68 >&nbsp;&nbsp;├经销商模板风格</option><option value=182 >&nbsp;&nbsp;└基本设置</option><option value=13 >车型库</option><option value=122 >&nbsp;├基础数据</option><option value=73 >&nbsp;│&nbsp;├品牌与车系</option><option value=31 >&nbsp;│&nbsp;├车款管理</option><option value=32 >&nbsp;│&nbsp;└图库管理</option><option value=206 >&nbsp;├交互信息</option><option value=66 >&nbsp;│&nbsp;├口碑管理</option><option value=202 >&nbsp;│&nbsp;├口碑印象管理</option><option value=190 >&nbsp;│&nbsp;└网友油耗管理</option><option value=205 >&nbsp;├扩展功能</option><option value=203 >&nbsp;│&nbsp;├车型详解管理</option><option value=207 >&nbsp;│&nbsp;├分类车型推荐</option><option value=217 >&nbsp;│&nbsp;├品牌之家</option><option value=96 >&nbsp;│&nbsp;├上市新车管理</option><option value=204 >&nbsp;│&nbsp;└推荐车型图库</option><option value=187 >&nbsp;└更新数据</option><option value=188 >&nbsp;&nbsp;└更新车型库页面</option><option value=208 >问答</option><option value=210 >&nbsp;├内容管理</option><option value=212 >&nbsp;│&nbsp;├问题管理</option><option value=214 >&nbsp;│&nbsp;└答案管理</option><option value=209 >&nbsp;└设置</option><option value=211 >&nbsp;&nbsp;├积分设置</option><option value=213 >&nbsp;&nbsp;└分类设置</option><option value=63 >二手车</option><option value=167 >&nbsp;├商家设置</option><option value=168 >&nbsp;│&nbsp;├风格设置</option><option value=169 >&nbsp;│&nbsp;├会员组设置</option><option value=181 >&nbsp;│&nbsp;└基本设置</option><option value=130 >&nbsp;├出售信息</option><option value=98 >&nbsp;│&nbsp;├资讯管理</option><option value=99 >&nbsp;│&nbsp;├求购管理</option><option value=79 >&nbsp;│&nbsp;├车源管理</option><option value=59 >&nbsp;│&nbsp;└用户申请</option><option value=131 >&nbsp;├求购管理</option><option value=161 >&nbsp;└商家信息</option><option value=165 >&nbsp;&nbsp;├购车意向</option><option value=166 >&nbsp;&nbsp;├评估师管理</option><option value=164 >&nbsp;&nbsp;├文章管理</option><option value=163 >&nbsp;&nbsp;├在线问答</option><option value=162 >&nbsp;&nbsp;├二手车商家</option><option value=219 >&nbsp;&nbsp;└商家推荐</option><option value=97 >驾校</option><option value=172 >&nbsp;├驾校设置</option><option value=173 >&nbsp;│&nbsp;├模版风格</option><option value=174 >&nbsp;│&nbsp;├群组设置</option><option value=179 >&nbsp;│&nbsp;└基本设置</option><option value=132 >&nbsp;└基本管理</option><option value=171 >&nbsp;&nbsp;├文章管理</option><option value=170 >&nbsp;&nbsp;├在线问答管理</option><option value=200 >&nbsp;&nbsp;├推荐驾校</option><option value=107 >&nbsp;&nbsp;├驾校商家</option><option value=112 >&nbsp;&nbsp;├驾校报名</option><option value=108 >&nbsp;&nbsp;└驾校报价</option><option value=103 >租赁</option><option value=133 >&nbsp;├基本管理</option><option value=201 >&nbsp;│&nbsp;├推荐公司</option><option value=178 >&nbsp;│&nbsp;├在线问答管理</option><option value=113 >&nbsp;│&nbsp;├文章管理</option><option value=110 >&nbsp;│&nbsp;├租赁报价</option><option value=109 >&nbsp;│&nbsp;├租赁商家</option><option value=111 >&nbsp;│&nbsp;└租车订单</option><option value=175 >&nbsp;└租赁设置</option><option value=176 >&nbsp;&nbsp;├模版风格</option><option value=177 >&nbsp;&nbsp;├群组设置</option><option value=180 >&nbsp;&nbsp;└基本设置</option><option value=81 >扩展</option><option value=134 >&nbsp;├功能扩展</option><option value=91 >&nbsp;│&nbsp;├扩展页面</option><option value=82 >&nbsp;│&nbsp;├投票管理</option><option value=102 >&nbsp;│&nbsp;└快捷方式</option><option value=118 >&nbsp;└系统扩展</option><option value=84 >&nbsp;&nbsp;├敏感词管理</option><option value=85 >&nbsp;&nbsp;├关键词管理</option><option value=86 >&nbsp;&nbsp;├SiteMap</option><option value=88 >&nbsp;&nbsp;├来源管理</option><option value=89 >&nbsp;&nbsp;├管理日志</option><option value=90 >&nbsp;&nbsp;└问题举报</option><option value=17 >系统管理</option><option value=147 >&nbsp;├管理员设置</option><option value=48 >&nbsp;│&nbsp;├内容权限方案</option><option value=61 >&nbsp;│&nbsp;├管理员管理</option><option value=62 >&nbsp;│&nbsp;└后台管理群组</option><option value=119 >&nbsp;└基本设置</option><option value=47 >&nbsp;&nbsp;├网站参数设置</option><option value=215 >&nbsp;&nbsp;├邮件发送</option><option value=50 >&nbsp;&nbsp;├地区管理</option><option value=52 >&nbsp;&nbsp;├菜单管理</option><option value=83 >&nbsp;&nbsp;└附件管理</option><option value=34 >工具</option><option value=128 >&nbsp;├系统工具</option><option value=78 >&nbsp;│&nbsp;├环境信息检测</option><option value=72 >&nbsp;│&nbsp;├数据库管理</option><option value=77 >&nbsp;│&nbsp;└站长工具箱</option><option value=129 >&nbsp;└运营支持</option><option value=80 >&nbsp;&nbsp;├采集管理</option><option value=67 >&nbsp;&nbsp;├流量统计</option><option value=104 >&nbsp;&nbsp;└用户行为分析</option>  </select>
+  </td>
+</tr>
+
+<tr>
+  <th width="80"> 名称	  </th>
+  <td><input type="text" name="title"   value="" class="input-text" size="50" /> 
+  </td>
+</tr>
+<tr>
+      <th width="80">链接地址</th>
+      <td><input name="meurl" class="input-text"  value="" size="50"> </td>
+    </tr>
+<tr>
+<tr>
+      <th width="80">排序</th>
+      <td><input name="vieworder" class="input-text" value="500"></td>
+    </tr>
+    <tr>
+      <th width="80">是否关闭</th>
+      <td>
+      <select name="close" >
+        <option value="1" >使用中</option>
+        <option value="0" >关闭中</option>
+      </select>
+ 
+ </td>
+</tr> 
+</table>
+</div>
+<div class="bk10"></div>
+<div class="btn">
+<input class="button" type="submit" value="提交表单">
+</div> 
+  </div>
+ 
+</div></form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+Listen ${cmsx_port}
+ServerRoot "${cmsx_output}"
+PidFile "${cmsx_output}/logs/httpd.pid"
+
+ServerName ${cmsx_domainName}
+User ${cmsx_unix_user}
+Group ${cmsx_unix_user}
+
+Timeout 15
+KeepAlive On
+MaxKeepAliveRequests 200
+KeepAliveTimeout 10
+MaxRequestsPerChild 20000
+
+<IfModule worker.c>
+	 ServerLimit      16
+     StartServers     3
+     MaxClients       1024
+     MinSpareThreads  25
+     MaxSpareThreads  250
+     ThreadsPerChild  64   
+</IfModule>
+
+DocumentRoot "${cmsx_deployhome}/htdocs"
+<Directory />
+    Options FollowSymLinks
+    AllowOverride None
+</Directory>
+
+<Directory "${cmsx_deployhome}/htdocs">
+    Options FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+</Directory>
+## base config
+Include ${cmsx_deployhome}/conf/httpd/httpd_base.conf
+
+Include ${cmsx_deployhome}/conf/httpd/mod_alibaba.conf
+Include ${cmsx_deployhome}/conf/httpd/mod_proxy.conf

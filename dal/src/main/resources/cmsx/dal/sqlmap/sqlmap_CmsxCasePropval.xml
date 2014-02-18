@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+
+<sqlMap namespace="CmsxCasePropval" >
+
+  <typeAlias alias="cmsxCasePropvalDO" type="com.apachecms.cmsx.dal.dataobject.CmsxCasePropvalDO" />
+  <typeAlias alias="cmsxCasePropvalQuery" type="com.apachecms.cmsx.dal.query.CmsxCasePropvalQuery" />
+
+  <resultMap id="cmsxCasePropvalDOResultMap" class="cmsxCasePropvalDO" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="caseId" column="CASE_ID" />
+    <result property="propId" column="PROP_ID" />
+    <result property="propVal" column="PROP_VAL" />
+    <result property="propValueType" column="PROP_VALUE_TYPE" />
+  </resultMap>
+
+  <resultMap id="cmsxCasePropvalQueryResultMap" class="cmsxCasePropvalQuery" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="caseId" column="CASE_ID" />
+    <result property="propId" column="PROP_ID" />
+    <result property="propVal" column="PROP_VAL" />
+    <result property="propValueType" column="PROP_VALUE_TYPE" />
+  </resultMap>
+
+  <sql id="cmsxCasePropval_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CASE_ID, 
+      a1.PROP_ID, a1.PROP_VAL, a1.PROP_VALUE_TYPE
+  </sql>
+
+  <sql id="cmsxCasePropval_do_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CASE_ID, 
+      a1.PROP_ID, a1.PROP_VAL, a1.PROP_VALUE_TYPE
+  </sql>
+
+  <sql id="cmsxCasePropval_query_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CASE_ID, 
+      a1.PROP_ID, a1.PROP_VAL, a1.PROP_VALUE_TYPE
+  </sql>
+
+  <sql id="cmsxCasePropval_queryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="caseId" prepend="AND" >
+        <![CDATA[  
+        CASE_ID = #caseId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propId" prepend="AND" >
+        <![CDATA[  
+        PROP_ID = #propId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propVal" prepend="AND" >
+        <![CDATA[  
+        PROP_VAL = #propVal#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propValueType" prepend="AND" >
+        <![CDATA[  
+        PROP_VALUE_TYPE = #propValueType#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxCasePropval_doQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="caseId" prepend="AND" >
+        <![CDATA[  
+        CASE_ID = #caseId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propId" prepend="AND" >
+        <![CDATA[  
+        PROP_ID = #propId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propVal" prepend="AND" >
+        <![CDATA[  
+        PROP_VAL = #propVal#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propValueType" prepend="AND" >
+        <![CDATA[  
+        PROP_VALUE_TYPE = #propValueType#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxCasePropval_queryQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="caseId" prepend="AND" >
+        <![CDATA[  
+        CASE_ID = #caseId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propId" prepend="AND" >
+        <![CDATA[  
+        PROP_ID = #propId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propVal" prepend="AND" >
+        <![CDATA[  
+        PROP_VAL = #propVal#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propValueType" prepend="AND" >
+        <![CDATA[  
+        PROP_VALUE_TYPE = #propValueType#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <insert id="insert" parameterClass="cmsxCasePropvalDO" >
+    <selectKey resultClass="java.lang.Long" keyProperty="id">
+			SELECT
+			SEQ_CMSX_CASE_PROPVAL.NEXTVAL AS id FROM DUAL
+      </selectKey>
+    INSERT INTO CMSX_CASE_PROPVAL( ID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, MODIFY_USER, CASE_ID, 
+      PROP_ID, PROP_VAL, PROP_VALUE_TYPE)
+     VALUES ( #id#, #gmtCreate#, #gmtModified#, #createUser#, #modifyUser#, #caseId#, 
+      #propId#, #propVal#, #propValueType#) 
+  </insert>
+
+  <update id="update" parameterClass="cmsxCasePropvalDO" >
+    UPDATE CMSX_CASE_PROPVAL   
+    <dynamic prepend="SET" >
+      <!--
+      <isNotNull property="id" prepend="," >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      -->
+      <isNotNull property="gmtCreate" prepend="," >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="," >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="," >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="," >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="caseId" prepend="," >
+        <![CDATA[  
+        CASE_ID = #caseId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propId" prepend="," >
+        <![CDATA[  
+        PROP_ID = #propId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propVal" prepend="," >
+        <![CDATA[  
+        PROP_VAL = #propVal#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="propValueType" prepend="," >
+        <![CDATA[  
+        PROP_VALUE_TYPE = #propValueType#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+     WHERE ID = #id#  
+  </update>
+
+  <select id="findByPrimaryKey" parameterClass="java.lang.Long" resultMap="cmsxCasePropvalDOResultMap" >
+     SELECT 
+    <include refid="cmsxCasePropval_do_columns" />
+    <![CDATA[  
+     FROM CMSX_CASE_PROPVAL a1 WHERE ID = #id#
+    ]]>  
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterClass="java.lang.Long" >
+    <![CDATA[  
+     DELETE FROM CMSX_CASE_PROPVAL WHERE ID = #id#
+    ]]>  
+  </delete>
+
+  <select id="countByDOExample" parameterClass="cmsxCasePropvalDO" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_CASE_PROPVAL 
+    <include refid="cmsxCasePropval_doQueryParams" />
+  </select>
+
+  <select id="findListByDO" resultMap="cmsxCasePropvalDOResultMap" parameterClass="cmsxCasePropvalDO" >
+     SELECT 
+    <include refid="cmsxCasePropval_do_columns" />
+     FROM CMSX_CASE_PROPVAL a1 
+    <include refid="cmsxCasePropval_doQueryParams" />
+  </select>
+
+  <select id="countByQueryExample" parameterClass="cmsxCasePropvalQuery" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_CASE_PROPVAL 
+    <include refid="cmsxCasePropval_queryQueryParams" />
+  </select>
+
+  <select id="findListByQuery" resultMap="cmsxCasePropvalQueryResultMap" parameterClass="cmsxCasePropvalQuery" >
+     SELECT 
+    <include refid="cmsxCasePropval_query_columns" />
+     FROM CMSX_CASE_PROPVAL a1 
+    <include refid="cmsxCasePropval_queryQueryParams" />
+  </select>
+</sqlMap>

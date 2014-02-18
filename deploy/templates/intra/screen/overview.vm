@@ -1,0 +1,53 @@
+$rundata.setLayoutEnabled(false)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
+</head>
+<body>
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style>
+<div id="main_frameid" class="pad-10" style="_margin-right:-12px;_width:98.9%;">
+    <div class="col-2 lf mr10" style="width:48%">
+    	<h6>我的个人信息</h6>
+    	<div class="content">
+    	您好，admin<br />
+    	所属角色：超级管理员 <br />
+    	<div class="bk20 hr"><hr /></div>
+    	上次登录时间：$utils.formatMessage("{0, date, yyyy-MM-dd HH:mm:ss}",$commonUtil.getNowDate())<br />
+    	上次登录IP：$commonUtil.getIpAddr($rundata.getRequest())<br />
+    	</div>
+    </div>
+    <div class="col-2 col-auto">
+    	<h6>待审核信息</h6>
+    	<div class="content">
+    		暂无审核信息！	<div class="bk20 hr"><hr /></div>
+    		<br /><br /><br />
+    	</div>
+    </div>
+    <div class="bk10"></div>
+    <div class="col-2 lf mr10" style="width:48%">
+    	<h6>数据统计</h6>
+    	<div class="content" id="admin_panel">
+                案&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例：共2944条，<a href="?type=content&cn=article&do=list">未审核2条</a><br>
+    			案例统计：共2175条，<a href="?type=content&cn=video&do=list">未审核0条</a><br>
+    			<div class="bk20 hr"><hr /></div>
+    	 </div>
+    </div>
+    <div class="col-2 col-auto">
+    	<h6>公告信息</h6>
+    	<div class="content">
+    	。。。。。<br /><br /><br />
+        </div>
+    </div>
+</div>  
+</body>
+</html>

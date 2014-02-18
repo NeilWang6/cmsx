@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+
+<sqlMap namespace="CmsxAdminRole" >
+
+  <typeAlias alias="cmsxAdminRoleDO" type="com.apachecms.cmsx.dal.dataobject.CmsxAdminRoleDO" />
+  <typeAlias alias="cmsxAdminRoleQuery" type="com.apachecms.cmsx.dal.query.CmsxAdminRoleQuery" />
+
+  <resultMap id="cmsxAdminRoleDOResultMap" class="cmsxAdminRoleDO" >
+    <result property="id" column="ID" />
+    <result property="adminid" column="ADMINID" />
+    <result property="roleid" column="ROLEID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+  </resultMap>
+
+  <resultMap id="cmsxAdminRoleQueryResultMap" class="cmsxAdminRoleQuery" >
+    <result property="id" column="ID" />
+    <result property="adminid" column="ADMINID" />
+    <result property="roleid" column="ROLEID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+  </resultMap>
+
+  <sql id="cmsxAdminRole_columns" >
+    a1.ID, a1.ADMINID, a1.ROLEID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER
+      
+  </sql>
+
+  <sql id="cmsxAdminRole_do_columns" >
+    a1.ID, a1.ADMINID, a1.ROLEID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER
+      
+  </sql>
+
+  <sql id="cmsxAdminRole_query_columns" >
+    a1.ID, a1.ADMINID, a1.ROLEID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER
+      
+  </sql>
+
+  <sql id="cmsxAdminRole_queryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="adminid" prepend="AND" >
+        <![CDATA[  
+        ADMINID = #adminid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="AND" >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxAdminRole_doQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="adminid" prepend="AND" >
+        <![CDATA[  
+        ADMINID = #adminid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="AND" >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxAdminRole_queryQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="adminid" prepend="AND" >
+        <![CDATA[  
+        ADMINID = #adminid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="AND" >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <insert id="insert" parameterClass="cmsxAdminRoleDO" >
+     <selectKey resultClass="java.lang.Long" keyProperty="id">
+			SELECT
+			SEQ_CMSX_ADMIN_ROLE.NEXTVAL AS id FROM DUAL
+      </selectKey>
+    INSERT INTO CMSX_ADMIN_ROLE( ID, ADMINID, ROLEID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, MODIFY_USER
+      )
+     VALUES ( #id#, #adminid#, #roleid#, #gmtCreate#, #gmtModified#, #createUser#, #modifyUser#
+      ) 
+  </insert>
+
+  <update id="update" parameterClass="cmsxAdminRoleDO" >
+    UPDATE CMSX_ADMIN_ROLE   
+    <dynamic prepend="SET" >
+      <!--
+      <isNotNull property="id" prepend="," >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      -->
+      <isNotNull property="adminid" prepend="," >
+        <![CDATA[  
+        ADMINID = #adminid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="roleid" prepend="," >
+        <![CDATA[  
+        ROLEID = #roleid#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="," >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="," >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="," >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="," >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+     WHERE ID = #id#  
+  </update>
+
+  <select id="findByPrimaryKey" parameterClass="java.lang.Long" resultMap="cmsxAdminRoleDOResultMap" >
+     SELECT 
+    <include refid="cmsxAdminRole_do_columns" />
+    <![CDATA[  
+     FROM CMSX_ADMIN_ROLE a1 WHERE ID = #id#
+    ]]>  
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterClass="java.lang.Long" >
+    <![CDATA[  
+     DELETE FROM CMSX_ADMIN_ROLE WHERE ID = #id#
+    ]]>  
+  </delete>
+
+  <select id="countByDOExample" parameterClass="cmsxAdminRoleDO" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_ADMIN_ROLE 
+    <include refid="cmsxAdminRole_doQueryParams" />
+  </select>
+
+  <select id="findListByDO" resultMap="cmsxAdminRoleDOResultMap" parameterClass="cmsxAdminRoleDO" >
+     SELECT 
+    <include refid="cmsxAdminRole_do_columns" />
+     FROM CMSX_ADMIN_ROLE a1 
+    <include refid="cmsxAdminRole_doQueryParams" />
+  </select>
+
+  <select id="countByQueryExample" parameterClass="cmsxAdminRoleQuery" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_ADMIN_ROLE 
+    <include refid="cmsxAdminRole_queryQueryParams" />
+  </select>
+
+  <select id="findListByQuery" resultMap="cmsxAdminRoleQueryResultMap" parameterClass="cmsxAdminRoleQuery" >
+     SELECT 
+    <include refid="cmsxAdminRole_query_columns" />
+     FROM CMSX_ADMIN_ROLE a1 
+    <include refid="cmsxAdminRole_queryQueryParams" />
+  </select>
+</sqlMap>

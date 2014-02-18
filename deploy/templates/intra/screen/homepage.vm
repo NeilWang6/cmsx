@@ -1,0 +1,89 @@
+$rundata.setLayoutEnabled(false)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="off">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>案例库 - 后台管理中心</title>
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/dialog.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/hotkeys.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.sGallery.js')"></script>
+</head>
+<body scroll="no">
+
+<div class="header">
+	<div class="logo lf"><a href="/intra" target="_blank"><span class="invisible">案例库 - 后台管理中心</span></a></div>
+    <div class="rt">
+    	<div class="tab_style white cut_line text-r"><a href="/" target="_blank" id="site_homepage">站点首页</a><span>|</span><a href="#" target="_blank">帮助？</a>
+            <ul id="Skin">
+        		<li class="s1 styleswitch" rel="styles1"></li>
+        		<li class="s2 styleswitch" rel="styles2"></li>
+        		<li class="s3 styleswitch" rel="styles3"></li>
+                <li class="s4 styleswitch" rel="styles4"></li>
+        	</ul>
+        </div>
+        <div class="style_but"></div>
+    </div>
+    <div class="col-auto" style="overflow: visible">
+    	<div class="log white cut_line">您好！admin  [超管]<span>|</span><a href="javascript:art.dialog({id:'admins',iframe:'$intraModule.setTarget("admins/editpass")', title:'修改密码', width:'500', height:'270', lock:true});void(0);">[修改密码]</a><span>|</span><a href="#">[退出]</a><span>|</span>
+    		
+
+    	</div>
+        <ul class="nav white" id="top_menu">
+
+        <li id="_M115" class="on top_menu"><a href="javascript:_M(115,'home.htm')" hidefocus="true" style="outline:none;">控制面板</a></li>
+
+        <li id="_M11" class="top_menu"><a href="javascript:_M(11,'')" hidefocus="true" style="outline:none;">案例管理</a></li>
+
+        <li id="_M15" class="top_menu"><a href="javascript:_M(15,'ad')" hidefocus="true" style="outline:none;">案例统计</a></li>
+
+        <li id="_M18" class="top_menu"><a href="javascript:_M(18,'qita')" hidefocus="true" style="outline:none;">知识共享</a></li>
+
+        <li id="_M13" class="top_menu"><a href="javascript:_M(13,'car')" hidefocus="true" style="outline:none;">教学培训信息</a></li>
+
+        <li id="_M208" class="top_menu"><a href="javascript:_M(208,'ask')" hidefocus="true" style="outline:none;">新闻动态</a></li>
+
+        <li id="_M63" class="top_menu"><a href="javascript:_M(63,'?type=2sc&do=cache')" hidefocus="true" style="outline:none;">科研成果</a></li>
+
+        <li id="_M17" class="top_menu"><a href="javascript:_M(17,'ad')" hidefocus="true" style="outline:none;">系统管理</a></li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+	<div class="col-left left_menu">
+    	<div id="leftMain"></div>
+        <a href="javascript:;" id="openClose" style="outline-style: none; outline-color: invert; outline-width: medium;" hideFocus="hidefocus" class="open" title="展开与关闭"><span class="hidden">展开</span></a>
+    </div>
+	<div class="col-1 lf cat-menu" id="display_center_id" style="display:none" height="100%">
+	<div class="content">
+        	<iframe name="center_frame" id="center_frame" src="" frameborder="false" scrolling="auto" style="border:none" width="100%" height="auto" allowtransparency="true"></iframe>
+            </div>
+        </div>
+    <div class="col-auto mr8">
+    <div class="crumbs">
+    <div class="shortcut cu-span"> </div>
+    当前位置：<span id="current_pos"></span></div>
+    	<div class="col-1">
+        	<div class="content" style="position:relative; overflow:hidden">
+                <iframe name="right" id="rightMain" src="overview.htm" frameborder="false" scrolling="auto" style="border:none; margin-bottom:30px" width="100%" height="auto" allowtransparency="true"></iframe>
+                <!-- 快捷方式开始 -->
+                <div class="fav-nav">
+					<div id="panellist"> </div>
+					<div id="paneladd" title='点击添加'></div>
+					<input type="hidden" id="menuid" value="">
+					<input type="hidden" id="bigid" value="" />
+                    <div id="help" class="fav-help"></div>
+				</div>
+                <!-- 快捷方式结束 -->
+        	</div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/home/homepage.js')"></script>
+</body>
+</html>

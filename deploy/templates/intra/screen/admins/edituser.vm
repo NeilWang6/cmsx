@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>编辑用户信息 - 管理中心</title>
+<link href="/static/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/system.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/dialog.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/table_form.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="/static/js/styleswitch.js"></script>
+<script language="javascript" type="text/javascript" src="/static/js/dialog.js"></script>
+<script language="javascript" type="text/javascript" src="/static/js/hotkeys.js"></script>
+<script language="javascript" type="text/javascript" src="/static/js/jquery.sGallery.js"></script>
+</head>
+<body>
+<form method="post" id="info_post" method="post">
+<div class="bk8"></div> 
+<div class="pad_10">
+<div style='overflow-y:auto;overflow-x:hidden' class='scrolltable'>
+<table width="100%" cellspacing="0" class="table_form contentWrap">
+<tr>
+  <th width="80"> </th>
+  <td><strong> 编辑用户信息 </strong></td>
+</tr>
+<tr>
+   <th width="80"><font color="red">*</font>真实姓名</th>
+   <td><input type="text"  name="realname" id="realname" class="input-text" ></td>
+</tr> 
+<tr>
+   <th width="80"><font color="red">*</font>用户名</th>
+   <td><input type="text"  name="userid" id="userid" class="input-text" ></td>
+</tr> 
+<tr>
+   <th width="80"><font color="red">*</font>密码</th>
+   <td><input type="password"  name="password" id="用户名" class="input-text" ></td>
+</tr> 
+<tr>
+   <th width="80"><font color="red">*</font>重复密码</th>
+   <td><input type="password"  name="pwdconfirm" id="pwdconfirm" class="input-text" ></td>
+</tr> 
+<tr>
+   <th width="80"><font color="red">*</font>状态</th>
+   <td><select class="input-text" id="status" name="status">
+		<option value="1">启用</option>
+		<option value="0">禁用</option>
+   </select></td>
+</tr>
+</table>
+</div>
+<div class="bk10" ></div>
+<div class="btn">
+<input class="button" type="submit" value="提交表单">
+</div> 
+</div>
+</form>
+</body>
+</html>

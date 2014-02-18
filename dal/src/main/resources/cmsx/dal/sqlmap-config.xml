@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+	<settings useStatementNamespaces="true"/>
+	 
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAdmin.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAdminRole.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthRes.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthRole.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthRoleRes.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCase.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCaseCatalog.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCaseCatalogProp.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCasePropval.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxContent.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxMetaProp.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxMetaPropenum.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthMenu.xml"/>
+</sqlMapConfig>

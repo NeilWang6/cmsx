@@ -1,0 +1,9 @@
+ServerHost "${cmsx_hummock_serveraddr}"
+AreaName cmsx
+LocalUDPPort 12806
+User ${cmsx_unix_user}
+Group ${cmsx_unix_user}
+LogLevel ERROR
+LogFile "| /usr/alibaba/cronolog/sbin/cronolog ${cmsx_output}/logs/hummock/%w/hummockclient_pipe.log"
+PidFile "${cmsx_output}/logs/hummock/hummockclient.pid"
+BlackHitFile "| /usr/alibaba/cronolog/sbin/cronolog ${cmsx_output}/logs/hummock/%w/black_pipe.hit"

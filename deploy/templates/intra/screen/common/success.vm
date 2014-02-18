@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>成功提示-管理中心</title> 
+<link href="/static/intra/css/reset.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body>
+	<div class="showMsg" style="text-align: center">
+		<h5>提示信息</h5>
+		<div class="content guery" style="display: inline-block; display: -moz-inline-stack; zoom: 1; *display: inline; max-width: 330px">系统提醒: 恭喜，操作成功！</div>
+		<div class="bottom">
+			<a href="javascript:closeDialog();">如果您的浏览器没有自动关闭窗口，请点击这里</a>
+  			<script language="javascript">
+				function closeDialog(){
+    				if(window.top.art){
+						var dialogId = window.top.art.dialogid;
+						if(dialogId){
+							window.top.art.dialog({id:dialogId}).close();
+						}else{
+							window.top.art.dialog({id:"mydialog"}).close();
+						}
+    					
+    				}
+				}
+				setTimeout(
+						"closeDialog();",
+						3000);
+			</script> 
+		</div>
+	</div>
+</body>
+</html>

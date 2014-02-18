@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+
+<sqlMap namespace="CmsxCase" >
+
+  <typeAlias alias="cmsxCaseDO" type="com.apachecms.cmsx.dal.dataobject.CmsxCaseDO" />
+  <typeAlias alias="cmsxCaseQuery" type="com.apachecms.cmsx.dal.query.CmsxCaseQuery" />
+
+  <resultMap id="cmsxCaseDOResultMap" class="cmsxCaseDO" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="projNum" column="PROJ_NUM" />
+    <result property="projName" column="PROJ_NAME" />
+    <result property="projBuildType" column="PROJ_BUILD_TYPE" />
+    <result property="firestCatalogId" column="FIREST_CATALOG_ID" />
+    <result property="secondCatalogId" column="SECOND_CATALOG_ID" />
+    <result property="isStage" column="IS_STAGE" />
+    <result property="stage" column="STAGE" />
+    <result property="projStatus" column="PROJ_STATUS" />
+    <result property="projPlace" column="PROJ_PLACE" />
+    <result property="way" column="WAY" />
+    <result property="totalInvest" column="TOTAL_INVEST" />
+    <result property="status" column="STATUS" />
+  </resultMap>
+
+  <resultMap id="cmsxCaseQueryResultMap" class="cmsxCaseQuery" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="projNum" column="PROJ_NUM" />
+    <result property="projName" column="PROJ_NAME" />
+    <result property="projBuildType" column="PROJ_BUILD_TYPE" />
+    <result property="firestCatalogId" column="FIREST_CATALOG_ID" />
+    <result property="secondCatalogId" column="SECOND_CATALOG_ID" />
+    <result property="isStage" column="IS_STAGE" />
+    <result property="stage" column="STAGE" />
+    <result property="projStatus" column="PROJ_STATUS" />
+    <result property="projPlace" column="PROJ_PLACE" />
+    <result property="way" column="WAY" />
+    <result property="totalInvest" column="TOTAL_INVEST" />
+    <result property="status" column="STATUS" />
+  </resultMap>
+
+  <sql id="cmsxCase_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.PROJ_NUM, 
+      a1.PROJ_NAME, a1.PROJ_BUILD_TYPE, a1.FIREST_CATALOG_ID, a1.SECOND_CATALOG_ID, a1.IS_STAGE, 
+      a1.STAGE, a1.PROJ_STATUS, a1.PROJ_PLACE, a1.WAY, a1.TOTAL_INVEST, a1.STATUS
+  </sql>
+
+  <sql id="cmsxCase_do_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.PROJ_NUM, 
+      a1.PROJ_NAME, a1.PROJ_BUILD_TYPE, a1.FIREST_CATALOG_ID, a1.SECOND_CATALOG_ID, a1.IS_STAGE, 
+      a1.STAGE, a1.PROJ_STATUS, a1.PROJ_PLACE, a1.WAY, a1.TOTAL_INVEST, a1.STATUS
+  </sql>
+
+  <sql id="cmsxCase_query_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.PROJ_NUM, 
+      a1.PROJ_NAME, a1.PROJ_BUILD_TYPE, a1.FIREST_CATALOG_ID, a1.SECOND_CATALOG_ID, a1.IS_STAGE, 
+      a1.STAGE, a1.PROJ_STATUS, a1.PROJ_PLACE, a1.WAY, a1.TOTAL_INVEST, a1.STATUS
+  </sql>
+
+  <sql id="cmsxCase_queryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projNum" prepend="AND" >
+        <![CDATA[  
+        PROJ_NUM = #projNum#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projName" prepend="AND" >
+        <![CDATA[  
+        PROJ_NAME = #projName#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projBuildType" prepend="AND" >
+        <![CDATA[  
+        PROJ_BUILD_TYPE = #projBuildType#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="firestCatalogId" prepend="AND" >
+        <![CDATA[  
+        FIREST_CATALOG_ID = #firestCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="secondCatalogId" prepend="AND" >
+        <![CDATA[  
+        SECOND_CATALOG_ID = #secondCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="isStage" prepend="AND" >
+        <![CDATA[  
+        IS_STAGE = #isStage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="stage" prepend="AND" >
+        <![CDATA[  
+        STAGE = #stage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projStatus" prepend="AND" >
+        <![CDATA[  
+        PROJ_STATUS = #projStatus#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projPlace" prepend="AND" >
+        <![CDATA[  
+        PROJ_PLACE = #projPlace#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="way" prepend="AND" >
+        <![CDATA[  
+        WAY = #way#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="totalInvest" prepend="AND" >
+        <![CDATA[  
+        TOTAL_INVEST = #totalInvest#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="AND" >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxCase_doQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projNum" prepend="AND" >
+        <![CDATA[  
+        PROJ_NUM = #projNum#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projName" prepend="AND" >
+        <![CDATA[  
+        PROJ_NAME = #projName#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projBuildType" prepend="AND" >
+        <![CDATA[  
+        PROJ_BUILD_TYPE = #projBuildType#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="firestCatalogId" prepend="AND" >
+        <![CDATA[  
+        FIREST_CATALOG_ID = #firestCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="secondCatalogId" prepend="AND" >
+        <![CDATA[  
+        SECOND_CATALOG_ID = #secondCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="isStage" prepend="AND" >
+        <![CDATA[  
+        IS_STAGE = #isStage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="stage" prepend="AND" >
+        <![CDATA[  
+        STAGE = #stage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projStatus" prepend="AND" >
+        <![CDATA[  
+        PROJ_STATUS = #projStatus#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projPlace" prepend="AND" >
+        <![CDATA[  
+        PROJ_PLACE = #projPlace#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="way" prepend="AND" >
+        <![CDATA[  
+        WAY = #way#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="totalInvest" prepend="AND" >
+        <![CDATA[  
+        TOTAL_INVEST = #totalInvest#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="AND" >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxCase_queryQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projNum" prepend="AND" >
+        <![CDATA[  
+        PROJ_NUM = #projNum#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projName" prepend="AND" >
+        <![CDATA[  
+        PROJ_NAME = #projName#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projBuildType" prepend="AND" >
+        <![CDATA[  
+        PROJ_BUILD_TYPE = #projBuildType#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="firestCatalogId" prepend="AND" >
+        <![CDATA[  
+        FIREST_CATALOG_ID = #firestCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="secondCatalogId" prepend="AND" >
+        <![CDATA[  
+        SECOND_CATALOG_ID = #secondCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="isStage" prepend="AND" >
+        <![CDATA[  
+        IS_STAGE = #isStage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="stage" prepend="AND" >
+        <![CDATA[  
+        STAGE = #stage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projStatus" prepend="AND" >
+        <![CDATA[  
+        PROJ_STATUS = #projStatus#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projPlace" prepend="AND" >
+        <![CDATA[  
+        PROJ_PLACE = #projPlace#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="way" prepend="AND" >
+        <![CDATA[  
+        WAY = #way#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="totalInvest" prepend="AND" >
+        <![CDATA[  
+        TOTAL_INVEST = #totalInvest#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="AND" >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <insert id="insert" parameterClass="cmsxCaseDO" >
+    <selectKey resultClass="java.lang.Long" keyProperty="id">
+			SELECT
+			SEQ_CMSX_CASE.NEXTVAL AS id FROM DUAL
+      </selectKey>
+    INSERT INTO CMSX_CASE( ID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, MODIFY_USER, PROJ_NUM, 
+      PROJ_NAME, PROJ_BUILD_TYPE, FIREST_CATALOG_ID, SECOND_CATALOG_ID, IS_STAGE, STAGE, 
+      PROJ_STATUS, PROJ_PLACE, WAY, TOTAL_INVEST, STATUS)
+     VALUES ( #id#, #gmtCreate#, #gmtModified#, #createUser#, #modifyUser#, #projNum#, 
+      #projName#, #projBuildType#, #firestCatalogId#, #secondCatalogId#, #isStage#, #stage#, 
+      #projStatus#, #projPlace#, #way#, #totalInvest#, #status#) 
+  </insert>
+
+  <update id="update" parameterClass="cmsxCaseDO" >
+    UPDATE CMSX_CASE   
+    <dynamic prepend="SET" >
+      <!--
+      <isNotNull property="id" prepend="," >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      -->
+      <isNotNull property="gmtCreate" prepend="," >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="," >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="," >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="," >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projNum" prepend="," >
+        <![CDATA[  
+        PROJ_NUM = #projNum#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projName" prepend="," >
+        <![CDATA[  
+        PROJ_NAME = #projName#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projBuildType" prepend="," >
+        <![CDATA[  
+        PROJ_BUILD_TYPE = #projBuildType#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="firestCatalogId" prepend="," >
+        <![CDATA[  
+        FIREST_CATALOG_ID = #firestCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="secondCatalogId" prepend="," >
+        <![CDATA[  
+        SECOND_CATALOG_ID = #secondCatalogId#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="isStage" prepend="," >
+        <![CDATA[  
+        IS_STAGE = #isStage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="stage" prepend="," >
+        <![CDATA[  
+        STAGE = #stage#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projStatus" prepend="," >
+        <![CDATA[  
+        PROJ_STATUS = #projStatus#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="projPlace" prepend="," >
+        <![CDATA[  
+        PROJ_PLACE = #projPlace#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="way" prepend="," >
+        <![CDATA[  
+        WAY = #way#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="totalInvest" prepend="," >
+        <![CDATA[  
+        TOTAL_INVEST = #totalInvest#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="," >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+     WHERE ID = #id#  
+  </update>
+
+  <select id="findByPrimaryKey" parameterClass="java.lang.Long" resultMap="cmsxCaseDOResultMap" >
+     SELECT 
+    <include refid="cmsxCase_do_columns" />
+    <![CDATA[  
+     FROM CMSX_CASE a1 WHERE ID = #id#
+    ]]>  
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterClass="java.lang.Long" >
+    <![CDATA[  
+     DELETE FROM CMSX_CASE WHERE ID = #id#
+    ]]>  
+  </delete>
+
+  <select id="countByDOExample" parameterClass="cmsxCaseDO" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_CASE 
+    <include refid="cmsxCase_doQueryParams" />
+  </select>
+
+  <select id="findListByDO" resultMap="cmsxCaseDOResultMap" parameterClass="cmsxCaseDO" >
+     SELECT 
+    <include refid="cmsxCase_do_columns" />
+     FROM CMSX_CASE a1 
+    <include refid="cmsxCase_doQueryParams" />
+  </select>
+
+  <select id="countByQueryExample" parameterClass="cmsxCaseQuery" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_CASE 
+    <include refid="cmsxCase_queryQueryParams" />
+  </select>
+
+  <select id="findListByQuery" resultMap="cmsxCaseQueryResultMap" parameterClass="cmsxCaseQuery" >
+     SELECT 
+    <include refid="cmsxCase_query_columns" />
+     FROM CMSX_CASE a1 
+    <include refid="cmsxCase_queryQueryParams" />
+  </select>
+</sqlMap>

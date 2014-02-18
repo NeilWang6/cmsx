@@ -1,0 +1,89 @@
+$rundata.setLayoutEnabled(false);
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>案例库管理系统</title>
+<style type="text/css">
+<!--
+body,td,th,form {margin:0;padding:0;font-family: "微软雅黑", "宋体", verdana, helvetica, sans-serif;}
+.admin_login {
+	height: 250px;
+	width: 430px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 2px solid #dfe8f0;
+	margin-top: 100px;
+	padding: 0px;
+}
+.admin_login .title {
+	display: block;
+	height: 30px;
+	background-color: #f2f9ff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+}
+.admin_login .title em {font-size: 12px;font-style: normal;padding-left: 5px;}
+.admin_login .form2 {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 40px;
+}
+.admin_login .form2 ul {list-style-type: none;margin: 0px;padding: 0px;}
+.admin_login .form2 li {height: 35px;margin: 0px;padding: 0px;display: block;line-height: 35px;}
+.admin_login .form2 .input_css {
+	height: 22px;
+	width: 260px;
+	border: 1px solid #D6D6D6;
+}
+
+.admin_login .error {
+	padding-left: 80px;
+	line-height: 40px;
+	height: 40px;
+	color: #C00;
+}
+-->
+</style>
+<script type="text/javascript">
+function link_to(address){
+	window.location.href=address;
+}
+function checklogin()
+{
+  if(document.login.username.value=='')
+     {alert('请输入帐户!');
+      document.login.username.focus();
+      return false
+    }
+  if (document.login.pass.value=='')
+   {alert('请输入密码!');
+    document.login.pass.focus();
+    return false
+   }
+}
+</script>
+</head>
+
+<body>
+
+<div class="admin_login">
+<div class="title">案例库管理系统<em>v1.0</em></div>
+<div class="form2">
+<form method="post" onSubmit="return checklogin();" name="login">
+<ul>
+
+<li>账户：<input name="username" type="text" class="input_css" size="30"></li>
+<li>密码：<input name="pass" type="password" class="input_css" size="30"></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="登陆" class="Admin_login_submit1">&nbsp;&nbsp;&nbsp;<input name="按钮" type="button" class="Admin_login_submit2" onclick='link_to("#")' value="返回首页"></li>
+
+</ul>
+</form>
+</div>
+<div class="error"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title> 管理中心</title>
+<script language="javascript" type="text/javascript">
+var rooturl='$siteDomainUrl';
+var admin_dir='intra/';
+</script>
+<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
+<link href="$intraStatic.getURI('css/admins/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/admins/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/admins/table_form.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/admins/dialog.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/calendar/jscal2.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/calendar/border-radius.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/calendar/win2k.css')" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="pad-10">
+<div class="content-menu ib-a blue line-x">
+<a href='?type=system&do=mconfigs&rel=1'  class="on"><em>站点信息</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=2' ><em>参数设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=3' ><em>附件设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=4' ><em>地图设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=5' ><em>论坛设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=6' ><em>WAP设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=7' ><em>邮件设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=8' ><em>短信设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=9' ><em>400电话设置</em></a>
+<span>|</span><a href='?type=system&do=mconfigs&rel=10' ><em>其他设置</em></a>
+</div>
+<form method="post" onsubmit="return true; checkForm(this);" enctype="multipart/form-data">
+<div class="table-list">
+<table width="100%">
+ <thead>
+ <tr>
+ <th width="150">参数名称</th>
+ <th width="500">设定值</th>
+ <th>备注</th>
+ </tr>
+ </thead>
+<tbody>
+<tr>
+<td align="right">主站首页标题</td>
+<td><input name="hostname" id="hostname" type="text" value="北京汽车网(carscms.com)-专业的汽车门户网站内容管理系统" size="40" class="input-text" /></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td align="right">网站副标题1</td>
+<td><input name="hostname1" id="hostname1" type="text" value="北京汽车网(carscms.com)" size="40" class="input-text" /></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td align="right">网站副标题2</td>
+<td><input name="hostname2" id="hostname2" type="text" value="北京汽车网" size="40" class="input-text" /></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td align="right">首页关键词</td>
+<td><textarea name="hostkeyword" id="hostkeyword" cols="70" rows="3">北京汽车网,北京汽车报价,北京汽车网站1,北京汽车经销商大全,北京车市行情</textarea></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td align="right">首页说明</td>
+<td><textarea name="hostdescription" id="hostdescription" cols="70" rows="3">CarsCMS1</textarea></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td align="right">ICP备案编号</td>
+<td><input name="hosticp" id="hosticp" type="text" value="京ICP0606542号1" size="40" class="input-text" /></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td align="right">网站版权信息</td>
+<td><textarea name="hostcopyright" id="hostcopyright" cols="70" rows="3">CopyRight @ 2008-2013 CarsCMS.COM,All Rights Reserved 版权所有 北京中汽商通科技有限公司1</textarea></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td align="right">站点域名</td>
+<td><input name="hosturl" id="hosturl" type="text" value="http://v6.carscms.com/" size="40" class="input-text" /></td>
+<td>例如：http://www.carscms.com/</td>
+</tr>
+
+<tr>
+<td align="right">默认地区</td>   
+<td>
+ 
+<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
+<select name="hostpreid" id="hostpreid" onchange="selectNew('hostcityid', this.value, 'http://v6.carscms.com/common/areacity.php');" >
+  <option value="0">请选择省份...</option>
+       <option value="1"  selected="selected">北京</option>
+    <option value="3" >上海</option>
+    <option value="4" >重庆</option>
+    <option value="2" >天津</option>
+    <option value="5" >河南</option>
+        </select>
+  
+  
+  <select name="hostcityid" id="hostcityid">
+  <option value="">请选择城市...</option>
+    <option value="8"  selected="selected">北京</option>
+    
+  </select>
+
+</td>
+<td></td>
+</tr> 
+     </tbody>
+     </table>
+    <div class="btn"><input type="submit" class="button" value=" 提交表单 "></div>
+</div>
+</form>
+</div>

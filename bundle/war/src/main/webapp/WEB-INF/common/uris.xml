@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:services="http://www.alibaba.com/schema/services" xmlns:uris="http://www.alibaba.com/schema/services/uris"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+                 http://www.alibaba.com/schema/services      http://localhost:8080/schema/services.xsd
+                 http://www.alibaba.com/schema/services/uris http://localhost:8080/schema/services-uris.xsd
+                 http://www.springframework.org/schema/beans http://localhost:8080/schema/www.springframework.org/schema/beans/spring-beans.xsd
+             ">
+
+	<services:uris>
+		<!-- ================================================================ -->
+		<!-- Server Level： 外部server。                                      -->
+		<!--                                                                  -->
+		<!-- 使用方法： link.getURI('path')                                   -->
+		<!-- ================================================================ -->
+		<uris:uri id="siteDomainUrl" exposed="true">
+			<serverURI>http://localhost:8080/</serverURI>
+		</uris:uri>
+		<uris:uri id="staticDomainUrl" exposed="true">
+			<serverURI>http://localhost:8080/static</serverURI>
+		</uris:uri>
+		<!-- ================================================================ -->
+		<!-- Server Level： java server。                                     -->
+		<!--                                                                  -->
+		<!-- 使用方法： 不能直接使用，只被其它URI继承。                       -->
+		<!-- ================================================================ -->
+		<uris:servlet-uri id="cmsxServer" requestAware="true">
+			<servletPath>/</servletPath>
+		</uris:servlet-uri> 
+		<uris:servlet-content-uri id="intraStatic" exposed="true" extends="staticDomainUrl">
+			<prefixPath>/intra</prefixPath>
+		</uris:servlet-content-uri>
+		<uris:servlet-content-uri id="siteStatic" exposed="true" extends="staticDomainUrl">
+			<prefixPath>/site</prefixPath>
+		</uris:servlet-content-uri>
+		<uris:servlet-content-uri id="sysStatic" exposed="true" extends="staticDomainUrl">
+			<prefixPath>/sys</prefixPath>
+		</uris:servlet-content-uri>
+		<!-- ================================================================ -->
+		<!-- Component Level： webx modules。                                 -->
+		<!--                                                                  -->
+		<!-- 使用方法： link.setTarget('target.jhtml')                        -->
+		<!--                  .addQueryData('name', 'value')                  -->
+		<!-- ================================================================ -->
+		<!-- common -->
+		<uris:turbine-uri id="commonModule" exposed="true" extends="cmsxServer">
+			<componentPath>/common</componentPath>
+		</uris:turbine-uri>
+		<uris:uri id="commonSuccessUrl" exposed="true" extends="commonModule">
+			<path>/success</path>
+		</uris:uri>
+		<!-- home -->
+		<uris:turbine-uri id="homeModule" exposed="true" extends="cmsxServer">
+			<componentPath>/</componentPath>
+		</uris:turbine-uri>
+		<uris:turbine-content-uri id="homeContent" exposed="true" extends="homeModule">
+			<componentPath>/home</componentPath>
+		</uris:turbine-content-uri>
+		<!-- user -->
+		<uris:turbine-uri id="userModule" exposed="true" extends="cmsxServer">
+			<componentPath>/user</componentPath>
+		</uris:turbine-uri>
+		<uris:turbine-content-uri id="userContent" exposed="true" extends="userModule" />
+		<!-- intra -->
+		<uris:turbine-uri id="intraModule" exposed="true" extends="cmsxServer">
+			<componentPath>/intra</componentPath>
+		</uris:turbine-uri>
+		<uris:turbine-content-uri id="intraContent" exposed="true" extends="intraModule" />
+		<!-- ================================================================ -->
+		<!-- Link Level： 继承前述各类links。                                 -->
+		<!--                                                                  -->
+		<!-- 使用方法： link                                                  -->
+		<!-- ================================================================ -->
+		<uris:turbine-uri id="cmsxHomeLink" exposed="true" extends="homeModule">
+			<target>homepage</target>
+		</uris:turbine-uri>
+		<uris:turbine-uri id="cmsxLoginLink" exposed="true" extends="userModule">
+			<target>login</target>
+		</uris:turbine-uri>
+		<uris:turbine-uri id="cmsxLogoutLink" exposed="true" extends="userModule">
+			<target>login</target>
+			<query key="action">loginAction</query>
+			<query key="eventSubmitDoLogout">yes</query>
+		</uris:turbine-uri>
+		<uris:turbine-uri id="cmsxRegisterLink" exposed="true" extends="userModule">
+			<target>register</target>
+		</uris:turbine-uri>
+		<uris:turbine-uri id="cmsxRegisterAccountLink" exposed="true" extends="userModule">
+			<target>registerAccount</target>
+		</uris:turbine-uri>
+		<uris:turbine-uri id="cmsxAccountLink" exposed="true" extends="userModule">
+			<target>account</target>
+		</uris:turbine-uri>
+		<uris:uri id="defaultExceptionLink" exposed="true" extends="cmsxServer">
+            <path>/wrongpage.html</path>
+        </uris:uri> 
+	</services:uris>
+
+</beans:beans>

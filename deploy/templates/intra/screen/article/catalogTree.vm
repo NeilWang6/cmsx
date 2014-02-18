@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script> 
+</head>
+<body>
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style>
+<div class="bk10"></div>
+<link rel="stylesheet" href="$intraStatic.getURI('css/jquery.treeview.css')" type="text/css" />
+<script type="text/javascript" src="$intraStatic.getURI('js/jquery.cookie.js')"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/jquery.treeview.js')"></script>
+ <style type="text/css">
+.filetree *{white-space:nowrap;}
+.filetree span.folder, .filetree span.file{display:auto;padding:1px 0 1px 16px;}
+ </style>
+ <div id="treecontrol">
+ <span style="display:none">
+		<a href="#"></a>
+		<a href="#"></a>
+		</span>
+		<a href="#"><img src="$intraStatic.getURI('images/admin_img/minus.gif')" /> <img src="$intraStatic.getURI('images/admin_img/application_side_expand.png')" /> 展开/收缩</a>
+</div>
+<ul id="category_tree" class="filetree ">
+	<li><span class='folder'>学车</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=106' target='right' onclick='open_list(this)'>学车知道</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=95' target='right' onclick='open_list(this)'>学车指南</a></span></li>
+		</ul></li>
+	<li><span class='folder'>团购</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=103' target='right' onclick='open_list(this)'>团购资讯</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=104' target='right' onclick='open_list(this)'>团购回顾</a></span></li>
+		</ul></li>
+	<li><span class='folder'>二手车</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=100' target='right' onclick='open_list(this)'>二手车选购常识</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=105' target='right' onclick='open_list(this)'>评估案例</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=99' target='right' onclick='open_list(this)'>二手车行情</a></span></li>
+		</ul></li>
+	<li><span class='folder'>资讯</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=51' target='right' onclick='open_list(this)'>行业动态</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=49' target='right' onclick='open_list(this)'>厂商动态</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=48' target='right' onclick='open_list(this)'>汽车召回</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=63' target='right' onclick='open_list(this)'>政策</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=73' target='right' onclick='open_list(this)'>热门话题</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=26' target='right' onclick='open_list(this)'>营销</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=25' target='right' onclick='open_list(this)'>研究</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=24' target='right' onclick='open_list(this)'>人物</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=23' target='right' onclick='open_list(this)'>交通</a></span></li>
+		</ul></li>
+	<li><span class='folder'>上市新车</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=37' target='right' onclick='open_list(this)'>新车月历</a></span></li>
+		</ul></li>
+	<li><span class='folder'>用车</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=101' target='right' onclick='open_list(this)'>自驾游</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=53' target='right' onclick='open_list(this)'>机油</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=52' target='right' onclick='open_list(this)'>轮胎</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=62' target='right' onclick='open_list(this)'>用车资讯</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=31' target='right' onclick='open_list(this)'>维修保养</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=35' target='right' onclick='open_list(this)'>汽车用品</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=34' target='right' onclick='open_list(this)'>汽车改装</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=33' target='right' onclick='open_list(this)'>汽车保险</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=32' target='right' onclick='open_list(this)'>驾驶技巧</a></span></li>
+		</ul></li>
+	<li><span class='folder'>买车</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=45' target='right' onclick='open_list(this)'>新车到店</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=85' target='right' onclick='open_list(this)'>商家信息</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=30' target='right' onclick='open_list(this)'>优惠促销</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=36' target='right' onclick='open_list(this)'>本地车市</a></span></li>
+		</ul></li>
+	<li><span class='folder'>租车</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=97' target='right' onclick='open_list(this)'>租车指南</a></span></li>
+		</ul></li>
+	<li><span class='folder'>看车</span>
+		<ul>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=107' target='right' onclick='open_list(this)'>购车手册</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=92' target='right' onclick='open_list(this)'>进口新车</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=91' target='right' onclick='open_list(this)'>图解</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=74' target='right' onclick='open_list(this)'>新能源</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=21' target='right' onclick='open_list(this)'>车市评论</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=41' target='right' onclick='open_list(this)'>新车谍照</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=40' target='right' onclick='open_list(this)'>国内新车</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=90' target='right' onclick='open_list(this)'>试驾评测</a></span></li>
+			<li><span class=''><a href='?type=content&cn=article&do=list&caid=89' target='right' onclick='open_list(this)'>导购</a></span></li>
+		</ul></li>
+</ul> 
+<script type="text/javascript" src="$intraStatic.getURI('js/article/articletree.js')"></script>
+</body>
+</html>

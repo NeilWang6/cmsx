@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title> 新增资源权限 － 管理中心</title>
+<script language="javascript" type="text/javascript">
+var rooturl='$siteDomainUrl';
+var admin_dir='intra/';
+</script>
+<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
+<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
+<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script> 
+<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
+<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
+<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
+<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" />
+</head>
+<body> 
+#set ($group = $form.resinfo.defaultInstance)
+<form method="post" id="info_post" name="info_post" action="$intraModule.setTarget("auth/res/addres.vm")"> 
+	$csrfToken.hiddenField
+	<input type="hidden" name="action" value="auth/res/res_action">
+<div class="pad-lr-10"> 
+	<div class="bk8"></div><div class="bk8"></div>
+	<div class="pad_10">
+		<div style='overflow-y:auto;overflow-x:hidden' class='scrolltable'>
+            <table width="100%" cellspacing="0" class="table_form contentWrap"> 
+                <tr>
+                  <th width="80">所属分类</th>
+                  <td>
+                    <select name="$group.parentId.key">
+                      <option value="0">顶级分类</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="80"> 权限名称	  </th>
+                  <td><input type="text" name="$group.resname.key" value="$!group.resname.value" class="input-text" size="50" /> 
+                  </td>
+                </tr>
+            	<tr>
+                  <th width="80">权限码</th>
+                  <td><input type="text" name="$group.rescode.key" class="input-text"  value="$!group.rescode.value" size="80"> </td>
+                </tr>
+            	<tr>
+                  <th width="80">链接地址</th>
+                  <td><input type="text" name="$group.resurl.key" class="input-text"  value="$!group.rescode.value" size="80"> </td>
+                </tr> 
+            	<tr>
+                  <th width="80">备注</th>
+                  <td><textarea name="$group.memo.key" class="input-text" cols="80" rows="5">$!group.memo.value</textarea></td>
+                </tr> 
+            </table>
+		</div>
+		<div class="bk10"></div>
+		<div class="btn">
+			<input class="button" type="submit" name="event_submit_do_save_res" value="提交表单">
+		</div> 
+	</div>
+</div></form>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+
+<sqlMap namespace="CmsxContent" >
+
+  <typeAlias alias="cmsxContentDO" type="com.apachecms.cmsx.dal.dataobject.CmsxContentDO" />
+  <typeAlias alias="cmsxContentQuery" type="com.apachecms.cmsx.dal.query.CmsxContentQuery" />
+
+  <resultMap id="cmsxContentDOResultMap" class="cmsxContentDO" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="content" column="CONTENT" />
+    <result property="status" column="STATUS" />
+  </resultMap>
+
+  <resultMap id="cmsxContentQueryResultMap" class="cmsxContentQuery" >
+    <result property="id" column="ID" />
+    <result property="gmtCreate" column="GMT_CREATE" />
+    <result property="gmtModified" column="GMT_MODIFIED" />
+    <result property="createUser" column="CREATE_USER" />
+    <result property="modifyUser" column="MODIFY_USER" />
+    <result property="content" column="CONTENT" />
+    <result property="status" column="STATUS" />
+  </resultMap>
+
+  <sql id="cmsxContent_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CONTENT, 
+      a1.STATUS
+  </sql>
+
+  <sql id="cmsxContent_do_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CONTENT, 
+      a1.STATUS
+  </sql>
+
+  <sql id="cmsxContent_query_columns" >
+    a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.CONTENT, 
+      a1.STATUS
+  </sql>
+
+  <sql id="cmsxContent_queryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="content" prepend="AND" >
+        <![CDATA[  
+        CONTENT = #content#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="AND" >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxContent_doQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="content" prepend="AND" >
+        <![CDATA[  
+        CONTENT = #content#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="AND" >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <sql id="cmsxContent_queryQueryParams" >
+    <dynamic prepend="WHERE" >
+      <isNotNull property="id" prepend="AND" >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtCreate" prepend="AND" >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="AND" >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="AND" >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="AND" >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="content" prepend="AND" >
+        <![CDATA[  
+        CONTENT = #content#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="AND" >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+  </sql>
+
+  <insert id="insert" parameterClass="cmsxContentDO" >
+    <selectKey resultClass="java.lang.Long" keyProperty="id">
+			SELECT
+			SEQ_CMSX_CONTENT.NEXTVAL AS id FROM DUAL
+      </selectKey>
+    INSERT INTO CMSX_CONTENT( ID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, MODIFY_USER, CONTENT, 
+      STATUS)
+     VALUES ( #id#, #gmtCreate#, #gmtModified#, #createUser#, #modifyUser#, #content#, 
+      #status#) 
+  </insert>
+
+  <update id="update" parameterClass="cmsxContentDO" >
+    UPDATE CMSX_CONTENT   
+    <dynamic prepend="SET" >
+      <!--
+      <isNotNull property="id" prepend="," >
+        <![CDATA[  
+        ID = #id#  
+        ]]>  
+      </isNotNull>
+      -->
+      <isNotNull property="gmtCreate" prepend="," >
+        <![CDATA[  
+        GMT_CREATE = #gmtCreate#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="gmtModified" prepend="," >
+        <![CDATA[  
+        GMT_MODIFIED = #gmtModified#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="createUser" prepend="," >
+        <![CDATA[  
+        CREATE_USER = #createUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="modifyUser" prepend="," >
+        <![CDATA[  
+        MODIFY_USER = #modifyUser#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="content" prepend="," >
+        <![CDATA[  
+        CONTENT = #content#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="status" prepend="," >
+        <![CDATA[  
+        STATUS = #status#  
+        ]]>  
+      </isNotNull>
+    </dynamic>
+     WHERE ID = #id#  
+  </update>
+
+  <select id="findByPrimaryKey" parameterClass="java.lang.Long" resultMap="cmsxContentDOResultMap" >
+     SELECT 
+    <include refid="cmsxContent_do_columns" />
+    <![CDATA[  
+     FROM CMSX_CONTENT a1 WHERE ID = #id#
+    ]]>  
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterClass="java.lang.Long" >
+    <![CDATA[  
+     DELETE FROM CMSX_CONTENT WHERE ID = #id#
+    ]]>  
+  </delete>
+
+  <select id="countByDOExample" parameterClass="cmsxContentDO" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_CONTENT 
+    <include refid="cmsxContent_doQueryParams" />
+  </select>
+
+  <select id="findListByDO" resultMap="cmsxContentDOResultMap" parameterClass="cmsxContentDO" >
+     SELECT 
+    <include refid="cmsxContent_do_columns" />
+     FROM CMSX_CONTENT a1 
+    <include refid="cmsxContent_doQueryParams" />
+  </select>
+
+  <select id="countByQueryExample" parameterClass="cmsxContentQuery" resultClass="java.lang.Integer" >
+    SELECT COUNT(ID) AS num FROM CMSX_CONTENT 
+    <include refid="cmsxContent_queryQueryParams" />
+  </select>
+
+  <select id="findListByQuery" resultMap="cmsxContentQueryResultMap" parameterClass="cmsxContentQuery" >
+     SELECT 
+    <include refid="cmsxContent_query_columns" />
+     FROM CMSX_CONTENT a1 
+    <include refid="cmsxContent_queryQueryParams" />
+  </select>
+</sqlMap>

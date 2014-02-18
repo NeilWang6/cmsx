@@ -1,0 +1,5 @@
+--pre=${cmsx_jettyserverhome}/conf/jetty-logging.xml
+OPTIONS=Server,jsp
+${cmsx_jettyserverhome}/conf/jetty.xml
+lib=${cmsx_jettyserverhome}/ext
+path=${cmsx_jettyserverhome}/ext
