@@ -10,15 +10,16 @@
 
   <properties>
     <jetty-version>8.1.13.v20130916</jetty-version>
-    <webx3-version>3.2.4</webx3-version>
-        <java.version>1.5</java.version>
-        <java.encoding>UTF-8</java.encoding>
+    <webx3-version>3.2.4</webx3-version>  
+				<java_source_version>1.6</java_source_version>
+				<java_target_version>1.6</java_target_version>
+				<file_encoding>UTF-8</file_encoding>
         
         <spring-version>3.2.4.RELEASE</spring-version>
         <springext-plugin-version>1.2</springext-plugin-version>
         <autoconfig-plugin-version>1.2</autoconfig-plugin-version>
         <jetty-version>8.1.13.v20130916</jetty-version>
-        <project.build.sourceEncoding>${java.encoding}</project.build.sourceEncoding>
+        <project.build.sourceEncoding>${file_encoding}</project.build.sourceEncoding>
         <productionMode>false</productionMode>
   </properties>
  
@@ -295,6 +296,42 @@
   </dependencyManagement>   
   <build>
     <plugins>
+    	<!-- Java Compiler -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java_source_version}</source>
+					<target>${java_target_version}</target>
+					<encoding>${file_encoding}</encoding>
+				</configuration>
+			</plugin>
+
+			<!-- Jar package resource -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<attach>true</attach>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<charset>${file_encoding}</charset>
+					<encoding>${file_encoding}</encoding>
+				</configuration>
+			</plugin>
       <plugin>
         <groupId>com.alibaba.org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
@@ -302,7 +339,7 @@
         <configuration>
           <addVersionToProjectName>true</addVersionToProjectName>
           <downloadSources>true</downloadSources>
-          <projectTextFileEncoding>UTF-8</projectTextFileEncoding>
+          <projectTextFileEncoding>${file_encoding}</projectTextFileEncoding>
         </configuration>
       </plugin>
     </plugins>
