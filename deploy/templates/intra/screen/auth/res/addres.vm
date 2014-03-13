@@ -1,29 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title> 新增资源权限 － 管理中心</title>
-<script language="javascript" type="text/javascript">
-var rooturl='$siteDomainUrl';
-var admin_dir='intra/';
-</script>
-<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
-<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
-<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
-<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script> 
-<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
-<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
-<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" />
-</head>
-<body> 
+#macro(showSelectTree $list,$defautval)
+	#foreach($parent in $list)
+		#set($subfirst=false)
+		#set($sublast=false) 
+		#if($foreach.count==0)
+			#set($subfirst=true)
+		#end
+		#if($foreach.count==$list.size())
+			#set($sublast=true)
+		#end
+		#showSubSelectTree($parent,$subfirst,$sublast,$defaultval) 
+	#end
+#end
+#macro(showSubSelectTree $parent, $isfirst,$islast,$defaultval) 
+	<option value="$parent.id" #if($defaultval==$parent.id) selected #end> 
+			#loopPrint($parent.lev," │  ") #if($islast)└─#else├─#end $parent.resname
+	</option>
+	#set($sublist = $parent.sublist)
+	#if($sublist)
+		#foreach($sub in $sublist) 
+			#set($subfirst=false)
+			#set($sublast=false) 
+			#if($foreach.count==0)
+				#set($subfirst=true)
+			#end
+			#if($foreach.count==$sublist.size())
+				#set($sublast=true)
+			#end
+			#showSubSelectTree($sub,$subfirst,$sublast,$defaultval) 
+		#end
+	#end
+#end
+#macro(loopPrint $count,$str)
+  #if($count && $count>0)
+	 #foreach($foo in [1..$count])$str#end
+  #end
+#end
+
 #set ($group = $form.resinfo.defaultInstance)
 <form method="post" id="info_post" name="info_post" action="$intraModule.setTarget("auth/res/addres.vm")"> 
 	$csrfToken.hiddenField
@@ -38,6 +50,7 @@ var admin_dir='intra/';
                   <td>
                     <select name="$group.parentId.key">
                       <option value="0">顶级分类</option>
+					  #showSelectTree($reslist,$group.parentId.value)
                     </select>
                   </td>
                 </tr>
@@ -65,6 +78,4 @@ var admin_dir='intra/';
 			<input class="button" type="submit" name="event_submit_do_save_res" value="提交表单">
 		</div> 
 	</div>
-</div></form>
-</body>
-</html>
+</div></form> 

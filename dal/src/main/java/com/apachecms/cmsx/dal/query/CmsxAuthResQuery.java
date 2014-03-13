@@ -5,11 +5,11 @@ import java.util.Date;
 
 /**
  * 数据对象
- * @since 2014-02-17
+ * @since 2014-03-14
  */
 public class CmsxAuthResQuery implements Serializable {
 
-    private static final long serialVersionUID = 139265238912102151L;
+    private static final long serialVersionUID = 139472720166597360L;
 
     /**
      * column CMSX_AUTH_RES.ID
@@ -66,11 +66,21 @@ public class CmsxAuthResQuery implements Serializable {
      */
     private Short isRegx;
 
+    /**
+     * column CMSX_AUTH_RES.ORDER_LIST
+     */
+    private Integer orderList;
+
+    /**
+     * column CMSX_AUTH_RES.LEV
+     */
+    private Integer lev;
+
     public CmsxAuthResQuery() {
         super();
     }
 
-    public CmsxAuthResQuery(Long id, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, String resname, String rescode, String resurl, String memo, Long parentId, Short isRegx) {
+    public CmsxAuthResQuery(Long id, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, String resname, String rescode, String resurl, String memo, Long parentId, Short isRegx, Integer orderList, Integer lev) {
         this.id = id;
         this.gmtCreate = gmtCreate;
         this.gmtModified = gmtModified;
@@ -82,6 +92,8 @@ public class CmsxAuthResQuery implements Serializable {
         this.memo = memo;
         this.parentId = parentId;
         this.isRegx = isRegx;
+        this.orderList = orderList;
+        this.lev = lev;
     }
 
     /**
@@ -247,6 +259,36 @@ public class CmsxAuthResQuery implements Serializable {
      */
     public void setIsRegx(Short isRegx) {
         this.isRegx = isRegx;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_RES.ORDER_LIST
+     */
+    public Integer getOrderList() {
+        return orderList;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_RES.ORDER_LIST
+     * @param orderList
+     */
+    public void setOrderList(Integer orderList) {
+        this.orderList = orderList;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_RES.LEV
+     */
+    public Integer getLev() {
+        return lev;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_RES.LEV
+     * @param lev
+     */
+    public void setLev(Integer lev) {
+        this.lev = lev;
     }
 
 }

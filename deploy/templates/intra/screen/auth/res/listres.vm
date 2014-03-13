@@ -1,36 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>权限资源列表-管理中心</title>
-<script language="javascript" type="text/javascript">
-var rooturl='$siteDomainUrl';
-var admin_dir='intra/';
-</script>
-<script language="javascript" src="$sysStatic.getURI('js/lib/sea.js')" type="text/javascript"></script>
-<script>
-seajs.config({
-  alias: {
-    "jquery": "jquery-1.10.2.js"
-  }
-});
-</script> 
-<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
-<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
- 
-
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script>
-<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
-<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
-<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" /> 
-</head>
-<body>
+$page.setTitle("权限资源列表-管理中心") 
+$page.setTitle("文章列表")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/dialog.css")
+$page.addScript("${staticDomainUrl}/intra/js/dialog.js") 
+$page.addScript("${staticDomainUrl}/intra/js/request.js")
+$page.addScript("${staticDomainUrl}/intra/js/drop_new.js") 
+$page.addStyleSheet("${staticDomainUrl}/intra/css/jquery.treeview.css")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.cookie.js")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.treeview.js")
+$page.addScript("${staticDomainUrl}/intra/js/cookie.js") 
 <div class="pad-lr-10">
 <div class="pad-10">
 <div class="content-menu ib-a blue line-x"> 
@@ -104,6 +81,4 @@ seajs.config({
 </div>
 </form> 
  </div>
- <script type="text/javascript" src="$intraStatic.getURI('js/auth/res/listres.js')"></script> 
-</body>
-</html>
+<script type="text/javascript" src="${staticDomainUrl}/intra/js/auth/res/listres.js"></script>  

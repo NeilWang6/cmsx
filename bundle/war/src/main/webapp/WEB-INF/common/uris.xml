@@ -18,7 +18,7 @@
 			<serverURI>http://localhost:8080/</serverURI>
 		</uris:uri>
 		<uris:uri id="staticDomainUrl" exposed="true">
-			<serverURI>http://localhost:8080/static</serverURI>
+			<serverURI>http://localhost:8080/static/</serverURI>
 		</uris:uri>
 		<!-- ================================================================ -->
 		<!-- Server Level： java server。                                     -->
@@ -27,16 +27,7 @@
 		<!-- ================================================================ -->
 		<uris:servlet-uri id="cmsxServer" requestAware="true">
 			<servletPath>/</servletPath>
-		</uris:servlet-uri> 
-		<uris:servlet-content-uri id="intraStatic" exposed="true" extends="staticDomainUrl">
-			<prefixPath>/intra</prefixPath>
-		</uris:servlet-content-uri>
-		<uris:servlet-content-uri id="siteStatic" exposed="true" extends="staticDomainUrl">
-			<prefixPath>/site</prefixPath>
-		</uris:servlet-content-uri>
-		<uris:servlet-content-uri id="sysStatic" exposed="true" extends="staticDomainUrl">
-			<prefixPath>/sys</prefixPath>
-		</uris:servlet-content-uri>
+		</uris:servlet-uri>
 		<!-- ================================================================ -->
 		<!-- Component Level： webx modules。                                 -->
 		<!--                                                                  -->

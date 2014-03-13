@@ -8,7 +8,7 @@ import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 
 /**
  * 数据访问对象实现类
- * @since 2014-02-17
+ * @since 2014-03-14
  */
 public class CmsxAuthResDAOImpl extends SqlMapClientDaoSupport implements CmsxAuthResDAO {
 

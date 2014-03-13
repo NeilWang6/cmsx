@@ -1,40 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>编辑内容-管理中心</title>
-<script language="javascript" type="text/javascript">
-var rooturl='$siteDomainUrl';
-var admin_dir='intra/';
-</script>
-<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
-<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
-<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
-<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script>
-<link rel="stylesheet" href="$intraStatic.getURI('js/kindeditor/themes/default/default.css')" />
-<script charset="utf-8" src="$intraStatic.getURI('js/kindeditor/kindeditor-all-min.js')"></script>
-<script charset="utf-8" src="$intraStatic.getURI('js/kindeditor/lang/zh_CN.js')">
-</script><script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
-<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
-<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/calendar/jscal2.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/calendar/border-radius.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/calendar/win2k.css')" rel="stylesheet" type="text/css" />
+$page.setTitle("编辑内容")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/dialog.css")
+$page.addScript("${staticDomainUrl}/intra/js/dialog.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/calendar.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/lang/en.js")
+$page.addScript("${staticDomainUrl}/intra/js/formvalidator.js")
+$page.addScript("${staticDomainUrl}/intra/js/formValidatorRegex.js")
+$page.addStyleSheet("${staticDomainUrl}/intra/js/kindeditor/themes/default/default.css")   
+$page.addScript("${staticDomainUrl}/intra/js/kindeditor/kindeditor-all-min.js")
+$page.addScript("${staticDomainUrl}/intra/js/kindeditor/lang/zh_CN.js")
+$page.addScript("${staticDomainUrl}/intra/js/request.js")
+$page.addScript("${staticDomainUrl}/intra/js/drop_new.js")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/jscal2.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/border-radius.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/win2k.css")
 <script type="text/javascript"> 
 <!--
 	var charset = 'gb2312'; 
 //-->
-</script> 
-</head>
-<body> 
+</script>  
 <form method="post"  enctype="multipart/form-data" id="info_post" name="info_post">
 <div class="addContent">
 <style type="text/css">
@@ -495,5 +478,3 @@ function refersh_window() {
       </div>
 </div>
 </form>
-</body> 
-</html>

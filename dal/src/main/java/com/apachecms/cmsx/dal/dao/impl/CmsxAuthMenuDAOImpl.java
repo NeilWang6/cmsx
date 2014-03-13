@@ -1,19 +1,16 @@
 package com.apachecms.cmsx.dal.dao.impl;
 
 import com.apachecms.cmsx.dal.dao.CmsxAuthMenuDAO;
-import com.apachecms.cmsx.dal.dao.ibatis.DaoRouter;
 import com.apachecms.cmsx.dal.dataobject.CmsxAuthMenuDO;
 import com.apachecms.cmsx.dal.query.CmsxAuthMenuQuery;
-
 import java.util.List;
-
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 
 /**
  * 数据访问对象实现类
- * @since 2014-02-16
+ * @since 2014-03-14
  */
-public class CmsxAuthMenuDAOImpl extends DaoRouter implements CmsxAuthMenuDAO {
+public class CmsxAuthMenuDAOImpl extends SqlMapClientDaoSupport implements CmsxAuthMenuDAO {
 
     /**
      * 插入数据

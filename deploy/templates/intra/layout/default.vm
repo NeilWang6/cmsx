@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+$page.addStyleSheet("${staticDomainUrl}/intra/css/reset.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/system.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/table_form.css")  
+$page.addStyleSheet("${staticDomainUrl}/intra/css/dialog.css")   
+$page.addScript("${staticDomainUrl}/intra/js/jquery.min.js")
+$page.addScript("${staticDomainUrl}/intra/js/admin_common.js")
+$page.addScript("${staticDomainUrl}/intra/js/styleswitch.js") 
+<script language="javascript" type="text/javascript">
+var rooturl='$siteDomainUrl';
+var admin_dir='intra/';
+</script>
+#showHead ("重大工程案例库平台")
+</head> 
+<body scroll="no" #bodyAttributes ()> 
+$screen_placeholder 
+</body>
+</html>

@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 数据访问对象接口
- * @since 2014-02-17
+ * @since 2014-03-14
  */
 public interface CmsxAuthResDAO {
 

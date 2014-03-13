@@ -1,46 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title> 管理中心</title>
-<script language="javascript" type="text/javascript">
-var rooturl='$siteDomainUrl';
-var admin_dir='intra/';
-</script>
-<script language="javascript" src="$intraStatic.getURI('js/jquery.js')" type="text/javascript"></script>
-<script language="javascript" src="$intraStatic.getURI('js/dialog.js')" type="text/javascript" ></script>
-<script language="javascript" src="$intraStatic.getURI('js/calendar/calendar.js')" type="text/javascript"></script>
-<script language="javascript" src="$intraStatic.getURI('js/calendar/lang/en.js')" type="text/javascript"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formvalidator.js')" type="text/javascript"  charset="UTF-8"></script>
-<script language="javascript" src="$intraStatic.getURI('js/formValidatorRegex.js')" type="text/javascript"  charset="UTF-8"></script> 
-<script type="text/javascript" src="$intraStatic.getURI('js/request.js')"></script>
-<script type="text/javascript" src="$intraStatic.getURI('js/drop_new.js')"></script> 
-<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/dialog.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/calendar/jscal2.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/calendar/border-radius.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/calendar/win2k.css')" rel="stylesheet" type="text/css" />
-</head>
-<body>
+$page.setTitle("文章列表")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/dialog.css")
+$page.addScript("${staticDomainUrl}/intra/js/dialog.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/calendar.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/lang/en.js")
+$page.addScript("${staticDomainUrl}/intra/js/formvalidator.js")
+$page.addScript("${staticDomainUrl}/intra/js/formValidatorRegex.js")  
+$page.addScript("${staticDomainUrl}/intra/js/request.js")
+$page.addScript("${staticDomainUrl}/intra/js/drop_new.js")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/jscal2.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/border-radius.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/win2k.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/jquery.treeview.css")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.cookie.js")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.treeview.js")
+$page.addScript("${staticDomainUrl}/intra/js/cookie.js")
 <style type="text/css">
 	html{_overflow-y:scroll}
-</style> 
-<link rel="stylesheet" href="$intraStatic.getURI('css/jquery.treeview.css')" type="text/css" />
-<script type="text/javascript" src="$intraStatic.getURI('js/jquery.cookie.js')"></script>
-<script type="text/javascript" src="$intraStatic.getURI('js/jquery.treeview.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/cookie.js')"></script>
- 
- 
-
-
-<style type="text/css">
-	html{_overflow-y:scroll}
-</style><div id="closeParentTime" style="display:none"></div>
+</style>
+<div id="closeParentTime" style="display:none"></div>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
 	if(window.top.$("#current_pos").data('clicknum')==1 || window.top.$("#current_pos").data('clicknum')==null) {
@@ -345,6 +322,4 @@ function Layer_HideOrShow(cur_div)
 </div>
 </form>
 </div> 
-<script type="text/javascript" src="$intraStatic.getURI('js/article/articlelist.js')"></script>
-</body>
-</html>
+<script type="text/javascript" src="${staticDomainUrl}/intra/js/article/articlelist.js"></script> 

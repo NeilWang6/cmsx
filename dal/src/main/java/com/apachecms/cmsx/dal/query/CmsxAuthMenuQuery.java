@@ -5,11 +5,11 @@ import java.util.Date;
 
 /**
  * 数据对象
- * @since 2014-02-16
+ * @since 2014-03-14
  */
 public class CmsxAuthMenuQuery implements Serializable {
 
-    private static final long serialVersionUID = 139253177494999749L;
+    private static final long serialVersionUID = 139472700170477302L;
 
     /**
      * column CMSX_AUTH_MENU.ID
@@ -25,11 +25,6 @@ public class CmsxAuthMenuQuery implements Serializable {
      * column CMSX_AUTH_MENU.MENU_NAME
      */
     private String menuName;
-
-    /**
-     * column CMSX_AUTH_MENU.VIEW_SORT
-     */
-    private Integer viewSort;
 
     /**
      * column CMSX_AUTH_MENU.RES_ID
@@ -61,21 +56,32 @@ public class CmsxAuthMenuQuery implements Serializable {
      */
     private Short status;
 
+    /**
+     * column CMSX_AUTH_MENU.LEV
+     */
+    private Integer lev;
+
+    /**
+     * column CMSX_AUTH_MENU.ORDER_LIST
+     */
+    private Integer orderList;
+
     public CmsxAuthMenuQuery() {
         super();
     }
 
-    public CmsxAuthMenuQuery(Long id, Long parentId, String menuName, Integer viewSort, Long resId, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, Short status) {
+    public CmsxAuthMenuQuery(Long id, Long parentId, String menuName, Long resId, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, Short status, Integer lev, Integer orderList) {
         this.id = id;
         this.parentId = parentId;
         this.menuName = menuName;
-        this.viewSort = viewSort;
         this.resId = resId;
         this.gmtCreate = gmtCreate;
         this.gmtModified = gmtModified;
         this.createUser = createUser;
         this.modifyUser = modifyUser;
         this.status = status;
+        this.lev = lev;
+        this.orderList = orderList;
     }
 
     /**
@@ -121,21 +127,6 @@ public class CmsxAuthMenuQuery implements Serializable {
      */
     public void setMenuName(String menuName) {
         this.menuName = menuName;
-    }
-
-    /**
-     * getter for Column CMSX_AUTH_MENU.VIEW_SORT
-     */
-    public Integer getViewSort() {
-        return viewSort;
-    }
-
-    /**
-     * setter for Column CMSX_AUTH_MENU.VIEW_SORT
-     * @param viewSort
-     */
-    public void setViewSort(Integer viewSort) {
-        this.viewSort = viewSort;
     }
 
     /**
@@ -226,6 +217,36 @@ public class CmsxAuthMenuQuery implements Serializable {
      */
     public void setStatus(Short status) {
         this.status = status;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_MENU.LEV
+     */
+    public Integer getLev() {
+        return lev;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_MENU.LEV
+     * @param lev
+     */
+    public void setLev(Integer lev) {
+        this.lev = lev;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_MENU.ORDER_LIST
+     */
+    public Integer getOrderList() {
+        return orderList;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_MENU.ORDER_LIST
+     * @param orderList
+     */
+    public void setOrderList(Integer orderList) {
+        this.orderList = orderList;
     }
 
 }

@@ -1,23 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-<meta http-equiv="X-UA-Compatible" content="IE=7" />
-<link href="$intraStatic.getURI('css/reset.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/system.css')" rel="stylesheet" type="text/css" />
-<link href="$intraStatic.getURI('css/table_form.css')" rel="stylesheet" type="text/css" />
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/jquery.min.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/admin_common.js')"></script>
-<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/styleswitch.js')"></script> 
-</head>
-<body>
+$page.addStyleSheet("${staticDomainUrl}/intra/css/jquery.treeview.css")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.cookie.js")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.treeview.js")
 <style type="text/css">
 	html{_overflow-y:scroll}
 </style>
 <div class="bk10"></div>
-<link rel="stylesheet" href="$intraStatic.getURI('css/jquery.treeview.css')" type="text/css" />
-<script type="text/javascript" src="$intraStatic.getURI('js/jquery.cookie.js')"></script>
-<script type="text/javascript" src="$intraStatic.getURI('js/jquery.treeview.js')"></script>
  <style type="text/css">
 .filetree *{white-space:nowrap;}
 .filetree span.folder, .filetree span.file{display:auto;padding:1px 0 1px 16px;}
@@ -27,7 +14,7 @@
 		<a href="#"></a>
 		<a href="#"></a>
 		</span>
-		<a href="#"><img src="$intraStatic.getURI('images/admin_img/minus.gif')" /> <img src="$intraStatic.getURI('images/admin_img/application_side_expand.png')" /> 展开/收缩</a>
+		<a href="#"><img src="${staticDomainUrl}/intra/images/admin_img/minus.gif" /> <img src="${staticDomainUrl}/intra/images/admin_img/application_side_expand.png" /> 展开/收缩</a>
 </div>
 <ul id="category_tree" class="filetree ">
 	<li><span class='folder'>学车</span>
@@ -98,6 +85,4 @@
 			<li><span class=''><a href='?type=content&cn=article&do=list&caid=89' target='right' onclick='open_list(this)'>导购</a></span></li>
 		</ul></li>
 </ul> 
-<script type="text/javascript" src="$intraStatic.getURI('js/article/articletree.js')"></script>
-</body>
-</html>
+<script type="text/javascript" src="${staticDomainUrl}/intra/js/article/articletree.js"></script> 

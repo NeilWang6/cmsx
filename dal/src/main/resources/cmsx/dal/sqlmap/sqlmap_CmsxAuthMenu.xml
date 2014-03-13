@@ -10,41 +10,43 @@
     <result property="id" column="ID" />
     <result property="parentId" column="PARENT_ID" />
     <result property="menuName" column="MENU_NAME" />
-    <result property="viewSort" column="MENU_SORT" />
     <result property="resId" column="RES_ID" />
     <result property="gmtCreate" column="GMT_CREATE" />
     <result property="gmtModified" column="GMT_MODIFIED" />
     <result property="createUser" column="CREATE_USER" />
     <result property="modifyUser" column="MODIFY_USER" />
     <result property="status" column="STATUS" />
+    <result property="lev" column="LEV" />
+    <result property="orderList" column="ORDER_LIST" />
   </resultMap>
 
   <resultMap id="cmsxAuthMenuQueryResultMap" class="cmsxAuthMenuQuery" >
     <result property="id" column="ID" />
     <result property="parentId" column="PARENT_ID" />
     <result property="menuName" column="MENU_NAME" />
-    <result property="viewSort" column="MENU_SORT" />
     <result property="resId" column="RES_ID" />
     <result property="gmtCreate" column="GMT_CREATE" />
     <result property="gmtModified" column="GMT_MODIFIED" />
     <result property="createUser" column="CREATE_USER" />
     <result property="modifyUser" column="MODIFY_USER" />
     <result property="status" column="STATUS" />
+    <result property="lev" column="LEV" />
+    <result property="orderList" column="ORDER_LIST" />
   </resultMap>
 
   <sql id="cmsxAuthMenu_columns" >
-    a1.ID, a1.PARENT_ID, a1.MENU_NAME, a1.MENU_SORT, a1.RES_ID, a1.GMT_CREATE, a1.GMT_MODIFIED, 
-      a1.CREATE_USER, a1.MODIFY_USER, a1.STATUS
+    a1.ID, a1.PARENT_ID, a1.MENU_NAME, a1.RES_ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, 
+      a1.MODIFY_USER, a1.STATUS, a1.LEV, a1.ORDER_LIST
   </sql>
 
   <sql id="cmsxAuthMenu_do_columns" >
-    a1.ID, a1.PARENT_ID, a1.MENU_NAME, a1.MENU_SORT, a1.RES_ID, a1.GMT_CREATE, a1.GMT_MODIFIED, 
-      a1.CREATE_USER, a1.MODIFY_USER, a1.STATUS
+    a1.ID, a1.PARENT_ID, a1.MENU_NAME, a1.RES_ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, 
+      a1.MODIFY_USER, a1.STATUS, a1.LEV, a1.ORDER_LIST
   </sql>
 
   <sql id="cmsxAuthMenu_query_columns" >
-    a1.ID, a1.PARENT_ID, a1.MENU_NAME, a1.MENU_SORT, a1.RES_ID, a1.GMT_CREATE, a1.GMT_MODIFIED, 
-      a1.CREATE_USER, a1.MODIFY_USER, a1.STATUS
+    a1.ID, a1.PARENT_ID, a1.MENU_NAME, a1.RES_ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, 
+      a1.MODIFY_USER, a1.STATUS, a1.LEV, a1.ORDER_LIST
   </sql>
 
   <sql id="cmsxAuthMenu_queryParams" >
@@ -62,11 +64,6 @@
       <isNotNull property="menuName" prepend="AND" >
         <![CDATA[  
         MENU_NAME = #menuName#  
-        ]]>  
-      </isNotNull>
-      <isNotNull property="viewSort" prepend="AND" >
-        <![CDATA[  
-        MENU_SORT = #viewSort#  
         ]]>  
       </isNotNull>
       <isNotNull property="resId" prepend="AND" >
@@ -97,6 +94,16 @@
       <isNotNull property="status" prepend="AND" >
         <![CDATA[  
         STATUS = #status#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="lev" prepend="AND" >
+        <![CDATA[  
+        LEV = #lev#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="orderList" prepend="AND" >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
         ]]>  
       </isNotNull>
     </dynamic>
@@ -119,11 +126,6 @@
         MENU_NAME = #menuName#  
         ]]>  
       </isNotNull>
-      <isNotNull property="viewSort" prepend="AND" >
-        <![CDATA[  
-        MENU_SORT = #viewSort#  
-        ]]>  
-      </isNotNull>
       <isNotNull property="resId" prepend="AND" >
         <![CDATA[  
         RES_ID = #resId#  
@@ -152,6 +154,16 @@
       <isNotNull property="status" prepend="AND" >
         <![CDATA[  
         STATUS = #status#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="lev" prepend="AND" >
+        <![CDATA[  
+        LEV = #lev#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="orderList" prepend="AND" >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
         ]]>  
       </isNotNull>
     </dynamic>
@@ -174,11 +186,6 @@
         MENU_NAME = #menuName#  
         ]]>  
       </isNotNull>
-      <isNotNull property="viewSort" prepend="AND" >
-        <![CDATA[  
-        MENU_SORT = #viewSort#  
-        ]]>  
-      </isNotNull>
       <isNotNull property="resId" prepend="AND" >
         <![CDATA[  
         RES_ID = #resId#  
@@ -209,18 +216,28 @@
         STATUS = #status#  
         ]]>  
       </isNotNull>
+      <isNotNull property="lev" prepend="AND" >
+        <![CDATA[  
+        LEV = #lev#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="orderList" prepend="AND" >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
+        ]]>  
+      </isNotNull>
     </dynamic>
   </sql>
 
   <insert id="insert" parameterClass="cmsxAuthMenuDO" >
-      <selectKey resultClass="java.lang.Long" keyProperty="id">
+     <selectKey resultClass="java.lang.Long" keyProperty="id">
 			SELECT
-			SEQ_CMSX_ADMIN.NEXTVAL AS id FROM DUAL
+			SEQ_CMSX_AUTH_MENU.NEXTVAL AS id FROM DUAL
       </selectKey>
-    INSERT INTO CMSX_AUTH_MENU( ID, PARENT_ID, MENU_NAME, MENU_SORT, RES_ID, GMT_CREATE, GMT_MODIFIED, 
-      CREATE_USER, MODIFY_USER, STATUS)
-     VALUES ( #id#, #parentId#, #menuName#, #viewSort#, #resId#, #gmtCreate#, #gmtModified#, 
-      #createUser#, #modifyUser#, #status#)
+    INSERT INTO CMSX_AUTH_MENU( ID, PARENT_ID, MENU_NAME, RES_ID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, 
+      MODIFY_USER, STATUS, LEV, ORDER_LIST)
+     VALUES ( #id#, #parentId#, #menuName#, #resId#, #gmtCreate#, #gmtModified#, #createUser#, 
+      #modifyUser#, #status#, #lev#, #orderList#)
   </insert>
 
   <update id="update" parameterClass="cmsxAuthMenuDO" >
@@ -241,11 +258,6 @@
       <isNotNull property="menuName" prepend="," >
         <![CDATA[  
         MENU_NAME = #menuName#  
-        ]]>  
-      </isNotNull>
-      <isNotNull property="viewSort" prepend="," >
-        <![CDATA[  
-        MENU_SORT = #viewSort#  
         ]]>  
       </isNotNull>
       <isNotNull property="resId" prepend="," >
@@ -278,6 +290,16 @@
         STATUS = #status#  
         ]]>  
       </isNotNull>
+      <isNotNull property="lev" prepend="," >
+        <![CDATA[  
+        LEV = #lev#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="orderList" prepend="," >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
+        ]]>  
+      </isNotNull>
     </dynamic>
      WHERE ID = #id#  
   </update>
@@ -306,6 +328,9 @@
     <include refid="cmsxAuthMenu_do_columns" />
      FROM CMSX_AUTH_MENU a1 
     <include refid="cmsxAuthMenu_doQueryParams" />
+    <![CDATA[  
+      order by LEV,ORDER_LIST,MENU_NAME
+    ]]>
   </select>
 
   <select id="countByQueryExample" parameterClass="cmsxAuthMenuQuery" resultClass="java.lang.Integer" >
@@ -318,5 +343,8 @@
     <include refid="cmsxAuthMenu_query_columns" />
      FROM CMSX_AUTH_MENU a1 
     <include refid="cmsxAuthMenu_queryQueryParams" />
+    <![CDATA[  
+      order by LEV,ORDER_LIST,MENU_NAME
+    ]]>
   </select>
 </sqlMap>

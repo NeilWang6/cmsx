@@ -11,6 +11,7 @@ import com.apachecms.cmsx.biz.intra.AuthResManager;
 import com.apachecms.cmsx.common.AuthToken;
 import com.apachecms.cmsx.dal.dao.CmsxAuthResDAO;
 import com.apachecms.cmsx.dal.dataobject.CmsxAuthResDO;
+import com.apachecms.cmsx.dal.query.CmsxAuthResQuery;
 
 public class AuthResManagerImpl implements AuthResManager {
 	
@@ -42,9 +43,9 @@ public class AuthResManagerImpl implements AuthResManager {
 	}
 
 	@Override
-	public List<CmsxAuthResDO> getAll(boolean cache) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<CmsxAuthResDO> getAll(boolean cache) { 
+		CmsxAuthResDO cmsxAuthResDO = new CmsxAuthResDO();
+		return cmsxAuthResDAO.findListByExample(cmsxAuthResDO);
 	}
 
 }

@@ -5,11 +5,11 @@ import java.util.Date;
 
 /**
  * 数据对象
- * @since 2014-02-17
+ * @since 2014-03-14
  */
-public class CmsxAuthResDO implements Serializable {
+public class CmsxAuthResDO extends AbstractTreeDO<CmsxAuthResDO> implements Serializable {
 
-    private static final long serialVersionUID = 139265238770402991L;
+    private static final long serialVersionUID = 139472720033272393L;
 
     /**
      * column CMSX_AUTH_RES.ID
@@ -66,11 +66,21 @@ public class CmsxAuthResDO implements Serializable {
      */
     private Short isRegx;
 
+    /**
+     * column CMSX_AUTH_RES.ORDER_LIST
+     */
+    private Integer orderList;
+
+    /**
+     * column CMSX_AUTH_RES.LEV
+     */
+    private Integer lev;
+
     public CmsxAuthResDO() {
         super();
     }
 
-    public CmsxAuthResDO(Long id, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, String resname, String rescode, String resurl, String memo, Long parentId, Short isRegx) {
+    public CmsxAuthResDO(Long id, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, String resname, String rescode, String resurl, String memo, Long parentId, Short isRegx, Integer orderList, Integer lev) {
         this.id = id;
         this.gmtCreate = gmtCreate;
         this.gmtModified = gmtModified;
@@ -82,6 +92,8 @@ public class CmsxAuthResDO implements Serializable {
         this.memo = memo;
         this.parentId = parentId;
         this.isRegx = isRegx;
+        this.orderList = orderList;
+        this.lev = lev;
     }
 
     /**
@@ -223,9 +235,6 @@ public class CmsxAuthResDO implements Serializable {
      * getter for Column CMSX_AUTH_RES.PARENT_ID
      */
     public Long getParentId() {
-    	if(parentId==null){
-    		parentId = Long.valueOf(0L);
-    	}
         return parentId;
     }
 
@@ -241,9 +250,6 @@ public class CmsxAuthResDO implements Serializable {
      * getter for Column CMSX_AUTH_RES.IS_REGX
      */
     public Short getIsRegx() {
-    	if(isRegx==null){
-    		isRegx = 0;
-    	}
         return isRegx;
     }
 
@@ -253,6 +259,36 @@ public class CmsxAuthResDO implements Serializable {
      */
     public void setIsRegx(Short isRegx) {
         this.isRegx = isRegx;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_RES.ORDER_LIST
+     */
+    public Integer getOrderList() {
+        return orderList;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_RES.ORDER_LIST
+     * @param orderList
+     */
+    public void setOrderList(Integer orderList) {
+        this.orderList = orderList;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_RES.LEV
+     */
+    public Integer getLev() {
+        return lev;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_RES.LEV
+     * @param lev
+     */
+    public void setLev(Integer lev) {
+        this.lev = lev;
     }
 
 }

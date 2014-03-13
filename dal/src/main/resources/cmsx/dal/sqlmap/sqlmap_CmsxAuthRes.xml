@@ -18,6 +18,8 @@
     <result property="memo" column="MEMO" />
     <result property="parentId" column="PARENT_ID" />
     <result property="isRegx" column="IS_REGX" />
+    <result property="orderList" column="ORDER_LIST" />
+    <result property="lev" column="LEV" />
   </resultMap>
 
   <resultMap id="cmsxAuthResQueryResultMap" class="cmsxAuthResQuery" >
@@ -32,21 +34,26 @@
     <result property="memo" column="MEMO" />
     <result property="parentId" column="PARENT_ID" />
     <result property="isRegx" column="IS_REGX" />
+    <result property="orderList" column="ORDER_LIST" />
+    <result property="lev" column="LEV" />
   </resultMap>
 
   <sql id="cmsxAuthRes_columns" >
     a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.RESNAME, 
-      a1.RESCODE, a1.RESURL, a1.MEMO, a1.PARENT_ID, a1.IS_REGX
+      a1.RESCODE, a1.RESURL, a1.MEMO, a1.PARENT_ID, a1.IS_REGX, a1.ORDER_LIST, a1.LEV
+      
   </sql>
 
   <sql id="cmsxAuthRes_do_columns" >
     a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.RESNAME, 
-      a1.RESCODE, a1.RESURL, a1.MEMO, a1.PARENT_ID, a1.IS_REGX
+      a1.RESCODE, a1.RESURL, a1.MEMO, a1.PARENT_ID, a1.IS_REGX, a1.ORDER_LIST, a1.LEV
+      
   </sql>
 
   <sql id="cmsxAuthRes_query_columns" >
     a1.ID, a1.GMT_CREATE, a1.GMT_MODIFIED, a1.CREATE_USER, a1.MODIFY_USER, a1.RESNAME, 
-      a1.RESCODE, a1.RESURL, a1.MEMO, a1.PARENT_ID, a1.IS_REGX
+      a1.RESCODE, a1.RESURL, a1.MEMO, a1.PARENT_ID, a1.IS_REGX, a1.ORDER_LIST, a1.LEV
+      
   </sql>
 
   <sql id="cmsxAuthRes_queryParams" >
@@ -104,6 +111,16 @@
       <isNotNull property="isRegx" prepend="AND" >
         <![CDATA[  
         IS_REGX = #isRegx#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="orderList" prepend="AND" >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="lev" prepend="AND" >
+        <![CDATA[  
+        LEV = #lev#  
         ]]>  
       </isNotNull>
     </dynamic>
@@ -166,6 +183,16 @@
         IS_REGX = #isRegx#  
         ]]>  
       </isNotNull>
+      <isNotNull property="orderList" prepend="AND" >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="lev" prepend="AND" >
+        <![CDATA[  
+        LEV = #lev#  
+        ]]>  
+      </isNotNull>
     </dynamic>
   </sql>
 
@@ -226,18 +253,28 @@
         IS_REGX = #isRegx#  
         ]]>  
       </isNotNull>
+      <isNotNull property="orderList" prepend="AND" >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="lev" prepend="AND" >
+        <![CDATA[  
+        LEV = #lev#  
+        ]]>  
+      </isNotNull>
     </dynamic>
   </sql>
 
   <insert id="insert" parameterClass="cmsxAuthResDO" >
-     <selectKey resultClass="java.lang.Long" keyProperty="id">
+    <selectKey resultClass="java.lang.Long" keyProperty="id">
 			SELECT
 			SEQ_CMSX_AUTH_RES.NEXTVAL AS id FROM DUAL
       </selectKey>
     INSERT INTO CMSX_AUTH_RES( ID, GMT_CREATE, GMT_MODIFIED, CREATE_USER, MODIFY_USER, RESNAME, 
-      RESCODE, RESURL, MEMO, PARENT_ID, IS_REGX)
+      RESCODE, RESURL, MEMO, PARENT_ID, IS_REGX, ORDER_LIST, LEV)
      VALUES ( #id#, #gmtCreate#, #gmtModified#, #createUser#, #modifyUser#, #resname#, 
-      #rescode#, #resurl#, #memo#, #parentId#, #isRegx#) 
+      #rescode#, #resurl#, #memo#, #parentId#, #isRegx#, #orderList#, #lev#) 
   </insert>
 
   <update id="update" parameterClass="cmsxAuthResDO" >
@@ -300,6 +337,16 @@
         IS_REGX = #isRegx#  
         ]]>  
       </isNotNull>
+      <isNotNull property="orderList" prepend="," >
+        <![CDATA[  
+        ORDER_LIST = #orderList#  
+        ]]>  
+      </isNotNull>
+      <isNotNull property="lev" prepend="," >
+        <![CDATA[  
+        LEV = #lev#  
+        ]]>  
+      </isNotNull>
     </dynamic>
      WHERE ID = #id#  
   </update>
@@ -328,6 +375,9 @@
     <include refid="cmsxAuthRes_do_columns" />
      FROM CMSX_AUTH_RES a1 
     <include refid="cmsxAuthRes_doQueryParams" />
+    <![CDATA[  
+      order by LEV,ORDER_LIST,RESNAME
+    ]]>
   </select>
 
   <select id="countByQueryExample" parameterClass="cmsxAuthResQuery" resultClass="java.lang.Integer" >
@@ -340,5 +390,8 @@
     <include refid="cmsxAuthRes_query_columns" />
      FROM CMSX_AUTH_RES a1 
     <include refid="cmsxAuthRes_queryQueryParams" />
+    <![CDATA[  
+      order by LEV,ORDER_LIST,RESNAME
+    ]]>
   </select>
 </sqlMap>

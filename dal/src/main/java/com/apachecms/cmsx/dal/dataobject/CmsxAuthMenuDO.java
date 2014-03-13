@@ -5,11 +5,11 @@ import java.util.Date;
 
 /**
  * 数据对象
- * @since 2014-02-16
+ * @since 2014-03-14
  */
-public class CmsxAuthMenuDO implements Serializable {
+public class CmsxAuthMenuDO extends AbstractTreeDO<CmsxAuthMenuDO> implements Serializable {
 
-    private static final long serialVersionUID = 139253177488460100L;
+    private static final long serialVersionUID = 139472700046742817L;
 
     /**
      * column CMSX_AUTH_MENU.ID
@@ -25,11 +25,6 @@ public class CmsxAuthMenuDO implements Serializable {
      * column CMSX_AUTH_MENU.MENU_NAME
      */
     private String menuName;
-
-    /**
-     * column CMSX_AUTH_MENU.VIEW_SORT
-     */
-    private Integer viewSort;
 
     /**
      * column CMSX_AUTH_MENU.RES_ID
@@ -61,21 +56,32 @@ public class CmsxAuthMenuDO implements Serializable {
      */
     private Short status;
 
+    /**
+     * column CMSX_AUTH_MENU.LEV
+     */
+    private Integer lev;
+
+    /**
+     * column CMSX_AUTH_MENU.ORDER_LIST
+     */
+    private Integer orderList;
+
     public CmsxAuthMenuDO() {
         super();
     }
 
-    public CmsxAuthMenuDO(Long id, Long parentId, String menuName, Integer viewSort, Long resId, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, Short status) {
+    public CmsxAuthMenuDO(Long id, Long parentId, String menuName, Long resId, Date gmtCreate, Date gmtModified, String createUser, String modifyUser, Short status, Integer lev, Integer orderList) {
         this.id = id;
         this.parentId = parentId;
         this.menuName = menuName;
-        this.viewSort = viewSort;
         this.resId = resId;
         this.gmtCreate = gmtCreate;
         this.gmtModified = gmtModified;
         this.createUser = createUser;
         this.modifyUser = modifyUser;
         this.status = status;
+        this.lev = lev;
+        this.orderList = orderList;
     }
 
     /**
@@ -97,9 +103,6 @@ public class CmsxAuthMenuDO implements Serializable {
      * getter for Column CMSX_AUTH_MENU.PARENT_ID
      */
     public Long getParentId() {
-    	if(parentId==null){
-    		parentId = Long.valueOf(0L);
-    	}
         return parentId;
     }
 
@@ -124,21 +127,6 @@ public class CmsxAuthMenuDO implements Serializable {
      */
     public void setMenuName(String menuName) {
         this.menuName = menuName;
-    }
-
-    /**
-     * getter for Column CMSX_AUTH_MENU.VIEW_SORT
-     */
-    public Integer getViewSort() {
-        return viewSort;
-    }
-
-    /**
-     * setter for Column CMSX_AUTH_MENU.VIEW_SORT
-     * @param viewSort
-     */
-    public void setViewSort(Integer viewSort) {
-        this.viewSort = viewSort;
     }
 
     /**
@@ -220,9 +208,6 @@ public class CmsxAuthMenuDO implements Serializable {
      * getter for Column CMSX_AUTH_MENU.STATUS
      */
     public Short getStatus() {
-    	if(status==null){
-    		status = 0;
-    	}
         return status;
     }
 
@@ -232,6 +217,36 @@ public class CmsxAuthMenuDO implements Serializable {
      */
     public void setStatus(Short status) {
         this.status = status;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_MENU.LEV
+     */
+    public Integer getLev() {
+        return lev;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_MENU.LEV
+     * @param lev
+     */
+    public void setLev(Integer lev) {
+        this.lev = lev;
+    }
+
+    /**
+     * getter for Column CMSX_AUTH_MENU.ORDER_LIST
+     */
+    public Integer getOrderList() {
+        return orderList;
+    }
+
+    /**
+     * setter for Column CMSX_AUTH_MENU.ORDER_LIST
+     * @param orderList
+     */
+    public void setOrderList(Integer orderList) {
+        this.orderList = orderList;
     }
 
 }
