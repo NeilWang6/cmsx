@@ -1,0 +1,14 @@
+/* process */
+.dpl-process{height: 30px; color: #444;}
+.dpl-process .dpl-finish,
+.dpl-process .dpl-current,
+.dpl-process .dpl-wait{float: left; display: inline; width:188px; padding: 6px 14px; height: 18px; background-color: #e5e6e8; line-height: 1.5;}
+.dpl-process .dpl-current{border-top: solid 1px #6f8ec0; padding: 5px 14px 6px; background-color: #7f9fd1; color: #fff;}
+.dpl-process .dpl-finish{background-color: #cbdef6;}
+.dpl-process .dpl-c-w,
+.dpl-process .dpl-f-c,
+.dpl-process .dpl-w-w,
+.dpl-process .dpl-f-f{float: left; display: inline; width: 16px; height: 30px; overflow: hidden; background-position: 0 -290px;}
+.dpl-process .dpl-f-c{background-position: -20px -290px;}
+.dpl-process .dpl-w-w{background-position: -40px -290px;}
+.dpl-process .dpl-f-f{background-position: -60px -290px;}

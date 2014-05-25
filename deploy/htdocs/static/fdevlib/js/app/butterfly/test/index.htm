@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="gbk" />
+	<title>Butterfly Unittest</title>
+	<link rel="stylesheet" type="text/css" href="http://style.c.aliimg.com/fdevlib/css/gallery/jasmine/jasmine-1.3.1.css">
+</head>
+<body>
+<script src="http://style.c.aliimg.com/fdevlib/js/gallery/jasmine/jasmine-1.3.1.js"></script>
+<script src="http://style.c.aliimg.com/fdevlib/js/gallery/jasmine/jasmine-html-1.3.1.js"></script>
+
+<script src="http://style.c.aliimg.com/fdevlib/js/lofty/port/lofty.js"></script>
+
+<!-- PC 页面上引入 jQuery 基础库 -->
+<script src="http://style.c.aliimg.com/fdevlib/js/gallery/jquery/jquery-latest.js"></script>
+
+<!-- 移动页面上使用 appframework 基础库 替代 jQuery -->
+<!-- <script src=" http://style.c.aliimg.com/fdevlib/js/gallery/appframework/appframework.js"></script> -->
+
+<script>
+
+lofty.config({
+	amd: true,
+	resolve: function(id) {
+		if (/^butterfly\b/.test(id)) {
+			id = id.replace(/\./g, '/')
+				.replace(/([a-z])([A-Z])/g, function(s, m1, m2) {
+					return m1 + '-'	+ m2;
+			}).toLowerCase();
+			return 'http://style.c.aliimg.com/fdevlib/js/app/' + id + '.js';
+		}
+	}
+});
+
+
+define(['butterfly/test/Suite'], function(Suite) {
+	Suite.run();
+});
+
+</script>
+
+</body>
+</html>

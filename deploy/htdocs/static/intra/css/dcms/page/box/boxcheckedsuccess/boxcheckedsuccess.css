@@ -1,0 +1,33 @@
+
+.dcms-box-message{
+    position: absolute;
+    top:0;
+    width:100%;
+}
+
+.trigger-qrcode {
+    position:relative;
+    display:inline-block;
+}
+.trigger-qrcode .btn-gray {
+    font-size:12px;
+    font-weight:normal;
+}
+.trigger-qrcode .tui-tips-white {
+    display:none;
+    left:0;
+    top:29px;
+}
+.trigger-qrcode.show .tui-tips-white {
+    display:block;
+}
+.trigger-qrcode.show .tui-tips-white .close i {
+    top:-5px;
+}
+.trigger-qrcode .tui-tips-white .t-body {
+    line-height:0;
+}
+.trigger-qrcode .tui-tips-white footer {
+    font-size:12px;
+    font-weight:normal;
+}

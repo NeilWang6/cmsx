@@ -1,0 +1,65 @@
+/**
+ * Œ“µƒ ’≤ÿº–
+ * @author : arcthur.cheny
+ * @createTime : 2011-09-19
+ */
+
+.booth-management{
+     margin-left: 18px;
+     padding-top:12px;
+}
+.booth-management h3{
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+    height:38px;
+}
+.booth-management .info-bar {
+    height:32px;
+    line-height: 32px;
+    margin-top:24px;
+}
+.booth-management .info-bar .current-category {
+    display:inline-block;
+    width:120px;
+    padding-right:20px;
+}
+.booth-management .info-bar select {
+    border: 1px solid #BDC7D8;
+    font-size: 12px;
+    height: 24px;
+    margin: 4px 0;
+    padding: 3px;
+    width: 115px;
+}
+.booth-management .info-bar a {
+    padding-left:20px;
+}
+.booth-management tfoot td{
+    text-align: right;
+}
+.dcms-grid tbody td {
+    padding:10px 0 10px 8px;
+    line-height:1.2;
+    text-indent: 0;
+}
+.booth-management td {
+    /*word-break:keep-all;
+    white-space:normal;*/
+    word-wrap:break-word;
+    overflow:hidden;
+}
+.custom-page th,
+.unchecked-custom-page th { width:90px; }
+.custom-page .page-server,
+.unchecked-custom-page .page-server { width:214px; }
+.custom-page .page-id,
+.unchecked-custom-page .page-id { width:60px; }
+.custom-page .page-custom-made, .unchecked-custom-page .page-custom-made {width:146px; text-align:right; padding-right:4px;}
+
+
+.custom-template th,
+.unchecked-custom-template th { width:164px; }
+
+.cancel-btn { display:none; }

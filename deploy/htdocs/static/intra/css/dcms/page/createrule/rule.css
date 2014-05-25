@@ -1,0 +1,93 @@
+/**
+ * create by hongss for create/modify rule
+ */
+.terms-message .message .hide-tag { background:url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png") no-repeat; }
+
+.dcms-form {
+    padding-bottom:20px;
+    border-bottom:1px solid #bbb;
+}
+.dcms-content .related-pages,
+.dcms-content .operation-log{
+    margin-top: 16px;
+}
+.dcms-content .related-pages h3,
+.dcms-content .operation-log h3{
+    line-height: 26px;
+    /*font-size: 14px;*/
+    font-weight: 700;
+    color:#666;
+}
+.dcms-content .dcms-form input[type="text"]{
+    width: 240px;
+}
+.dcms-content .dcms-form input.date-picker {
+    width:110px;
+}
+.dcms-content .dcms-form textarea{
+    width: 365px;
+}
+.dcms-content .operating-area a{ padding:0 4px;}
+
+.related-pages .dcms-grid, .operation-log .dcms-grid {
+    border:1px solid #bbb;
+}
+.related-pages .dcms-grid th, .operation-log .dcms-grid th{
+    background-color:#bbb;
+    border:1px solid #bbb;
+}
+
+.related-pages .dcms-grid-operations { /*right:-144px;*/ width:104px;}
+.related-pages .td-chinese-name { width:210px;}
+.related-pages .td-related-page { width:388px;}
+.related-pages .td-catalog { width:162px;}
+.related-pages .td-catalog .catalog-name { float:left; width:162px; display:block; overflow:hidden;}
+.related-pages td { white-space:nowrap;}
+
+/*style for users group*/
+.dcms-user-group label { display:block; float:left;}
+.dcms-user-group .list-terms { float:left; padding:0 0 4px 4px; width:720px;}
+.dcms-user-group .list-terms li { /*clear:both;*/ margin-top:3px;}
+.dcms-user-group li.last-col { position:relative;}
+.dcms-user-group .dcms-choose-term { cursor:pointer;}
+.dcms-user-group .dcms-placeholder { color:#aaa;}
+.dcms-user-group .dcms-term-code { display:inline-block; padding-right:2px; width:12px; color:#333; font-weight:bolder;}
+.dcms-user-group .dcms-term-content { display:inline-block; padding:0 5px 0 8px; border:1px solid #728fc7; height:26px; line-height:24px;}
+.dcms-form .dcms-user-group .dcms-term { border:none; margin:0 3px 0 0; height:auto; width:auto; max-width:122px; background-color:#f1f1f1;}
+.dcms-form .dcms-user-group input.dcms-term { height:23px;}
+.dcms-user-group select.dcms-term { background-color:#f1f1f1;}
+.dcms-form .dcms-user-group input.dcms-term { width:93px;}
+.dcms-form div { /*clear:both;*/}
+
+/*style for dialog of choose the terms*/
+#dcms-choose-terms .content { padding-top:4px; height:420px; overflow-y:scroll;}
+.dcms-dialog .group-terms { float:left; width:180px;}
+.dcms-dialog .shorter-one { width:165px;}
+.dcms-dialog .last-one { width:165px;}
+.dcms-dialog .group-terms dt { background-color:#6d84b8; padding-left:8px; color:#fff; font-weight:bolder; height:30px; line-height:30px;}
+.dcms-dialog .group-terms dd { border-left:1px solid #99a5bf; border-bottom:1px solid #99a5bf; padding:4px 2px 0; height:806px;}
+.dcms-dialog .group-terms dd.half { height:113px;}
+.dcms-dialog .group-terms .list-terms li { padding-left:6px; border-bottom:1px solid #F4F4F4; height:25px; line-height:28px;}
+.dcms-dialog .last-one dd { border-right:1px solid #99a5bf;}
+
+/*style for terms message*/
+.terms-message { position:absolute; float:left; bottom:4px; left:252px; /*width:188px;*/ display:none;}
+.terms-message .message { padding:2px 8px 8px; border:1px solid #f1c945; background-color:#fff9cb; overflow:hidden;}
+.terms-message .show { display:none;}
+.hide-message .message { display:none;}
+.hide-message .show { display:block;}
+.terms-message .message .cell-header { height:22px; line-height:22px; overflow:hidden;}
+.terms-message .message .title { float:left; font-weight:bolder;}
+.terms-message .message .hide { float:right;}
+.terms-message .message .hide-tag { display:inline-block; margin-left:8px; height:10px; width:10px; line-height:36px; background-position:0 -50px; overflow:hidden;}
+.terms-message .message .logic { padding-left:8px; font-weight:bolder;}
+
+/*style for choose rules dialog*/
+.dcms-dialog .dcms-grid .td-radio { width:22px;}
+.dcms-dialog .dcms-grid .td-chinese-name { width:224px;}
+.dcms-dialog .dcms-grid .td-quote-name { width:220px;}
+.dcms-dialog .dcms-grid .td-directory { width:184px; overflow:hidden;}
+.dcms-dialog .dcms-grid td { white-space:nowrap; overflow:hidden;}
+.dcms-dialog tfoot td { padding:0 12px 6px 12px;}
+
+

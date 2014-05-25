@@ -1,0 +1,731 @@
+#sys-ibank {
+    width: 800px;
+    overflow: hidden;
+    border: solid 8px #999;
+    border-color: rgba(0, 0, 0, 0.4);
+    background-color: #FFF;
+}
+
+#sys-ibank .ib-wrap {
+    height: 312px;
+}
+
+#sys-ibank .ib-multiple {
+    height: 478px !important;
+}
+
+#sys-ibank div.insert, #sys-ibank .action {
+    display: none;
+}
+
+#sys-ibank .ib-multiple div.insert, #sys-ibank .ib-multiple .action {
+    display: block;
+}
+
+#sys-ibank a {
+    color: #06C;
+    text-decoration: none;
+}
+
+#sys-ibank a:hover {
+    color: #FF7300;
+    text-decoration: underline;
+}
+
+#sys-ibank select {
+    padding: 2px;
+    border: 1px solid #7F9DB9;
+}
+
+#sys-ibank .overlay {
+    position: absolute;
+    z-index: 4;
+    left: 8px;
+    top: 8px;
+    width: 800px;
+    height: 312px;
+    background-color: #FFF;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity = 50);
+}
+
+#sys-ibank .ib-multiple .overlay {
+    height: 478px;
+}
+
+#sys-ibank .ib-header {
+    padding: 0 12px;
+    height: 34px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/bg6.gif) left bottom repeat-x;
+}
+
+#sys-ibank h3, #sys-ibank h5 {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+#sys-ibank .close {
+    display: block;
+    float: right;
+    margin-top: 10px;
+    width: 13px;
+    height: 13px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/close5.gif) no-repeat;
+    overflow: hidden;
+}
+
+#sys-ibank .ib-content {
+    padding: 8px;
+}
+
+#sys-ibank .tabs {
+    height: 270px;
+}
+
+#sys-ibank .tabs-nav {
+    height: 50px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/bg7.gif) left bottom repeat-x;
+}
+
+#sys-ibank .tabs-nav .tips {
+    float: left;
+    margin-top: 8px;
+    padding: 0 8px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/arrow4.gif) left center no-repeat;
+}
+
+#sys-ibank .tabs-nav li {
+    float: left;
+    margin-right: 4px;
+    width: 79px;
+    height: 50px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/tabs1.png) 0 0 no-repeat;
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+#sys-ibank .tabs-nav li.current {
+    background-position: 0 -50px;
+    color: #000;
+    cursor: default;
+}
+
+#sys-ibank .tabs-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 8px;
+    height: 220px;
+}
+
+#sys-ibank .loading {
+    width: 100%;
+    height: 100%;
+    background: url(http://img.china.alibaba.com/images/cn/home/loading.gif) center center no-repeat;
+}
+
+/*图片管家*/
+#sys-ibank .album-filter {
+    padding: 4px 8px;
+    height: 22px;
+}
+
+#sys-ibank .album-filter div {
+    float: left;
+}
+
+#sys-ibank select {
+    width: 150px;
+}
+
+#sys-ibank .album-filter .tips {
+    padding-left: 8px;
+    height: 22px;
+    line-height: 22px;
+    color: #666;
+}
+
+#sys-ibank .album-list {
+    padding-left: 8px;
+    width: 760px;
+    height: 152px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#sys-ibank .album-list li {
+    position: relative;
+    float: left;
+    margin: 0 8px 8px 0;
+    width: 66px;
+    height: 66px;
+    border: solid 1px #FFF;
+}
+
+#sys-ibank .album-list li div {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/selected1.gif) no-repeat;
+}
+
+#sys-ibank .album-list li.selected div {
+    visibility: visible;
+}
+
+#sys-ibank .album-list ul a, #sys-ibank .insert-pool div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+	overflow: hidden;
+    *display:block;
+    * font-family: 'Arial';
+    * font-size: 56px;
+}
+
+#sys-ibank .album-list ul a, #sys-ibank .album-list ul a:active {
+    border: solid 1px #E6E5E3;
+}
+
+#sys-ibank .album-list ul a:hover {
+    border: solid 1px #FF7300;
+}
+
+#sys-ibank .album-list .selected {
+    width: 64px;
+    height: 64px;
+    border: solid 2px #FF7300;
+}
+
+#sys-ibank .album-list .selected a, #sys-ibank .album-list .selected a:hover {
+    border: 0 none;
+}
+
+#sys-ibank .album-list .disabled a:hover {
+    border: solid 1px #E6E5E3 !important;
+}
+
+#sys-ibank .album-list img, #sys-ibank .insert-pool img {
+    vertical-align: middle;
+}
+
+#sys-ibank .empty {
+    display: none;
+    margin: 64px auto;
+    padding: 2px 0 2px 18px;
+    height: 16px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v03/gif/34.gif) left center no-repeat;
+    line-height: 16px;
+    color: #666;
+}
+
+#sys-ibank .album-list .empty {
+    display: block;
+}
+
+#sys-ibank .empty a {
+    margin-left: 4px;
+}
+
+#sys-ibank .album-paging {
+    padding: 8px;
+}
+
+#sys-ibank .album-paging ul {
+    float: right;
+}
+
+#sys-ibank .album-paging li {
+    float: left;
+    padding: 0 2px;
+    color: #666;
+    font-family: '\5FAE\8F6F\96C5\9ED1', 'Tahoma';
+    line-height: 20px;
+}
+
+#sys-ibank .album-paging a {
+    display: block;
+    float: left;
+    margin-right: 3px;
+    padding: 0 4px;
+    min-width: 12px;
+    _width: 12px;
+    height: 20px;
+    border: solid 1px #CCC;
+    color: #06C;
+    text-decoration: none !important;
+    text-align: center;
+    word-break: keep-all;
+}
+
+#sys-ibank .album-paging a:hover {
+    border-color: #FF7300;
+    color: #FF7300;
+}
+
+#sys-ibank .album-paging a.omit, #sys-ibank .album-paging a.indic {
+    padding: 1px 4px;
+    border: 0 none;
+    color: #666 !important;
+}
+
+#sys-ibank .album-paging .current {
+    border-color: #FFF !important;
+    font-weight: bold;
+    color: #FF7300 !important;
+}
+
+#sys-ibank .album-paging a.pre, #sys-ibank .album-paging a.pre-disabled, #sys-ibank .album-paging a.next, #sys-ibank .album-paging a.next-disabled {
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/arrow5.gif) no-repeat;
+}
+
+#sys-ibank .album-paging a.pre {
+    width: 10px;
+    background-position: 6px 5px;
+}
+
+#sys-ibank .album-paging a.pre:hover {
+    border-color: #FF7300;
+    background-position: 6px -15px;
+}
+
+#sys-ibank .album-paging a.pre-disabled {
+    width: 10px;
+    border-color: #CCC !important;
+    background-position: 6px -35px;
+    color: #CCC;
+}
+
+#sys-ibank .album-paging a.next {
+    padding-right: 16px;
+    background-position: 45px -55px;
+}
+
+#sys-ibank .album-paging a.next:hover {
+    border-color: #FF7300;
+    background-position: 45px -75px;
+}
+
+#sys-ibank .album-paging a.next-disabled {
+    padding-right: 16px;
+    border-color: #CCC !important;
+    background-position: 45px -95px;
+    color: #CCC !important;
+}
+
+#sys-ibank .album-paging span {
+    padding: 0 4px;
+}
+
+#sys-ibank .album-paging em {
+    padding: 0 2px;
+}
+
+#sys-ibank .insert-header {
+    padding: 0 8px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/bg4.gif) repeat-x;
+    height: 29px;
+    line-height: 29px;
+    border: solid 1px #ECECEC;
+}
+
+/*我的电脑*/
+#sys-ibank .upload .info {
+    color: #666;
+}
+
+#sys-ibank .upload-form {
+    padding: 24px 150px 5px 160px;
+}
+
+#sys-ibank dl {
+    padding: 4px 0;
+    line-height: 22px;
+    zoom: 1;
+}
+
+#sys-ibank dl:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: "\0020";
+}
+
+#sys-ibank .upload dt {
+    float: left;
+    width: 80px;
+    height: 22px;
+    text-align: right;
+}
+
+#sys-ibank .upload dd {
+    float: left;
+}
+
+#sys-ibank .upload-form label {
+    margin: 0 8px 0 2px;
+}
+
+#sys-ibank .indicator {
+    position: absolute;
+    z-index: 6;
+    width: 360px;
+    border: solid 1px #999;
+    background-color: #FFF;
+}
+
+#sys-ibank .indicator table {
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+#sys-ibank .indicator .name {
+    padding: 0 4px;
+    width: 100px;
+    overflow: hidden;
+}
+
+#sys-ibank .ui-progressbar {
+    width: 160px;
+    border: solid 1px #999;
+}
+
+#sys-ibank .ui-progressbar-value {
+    height: 16px;
+    background-color: #6CB1CC;
+}
+
+#sys-ibank .indicator .status {
+    padding: 0 4px;
+    width: 64px;
+}
+
+#sys-ibank .upload .indicator {
+    display: none !important;
+}
+
+#sys-ibank .album-create {
+    margin-left: 8px;
+}
+
+#sys-ibank .create {
+    position: absolute;
+    z-index: 3;
+    top: 16px;
+    left: 204px;
+    width: 360px;
+    border: solid 8px #999;
+    border-color: rgba(0, 0, 0, 0.4);
+    background-color: #FFF;
+}
+
+#sys-ibank h5 {
+    color: #2B6FB6;
+}
+
+#sys-ibank .create .button em {
+    padding: 0 16px 0 24px;
+    letter-spacing: 8px;
+}
+
+#sys-ibank .create .error dd {
+    padding-left: 18px;
+    color: #F00;
+    background: url(http://img.china.alibaba.com/images/common/icon_v03/gif/14.gif) left center no-repeat;
+}
+
+#sys-ibank .authority input {
+    margin-left: 6px;
+    vertical-align: -2px;
+}
+
+#album-watermark, #sys-ibank .authority img {
+    vertical-align: -2px;
+}
+
+#sys-ibank .create-field {
+    padding: 2px;
+    width: 200px;
+    height: 16px;
+    border: solid 1px #7F9DB9;
+    line-height: 16px;
+}
+
+#sys-ibank .upload .tips {
+    padding: 0 16px 16px 16px;
+}
+
+#sys-ibank .upload .tips p {
+    padding: 8px;
+}
+
+#sys-ibank .upload p.d {
+    color: #666;
+}
+
+#sys-ibank .upload p.n {
+    display: none;
+    padding-left: 26px;
+    border: solid 1px #F00;
+    background: #FFF5DF url(http://img.china.alibaba.com/images/common/icon_v03/gif/14.gif) 8px 9px no-repeat;
+    color: #F00;
+}
+
+#sys-ibank .upload p.y {
+    display: none;
+    padding-left: 26px;
+    border: solid 1px #C1E3FE;
+    background: #F6FBFF url(http://img.china.alibaba.com/images/common/icon_v03/gif/44.gif) 8px center no-repeat;
+    color: #3C7DBF;
+}
+
+#sys-ibank .upload .error p.d, #sys-ibank .upload .success p.d {
+    display: none;
+}
+
+#sys-ibank .upload .error p.n, #sys-ibank .upload .success p.y {
+    display: block;
+    zoom:1;
+}
+
+#sys-ibank .ui-flash input {
+    height: 32px;
+    font-size: 50px;
+}
+
+#sys-ibank .ui-flash a.ui-state-hover {
+    background-position: 0 -32px;
+}
+
+#sys-ibank .ui-flash a.ui-state-active {
+    background-position: 0 -64px;
+}
+
+#sys-ibank .ui-flash-disabled a {
+    background-position: 0 -96px !important;
+}
+
+/*网上图片*/
+#sys-ibank .online-adder {
+    padding: 50px 0 24px 80px;
+}
+
+#sys-ibank .online dl {
+    line-height: 32px;
+}
+
+#sys-ibank .online dt {
+    float: left;
+    padding-right: 8px;
+    width: 120px;
+    height: 32px;
+    text-align: right;
+    color: #666;
+}
+
+#sys-ibank .online dd {
+    float: left;
+    padding-right: 8px;
+    height: 80px;
+}
+
+#sys-ibank .online dd div {
+    display: none;
+    margin: 8px 0;
+    padding-left: 18px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v03/gif/24.gif) left center no-repeat;
+    color: #F00;
+}
+
+#sys-ibank .online dd.error div {
+    display: block;
+}
+
+#sys-ibank .online input {
+    padding: 2px;
+    width: 240px;
+    height: 26px;
+    border: solid 1px #7F9DB9;
+    line-height: 26px;
+}
+
+#sys-ibank .online .button em {
+    padding: 0 20px 0 24px;
+    letter-spacing: 4px;
+}
+
+#sys-ibank .online .tips {
+    padding: 0 0 32px 128px;
+}
+
+#sys-ibank .online .tips p {
+    color: #999;
+}
+
+/*插入图片*/
+#sys-ibank h4 {
+    float: left;
+}
+
+#sys-ibank .insert-header .tips {
+    float: left;
+    margin-left: 1em;
+    padding-left: 16px;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/move1.gif) left center no-repeat;
+    color: #666;
+}
+
+#sys-ibank .insert-content {
+    position: relative;
+    border: solid 1px #ECECEC;
+    border-top: 0 none;
+}
+
+#sys-ibank .insert-content li {
+    float: left;
+    margin-right: 10px;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+#sys-ibank .insert-bg {
+    padding: 8px 0 8px 12px;
+}
+
+#sys-ibank .insert-bg li {
+    border: dotted 1px #D9D9D9;
+    background-color: #F7F7F7;
+    font-size: 18px;
+    font-family: 'Arial';
+    font-style: italic;
+    color: #E1E1E1;
+    line-height: 64px;
+    text-align: center;
+}
+
+#sys-ibank .insert-pool {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px 0 8px 12px;
+}
+
+#sys-ibank .insert-pool li {
+    position: relative;
+    border: solid 1px #E6E5E3;
+    background-color: #FFF;
+    cursor: move;
+}
+
+#sys-ibank .insert-pool a {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/close6.gif) no-repeat;
+}
+
+#sys-ibank .insert-pool a:hover {
+    background-position: 0 -16px;
+}
+
+#sys-ibank .ui-portlets-helper a {
+    visibility: hidden;
+}
+
+#sys-ibank .button {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none !important;
+}
+
+#sys-ibank .button span {
+    display: block;
+    float: left;
+    height: 100%;
+    background: url(http://img.china.alibaba.com/images/common/icon_v02/btn4.png) no-repeat;
+    cursor: pointer;
+}
+
+#sys-ibank .button .btn-l {
+    padding-left: 2px;
+    background-position: left top;
+}
+
+#sys-ibank .button .btn-r {
+    width: 2px;
+    background-position: right top;
+}
+
+#sys-ibank .button em {
+    padding: 0 12px 0 16px;
+    font: bold 14px / 32px "\5B8B\4F53";
+    color: #7B1111;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+
+#sys-ibank .button:hover .btn-l {
+    background-position: left -32px;
+}
+
+#sys-ibank .button:hover .btn-r {
+    background-position: right -32px;
+}
+
+#sys-ibank .button:hover em {
+    color: #7B1111;
+}
+
+#sys-ibank .button:active .btn-l {
+    background-position: left top;
+}
+
+#sys-ibank .button:active .btn-r {
+    background-position: right top;
+}
+
+#sys-ibank .button-disabled .btn-l {
+    background-position: left -64px !important;
+}
+
+#sys-ibank .button-disabled .btn-r {
+    background-position: right -64px !important;
+}
+
+#sys-ibank .button-disabled, #sys-ibank .button-disabled button, #sys-ibank .button-disabled span {
+    cursor: default !important;
+}
+
+#sys-ibank .button-disabled em {
+    color: #999 !important;
+}
+
+#sys-ibank .ib-footer {
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+

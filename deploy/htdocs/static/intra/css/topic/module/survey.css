@@ -1,0 +1,232 @@
+/**
+ * @author lusheng.linls
+ * @usefor �����ʾ�
+ * @dependency /static/fdevlib/css/fdev-v4/reset/reset.css
+ * @date   2013.2.27
+ */
+
+/* reset */
+.sur-form a {
+    color:#3967c6;
+}
+.sur-form a:hover {
+    color:#3967c6;
+    text-decoration:underline;
+}
+.sur-form input[type=checkbox], .sur-form input[type=radio] {
+    border: 1px solid #dbdcde;
+    vertical-align: middle;
+}
+.sur-form .input-text {
+    border: 1px solid #dbdcde;
+    padding: 3px;
+    height: 15px;
+    line-height: 15px;
+    vertical-align: middle;
+    /*border-radius:2px;*/
+    background-color:#fff;
+    box-shadow:inset 1px 1px 1px rgba(68,89,132,0.14);
+    width: 300px;
+}
+.sur-form select {
+    border: 1px solid #dbdcde;
+    padding: 3px;
+    width: 122px;
+    height: 23px;
+    line-height: 23px;
+    vertical-align: middle;
+    background-color:#fff;
+}
+.sur-form select[size] {
+    height:auto;
+}
+.sur-form textarea {
+    border: 1px solid #dbdcde;
+    padding: 3px;
+    background-color:#fff;
+    box-shadow:inset 1px 1px 1px rgba(68,89,132,0.14);
+    height: 100px;
+    width: 500px;
+}
+.sur-form .input-text:focus, .sur-form textarea:focus, .sur-form select:focus {
+    border:1px solid #2381da;
+}
+.sur-form .input-text:disabled, .sur-form textarea:disabled, .sur-form select:disabled {
+    border:1px solid #d1d2d4;
+    background-color:#eee;
+    color:#888;
+    box-shadow:none;
+}
+
+/** survey */
+.sur-form{
+	color: #6c6351;
+}
+.sur-form .sur-item{
+ 	padding: 8px 0;
+    word-wrap: break-word;
+}
+.sur-form .sur-title{
+	font-weight: bold;
+}
+.sur-form .sur-check,.sur-form .sur-radio{
+	line-height: 24px;
+    height: 24px;
+}
+.sur-form .sur-check label,.sur-form .sur-radio label{
+    vertical-align: middle;
+    display: inline-block;
+}
+.sur-form .sur-checkbox,.sur-form .sur-radiobox{
+	margin-right: 5px;
+    vertical-align: middle;
+
+}
+.sur-form .sur-meta-other{
+    display: none;
+    padding-left: 5px;
+}
+.sur-form .sur-meta-otherinput{
+    width: 250px;
+    padding: 0 3px;
+}
+.sur-form .sur-meta-otherrequired{
+    display: inline-block;
+    width: 15px;
+}
+.sur-form .sur-quest{
+	padding-top: 5px;
+	padding-left: 25px;
+}
+.sur-form .sur-required,.sur-form .sur-norequired{
+	padding-right:10px;
+}
+.sur-form .sur-required,.sur-form .sur-meta-otherrequired{
+	background:url("http://img.china.alibaba.com/cms/upload/2013/207/158/851702_51297002.png") no-repeat;
+}
+.sur-form .sur-required{
+    background-position: 3px 4px;
+}
+.sur-form .sur-meta-otherrequired{
+    background-position: 3px 9px;
+}
+.sur-form .sur-gmsg{
+	color: #f27800;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fffbdd;
+	border: 1px solid #e7d3ac;
+	padding: 6px 8px 6px 12px;
+}
+.sur-form .sur-msg,.sur-form .sur-modulemsg{
+	color: #F00;
+	display: none;
+	font-weight: bold;
+	padding-left: 5px;
+}
+.sur-form .sur-operate{
+	text-align: center;
+}
+.sur-form .sur-button{
+	border-radius: 3px;
+	height: 22px;
+	padding: 4px 19px;
+	cursor: pointer;
+	display: inline-block;
+	overflow: visible;
+	vertical-align: middle;
+	text-decoration: none;
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FCA000;
+    background-image: linear-gradient(#FCB10A, #F18E06);
+    border-color: #E89F0E #E89F0E #CF7F01;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.sur-form .sur-button:hover {
+    background-image: linear-gradient(#F29B06, #E57902);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.sur-form .sur-button:active {
+    background-image: linear-gradient(#E07F00, #E48C02);
+}
+.sur-form .sur-download{
+    padding-right: 10px;
+}
+.sur-form .sur-unimportant{
+    color: #aaa;
+}
+.sur-form .sur-fixie-inlineblock{
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    zoom: 1;
+}
+/**
+ *  flash upload
+ */
+.sur-uploader{
+overflow:hidden;
+zoom:1;
+background:#ddd;
+border:1px solid #bbb;
+margin:5px 0 0 0;
+*margin:5px 0 0 0;
+padding:2px !important;
+width:302px;
+line-height:1.5 !important;
+}
+.sur-uploader .sur-uploader-filetitle{
+    width: 230px;
+}
+.sur-uploader .sur-uploader-filetitle,.sur-uploader-img,.sur-uploader-excel,.sur-uploader-word{
+float:left;
+padding-left:20px;
+background:url(http://img.china.alibaba.com/cms/upload/2011/907/001/100709_426256670.png) no-repeat -100px 0;
+white-space:nowrap;
+text-overflow:ellipsis;
+overflow:hidden;
+}
+.sur-uploader .sur-uploader-filetip{
+color:#bbb;
+}
+.sur-item .sur-uploader-img{
+background-position:0 -149px;
+}
+.sur-item .sur-uploader-excel{
+background-position:0 -99px;
+}
+.sur-item .sur-uploader-word{
+background-position:0 -49px;
+}
+.sur-uploader .sur-uploader-loading{
+background:url(http://img.china.alibaba.com/cms/upload/2011/162/011/110261_1213880884.gif) no-repeat left center;
+}
+.sur-uploader .sur-uploader-op{
+float:right;
+}
+.sur-uploader .sur-uploader-del{
+color:#06c;
+}
+.sur-item .sur-uploader-pics {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    *display: inline;
+    zoom: 1;
+}
+.sur-item .sur-uploader-errorinfo { 
+    display:none; 
+    color:#f00;
+    font-size:12px; 
+    font-weight:400;
+}

@@ -1,0 +1,35 @@
+/**
+ * @author lusheng.linls
+ * @date   2012.10.29
+ */
+
+/**分配设计师浮层*/
+.js-dialog .dialog-b{
+    height: 286px;
+}
+.js-dialog section{
+    padding: 15px 12px;
+    height: 150px;
+}
+.js-dialog .js-designer{
+    width: 100px;
+}
+.js-dialog .js-dialog-error{
+    color: red;
+    line-height: 100px;
+    text-align: center;
+}
+.js-dialog  td{
+	padding-bottom: 10px;
+}
+.js-dialog .column-a{
+	font-weight:bold;
+    text-align: right;
+    width: 80px;
+}
+.js-dialog .column-b{
+	font-weight:bold;
+    text-align: right;
+    width: 117px;
+    padding-left: 12px;
+}

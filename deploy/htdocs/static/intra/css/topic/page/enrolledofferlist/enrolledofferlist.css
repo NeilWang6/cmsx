@@ -1,0 +1,91 @@
+/**
+ * @author shanshan.hongss
+ * @usefor 已报名列表 
+ * @date   2012.11.21
+ */
+ .clr:after {
+content:"\0020";
+display:block;
+height:0;
+clear:both;
+}
+.mod-page-tag{ zoom:1; margin-top:12px; padding-right:12px;}
+.mod-page-tag:after{ display:block; clear:both; content:""; height:0; visibility:hidden;}
+.mod-page-tag .num{ float:right; margin-left:24px; font-size:14px; line-height:20px;}
+.mod-page-tag .tags{ float:right;}
+.mod-page-tag .tags a{ border:1px solid #C4C4C4; float:left; padding:0 6px; height:18px; _height:20px; line-height:18px; _line-height:20px; overflow:hidden; text-align:center; margin-right:3px; text-decoration:none;}
+.mod-page-tag .tags a:hover{ border:1px solid #FF7300; background:#FFEDE1; color:#FF7300; text-decoration:none}
+.mod-page-tag .tags span{ float:left; padding:0 6px; height:18px; _height:20px; line-height:18px; _line-height:20px; overflow:hidden; text-align:center; margin-right:3px;}
+.mod-page-tag .tags .now-tag{ border:1px solid #FF7300; background:#FFEDE1; color:#FF7300;}
+.mod-page-tag .tags .last-page,
+.mod-page-tag .tags .next-page{ height:18px; _height:20px; text-align:left; line-height:20px; _line-height:22px;}
+.mod-page-tag .tags .last-page{ background:url(http://img.china.alibaba.com/images/com_page_v2/global_icon.png) no-repeat 0px -31px; text-indent:-99999px; width:18px; _width:20px; padding:0;}
+.mod-page-tag .tags .last-page:hover{ background:#FFEDE1 url(http://img.china.alibaba.com/images/com_page_v2/global_icon.png) no-repeat 0px -31px;}
+.mod-page-tag .tags .next-page{ background:url(http://img.china.alibaba.com/images/com_page_v2/global_icon.png) no-repeat 41px -127px; text-indent:0px; padding-right:15px;}
+.mod-page-tag .tags .next-page:hover{ background:#FFEDE1 url(http://img.china.alibaba.com/images/com_page_v2/global_icon.png) no-repeat 41px -127px;}
+.mod-page-tag .tags .no-last-page,
+.mod-page-tag .tags .no-next-page{ border:1px solid #C4C4C4; text-indent:-99999px; width:18px; _width:20px; padding:0;}
+.mod-page-tag .tags .no-last-page{ background:url(http://img.china.alibaba.com/images/com_page_v2/global_icon.png) no-repeat 1px -63px;}
+.mod-page-tag .tags .no-next-page{ background:url(http://img.china.alibaba.com/images/com_page_v2/global_icon.png) no-repeat 1px -95px;}
+
+.session-list .even{
+    background-color: #F2F2F2;
+}
+
+.tips-hide{
+    display: none;
+}
+.tips-show{
+    position: absolute;
+    z-index: 100;
+    height: auto;
+    top: 28px;
+    left: 455px;
+    display: block;
+    word-break:break-all;
+}
+.result-info{
+    margin-top: 5px;
+}
+
+/** 图片检测功能 */
+.show-prom .offer-img {
+    position:relative;
+    display:inline-block;
+}
+.show-prom .offer-img .icon-warn{
+    position:absolute;
+    top:0;
+    left:0;
+    width:12px;
+    height:12px;
+    background:url("http://img.china.alibaba.com/cms/upload/2012/038/774/477830_133354742.png") no-repeat;
+    overflow:hidden;
+}
+.show-prom .offer-img .txt{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:64px;
+    height:18px;
+    line-height:18px;
+    background-color:#000;
+    color:#fff;
+    filter:alpha(opacity=60);
+    opacity: .6;
+    display:none;
+}
+.show-prom .offer-img .txt:hover {
+    color:#ff7300;
+    text-decoration:none;
+}
+.show-prom .offer-current .txt {
+    display:inline-block;
+}
+/**end*/
+
+.topic-ad{
+	overflow: hidden;
+	width: 792px;
+	padding: 5px 0px;
+}

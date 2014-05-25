@@ -1,0 +1,56 @@
+* result table */
+.dataobj .cell-offer .d{margin-bottom:10px}
+.dataobj .cell-offer{padding-bottom:10px}
+.dataobj .offer-img{
+    border:1px solid #e8e9eb;
+    height:120px;
+    width:120px;
+    border-collapse:separate;
+}
+.dataobj img.img-icon {
+    vertical-align:middle;
+}
+.dataobj .offerimg-div {
+    height:150px;
+}
+.dataobj .offerimg-dl {
+    display:inline-block;
+}
+.dataobj .checkbox {
+    margin-left:8px;
+    margin-right:5px;
+    vertical-align:95px;
+}
+.dataobj .offerid {
+    margin-top:0;
+}
+.dataobj .cell .block-area {
+    margin-top:0;
+    overflow:hidden;
+    height:20px;
+    line-height:20px;
+    width:130px;
+}
+.dataobj dl.cell .overdue {
+    margin-left:5px;
+    vertical-align:middle;
+}
+/** page bar */
+.fix-bottom-total { 
+    width: 810px;
+    height:36px; 
+    bottom:10px;
+}
+.fix-bottom-optbar { float:left; margin-top:5px; margin-left:10px; }
+.fix-bottom-pagebar { float:right; margin-top:5px; margin-right:10px; width:550px;}
+.fix-bottom-pagebar .pagebar {
+    float:right;
+}
+.fix-bottom-pagebar .right {
+    float:right;
+    width:205px;
+}
+.fix-bottom-total .fixed-body-total {
+    line-height:normal;
+}
+#fixBottomPageList{position:absolute;height: 36px;bottom: 10px;}

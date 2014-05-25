@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       "
+	default-autowire="byName">
+    <context:component-scan base-package="com.apachecms.cmsx.acl.service,com.apachecms.cmsx.acl.service.permission,com.apachecms.cmsx.acl.service.resource,com.apachecms.cmsx.biz">
+		<context:include-filter type="regex" expression=".*Impl" />
+	</context:component-scan> 
+ 
+	<!-- ACL -->
+<!-- 	  <bean id="roleService"              class="com.apachecms.cmsx.acl.service.RoleServiceImpl" />
+	  <bean id="dcmsApplyService"         class="com.apachecms.cmsx.acl.service.permission.DcmsApplyServiceImpl" />
+	  <bean id="grantService"             class="com.apachecms.cmsx.acl.service.permission.GrantServiceImpl" />
+	  <bean id="dcmsResourceService"      class="com.apachecms.cmsx.acl.service.resource.DcmsResourceServiceImpl" />
+	  <bean id="permissonResourceService" class="com.apachecms.cmsx.acl.service.resource.PermissonResourceServiceImpl" />
+	  <bean id="menuResource"             class="com.apachecms.cmsx.acl.service.resource.MenuResourceImpl" />
+	  <bean id="operateService"           class="com.apachecms.cmsx.acl.service.resource.OperateResourceImpl" />
+	  <bean id="permissionService"        class="com.apachecms.cmsx.acl.service.permission.DcmsPermissionServiceImpl"/> -->
+</beans>

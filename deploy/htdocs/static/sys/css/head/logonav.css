@@ -1,0 +1,33 @@
+/**
+ * 含logo search 的导航区，可用于社区所有产品
+ * @Author:balibell
+ */
+#logonav{position:relative;width:952px;height:76px;margin:6px auto 0;background-color:#FFF;line-height:1.2;font-size:12px;z-index:202}
+
+
+#search-bar,.ln-cnav a,#logo .ali-logo{background-image:url(http://img.china.alibaba.com/images/sys/head/detail-head.gif);background-repeat:no-repeat}
+
+
+#header #logo{width:300px;float:left;margin-top:24px;padding-left:6px}
+#logo .ali-logo{float:left;width:131px;height:42px;margin-right:6px;background-position:0 -50px;text-indent:-9999px}
+#logo .cmu-logo{float:left;width:auto;height:auto;margin-top:8px;color:#666 !important;text-decoration:none !important;font:bold 26px/1.2 "\5fae\8f6f\96c5\9ed1","\9ED1\4F53";text-indent:0}
+
+#logonav .ln-cnav,#logonav .ln-srch{float:right;+display:inline;width:550px;text-align:right}
+#logonav .ln-cnav{height:20px;padding:6px 0 0 0}
+#logonav .ln-cnav a{float:right;display:inline;padding:0 6px 0 14px;margin:0 0 0 8px;background-position:-482px -47px;font:bold 12px/1.5 "\5B8B\4F53"}
+#logonav .ln-cnav a:link,#logonav .ln-cnav a:visited{color:#666}
+#logonav .ln-cnav a:hover{color:#FF7300}
+#logonav .ln-srch{height:44px;padding:2px 6px 0 0}
+
+#logonav #search-bar{float:right;text-align:left;position:relative;width:488px;height:43px;background-position:0 0;font-size:14px}
+#search-bar #search-select{position:absolute;left:5px;top:6px;height:28px;width:89px}
+#default-search{margin:3px 0 2px 6px;padding:4px 2px 2px 0}
+#search-select ul{display:none;border:1px solid #BFBFBF;background:#FFF;font-size:12px;cursor:pointer}
+#search-select li{height:25px;background:#FFF;line-height:25px}
+#search-select li a{display:block;padding:0 6px;zoom:1}
+#search-select li a:link,#search-select li a:visited{color:#666}
+#search-select li a:hover{background:#FFF4CC;color:#FF7300;font-weight:bold;padding:0 6px 0 5px}
+#logonav .trigger-base{cursor:pointer}
+#logonav .cur .trigger-down{display:block}
+#search-bar #search-input{position:absolute;left:104px;top:4px;height:26px;width:290px;padding:4px 0 0 4px;margin:0;background:none;border:0 none;line-height:26px}
+#search-bar #search-submit{position:absolute;left:399px;top:5px;width:84px;height:32px;background:none;border:0 none;color:#954200;font-size:14px;font-weight:bold;text-shadow:0 1px 0 #FFEC98;line-height:32px}

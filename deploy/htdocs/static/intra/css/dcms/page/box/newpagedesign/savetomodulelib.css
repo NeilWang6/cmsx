@@ -1,0 +1,65 @@
+/**
+ * @author springyu
+ * @userfor ±£´æmoduleÑùÊ½
+ * @date 2013-04-1
+ */
+body {
+
+}
+.module-upload img {
+	width: 170px;
+	height: 150px;
+}
+.module-upload .link-upload {
+	display: inline-block;
+	width: auto !important;
+	margin: 0 3px !important;
+}
+.module-upload dd {
+	margin: 8px auto;
+	width: 150px;
+}
+.module-right .row {
+	margin: 2px 16px;
+}
+.module-right .page-color {
+	display: inline-block;
+}
+.module-right .row .dcms-input-text {
+	width: 198px;
+}
+.module-right .row .textarea {
+	width: 198px;
+	min-width: 198px;
+	max-width: 198px;
+	height: 62px;
+	min-height: 62px;
+	max-height: 62px;
+}
+.module-right .row .pic-desc {
+	padding: 0 4px;
+}
+.module-right .row input[name=autoGenPic] {
+	margin-left: 4px;
+}
+.module-right .label {
+	margin-top: 0;
+}
+
+.module-right .list-color {
+	display: inline-block;
+	vertical-align: middle;
+}
+.module-right .width {
+	display: inline-block;
+}
+.module-right .module-width {
+	width: 50px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.module-right .txt{
+	display:inline-block;
+	line-height:32px;
+}
+

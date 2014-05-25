@@ -1,0 +1,112 @@
+<script type="text/javascript" src="http://style.c.aliimg.com/fdevlib/js/fdev-v4/core/fdev-min.js"></script>
+
+<table width="60%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+        <td class="small">
+			<strong>当前位置：</strong>报名工具 &gt;&gt; 新建控件MetaData
+        </td>
+    </tr>
+</table>
+<table>
+	<form name="itemForm" action="itemMetadata.htm" method="post">
+		$csrfToken.hiddenField
+		<input type="hidden" name="action" value="ItemAction" />
+		#if($!id>0)
+			<input type="hidden" name="id" value="$!id" />
+			<input type="hidden" name="event_submit_do_update_item_metadata" value="true"/>
+		#else
+			<input type="hidden" name="event_submit_do_add_item_metadata" value="true"/>
+		#end
+        <tr>
+            <td>item id：</td>
+    		<td><input type="text" name="itemId" placeholder="123" value="$!itemId" #if($!itemId) readonly #end/></td>
+        </tr>
+    	<tr>
+            <td>METADATA的key值：</td>
+    		<td><input type="text" name="key" placeholder="abc" value="$!itemMetadata.metadataKey" /></td>
+        </tr>
+    	<tr>
+            <td>METADATA的value值：</td>
+    		<td><input type="text" name="value" placeholder="ABC" value="$!itemMetadata.value"/></td>
+        </tr>
+		<tr>
+            <td>METADATA的描述：</td>
+    		<td><input type="text" name="description" placeholder="描述信息" value="$!itemMetadata.description"/></td>
+        </tr>
+		<tr>
+            <td>METADATA的顺序：</td>
+    		<td><input type="text" name="orderNum" placeholder="1" onkeyup="value=value.replace(/[^\d]/g,'')"/ value="$!itemMetadata.orderNum"></td>
+        </tr>
+    	<tr>
+            <td><input type="submit" value="保存"/> </td>
+        </tr>
+    </form>
+    
+    <form name="delItemMetaData" action="" method="post">
+    	$csrfToken.hiddenField
+    	<input type="hidden" name="action" value="ItemAction" />
+    	<input type="hidden" name="event_submit_do_delete_item_metadata" value="true"/>
+    	<input type="hidden" name="id" value="" />
+    	<input type="hidden" name="itemId" value="" />
+    </form>
+</table>
+<table width="800" border="0" cellpadding="1" cellspacing="1" bgcolor="a3b9e9" class="font11">
+	<tr align="center"> 
+		<td width="70" align="center"  class="backcolor"><div align=center><strong>id</strong></div></td>
+		<td width="70" align="center" class="backcolor"><div align=center><strong>item id</strong></div></td>
+		<td width="120" align="center" class="backcolor"><div align=center><strong>metadata key</strong></div></td>
+		<td width="120" align="center" class="backcolor"><div align=center><strong>value</strong></div></td>
+		<td width="120" align="center" class="backcolor"><div align=center><strong>描述</strong></div></td>
+		<td width="70" align="center" class="backcolor"><div align=center><strong>顺序</strong></div></td>
+		<td width="140" align="center" class="backcolor"><div align=center><strong>创建时间</strong></div></td>
+		<td width="140" align="center" class="backcolor"><div align=center><strong>修改时间</strong></div></td>
+		<td width="70" align="center" class="backcolor"><div align=center><strong>操作</strong></div></td>
+	</tr>
+    #foreach($itemMetadata in $itemMetadataList)
+    	<tr align="center" bgcolor="#FFFFFF" class="font11">
+			<td  class="font12" align=center>$!itemMetadata.id</td>
+			<td bgcolor="#FFFFFF" class="font12" ><div align=center style="word-break:break-all;">$!itemMetadata.itemId</div></td>
+            <td class="font12" ><div align=left style="word-break:break-all;">$!itemMetadata.metadataKey</div></td>
+			<td class="font12" ><div align=left style="word-break:break-all;">$!itemMetadata.value</div></td>
+			<td class="font12" ><div align=left style="word-break:break-all;">$!itemMetadata.description</div></td>
+			<td class="font12" ><div align=left style="word-break:break-all;">$!itemMetadata.orderNum</div></td>
+			<td  class="font12" align=center>$!utils.toLocaleString($!itemMetadata.gmtCreate, 'yyyy-MM-dd HH:mm:ss')</td>
+			<td  class="font12" align=center>$!utils.toLocaleString($!itemMetadata.gmtModified, 'yyyy-MM-dd HH:mm:ss')</td>
+			<td  class="font12" align=center>
+				<a href="itemMetadata.htm?action=ItemAction&event_submit_do_showItemMetadata=true&itemId=$!{itemMetadata.itemId}&id=$!{itemMetadata.id}">修改</a>
+				##此功能不放开，防止误删除等造成意外影响，如有需要，请开发同学去线上预发布环境将下面注释取消掉，临时执行后，再注释掉。
+				<!--<a class="js-del-item-metadata" data-id="$!{itemMetadata.id}" data-itemId="$!{itemMetadata.itemId}" href="javascript:;">删除</a>-->
+			</td>
+        </tr>
+	#end
+</table>
+
+<script type="">
+	;(function(jQuery, E,T){
+	var readyFun = [
+			function() {
+				jQuery('.js-del-item-metadata').click(function(){
+					if(confirm('该操作是物理删除，请评估好删除之后的影响（比如前台校验逻辑等），并排查数据库中ct_st_ins_exp表中是否已经存在此项的数据记录，你确定执行么？')) {
+						document.delItemMetaData.id.value = jQuery(this).data('id');
+						document.delItemMetaData.itemId.value = jQuery(this).data('itemId');
+						document.delItemMetaData.submit();
+					}
+				});
+			}
+		];
+	
+	jQuery(function(){
+        for (var i=0, l=readyFun.length; i<l; i++) {
+            try {
+                readyFun[i]();
+            } catch(e) {
+                if (jQuery.log) {
+                    jQuery.log('Error at No.' + i + '; ' + e.name + ':' + e.message);
+                }
+            } finally {
+                continue;
+            }
+        }
+    });
+})(jQuery, FE.elf,FE.tools);
+</script>

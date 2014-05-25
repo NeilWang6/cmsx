@@ -1,0 +1,25 @@
+/**
+ * 检测browser 是否 IE9以下 并给出提示
+ * @author springyu
+ * @date 2011-12-29
+ */
+
+.detect-tip {
+	height: 28px;
+	background-color: #ffec6f;
+	text-align: center;
+	text-indent: 12px;
+	color: #333;
+	line-height: 28px;
+}
+.detectClose {
+	float: right;
+	font-weight: 700;
+	padding-right: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+.dcms-detect-bold {
+    font-weight:bold;
+    color:#f60;
+}

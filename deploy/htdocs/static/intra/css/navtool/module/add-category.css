@@ -1,0 +1,71 @@
+@charset "gb2312";
+/* CSS Document */
+
+.ac{ display:none; margin:0;padding:0; width:540px;height:520px; font-size:12px;background-color: #FFF;overflow-y: auto;}
+.ac-row{margin:5px 0px;text-align: center;float: left;width:520px;}
+.ac-form-text{ width:150px;}
+.ac-form-button{margin-left:60px; width:80px; height:30px; font-size:14px;}
+.ac dt{
+	margin-left:-20px;
+}
+.ac-result-box{ border:1px solid #acC;width:480px;height: 100px; overflow-y: auto;text-align: left;}
+.ac-selected-box{border:1px solid #acC;width:480px;height: 100px; overflow-y: auto;text-align: left;}
+.ac-categorylist-box{
+	width:140px;
+	float:left; 
+	text-align: 
+	left;border:1px solid #CCC;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 130px;
+}	
+.ac-result-box li,.ac-categorylist-box li{
+	width: 100%;
+}
+.ac-selected-box li{
+	height: 1.5em;
+}
+.ac-result-box li:hover,.ac-categorylist-box li:hover,.ac-selected-box li:hover{
+	cursor:pointer;
+  	background-color:#BAD0EE;
+	color: #FFF  ;
+}
+.ac-selected-hover{
+	cursor:pointer;
+  	background-color:#BAD0EE;
+	color: #FFF  ;
+}
+.ac-leftList-button,.ac-rightList-button{
+	margin:0px 5px;
+	margin-top:20px;
+	cursor:pointer;
+	float:left;
+	display:block;
+	width:20px;
+	height:120px;
+	display: none;
+}
+.ac-delete-button{
+	margin-right:30px;
+	clear:right;
+	width:13px;
+	 height:18px;
+	 color:#FF3F55; 
+	 background:url("http://img.china.alibaba.com/cms/upload/2011/741/031/130147_1070828466.gif") no-repeat 0 3px; 
+	 float:right;
+	 display:none;
+}
+.ac-category-full-name{
+	float: left;
+}
+.ac-item-selected{ background-color:#FFCB95 ;}
+
+.ac-categorybox-list,.ac-categorybox-list li{
+	float: left;
+}
+.ac-categorylist-box li:hover{
+	background: #BAD0EE;
+}
+.ac-item-active{
+	background: #BAD0EE;
+}

@@ -1,0 +1,10 @@
+/**
+ * wholesale merge css
+ * @author  Arcthur
+ */
+
+@import url(http://style.c.aliimg.com/sys/css/logist/logist-min.css);
+@import url(http://style.c.aliimg.com/css/app/operation/wholesale/module/header/auth-header.css);
+@import url(http://style.c.aliimg.com/css/app/operation/wholesale/module/modules/mod-step.css);
+@import url(http://style.c.aliimg.com/css/app/operation/wholesale/module/modules/uploader.css);
+@import url(http://style.c.aliimg.com/css/app/operation/wholesale/page/buyer/step-auth.css);

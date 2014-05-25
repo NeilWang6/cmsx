@@ -6,6 +6,7 @@ import java.util.List;
 public class AuthToken {
 	private String userId;
 	private String ip;
+	private long profileSite = 1L;
 	private List<Long> userRoles; // 拥有的所有角色id列表
 	private List<String> resCodes; // 拥有的权限列表
 
@@ -26,7 +27,7 @@ public class AuthToken {
 	}
 
 	public List<Long> getUserRoles() {
-		if(userRoles==null){
+		if (userRoles == null) {
 			userRoles = new ArrayList<Long>();
 		}
 		return userRoles;
@@ -37,7 +38,7 @@ public class AuthToken {
 	}
 
 	public List<String> getResCodes() {
-		if(resCodes==null){
+		if (resCodes == null) {
 			resCodes = new ArrayList<String>();
 		}
 		return resCodes;
@@ -45,6 +46,14 @@ public class AuthToken {
 
 	public void setResCodes(List<String> resCodes) {
 		this.resCodes = resCodes;
+	}
+
+	public long getProfileSite() {
+		return profileSite;
+	}
+
+	public void setProfileSite(long profileSite) {
+		this.profileSite = profileSite;
 	}
 
 }

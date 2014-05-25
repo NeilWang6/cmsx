@@ -1,0 +1,480 @@
+$page.setTitle("编辑内容")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/dialog.css")
+$page.addScript("${staticDomainUrl}/intra/js/dialog.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/calendar.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/lang/en.js")
+$page.addScript("${staticDomainUrl}/intra/js/formvalidator.js")
+$page.addScript("${staticDomainUrl}/intra/js/formValidatorRegex.js")
+$page.addStyleSheet("${staticDomainUrl}/intra/js/kindeditor/themes/default/default.css")   
+$page.addScript("${staticDomainUrl}/intra/js/kindeditor/kindeditor-all-min.js")
+$page.addScript("${staticDomainUrl}/intra/js/kindeditor/lang/zh_CN.js")
+$page.addScript("${staticDomainUrl}/intra/js/request.js")
+$page.addScript("${staticDomainUrl}/intra/js/drop_new.js")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/jscal2.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/border-radius.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/win2k.css")
+<script type="text/javascript"> 
+<!--
+	var charset = 'gb2312'; 
+//-->
+</script>  
+<form method="post"  enctype="multipart/form-data" id="info_post" name="info_post">
+<div class="addContent">
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style><div id="closeParentTime" style="display:none"></div>
+ 
+<div class="pad-10">
+ 
+<div class="content-menu ib-a blue line-x">
+网站后台 > 内容 > 文章 > 发布新文章 
+<input type="hidden" name="checked" value="1"> 
+ <script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/content_addtop.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/colorpicker.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/hotkeys.js')"></script>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/cookie.js')"></script>
+</div>
+<div class="pad_10">
+<div style='overflow-y:auto;overflow-x:hidden' class='scrolltable'>
+<br>
+<table width="100%" cellspacing="0" class="table_form contentWrap">
+
+<tr>
+  <th width="150"><strong style="color:#000">文章分类</strong></th>
+  <td></td>
+</tr>
+
+<tr>
+  <th width="150"> 所属栏目	  </th>
+  <td >
+<select name="caid"  id="caid" style="width:200px;">
+<option value="">请选择</option>
+  <option value=94 >学车</option><option value=106 >&nbsp;├学车知道</option><option value=95 >&nbsp;└学车指南</option><option value=102 >团购</option><option value=103 >&nbsp;├团购资讯</option><option value=104 >&nbsp;└团购回顾</option><option value=98 >二手车</option><option value=100 >&nbsp;├二手车选购常识</option><option value=105 >&nbsp;├评估案例</option><option value=99 >&nbsp;└二手车行情</option><option value=29 >资讯</option><option value=51 >&nbsp;├行业动态</option><option value=49 >&nbsp;├厂商动态</option><option value=48 >&nbsp;├汽车召回</option><option value=63 >&nbsp;├政策</option><option value=73 >&nbsp;├热门话题</option><option value=26 >&nbsp;├营销</option><option value=25 >&nbsp;├研究</option><option value=24 >&nbsp;├人物</option><option value=23 >&nbsp;└交通</option><option value=28 >上市新车</option><option value=37 >&nbsp;└新车月历</option><option value=20 >用车</option><option value=101 >&nbsp;├自驾游</option><option value=53 >&nbsp;├机油</option><option value=52 >&nbsp;├轮胎</option><option value=62 >&nbsp;├用车资讯</option><option value=31 >&nbsp;├维修保养</option><option value=35 >&nbsp;├汽车用品</option><option value=34 >&nbsp;├汽车改装</option><option value=33 >&nbsp;├汽车保险</option><option value=32 >&nbsp;└驾驶技巧</option><option value=19 >买车</option><option value=45 >&nbsp;├新车到店</option><option value=85 >&nbsp;├商家信息</option><option value=30 >&nbsp;├优惠促销</option><option value=36 >&nbsp;└本地车市</option><option value=96 >租车</option><option value=97 >&nbsp;└租车指南</option><option value=1 >看车</option><option value=107 >&nbsp;├购车手册</option><option value=92 >&nbsp;├进口新车</option><option value=91 >&nbsp;├图解</option><option value=74 >&nbsp;├新能源</option><option value=21 >&nbsp;├车市评论</option><option value=41 >&nbsp;├新车谍照</option><option value=40 >&nbsp;├国内新车</option><option value=90 >&nbsp;├试驾评测</option><option value=89 >&nbsp;└导购</option>  </select>
+  
+  
+  </td>
+</tr>
+
+  <tr>
+      <th width="150">&nbsp;</th>
+      <td>  <a href='javascript:;' onclick="omnipotent('selectid','?type=content&do=add_othors','发布到其他栏目',1,700,400);return false;" style='color:#B5BFBB'>[发布到其他栏目]</a><ul class='list-dot-othors' id='add_othors_text'></ul></td>
+</tr>
+ 
+<tr>
+      <th width="150"> 关联车型	  </th>
+      <td>
+      
+     
+      <select name="brandid0" onchange="selectNew('brandid2', this.value, 'http://v6.carscms.com/common/series.php');Selcet();" id="brandid0" style="width:120px;" class="select"><br/><option value="0">请选择品牌</option>
+                <option value="1" >A-阿斯顿·马丁</option>
+                <option value="2" >A-奥迪</option>
+                <option value="907" >A-阿尔法罗密欧</option>
+                <option value="908" >B-北京汽车</option>
+                <option value="15" >B-布加迪</option>
+                <option value="14" >B-宾利</option>
+                <option value="13" >B-别克</option>
+                <option value="12" >B-标致</option>
+                <option value="11" >B-比亚迪</option>
+                <option value="10" >B-本田</option>
+                <option value="9" >B-奔腾</option>
+                <option value="8" >B-奔驰</option>
+                <option value="7" >B-北汽制造</option>
+                <option value="6" >B-保时捷</option>
+                <option value="5" >B-宝马</option>
+                <option value="4" >B-宝骏</option>
+                <option value="3" >B-BRABUS巴博斯</option>
+                <option value="909" >C-长安商用</option>
+                <option value="20" >C-川汽野马</option>
+                <option value="19" >C-长丰</option>
+                <option value="17" >C-长安</option>
+                <option value="18" >C-长城</option>
+                <option value="16" >C-昌河</option>
+                <option value="24" >D-东风</option>
+                <option value="21" >D-大众</option>
+                <option value="22" >D-道奇</option>
+                <option value="910" >D-DS</option>
+                <option value="911" >D-大发</option>
+                <option value="1140" >D-东风风度</option>
+                <option value="23" >D-帝豪</option>
+                <option value="26" >D-东风小康</option>
+                <option value="25" >D-东风风神</option>
+                <option value="27" >D-东南</option>
+                <option value="1086" >F-Fisker</option>
+                <option value="912" >F-风行</option>
+                <option value="30" >F-丰田</option>
+                <option value="28" >F-法拉利</option>
+                <option value="29" >F-菲亚特</option>
+                <option value="31" >F-福迪</option>
+                <option value="32" >F-福特</option>
+                <option value="33" >F-福田</option>
+                <option value="36" >G-广汽</option>
+                <option value="34" >G-GMC</option>
+                <option value="35" >G-光冈</option>
+                <option value="1121" >H-哈弗</option>
+                <option value="37" >H-哈飞</option>
+                <option value="915" >H-华普</option>
+                <option value="914" >H-红旗</option>
+                <option value="913" >H-恒天</option>
+                <option value="38" >H-海格</option>
+                <option value="39" >H-海马</option>
+                <option value="40" >H-悍马</option>
+                <option value="41" >H-华泰</option>
+                <option value="42" >H-黄海</option>
+                <option value="916" >J-吉利</option>
+                <option value="1077" >J-金旅</option>
+                <option value="43" >J-Jeep吉普</option>
+                <option value="49" >J-金杯</option>
+                <option value="44" >J-吉奥</option>
+                <option value="45" >J-吉利全球鹰</option>
+                <option value="46" >J-江淮</option>
+                <option value="47" >J-江铃</option>
+                <option value="48" >J-捷豹</option>
+                <option value="50" >J-九龙</option>
+                <option value="52" >K-开瑞</option>
+                <option value="51" >K-卡尔森</option>
+                <option value="54" >K-柯尼赛格</option>
+                <option value="55" >K-克莱斯勒</option>
+                <option value="53" >K-凯迪拉克</option>
+                <option value="58" >L-劳斯莱斯</option>
+                <option value="67" >L-路虎</option>
+                <option value="66" >L-陆风</option>
+                <option value="64" >L-林肯</option>
+                <option value="57" >L-劳伦士</option>
+                <option value="65" >L-铃木</option>
+                <option value="68" >L-路特斯</option>
+                <option value="63" >L-莲花汽车</option>
+                <option value="62" >L-力帆</option>
+                <option value="61" >L-理念</option>
+                <option value="60" >L-雷诺</option>
+                <option value="59" >L-雷克萨斯</option>
+                <option value="56" >L-兰博基尼</option>
+                <option value="73" >M-玛莎拉蒂</option>
+                <option value="69" >M-MAXUS大通</option>
+                <option value="72" >M-马自达</option>
+                <option value="70" >M-MG</option>
+                <option value="1117" >M-迈凯轮</option>
+                <option value="71" >M-MINI</option>
+                <option value="74" >M-迈巴赫</option>
+                <option value="75" >N-纳智捷</option>
+                <option value="917" >O-欧朗</option>
+                <option value="77" >O-欧宝</option>
+                <option value="76" >O-讴歌</option>
+                <option value="78" >Q-奇瑞</option>
+                <option value="79" >Q-启辰</option>
+                <option value="80" >Q-起亚</option>
+                <option value="1078" >R-如虎</option>
+                <option value="81" >R-日产</option>
+                <option value="82" >R-荣威</option>
+                <option value="83" >R-瑞麒汽车</option>
+                <option value="90" >S-斯巴鲁</option>
+                <option value="91" >S-斯柯达</option>
+                <option value="918" >S-萨博</option>
+                <option value="89" >S-双龙</option>
+                <option value="88" >S-双环</option>
+                <option value="87" >S-世爵</option>
+                <option value="86" >S-陕汽通家</option>
+                <option value="919" >S-思铭</option>
+                <option value="1104" >S-绅宝</option>
+                <option value="84" >S-smart</option>
+                <option value="85" >S-三菱</option>
+                <option value="920" >W-五十铃</option>
+                <option value="92" >W-威麟</option>
+                <option value="93" >W-威旺</option>
+                <option value="94" >W-威兹曼</option>
+                <option value="95" >W-沃尔沃</option>
+                <option value="96" >W-五菱汽车</option>
+                <option value="921" >X-西雅特</option>
+                <option value="98" >X-现代</option>
+                <option value="97" >X-夏利</option>
+                <option value="99" >X-雪佛兰</option>
+                <option value="100" >X-雪铁龙</option>
+                <option value="101" >Y-一汽</option>
+                <option value="102" >Y-依维柯</option>
+                <option value="103" >Y-英菲尼迪</option>
+                <option value="104" >Y-英伦</option>
+                <option value="105" >Y-永源</option>
+                <option value="106" >Z-中华</option>
+                <option value="107" >Z-中兴</option>
+                <option value="108" >Z-众泰</option>
+        </select>
+ <select name="brandid2" id="brandid2" style="width:120px;" class="select" onchange="Selcet()"><option value="0">请选择系列</option>
+
+</select>
+
+<script type="text/javascript">
+function Selcet(){
+	var key2=document.getElementById("brandid2");var brandid2 = key2.options[key2.selectedIndex].value;
+	var key0=document.getElementById("brandid0");var brandid0 = key0.options[key0.selectedIndex].value;
+	var current=document.getElementById('newsext');
+	if(brandid2!='' && brandid2!=0 && brandid0!='' && brandid0!=0){
+		current.style.display ="block";
+	}else{
+		current.style.display ="none";
+	}
+}
+</script>
+</td>
+</tr>
+
+
+<tr id="newsext"  style="display:none;">
+      <th width="150">车系文章属性</th>
+      <td><label><input name="type" type="radio" value="1"  checked="checked"/>新闻</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="type" type="radio" value="2" />行情</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="type" type="radio" value="3" />导购</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="type" type="radio" value="4" />评测</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="type" type="radio" value="5" />用车</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="type" type="radio" value="6" />其他</label>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr> 
+
+
+
+<tr>  
+   
+
+      <th width="150"> 地区分类	  </th>
+      <td>
+<select name="areapro" id="areapro" onchange="selectNew('areacity', this.value, 'http://v6.carscms.com/common/areacity.php');" >
+  <option value="0">请选择省份...</option>
+       <option value="1" >北京</option>
+    <option value="3" >上海</option>
+    <option value="4" >重庆</option>
+    <option value="2" >天津</option>
+    <option value="5" >河南</option>
+        </select>
+  
+  
+  <select name="areacity" id="areacity">
+  <option value="">请选择城市...</option>
+    
+  </select>
+</td>
+</tr>
+ 
+
+<tr>
+  <th width="150"><strong style="color:#000">基本信息</strong></th>
+  <td></td>
+</tr>
+
+<tr>
+	 <th width="150"> 标题	  </th>
+      <td> 
+      
+      
+      
+      
+      <input name="subject" type="text" class="measure-input " id="subject" style=" color:;" onkeyup="strlen_verify(this, 'subject_len', 80);" value="" size="50"/><input type="hidden" name="style_color" id="style_color" value="">
+		<input type="hidden" name="style_font_weight" id="style_font_weight" value=""><img src="http://v6.carscms.com/images/icon/colour.png" width="15" height="16" onclick="colorpicker('subject_colorpanel','set_subject_color');" style="cursor:hand"/> 
+		<img src="http://v6.carscms.com/images/icon/bold.png" width="10" height="10" onclick="input_font_bold()" style="cursor:hand"/> <span id="subject_colorpanel" style="position:absolute;" class="colorpanel"></span>
+      
+ 
+还可输入<B><span id="subject_len">80</span></B> 个字符
+      
+</td>
+    </tr>
+    
+    
+    
+<tr>
+      <th width="150"> 简标题	  </th>
+      <td><input name="subject_s" id="subject_s" class="measure-input"  value="" size="50" onkeyup="strlen_verify(this, 'subject_s_len', 30);"> 还可输入<B><span id="subject_s_len">30</span></B> 个字符</td>
+    </tr>
+    <tr>
+      <th width="150"> HTML子标题	  </th>
+      <td><textarea rows="3" cols="50" name="subject_html" id="subject_html"  onkeyup="strlen_verify(this, 'subject_html_len', 255)"></textarea><br>
+        还可输入<B><span id="subject_html_len">255</span></B> 个字符</td>
+    </tr>
+<tr>
+      <th width="150"> 特别推荐	  </th>
+      <td><input name="top1" type="checkbox" value="1"  />幻灯片推荐  <input name="top2" type="checkbox" value="1"  />当前栏目推荐  <input name="top3" type="checkbox" value="1"  />头条推荐  <input name="top4" type="checkbox" value="1"  />区域焦点图  <input name="top5" type="checkbox" value="1"  />特推5  <input name="top6" type="checkbox" value="1"  />特推6</td>
+</tr>
+
+
+
+
+<tr>
+  <th width="150"> 关键词</th>
+  <td><input name="keywords"   class='input-text'  value="" size="50">  多关键词之间用空格隔开</td>
+</tr>
+  
+<tr>
+      <th width="150"> 摘要	  </th>
+      <td><textarea rows="3" cols="80" name="abstract" id="abstract"  onkeyup="strlen_verify(this, 'abstract_len', 255)"></textarea><br>还可输入<B><span id="abstract_len">255</span></B> 个字符</td>
+    </tr>
+<tr>
+      <th width="150" align="left">文章内容	  </th>
+      <td>
+	<textarea name='content' id='content' style='width:750px;height:500px;visibility:hidden;'></textarea>      
+	<p>
+      <input type="button" name="insertPage" value="插入分页符" />
+      <input type="button" name="insertBanquan" value="一键插入版权" />
+      <input type="button" name="clear" value="清空内容" />
+      <input type="reset" name="reset" value="初始化编辑器内容" />
+	</p>
+</td>
+    </tr>
+ <tr>
+      <th width="150"> 缩略图	  </th>
+      <td> 
+ 
+		<p><input name="thumb" type="text" id="thumb" value="" size="50" /> <input type="button" id="thumb_up" value="选择图片" />
+		  （本地上传）</p></td>
+    </tr>
+<tr>
+<th width="150"> 作者</th>
+<td><input name="author"   class='input-text'  value="超管" size="20"></td>
+
+</tr>
+
+<tr>
+<th width="150"> 责任编辑</th>
+<td><input name="res"   class='input-text'  value="超管" size="20" ></td>
+
+</tr>
+<tr>
+ 
+      <th width="150"> 文章来源	  </th>
+      <td><input name="source" id="source"   class='input-text'  value="北京汽车网" size="30"> 
+<select name="select_name"   onChange="ShowToSource(); " >
+<option value="">请选择来源</option>
+<option value="asda" >asda</option>
+<option value="搜狐网" >搜狐网</option>
+<option value="网易" >网易</option>
+<option value="易车网" >易车网</option>
+<option value="汽车之家" >汽车之家</option>
+<option value="新浪网" >新浪网</option>
+<option value="腾讯网" >腾讯网</option>
+</select></td>
+    </tr>
+ 
+<tr>
+  <th width="150"><strong style="color:#000">附属信息</strong></th>
+  <td></td>
+</tr>
+<tr>
+<th width="150">指向链接</th>
+<td><input name="tourls" class="input-text"  value="" size="50"> 链接中禁止包含汉字！</td>
+</tr>
+<tr>
+<th width="150"> 添加时间</th>
+<td><input type="text" name="createdate" id="createdate" value="2014-02-16  01:33:16" size="22" class="date" readonly>
+        
+
+        </td>
+</tr>
+<tr>
+<th width="150"> 点击数</th>
+<td><input name="clicks"   class='input-text'  value="0" size="10"> </td>
+</tr>
+
+<tr>
+<th width="150"> 允许评论</th>
+<td> 
+  <label>
+    <input name="allow_comment" type="radio" id="allow_comment" value="1" checked="checked"/>允许评论
+    <input name="allow_comment" type="radio" id="allow_comment" value="0" />不允许评论
+  </label>
+ </td>
+</tr>
+</table>
+</div>
+<div class="bk10"></div>
+<div class="btn">
+ 
+</div> 
+  </div>
+ 
+</div>
+
+<script type="text/javascript"> 
+var editor;
+KindEditor.ready(function(K) {
+	editor = K.create('textarea[name="content"]', {allowFileManager : true,allowTypeDir : "content_article",allowFileWatermark : 1});
+	K('input[name=getHtml]').click(function(e) {			
+		alert(editor.html());		
+	});		
+	K('input[name=isEmpty]').click(function(e) {
+		alert(editor.isEmpty());		
+	});		
+	K('input[name=getText]').click(function(e) {
+	    alert(editor.text());		
+	});		
+	K('input[name=selectedHtml]').click(function(e) {
+	alert(editor.selectedHtml());		
+	});		
+	K('input[name=setHtml]').click(function(e) {			
+	editor.html('xxx');		
+	});		
+	K('input[name=setText]').click(function(e) {			
+	editor.text('xxxx');		
+	});		
+	K('input[name=insertPage]').click(function(e) {			
+	editor.insertHtml('[#page=#]');		
+	});		
+	K('input[name=insertBanquan]').click(function(e) {			
+	editor.insertHtml('<div style="color:#F00; font-size:14px; font-weight: bold; text-align: center;">本文版权归重大工程案例网所有，任何人转载都必须注明出处，否则将追究法律责任！</div>');		
+	});		
+	K('input[name=appendHtml]').click(function(e) {			
+	   editor.appendHtml('xxxxxxxxxxx');		
+	});		
+	K('input[name=clear]').click(function(e) {			
+	  editor.html('');		
+	 });
+});
+ 
+	KindEditor.ready(function(K) {
+		var editor2 = K.editor({
+			allowFileManager : true,
+			allowTypeDir : "content_article",
+			allowFileWatermark : '0'//取消水印
+		});
+		K('#thumb_up').click(function() {
+			editor2.loadPlugin('image', function() {
+				editor2.plugin.imageDialog({
+					showRemote : false,
+					imageUrl : K('#thumb').val(),
+					clickFn : function(url, title, width, height, border, align) {
+						K('#thumb').val(url);
+						editor2.hideDialog();
+					}
+				});
+			});
+		});
+	});
+ 
+function ShowToSource(){
+document.info_post.source.value=document.info_post.select_name.value
+}
+ 
+			Calendar.setup({
+			weekNumbers: true,
+		    inputField : "createdate",
+		    trigger    : "createdate",
+		    dateFormat: "%Y-%m-%d %H:%M:%S",
+		    showTime: 12,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+			});
+ 
+rooturl='$siteDomainUrl';
+$(function(){
+$.formValidator.initConfig({autotip:true,formid:"info_post"});
+
+$("#caid").formValidator({onshow:"请选择文章栏目",onfocus:"文章栏目不能为空",oncorrect:"输入正确",defaultvalue:""}).inputValidator({min:1,onerror: "请选择文章栏目"});
+ 
+$("#subject").formValidator({onshow:"请输入文章标题",onfocus:"文章标题不能为空",oncorrect:"输入正确"}).inputValidator({min:2,onerror:"请输入文章标题"});
+$("#subject_s").formValidator({onshow:"请输入文章简标题",onfocus:"文章简标题为2-15个汉字之间",oncorrect:"输入正确"}).inputValidator({min:4,max:30,onerror:"文章简标题为2-15个汉字之间"});
+ 
+
+}) 
+function refersh_window() {
+	setcookie('refersh_time', 1);
+}
+
+</script>
+</div> 
+<div class="fixed-bottom">
+	<div class="fixed-but text-c">
+    <div class="button">
+        <input value="发布文章(√)" type="submit" name="dosubmit" class="cu" onclick="refersh_window()"></div>
+ 
+    <div class="button"><input value="关闭(X)" type="button" name="close" onclick="refersh_window();close_window();" class="cu" title="Alt+X"></div>
+      </div>
+</div>
+</form>

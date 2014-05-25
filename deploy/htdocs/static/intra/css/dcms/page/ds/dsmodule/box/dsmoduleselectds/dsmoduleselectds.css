@@ -1,0 +1,14 @@
+html {
+	background-color:transparent;
+}
+.content-panel{
+	padding-left :8px;
+	padding-top :6px;
+}
+.tools-panel {
+    width: 198px;
+    height:100%;
+    background-color: #DBDCDE;
+    float: left;
+    overflow: hidden; 
+}

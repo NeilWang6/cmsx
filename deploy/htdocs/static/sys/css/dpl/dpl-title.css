@@ -1,0 +1,6 @@
+/* title */
+.dpl-page-title{height: 32px; padding: 0 12px; background-color: #f3f5f7; margin-bottom: 12px;}
+.dpl-page-title-simple{background-color: transparent; padding: 0 12px 0 0; margin-bottom: 4px;}
+.dpl-page-title-simple i{float: left; display: inline; width: 5px; height: 16px; background-color: #4d6da1; overflow: hidden; margin: 8px 7px 0 0;}
+.dpl-page-title .dpl-title{float: left; display: inline; line-height: 32px; font-size: 14px; color: #444; font-weight: bold;}
+.dpl-page-title .dpl-lnk{float: right; display: inline; margin-top: 7px;}

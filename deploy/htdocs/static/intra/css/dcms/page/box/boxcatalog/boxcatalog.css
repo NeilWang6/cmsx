@@ -1,0 +1,80 @@
+legend {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 38px;
+    color: black;
+    margin: 8px;
+}
+fieldset .mmTree {
+    margin: 8px;
+    padding: 16px 24px;
+    width: 250px;
+    border: 1px solid #adbcdc;
+}
+div.dTreeNode {
+    padding: 4px 0px;
+}
+div.dTreeNode:hover {
+    background-color: #eee;
+}
+.dcms-box-module-tree {
+    display: none;
+    position: relative;
+    margin:0px 40px;
+}
+
+.dcms-box-module-tree button {
+    color: #409AD6;
+    background-color: white;
+    border: 1px solid #B0C6DB;
+    height: 24px;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+.dialog-body .dialog-head {
+    margin: 4px 8px;
+}
+.dialog-body .dialog-head .label{
+    color:#216BA7;
+}
+.dialog-body .dialog-head .close-btn {
+    display: inline-block;
+    float: right;
+    height: 24px;
+}
+.dialog-body .dialog-head .close-btn:hover{
+    cursor: pointer;
+}
+
+.dialog-body .operation-btn {
+    padding: 8px 0px;
+}
+.dialog-body button {
+    color: #409AD6;
+    background-color: white;
+    border: 1px solid #B0C6DB;
+    height: 24px;
+    padding: 0px 8px;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+.dialog-body {
+    display: none;
+    background-color: #fff;
+    width: 300px;
+    border: 1px solid #eee;
+    padding: 8px;
+}
+.dialog-body input[type=text] {
+    border: 1px solid #BDC7D8;
+    width:200px;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    height: 16px;
+    line-height: 16px;
+}
+.dialog-body .name{
+    border-bottom: 1px solid #BDC7D8;
+     padding: 4px 0;
+}

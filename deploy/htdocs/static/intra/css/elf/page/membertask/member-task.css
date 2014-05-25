@@ -1,0 +1,226 @@
+/**
+ * create by wxj on 2012.12.10  
+ */
+.rp-t{height:21px;margin:8px 6px 0 0px;padding-left:9px;border:1px solid #E1E1E1;background-color:#EBEBEB;font-weight:bold;line-height:21px;}
+.rp-b{overflow:hidden;}
+.mg-1{margin-left:16px;}
+.mg-2{margin-left:50px;}
+.mg-3{margin-left:48px;}
+
+.rpt-1{float:left;width:90px;margin-right:5px;height:20px;line-height:20px;}
+.rpt-2{float:left;margin-right:16px;}
+.rpt-2 textarea{*margin-right:-16px;}
+.rpt-3{float:left;line-height:20px;}
+.rpm-1{margin-left:108px;}
+
+.rpt2-1{float:left;width:88px;height:24px;margin-right:4px;line-height:24px;}
+.rpt2-2{float:left;margin-right:24px;line-height:24px;}
+.rpt2-3{float:left;line-height:24px;}
+
+.rp-button a,.rp-button input{float:left;margin-right:24px;}
+
+.yxt-1{text-align:left;font-weight:bold;}
+.yxt-1 td{width:113px;padding-left:4px;height:29px;border:1px solid #CCC;}
+.yxt-1 .mb_mark{color:#C00;font-weight:bold;font-size:14px;padding-right:20px;background-position:80px -212px;}
+
+.wrongMsg{margin-top:10px;color:#F00;font-weight:bold;}
+.wrongMsg .rpt-2{width:650px;}
+
+.savetip{height:30px;margin-left:12px;} 
+.yxrw-table{float:left;text-align:left;}
+.yxrw-tips{float:left;margin:96px 0 0 24px;}
+.yxrw-table caption{padding:0 0 6px 8px;text-align:left;}
+.yxrw-table .td1,.yxrw-table .td2{padding-left:8px;border:1px solid #CCC;}
+.yxrw-table .td1{width:108px;}
+.yxrw-table .td2{padding-right:8px;}
+.yxrw-table select{width:140px;}
+.yxrw-table .mymodetext{border:0 none;}
+
+.yxrw-table th{height:25px;background-color:#E0E0E0;font-weight:normal;}
+.yxrw-table td{height:34px;}
+.yxrw-other textarea{*margin-left:-26px;_margin-left:-66px;}
+.yxrw-mg1{margin-left:8px;}
+.yxrw-mg2{margin-left:18px;}
+.yxrw-mg3{margin-left:40px;}
+.yxrw-trigger{width:693px; height:217px;background-color:#F7F7F7;border:1px solid #BBB;}
+.yxrw-trigger .inputbox{float:none;width:40px;margin-top:0px;}
+.test-btn{float:left;margin-top:62px;}
+.yxrw-lifetime .rpt-1{width:70px;margin-right:12px;}
+.yxrw-lifetime .inputbox{width:128px;}
+
+/* 营销对象选择 模板内容选择 input 因为其readonly 故设此样式 */
+#segmentName,#contentName{color:#999;background-color:#eee;}
+
+body,button,input,select,textarea,td{font:12px/1.5 "\5b8b\4f53";color:#333;}
+
+.s {font-size:12px}
+.m {font-size:14px}
+.b {font-weight:bold} 
+
+.left,.f-l{float:left !important;display:inline}
+.right,.f-r{float:right !important;display:inline}
+
+.clr{zoom:1}
+.clr:after{content:"\0020";display:block;height:0;clear:both}
+
+.lh15{line-height:1.5}
+.lh17{line-height:1.7}
+.lh20{line-height:2}
+.h20{height:20px;overflow:hidden;}
+
+.d-n{display:none !important}
+.d-b{display:block}
+.o-h{overflow:hidden}
+.v-h{visibility:hidden}
+.t-c{text-align:center}
+.t-r{text-align:right}
+.p-r{position:relative;}
+.p-a{position:absolute;}
+.b-n{border:0 none !important}
+
+
+
+.tdn a,a.tdn{text-decoration:none !important}
+.tdu a,a.tdu{text-decoration:underline !important}
+
+a.ilk,.ilk a{float:left;text-align:center;line-height:23px}
+.ilk img{display:block;cursor:pointer;margin:0}
+
+.hlf{width:50%;+width:49.99%;overflow:hidden}
+.wrp{word-wrap:break-word;word-break:break-all;overflow:hidden}
+
+.dib{float:none !important;display:inline-block;display:-moz-inline-box;-moz-box-align:stretch;+display:inline-block;vertical-align:middle}
+.dib{+display:inline}
+
+.ma{display:block;margin-left:auto;margin-right:auto;}
+.mt8{margin-top:8px}
+.ml8{margin-left:8px}
+.mr8{margin-right:8px}
+.mb8{margin-bottom:8px}
+.pb8{padding-bottom:8px}
+
+ 
+.vm,.vm .vma .vmb{height:100px}
+.vm{position:relative}
+.vm .vma{+position:absolute;border:none!important;+top:50%;display:table}
+.vm .vma .vmb{+position:relative;+top:-50%;display:table-cell;vertical-align:middle;+height:auto !important}
+
+.ct .vma{+left:50%;margin:0px auto}
+.ct .vma .vmb{+left:-50%;margin:0px auto}
+.ct .vma img{+margin-top:4px}
+
+
+.ct .vma{+left:50%;margin:0px auto}
+.ct .vma .vmb{+left:-50%;margin:0px auto}
+.ct .vma img{+margin-top:4px}
+
+.info-item-submit {
+padding: 20px 0 50px 150px;
+overflow: hidden;
+}
+
+
+/** dialog */
+.dialog-set-message-info {
+	width:700px;
+}
+.dialog-set-message-info  .info-item { 
+	padding:8px 0;
+	overflow: hidden;
+}
+
+.dialog-set-message-info  .info-item dt { 
+	float:left; 
+	width:190px; 
+	padding-right:4px; 
+	text-align:right;
+	font-weight:bold;
+	padding-right:12px;
+}
+.dialog-set-message-info  .info-item dd { 
+	float:left;
+/*	padding-right:20px; */
+}
+
+.dialog-set-message-info .ddInfo {
+	width: 200px;
+}
+
+.dialog-set-message-info .message-top-info {
+	color: red;
+	text-align:center;
+}
+.dialog-set-alitalk-message-info {
+	width:700px;
+}
+.dialog-set-alitalk-message-info  .info-item { 
+	padding:8px 0;
+	overflow: hidden;
+}
+
+.dialog-set-alitalk-message-info   .info-line-height { 
+	line-height: 26px;
+}
+
+.dialog-set-alitalk-message-info  .info-item dt { 
+	float:left; 
+	width:190px; 
+	padding-right:4px; 
+	text-align:right;
+	font-weight:bold;
+	padding-right:12px;
+}
+.dialog-set-alitalk-message-info  .info-item dd { 
+	float:left;
+/*	padding-right:20px; */
+}
+
+.dialog-set-alitalk-message-info .ddInfo {
+	width: 200px;
+}
+
+.dialog-set-alitalk-message-info .message-top-info {
+	color: red;
+	text-align:center;
+}
+
+.error-class{
+	font-weight:bold;
+	color:#ff0000;
+	text-align:center;
+}
+
+.prompt-message{
+	color:#ff0000;
+	font-weight:bold;
+}
+
+/*updata:wb-zhuliqi*/
+.w290{
+	width:290px;
+	display:inline-block;
+	_display:inline;
+
+}	
+
+.dialog-basic .dialog-b input,.dialog-basic .dialog-b textarea{margin-right:5px;}
+
+.hide{display:none;}
+
+
+.form-vertical{margin-top:15px;float:left;}
+.form-vertical .item-form .topic{width:90px;}
+.form-vertical .item-form select{width:220px;}
+.form-vertical dl.item-form dd{padding-left: 106px;}
+
+.item-form .item-input{width:212px;}
+
+.condition .col-r10{
+    width: 130px;
+    padding-right: 5px;
+}
+
+.info-item-class { 
+	padding:8px 0;
+	overflow: hidden;
+}

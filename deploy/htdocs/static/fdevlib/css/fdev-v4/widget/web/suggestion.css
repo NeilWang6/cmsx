@@ -1,0 +1,16 @@
+/**
+ * Suggestion 1.0
+ */
+.web-suggestion{border:1px solid #b8b8b8;position:absolute;z-index:1001;background:#fff;}
+.web-suggestion li{color:#999;line-height:23px;height:23px;cursor:default;}
+.web-suggestion .suggest-key{color:#666;float:left;padding-left:4px;font-weight:700;}
+.web-suggestion .suggest-key em{color:#999;font-weight:300;}
+.web-suggestion .suggest-result{float:right;padding-right:4px;text-align:right;}
+.web-suggestion .suggest-city,
+.web-suggestion .suggest-category{float:left;padding-left:16px;color: #999999;}
+.web-suggestion .ui-state-hover{background-color:#eee;}
+.web-suggestion .ui-state-hover .suggest-result{color:#666;}
+.web-suggestion .festival{line-height:24px; overflow:hidden;}
+.web-suggestion .suggest-history-key{color:#1071a8;font-weight:normal;height:23px;overflow:hidden; width:80%}
+.web-suggestion .suggest-delete{float:right;cursor:pointer;width:30px; display:none;height:11px;padding-right:10px;font-size:12px;text-align:right;color:#888;font-weight:normal;}
+.web-suggestion .ui-state-hover .suggest-delete{ display:block;}

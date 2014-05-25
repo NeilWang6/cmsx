@@ -1,0 +1,83 @@
+/**
+ * @author xianxia.jianxx
+ * @date 20131213
+ * @file 全站来往布点悬挂 
+ */
+.sys-laiwang{
+    display:none;
+}
+
+.sys-laiwang-scan{
+
+}
+.sys-laiwang-scan .box-wrap{
+    position:fixed;
+    _position:absolute;
+    border:1px solid #eee;
+    padding:4px;
+    background:#fff;
+    z-index:20;
+}
+.sys-laiwang-scan .box-wrap .desc-panel{
+    color:#ff4400;
+    display:block;
+    margin:0 0 4px 0;
+    width:86px;
+    text-align:center;
+    white-space: normal;
+    word-break: break-all;
+} 
+.sys-laiwang-scan .box-wrap a.close-btn{
+    position:absolute;
+    top:-1px;
+    width:11px;
+    height:11px;
+    padding:4px;
+    z-index:3;
+    border:1px solid #eee;
+    display:inline-block;
+    text-decoration:none;
+    background:#fff;
+}
+
+.sys-laiwang-scan .box-wrap-right-mid{
+    left:50%;
+}
+.sys-laiwang-scan .box-wrap-left-mid{
+    right:50%;
+}
+.sys-laiwang-scan .box-wrap-right-side{
+    right:18px;
+}
+.sys-laiwang-scan .box-wrap-left-side{
+    left:18px;
+}
+.sys-laiwang-scan .box-wrap-right-mid a.close-btn,
+.sys-laiwang-scan .box-wrap-right-side a.close-btn{
+    right:-21px;
+}
+.sys-laiwang-scan .box-wrap-left-mid a.close-btn,
+.sys-laiwang-scan .box-wrap-left-side a.close-btn{
+    left:-21px;
+}
+.sys-laiwang-scan .box-wrap a.close-btn span{
+    display:inline-block;
+    width:11px;
+    height:11px;
+    line-height:0;
+    font-size:0;
+    float:left;
+    cursor:pointer;
+    background:url(http://img.china.alibaba.com/cms/upload/2013/511/668/1866115_2091977944.png) no-repeat 0 0;
+}
+.sys-laiwang-scan .box-wrap a.close-btn:hover{
+    background:#ff4400;
+    border:1px solid #ff4400;
+}
+.sys-laiwang-scan .box-wrap a.close-btn:hover span{
+    background-position:0 -11px;
+    cursor:pointer;
+}
+.sys-laiwang-scan .box-wrap .code-panel img{
+    float:left;
+}

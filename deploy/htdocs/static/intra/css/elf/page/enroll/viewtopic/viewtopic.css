@@ -1,0 +1,67 @@
+/**
+ * @author jiankai.xujk
+ * @usefor 报名工具-查看专场属性
+ * @date   2012.09.24
+ */
+
+.view-content {
+    width: 990px;
+}
+
+.topic-name {
+	border-bottom: 2px solid #9DA5B4;
+	margin:10px;
+}
+
+.topic-name span {
+	padding-right:20px;
+}
+
+.topic-table .left-td {
+	text-align: right;
+	vertical-align:top;
+	width:190px;
+	padding-right: 6px;
+	line-height: 30px;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.banner-size a {
+	padding-right:25px;
+}
+
+.banner-size p {
+	padding-bottom:15px;
+}
+
+.dialog-basic .assign-topic-table {
+	height:150px;
+}
+.dialog-basic .assign-topic-table tr {
+	vertical-align:top;
+}
+
+.dialog-basic .assign-topic-table .first-tr {
+	height:30px;
+}
+
+.dialog-basic .assign-topic-table .first-td {
+	width:92px;
+	text-align:right;
+}
+
+.dialog-basic .assign-topic-table .second-td {
+	width:160px;
+}
+
+.dialog-basic .assign-topic-table .third-td {
+	width:131px;
+}
+
+.dialog-basic .dialog-message {
+	color:red;
+	text-align:center;
+}

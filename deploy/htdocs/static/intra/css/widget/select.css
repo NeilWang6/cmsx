@@ -1,0 +1,77 @@
+/**
+ * @author shanshan.hongss
+ * @usefor ELF应用 - 模拟下拉菜单
+ * @date   2012.09.12
+ */
+
+.tui-select {
+    position:relative;
+    color:#666;
+}
+.tui-select .s-text {
+    border-right:0;
+    border-radius:0;
+    width:100px;
+    cursor:default;
+}
+.tui-select .s-text:focus {
+    border:1px solid #bdc7d8;
+    border-right:0;
+    box-shadow:0 0 0 ;
+}
+.tui-select .s-arrow {
+    display:inline-block;
+    height:16px;
+    width:15px;
+    padding:3px 3px 3px 0;
+    border:1px solid #bdc7d8;
+    border-left:0;
+    vertical-align:middle;
+    background:#fff url("http://img.china.alibaba.com/cms/upload/2012/344/994/499443_133354742.png") no-repeat 0 center;
+}
+
+.tui-select .pull-down {
+    position:absolute;
+    top:19px;
+    left:0;
+    min-width:124px;
+    border:1px solid #bdc7d8;
+    background-color:#fff;
+    display:none;
+}
+.tui-select .pull-down .item {
+    border-bottom:1px dotted #dcdcdc;
+    padding:3px 0;
+}
+.tui-select .pull-down .item.last {
+    border-bottom:0;
+}
+.tui-select .pull-down .item dt {
+    float:left;
+    width:50px;
+    font-weight:bold;
+    padding-left:3px;
+}
+.tui-select .pull-down .item dd {
+    padding:0 3px 0 53px;
+    word-break:keep-all;
+    cursor:pointer;
+    white-space: nowrap;
+    font-weight:normal;
+}
+.tui-select .pull-down .item dd:hover {
+    background-color:#e2e6ee;
+}
+
+.tui-select .pull-down li {
+    line-height:22px;
+    word-break:keep-all;
+    cursor:pointer;
+    padding:0 3px;
+}
+.tui-select .pull-down li:hover {
+    background-color:#e2e6ee;
+}
+.tui-select .pull-down li.gray {
+    color:#a2a2a2;
+}

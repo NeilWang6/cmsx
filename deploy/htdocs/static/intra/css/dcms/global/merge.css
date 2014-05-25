@@ -1,0 +1,13 @@
+@import url(/static/fdevlib/css/fdev-v4/reset/reset-min.css);
+@import url(/static/intra/css/dcms/module/html5-reset.css);
+@import url(/static/intra/css/dcms/module/layout.css);
+@import url(/static/intra/css/dcms/module/header.css);
+@import url(/static/intra/css/dcms/module/left-nav.css);
+@import url(/static/intra/css/dcms/module/footer.css);
+@import url(/static/intra/css/dcms/module/type.css);
+@import url(/static/intra/css/dcms/module/form.css);
+@import url(/static/intra/css/dcms/module/grid.css);
+@import url(/static/intra/css/dcms/module/dialog.css);
+@import url(/static/fdevlib/css/fdev-v4/widget/ui/datepicker.css);
+@import url(/static/intra/css/widget/dialog.css);
+@import url(/static/intra/css/widget/basic.css);

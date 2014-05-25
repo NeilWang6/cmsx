@@ -1,0 +1,1027 @@
+/**
+ * @author hongss
+ * @userfor 页面中用BOX的可视化编辑的额外CSS样式
+ * @date 2012-02-02
+ */
+
+.dcms-pos-relative {
+	position: relative;
+}
+
+/* 作为容器的标签内无内容时的样式 */
+#design-container {
+	margin-top: 27px;
+}
+
+#content:empty, .crazy-box-module .crazy-box-content:empty, .crazy-box-module .crazy-content:empty, .crazy-box-layout:empty, .crazy-box-grid:empty, .crazy-box-row:empty, .crazy-box-box:empty, .crazy-box-module:empty, .crazy-box-cell:empty {
+	height: 200px;
+	background-color: #ddd;
+}
+.layout-fixed-right .crazy-box-content:empty {
+	width: 120px;
+}
+
+/*add by hongss on 2012.06.15 for definecell*/
+.cell-cell-define:empty {
+	border: 1px solid #ddd;
+	background: #fff url(http://img.china.alibaba.com/cms/upload/detail/dcms/bg-define-cell.png) no-repeat 16px 16px;
+}
+.crazy-box-module {
+	min-height: 12px;
+}
+.crazy-box-box:empty, .crazy-box-box .crazy-box-module .crazy-box-content:empty {
+	border-left: 1px solid #fff;
+}
+.crazy-box-row:empty, .crazy-box-row .crazy-box-module .crazy-box-content:empty {
+	border-bottom: 1px solid #fff;
+}
+.crazy-box-box:nth-last-of-type(1) .crazy-box-module .crazy-box-content:empty {
+	/*background-image:none;*/
+
+}
+.crazy-box-cell-target-current {
+	cursor: pointer;
+	z-index: 2000 !important;
+	/*inset  box-shadow: 0 0 0 2px #4083a9;*/
+	background-color: #4083a9;
+}
+.crazy-box-cell-target-current-fix {
+	z-index: 1000;
+	background-color: #ccc;
+	opacity: 0.5;
+	box-shadow: 0 0 0 2px #4083A9;
+}
+.crazy-box-cell-target-current  .clist-btns {
+	top: -8px;
+	left: -2px;
+	text-align: left;
+	white-space: nowrap;
+}
+.clist-btns li.disabled a {
+	color: #ccc;
+	cursor: text;
+}
+.clist-btns li.disabled a:hover, .clist-btns li.disabled a:active {
+	color: #ccc !important;
+	text-decoration: none;
+	cursor: text;
+}
+.clist-btns li a {
+	display: inline-block;
+	cursor: pointer;
+	padding: 4px 12px;
+	text-align: center;
+}
+.clist-btns .li-mid-line {
+
+}
+.clist-btns .mid-line {
+	height: 24px;
+	line-height: 24px;
+	margin-top: 2px;
+	padding: 0;
+}
+.clist-btns .mid-line s {
+	border-left: 1px solid #306380;
+	border-right: 1px solid #4e9ecc;
+	display: inline-block;
+	height: 12px;
+}
+.crazy-box-cell-target-current  .clist-btns li {
+	display: inline-block;
+	color: #fff;
+}
+.crazy-box-cell-current {
+	box-shadow: 0 0 0 2px #4083a9; /*inset */
+	opacity: 0.8;
+}
+.crazy-box-target-current {
+	box-shadow: 0 0 0 2px #4083a9; /*inset */
+}
+
+.crazy-box-control-current {
+	box-shadow: 1px 0 0 1px #4083a9; /*inset   7ba6c9*/
+}
+
+.crazy-box-before-singer, .crazy-box-after-singer {
+	/*background:url("../img/arrow-up.png") no-repeat bottom center;
+	 border-bottom:10px solid #7ba6c9;
+	 height:12px;*/
+	height: 96px;
+	line-height: 300px;
+	text-align: center;
+	border: 2px dashed #c2c2c2;
+	/*background-color:#c2c2c2;*/
+	background: url("http://img.china.alibaba.com/cms/upload/other/dcms/bg-editarea.png") no-repeat center center;
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+.crazy-box-after-singer {
+	/*background:url("../img/arrow-down.png") no-repeat top center;
+	 border-top:10px solid #7ba6c9;
+	 height:12px;*/
+}
+
+.crazy-box-singer-current {
+	/*height:30px;*/
+	border: 2px solid #7ba6c9;
+}
+
+#crazy-box-droptransport, #crazy-box-movetransport, #crazy-box-control-btn, #crazy-box-highlight-fix, #crazy-box-cell-highlight-fix, #crazy-box-cell-highlight, #crazy-box-micro-highlight-fix, #crazy-box-micro-highlight {
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+
+#crazy-box-movetransport {
+	z-index: 1000;
+	background-color: #ccc;
+	opacity: 0.5;
+}
+
+#crazy-box-control-btn .crazy-box-control {
+	/*width:100px;
+	 text-align:center;
+	 line-height:24px;
+	 border:1px solid #b0c6db;
+	 border-bottom-color:#506581;
+	 background-color:#f3f8fb;
+	 padding:0 8px;
+	 color:#409ad6;*/
+	border: 0;
+	line-height: 16px;
+	padding: 0 8px 2px;
+	background-color: #ff7300;
+	border-radius: 3px 3px 0 0;
+	color: #fff;
+	cursor: pointer;
+}
+
+#crazy-box-singer-area {
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+#crazy-box-control-btn {
+	z-index: 1003;
+}
+#crazy-box-singer-area .list-btns {
+	position: relative;
+	top: 16px;
+	left: 0px;
+	height: 18px;
+	line-height: 16px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+#crazy-box-singer-area .list-btns li {
+	display: inline-block;
+	padding: 4px 8px;
+	background-color: #4083a9;
+	color: #fff;
+	cursor: pointer;
+}
+#crazy-box-singer-area .list-btns .l-desc {
+	color: #fff;
+	cursor: pointer;
+}
+#crazy-box-singer-area .list-btns li:hover {
+	background-color: #0e5d9f;
+}
+.edit-layout #crazy-box-singer-area .list-btns li {
+	display: inline-block;
+	padding: 4px 12px;
+	background-color: #7ea652;
+	color: #fff;
+	cursor: pointer;
+}
+.edit-layout #crazy-box-singer-area .list-btns .b-margin {
+	padding: 2px 12px;
+}
+.edit-layout #crazy-box-singer-area .list-btns input {
+	width: 30px;
+	height: 14px;
+	line-height: 14px;
+	margin: 0 4px;
+	border: 1px solid #808080;
+	padding: 2px;
+}
+input.margin-bottom {
+	width: 24px;
+	height: 10px;
+	line-height: 10px;
+	margin: 0 4px;
+	border: 1px solid #808080;
+	padding: 2px;
+}
+#crazy-box-singer-area .main {
+	box-shadow: 0 0 0 2px #4083a9;
+}
+.edit-layout #crazy-box-singer-area .main {
+	box-shadow: 0 0 0 2px #7ea652;
+}
+
+.crazy-box-edit-area, .crazy-box-edit-cell {
+	box-shadow: 0 0 0 2px #4083a9;
+}
+
+/* add by hongss on 2012.06.07 for editarea*/
+#crazy-box-edit-textarea {
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+#crazy-box-edit-textarea ul {
+	background: #6191a8;
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+}
+#crazy-box-edit-textarea li {
+	float: left;
+	padding-left: 12px;
+}
+.crazy-box-textarea {
+	width: 100%;
+	height: 100%;
+	max-height: 600px;
+}
+
+/* for Create/modify Module */
+.module-container {
+	width: 952px;
+	margin: 8px auto;
+}
+.module-container .crazy-box-module {
+	margin: 0 auto;
+}
+
+/* add by hongss on 2012.05.17 for cell-img-a-absolute */
+.crazy-link-pos {
+	background-color: #33cc00;
+	opacity: .7;
+}
+.ds-box-module {
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-image: url("http://img.china.alibaba.com/cms/upload/2013/104/988/889401_983650061.png");
+}
+
+/*add by hongss on 2013.08.05 for 遮罩*/
+.cover-crazy-box {
+	position: absolute;
+	display: none;
+	z-index: 9999;
+    font-size:12px;
+	/*transition: display 0.25s;*/
+}
+.cover-crazy-box.editor-module .moveup, .cover-crazy-box.editor-module .movedown, .cover-crazy-box.editor-module .add, .cover-crazy-box.editor-module .delect, .cover-crazy-box.editor-module .copy {
+	display: none !important;
+}
+#crazy-box-cover-layout {
+	z-index: 10000;
+}
+.cover-crazy-box .main {
+	width: 100%;
+	height: 100%;
+	background-color: #bce;
+	opacity: 0.75;
+}
+.cover-crazy-box .area-opt {
+	position: absolute;
+	top: -1px;
+	right: 0;
+	height: 28px;
+	line-height: 28px;
+	text-align: right;
+	white-space: nowrap;
+	z-index: 1;
+}
+#crazy-box-cover-layout .area-opt {
+	top: -28px;
+}
+.cover-public-module .main {
+	background-color: #c7bbee;
+}
+.cover-crazy-box .con-width {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	z-index: 1;
+}
+.cover-crazy-box .con-width .width {
+	display: inline-block;
+	padding: 0 8px;
+	background-color: #5983d6;
+}
+.cover-public-module .con-width .width {
+	background-color: #9c81f2;
+}
+.cover-crazy-box .con-width .disabled {
+	display: none;
+}
+.cover-crazy-box .area-opt dt, .cover-crazy-box .area-opt dd, .cover-crazy-box .area-opt em {
+    margin:0;
+    font-size:12px;
+    font-style:normal;
+}
+.cover-crazy-box .area-opt dt {
+	display: inline-block;
+	padding-right: 4px;
+	color: #d6dff3;
+	background-color: #5983d6;
+	vertical-align: middle;
+}
+#crazy-box-cover-layout .area-opt dt {
+	background-color: #ff7300;
+	color: #ffdbcb;
+}
+.cover-public-module .area-opt dt {
+	background-color: #9c81f2;
+	color: #e4defb;
+}
+.cover-crazy-box .area-opt dt .title {
+	padding: 0px 12px;
+	border-right: 1px solid #95b0e5;
+}
+#crazy-box-cover-layout .area-opt dt .title {
+	border-right: 1px solid #ffa65c;
+}
+.cover-public-module .area-opt dt .title {
+	border-right: 1px solid #c0aef7;
+}
+/*.cover-crazy-box.add .area-opt dd.delect,
+ .cover-crazy-box.add .area-opt dd.more{
+ display:none;
+ }*/
+.cover-crazy-box .area-opt dd, .cover-crazy-box-edit .area-opt dd.data-more, .cover-crazy-box-edit .area-opt dd.edit-option {
+	background-image: url("http://img.china.alibaba.com/cms/upload/2013/356/406/1604653_133354742.png");
+	background-repeat: no-repeat;
+}
+.cover-crazy-box .area-opt dd {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	background-color: #5983d6;
+	vertical-align: middle;
+}
+#crazy-box-cover-layout .area-opt dd {
+	background-color: #ff7300;
+}
+.cover-public-module .area-opt dd {
+	background-color: #9c81f2;
+}
+
+.cover-public-module .area-opt .normal, .cover-public-module .area-opt .copy, .cover-public-module .area-opt .replace, .cover-public-module .area-opt .attr, .cover-public-module .area-opt .setpublic {
+	display: none;
+}
+.cover-crazy-box .area-opt .public, .cover-crazy-box .area-opt .show {
+	display: none;
+}
+.cover-public-module .area-opt .public {
+	display: inline-block;
+}
+.cover-public-module .area-opt .show {
+	display: block;
+	border-top: 0 !important;
+}
+
+.cover-crazy-box .area-opt dd.moveup {
+	background-position: 6px 7px;
+}
+.cover-crazy-box .area-opt dd.movedown {
+	background-position: -24px 7px;
+}
+.cover-crazy-box .area-opt dd.add {
+	background-position: -54px 7px;
+}
+.cover-crazy-box .area-opt dd.delect {
+	background-position: -84px 7px;
+}
+.cover-crazy-box .area-opt dd.more {
+	background-position: -114px 8px;
+}
+.cover-crazy-box .area-opt dd.moveup:hover {
+	background-position: 6px -23px;
+}
+.cover-crazy-box .area-opt dd.movedown:hover {
+	background-position: -24px -23px;
+}
+.cover-crazy-box .area-opt dd.add:hover {
+	background-position: -54px -23px;
+}
+.cover-crazy-box .area-opt dd.delect:hover {
+	background-position: -84px -23px;
+}
+.cover-crazy-box .area-opt dd.more:hover {
+	background-position: -114px -22px;
+}
+.cover-crazy-box .area-opt dd.more .list-more,.cover-crazy-box .area-opt dd.module-more .list-more, .cover-crazy-box-edit .area-opt dd.data-more .list-more {
+	display: none;
+	position: absolute;
+	border: 1px solid #999;
+	background-color: #fff;
+	width: 88px;
+	text-align: center;
+	line-height: 24px;
+	padding: 4px 0;
+	top: 29px;
+	right: 0;
+	color: #666;
+}
+.cover-crazy-box-edit .area-opt dd.data-more .list-more {
+	top: 28px;
+}
+.cover-crazy-box .area-opt ul, .cover-crazy-box .area-opt dl {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.cover-crazy-box .area-opt .disabled, .cover-crazy-box-edit .area-opt .disabled {
+	display: none !important;
+}
+.cover-crazy-box .area-opt dd.more .list-more a, .cover-crazy-box .area-opt dd.more .list-more a:hover, .cover-crazy-box .area-opt dd.more .list-more a:active {
+	color: #666 !important;
+	text-decoration: none;
+}
+.cover-crazy-box .area-opt dd.more .list-more li, .cover-crazy-box-edit .area-opt dd.data-more .list-more  li {
+	border-top: 1px dashed #ddd;
+}
+.cover-crazy-box .area-opt dd.more .list-more li:first-child, .cover-crazy-box-edit .area-opt dd.data-more .list-more li:first-child {
+	border-top: 0;
+}
+.cover-crazy-box .area-opt dd.more:hover .list-more {
+	display: block;
+}
+.cover-crazy-box .area-opt dd.public-update .list-more {
+	width: 226px;
+}
+.cover-crazy-box .area-opt dd.more .on-made, .cover-crazy-box .area-opt dd.more .off-made {
+	position: relative;
+	width: 88px;
+	height: 25px;
+	line-height: 25px;
+}
+.cover-crazy-box .area-opt dd.more .on-made:after, .cover-crazy-box .area-opt dd.more .off-made:after {
+	position: absolue;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.cover-crazy-box .area-opt dd.more .on-made:after {
+	content: "取消收藏";
+}
+.cover-crazy-box .area-opt dd.more .off-made:after {
+	content: "收藏该组件";
+}
+.cover-crazy-box .area-opt dd.public-update {
+	background-image: url("http://img.china.alibaba.com/cms/upload/2013/733/216/1612337_261003913.png");
+	background-position: 3px 7px;
+}
+.cover-crazy-box .area-opt dd.public-update:hover {
+	background-position: -27px 7px;
+}
+.cover-crazy-box .area-opt dd.public-update .list-more  a {
+	text-decoration: underline !important;
+}
+.cover-crazy-box .area-opt dd.public-update .list-more  a:link, .cover-crazy-box .area-opt dd.public-update .list-more  a:visited,
+.cover-crazy-box .area-opt dd.module-update .list-more  a:link, .cover-crazy-box .area-opt dd.module-update .list-more  a:visited {
+	color: #3170EE !important;
+}
+.cover-crazy-box .area-opt dd.public-update .list-more  a:hover, .cover-crazy-box .area-opt dd.public-update .list-more  a:active,
+.cover-crazy-box .area-opt dd.module-update .list-more  a:hover, .cover-crazy-box .area-opt dd.module-update .list-more  a:active {
+	color: #ff7300 !important;
+}
+.cover-crazy-box-edit {
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+.cover-crazy-box-edit .area-opt {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	text-align: right;
+	height: 28px;
+	line-height: 28px;
+}
+.cover-crazy-box-editlabel-menu .area-opt {
+	top: 3px;
+}
+.cover-crazy-box-edit .area-opt dd, .cover-crazy-box-edit .area-opt dt {
+	float: right;
+	height: 28px;
+    font-size:12px;
+	background-color: #6eb8ad;
+	cursor: pointer;
+	color: #fff;
+    margin:0;
+	padding: 0 8px;
+	margin-left: 2px;
+	overflow: hidden;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    -o-box-sizing:content-box;
+    -ms-box-sizing:content-box;
+    box-sizing:content-box;
+}
+.cover-crazy-box-edit .area-opt dt.info {
+	display: none;
+}
+.cover-crazy-box-edit.no-edit .area-opt dd {
+	display: none;
+}
+.cover-crazy-box-edit.no-edit .area-opt dt.info {
+	display: block;
+}
+.cover-crazy-box-edit .area-opt dd.data-more {
+	width: 12px;
+	line-height: 88px;
+	background-position: -23px -54px;
+}
+.cover-crazy-box-edit .area-opt dd.edit-option {
+	width: 12px;
+	line-height: 88px;
+	background-position: 7px -54px;
+}
+
+.cover-crazy-box-edit .area-opt dd.data-more:hover .list-more {
+	display: block;
+}
+.cover-crazy-box-edit .area-opt dd.current, .cover-crazy-box-edit .area-opt dd.img-area-on {
+	background-color: #ff7300;
+}
+.cover-crazy-box-edit .main {
+	width: 100%;
+	height: 100%;
+	background-color: #97e7d1;
+	opacity: 0.75;
+}
+.cover-crazy-box-editlabel, .cover-crazy-box-option-menu {
+	position: absolute;
+	box-shadow: 0 0 4px #ccc inset, 0 0 0 3px #97e7d1;
+	z-index: -888;
+}
+.cover-crazy-box-editlabel.yellow {
+	box-shadow: 0 0 4px #ccc inset, 0 0 0 3px #ff7300;
+}
+.cover-crazy-box-editlabel-menu .edit-define, .cover-crazy-box-editlabel-menu .edit-option {
+	display: none !important;
+}
+
+/*add by hongss on 2012.12.04 for layout 高亮与操作项*/
+.hight-light-red {
+	box-shadow: 0 0 0 2px #cd2020;
+}
+.hight-light-yellow {
+	box-shadow: inset 0 0 0 3px #ff7300;
+	padding: 3px 0;
+}
+.hight-light-green {
+	box-shadow: 0 0 0 3px #97e7d1;
+	margin: 3px 0 !important;
+}
+
+#crazy-box-operate-layout {
+	width: 38px;
+	background-color: #cd2020;
+	padding: 4px 2px 4px;
+	position: absolute;
+	z-index: 9999;
+	display: none;
+}
+#crazy-box-operate-layout li {
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 4px;
+	text-align: center;
+	border: 1px solid #cd2020;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+}
+#crazy-box-operate-layout li.disabled {
+	color: #800;
+}
+#crazy-box-operate-layout li.last {
+	margin-bottom: 0;
+}
+#crazy-box-operate-layout li:hover, #crazy-box-operate-layout li.current {
+	background-color: #800;
+	border: 1px solid #800;
+}
+#crazy-box-operate-layout li.disabled:hover {
+	background-color: #cd2020;
+	border: 1px solid #cd2020;
+}
+
+/*end*/
+
+/*add by hongss for 可上、下移动标签的高亮样式*/
+#crazy-box-move-light {
+	position: absolute;
+	z-index: 9999;
+	box-shadow: 0 0 0 1px #4e79d1;
+	display: none;
+}
+#crazy-box-move-light .list-ml {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 48px;
+	background-color: #4e79d1;
+	overflow: hidden;
+}
+#crazy-box-move-light .list-ml li {
+	float: left;
+	width: 15px;
+	height: 16px;
+	line-height: 56px;
+	background: url("http://img.china.alibaba.com/cms/upload/2013/628/506/605826_133354742.png") no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+}
+#crazy-box-move-light .list-ml li.ml-moveup {
+	background-position: -1px -2px;
+}
+#crazy-box-move-light .list-ml li.ml-moveup:hover {
+	background-position: -1px -32px;
+}
+#crazy-box-move-light .list-ml li.ml-movedown {
+	background-position: -26px -2px;
+}
+#crazy-box-move-light .list-ml li.ml-movedown:hover {
+	background-position: -26px -32px;
+}
+#crazy-box-move-light .list-ml li.ml-copy {
+	width: 17px;
+	background-position: -56px -3px;
+}
+#crazy-box-move-light .list-ml li.ml-copy:hover {
+	background-position: -56px -33px;
+}
+
+/**
+ *     微布局
+ */
+.cell-table-containter {
+
+}
+
+.cell-table-containter .crazy-table-containter-td {
+}
+.cell-table-containter .tborder {
+	border: 0px dotted #000;
+}
+.cell-table-containter .crazy-table-containter-td:empty {
+	width: 125px;
+	height: 125px;
+	border: 1px dotted #000;
+}
+.crazy-box-micro-target-current-fix {
+	z-index: 1000;
+	background-color: #ccc;
+	opacity: 0.5;
+}
+.crazy-box-micro-target-current {
+	cursor: pointer;
+	z-index: 2000 !important;
+	/*inset  box-shadow: 0 0 0 2px #4083a9;*/
+	background-color: #4083a9;
+}
+.crazy-box-micro-target-current  .micro-list-btns {
+	/**top: -8px;
+	 left: -2px; **/
+	text-align: left;
+	white-space: nowrap;
+	margin: 0px;
+	padding: 0px;
+}
+.micro-list-btns li.disabled a {
+	color: #ccc;
+	cursor: text;
+}
+.micro-list-btns li.disabled a:hover, .micro-list-btns li.disabled a:active {
+	color: #ccc !important;
+	text-decoration: none;
+	cursor: text;
+}
+.micro-list-btns li a {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 4px 0px 4px;
+	text-align: center;
+}
+.micro-list-btns .edit-micro-row-bin, .micro-list-btns .border-transparent-bin {
+	padding: 0px 4px;
+}
+.micro-list-btns input[type=text] {
+	width: 30px;
+	height: 14px;
+	line-height: 14px;
+	margin: 0 4px;
+	border: 1px solid #808080;
+	padding: 3px 2px;
+}
+.micro-list-btns .border-transparent-bin span {
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+	padding: 2px 0 2px 4px;
+}
+
+.micro-list-btns .li-mid-line {
+	padding: 0px 4px;
+}
+.micro-list-btns .mid-line {
+	margin-top: 0px;
+	padding: 0;
+}
+.micro-list-btns .mid-line s {
+	border-left: 1px solid #306380;
+	border-right: 1px solid #4e9ecc;
+	display: inline-block;
+	margin-top: 8px;
+	height: 12px;
+}
+.crazy-box-micro-target-current  .micro-list-btns li {
+	display: inline-block;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+}
+.crazy-box-micro-current {
+	box-shadow: 0 0 0 2px #4083a9; /*inset */
+	opacity: 0.8;
+}
+.crazy-script-elm {
+	min-height: 20px;
+}
+/**
+ *     end
+ */
+
+.crazy-box-module-error {
+	box-shadow: inset 0 0 0 2px #f0d104; /*inset */
+}
+.grid-bottom {
+	display: none;
+}
+.grid-bottom .add-area {
+	margin: 4px auto;
+	width: 990px;
+	text-align: center;
+	border: 1px solid #999;
+}
+.grid-bottom .add-area .btn-grid {
+	display: inline-block;
+	margin: 15px 0;
+	color: #999;
+	font-size: 14px;
+	cursor: pointer;
+}
+.crazy-box-module .crazy-box-content:empty {
+
+}
+.layout-fixed-top .crazy-box-module .crazy-box-content:empty {
+
+}
+
+/*错误信息展示*/
+.top-error-message {/*页面级错误信息展示*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.dcms-crazy-container-overdue-offers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10001;
+}
+.top-error-message .info-overdue-offers {
+	position: static;
+}
+.info-overdue-offers {
+	position: absolute;
+	padding-right: 12px;
+	border: 1px solid #f1cb6f;
+	background-color: #fffdc6;
+	line-height: 20px;
+	padding: 6px 12px 6px 6px;
+	z-index: 10001;
+}
+.info-overdue-offers .close {
+	float: right;
+}
+.info-overdue-offers .close {
+	position: relative;
+	display: inline-block;
+	margin-top: 3px;
+	width: 3px;
+	height: 16px;
+	background: #888;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	cursor: pointer;
+}
+.info-overdue-offers .close:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 16px;
+	background: #888;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+.info-overdue-offers .open {
+	position: relative;
+	display: none;
+	border-bottom: 2px solid #888;
+	border-right: 2px solid #888;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	width: 6px;
+	height: 6px;
+	cursor: pointer;
+}
+.info-overdue-offers .open:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border-bottom: 2px solid #888;
+	border-right: 2px solid #888;
+	width: 6px;
+	height: 6px;
+}
+.info-overdue-offers .icon-caution {
+	position: relative;
+	float: left;
+	border: 1px solid #e0452f;
+	border-radius: 50% 50% 50% 50%;
+	height: 14px;
+	width: 14px;
+	vertical-align: middle;
+	background-color: #fe7006;
+	margin-top: 3px;
+	box-shadow: inset 0 0 0 1px #fe932c;
+}
+.info-overdue-offers .icon-caution:before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	border-right: 2px solid #fff;
+	height: 6px;
+	top: 2px;
+	left: 6px;
+}
+.info-overdue-offers .icon-caution:after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	border-right: 2px solid #fff;
+	height: 2px;
+	width: 2px;
+	top: 9px;
+	left: 4px;
+}
+.info-overdue-offers .info-content {
+	padding: 0 16px 0 22px;
+	color: #333;
+	word-break: break-all;
+}
+.info-overdue-offers .info-content .num {
+	color: #f00;
+}
+.info-overdue-offers .info-content .additional {
+	color: #666;
+	font-style: normal;
+}
+.info-overdue-offers .info-content .offer-ids {
+	color: #00e;
+}
+.info-overdue-offers.closed {
+	width: 28px !important;
+	height: 20px;
+	transition: all .25s;
+}
+.info-overdue-offers.closed .info-content, .info-overdue-offers.closed .close {
+	display: none;
+}
+.info-overdue-offers.closed .open {
+	display: inline-block;
+}
+.load-mask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #fff;
+	vertical-align: middle;
+	z-index: 9999;
+}
+.load-mask .mask-wrap {
+	opacity: 0.4;
+	position: absolute;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.load-mask .mask-body {
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	z-index: 2;
+}
+.load-mask .mask-body td {
+	text-align: center;
+	width: 100%;
+	vertical-align: middle;
+}
+.load-mask .mask-body .mask-content {
+	width: 356px;
+	height: 125px;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 5px solid #3a3a3a;
+	background-color: #fff;
+	color: #333;
+	font-size: 12px;
+}
+.load-mask .mask-body .load-icon {
+	display: block;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	margin: 31px auto 0;
+	background: url(http://img.china.alibaba.com/cms/upload/2013/975/246/1642579_261003913.gif) no-repeat;
+}
+.load-mask .mask-body .mask-content p {
+	margin-top: 17px;
+	text-align: center;
+}
+
+dd.module-update .list-more .close {
+	background: url("http://img.china.alibaba.com/cms/upload/2013/813/316/1613318_133354742.png") no-repeat -81px 8px;
+	float: right;
+	width: 12px;
+	height: 26px;
+	line-height: 150px;
+	margin-left: 28px;
+	overflow: hidden;
+}
+.cover-crazy-box .area-opt dd.module-update .module {
+	width: 350px !important;
+}
+dd.module-update .module .txt {
+	padding: 0 4px;
+	display:inline-block;
+	white-space: normal ;
+}
+dd.module-update .module .tip{
+	width:342px;
+	max-height:150px;
+	overflow-y:auto;
+	text-align:left;
+	white-space:normal; 
+	word-break:break-all;
+	padding:4px;
+	background-color: #f6f6f6;
+}
+dd.module-update .module .default {
+	background: url(http://img.china.alibaba.com/cms/upload/2013/723/238/1832327_983650061.png) no-repeat;
+	float: right;
+	background-position: -0px 6px;
+	width: 15px;
+	height: 26px;
+}
+dd.module-update .module .up {
+	background-position: -0px -20px;
+}
+dd.module-update .module .remark {
+	display: none;
+	border-top: 1px solid #999 !important;
+}
+.cover-crazy-box .area-opt dd.module-more{
+	background-position: 4px -43px;
+	background-image:url(http://img.china.alibaba.com/cms/upload/2013/723/238/1832327_983650061.png) !important;
+}

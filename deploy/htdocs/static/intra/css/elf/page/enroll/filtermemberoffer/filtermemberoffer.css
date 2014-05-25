@@ -1,0 +1,289 @@
+/**
+ * create by xiaotong.huangxt on 2012.12.21
+ */
+
+.content {
+    width: 990px;
+}
+.vline {
+    color: #979797;
+}
+
+/** tab */
+.tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.tab-b .topic-info {
+    position: relative;
+    float: left;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+}
+.tab-b .topic-info  span {
+	color: #4a6bae;
+	font-weight: bold;
+}
+.tab-b .f-tab-t {
+    position: relative;
+    float: right;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+    cursor: pointer;
+}
+.tab-b a {
+    text-decoration: none !important;
+    padding: 0 0 8px 10px;
+    color: #323232;
+}
+.tab-b .current {
+    border: solid 2px #8e9dc6;
+    border-bottom-color: #ffffff;
+    line-height: 28px;
+}
+.tab-b .current a {
+    color: #4a6bae;
+    font-weight: bold;
+}
+/** condition */
+.condition {
+    background-color: #f2f2f2;
+    padding: 5px 0px 1px 0px;
+}
+.condition table {
+    line-height: 26px;
+    table-layout: fixed;
+    width: 100%;
+}
+.condition td {
+    padding-bottom: 7px;
+}
+.condition select {
+    width: 98px;
+}
+.condition .select-long {
+    width: 250px;
+}
+.condition .edit-config {
+    width: 79px;
+	padding-left: 5px;
+}
+.condition .select-type {
+    width: 185px;
+}
+.condition .select-block {
+    width: 175px;
+}
+.condition .col-button {
+    padding-left: 5px;
+}
+.condition  .pin {
+   background: url("http://img.china.alibaba.com/cms/upload/2012/812/794/497218_925310798.png") no-repeat -13px -7px transparent;
+   height:27px;
+   width:56px;
+   vertical-align:top;
+   display:inline-block;
+}
+
+.condition  .shang {
+	background: url("http://img.china.alibaba.com/cms/upload/2012/812/794/497218_925310798.png") no-repeat -69px -7px transparent;
+	height:27px;
+	width:56px;
+	vertical-align:top;
+	display:inline-block;
+	margin-left:-4px;
+}
+
+.condition  .pin-gray {
+   background: url("http://img.china.alibaba.com/cms/upload/2012/812/794/497218_925310798.png") no-repeat -13px -36px transparent;
+   height:27px;
+   width:56px;
+   vertical-align:top;
+   display:inline-block;
+}
+
+.condition  .shang-blue {
+	background: url("http://img.china.alibaba.com/cms/upload/2012/812/794/497218_925310798.png") no-repeat -69px -36px transparent;
+	height:27px;
+	width:56px;
+	vertical-align:top;
+	display:inline-block;
+	margin-left:-4px;
+}
+
+/** result table */
+.dataobj {
+	width:100%; 
+	overflow:hidden; 
+	margin-top:10px;
+	padding-bottom:43px;
+}
+.dataobj table {
+	width:100%;
+}
+.dataobj table, .dataobj table td {
+	border:1px solid #e8e9eb;
+	border-collapse:collapse;
+	padding-left:4px;
+}
+.dataobj table tr.cell td.img {
+	text-align:center;
+}
+.dataobj table tr.cell td.cell {
+	vertical-align:top;
+}
+.dataobj .t1, .dataobj .t2, .dataobj .t3, .dataobj .t4 {
+	background:#e8e9eb;
+	border-top:1px solid #9da5b4;
+	text-align:left;
+	text-indent:5px;
+}
+.dataobj .t1{width:180px; height:30px; font-weight:bold;}
+.dataobj .t2{width:300px; font-weight:bold;}
+.dataobj .t3{width:300px; font-weight:bold;}
+.dataobj .cell-offer dd, .dataobj .cell-supplier, .dataobj .cell-about {
+	margin-left:8px;
+	margin-right:4px;
+}
+.dataobj .cell dd {
+	margin-top:10px;
+}
+.dataobj .cell dd.last {
+	margin-bottom:15px;
+}
+.dataobj .cell dd.unhighlight {
+	color:#C3C3C3;
+}
+.dataobj .cell dd span {
+	font-weight:bold;
+}
+.dataobj .cell-offer dt{width:150px;margin:14px auto 0 auto}
+.dataobj .cell-offer .d{margin-bottom:10px}
+.dataobj .cell-offer{padding-bottom:10px}
+.dataobj .offer-img{
+	border:1px solid #e8e9eb;
+	height:120px;
+	width:120px;
+	border-collapse:separate;
+}
+.dataobj img.img-icon {
+	vertical-align:middle;
+}
+.dataobj .offerimg-div {
+	height:150px;
+}
+.dataobj .offerimg-dl {
+	display:inline-block;
+}
+.dataobj .checkbox {
+	margin-left:8px;
+	margin-right:5px;
+	vertical-align:95px;
+}
+.dataobj .offerid {
+	margin-top:0;
+}
+.dataobj .cell .block-area {
+	margin-top:0;
+	overflow:hidden;
+	height:20px;
+	line-height:20px;
+	width:130px;
+}
+.dataobj dl.cell .overdue {
+	margin-left:5px;
+	vertical-align:middle;
+}
+/** page bar */
+.fix-bottom-total { 
+	position:absolute;
+	width: 1001px;
+	height:36px; 
+	bottom:10px;
+}
+.fix-bottom-optbar { float:left; margin-top:5px; margin-left:10px; }
+.fix-bottom-pagebar { float:right; margin-top:5px; margin-right:10px; }
+.fix-bottom-pagebar .pagebar {
+	float:right;
+}
+.fix-bottom-pagebar .right {
+	float:right;
+	width:205px;
+}
+.fix-bottom-total .fixed-body-total {
+	line-height:24px;
+}
+/** config dialog */
+.dialog-basic{
+	width: auto;
+}
+.dialog-basic .dialog-b section {
+	height:auto;
+	text-align:left;
+	line-height:125px;
+	margin:0 auto;
+}
+.form-vertical dl.item-form dd {
+	padding-left:70px;
+	line-height:30px;
+}
+.form-vertical dl.item-form dt {
+    float: left;
+    font-weight: bold;
+    line-height: 30px;
+    padding-right: 12px;
+    text-align: right;
+    width: 60px;
+}
+.form-vertical p span {
+	color:red;
+}
+.form-vertical dd input[type="text"] {
+	width:450px;
+}
+.form-vertical dl.item-form dt.block {
+    float: left;
+    font-weight: bold;
+    line-height: 20px;
+    padding-right: 12px;
+    text-align: right;
+    width: 60px;
+}
+
+.form-vertical .dialog-scroll {
+	overflow-y: scroll;
+	height: 200px;
+}
+
+#search-series .fix-bottom-total{left:210px;}
+.form-vertical dl.item-form dt.editor-recommend-instance {
+	width:60px;
+	margin-left:15px;
+}
+
+.form-vertical dl.item-form dt.editor-recommend-member {
+	width:60px;
+	margin-right:15px;
+}
+
+.form-vertical dl.item-form dt.editor-recommend-offer {
+	width:50px;
+	margin-right:5px;
+	margin-left:20px;
+}
+
+.form-vertical dd input[type="text"].editor-recommend-input {
+	width:350px;
+}
+
+.edit-offer {
+	width:300px;
+}
+
+.company-info {
+	width:595px;
+}
+

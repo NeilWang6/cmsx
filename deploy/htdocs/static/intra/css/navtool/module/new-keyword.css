@@ -1,0 +1,33 @@
+@charset "gb2312";
+/* CSS Document */
+.ank{ display:none; width:800px; height:450px; overflow-y:scroll; font-size:13px;}
+.ank ul{padding:0; margin:0; list-style:none;}
+.ank-row{clear:both;height:26px; line-height:26px;}
+.ank-form-text{ width:100px;}
+.ank-form-checkbox{}
+.ank-show-categorylist{cursor:pointer; border:1px solid #CCC; padding:4px;}
+.ank-category-block{ display:none;}
+.ank-form-button{margin-left:60px; width:80px; height:30px; font-size:14px;}
+.ank-block{ margin-bottom:20px; clear:both;}
+.ank-block:after{ display:block;clear:both;height:0;content:"\0020";}
+.ank-categorylist{ float:left; width:200px; margin:0 10px;}
+.ank-categorylist-right{width:60px;}
+.ank-categorylist-title{font-size:14px; font-weight:normal; margin:8px 0;}
+.ank-categorylist-box{border:1px solid #CCC; height:152px; width:200px;overflow:auto; overflow-x:hidden;}
+.ank-hotkeys-add{ font-size:18px;margin:32px 0; height:150px; line-height:140px; padding:0 8px;border:1px solid #e0e0e0; background-color:#eee; cursor:pointer;}
+.ank-item,.ank-item-hotkey{ line-height:24px; height:24px; cursor:pointer; margin:2px 4px; font-size:13px; }
+.ank-item-hover{ background-color:#eee;}
+.ank-item-selected{  background:#ddd url("http://img.china.alibaba.com/cms/upload/2011/611/031/130116_1070828466.png") no-repeat right 0;}
+.ank-item-next{}
+
+.ank-item-add{ float:right;margin-right:6px; margin-bottom:4px; cursor:pointer; border:1px solid #CCC; padding:1px 2px;;}
+.ank table{ width:100%;border:1px solid #CCC; border-right:none;}
+.ank table .ank-newkeyword-demo{ display:none;}
+.ank table tr.table-head{ background-color:#bbb; font-size:14px;}
+.ank table tr.odd{ background-color:#e0e0e0;}
+.ank table tr.ank-newkeyword-item-hover{ background-color:#9CF;}
+.ank table td { border-right:1px solid #ccc; padding-left:6px; height:32px; font-size:12px;}
+.ank-copy,.ank-delete{ cursor:pointer;}
+
+.ank-row-bottom{ height:40px; margin-top:30px;}
+.ank .choose-category{background: url("http://img.china.alibaba.com/cms/upload/2011/711/031/130117_1070828466.gif") no-repeat scroll 0 4px transparent; color: #FF7F00; cursor: pointer; display: inline-block;  margin-left: 5px; padding-left: 18px;}

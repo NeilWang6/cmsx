@@ -10,7 +10,7 @@
     </context-param>
     <context-param>
         <param-name>loggingLevel</param-name>
-        <param-value>warn</param-value>
+        <param-value>debug</param-value>
     </context-param>
     <context-param>
         <param-name>loggingCharset</param-name>

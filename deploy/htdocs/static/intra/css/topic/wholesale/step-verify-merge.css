@@ -1,0 +1,9 @@
+/**
+ * wholesale merge css
+ * @author  Arcthur
+ */
+
+@import url(http://style.c.aliimg.com/css/app/operation/wholesale/module/header/auth-header.css);
+@import url(/static/fdevlib/css/fdev-v4/widget/web/alitalk-min.css);
+@import url(http://style.c.aliimg.com/css/app/operation/wholesale/module/modules/mod-step.css);
+@import url(http://style.c.aliimg.com/css/app/operation/wholesale/page/seller/step/step-verify.css);

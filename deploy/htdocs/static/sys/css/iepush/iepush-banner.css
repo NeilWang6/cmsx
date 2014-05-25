@@ -1,0 +1,96 @@
+/*
+ * @Author      Sway Deng
+ * @Email       shiwei.dengsw@alibaba-inc.com
+ * @Date        13-1-17 上午11:30
+ * @Description 顶通banner提醒，提醒用户升级浏览器到IE最新版本，若是xp用户，会提醒升级到最高IE8，若是vista和win7用户
+ * 则提醒升级到IE9（以后会升级到更新的）
+ * !!cmd:compress=true
+ */
+.iepush-banner{
+    background: #7dafd9 url(http://img.china.alibaba.com/cms/upload/2013/601/246/642106_823742341.png) repeat-x 0 0;
+}
+.iepush-banner .iepush-b1{
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url(http://img.china.alibaba.com/cms/upload/2013/513/446/644315_823742341.png);
+}
+.iepush-banner .iepush-b2{
+    width: 990px;
+    height: 97px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.iepush-banner .iepush-content{
+    position: relative;
+    float: left;
+    width: 966px;
+    height: 97px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.iepush-banner .iepush-logo,
+.iepush-banner .iepush-car{
+    background: transparent url(http://img.china.alibaba.com/cms/upload/2013/124/446/644421_823742341.png) no-repeat 0 0;
+}
+.iepush-banner .iepush-logo{
+    position: absolute;
+    top: 16px;
+    left:526px;
+    width: 74px;
+    height: 48px;
+    overflow: hidden;
+    background-position: 0 -100px;
+    +left: 309px;
+    +top: 18px;
+    +background-position: 0 -50px;
+    _left: 60px;
+    _background-position: 0 0;
+}
+.iepush-banner .iepush-car{
+    position: absolute;
+    left: 40px; /* 40px, 290px, 505px */
+    top: 72px;
+    width: 98px;
+    height: 29px;
+    overflow: hidden;
+    background-position: 0 -150px;
+    _top: 70px;
+    _background: transparent url(http://img.china.alibaba.com/cms/upload/2013/109/836/638901_823742341.png) no-repeat 30px 0;
+}
+.iepush-banner .iepush-text{
+    position: absolute;
+    left: 605px;
+    +left: 388px;
+    _left: 139px;
+    top: 13px;
+    width: 0; /* 196 */
+    height: 63px;
+    overflow: hidden;
+    background: transparent url(http://img.china.alibaba.com/cms/upload/2013/901/246/642109_823742341.png) no-repeat;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #558bb9;
+}
+.iepush-banner .iepush-text-inner{
+    width: 180px; /* 196 */
+    overflow: hidden;
+    margin: 3px 8px 0;
+}
+.iepush-banner .iepush-cls{
+    float: right;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: Tahoma;
+    text-align: center;
+}
+.iepush-banner a:link,
+.iepush-banner a:visited{
+    color: #74A9D3;
+}
+.iepush-banner a:hover{
+    color: #ff7300;
+    text-decoration: none;
+}

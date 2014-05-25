@@ -1,0 +1,410 @@
+/**
+ * @author shanshan.hongss
+ * @usefor VIP×ÔÖú±¨Ãû
+ * @date   2012.09.23
+ */
+ 
+.content .btn-gray,
+.table-offer thead th span,
+.dpl-dialog-l .dpl-b .btn-know { background:url("http://img.china.alibaba.com/cms/upload/other/topic/vipauto-bg.png") repeat-x;}
+.content {
+    color:#444;
+    width:792px;
+}
+.content .dpl-text {
+    overflow:hidden;
+}
+.content h3.title {
+    height:32px;
+    line-height:32px;
+    font-size:14px;
+    font-weight:bold;
+    background-color:#f3f5f7;
+    padding-left:12px;
+}
+.content .yellow {
+    color:#ff7700;
+}
+.content .bold {
+    font-weight:bold;
+}
+.content input.dpl-text-s {
+    width:46px;
+    margin-right:4px;
+}
+.content input.disabled {
+    color:#888;
+}
+
+.search {
+    padding:6px 0;
+}
+.search .item {
+    overflow:hidden;
+    clear:both;
+}
+.search .item dt, .search .item dd {
+    float:left;
+    line-height:24px;
+    padding:4px 4px 0 0;
+}
+
+#join-type dd {
+    width:664px;
+}
+#join-type dd .btn-type {
+    margin-bottom:4px;
+}
+.search .item .dpl-btn-s {
+    vertical-align:middle;
+    *vertical-align:top;
+}
+.search .item select {
+    width:132px;
+    vertical-align:middle;
+    padding:2px 1px;
+}
+.search .item a.btn-type {
+    display:inline-block;
+    height:20px;
+    line-height:20px;
+    border:1px solid #b3b3b3;
+    padding:0 10px;
+    background-color:#f0f0f0;
+    color:#444;
+}
+.search .item a.current {
+    background-color:#75a0e7;
+    border:1px solid #5377b2;
+    color:#fff;
+}
+.search .item a.btn-type:hover {
+    text-decoration:none;
+}
+
+.info-standard {
+    padding:4px 10px;
+    background-color:#e8f1f7;
+    line-height:24px;
+    border:1px solid #b8c9d7;
+    margin-bottom:10px;
+}
+.info-standard h4 {
+    font-weight:bold;
+}
+.info-standard li {
+    overflow:hidden;
+}
+.info-standard .first-term {
+    padding-bottom:8px;
+}
+.info-standard .standard-term dt {
+    float:left;
+}
+.info-standard .standard-term span {
+    display:inline-block;
+    word-break:keep-all;
+}
+
+.operate {
+    height:24px;
+    line-height:24px;
+    border:1px solid #e0e0e0;
+    background-color:#f6f6f6;
+    padding:7px 10px;
+}
+.operate .dpl-btn-s {
+    vertical-align:top;
+}
+.dpl-paging .dpl-page-list a:link, .dpl-paging .dpl-page-list a:visited {line-height:18px;}
+
+.table-offer {
+    width:100%;
+    table-layout:fixed;
+    border-left:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0;
+}
+.table-offer .w-34 { width:34px;}
+.table-offer .w-222 { width:222px;}
+.table-offer .w-124 { width:124px;}
+.table-offer .w-107 { width:107px;}
+.table-offer .w-97 { width:97px;}
+.table-offer thead th {
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    border-left:1px solid #d6d6d6;
+    color:#666;
+    padding-left:1px;
+}
+.table-offer thead th span {
+    display:inline-block;
+    height:28px;
+    width:100%;
+    background-position:1px -40px;
+}
+.table-offer thead th.first {
+    border-left:0;
+    padding-left:0;
+}
+.table-offer td.item-offer {
+    border-bottom:1px solid #e0e0e0;
+    text-align:center;
+    color:#333;
+    padding:10px 0;
+}
+.table-offer td.last {
+    border-bottom:0;
+}
+.table-sub-info {
+    width:100%;
+    table-layout:fixed;
+    padding:10px 0;
+}
+.table-sub-info caption {
+    text-align:left;
+    padding:0 0 7px 502px;
+}
+.table-sub-info .p-batch-price {
+    position:relative;
+}
+.table-sub-info .s-batch-price {
+    padding:3px 3px 2px;
+    line-height:20px;
+    border:1px solid #a0a0a0;
+    color:#888;
+}
+.table-sub-info .edit-batch-price {
+    display:none;
+    position:absolute;
+    top:-33px;
+    left:-19px;
+    width:82px;
+    padding:6px 18px;
+    border:1px solid #797979;
+    background-color:#fff;
+}
+.table-sub-info .edit-batch-price .error-batch-price{
+    top:-8px;
+}
+.table-sub-info .label-batch-price {
+    display:inline-block;
+    margin-bottom:7px;
+}
+.table-sub-info .edit-batch-price .input-batch-price {
+    width:50px;
+    margin-bottom:8px;
+    vertical-align:0;
+}
+.table-sub-info .btn-batch-price {
+    margin-bottom:8px;
+}
+.table-sub-info tbody td {
+    word-break:break-all;
+}
+.table-sub-info tbody td.align-l {
+    text-align:left;
+}
+.table-sub-info tbody td.align-vl {
+    text-align:left;
+    vertical-align:top;
+}
+
+
+.table-offer .offer {
+    padding:0 8px;
+}
+.table-offer .offer dt {
+    float:left;
+}
+.table-offer .offer .vertical-img{
+    display: table;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    *display: block; /* for IE6/7 */
+}
+.table-offer .offer .vertical-img .box-img{
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline; /* for IE6/7 */
+    *writing-mode: tb-rl; /* for IE6/ */
+    *text-align: center;
+    *height: 100%;
+}
+.table-offer .offer .vertical-img img{
+    vertical-align: middle;
+}
+.table-offer .offer dd {
+    text-align:left;
+    padding-left:72px;
+}
+.table-offer .offer a {
+    color:#333;
+}
+.table-offer .offer .keep {
+    word-break:keep-all;
+}
+.table-offer .list-price li,
+.table-offer .list-total li,
+.table-offer .list-critical li {
+    position:relative;
+}
+.table-offer .list-price li {
+    z-index:4;
+}
+.table-offer .list-total li {
+    z-index:3;
+}
+.table-offer .list-critical li {
+    z-index:2;
+}
+.table-offer .td-info {
+    position:relative;
+    z-index:5;
+}
+.table-offer .dpl-tip-simple {
+    position:absolute;
+    height:30px;
+    top:-35px;
+    left:0;
+    width:188px;
+    line-height:18px;
+    text-align:left;
+    display:none;
+}
+.table-offer .tip-small{
+    width:92px;
+}
+.table-offer .tip-error {
+    display:block;
+}
+.table-offer .dpl-tip-simple .dpl-b-l {
+    top:30px;
+}
+.table-offer .list-price,
+.table-offer .list-total {
+    padding-left:8px;
+}
+
+.table-offer .list-norms li,
+.table-offer .list-price li,
+.table-offer .list-total li,
+.table-offer .list-critical li {
+    _height:28px;
+    line-height:28px;
+}
+.table-offer .list-norms input {
+    vertical-align:middle;
+    margin-right:4px;
+}
+.table-offer tbody .no-offer {
+    line-height:36px;
+    font-size:14px;
+    font-weight:bold;
+    color:#888;
+    border-bottom:1px solid #e0e0e0;
+    text-align:center;
+    padding:10px 0;
+}
+.table-offer .align-left {
+    text-align:left;
+}
+
+.dpl-dialog-l .dpl-m dl, .dpl-dialog-l .dpl-m .info-other {
+    padding:0 16px;
+}
+.dpl-dialog-l .dpl-m dt {
+    font-weight:bold;
+}
+.dpl-dialog-l .dpl-m .info-other a {
+    color:#1266a7;
+}
+.dpl-dialog-l .dpl-b {
+    height:26px;
+    text-align:right;
+    padding:12px 24px 10px;
+}
+.dpl-dialog-l .dpl-b .btn-know {
+    display:inline-block;
+    height:26px;
+    line-height:26px;
+    border:1px solid #b3b3b3;
+    border-radius:3px;
+    padding:0 12px;
+    color:#444;
+    background-position: 0 -88px;
+}
+
+.cover {
+    position:absolute;
+    width:791px;
+    left:-692px;
+    /*_left:-704px;*/
+    z-index:8;
+}
+.cover .cover-overlay {
+    background-color:#000;
+    width:100%;
+    height:100%;
+    opacity:0.2;
+    filter:alpha(Opacity=20);
+}
+.cover .cover-txt {
+    position:absolute;
+    display:inline-block;
+    background-color:#fff;
+    height:32px;
+    width:60px;
+    line-height:32px;
+    padding:0 12px;
+    left:365px;
+}
+
+.dpl-dialog-l {
+    width:516px;
+    color:#444;
+}
+#dialog-prompt input {
+    vertical-align:middle;
+}
+.dpl-dialog-l .dpl-btn-s {
+    width:70px;
+}
+.dpl-dialog-l a.dpl-btn-s {
+    width:52px;
+    text-align:center;
+}
+.dpl-dialog-l a.auto {
+    width:auto;
+}
+.dislog-singe-line .message {
+    line-height:48px;
+}
+.dpl-dialog-l .dpl-m {
+    text-align:center;
+}
+.dpl-dialog-l .dpl-m ul {
+    text-align:left;
+}
+.dpl-dialog-l .dpl-d .icon {
+    display:inline-block;
+    width:32px;
+    height:32px;
+    background:url("http://img.china.alibaba.com/cms/upload/work/dpl/work-dpl.png") no-repeat;
+    vertical-align:middle;
+    overflow:hidden;
+}
+.dpl-dialog-l .dpl-d .icon-success{
+    background-position:-60px -114px;
+}
+.dpl-dialog-l .dpl-d .icon-general{
+    background-position:0 -174px;
+}
+.dpl-dialog-l .dpl-d .message {
+    display:inline-block;
+    font-size:14px;
+    font-weight:bold;
+    line-height:32px;
+    padding-left:12px;
+}

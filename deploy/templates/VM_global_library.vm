@@ -1,0 +1,3 @@
+#macro(hellotest $offer)
+  abc
+#end

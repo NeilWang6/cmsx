@@ -1,0 +1,19 @@
+<aside id="js-dcmsleftnav" class="dcms-left-nav">	
+	#if($!listResourceParam)
+	#foreach($resourceParam in $!listResourceParam)
+	<nav>
+	    <h2><i class="cms-icon-close"></i>$!resourceParam.getName()</h2>
+	    <ul>
+	    #if($!resourceParam.getParams())
+	    #foreach($childParam in $!resourceParam.getParams())
+	       #set($name = $!childParam.getName())
+	       <li>
+	          <a class="$!childParam.getStyle('dcms-nav')" title="$!name" href="$!childParam.getUrl()" target="_self">$!childParam.getName()</a> 
+	       </li>
+	    #end
+	    #end
+	    </ul>
+	</nav>
+	#end
+	#end
+</aside>

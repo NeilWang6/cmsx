@@ -1,0 +1,42 @@
+/**
+ * @authur shanshan.hongss
+ * @usefor ±à¼­ÆÕÍ¨Ä£°å
+ * @date   2012-07-10
+ */
+.CodeMirror{
+    width:770px;
+}
+.CodeMirror-scroll{
+    height:550px;
+}
+.CodeMirror{ border-top: 1px solid black; border-bottom: 1px solid black;}
+.CodeMirror-fullscreen {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    border: 0px solid #BBBBBB;
+    opacity: 1;
+}
+.option-btns {
+    padding:12px 0 20px 68px;
+}
+.option-btns .submit-btn:link, .option-btns .submit-btn:visited{
+    color:#fff;
+}
+.option-btns .submit-btn{
+    color:#fff;
+    width:auto;
+    padding:0 6px;
+}
+.option-btns a.submit-btn{
+    
+}
+.option-btns button.submit-btn{
+    height:auto;
+}

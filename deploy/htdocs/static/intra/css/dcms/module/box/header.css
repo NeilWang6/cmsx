@@ -1,0 +1,392 @@
+/**
+ * @author springyu
+ * @userfor 盒子功能头部CSS
+ * @date 2011-12-21
+ */
+/**http://img.china.alibaba.com/cms/upload/2012/036/813/318630_983650061.png .dcms-box-page-bank, .dcms-box-copy, .dcms-box-mypage-tip,
+ .dcms-box-module-menu, .dcms-box-page-desgin, .dcms-box-template-bank,
+ .dcms-box-module-bank, .dcms-box-my-page, .dcms-box-nav-title,
+ .dcms-box-tip, .dcms-box-recycle, .dcms-box-barlayout, .dcms-box-bargrid,
+ .dcms-box-barrow, .dcms-box-barbox, .dcms-box-barcell, .dcms-box-barbg,
+ .module-close, .module-open, .attribute-close, .attribute-open,
+ .content-mod, .content-cell, .content-label, .layout-layout,
+ .layout-grid, .layout-row, .layout-box, .background, .cp-del-copy, .cp-del-delete { */
+.dcms-box-bg {
+    background: url(http://img.china.alibaba.com/cms/upload/2012/654/604/406456_983650061.png) no-repeat;
+}
+/**
+ *     公共CSS
+ */
+.dcms-box-hide {
+    display: none;
+}
+.dmcs-box-show {
+    display: block;
+}
+.dcms-box-hand {
+    cursor: pointer;
+}
+.dcms-box-clear:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: "\0020";
+}
+.dcms-box-clear {
+    zoom: 1;
+}
+.vertical-img {
+    display: table;
+    text-align: center;
+    font-size: 0;
+    _display: block;
+}
+.box-img {
+    display: table-cell;
+    margin-right: 8px;
+    vertical-align: middle;
+    _display: inline;
+    _writing-mode: tb-rl;
+    _text-align: center;
+    _height: 100%;
+}
+.box-img img {
+    vertical-align: middle;
+}
+.dcms-box-layout {
+}
+.dcms-box-w952 {
+    width: 952px;
+    margin: 0px auto;
+    padding: 0px 4px;
+}
+.dcms-box-layout .dcms-box-nav {
+    height: 40px;
+}
+.dcms-box-nav-bg {
+    background-color: #4c6bac;
+    width: 100%;
+    min-width: 952px;
+}
+.dcms-box-nav .dcms-box-title {
+    float: left;
+    text-align: right;
+}
+.dcms-box-layout .dcms-box-nav ul {
+    float: left;
+}
+.dcms-box-nav .dmcs-box-logout {
+    float: right;
+    height: 34px;
+    line-height: 34px;
+    padding: 0px 8px;
+    color: #fff;
+}
+.dcms-box-nav ul .fl-left {
+    float: left;
+    text-align: right;
+}
+.dcms-box-layout .dcms-box-nav .dcms-box-nav-ul{
+    float: right;
+    line-height: 20px;
+}
+.dcms-box-layout .dcms-box-nav .imcm{
+    float: right;
+    height: 34px;
+}
+.dcms-box-nav .dcms-box-nav-a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #354a78;
+    padding:1px 4px;
+    margin-left:8px;
+    margin-right:8px;
+    margin-top:10px;
+     -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.dcms-box-nav-a .dcms-box-tip {
+    display: inline-block;
+    height: 20px;
+}
+.dcms-box-nav .dcms-box-nav-title {
+    display: block;
+    width: 216px;
+    height: 34px;
+    line-height: 34px;
+    color: #354a78;
+    background-position: -200px 2px;
+}
+
+.dcms-box-page-bank, .dcms-box-page-desgin, .dcms-box-my-page, .dcms-box-template-bank, .dcms-box-module-bank, .dcms-box-nav-title {
+    display: inline-block;
+    width: 30px;
+    height: 34px;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+.dcms-box-page-desgin {
+    background-position: -4px -42px;
+    width: 27px;
+}
+.dcms-box-page-bank {
+    background-position: -40px -40px;
+}
+.dcms-box-page-bank-active {
+    background-position: -40px -0px;
+}
+.dcms-box-template-bank {
+    background-position: -80px -40px;
+}
+.dcms-box-template-bank-active {
+    background-position: -80px -0px;
+}
+.dcms-box-my-page {
+    background-position: -8px -158px;
+}
+/**
+ *  组件库
+ */
+.dcms-box-module-bank {
+    background-position: -120px -40px;
+}
+/**
+ *     组件库子菜单
+ */
+.dcms-box-module-menu {
+    position: absolute;
+    height: 69px;
+    width: 107px;
+    background-position: -120px -160px;
+}
+.dcms-box-module-menu ul {
+    margin: 8px 3px 0px 5px;
+}
+.dcms-box-module-menu .module-bank-menu {
+    display: block;
+    width: 94px;
+    line-height: 18px;
+    text-align: left;
+    color: #409ad6;
+    padding-left: 4px;
+}
+.dcms-box-nav .dcms-box-nav-ul .dcms-box-module-menu  a:hover {
+    text-decoration: none;
+    background-color: #d6d6d6;
+    padding-right: 0px;
+}
+/**
+ *     我的页面
+ */
+.dcms-box-mypage-tip {
+    display: block;
+    position: absolute;
+    height: 66px;
+    width: 107px;
+    border-bottom: 1px solid #354a78;
+    background-position: -120px -160px;
+}
+.dcms-box-mypage-tip .dcms-box-mypage-bf {
+    display: block;
+    width: 94px;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 4px;
+    color: #409ad6;
+}
+.dcms-box-mypage-bf span {
+    padding: 0px 1px;
+}
+.dcms-box-mypage-tip ul {
+    margin: 8px 3px 0px 5px;
+}
+.dcms-box-nav-bg .dcms-box-nav-ul .dcms-box-mypage-tip ul li a:hover {
+    text-decoration: none;
+    background-color: #d6d6d6;
+    padding-right: 0px;
+}
+/**
+ *     菜单选中
+ */
+.dcms-page-box-pagedesign #dcms_box_page_desgin, 
+.dcms-page-box-favoritlist #dcms_box_my_page, 
+.dcms-page-box-pagelib #dcms_box_page_bank, 
+.dcms-page-box-derivecell #dcms_box_module_bank, 
+.dcms-page-box-templatelist #dcms_box_template_bank, 
+.dcms-page-box-templatedesign #dcms_box_template_bank, 
+.dcms-page-box-derivecelllist #dcms_box_module_bank, 
+.dcms-page-box-createmodule #dcms_box_module_bank, 
+.dcms-page-box-celllist #dcms_box_module_bank, 
+.dcms-page-box-modulelist #dcms_box_module_bank, 
+.dcms-page-box-layoutlist #dcms_box_module_bank, 
+.dcms-page-box-addcell #dcms_box_module_bank, 
+.dcms-page-box-addlayout #dcms_box_module_bank, 
+.dcms-page-box-draftlist #dcms_box_my_page {
+    cursor:hand;
+    background-color: #83a7f3;
+    text-decoration: none;
+}
+.dcms-page-box-pagedesign #dcms_box_page_desgin .dcms-box-page-desgin {
+    background-position: -4px -0px;
+}
+.dcms-page-box-pagelib #dcms_box_page_bank .dcms-box-page-bank {
+    background-position: -40px 1px;
+}
+.dcms-page-box-derivecell #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-derivecelllist #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-createmodule #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-celllist #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-modulelist #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-layoutlist #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-addcell #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-addlayout #dcms_box_module_bank .dcms-box-module-bank {
+    background-position: -120px 1px;
+}
+.dcms-page-box-templatelist #dcms_box_template_bank .dcms-box-template-bank {
+    background-position: -80px 1px;
+}
+.dcms-page-box-templatedesign #dcms_box_template_bank .dcms-box-template-bank {
+    background-position: -80px 1px;
+}
+.dcms-page-box-draftlist #dcms_box_my_page .dcms-box-my-page {
+    background-position: -66px -156px;
+}
+.dcms-page-box-favoritlist #dcms_box_my_page .dcms-box-my-page {
+    background-position: -66px -156px;
+}
+/**
+ *     在线客服
+ */
+.dcms-box-online-cust {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #354a78;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: 8px;
+    margin-top:10px;
+     -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.dcms-box-online-cust span {
+    display: inline-block;
+    height: 20px;
+}
+.dcms-box-tip {
+    width: 12px;
+    vertical-align: middle;
+    background-position: -162px -36px;
+}
+/**
+ *     在线客服 子菜单
+ */
+.dcms-box-customer-list {
+    background-color: #fff;
+    position: absolute;
+    -moz-box-shadow: 0px 0px 0px 1px #c2d3e1;
+    -webkit-box-shadow: 0px 0px 0px 1px #c2d3e1;
+    box-shadow: 0px 0px 0px 1px #c2d3e1;
+    border: 1px solid #b0c6db;
+    width: 248px;
+}
+.dcms-box-customer-list .box-img img {
+    vertical-align: middle;
+    width: 64px;
+    height: 64px;
+}
+.dcms-box-customer-list ul {
+    margin: 4px 0px 0px 4px;
+}
+.dcms-box-customer-list ul dt {
+    float: left;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    margin-right: 4px;
+}
+.dcms-box-customer-list ul {
+    width: 246px;
+    overflow: hidden;
+}
+.dcms-box-customer-list ul li {
+    width: 246px;
+    overflow: hidden;
+}
+.dcms-box-customer-list dd {
+    display: inline-block;
+    width: 170px;
+    height: 64px;
+    line-height: 64px;
+}
+.dcms-box-customer-list dd .desc {
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    color: #409ad6;
+}
+.dcms-box-customer-list dd.current {
+    background-color: #dcdcdc;
+}
+.dcms-box-customer-list dd span {
+    display: inline-block;
+    margin-left: 4px;
+    float: left;
+    color: #636363;
+}
+.dcms-box-nav-bg .dcms-box-nav-ul .dcms-box-customer-list ul li a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    padding-right: 0px;
+}
+a.box-to-dcms {
+    display: block;
+    position: absolute;
+    text-indent: -1000em;
+    height: 32px;
+    width: 90px;
+}
+.dcms-box-nav-bg .dcms-box-nav .dcms {
+    display: block;
+}
+.dcms-box-nav-bg .dcms-box-nav .dcms a:hover {
+     
+}
+
+.undo-tips{
+	position:fixed;
+	width:150px;
+	height:20px;
+	padding:3px;
+	left:50%;
+	margin-left:-130px;
+	top:1px;
+	z-index:99;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	vertical-align: baseline;
+	white-space: nowrap;
+	line-height:14px;
+	text-align:center;
+	background-color:#3A87AD;
+	color:#fff;
+	display:none;
+}

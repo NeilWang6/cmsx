@@ -1,0 +1,222 @@
+/**
+ * @package FD.sys.head.masthead.operation
+ * @version 1.0.101018
+ * @version 1.1.101026
+ * @version 1.1.101027
+ * @version 1.1.101028
+ * @version 1.1.101206
+ * @version 1.1.101208
+ * @version 1.1.101222 //add hover up arrow
+ * @version 1.1.101229 //up .search-categories & .search-body z-index
+ * @version 1.1.120208 //add #ali-masthead namespace by daniel.xud
+ * @author  Edgar
+ */
+/* ali-masthead */
+.ali-masthead{
+    width:952px;
+    margin:0 auto;
+    padding:0 4px; /*add 101208*/
+    height:82px;
+    text-align:left; /*add 101208*/
+}
+.ali-masthead .logo h1 a,
+#ali-masthead .ali-search .search-basic li,
+#ali-masthead .ali-search .search-body,
+#ali-masthead .ali-search .image-arrow,
+#ali-masthead .ali-search .search-more,
+#ali-masthead .ali-search .search-ext{
+    background:url(http://img.china.alibaba.com/cms/upload/2010/411/100/1114_1651874970.png) no-repeat -600px 100px;
+}
+.ali-masthead .logo,
+.ali-masthead .ali-search{
+    float:left;
+}
+.ali-masthead .logo h1{
+    width:367px;
+    height:49px;
+    margin-top:13px;
+    overflow:hidden;
+}
+.ali-masthead .logo a{
+    float:left;
+}
+.ali-masthead .logo .alibaba-logo{
+    display:inline-block;
+    width:128px;
+    height:49px;
+    line-height:160px;
+    overflow:hidden;
+    background-position:-40px -50px;
+    padding-right:17px;
+}
+.ali-masthead .logo .sub-logo{
+    display:inline-block;
+    height:34px;
+    padding-left:4px;
+    border-left:1px solid #cbcbcb;
+    text-decoration:none;
+    margin-top:15px;
+    line-height:1;
+}
+.ali-masthead .logo .logo-txt{
+    font:700 18px/1.2 \5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,\534E\6587\7EC6\9ED1;
+    display:block;
+}
+.ali-masthead .logo .logo-url{
+    font-weight:700;
+    font-size:10px;
+    line-height:1.2;
+    color:#ccc;
+}
+.ali-masthead .logo .logo-url em{
+    color:#333;
+}
+#ali-masthead .ali-search legend{
+    font-size:0;
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+#ali-masthead .ali-search .search-categories{
+    height:25px;
+    margin-top:9px;
+    position:relative;
+    z-index:119;
+}/*update 101229*/
+#ali-masthead .ali-search a:link,
+#ali-masthead .ali-search a:visited{
+    color:#999;
+}
+#ali-masthead .ali-search a:hover,
+#ali-masthead .ali-search a:active{
+    color:#333 !important;
+}
+#ali-masthead .ali-search .current{
+    font-weight:700;
+}
+#ali-masthead .ali-search .current a:link,
+#ali-masthead .ali-search .current a:visited,
+#ali-masthead .ali-search .search-over a:link,
+#ali-masthead .ali-search .search-over a:visited{
+    color:#333;
+}
+#ali-masthead .ali-search .search-basic{
+    padding-left:27px;
+    float:left;
+}
+#ali-masthead .ali-search .search-basic li{
+    float:left;
+    padding-left:1px;
+    background-position:-598px -75px;
+    width:40px;
+    height:25px;
+    text-align:center;
+}
+#ali-masthead .ali-search .search-basic .search-baike{
+    width:54px;
+}
+#ali-masthead .ali-search .search-basic .search-pifa{
+    width:64px;
+}
+#ali-masthead .ali-search .search-basic .search-product{
+    background-position:-600px 100px;
+    padding-left:0;
+}
+#ali-masthead .ali-search .search-basic span{
+    display:inline-block;
+}
+#ali-masthead .ali-search .current .image-arrow{
+    display:block;
+    height:2px;
+    overflow:hidden;
+    background-position:center top;
+    border-top:4px solid #999;
+    margin-top:1px;
+    width:100%;
+    *width:25px;
+}
+#ali-masthead .ali-search .search-baike .image-arrow{
+    *width:36px;
+}
+#ali-masthead .ali-search .search-pifa .image-arrow{
+    *width:47px;
+}
+#ali-masthead .ali-search .search-ext{
+    float:left;
+    width:51px;
+    height:19px;
+    text-align:center;
+    position:relative;
+    background-position:-598px -75px;
+    background-color:#fff;
+}
+#ali-masthead .ali-search .search-over{
+    border-bottom:1px dashed #dcdcdc;
+}
+#ali-masthead .ali-search .search-more{
+    padding-right:9px;
+    background-position:right -54px;
+    _background-position-y:-53px;
+    position:relative;
+    z-index:2;
+    zoom:1;
+}
+#ali-masthead .ali-search .search-over .search-more{
+    background-position:-486px -54px;
+    _background-position-y:-53px;
+}/*add 101222*/
+#ali-masthead .ali-search .search-over .fd-hide{
+    display:block;
+}
+#ali-masthead .ali-search .search-ext-list{
+    position:absolute;
+    top:1px;
+    left:0;
+    border-right:1px solid #dcdcdc;
+    border-left:1px solid #dcdcdc;
+    width:49px;
+}
+#ali-masthead .ali-search .search-ext-list ul{
+    border-top:1px solid #dcdcdc;
+    border-bottom:1px solid #dcdcdc;
+    padding-top:19px;
+    margin:-1px 0;
+    *position:relative;
+}
+#ali-masthead .ali-search .search-ext-list li{
+    background:#fff;
+}
+#ali-masthead .ali-search .search-ext-list li a{
+    margin-right:9px;
+}
+#ali-masthead .ali-search .search-body{
+    position:relative;
+    z-index:110;
+    width:585px;
+    height:38px;
+    background-position:0 -5px;
+    top:-6px;
+}/*update 101229*/
+#ali-masthead .ali-search input{
+    width:440px;
+    height:18px;
+    line-height:18px;
+    margin:10px 5px 0 33px;
+    border:0 none;
+    vertical-align:top;
+}
+#ali-masthead .ali-search .placeholder{
+    color:#a9a9a9;
+}
+#ali-masthead .ali-search button{
+    width:104px;
+    margin-top:3px;
+    border:0 none;
+    background:none;
+    cursor:pointer;
+    font:700 22px/32px \5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,\534E\6587\7EC6\9ED1;
+    color:#fff;
+    vertical-align:top;
+    height:32px;
+    overflow:hidden;
+}

@@ -1,0 +1,63 @@
+
+.publish-dialog {
+	width: 880px !important;
+}
+.publish-dialog .publish-content {
+	overflow: auto;
+	margin-left: 25px;
+}
+.publish-dialog .publish-content table {
+	width: 800px;
+	table-layout: fixed;
+}
+.publish-dialog .publish-content thead th {
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 0;
+	border: 1px solid #e2e2e2;
+	background-color: #e2e2e2;
+	color: #444;
+	font-weight: normal;
+}
+.publish-dialog .publish-content thead .td1 label {
+	margin-left: 4px;
+}
+.publish-dialog .publish-content tbody td {
+	border: 1px solid #e2e2e2;
+	height: 18px;
+	padding: 9px 0;
+	text-align: center;
+	vertical-align: middle;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+.dialog-basic .dialog-b section {
+	height: auto;
+	line-height: normal;
+}
+.publish-dialog .publish-content .td1 {
+	width: 7%;
+}
+.publish-dialog .publish-content .td2 {
+	width: 20%;
+}
+.publish-dialog .publish-content .td3 {
+	width: 35%;
+}
+.publish-dialog .publish-content tbody .td3 {
+	text-align: left;
+}
+.publish-dialog .publish-content tbody .td3 .value {
+	display: block;
+	margin: 0 16px;
+}
+.publish-dialog .publish-content .td4 {
+	width: 15%;
+}
+.publish-dialog .publish-content .td5 {
+	width: 15%;
+}
+.publish-dialog .publish-content .td6 {
+	width: 8%;
+}

@@ -1,0 +1,27 @@
+/**
+ * alitalk css for alibar v2
+ * */
+.alibar-container a.iconAlitalk{
+    padding:2px 0 2px 20px;
+    background:url(http://img.china.alibaba.com/cms/upload/operation/global/icon/alitalk.gif) no-repeat;
+    line-height:14px;
+    color:#001d4c;
+    text-decoration:underline !important;
+    font-family:arial,helvetica,sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    zoom:1;
+    _padding-top:3px;
+}
+.alibar-container a.iconAlitalk:hover{
+    color:#ff7300;
+}
+.alibar-container a.icon-on{
+    background-position:-4px -71px;
+}
+.alibar-container a.icon-off{
+    background-position:-4px -35px;
+}
+.alibar-container a.icon-mb{
+    background-position:-4px 1px;
+}

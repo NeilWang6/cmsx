@@ -1,0 +1,20 @@
+<div class="dialog-basic js-dialog">
+	<div class="dialog-b">
+		<header>
+			<a href="#" class="close">关闭</a>
+			<h5>提示</h5>
+		</header>
+		<section>
+			里面的内容根据实际情况增加
+		</section>
+		<footer>
+			<!--可根据实际情况修改-->
+			<button type="button" class="btn-basic btn-blue btn-submit">
+			确 定
+			</button>
+			<button type="button" class="btn-basic btn-gray btn-cancel">
+			取 消
+			</button>
+		</footer>
+	</div>
+</div>

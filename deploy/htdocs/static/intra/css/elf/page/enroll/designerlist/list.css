@@ -1,0 +1,77 @@
+/**
+ * @author huangxt
+ * @date   2012.10.15
+ */
+
+/** main body */
+.designer-list {
+    width: 990px;
+    padding-bottom:60px;
+}
+
+/** search bar */
+.condition {
+    background-color: #f2f2f2;
+    padding: 5px 0px 5px 0px;
+}
+.condition td {
+	text-align:left;
+}
+.search {
+    table-layout:fixed;
+    width:100%;
+    line-height:28px;
+}
+.search .label {
+	text-align:right;
+}
+.search .search-button {
+	margin-right:10px;
+}
+.search .input-normal {
+	width:114px;
+}
+.search .align-left {
+	text-align:left;
+}
+.search .label-margin { 
+	margin-right:15px; 
+}
+
+/** member list */
+.memberlist {
+    padding: 5px 0px 5px 0px;
+	margin-top:10px;
+	margin-left:2px;
+}
+.memberlist .hover-td {
+    background-color: #F8F8F8;
+}
+.memberlist .td-pointer {
+	cursor:pointer;
+}
+.memberlist span.right {
+	float:right;
+}
+.memberlist .all-count {
+	color:#c2c2c2;
+}
+
+/** request list */
+.reqlist {
+    padding: 5px 0px 5px 0px;
+	margin-top:15px;
+	margin-left:2px;
+}
+.reqlist-pagebar {
+    background-color: #f0f0f0;
+    padding: 5px 5px 5px 0px;
+	height:28px;
+	width:990px;
+}
+.reqlist-pagebar ul.right{
+	float:right;
+}
+.reqlist .finish {
+	color:#1bcf0c;
+}

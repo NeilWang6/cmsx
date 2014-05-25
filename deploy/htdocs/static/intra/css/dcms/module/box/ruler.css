@@ -1,0 +1,17 @@
+/**
+ * @author springyu
+ * @userfor ”“‘Úµº∫ΩCSS
+ * @date 2011-12-21
+ */
+.dcms-ruler{
+	display:none;
+	position:fixed;
+	top:108px;
+	left:463px;
+	width:961px;
+	height:50px;
+	overflow:hidden;
+	background:url("http://img.china.alibaba.com/cms/upload/2012/545/753/357545_261003913.png") no-repeat;
+	cursor:n-resize;
+	z-index:3000;
+}

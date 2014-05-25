@@ -1,0 +1,67 @@
+/*---------------------------------------@ declare -------------------------------------*/
+/*.ui-hide{visibility: hidden!important;position: absolute!important;top:-9999;left: -9999!important;}*/
+.ui-hide{display:none;}  /*modify by hongss on 2011.11.10*/
+
+
+/*---------------------------------------@ widget -------------------------------------*/
+.dcms-form input[type="text"]{ width: 180px;}
+.dcms-form textarea{ width: 400px; height: 100px;}
+.ui-dialog .dcms-dialog{ width: auto;}
+/*---------------------------------------@ app -------------------------------------*/
+.cagegory-show{ width: 475px; border: 1px solid #adbcdc;}
+.cagegory-show-hd{ background: #adbcdc; padding:0 20px 0 10px; overflow: hidden;}
+.cagegory-show-hd button{ float:right; top:0;}
+.cagegory-show-hd h3{ float: left;   color: #fff; font-weight:bold; position: relative; top:2px;}
+.cagegory-show-bd{ background: #fff; padding: 20px;}
+
+
+.category-dialog .dcms-form{ min-height:296px; overflow: hidden;} /*modify by hongss on 2011.10.10*/
+.category-dialog .form { float: left;}
+.category-dialog .other-fn{
+    width: 240px;
+    height: 100%;
+    min-height: 260px;
+    float: right;
+    padding-left: 15px;
+    margin-left: 10px;
+    position: relative;}
+.category-dialog .other-fn h3{ background:  #eee; color: #666; padding: 3px 13px;}
+.category-dialog .other-fn  .tree{ margin-top: 10px; height:240px; overflow-y:scroll;} /*modify by hongss on 2011.10.10*/
+.category-dialog .other-fn  .tree input { vertical-align:middle;} /*add by hongss on 2011.11.04*/
+.category-dialog .hideFn{
+    width: 10px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(http://img.china.alibaba.com/cms/upload/other/dcms/choose-bar.png) no-repeat; }
+.category-dialog .search{ overflow:hidden; margin-top: 10px;}
+.category-dialog .search input[type="text"]{
+    width: 160px;
+    border: 1px solid #A0A0A0;
+    float: left;
+    margin: 0;
+    height: 15px;
+    border-right: 0}
+.category-dialog .search .dcms-btn { float: left;}
+
+.remove-category .form{width: 350px;}
+.remove-category .form p,.confirm-category .form p
+{ margin-bottom: 10px; color: #333;}
+.remove-category .form li,.confirm-category .form li
+{ color: #666; margin-bottom: 10px;}
+
+.confirm-category .info{ border: 1px solid #fc6;  background: #fff7ee; padding: 12px 20px; margin-bottom: 15px; }
+.confirm-category .info li{ overflow:hidden;margin-bottom: 5px;}
+.confirm-category .info .new{ margin-top: 15px;}
+.confirm-category .info .new li{ color: #33c;}
+.confirm-category .info .lab{ text-align: right; margin-right: 5px; float: left;min-width:6em;}
+.confirm-category .info .txt{ float: left; width: 400px;}
+
+.dcms-tree-red { color:#c00; }
+.dcms-form .dcms-form-department { margin:4px 0;}
+.dcms-form .dcms-form-department textarea { vertical-align:bottom; margin:0; height:38px; width:266px;}
+.dcms-form .needAudit{
+	margin:4px 0;
+}

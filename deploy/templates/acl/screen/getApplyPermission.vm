@@ -1,0 +1,70 @@
+$rundata.setLayout('default.vm')
+<link href="/static/intra/css/dcms/global/merge.css" rel="stylesheet">
+<link href="/static/intra/css/dcms/page/poptree/merge.css" rel="stylesheet">
+#set ($group = $form.searchRule.defaultInstance)
+<div id="js-dcmscontent" class="dcms-content">
+	<div id="js-dcmstoggle" class="dcms-toggle fd-hide">
+		<div class="dcms-toggle-icon"></div>
+	</div>
+	<div class="dcms-search">
+		<h3>查看申请权限</h3>
+		<div class="dcms-search-form">
+		  <form id="js-search-apply-form" method="post"> 
+		  $csrfToken.hiddenField
+			<ul class="list-input">
+				<li><label for="gmtCreate">提交日期：</label><input readonly type="text" id="gmtCreate" name="gmtCreate" value="$!gmtCreate"></li>
+				<li>
+					<label for="">权限类型：</label>
+					<select id="permType" name="permType">
+						<option value="">请选择!</option>
+						#foreach($permType in $!permTypes)
+							<option value="$!permType.code" #if($!permCode==$!permType.code) selected #end>$!permType.name</option>
+						#end
+					</select>
+				</li>
+				<li>
+					<label for="">状态：</label>
+					<select id="applyStatus" name="status">
+						<option value="">请选择!</option>
+						#foreach($apply in $!applyStatuss)
+							<option value="$!apply.code" #if($!status==$!apply.code) selected #end>$!apply.name</option>
+						#end
+					</select>
+				</li>
+				<li><button id="js-apply-search-btn" class="dcms-btn submit-btn" type="button">搜索</button></li>
+			</ul>
+			 </form>
+		</div>
+		<div class="dcms-search-list">
+			<table class="dcms-grid">
+				<thead>
+					<tr>
+						<th class="ap-id">ID</th>
+						<th class="ap-type">权限类型</th>
+						<th class="ap-code">代码</th>
+						<th class="ap-name">名称</th>
+						<th class="ap-status">状态</th>
+						<th class="ap-date">更新日期</th>
+						<th>&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody>
+					#foreach($data in $!dataList)
+						<tr>
+							<td>$!data.id</td>
+							<td>$!data.permName</td>
+							<td>$!data.code</td>
+							<td>$!data.name</td>
+							<td> $!data.statusName </td>
+							<td>$dateUtil.toLocaleString($!data.gmtModify,'yyyy-MM-dd')</td>
+							<td>#if($!data.status==2) 
+							<a title="$!data.remarks" class="view-remarks" href="#">查看</a>	 
+							</a> #end</td>
+						</tr>
+					#end
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div id="view_apply_unaudit" class="view-apply-unaudit"></div>

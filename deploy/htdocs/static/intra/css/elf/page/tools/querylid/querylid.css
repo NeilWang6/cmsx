@@ -1,0 +1,180 @@
+/*autoor:zhuliqi;
+  data:2013/4/27;  
+*/
+/*引入CSS样式部分，作为此类页面的公用部分，可以新建共用文件的时候把这里剪切出去*/
+.content {
+    width: 990px;
+	margin-left:5px;
+	padding-bottom:46px;
+}
+.cursor {
+	cursor: pointer;
+}
+
+/** top-area */
+.top-area .tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.top-area .tab-b .subject-info {
+    float: left;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+}
+.top-area .tab-b .subject-info  span {
+	color: #4a6bae;
+	font-weight: bold;
+}
+.top-area .tab-b .f-tab-t {
+    float: right;
+    height: 25px;
+    line-height: 32px;
+    cursor: pointer;
+	padding-left:15px;
+}
+.top-area .tab-b a {
+    text-decoration: none;
+}
+
+/** data-table */
+.data-table .table-sub td {
+	padding:5px 0 5px 12px;
+	line-height:18px;
+}
+.data-table .table-sub .th1 {
+	width:150px;
+}
+.data-table .table-sub .th2 {
+	width:50px;
+}
+.data-table .table-sub .th3 {
+	width:140px;
+}
+.data-table .table-sub .th4 {
+	width:140px;
+}
+.data-table .table-sub .th5 {
+	width:100px;
+}
+.data-table .table-sub .th6 {
+	width:55px;
+}
+.data-table a {
+    text-decoration: none;
+	margin-right:3px;
+}
+.data-table .table-sub .newline {
+	white-space:normal;
+	word-break:break-all;
+}
+.data-table .normal-state{
+	color:green;
+}
+
+/** bottom-bar */
+.bottom-bar .fixed-bottom { 
+	width:860px;
+	background-color:#E6EAF5; 
+	border:1px solid #BEC7D8;
+	height:36px;
+	bottom:2px;
+}
+
+.bottom-bar .fix-bottom-pagebar {
+	float:right; 
+	margin-top:6px; 
+	margin-right:10px;
+}
+
+/** condition */
+.condition {
+	margin-bottom:10px;
+    background-color: #f2f2f2;
+    padding: 5px 0px 0px 0px;
+}
+.condition table {
+    line-height: 26px;
+    table-layout: fixed;
+    width: 100%;
+}
+.condition td {
+    padding-bottom: 10px;
+}
+.condition select {
+    width: 98px;
+}
+.condition .select-long {
+    width: 250px;
+}
+.condition .select-date {
+    width: 113px;
+}
+.condition .col-2 {
+    text-align: right;
+    width: 45px;
+}
+.condition .col-3 {
+    text-align: right;
+    width: 55px;
+}
+.condition .col-4 {
+    text-align: right;
+    width: 70px;
+}
+.condition .col-button {
+    padding-left: 8px
+}
+.condition .col-r7{
+    width: 100px;
+    padding-right: 5px;
+}
+.condition .col-r7 input{
+    width: 95px;
+}
+.condition .col-r10{
+    width: 130px;
+    padding-right: 5px;
+}
+.condition .col-r10 input{
+    width: 120px;
+}
+.condition .col-r20{
+    width: 260px;
+    padding-right: 5px;
+}
+.condition .col-date{
+    width: 220px;
+    padding-right: 5px;
+}
+.condition .col-date input{
+    width: 90px;
+}
+.condition .tui-select .s-text{
+    width: 65px;
+}
+.condition .pull-down{
+    z-index: 10;
+    height: 400px;
+    overflow: auto;
+    line-height: 18px;
+}
+.condition .pull-down .item dd{
+    padding-left: 73px;
+    padding-right: 20px;
+}
+.condition .pull-down .item dt{
+    width: 70px;
+}
+/*页面内容*/
+textarea{margin-top:5px;}
+.form-vertical dl.item-form dt{width:140px;}
+.form-vertical dl.item-form dd{padding-left:125px;}
+.form-vertical .check-submit{display: inline-block;}
+.form-vertical .check-result{    display: inline;font-weight: normal;line-height: 30px;margin-left: 10px;}
+.mr5{margin-left:5px;}
+.form-vertical .check-piliang{vertical-align: top;margin-top:147px;}
+
+
+/*重新设定弹出层的样式*/

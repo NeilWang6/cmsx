@@ -1,0 +1,87 @@
+/**
+ * 静态页面管理
+ * @author : arcthur.cheny
+ * @createTime : 2011-09-19
+ */
+
+.booth-management{
+     margin-left: 18px;
+     padding-top:12px;
+}
+.booth-management h3{
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+    height:38px;
+}
+.booth-management .dcms-search-line-list-input li { 
+    float:left;
+    padding-right:12px;
+    height:32px;
+    line-height:32px;
+}
+.booth-management .dcms-search-line-list-input select { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 3px; width:115px; height:24px;}
+.booth-management .dcms-search-line-list-input .input-man { width:98px;}
+.booth-management .dcms-search-line-list-input .input-keywords { width:174px;}
+.booth-management .dcms-search-line-list-input .dcms-btn { margin-top:3px;}
+
+.dcms-grid tfoot td {
+    text-align:right;
+}
+.dcms-grid tbody td {
+    padding:10px 0 10px 8px;
+    line-height:1.2;
+    text-indent: 0;
+}
+
+.booth-management .current-key {
+    color:#06c;
+    font-weight:700;
+}
+
+.dcms-form input[type="text"], .dcms-input-text { width:218px; }
+.dcms-form select, .dcms-select { width:226px; }
+.dcms-form label { width: 110px; }
+.dcms-form textarea { width:500px; height:300px; }
+
+.dcms-form .tpl-name { display:inline-block; margin-top:7px; }
+
+.flow-list-table th { width:164px; }
+
+.btn-fdlint{
+	padding:0 8px;
+	width:90px;
+	margin-left:8px;
+	text-align:center;
+	color:#fff!important;
+}
+
+/*代码编辑框样式*/
+.btn-codemirror{
+	padding:0 8px;
+	margin-left:8px;
+	width:120px;
+	text-align:center;
+	color:#fff!important;
+}
+.CodeMirror{
+	width:820px;
+}
+.CodeMirror-scroll{
+	height:550px;
+}
+.CodeMirror{ border-top: 1px solid black; border-bottom: 1px solid black;}
+.CodeMirror-fullscreen {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	margin: 0;
+	padding: 0;
+	border: 0px solid #BBBBBB;
+	opacity: 1;
+}

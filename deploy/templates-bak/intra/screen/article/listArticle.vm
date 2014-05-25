@@ -1,0 +1,325 @@
+$page.setTitle("文章列表")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/dialog.css")
+$page.addScript("${staticDomainUrl}/intra/js/dialog.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/calendar.js")
+$page.addScript("${staticDomainUrl}/intra/js/calendar/lang/en.js")
+$page.addScript("${staticDomainUrl}/intra/js/formvalidator.js")
+$page.addScript("${staticDomainUrl}/intra/js/formValidatorRegex.js")  
+$page.addScript("${staticDomainUrl}/intra/js/request.js")
+$page.addScript("${staticDomainUrl}/intra/js/drop_new.js")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/jscal2.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/border-radius.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/calendar/win2k.css")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/jquery.treeview.css")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.cookie.js")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.treeview.js")
+$page.addScript("${staticDomainUrl}/intra/js/cookie.js")
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style>
+<div id="closeParentTime" style="display:none"></div>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	if(window.top.$("#current_pos").data('clicknum')==1 || window.top.$("#current_pos").data('clicknum')==null) {
+	parent.document.getElementById('display_center_id').style.display='';
+	parent.document.getElementById('center_frame').src = '?type=content&do=article_catalogs';
+	window.top.$("#current_pos").data('clicknum',0);
+}
+$(document).ready(function(){
+	setInterval(closeParent,5000);
+});
+function closeParent() {
+	if($('#closeParentTime').html() == '') {
+		window.top.$(".left_menu").addClass("left_menu_on");
+		window.top.$("#openClose").addClass("close");
+		window.top.$("html").addClass("on");
+		$('#closeParentTime').html('1');
+		window.top.$("#openClose").data('clicknum',1);
+	}
+}
+//-->
+</SCRIPT>
+
+<style type="text/css">
+.filetree *{white-space:nowrap;}
+.filetree span.folder, .filetree span.file{display:auto;padding:1px 0 1px 16px;}
+ </style>
+ 
+<div class="pad-10">
+  <div class="content-menu ib-a blue line-x">
+ <a class="add fb" href="javascript:;" onclick=javascript:openwinx('edit_article.htm?type=content&cn=article&do=info','')><em>添加新文章</em></a><span>|</span>
+<a href="?type=content&cn=article&do=list" class="on"><em>文章管理</em></a> <span>|</span>
+<a href="?type=html&do=article_content"><em>更新内容页</em></a> <span>|</span>
+<input name="aaaa" type="checkbox" value="" onclick="Layer_HideOrShow('searchid');">搜索
+<script   language=javascript>
+function Layer_HideOrShow(cur_div)
+{ 
+	var current=document.getElementById(cur_div);
+	if(current.style.display=="block"){
+		current.style.display ="none";
+	}else{
+		current.style.display ="block";
+	}
+}
+</script>
+ 
+</div>
+<div id="searchid" style="display:none;">
+<form id="searchForm" action="/index.php?type=content&cn=article&do=list" method="get" >
+<input type="hidden" name="type" value="content">
+<input type="hidden" name="cn" value="article">
+<input type="hidden" name="caid" value=""> 
+<input type="hidden" name="do" value="list"> 
+<table width="100%" cellspacing="0" class="search-form">
+    <tbody>
+		<tr>
+		<td>
+		<div class="explain-col">
+        
+				添加时间：
+			 
+			<input type="text" name="start_time" id="start_time" value="" size="10" class="date" readonly>
+            <script type="text/javascript">
+			Calendar.setup({
+			weekNumbers: false,
+		    inputField : "start_time",
+		    trigger    : "start_time",
+		    dateFormat: "%Y-%m-%d",
+		    showTime: false,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+			});
+        </script>&nbsp;- &nbsp;<input type="text" name="end_time" id="end_time" value="" size="10" class="date" readonly>
+            
+            <script type="text/javascript">
+			Calendar.setup({
+			weekNumbers: false,
+		    inputField : "end_time",
+		    trigger    : "end_time",
+		    dateFormat: "%Y-%m-%d",
+		    showTime: false,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+			});
+        </script>	
+            
+            &nbsp;
+            发布人：<select name="adminid">
+              <option value="" selected="selected">请选择..</option>
+              <option value="1" >admin</option><option value="7" >ceshi</option>            </select>
+                        
+             &nbsp;
+            审核状态：<select name="checked">
+              <option value="">全部</option>
+     <option value="0" >未审核</option>
+     <option value="1" >已审核</option>
+            </select>
+            &nbsp;
+            关键字：<input  name="kw" value="" type="text" class="input-text" />
+				<input  type="submit" class="button" value="搜索"  />
+	</div>
+		</td>
+		</tr>
+    </tbody>
+</table>
+</form> 
+</div>
+<form name="myform" id="myform" action="" method="post" >
+<div class="table-list">
+    <table width="100%">
+        <thead>
+            <tr>
+			 <th width="16"><input type="checkbox" value="" id="check_box" onclick="selectall('ids[]');"></th>
+             
+            <th width="40">ID</th>
+			<th>标题</th>
+            <th width="100">所属栏目</th>
+            <th width="40">点击量</th>
+            <th width="70">发布人</th>
+            <th width="118">更新时间</th>
+            <th width="118">审核状态</th>
+			<th width="150">管理操作</th>
+            </tr>
+        </thead>
+<tbody>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="3005" type="checkbox"></td>
+         
+		<td align='center' >3005</td>
+		<td><a href="http://v6.carscms.com/article/zuchezhinan/201307033005.html" target="_blank">租车租婚车有四种渠道可选择</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/zuchezhinan/" target="_blank">租车指南</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:22:55</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('edit_article?type=content&do=info&cn=article&id=3005','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','3005')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="3004" type="checkbox"></td>
+         
+		<td align='center' >3004</td>
+		<td><a href="http://v6.carscms.com/article/zuchezhinan/201307033004.html" target="_blank">乘租赁汽车受伤应得到哪些赔偿</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/zuchezhinan/" target="_blank">租车指南</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:22:12</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=3004','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','3004')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="3003" type="checkbox"></td>
+         
+		<td align='center' >3003</td>
+		<td><a href="http://v6.carscms.com/article/zuchezhinan/201307033003.html" target="_blank">6大夏日旅游热地租车指南</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/zuchezhinan/" target="_blank">租车指南</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:21:10</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=3003','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','3003')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="3002" type="checkbox"></td>
+         
+		<td align='center' >3002</td>
+		<td><a href="http://v6.carscms.com/article/zuchezhinan/201307033002.html" target="_blank">暑期租车价格变化不大</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/zuchezhinan/" target="_blank">租车指南</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:18:38</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=3002','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','3002')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="3001" type="checkbox"></td>
+         
+		<td align='center' >3001</td>
+		<td><a href="http://v6.carscms.com/article/zuchezhinan/201307033001.html" target="_blank">旅游租车省钱有诀窍</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/zuchezhinan/" target="_blank">租车指南</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:17:38</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=3001','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','3001')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="3000" type="checkbox"></td>
+         
+		<td align='center' >3000</td>
+		<td><a href="http://v6.carscms.com/article/zuchezhinan/201307033000.html" target="_blank">周末出游：买不如租 北京租车旅游攻略</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/zuchezhinan/" target="_blank">租车指南</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:16:24</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=3000','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','3000')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="2999" type="checkbox"></td>
+         
+		<td align='center' >2999</td>
+		<td><a href="http://v6.carscms.com/article/zuchezhinan/201307032999.html" target="_blank">租赁市场扩容 车企抢食租车蛋糕</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/zuchezhinan/" target="_blank">租车指南</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:15:30</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=2999','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','2999')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="2998" type="checkbox"></td>
+         
+		<td align='center' >2998</td>
+		<td><a href="http://v6.carscms.com/article/xuechezd/201307032998.html" target="_blank">科目三路考注意事项_科目三路考夜间行驶技巧</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/xuechezd/" target="_blank">学车知道</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:12:37</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=2998','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','2998')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="2997" type="checkbox"></td>
+         
+		<td align='center' >2997</td>
+		<td><a href="http://v6.carscms.com/article/xuechezd/201307032997.html" target="_blank">2013科目三满分通过，经验分享！</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/xuechezd/" target="_blank">学车知道</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:11:08</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=2997','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','2997')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="2996" type="checkbox"></td>
+         
+		<td align='center' >2996</td>
+		<td><a href="http://v6.carscms.com/article/xuechezd/201307032996.html" target="_blank">新驾考科目三-2013新交规科目三大路考试</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/xuechezd/" target="_blank">学车知道</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:08:58</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=2996','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','2996')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="2995" type="checkbox"></td>
+         
+		<td align='center' >2995</td>
+		<td><a href="http://v6.carscms.com/article/xuechezd/201307032995.html" target="_blank">科目二考试内容2013版驾校科目二</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/xuechezd/" target="_blank">学车知道</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 16:06:19</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=2995','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','2995')">删除</a></td>
+	</tr>
+<tr>
+		<td align="center"><input class="inputcheckbox " name="ids[]" value="2994" type="checkbox"></td>
+         
+		<td align='center' >2994</td>
+		<td><a href="http://v6.carscms.com/article/xuechezd/201307032994.html" target="_blank">不懂交警手势？交警手势信号巧记</a> </td>
+        <td align='center'><a href="http://v6.carscms.com/article/xuechezd/" target="_blank">学车知道</a></td>
+		<td align='center' title="0">0</td>
+		<td align='center'>admin</td>
+		<td align='center'>2013-07-03 15:53:21</td>
+        <td align='center'><font color="#005500">已审核</font></td>
+		<td align='center'>
+   
+        <a href="javascript:;" onclick="javascript:openwinx('?type=content&do=info&cn=article&id=2994','')">修改</a> | <a href="javascript:;" onclick="delFun('content_article','2994')">删除</a></td>
+	  </tr> 
+     </tbody>
+     </table>
+    <div class="btn"><label for="check_box">全选/取消</label>
+      <input type="button" class="button" value="删除" onclick="myform.action='admins_p.php?type=content_article&action=dels';return confirm_delete()"/>
+      <input type="submit" class="button" value="审核" onclick="myform.action='admins_p.php?type=content_article&action=checked';return confirm_checked()"/>
+      <input type="submit" class="button" value="解审" onclick="myform.action='admins_p.php?type=content_article&action=nochecked';return confirm_nochecked()"/>
+    </div>
+     <div id="pages"><a href="javascript:;" class="a1">首页</a> <a href="javascript:;" class="a1">上一页</a> <span>1</span> <a href="?type=content&cn=article&do=list&p=2" class="BtnNum">2</a> <a href="?type=content&cn=article&do=list&p=3" class="BtnNum">3</a> <a href="?type=content&cn=article&do=list&p=4" class="BtnNum">4</a> ...<a href="?type=content&cn=article&do=list&p=246" class="a1">246</a> <a href="?type=content&cn=article&do=list&p=2" class="a1">下一页</a> <a href="?type=content&cn=article&do=list&p=246" class="a1">尾页</a> </div>
+ 
+</div>
+</form>
+</div> 
+<script type="text/javascript" src="${staticDomainUrl}/intra/js/article/articlelist.js"></script> 

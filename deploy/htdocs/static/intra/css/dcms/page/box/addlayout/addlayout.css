@@ -1,0 +1,50 @@
+/**
+ * @authur zhuqh
+ * @usefor cell¿â
+ * @date   2012-01-05
+ */
+.dcms-box-content-header{
+	padding:0 ! important;
+	border-bottom:1px solid #66ccff;
+} 
+.dcms-box-list{
+    padding:20px 10px;
+}
+ 
+.dcms-box-content-right{
+	float:left;
+	width:718px;
+    padding:12px 20px;
+    -webkit-border-radius:0 0 6px 6px;
+    -moz-border-radius:0 0 6px 6px;
+    border-radius:0 0 6px 6px;
+    background:#fff;
+	-webkit-border-radius: 0 0 0 6px;
+	-moz-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+}
+.dcms-box-content-header-nav{
+	 width:150px;
+	 height:20px;
+}
+.dcms-box-content-body{
+ 	align:center;
+}
+.checkbox{
+	vertical-align:bottom;
+ }
+.textarea{
+	padding-top:10px;
+}
+.dcms-input-text2{
+    border: 1px solid #bdc7d8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    /*color: #333;*/
+    height:400px;
+    line-height:16px;
+}
+.dcms-input-text2 {
+    width: 896px;
+}

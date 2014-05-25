@@ -1,0 +1,60 @@
+.dcms-header .dcms-header-container:after,
+.dcms-header .dcms-nav-container:after,
+.dcms-left-nav figure:after,
+.dcms-main-body:after,
+.dcms-footer:after{
+    content:"\0020";
+    display:block;
+    height:0;
+    clear:both;
+}
+
+.dcms-main-body {
+    min-width:1050px;
+}
+
+.dcms-left-nav{
+    width: 200px;
+}
+.dcms-content {
+    margin-left: 200px;
+    margin-bottom:12px;
+    width:850px;
+    overflow:hidden;
+}
+.dcms-leftnav-hidden {
+    width: auto;
+}
+.dcms-leftnav-hidden .dcms-content {
+    margin-left: 0;
+}
+
+.fd-left {
+    float: left;
+}
+.fd-right {
+    float: right;
+}
+.fd-clear {
+    clear: both;
+}
+.fd-clr {
+}
+.fd-clr:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.fd-hide {
+    display: none;
+}
+.fd-show {
+    display: block;
+}
+.fd-visible {
+    visibility: visible;
+}
+.fd-hidden {
+    visibility: hidden;
+}

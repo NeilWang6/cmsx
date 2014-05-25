@@ -1,0 +1,13 @@
+.countDown q:before,.countDown q:after {content:'';}
+.countDown q{float:left;+display:inline;width:30px;height:40px;overflow:hidden;}
+.countDown p{margin:0;height:40px;background-image:url(http://img.china.alibaba.com/news/upload/0/num_1267286647898.gif);background-repeat:no-repeat;text-indent:-1000em;}
+.countDown .num0{background-position:0 0;}
+.countDown .num1{background-position:0 -40px;}
+.countDown .num2{background-position:0 -80px;}
+.countDown .num3{background-position:0 -120px;}
+.countDown .num4{background-position:0 -160px;}
+.countDown .num5{background-position:0 -200px;}
+.countDown .num6{background-position:0 -240px;}
+.countDown .num7{background-position:0 -280px;}
+.countDown .num8{background-position:0 -320px;}
+.countDown .num9{background-position:0 -360px;}

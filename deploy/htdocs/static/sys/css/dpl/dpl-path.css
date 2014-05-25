@@ -1,0 +1,16 @@
+/* path style 1*/
+.dpl-path{height: 28px; border: solid 1px #c8c8c8; background-color: #fafafa; color: #444;}  
+.dpl-path .dpl-lnk:hover{text-decoration: none;}
+.dpl-path .dpl-l,
+.dpl-path .dpl-c,
+.dpl-path .dpl-r{float: left; display: inline; padding: 5px 11px;}
+.dpl-path .dpl-l{background-color: #f0f0f0; border-right: solid 1px #c8c8c8;} 
+.dpl-path .dpl-r{float: right;}
+.dpl-path .dpl-c *{float: left; display: inline;}
+.dpl-path .dpl-c .dpl-arrow{display: inline-block; width: 12px; height: 12px; overflow: hidden; margin: 3px 7px; vertical-align: middle;}
+/* path style 2 */
+.dpl-path-simple{height: 18px; color: #444;}
+.dpl-path-simple .dpl-lnk:hover{text-decoration: none;}
+.dpl-path-simple .dpl-c{float: left; display: inline; padding: 0 12px;}
+.dpl-path-simple .dpl-c *{float: left; display: inline;}
+.dpl-path-simple .dpl-c .dpl-arrow{display: inline-block; width: 12px; height: 12px; overflow: hidden; margin: 3px 7px; vertical-align: middle;}

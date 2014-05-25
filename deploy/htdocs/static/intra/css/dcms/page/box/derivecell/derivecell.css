@@ -1,0 +1,34 @@
+/**
+ * @author springyu
+ * @userfor 派生CELL功能CSS
+ * @date 2012-2-1
+ */
+
+/*
+ * 操作导航工具条
+ */
+.dcms-box-grid {
+    height: 32px;
+    margin: 0 auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.cell-nav{
+    background-color: #b3dcfc;
+    
+}
+div.box-attr-toolbar{
+    width:100% !important;
+}
+.dcms-box-body .dcms-box-center{
+    width:99% !important;
+    padding-left:24px;
+}
+ 
+
+
+/* 属性设置  add by hongss on 2012.02.06 */
+.cell-form .dcms-input-text,
+.cell-form .dcms-textarea {
+    width:260px;
+}

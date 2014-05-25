@@ -1,0 +1,64 @@
+/**
+ * @userfor Message - 信息提示框、确认对话框
+ * @author hongss
+ * @date 2011.08.24
+ */
+
+/*确认对话框*/
+.dcms-dialog header close {
+    background: url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png) no-repeat;
+}
+.dcms-dialog {
+    width: 386px;
+}
+.dcms-dialog .dialog-body {
+    padding: 0 22px;
+}
+.dcms-dialog h4.title {
+    color: #6c84b8;
+}
+.dcms-dialog header close {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background-position: -135px -210px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.dcms-dialog content {
+    display: block;
+    padding-left: 22px;
+    color: #333;
+    line-height: 18px;
+    word-wrap: break-word;
+}
+.dcms-dialog footer {
+    overflow: hidden;
+}
+.dcms-box-hide {
+    display: none;
+}
+
+/*信息提示框*/
+.dcms-awake {
+    display: none;
+    width: 200px;
+    background-color: #FFF138;
+    border: 1px solid #FF8C44;
+    z-index: 10001;
+    overflow: hidden;
+}
+.dcms-awake content {
+    float: left;
+    padding: 8px 8px 8px 16px;
+    line-height: 20px;
+    width: 164px;
+}
+.dcms-awake close {
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}

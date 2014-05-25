@@ -1,0 +1,126 @@
+.cat {
+    margin-bottom: 10px;
+}
+.cat .btn {
+    padding: 3px 22px;
+    color: #409ad6;
+    background-color: #f3f8fb;
+    border: 1px solid #7ba6c9;
+    border-bottom: 1px solid #374c7a;
+}
+.cat label, .keyword label {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    padding-right: 3px;
+}
+.order label {
+    padding-left: 20px;
+    padding-right: 3px;
+}
+.searchform select {
+    padding: 2px 3px 2px 3px;
+}
+.keyword input[type="text"] {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+body:first-of-type  .keyword .search-btn {
+    top: -1px;
+}
+body:first-of-type .keyword .search-btn, x:-moz-any-link, x:default {
+    top: 0px;
+}
+.dcms-box-paging .total {
+    padding-left: 0;
+}
+
+.page-tab {
+    width: 100%;
+    table-layout: fixed;
+}
+.page-tab  tr {
+    display: block;
+}
+.search-body-list{
+    top: 40px;
+}
+
+.page-tab thead tr {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    background: #f2f2f2;
+}
+.page-tab thead th {
+    font-weight: bold;
+    color: #353638;
+}
+.page-tab thead tr {
+    padding: 8px 8px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.page-tab tbody tr {
+    padding: 6px 8px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.page-tab tbody tr:hover {
+    background: #eee;
+}
+.page-tab .name, .page-tab .user, .page-tab .time, .page-tab .tag, .page-tab .operator,.page-tab .all {
+    display:inline-block;
+}
+.page-tab th {
+    text-align: left;
+    vertical-align: middle;
+}
+.page-tab .all{
+    width:8%;
+}
+.page-tab .name {
+    width: 30%;
+}
+.page-tab .time {
+    width: 20%;
+}
+.page-tab .tag {
+    width: 20%;
+}
+.page-tab .operator {
+    width: 20%;
+}
+.page-tab  tbody .time, .page-tab  tbody .tag {
+    color: #acacac;
+}
+
+
+.page-body .name a {
+    font-weight: bold;
+    color: #353638;
+}
+.page-body a:hover,.page-tab .operator .draft-btn:hover{
+    color:#ff6600;
+}
+.page-tab .operator .draft-btn {
+    color: #0066cc;
+    padding: 4px;
+    margin: 0 8px;
+}
+.catalogsName {
+    display: inline-block;
+    width: 645px
+}
+.cat .catalogsName, .cat label {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 4px
+}
+.dcms-box-content-header-nav {
+    height: 30px !important;
+    width: 150px;
+}
+
+.panel-tab{
+    background-color: #DBDCDE;
+}

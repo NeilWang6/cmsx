@@ -1,0 +1,79 @@
+.cell-derive-attr{
+    margin: 0 auto;
+    max-width:630px;
+    min-width:500px;
+    border:1px solid #b0c6db;
+    -moz-box-shadow:0px 0px 0px 1px #cbdcea;
+    -webkit-box-shadow:0px 0px 0px 1px #cbdcea;
+    box-shadow:0px 0px 0px 1px #cbdcea;
+    background-color: #fff;
+}
+.cell-derive-attr .cell-header{
+    background-color: #b9d0e3;
+    height: 24px;
+    line-height: 24px;
+    padding-left:12px;
+}
+.cell-header .title{
+    color:#4c6bac;
+}
+.cell-derive-attr .cell-form{
+    padding-left:16px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+.cell-form input{
+    width:500px;
+    border: 1px solid #b0c6db;
+}
+.cell-form textarea{
+    width:501px;
+    height: 100px;
+    border: 1px solid #b0c6db;
+}
+.cell-form dl{
+    display:table;
+}
+.cell-form dl dd{
+    display:table-row;
+   
+}
+.cell-form .align-right{
+    text-align: right;
+    vertical-align: top;
+    width:80px;
+}
+.cell-form dl dd span{
+    display:table-cell;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:4px;
+    padding-right:4px;
+    color:#444;
+}
+.cell-derive-attr .cell-line {
+    margin:0px auto;
+    border-top:1px dotted #b0c6db;
+    padding-bottom:8px;
+    width:95%;
+}
+.cell-derive-attr .cell-btn{
+    display:table;
+  	padding:10px 0;
+    
+}
+.cell-btn span{
+    display:table-cell;
+    padding:0px 2px;
+}
+.cell-btn span button{
+    color:#409ad6;
+    background-color: #fff;
+    border-top:1px solid #b0c6db;
+    border-left:1px solid #b0c6db;
+    border-right:1px solid #b0c6db;
+    border-bottom:1px solid #6f849e;
+    width:64px;
+    height: 24px;
+    
+}

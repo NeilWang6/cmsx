@@ -39,5 +39,13 @@
 	<bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">
 		<property name="sqlMapClient" ref="sqlMapClient" />
 	</bean>
-
+	
+	<bean id="baseSqlMapClientDAO_cms" abstract="true">
+        <property name="dataSource">
+            <ref local="dataSource" />
+        </property>
+        <property name="sqlMapClient">
+            <ref local="sqlMapClient" />
+        </property>
+    </bean>
 </beans>

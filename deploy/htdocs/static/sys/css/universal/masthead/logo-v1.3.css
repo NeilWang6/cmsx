@@ -1,0 +1,53 @@
+/**
+ * @fileoverview masthead logo
+ * @author  Edgar
+ */
+
+/* ali-masthead */
+#ali-masthead .ali-masthead-container{
+    height:81px;
+    text-align:left;
+    font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+}
+#ali-logo .logo{
+    float:left;
+    width:367px;
+    height:38px;
+    margin-top:28px;
+    overflow:hidden;
+    background:url(http://img.china.alibaba.com/images/logo/logo.png) no-repeat 0 0;
+}
+#ali-logo .alibaba-logo{
+    float:left;
+    display:inline-block;
+    width:154px;
+    height:38px;
+    line-height:160px;
+    overflow:hidden;
+}
+
+/**
+ * Masthead 4.0
+ * @version 4.0 2012.01.18
+ * @author Denis
+ */
+#masthead-v4{padding:12px 4px;}
+#masthead-v4 .sub-logo-v4{background:url(http://img.china.alibaba.com/cms/upload/homepage/masthead-v4.png) no-repeat;}
+#masthead-v4 .ali-logo-v4{float:left;margin-top:11px;}
+#masthead-v4 .main-logo-v4 {display:block;float:left;margin:4px 12px 0 0;padding:4px;width:153px;height:37px;border-radius:2px;text-decoration:none;}
+#masthead-v4 .main-logo-v4:hover{box-shadow:rgba(0,0,0,0.2) 0 0 1px 1px;}
+/*{{masthead-v5-logo}}*/
+/**
+* Masthead 5.0
+* @version 5.0 2012.06.28
+* @author ianva
+*/
+#masthead-v5{padding:12px 4px;}
+#masthead-v5 .sub-logo-v5{background:url("http://img.china.alibaba.com/cms/upload/homepage/masthead-v5.png") no-repeat;}
+#masthead-v5 .ali-logo-v5{float:left; margin-top:10px}
+#masthead-v5 .main-logo-v5 {display:block;float:left;margin:7px 12px 0 0;padding:4px;border-radius:2px;text-decoration:none;}
+#masthead-v4 .main-logo-v5:hover{box-shadow:rgba(0,0,0,0.2) 0 0 1px 1px;}
+#masthead-v5 .sub-logo-v5 {display:block;float:left;padding-left:12px;height:49px;line-height:49px;background-position:-160px top;font-family:"\5FAE\8F6F\96C5\9ED1";font-size:22px;font-weight:700;color:#666;}
+#masthead-v5 a.sub-logo-v5{text-decoration:none;}
+#masthead-v5 a.sub-logo-v5:hover{color:#ff7300;}
+/*{{/masthead-v5-logo}}*/

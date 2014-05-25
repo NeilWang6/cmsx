@@ -1,0 +1,88 @@
+/**
+ * @省市区级联下拉组件
+ * @author changbin.wangcb
+ * @mod on 2011.11.24
+ */
+/*background*/
+div.pca-city div.list,div.pca-area div.list{
+	background: url(http://img.china.alibaba.com/cms/upload/2011/143/352/253341_1625054590.png) repeat-x 0 0;
+}
+div.combobox{
+	position: relative;
+	float: left;
+	margin-right: 5px;
+}
+div.combobox input.result{
+	padding:2px;
+	height:16px !important;
+	min-height: 16px !important;
+	border: 1px solid #7F9DB9;
+}
+div.ui-combobox a.trigger,div.ui-combobox a.trigger:hover{
+}
+div.combobox li,div.combobox dt,div.combobox dd{
+	float: left;
+}
+div.combobox dd{
+	padding:0;
+	line-height: 31px;
+}
+div.combobox li{
+	padding:0;
+	line-height: 32px;
+	white-space:nowrap;
+	overflow:visible;
+}
+div.combobox span{
+	padding:2px 8px;
+	height:12px;
+}
+div.combobox .ui-combobox-hover{
+	padding:0;
+	background: none;
+}
+div.combobox .ui-combobox-selected{
+	background: none;
+}
+div.combobox .ui-combobox-hover span{
+	background: #06c;
+	color: #fff !important;
+}
+div.combobox .ui-combobox-selected span{
+	color:#06c;
+}
+div.combobox div.ui-combobox-panel{
+	margin-top: -1px;
+}
+div.combobox div.list{
+	width: auto;
+}
+/*province begin*/
+div.pca-province div.ui-combobox-panel{
+	width:472px;
+	height:160px;
+}
+div.pca-province dl{
+	width: 470px;
+	height:31px;
+	border-bottom: 1px solid #e2e1e1;
+}
+div.pca-province dl.last-row{
+	border-bottom: none;
+}
+div.pca-province dt{
+	padding-left:8px;
+	margin-right:8px;
+	width: 75px;
+	line-height: 31px;
+	border-right: 1px solid #e2e1e1;
+	background: #fff7eb;
+}
+/*province end*/
+div.pca-city div.ui-combobox-panel{
+	width: 289px;
+}
+div.pca-area div.ui-combobox-panel{
+	width: 276px;
+}
+

@@ -1,0 +1,18 @@
+.for-checkbox {width:10px;}
+.num-checkbox {width:30px;}
+.name-checkbox {width:30px;}
+.org-checkbox {width:100px;}
+.id-checkbox {width:30px;}
+.email-checkbox {width:80px;}
+.search_str {width:300px;}
+.result-detail{height: 180px;overflow-y: scroll;}
+.result-detail .table-sub{
+	word-break: break-all;
+}
+.list-operation{float:left;padding-left: 11px;padding-top: 5px;}
+.oper-link{padding-left: 10px;}
+.oper-link-right{padding-left: 10px;padding-right:10px;}
+.list-div{width: 990px;padding-bottom: 60px;}
+.list-search-head{padding-left: 50px;padding-top: 5px;padding-bottom: 5px;}
+.list-page{padding-left:650px;}
+.list-page-bottom{background-color: #F0F0F0;height: 28px;padding: 5px 5px 5px 0;width: 990px;}

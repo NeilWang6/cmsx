@@ -1,0 +1,36 @@
+/**
+ * @package FD.sys.head.masthead.logo-append
+ * @version 1.0.110110
+ * @author  Edgar
+ */
+#ali-logo{
+    float:left;
+}
+#ali-logo .logo{
+    width:367px;
+    height:38px;
+    margin-top:28px;
+    overflow:hidden;
+    background:url(http://img.china.alibaba.com/images/logo/logo-append.png) no-repeat;
+}
+#ali-logo .alibaba-logo{
+    float:left;
+    display:inline-block;
+    width:154px;
+    height:38px;
+    line-height:160px;
+    overflow:hidden;
+    margin-right:22px;
+}
+#ali-logo .sub-logo{
+    float:left;
+    display:inline-block;
+    height:34px;
+    text-decoration:none;
+    font:700 22px/1.5 \5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,\534E\6587\7EC6\9ED1;
+    line-height:1.7\9;
+    color:#666;
+}
+#ali-logo .sub-logo:hover{
+    color:#ff7300;
+}

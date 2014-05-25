@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:services="http://www.alibaba.com/schema/services"
+	xmlns:fm-validators="http://www.alibaba.com/schema/services/form/validators"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+                 http://www.alibaba.com/schema/services                 http://localhost:8080/schema/services.xsd
+                 http://www.alibaba.com/schema/services/form/validators http://localhost:8080/schema/services-form-validators.xsd
+                 http://www.springframework.org/schema/beans            http://localhost:8080/schema/www.springframework.org/schema/beans/spring-beans.xsd
+             ">
+
+	<services:form postOnlyByDefault="true">
+		<group name="csrfTokenCheckGroup">
+			<field name="csrfToken">
+				<fm-validators:csrf-validator>
+					<message>提交的数据已过期</message>
+				</fm-validators:csrf-validator>
+			</field>
+		</group>
+		
+		<group name="userParam" extends="csrfTokenCheckGroup" trimmingByDefault="true">
+			<field name="id"></field>
+			<field name="userId"></field>
+			<field name="password"></field>
+			<field name="fullName"></field>
+			<field name="email"></field>
+			<field name="deptId"></field>
+			<field name="status"></field>
+			<field name="profileSite"></field> 
+		</group>
+	</services:form>
+
+</beans:beans>

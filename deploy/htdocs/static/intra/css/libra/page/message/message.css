@@ -1,0 +1,97 @@
+/**
+ * create by wangxiaojun on 2012.10.17
+ */
+
+.w800 {
+    width: 800px;
+}
+.title {
+  line-height: 28px;
+  padding: 0;
+	border-bottom: 2px solid #8e9dc6;
+}
+.title h3 {
+	 color: #4A6BAE;
+   font-weight: bold;
+}
+
+.condition {
+    background-color: #f2f2f2;
+    padding: 10px 0px 5px 0px;
+}
+
+.condition table {
+    line-height: 26px;
+    table-layout: fixed;
+    width: 100%;
+}
+.condition td {
+    padding-bottom: 10px;
+}
+  
+.condition .column-a {
+    text-align: right;
+    width: 70px;
+    padding-left: 8px;
+}
+ 
+.condition .column-button {
+	  text-align: right;
+    padding-right: 10px;
+}
+ 
+.condition .column-f{
+    width: 90px;
+    padding-right: 8px;
+}
+.condition .column-f input {
+    width: 88px;
+}
+
+.condition .column-g {
+    width: 245px;
+    padding-right: 8px;
+}
+
+.condition .column-g input {
+    width:98px;
+}
+
+
+.content{
+	padding-top:6px;
+}
+
+.content .message_number{
+	width:20px;
+	text-align:left;
+	float:left;
+}
+.content .message_content{
+	width:765px;
+	float:left;
+}
+ 
+.content .message li{
+	line-height:48px;
+	border-bottom:1px solid #DDDDDD;
+	width:785px;
+  overflow:hidden;
+  padding-left:5px;
+  padding-right:10px;
+}
+
+
+/** page */
+
+.paging-t {
+    float: right;
+}
+
+.fix-bottom-pagebar {
+	 margin-top:10px;
+ 	 background-color: #f0f0f0;
+   overflow: hidden;
+   line-height:40px;
+   padding:10px;
+}

@@ -1,0 +1,46 @@
+/**
+ * @author Leyteris Lee
+ * @date 2011.3.28
+ */
+.obj-freight-table span
+.obj-freight-table .table-head li {
+	height: 28px;
+}
+.obj-freight-table , .obj-freight-table .table-body,
+.obj-freight-table .table-head, .obj-freight-table .table-body ul{
+	overflow:hidden;
+	zoom:1;
+}
+.obj-freight-table .table-body li {
+	background:url(http://img.china.alibaba.com/cms/upload/industrial/logistics/images/bg.png) 0 -546px repeat-x;
+}
+.obj-freight-table .table-body li.last-row{
+	background:none;
+}
+.obj-freight-table li {
+	line-height: 24px;
+	vertical-align: middle;
+	overflow: hidden;
+	height:24px;
+}
+.obj-freight-table span{
+	float: left;
+	display: block;
+	height: 30px;
+	padding: 0 6px 0 0;
+	text-align: left;
+	overflow: hidden;
+}
+.obj-freight-table .table-head span {
+	color: #333;
+	font-weight: bold;
+}
+.obj-freight-table .span-0 {
+	width: 259px;
+}
+.obj-freight-table .span-1 {
+	width: 354px;
+}
+.obj-freight-table .span-2 {
+	width: 67px;
+}

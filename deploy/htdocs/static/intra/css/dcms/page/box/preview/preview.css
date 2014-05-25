@@ -1,0 +1,11 @@
+.pre-template-header {
+    margin: 0 auto;
+    border-top: 1px solid #65676c;
+    border-bottom: 1px solid #bababa;
+    padding: 8px 200px;
+    background-color: #f3f3f3;
+    background: url(http://img.china.alibaba.com/cms/upload/2012/329/784/487923_983650061.png)
+}
+html{
+	overflow-y:auto;
+}

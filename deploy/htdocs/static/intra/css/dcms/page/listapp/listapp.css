@@ -1,0 +1,52 @@
+.booth-management{
+     margin-left: 18px;
+     padding-top:12px;
+}
+.booth-management h3{
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+    height:38px;
+}
+.booth-management .dcms-search-line-list-input li { 
+    float:left;
+    padding-right:12px;
+    height:32px;
+    line-height:32px;
+}
+.booth-management .dcms-search-line-list-input select { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 3px; width:115px; height:24px;}
+.booth-management .dcms-search-line-list-input .input-man { width:98px;}
+.booth-management .dcms-search-line-list-input .input-keywords { width:174px;}
+.booth-management .dcms-search-line-list-input .dcms-btn { margin-top:3px;}
+
+.dcms-grid tfoot td {
+    text-align:right;
+}
+.dcms-grid tbody td {
+    padding:10px 0 10px 8px;
+    line-height:1.2;
+    text-indent: 0;
+}
+.manage-template td {     
+    word-break:keep-all;
+    white-space:normal;
+    overflow:hidden;
+}
+
+.manage-template .tp-id { width:50px; }
+.manage-template .tp-appkey { width:140px; }
+.manage-template .tp-template,
+.manage-template .tp-template-cat { width:120px; }
+.manage-template .tp-param-cat { width:100px; }
+.manage-template .tp-description { width:80px; }
+.manage-template .tp-opration { width:140px; }
+
+.manage-template .sth-opration p { line-height:18px; }
+.manage-template .sth-opration a { padding-right:10px; }
+.cancel-btn { display:none; }
+
+#listTemplateParam input[type="text"] { width:200px;height:20px; }
+#listTemplateParam select{ width:226px; }
+#listTemplateParam label { width: 110px; }
+

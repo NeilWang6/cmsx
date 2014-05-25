@@ -1,0 +1,16 @@
+/**
+ * @author lusheng.linls
+ * @date   2013.7.19
+ */
+
+@import url("/static/fdevlib/css/fdev-v4/reset/reset.css");
+@import url("/static/fdevlib/css/fdev-v3/type/type-min.css");
+@import url("http://style.c.aliimg.com/css/myalibaba/content.css");
+@import url("http://style.c.aliimg.com/css/myalibaba/new/layout-min.css");
+@import url("http://style.c.aliimg.com/css/myalibaba/new/others-min.css");
+@import url("http://style.c.aliimg.com/css/myalibaba/new/domainLogin.css");
+@import url("http://style.c.aliimg.com/css/myalibaba/wanwan-inside.css");
+@import url("http://style.c.aliimg.com/css/myalibaba/new/extend.css");
+@import url("http://style.c.aliimg.com/css/app/myalibaba/service/sign-public.css");
+@import url("http://style.c.aliimg.com/css/app/myalibaba/service/sign-noinfo.css");
+@import url("/static/intra/css/topic/commontopic/chooseoffer.css");

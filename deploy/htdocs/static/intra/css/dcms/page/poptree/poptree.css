@@ -1,0 +1,4 @@
+.dcms-dialog{ width:auto;}
+.category-dialog { min-width:200px; height:320px;}
+.category-dialog .treePanel { height:228px; overflow-y:scroll;}
+.category-dialog .treePanel input { vertical-align:middle;} /*add by hongss on 2011.11.04*/

@@ -1,0 +1,141 @@
+/**
+ * @author shanshan.hongss
+ * @usefor 无线页面头部
+ * @date   2013.12.13
+ */
+
+html {
+    background-color:#f7f7f7;
+}
+ section.doc-content {
+    padding-top:4.4rem;
+    font-size:1.2rem;
+}
+ .doc-header {
+    position:fixed;
+    top:0;
+    width:100%;
+    height:4.4rem;
+    background-color:#ff7300;
+    line-height:4.4rem;
+    color:#fff;
+    padding:0 0 0 0.8rem;
+}
+.doc-header h1 {
+    text-align:center;
+    font-size:2rem;
+    text-shadow:0 -1px 1px #98490e;
+}
+.doc-header .go-back {
+    display:inline-block;
+    width:5.2rem;
+    height:2.9rem;
+    line-height:2.9rem;
+    background:url("http://img.china.alibaba.com/cms/upload/other/dcms/icon-s-back.png") no-repeat center center;
+    font-size:1.4rem;
+    color:#fff;
+    text-shadow:0 -1px 1px #98490e;
+    text-align:center;
+}
+.doc-header a.go-back:hover {
+    text-decoration:none;
+}
+.doc-header .more-action {
+    position:relative;
+    float:right;
+    padding:0 1.6rem 0 1.2rem;
+    cursor:pointer;
+}
+.doc-header .more-action .icon-more,
+.doc-header.android .icon-more:after {
+    background-image:url("http://img.china.alibaba.com/cms/upload/2014/226/578/1875622_133354742.png");
+    background-repeat: no-repeat;
+}
+.doc-header .more-action .icon-more {
+    display:inline-block;
+    height:4.4rem;
+    line-height:12rem;
+    width:2rem;
+    background-position:0 19px;
+    vertical-align:top;
+    overflow:hidden;
+}
+.doc-header .more-action .actions {
+    display:none;
+    position:absolute;
+    /*left:-12.2rem;*/
+    right:0;
+    top:5rem;
+    width:15.7rem;
+    border:1px solid #4e4e4e;
+    border-radius:6px;
+    background-color:#333;
+}
+.doc-header .more-action.show-menu .actions {
+    display:block;
+}
+.doc-header .more-action .actions:before {
+    content:"";
+    position:absolute;
+    top:-0.6rem;
+    right:0.6rem;
+    border-bottom:0.6rem solid #333;
+    border-left:0.6rem solid rgba(225,225,225,0);
+    border-right:0.6rem solid rgba(225,225,225,0);
+}
+.doc-header .more-action .actions li {
+    padding-left:2rem;
+    border-top:1px solid #474747;
+    font-size:1.6rem;
+}
+.doc-header .more-action .actions li:first-child {
+    border-top:0;
+}
+.doc-header.android .more-action .actions {
+    /*border:0;*/
+}
+.doc-header.android .go-back {
+    display:none;
+}
+.doc-header.android h1 {
+    text-align:left;
+}
+.doc-header.android .icon-more {
+    position:relative;
+}
+.doc-header.android .icon-more:after {
+    display:inline-block;
+    position:absolute;
+    top:0;
+    right:0;
+    content:"";
+    width:2.0rem;
+    padding-right:1.6rem;
+    background-color:#ff7300;
+    background-position:20px -40px;
+    color:#fff;
+    writing-mode:tb-rl;
+    word-spacing:1rem;
+    text-align:right;
+    font-size:1.2rem;
+    height:4.4rem;
+}
+.doc-header.android .more-action .actions {
+    top:4.4rem;
+    border-radius:0;
+}
+.doc-header.android .more-action .actions:before {
+    border:0;
+}
+@media only screen and (-o-min-device-pixel-ratio: 2/1) , /* Opera */ only
+		screen and (min--moz-device-pixel-ratio: 2) , /* Firefox 16 之前 */ only
+		screen and (-webkit-min-device-pixel-ratio: 2) , /* Webkit */ only
+		screen and (min-resolution: 240dpi) , /* 标准 */ only screen and
+	(min-resolution: 2dppx) /* 标准 */ {
+	.doc-header .more-action .icon-more,
+    .doc-header.android .icon-more:after {
+        background-image:url("http://img.china.alibaba.com/cms/upload/2014/326/578/1875623_133354742.png");
+        background-size:19px 100px;
+    }
+    
+}

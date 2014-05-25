@@ -1,0 +1,91 @@
+/**
+ * @author lusheng.linls
+ * @date   2013.4.1
+ */
+
+.surm-716 dt {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+    padding-left:29px;
+    padding-bottom: 10px;
+}
+.surm-716 dl.item-form dd {
+    padding-left:31px;
+    line-height:25px;
+}
+.surm-716 dl.item-form dd.item-title{
+    font-weight: bold;
+    color: #666666;
+}
+.surm-716 dl.item-form .item-title1{
+    padding-right: 176px;
+    display: inline-block;
+}
+.surm-716 dl.item-form dd .explain {
+    color:#c3c3c3;
+    line-height:18px;
+}
+.surm-716 dl.item-form .list li {
+    float:left;
+}
+.surm-716 dl.item-form .validator-tip {
+    display: none;
+    padding: 3px 6px 3px 26px;
+    line-height:1.5em;
+}
+.surm-716 dl.item-form .validator-error{
+    display: inline-block;
+    color: #ff5502;
+    background:url("http://img.china.alibaba.com/cms/upload/2013/605/017/710506_133354742.png") no-repeat 2px 4px;
+}
+.surm-716 dl.item-form .icon-admm {
+    display:inline-block;
+    width:18px;
+    height:18px;
+    line-height:60px;
+    background:url("http://img.china.alibaba.com/cms/upload/2013/408/889/988804_51297002.png") no-repeat;
+    vertical-align:middle;
+    overflow:hidden;
+}
+.surm-716 dl.item-form .icon-add {
+    background-position:0 2px;
+}
+.surm-716 dl.item-form .icon-add:hover {
+    background-position:0 -28px;
+}
+.surm-716 dl.item-form .icon-delete {
+    background-position:-18px 2px;
+}
+.surm-716 dl.item-form .icon-delete:hover {
+    background-position:-18px -28px;
+}
+.surm-716 dl.item-form .icon-moveup {
+    background-position:-36px 2px;
+}
+.surm-716 dl.item-form .icon-moveup:hover {
+    background-position:-36px -28px;
+}
+.surm-716 dl.item-form .icon-movedown {
+    background-position:-55px 2px;
+}
+.surm-716 dl.item-form .icon-movedown:hover {
+    background-position:-55px -28px;
+}
+.surm-716 dl.item-form .long-input{
+    width: 206px;
+    margin-right: 10px;
+    padding: 0 2px;
+}
+.surm-716 dl.item-form .short-input{
+    width: 51px;
+    margin: 0 2px;
+    padding: 0 2px;
+}
+.surm-716 dl.item-form .unit{
+    display: inline-block;
+    margin-right: 15px;
+}
+.surm-716 .baojia-input{
+    margin: auto 2px;
+}

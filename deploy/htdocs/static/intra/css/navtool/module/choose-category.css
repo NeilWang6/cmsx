@@ -1,0 +1,50 @@
+@charset "gb2312";
+/* CSS Document */
+
+.cc{ height:340px; font-size:12px;background-color: #FFF;}
+.cc-row{margin:5px 0px;text-align: center;float: left;width:520px;}
+.cc-result-box{border:1px solid #CCC;text-align: left;width:480px;height: 100px; overflow-y: auto;}
+.cc-categorylist-box{
+	width:140px;
+	float:left; 
+	text-align: 
+	left;border:1px solid #CCC;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 130px;
+}
+
+.cc dt{
+	margin-left:-50px;
+}
+.cc-result-box li,.cc-categorylist-box li{
+	width: 100%;
+}
+.cc-leftList-button,.cc-rightList-button{
+	margin:0px 5px;
+	margin-top:20px;
+	cursor:pointer;
+	float:left;
+	display:block;
+	width:20px;
+	height:120px;
+	display: none;
+}
+.cc-categorybox-list,.cc-categorybox-list li{
+	float: left;
+}
+.cc-result-box li:hover,.cc-categorylist-box li:hover{
+	cursor:pointer;
+  	background-color:#BAD0EE;
+	color: #FFF  ;
+}
+.cc-item-active{
+	cursor:pointer;
+  	background-color:#BAD0EE;
+	color: #000  ;
+}
+.cc-item-selected{
+	cursor:pointer;
+  	background-color:#FFCB95;
+	color: #FFF  ;
+}

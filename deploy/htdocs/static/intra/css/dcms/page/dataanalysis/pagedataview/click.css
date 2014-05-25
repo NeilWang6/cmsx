@@ -1,0 +1,21 @@
+
+.show-hit {
+    z-index:20; 
+    position: absolute;
+    border-style:solid;
+    border-width:1px;
+    border-color:#4C4C4C;
+    color:#333;
+    font-size:12px;
+    font-family:arial;
+    text-align:left;
+    text-indent:0;
+    line-height:80%;
+    padding:1px;
+    top:0px;
+    left:0px;
+    min-width:50px;
+}
+.show-hit:hover {
+    opacity:0;
+}

@@ -1,0 +1,206 @@
+.search-form {
+    /*width: 1038px;*/
+}
+.list-tab-t #page {
+	display: none;
+}
+.dcms-grid thead tr {
+	line-height: 38px;
+	height: 38px;
+}
+.dcms-grid .title {
+	font-weight: bold;
+	color: #353638;
+}
+.dcms-grid .title:hover, .dcms-grid .operation:hover {
+	color: #f60;
+}
+.dcms-grid .text {
+	color: #ACACAC;
+}
+.dcms-grid .operation {
+	color: #06C;
+	padding: 4px 2px;
+}
+.dcms-grid .word-all {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.dcms-search-form ul {
+	float: left;
+}
+.dcms-search-form li {
+	float: left;
+}
+
+.dcms-search-form .line {
+	border-left: 1px solid #a3a3a3;
+	margin: 4px 5px;
+	padding: 0;
+	height: 24px;
+	line-height: 24px;
+}
+
+.dcms-host-name,.dcms-btn{
+	margin:4px 0;
+}
+
+.form-vertical dl.item-form .op {
+	padding-left: 8px;
+}
+.page-attr {
+	width: 950px;
+}
+.page-attr .row {
+	margin: 8px 0px;
+}
+.page-attr .select {
+	width: 200px;
+}
+.page-attr .name {
+	width: 190px;
+}
+.page-attr .url {
+	display:inline-block;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.page-attr textarea {
+	min-height: 50px;
+	min-width: 170px;
+	max-width: 170px;
+	max-height: 100px;
+}
+.copy-dialog-basic {
+	min-width: 1050px;
+}
+.dialog-basic .copy-body{
+	max-height:400px;
+	overflow-y: scroll;
+}
+
+.table-container  .dcms-grid{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 470px;/*768*/
+    line-height: 28px;/**/
+    table-layout:fixed;
+    border: 1px solid #b7c3dd;
+}
+
+.table-container .dcms-grid tbody{
+    /*border: 1px solid #b7c3dd;
+    border-top: 0 none;*/
+}
+.table-container .dcms-grid tbody td{
+    border-bottom: 1px solid #f4f4f4;
+    /*text-indent:8px;
+    height: 16px;*/
+    line-height:16px;
+    padding:6px 0 6px 8px;
+}
+.table-container .dcms-grid tbody tr:last-child td{
+    /*border-bottom: 1px solid #b7c3dd;*/
+}
+.table-container .dcms-grid th{
+    height: 28px;
+    border: 1px solid #adbcdc;
+    background-color: #adbcdc;
+    color: #FFF;
+    /*padding-left:6px;*/
+    text-indent:12px;
+    text-align:left;
+}
+.table-container .dcms-grid tbody tr:hover td{
+    background-color: #e7edfa;
+    color: #445e95;
+}
+/*页面状态颜色定义*/
+.dcms-grid .modify{
+	
+}
+.dcms-grid .wait-audit{
+	color: #ff6600;
+}
+.dcms-grid .published{
+	color: #066601;
+}
+.dcms-grid .approved{
+	color: #066601;
+}
+.dcms-grid .unapproved{
+	color: #666666;
+}
+.dcms-grid .unapproved a{
+	color: #666666;
+	text-decoration: none;
+}
+.dcms-search-form .li-page-status{
+	display:none;
+}
+
+.dcms-page-status,.pageType,.dcms-host-name,.dcms-btn,.applyDevice{
+	margin:4px 0;
+}
+.form-vertical li.item-li .validator-tip{
+	display: none;
+    padding: 3px 6px 3px 26px;
+    line-height:1.5em;
+}
+.form-vertical li.item-li .validator-tip{
+	display: none;
+    padding: 3px 6px 3px 26px;
+    line-height:1.5em;
+}
+.form-vertical .areatext{
+	width:294px;
+}
+.hiddenInfo{
+	display:none;
+}
+.search-form{
+	top: 5px;
+	margin: 8px 30px;
+}
+.form-vertical{
+	margin-top: 8px;
+}
+.form-hr{
+	border: rgb(233, 211, 211) 0px solid;
+	background-color: rgb(233,211,211);
+	height: 2px;
+}
+.submit-btn{
+	margin:0px;
+	width:45px;
+	font-weight: 100;
+	background:url("http://img.china.alibaba.com/cms/upload/other/tools/tabs-repeat.png") repeat-x;
+}
+.dcms-input-text{
+	width:178px;
+}
+.search-body-list{
+	margin: 4px 30px;
+}
+.table-sub tbody tr:hover {
+	background-color: #FFFDF1;
+}
+.background-gray{
+	background-color: #FBFBFB;
+}
+.table-sub tr .operation{
+	color: #0071ff;
+}
+.dcms-message{
+	margin:90px 0px 0px 400px
+} 	
+.dcms-message-img{
+	float:left;
+}
+.dcms-message-txt{
+	float: left;
+	margin: 10px 22px;
+}
+.successMsg{
+   font-size:14px;
+}

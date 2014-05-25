@@ -1,0 +1,102 @@
+/**
+ * @author zhuguo.nizg
+ * @userfor list and paging
+ * @date 2012-01-05
+ */
+.dcms-box-list{
+    color:#444444;
+}
+.dcms-box-list ul{
+    margin-left:-60px;
+}
+.dcms-box-list li{
+    float:left;
+    width:176px;
+    margin-left:60px;
+    margin-bottom:32px;
+}
+.dcms-box-list dl{
+    line-height:2em;
+    border:1px solid #d4d4d4;
+}
+.dcms-box-list dl:hover{
+    border-color:#409ad6;
+}
+.dcms-box-list .image{
+    padding:7px;
+    height:250px;
+}
+.dcms-box-list .image img{
+    width:160px;
+    height:250px;
+    vertical-align:bottom;
+}
+.dcms-box-list dd{
+    padding:0 6px;
+    background:#e6e6e8;
+}
+.dcms-box-list .title, .dcms-box-list .tags{
+    height:48px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.dcms-box-list .tags a{
+    margin-right:4px;
+}
+.dcms-box-list .operation{
+    margin-top:8px;
+}
+.dcms-box-list .operation .import{
+    margin-right:4px;
+ }
+.dcms-box-paging{
+    padding:10px 0;
+    text-align:right;
+    color:#409ad6;
+}
+.dcms-box-paging .total{
+    float:left;
+    color:#444444;
+}
+.dcms-box-paging .count{
+    padding:0;
+    color:#444444;
+}
+.dcms-box-paging a, .dcms-box-paging span{
+    padding:4px 10px;
+    color:#409ad6;
+}
+.dcms-box-paging input{
+    width:38px;
+    height:18px;
+    margin:0;
+    line-height:18px;
+    -moz-dcms-shadow:2px 2px 2px #e1ecf6 inset; 
+    -webkit-dcms-shadow:2px 2px 2px #e1ecf6 inset; 
+    dcms-shadow:2px 2px 2px #e1ecf6 inset; 
+}
+.dcms-box-paging .page:hover{
+    padding:4px 9px;
+    border:1px solid #b0c6db;
+    border-bottom-color:#506581;
+}
+.dcms-box-paging .current{
+    color:red;
+}
+.dcms-box-paging .omit{
+    padding-bottom:4px; 
+}
+.dcms-box-paging .pre, .dcms-box-paging .next{
+    padding:3px 26px;
+}
+.dcms-box-paging .pre-disabled, .dcms-box-paging .next-disabled{
+    padding:3px 26px;
+    border-color: #ccc !important;
+    color: #ccc !important;
+    cursor: default;
+}
+.dcms-box-paging .pre-disabled:hover, .dcms-box-paging .next-disabled:hover{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+}

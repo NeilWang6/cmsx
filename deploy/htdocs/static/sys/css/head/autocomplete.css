@@ -1,0 +1,58 @@
+#f-autocomplete-result {
+    overflow: hidden;
+    border: 1px solid #D5D6D7;
+    background: #FFF;
+    zoom: 1;
+    z-index:100;
+}
+
+#f-autocomplete-result li {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 4px;
+	overflow:hidden;
+    zoom: 1;
+	background:#fff;
+    border:0;
+    margin:0;
+}
+
+#f-autocomplete-result li:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#f-autocomplete-result li.on {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 4px;
+    zoom: 1;	
+	overflow:hidden;
+    background-color: #ECECEC;
+    border:0;
+    margin:0;
+}
+
+#f-autocomplete-result span.word {
+    float: left;
+    color: #555;
+}
+
+#f-autocomplete-result span.redWord {
+    color: #f00;
+    float: left;
+}
+
+#f-autocomplete-result span.num {
+    float: right;
+    color: #999;
+}
+
+#f-autocomplete-result li.shut {
+    text-align: right;
+    color: #003CC8;
+    font-size: 13px;
+    cursor: pointer;
+}

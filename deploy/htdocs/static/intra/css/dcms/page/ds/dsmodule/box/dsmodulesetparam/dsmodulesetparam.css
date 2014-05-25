@@ -1,0 +1,89 @@
+html {
+	background-color:transparent;
+}
+.tools-panel {
+    width: 198px;
+    height:100%;
+    background-color: #DBDCDE;
+    float: left;
+    overflow: hidden; 
+}
+.content-panel{
+	padding-top :6px;
+}
+.toolbar {
+    background-color: #c8cace;
+    margin: 1px;
+    /*display: none;*/
+	text-align: left;
+	padding-left:6px;
+}
+a.description{
+	color:#474748;
+}
+.nav-img {
+    display: inline-block;
+    margin-right: 2px;
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    background-position: -0px -0px;
+    background: url(http://img.china.alibaba.com/cms/upload/2012/103/054/450301_983650061.png) no-repeat;
+
+}
+.selected .nav-img {
+    background-position: -0px -25px;
+}
+
+.attr{
+	padding-right:20px;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:6px;
+}
+
+.ds-param-block {
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.ds-param-div {
+	float:right;
+}
+
+.ds-param-lable {
+	float:right;
+}
+.clearfloat{clear:both;font-size:0px;height:0px;line-height:0px;width:100%;}
+/*---------------begin数据源参数input的样式----------------*/
+.ds-param-input {
+	height:20px;
+	width:108px;
+}
+.ds-param-input2 {
+	height:20px;
+	width:60px;
+}
+.ds-param-text {
+	height:114px;
+	width:104px;
+	max-width:104px;
+	min-width:104px;
+}
+.ds-param-text2 {
+	height:72px;
+	width:104px;
+}
+.ds-param-select {
+	width:60px;
+}
+.ds-param-select2 {
+	width:112px;
+}
+/*---------------end数据源参数input的样式----------------*/
+.panel-button{
+	padding-top:16px;
+	padding-bottom:8px;
+	text-align:center;
+}

@@ -1,0 +1,319 @@
+.content {
+    width: 990px;
+}
+.vline {
+    color: #979797;
+}
+
+/** tab */
+.tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.tab-b .topic-info {
+    position: relative;
+    float: left;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+}
+.tab-b .topic-info  span {
+	color: #4a6bae;
+	font-weight: bold;
+}
+.tab-b .f-tab-t {
+    position: relative;
+    float: right;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+    cursor: pointer;
+}
+.tab-b a {
+    text-decoration: none !important;
+    padding: 0 0 8px 10px;
+    color: #323232;
+}
+.tab-b .current {
+    border: solid 2px #8e9dc6;
+    border-bottom-color: #ffffff;
+    line-height: 28px;
+}
+.tab-b .current a {
+    color: #4a6bae;
+    font-weight: bold;
+}
+/** condition */
+.condition {
+    background-color: #f2f2f2;
+    padding: 5px 0px 1px 0px;
+}
+.condition table {
+    line-height: 26px;
+    table-layout: fixed;
+    width: 100%;
+}
+.condition td {
+    padding-bottom: 7px;
+}
+.condition .batch-up {
+	padding-left: 5px;
+	width:108px;
+}
+
+/** offer,member head */
+.dataobj {
+	width:100%; 
+	overflow:hidden; 
+	padding-bottom:36px;
+}
+.dataobj .offer .header, .dataobj .member .header {
+	background:#e8e9eb;
+	border-top:1px solid #9da5b4;
+	margin-top:10px;
+	height:30px;;
+}
+.dataobj .offer .header .left, .dataobj .member .header .left {
+	float:left;
+	font-weight:bold;
+	height:30px;
+	line-height:30px;
+	padding-left:5px;
+}
+.dataobj .offer .header .right, .dataobj .member .header .right {
+	float:right;
+	height:30px;
+	line-height:30px;
+	padding-right:5px;
+}
+.dataobj .offer .header .right em, .dataobj .member .header .right em {
+	color:red;
+}
+
+/** result offer */
+.dataobj .offer .list-product li{
+	float:left;
+	margin-right:10px;
+	border:1px #ccc solid;
+	width:238px;
+	overflow:hidden;
+	margin-top:8px;
+	margin-bottom:5px;
+}
+/**img middle*/
+.dataobj .offer .img-vertical {
+	width: 150px;
+	height: 150px;
+	border:1px solid #999;
+	display: table;
+	text-align: center;
+}
+.dataobj .offer .img-wrap {
+	display: table-cell;
+    vertical-align: middle;
+}
+.dataobj .offer .img-vertical img{
+    vertical-align: middle;
+}
+/**img middle end*/
+.dataobj .offer .list-product li.last {
+	margin-right:0;
+}
+.dataobj .offer .cell-product-1st dt {
+	width:150px;
+	margin:15px auto 0px auto;
+}
+.dataobj .offer .cell-product-1st dd{
+	height:28px;
+	line-height:28px;
+	margin-top:2px;
+	margin-left:5px;
+}
+.dataobj .offer .cell-product-1st input{
+	width:146px;
+	overflow:hidden;
+}
+.dataobj .offer .cell-product-1st .label {
+	width:70px;
+	display:inline-block;
+	font-weight:bold;
+}
+.dataobj .offer .cell-product-1st input.defined {
+	width:57px;
+	margin-right:5px;
+}
+.dataobj .offer .list-product .optbar {
+	height:24px;
+	border-top:1px solid #ccc;
+	background-color: #f2f2f2;
+	margin-top:5px;
+	line-height:23px;
+	padding:6px 0;
+}
+.dataobj .offer .list-product .optbar .label {
+	font-weight:bold;
+	margin-left:5px;
+}
+.dataobj .offer .list-product .optbar input {
+	width:30px;
+}
+.dataobj .offer .list-product .optbar .right {
+	float:right;
+	margin-right:7px;
+}
+.dataobj .offer .list-product .optbar .select-change-block {
+	width:100px;
+}
+
+/** result member */
+.dataobj .member .list-supplier li {
+	border:1px #ccc solid;
+	margin-top:8px;
+	margin-bottom:5px;
+}
+.dataobj .member .list-supplier li .p-complany {
+	border-bottom:1px #dfdfdf solid;
+}
+.dataobj .member .list-supplier li .p-complany div.left {
+	float:left;
+	width:700px;
+}
+.dataobj .member .list-supplier li .p-complany div.left .info {
+	margin-top:15px;
+	margin-left:50px;
+	margin-bottom:15px;
+}
+.dataobj .member .list-supplier li .p-complany div.left .company-name {
+	padding-top:5px;
+}
+.dataobj .member .list-supplier li .p-complany div.left .info .defined {
+	width:57px;
+}
+.dataobj .member .list-supplier li .p-complany div.left .info .desc {
+	width:220px;
+	margin-left:0px;
+	margin-right:15px;
+}
+.dataobj .member .list-supplier li .p-complany div.left dd.first {
+	float:left;
+	margin-top:5px;
+}
+.dataobj .member .list-supplier li .p-complany div.left dd.second {
+	margin-top:5px;
+}
+.dataobj .member .list-supplier li .p-complany div.left dd.first-line {
+	margin-top:8px;
+}
+.dataobj .member .list-supplier li .p-complany .label {
+	font-weight:bold;
+}
+.dataobj .member .list-supplier li .p-complany div.right .set-top {
+	width:30px;
+}
+.dataobj .member .list-supplier li .p-complany div.right .first {
+	padding-top:15px;
+}
+.dataobj .member .list-supplier li .p-complany div.right .second {
+	padding-top:7px;
+}
+.dataobj .member .list-supplier li .p-complany div.right .offshell {
+	width:80px;
+}
+.dataobj .member .list-supplier li .p-complany-offers {
+	background-color:#f0f0f0;
+	position:relative;
+}
+.dataobj .member .list-supplier li .p-complany-offers .arrow {
+	position:absolute;
+	left:30px;
+	top:-11px;
+	background:url("http://img.china.alibaba.com/cms/upload/2012/603/994/499306_925310798.png") no-repeat;
+	width:18px;
+	height:11px;
+}
+.dataobj .member .list-supplier li .p-complany-offer{
+	float:left;
+	margin-left:5px;
+	margin-right:2px;
+	border:1px #ccc solid;
+	width:256px;
+	overflow:hidden;
+	margin-top:8px;
+	margin-bottom:5px;
+	background-color:white;
+}
+.dataobj .member .list-supplier li .last {
+	margin-right:0;
+}
+.dataobj .member .p-complany-offer .cell-product-1st dt {
+	width:150px;
+	margin:15px auto 0px auto;
+}
+.dataobj .member .p-complany-offer .cell-product-1st dd{
+	height:28px;
+	line-height:28px;
+	margin-top:2px;
+	margin-left:5px;
+}
+.dataobj .member .p-complany-offer .cell-product-1st input{
+	width:166px;
+	overflow:hidden;
+}
+.dataobj .member .p-complany-offer .cell-product-1st .label {
+	width:70px;
+	display:inline-block;
+	font-weight:bold;
+}
+.dataobj .member .p-complany-offer .cell-product-1st input.defined {
+	width:57px;
+	margin-right:5px;
+}
+.dataobj .member .list-supplier .optbar {
+	height:24px;
+	border-top:1px solid #ccc;
+	background-color: #f6f6f6;
+	margin-top:5px;
+	line-height:23px;
+	padding:6px 0;
+}
+.dataobj .member .list-supplier .optbar .label {
+	font-weight:bold;
+	margin-left:5px;
+}
+.dataobj .member .list-supplier .optbar input {
+	width:30px;
+}
+.dataobj .member .list-supplier .optbar button {
+	float:right;
+	margin-right:7px;
+}
+
+/**img middle*/
+.dataobj .member .img-vertical {
+	width: 150px;
+	height: 150px;
+	border:1px solid #999;
+	display: table;
+	text-align: center;
+}
+.dataobj .member .img-wrap {
+	display: table-cell;
+    vertical-align: middle;
+}
+.dataobj .member .img-vertical img{
+    vertical-align: middle;
+}
+/**img middle end*/
+
+/** page bar */
+.fix-bottom-total { 
+	width: 1001px; 
+	height:36px; 
+	bottom:10px;
+	left:210px;
+}
+.fix-bottom-total .fixed-body-total {
+	line-height:normal;
+}
+.fix-bottom-pagebar { float:right; margin-top:5px; margin-right:10px; width:230px;}

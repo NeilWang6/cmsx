@@ -1,0 +1,68 @@
+/**
+ * @package FD.app.dcms.member.manage
+ * @author: hongss
+ * @Date: 2011-09-06
+ */
+.dcms-clr { zoom:1;}
+.dcms-clr:after { display:block; clear:both; height:0; content:"\0020";}
+
+table.dcms-grid { width:788px; table-layout:auto;}
+.dcms-content .dcms-search { margin-left:18px; padding-top:12px;}
+.dcms-content .dcms-search h3 { height:38px; line-height:38px; font-size:14px; font-weight:bolder; color:#000;}
+.dcms-content .btn-container { padding:8px 0 8px;}
+
+.dcms-search-list .td-role-name { width:150px;}
+.dcms-search-list .td-role-description { /*width:112px;*/}
+.dcms-search-list .td-update-date { width:100px;}
+
+#manage-role-operations .dcms-grid-operations { width:144px;}
+
+/*添加删除用户对话框*/
+#js-distribute-user-dialog { width:624px; color:#333;}
+#js-distribute-user-dialog .list-tab-t { height:32px;}
+#js-distribute-user-dialog .list-tab-t li { float:left; margin-left:6px; height:30px; line-height:30px; width:80px; background-color:#eff3ff; border:1px solid #b5bee7; text-align:center; cursor:pointer;}
+#js-distribute-user-dialog .list-tab-t li.current { border-bottom:1px solid #fff; background-color:#fff;}
+#js-distribute-user-dialog .dcms-tab-b { display:none; margin-top:-1px; padding-top:12px; border-top:1px solid #b5bee7;}
+#js-distribute-user-dialog .dcms-tab-b .list-search { width:100%; overflow:hidden;}
+#js-distribute-user-dialog .dcms-tab-b .list-search li { float:left; height:32px; line-height:32px;}
+#js-distribute-user-dialog .dcms-tab-b .dcms-input { width:218px;}
+#js-distribute-user-dialog .dcms-tab-b .search-btn { margin-left:8px;}
+#js-distribute-user-dialog .add-container { padding:12px 24px 0; overflow:hidden;}
+#js-distribute-user-dialog .add-container input { vertical-align:middle;}
+#js-distribute-user-dialog .add-user-list,
+#js-distribute-user-dialog .added-user-list { float:left; border:1px solid #C6CBDE; height:146px; line-height:28px; overflow-y:scroll;}
+#js-distribute-user-dialog .add-user-list { width:200px; padding-left:8px;}
+#js-distribute-user-dialog .added-user-list { width:242px;}
+#js-distribute-user-dialog .added-user-list li { padding-left:8px;}
+#js-distribute-user-dialog .added-user-list li:hover { background-color:#f2f2f2;}
+#js-distribute-user-dialog .dcms-del-btn { float:right; display:none;}
+#js-distribute-user-dialog .add-btn-container { float:left; width:24px; padding:48px 10px 0;}
+#js-distribute-user-dialog .add-user-btn { display:inline-block; width:23px; height:18px; line-height:60px; overflow:hidden; background:url(http://img.china.alibaba.com/cms/upload/other/dcms/icon-add.png) no-repeat;}
+#js-distribute-user-dialog .table-container { padding-top:12px;}
+#js-distribute-user-dialog .table-title { width:580px; background-color:#adbcdc; height:28px;line-height:28px;}
+#js-distribute-user-dialog .table-title li { float:left; color:#fff; font-weight:700; padding-left:8px;}
+#js-distribute-user-dialog .table-container .user-id { width:158px;}
+#js-distribute-user-dialog .table-container .user-name { width:78px;}
+#js-distribute-user-dialog .table-container .department { width:258px;}
+#js-distribute-user-dialog .table-container .td-del-btn { width:48px;}
+#js-distribute-user-dialog .table-content { height:118px; width:578px; border:1px solid #adbcdc; overflow-y:scroll;}
+#js-distribute-user-dialog .dcms-grid { width:560px; border:none;}
+#js-distribute-user-dialog .dcms-btns { padding:14px 0; overflow:hidden;}
+#js-distribute-user-dialog .dcms-btns button { float:right; margin-left:14px;}
+
+/*新增或修改角色对话框*/
+#js-modify-role-dialog { width:892px; color:#333;}
+#js-modify-role-dialog .list-input { width:848px; height:36px; line-height:36px; overflow:hidden;}
+#js-modify-role-dialog .list-input li { float:left; padding-right:12px;}
+#js-role-name { width:200px;}
+#js-role-description { width:400px;}
+#js-modify-role-dialog .table-container { padding-top:12px;}
+#js-modify-role-dialog .table-title { width:848px; background-color:#adbcdc; height:28px;line-height:28px;}
+#js-modify-role-dialog .table-title li { float:left; color:#fff; font-weight:700; padding-left:8px;}
+#js-modify-role-dialog .table-container .popedom-choose { width:38px;}
+#js-modify-role-dialog .table-container .popedom-id { width:180px;}
+#js-modify-role-dialog .table-container .popedom-description { width:588px;}
+#js-modify-role-dialog table.dcms-grid { width:829px; border:0;}
+#js-modify-role-dialog .table-content { height:232px; width:846px; border:1px solid #adbcdc; overflow-y:scroll;}
+
+

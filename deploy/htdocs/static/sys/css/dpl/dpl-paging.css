@@ -1,0 +1,64 @@
+/* paging */
+.dpl-paging{height: 22px; text-align: left; color: #444;}
+.dpl-paging-align-right{text-align: right;}
+.dpl-paging-align-center{text-align: center;}
+.dpl-paging span{*padding-bottom: 2px;}
+.dpl-paging *{vertical-align: middle; display: inline-block}
+.dpl-paging .dpl-page-list{}
+.dpl-paging .dpl-page-list a:link,
+.dpl-paging .dpl-page-list a:visited{width: 20px; height: 18px; padding: 1px 0; overflow: hidden; border: solid 1px #dcdcdc; margin-right: 4px; color: #444; text-decoration: none; text-align: center;}
+.dpl-paging .dpl-page-list a:hover{border-color: #5f8acf; color: #5f8acf; font-weight: bold;}
+.dpl-paging .dpl-page-list .dpl-current:link,
+.dpl-paging .dpl-page-list .dpl-current:visited,
+.dpl-paging .dpl-page-list .dpl-current:hover{border: solid 1px #5f8acf; background-color: #5f8acf; font-weight: bold; color: #fff;}
+.dpl-paging .dpl-omit{margin-right: 4px; padding: 2px 0;}
+.dpl-paging .dpl-prev:link .dpl-ico,
+.dpl-paging .dpl-prev:visited .dpl-ico{float: left; display: inline; width: 20px; height: 18px; background-position: -60px -16px; cursor: pointer;}
+.dpl-paging .dpl-prev:hover .dpl-ico{background-position: -80px -16px;}
+.dpl-paging .dpl-page-list .dpl-prev-disabled:link,
+.dpl-paging .dpl-page-list .dpl-prev-disabled:visited,
+.dpl-paging .dpl-page-list .dpl-prev-disabled:hover{border-color: #dcdcdc; cursor: default;}
+.dpl-paging .dpl-prev-disabled:link .dpl-ico,
+.dpl-paging .dpl-prev-disabled:visited .dpl-ico,
+.dpl-paging .dpl-prev-disabled:hover .dpl-ico{background-position: -40px -16px; cursor: default;}
+.dpl-paging .dpl-page-list .dpl-next:link,
+.dpl-paging .dpl-page-list .dpl-next:visited,
+.dpl-paging .dpl-page-list .dpl-next:hover{width: 60px; font-weight: normal;}
+.dpl-paging .dpl-next:link .dpl-ico,
+.dpl-paging .dpl-next:visited .dpl-ico{float: left; display: inline; width: 8px; height: 10px; margin-top: 4px; background-position: -66px -40px; cursor: pointer;}
+.dpl-paging .dpl-next:hover .dpl-ico{background-position: -86px -40px;}
+.dpl-paging .dpl-next:link .dpl-txt,
+.dpl-paging .dpl-next:visited .dpl-txt,
+.dpl-paging .dpl-next:hover .dpl-txt{float: left; display: inline; height: 18px; margin: 0 4px 0 6px; cursor: pointer;}
+.dpl-paging .dpl-page-list .dpl-next-disabled:link,
+.dpl-paging .dpl-page-list .dpl-next-disabled:visited,
+.dpl-paging .dpl-page-list .dpl-next-disabled:hover{border-color: #dcdcdc; cursor: default;}
+.dpl-paging .dpl-next-disabled:link .dpl-ico,
+.dpl-paging .dpl-next-disabled:visited .dpl-ico,
+.dpl-paging .dpl-next-disabled:hover .dpl-ico{background-position: -46px -40px; cursor: default;}
+.dpl-paging .dpl-next-disabled:link .dpl-txt,
+.dpl-paging .dpl-next-disabled:visited .dpl-txt,
+.dpl-paging .dpl-next-disabled:hover .dpl-txt{color: #dcdcdc; cursor: default;}
+.dpl-paging .dpl-paging-total{padding: 2px 0; margin-right: 0;}
+.dpl-paging .dpl-number{margin-left: 4px;}
+.dpl-paging .dpl-number span{margin: 0 4px; padding: 2px 0; vertical-align: top;
+	*padding: 4px 0 0;}
+.dpl-paging .dpl-number input{width: 32px;}
+.dpl-paging .dpl-forward{margin-left: 4px;}
+/* 解决inline-block换行问题 */	
+.dpl-paging-r{}
+.dpl-paging-r .dpl-page-list a:link,
+.dpl-paging-r .dpl-page-list a:visited,
+.dpl-paging-r .dpl-page-list a:hover,
+.dpl-paging-r .dpl-omit{margin-right: 0;}
+.dpl-paging-r .dpl-page-list .dpl-prev:link,
+.dpl-paging-r .dpl-page-list .dpl-prev:visited,
+.dpl-paging-r .dpl-page-list .dpl-prev:hover,
+.dpl-paging-r .dpl-page-list .dpl-next:link,
+.dpl-paging-r .dpl-page-list .dpl-next:visited,
+.dpl-paging-r .dpl-page-list .dpl-next:hover{
+	*margin-right: 4px;}
+.dpl-paging-r .dpl-number span{margin: 0px;}
+.dpl-paging-r .dpl-forward{
+	*margin-left: 8px;}
+

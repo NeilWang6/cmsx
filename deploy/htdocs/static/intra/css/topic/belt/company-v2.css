@@ -1,0 +1,71 @@
+/**
+ * @author dengchao.xiadc@alibaba-inc.com
+ * @vision 2011-12-07
+ * @info 发布公司信息(行业化)
+ */
+
+/*外层产品多选图片功能上传中重置上传图片组件弹层高度的原有样式*/
+#sys-ibank div.ib-multiple-onerow {
+    height: 478px !important;
+}
+#sys-ibank div.ib-multiple-tworow {
+    height: 540px !important;
+}
+/*------------over--------------*/
+.tb-a tr {
+	width: 100%;
+}
+
+/*.tb-hangyehua tr {
+
+	 display: none;
+}*/
+
+.oem-y .manu-y-hide { /*生产加工 提供定制服务*/
+/*	display: table-row;
+	*display: block;*/
+	display: none;
+}
+
+.oem-n .manu-n-hide { /*生产加工 不提供定制服务*/
+	display: none;
+}
+
+.wholesale .whol-hide {
+	display: none;
+}
+
+.other .othe-hide {
+	display: none;
+}
+
+.investment .inve-hide {/*招商代理*/
+	display: none;
+}
+
+.logistics .logi-hide {
+	display: none;
+}
+
+.anufacturer .anuf-hide {
+	display: none;
+}
+
+
+.default-model {
+	display: none;
+}
+
+
+.tb-hangyehua .oem-y th span.manu-y-must,
+.tb-hangyehua .oem-n th span.manu-n-must,
+.tb-hangyehua .wholesale th span.whol-must,
+.tb-hangyehua .anufacturer th span.anuf-must,
+.tb-hangyehua .logistics th span.logi-must,
+.tb-hangyehua .other th span.othe-must,
+.tb-hangyehua .investment th span.inve-must
+{ 
+	background: url("http://img.china.alibaba.com/cms/upload/2011/252/470/74252_1446014988.png") no-repeat -90px 10px;
+}
+
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="CT_ITEM_META_DATA">
+	<typeAlias alias="TA-CT-ITEM-META-DATA"
+		type="com.apachecms.cmsx.dal.dataobject.CtItemMetaDataDO" />
+	<resultMap id="RM-CT-ITEM-META-DATA" class="TA-CT-ITEM-META-DATA">
+		<result column="ID" 			property="id" 					 	jdbcType="NUMBER" 			javaType="java.lang.Long" />
+		<result column="GMT_MODIFIED" 	property="gmtModified" 			 	jdbcType="TIMESTAMP"		javaType="java.util.Date" />
+		<result column="GMT_CREATE" 	property="gmtCreate" 	 			jdbcType="TIMESTAMP"		javaType="java.util.Date" />
+		<result column="ITEM_ID" 		property="itemId" 			 		jdbcType="NUMBER"			javaType="java.lang.Long" />
+		<result column="METADATA_KEY"	property="metadataKey" 				jdbcType="VARCHAR"			javaType="java.lang.String" />
+		<result column="VALUE" 			property="value" 			 		jdbcType="VARCHAR" 			javaType="java.lang.String" />
+		<result column="DESCRIPTION" 	property="description"  			jdbcType="VARCHAR" 			javaType="java.lang.String" />
+		<result column="ORDER_NUM" 		property="orderNum" 		 		jdbcType="NUMBER" 			javaType="java.lang.Integer" />
+	</resultMap>
+	
+	<insert id="insertItemMetadata" parameterClass="TA-CT-ITEM-META-DATA">
+		<selectKey keyProperty="id" resultClass="java.lang.Long">
+            <![CDATA[
+                SELECT SEQ_CT_ITEM_META_DATA.NEXTVAL AS id FROM DUAL
+            ]]>
+		</selectKey>      
+        <![CDATA[
+			insert into 
+			CT_ITEM_META_DATA (
+				ID,GMT_CREATE,GMT_MODIFIED,ITEM_ID,METADATA_KEY,VALUE,DESCRIPTION,ORDER_NUM
+			) values (
+				#id#,SYSDATE,SYSDATE,#itemId#,#metadataKey#,#value#,#description#,#orderNum#
+			)
+        ]]>
+	</insert>
+	
+	<!--  
+		开发负责人: lusheng.linls
+		功能说明：删除问卷控件meta
+		前台或后台：后台
+		执行频率：1000次/天
+		分表数量：无
+		是否有缓存：无
+		缓存失效时间：
+		数据量及增长趋势：现有数千条，每天的数据增长量数百或数千条
+	-->
+	<delete id="deleteItemMetadata" parameterClass="java.util.Map">
+	    <![CDATA[
+	    	delete from CT_ITEM_META_DATA where ITEM_ID in
+	    ]]>
+	    <iterate property="itemIds" open="(" close=")"
+			conjunction=",">
+			#itemIds[]#
+		</iterate>
+    </delete>
+	
+	<select id="getItemMetadataById" resultMap="RM-CT-ITEM-META-DATA" parameterClass="java.lang.Long">
+		 <![CDATA[
+			SELECT  ID,GMT_CREATE,GMT_MODIFIED,ITEM_ID,METADATA_KEY,VALUE,DESCRIPTION,ORDER_NUM
+			FROM CT_ITEM_META_DATA
+			WHERE ID = #id#
+		]]>
+	</select>
+	
+	<update id="updateItemMetadata" parameterClass="TA-CT-ITEM-META-DATA" >
+		<![CDATA[
+	        UPDATE CT_ITEM_META_DATA
+			SET GMT_MODIFIED = sysdate
+		]]>
+		<dynamic prepend="">
+			<isNotEmpty prepend="," property="metadataKey">
+				METADATA_KEY = #metadataKey#
+			</isNotEmpty>
+			<isNotEmpty prepend="," property="value">
+				VALUE = #value#
+			</isNotEmpty>
+			<isNotEmpty prepend="," property="description">
+				DESCRIPTION = #description#
+			</isNotEmpty>
+			<isNotEmpty prepend="," property="orderNum">
+				ORDER_NUM = #orderNum#
+			</isNotEmpty>
+		</dynamic>
+		<![CDATA[
+			WHERE ID = #id# 
+    	]]>
+	</update>
+	
+	<select id="SQL_QUERY_ITEM_META_DATA_BY_ITEM_IDS" resultMap="RM-CT-ITEM-META-DATA">
+		 <![CDATA[
+			SELECT  ID,GMT_CREATE,GMT_MODIFIED,ITEM_ID,METADATA_KEY,VALUE,DESCRIPTION,ORDER_NUM
+			FROM CT_ITEM_META_DATA
+			WHERE  ITEM_ID  in
+		]]>
+		<iterate property="itemsIdList" open="(" close=")"
+			conjunction=",">
+			#itemsIdList[]#
+		</iterate>
+		 <![CDATA[
+			ORDER BY ORDER_NUM ASC
+		]]>
+	</select>
+	
+	<!--  
+		开发负责人:xiaotong.huangxt
+		功能说明：根据id删除某条记录
+		前台或后台：后台
+		执行频率：10次/天
+		分表数量：无
+		是否有缓存：无
+		缓存失效时间：
+		数据量及增长趋势：现有140条，每天的数据增长量100条
+	-->
+	<delete id="deleteItemMetadataById" parameterClass="java.lang.Long">
+	    <![CDATA[
+	    	delete from CT_ITEM_META_DATA where ID = #id# 
+	    ]]>
+    </delete>
+    
+</sqlMap>

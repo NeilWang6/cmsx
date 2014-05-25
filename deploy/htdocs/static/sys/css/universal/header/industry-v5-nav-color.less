@@ -1,0 +1,227 @@
+#ali-nav-main,
+#ali-nav-main .ali-nav-promotion{
+	background:url(http://img.china.alibaba.com/cms/upload/2013/649/895/1598946_1643551954.png) no-repeat;
+}
+
+#ali-nav-main{
+	background-repeat:repeat-x;
+}
+
+.mainColor(@color){
+	#ali-nav-main{
+		/* 主导航背景色 */
+		background-color:@color;
+		/*  主导航tab高亮边框色 */
+		.ali-nav-category {
+			li.hover,
+			li.current{
+				border-color:darken(@color,6%);
+				a{
+					border-color:darken(@color,3%);
+				}
+			}
+		}
+	}
+	#ali-nav-sub{
+		li.current{
+			a{color:@color;}
+		}
+	}
+}
+
+.currentColor(@color){
+	#ali-nav-main .ali-nav-category li.current a{
+		background-color:@color!important;
+	}
+	#ali-nav-sub{
+		background-color:@color;
+	}
+}
+
+.hoverColor(@color){
+	#ali-nav-sub.hover,
+	#ali-nav-main .ali-nav-category li.hover a{
+		background-color:@color;
+	}
+}
+
+#ali-nav-5i.clothing{
+	.mainColor(#C00);
+	.hoverColor(#FFE4C3);
+	#ali-nav-main{
+		background-position:0 -50px;
+		.ali-nav-promotion{
+			background-position:-14px -102px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #DFD9D1;}
+	#ali-nav-sub.hover{border-bottom:1px solid #ECD3B5;}
+}
+
+#ali-nav-5i.home{
+	.mainColor(#DC1640);
+	.hoverColor(#FEF5C9);
+	#ali-nav-main{
+		background-position:0 -150px;
+		 .ali-nav-promotion{
+			background-position:-14px -202px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #DFD9D1;}
+	#ali-nav-sub.hover{border-bottom:1px solid #E3DAAD;}
+}
+
+#ali-nav-5i.af,
+#ali-nav-5i.zmyb,
+#ali-nav-5i.jd,
+#ali-nav-5i.dzdg,
+#ali-nav-5i.industrial{
+	.mainColor(#1F546F);
+	.currentColor(#EEF4F5);
+	.hoverColor(#DCE6E8);
+	#ali-nav-main{
+		background-position:0 -250px;
+		.ali-nav-promotion{
+			background-position:-14px -302px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #DFD9D1;}
+	#ali-nav-sub.hover{border-bottom:1px solid #C6D2D4;}
+}
+
+#ali-nav-5i.commodity{
+	.mainColor(#D53114);
+	.currentColor(#FFEAE2);
+	.hoverColor(#FFD9BD);
+	#ali-nav-main{
+		background-position:0 -350px;
+		.ali-nav-promotion{
+			background-position:-14px -402px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #E4D3CD;}
+	#ali-nav-sub.hover{border-bottom:1px solid #E8C4AA;}
+}
+
+#ali-nav-5i.bz,
+#ali-nav-5i.fangzhi,
+#ali-nav-5i.chem,
+#ali-nav-5i.steel,
+#ali-nav-5i.plas,
+#ali-nav-5i.material{
+	.mainColor(#397EBE);
+	.currentColor(#F2F9FF);
+	.hoverColor(#D7ECFF);
+	#ali-nav-main{
+		background-position:0 -450px;
+		.ali-nav-promotion{
+			background-position:-14px -502px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #D5E3EE;}
+	#ali-nav-sub.hover{border-bottom:1px solid #BCD2E7;}
+}
+
+#ali-nav-5i.food{
+	.mainColor(#649802);
+	.hoverColor(#FEF5C9);
+	#ali-nav-main{
+		background-position:0 -550px;
+		.ali-nav-promotion{
+			background-position:-14px -602px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #e3daad;}
+}
+
+#ali-nav-5i.bizservice{
+	.mainColor(#A88462);
+	.currentColor(#F6F1EC);
+	.hoverColor(#ECE2D7);
+	#ali-nav-main{
+		background-position:0 -650px;
+		.ali-nav-promotion{
+			background-position:-14px -702px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #E3DED9;}
+	#ali-nav-sub.hover{border-bottom:1px solid #D9D0C6;}
+}
+
+#ali-nav-5i.beauty{
+	.mainColor(#69277C);
+	.currentColor(#F7F4EC);
+	.hoverColor(#E3DBE6);
+	#ali-nav-main{
+		background-position:0 -750px;
+		.ali-nav-promotion{
+			background-position:-14px -802px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #E2DECF;}
+	#ali-nav-sub.hover{border-bottom:1px solid #CFC4D1;}
+}
+
+#ali-nav-5i.xiebaopeishi{
+	.mainColor(#DC3633);
+	.currentColor(#F2F2F2);
+	.hoverColor(#FFFAD1);
+	#ali-nav-main{
+		background-position:0 -850px;
+		.ali-nav-promotion{
+			background-position:-14px -902px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #E1E1E1;}
+	#ali-nav-sub.hover{border-bottom:1px solid #F2DDAF;}
+}
+
+#ali-nav-5i.jia{
+	.mainColor(#893208);
+	.currentColor(#FEF9E8);
+	.hoverColor(#FFF1CA);
+	#ali-nav-main{
+		background-position:0 -950px;
+		.ali-nav-promotion{
+			background-position:-14px -1002px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #ECE2D8;}
+	#ali-nav-sub.hover{border-bottom:1px solid #E0D3AA;}
+}
+
+#ali-nav-5i.app{
+	.mainColor(#21429E);
+	.currentColor(#E8F0F4);
+	.hoverColor(#E2F6FF);
+	#ali-nav-main{
+		background-position:0 -1050px;
+		.ali-nav-promotion{
+			background-position:-14px -1102px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #DEDEDE;}
+	#ali-nav-sub.hover{border-bottom:1px solid #D1E5EE;}
+}
+
+#ali-nav-5i.muying{
+	.mainColor(#F34F73);
+	.currentColor(#FFEEEE);
+	.hoverColor(#FEEED6);
+	#ali-nav-main{
+		background-position:0 -1149px;
+		.ali-nav-promotion{
+			background-position:-14px -1202px;
+		}
+	}
+	#ali-nav-sub{border-bottom:1px solid #FAD9DF;}
+	#ali-nav-sub.hover{border-bottom:1px solid #F2D8B4;}
+}
+
+#ali-nav-5i.sport{
+	.mainColor(#069139);
+	.currentColor(#FFEEEE);
+	.hoverColor(#FFE4C3);
+	#ali-nav-sub{border-bottom:1px solid #DFD9D1;}
+	#ali-nav-sub.hover{border-bottom:1px solid #ECD3B5;}
+}

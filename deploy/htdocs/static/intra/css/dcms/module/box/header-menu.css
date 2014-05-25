@@ -1,0 +1,31 @@
+/**
+ * @author shanshan.hongss
+ * @usefor 头部当前菜单高亮样式
+ * @date   2012.12.23
+ */
+ 
+.dcms-page-box-newpagedesign .page-header .last .menu-page,
+.dcms-page-box-searchboxpage .page-header .last .menu-page,
+/*.dcms-page-box-newtemplatedesign .page-header .last .menu-template,*/
+.dcms-page-box-newcreatemodule .page-header .last .menu-module,
+.dcms-page-box-modulelistnew .page-header .last .menu-module,
+.dcms-page-box-celllistnew .page-header .last .menu-cell,
+.dcms-page-box-newaddcell .page-header .last .menu-cell,
+.dcms-page-box-newderivecell .page-header .last .menu-cell{
+    background-position:0 -120px;
+}
+
+/**
+ *     左则工作平台
+ */
+
+.dcms-page-box-myfavoritlist .item .favorit,
+.dcms-page-box-personallib .item .personal,
+.dcms-page-box-searchboxmypage .item .personal,
+.dcms-page-box-manageboxcatalog .item .catalog,
+.dcms-page-box-draftlist .item .draft,
+.dcms-page-box-auditpersonallib .item .audit
+{
+    text-decoration: none;
+    background-color: #fff;
+}

@@ -1,0 +1,10 @@
+/* by Edgar 110209 */
+.ali-nav,
+.ali-nav .primary-nav,
+.ali-nav .primary-nav li,
+.ali-nav .primary-nav a,
+.ali-nav .primary-nav em,
+.ali-nav .extended-nav,
+.ali-nav .extended-nav-over .to-others-a{
+    background-image:url(http://img.china.alibaba.com/cms/upload/other/sys/nav-hasmenu-v1.3.png);
+}

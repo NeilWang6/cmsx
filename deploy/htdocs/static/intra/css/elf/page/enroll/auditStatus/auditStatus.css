@@ -1,0 +1,136 @@
+.content {
+    width: 990px;
+}
+.cursor {
+	cursor: pointer;
+}
+.libra-content{padding-top:10px;}
+/** top-area */
+.top-area .tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.top-area .tab-b .subject-info {
+    float: left;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+}
+
+.top-area .tab-b .subject-info span {
+    color: #4A6BAE;
+    font-weight: bold;
+}
+
+/** condition */
+.condition {
+    margin-bottom:10px;
+    background-color: #f2f2f2;
+    padding: 5px 0px 0px 0px;
+}
+.condition table {
+    line-height: 26px;
+    table-layout: fixed;
+    width: 100%;
+}
+.condition td {
+    padding-bottom: 10px;
+}
+
+.condition .select-long {
+    width: 250px;
+}
+.condition .select-date {
+    width: 113px;
+}
+.condition .col-2 {
+    text-align: right;
+    width: 45px;
+}
+.condition .col-3 {
+    text-align: right;
+    width: 55px;
+}
+.condition .col-4 {
+    padding-left:5px;
+    width:60px;
+}
+.condition .state{
+    width:40px;
+}
+.condition .col-button {
+    padding-left:5px;
+}
+.col-button .btn-gray{
+    margin-right:10px;
+
+}
+.condition .col-r7{
+    width: 100px;
+    padding-right: 5px;
+}
+.condition .col-r7 input{
+    width: 95px;
+}
+.condition .col-r10{
+    width: 123px;
+    padding-right: 5px;
+}
+.condition .col-r10 input{
+    width: 120px;
+}
+.condition .col-r20{
+    width: 260px;
+    padding-right: 5px;
+}
+.condition .col-date{
+    width: 220px;
+    padding-right: 5px;
+}
+.condition .col-date input{
+    width: 90px;
+}
+.condition .tui-select .s-text{
+    width: 65px;
+}
+.condition .pull-down{
+    z-index: 10;
+    height: 400px;
+    overflow: auto;
+    line-height: 18px;
+}
+.condition .pull-down .item dd{
+    padding-left: 73px;
+    padding-right: 20px;
+}
+.condition .pull-down .item dt{
+    width: 70px;
+}
+
+/** bottom-bar */
+.bottom-bar .fixed-bottom { 
+    width:auto;
+    background-color:#E6EAF5; 
+    border:1px solid #BEC7D8;
+    height:36px;
+    bottom:2px;
+    position:static;
+    margin:5px 0;
+}
+.libra-content{padding-top:10px;}
+.bottom-bar .fix-bottom-pagebar {
+    float:right; 
+    margin-top:6px; 
+    margin-right:10px;
+}
+.bottom-bar .fixed-bottom{background-color:#f0f0f0;}
+
+.data-table{padding-bottom:50px;}
+
+.table-sub th, .table-sub td {
+    overflow: hidden;
+    padding-left: 0px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}

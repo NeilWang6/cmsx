@@ -1,0 +1,54 @@
+$rundata.setLayout('acl:default.vm')  
+<div class="dcms-box-body fd-clr"> 
+   <div class="head"> 
+		<form method="post" id="js-search-page" name="" action=""> 
+            <div class="searchbar"> 	  
+				<a class="btn-basic btn-blue" href="$intraModule.setTarget('item.htm')">新建指标</a> 目前共有指标$!itemList.size()个
+             </div>
+	 	</form>
+    </div> 
+<div class="pl-body fd-clr">
+	 	<div class="dcms-box-list">
+#if($!itemList&&$!itemList.size()>0) 
+  			<!-- 指标列表开始 -->
+    	<table width="100%" border="1" cellpadding="1" cellspacing="1" bgcolor="a3b9e9" class="font11">
+    		<tr align="center"> 
+    			<td width="30" align="center" class="backcolor"><div align=center><strong>指标id</strong></div></td>
+    			<td width="200" align="center" class="backcolor"><div align=center><strong>指标名称</strong></div></td>
+    			<td width="100" align="center" class="backcolor"><div align=center><strong>指标类型</strong></div></td>
+    			<td width="100" align="center" class="backcolor"><div align=center><strong>指标数据类型</strong></div></td>
+    			<td width="30" align="center" class="backcolor"><div align=center><strong>指标数据来源</strong></div></td>
+    			<td width="60" align="center" class="backcolor"><div align=center><strong>指标长度限制</strong></div></td>
+    			<td width="200" align="center" class="backcolor"><div align=center><strong>格式</strong></div></td>
+    			<td width="20" align="center"  class="backcolor"><div align=center><strong>属性</strong></div></td>
+                <td width="50" align="center"  class="backcolor"><strong>创建时间</strong></td>
+    			<td width="70" align="center"  class="backcolor"><div align=center><strong>操作</strong></div></td>
+        	</tr>
+            #foreach($item in $itemList)
+    			<tr align="center" bgcolor="#FFFFFF" class="font11">
+    				<td bgcolor="#FFFFFF" class="font12" ><div align=center style="word-break:break-all;">$!item.id</div></td>
+                    <td class="font12" ><div align=left style="word-break:break-all;">$!item.name</div></td>
+    				<td class="font12" ><div align=left style="word-break:break-all;">$!item.ctrlType</div></td>
+    				<td class="font12" ><div align=left style="word-break:break-all;">#if($!item.itemType == 2) clob大字段 #else 普通文本#end</div></td>
+    				<td class="font12" >
+    					<div align=left style="word-break:break-all;">
+    					#if($!item.ctrlSourceType=="meta")
+    						<a href="itemMetadata.htm?action=ItemAction&event_submit_do_showItemMetadata=true&itemId=$!item.id" target="_blank">$!item.ctrlSourceType</a>
+    					#else
+    						$!item.ctrlSourceType
+    					#end
+    					</div></td>
+    				<td class="font12" ><div align=left style="word-break:break-all;">$!item.maxLen</div></td>
+    				<td class="font12" ><div align=left style="word-break:break-all;">$!item.format</div></td>
+    				<td  class="font12" align=center>$!item.attribute</td>
+    				<td  class="font12" align=center> $!utils.toLocaleString($!item.gmtCreate, 'yyyy-MM-dd')</td>
+    				<td  class="font12" align=center><a class="js-modification operate-btn" href="item.htm?action=ItemAction&event_submit_do_get_item=true&id=$!{item.id}">修改</a></td>
+                </tr>
+            #end
+    	</table> 
+#else
+	<br>
+	<div align=center><strong><font color="#FF3333"><b>对不起，暂无指标数据！</b></font></strong></div>
+#end
+			 </div></div>
+</div>

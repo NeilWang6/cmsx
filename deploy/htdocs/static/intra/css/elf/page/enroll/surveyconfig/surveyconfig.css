@@ -1,0 +1,213 @@
+body{
+	padding: 15px;
+}
+input[type=text]{
+	width: 120px;
+}
+input[type=checkbox],input[type=checkbox]{
+	margin-right: 3px;
+}
+input[name='item-base-maxLen']{
+	width: 50px;
+}
+select[name=item-base-format-fileopt]{
+	width: 70px;
+}
+input[name=item-base-format-filenum]{
+	width: 25px;
+}
+.js-dialog-basic section,.js-dialog-basic-2 section {
+	line-height: 36px;
+	text-align: center;
+}
+.js-dialog-basic section .tui-icon-36,.js-dialog-basic-2 section .tui-icon-36{
+	float: none;
+}
+.tui-icon-36{
+	vertical-align: middle;
+	padding-right: 8px;
+}
+.warn{
+	color: red;
+}
+.survey-title{
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+}
+.config-content{
+	height: 393px;
+}
+.config-opt{
+	display: none;
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
+.global-msg{
+	text-align: center;
+	padding: 180px 0;
+	position: relative;
+	display: none;
+}
+.config-list{
+	display: inline-block;
+	width: 300px;
+	height: 363px;
+	border-right: 1px solid #ccc;
+	overflow: auto;
+}
+.config-list li{
+	line-height: 25px;
+	border-bottom: 1px #ccc dashed;
+	margin-right: 10px;
+}
+.config-list li:first-child .icon-up,.config-list li:last-child .icon-down{
+	visibility: hidden;
+}
+.config-list li:last-child {
+	border-bottom: none;
+}
+.config-list .item-name{
+	display: inline-block;
+	width: 195px;
+	margin-right: 10px;
+	vertical-align: middle;
+	word-wrap: break-word;
+}
+.detail-editing,.detail-editing:hover{
+	color: #FF0000;
+}
+.config-view{
+	display: none;
+}
+.config-detail{
+	display: inline-block;
+	vertical-align: top;
+	width: 464px;
+	height: 363px;
+	overflow: auto;
+}
+.item-key-value{
+	padding-left: 100px;
+}
+.item-key{
+	display: inline-block;
+	width: 100px;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 5px;
+}
+.item-value{
+	display: inline-block;
+	line-height: 30px;
+	text-align: left;
+	width: 320px;
+	vertical-align: top;
+
+}
+.must-fill,.icon-remove,.icon-remove-2,.icon-up,.icon-down,.icon-left,.icon-add {
+	background:url(http://img.china.alibaba.com/cms/upload/2013/489/085/1580984_51297002.png) no-repeat;
+}
+.must-fill{
+	background-position: 96px -131px;
+}
+.icon-remove,.icon-remove-2,.icon-up,.icon-down,.icon-add{
+	display: inline-block;
+	width: 18px;
+	cursor: pointer;
+	margin: 0 2px;
+}
+.icon-remove{
+	background-position: 0 -80px;
+}
+.icon-remove-2{
+	background-position: 0 -87px;
+	line-height: 13px;
+	vertical-align: top;
+}
+.icon-up{
+	background-position: 0 7px;
+}
+.icon-down{
+	background-position: 0 -37px;
+}
+.icon-add{
+	background-position: 0 -104px;
+}
+.icon-left,.icon-left:hover{
+	background-position: 8px -60px;
+	padding: 0 5px 0 24px;
+}
+.icon-left:hover{
+	background-position: 6px -60px;
+}
+.invalid-input{
+	border: 1px #FF0000 solid!important;
+}
+.invalid-msg{
+	color: #FF0000;
+	padding-left: 5px;
+}
+.nav-pointer-additem{
+	background: url(http://img.china.alibaba.com/cms/upload/2013/822/475/1574228_51297002.png) no-repeat;
+	position: absolute;
+	top: 220px;
+	left: 70px;
+	width: 380px;
+	height: 160px;
+
+}
+.sub-detail{
+	display: none;
+	text-align: center;
+}
+.sub-detail .desc{
+	color: #BBB;
+}
+.ctrl-type-textarea{
+	width: 420px;
+	height: 250px;
+	margin: 8px;
+
+}
+.sub-detail-custom{
+	text-align: center;
+	padding: 155px 0;
+}
+#js-add{
+	float: left;
+}
+#js-close{
+	float: right;
+}
+.js-item-meta-editing{
+	margin-right: 5px;
+}
+.js-item-meta-option{
+	color: #2A2A2A;
+	cursor: pointer;
+	display: inline-block;
+	max-width: 260px;
+	padding-right: 3px;
+	vertical-align: text-bottom;
+	word-wrap:break-word;
+}
+.js-item-meta-other{
+	vertical-align: top!important;
+}
+.meta-option{
+	background: #FDFDB0;
+	display: inline-block;
+	border: 1px solid #FF6A00;
+	padding: 3px 0px 3px 5px;
+	margin-right: 5px;
+	line-height: 12px;
+}

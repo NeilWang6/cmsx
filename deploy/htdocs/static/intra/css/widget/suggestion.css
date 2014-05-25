@@ -1,0 +1,26 @@
+/**
+ * @author shanshan.hongss
+ * @usefor ELF应用 - 信息补全
+ * @date   2012.09.12
+ */
+
+.tui-suggestion {
+    position:absolute;
+    min-width:120px;
+    max-height:300px;
+    line-height:20px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    border:1px solid #ccc;
+    background-color:#fff;
+    z-index:200;
+    display:none;
+    text-align:left;
+}
+.tui-suggestion li {
+    padding:0 8px;
+    cursor:pointer;
+}
+.tui-suggestion li.selected, .tui-suggestion li:hover {
+    background-color:#eee;
+}

@@ -1,0 +1,174 @@
+/**
+ * create by wb-zhangchunyi on 2013.07.23
+ */
+
+.content {
+    width: 990px;
+}
+.most-content  {
+	width: 790px;
+}
+/** top-area */
+.top-area .tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.top-area .tab-b .subject-info {
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+}
+.top-area .tab-b .subject-info  span {
+	color: #4a6bae;
+	font-weight: bold;
+}
+.top-area .tab-b .f-tab-t {
+    float: right;
+    height: 25px;
+    line-height: 32px;
+    cursor: pointer;
+	padding-left:15px;
+}
+.top-area .tab-b a {
+    text-decoration: none;
+}
+
+/**top basic info**/
+.basic-info img.img-icon{
+	vertical-align:middle;
+}
+/** result table */
+.dataobj {
+	width:100%; 
+	overflow:hidden; 
+	margin-top:10px;
+	padding-bottom:43px;
+}
+.dataobj table {
+	width:100%;
+}
+.dataobj table, .dataobj table td {
+	border:1px solid #e8e9eb;
+	border-collapse:collapse;
+	padding-left:4px;
+}
+.dataobj table tr.cell td.img {
+	text-align:center;
+}
+.dataobj table tr.cell td.cell {
+	vertical-align:top;
+}
+.dataobj .t1, .dataobj .t2, .dataobj .t3, .dataobj .t4, .dataobj .t5, .dataobj .t6, .dataobj .t7 {
+	background:#e8e9eb;
+	border-top:1px solid #9da5b4;
+	text-align:left;
+	text-indent:5px;
+	font-weight:bold;
+	height:30px;
+}
+.dataobj .t1{width:95px;}
+.dataobj .t2{width:185px;}
+.dataobj .t3{width:90px; }
+.dataobj .t4{width:115px; }
+.dataobj .t5{width:115px; }
+.dataobj .t6{width:115px; }
+.dataobj .t7{width:80px; }
+.dataobj .cell-offer dd, .dataobj .cell-supplier, .dataobj .cell-about {
+	margin-left:8px;
+	margin-right:4px;
+}
+.dataobj .cell dd {
+	margin-top:10px;
+}
+.dataobj .cell dd.last {
+	margin-bottom:15px;
+}
+.dataobj .cell dd.unhighlight {
+	color:#C3C3C3;
+}
+.dataobj .cell dd span {
+	font-weight:bold;
+}
+.dataobj .cell-offer dt{width:150px;margin:14px auto 0 auto}
+.dataobj .cell-offer .d{margin-bottom:10px}
+.dataobj .cell-offer{padding-bottom:10px}
+.dataobj .offer-img{
+	border:1px solid #e8e9eb;
+	height:120px;
+	width:120px;
+	border-collapse:separate;
+}
+.dataobj img.img-icon {
+	vertical-align:middle;
+}
+.dataobj .offerimg-div {
+	height:150px;
+}
+.dataobj .offerimg-dl {
+	display:inline-block;
+}
+.dataobj .checkbox {
+	margin-left:8px;
+	margin-right:5px;
+	vertical-align:95px;
+}
+.dataobj .offerid {
+	margin-top:0;
+}
+.dataobj .cell .block-area {
+	margin-top:0;
+	overflow:hidden;
+	height:20px;
+	line-height:20px;
+	width:130px;
+}
+.dataobj dl.cell .overdue {
+	margin-left:5px;
+	vertical-align:middle;
+}
+
+ul, ol { list-style: none; margin:0; padding:0; }
+.sku li { height:28px; line-height:28px; overflow:hidden; }
+.sku .last-row { border-bottom: none; }
+
+.errormsg {
+	color: red; 
+	font-weight: bold;
+}
+
+.top-content-div {
+	 float:left;
+	 margin-top:3px;
+}
+
+.content-float {
+	 float:right;
+}
+
+.btn-div {
+	margin-top:10px;
+}
+
+.dpl-btn-important{
+	font-weight: normal;
+}
+
+.tips-applyall{
+	display: none;
+	position: absolute;
+}
+.tips-applyall .ct-applyall{
+	width: 66px;
+	padding: 0px;
+	height: 21px;
+}
+.dataobj .cell .ump-select{	
+	border: 1px solid #dbdcde;
+	padding: 3px;
+	width: 70px;
+	height: 23px;
+	line-height: 23px;
+	vertical-align: middle;
+	background-color: #fff;
+}

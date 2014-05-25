@@ -1,0 +1,41 @@
+@charset "gb2312";
+/* CSS Global*/
+.nm-page-button{
+	display: inline-block;
+	margin: 10px 8px 10px 0;
+	border: 1px solid #BAD0EE;
+	background-color: #edf5ff;
+	width: 66px;
+	height: 24px;
+	line-height: 24px;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+}
+.form-button{
+	font-size: 12px;;
+	margin-left:5px;
+	display: inline-block;
+	width: 66px;
+	height: 22px;
+	line-height: 18px;
+	background-color: #C6DBF6;
+	cursor: pointer;
+}
+.nm-form-button{
+	font-size: 1em;
+	margin-left:5px;
+	display: inline-block;
+	width: 66px;
+	height: 22px;
+	line-height: 18px;
+	background-color: #C6DBF6;
+	cursor: pointer;
+}
+.nm-text-center{
+	text-align: center;
+}
+.nm-w200{ width:200px;}
+.nm-w300{ width:300px;}
+.nm-w100{ width:100px;}
+.backcolor1 span,.backcolor1 font{font-size:13px;}

@@ -1,0 +1,246 @@
+.dcms-box-layout {
+	overflow:hidden;
+}
+.dcms-box-body {
+	padding-left:201px;background-color:#fff;padding-bottom:20px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.pl-body li {
+	padding-top:20px;
+	/*height:210px;*/
+	float:left;
+}
+.cell-product-2nd {
+	width:172px;
+	height:209px;
+	border:1px solid #d2d2d2;
+	margin:0 10px;
+	display: inline-block;
+	padding:5px 4px 9px 4px;
+}
+.cell-product-2nd dd{
+	padding-left:10px;
+}
+.cell-product-2nd dt{
+	width:170px;
+	height: 150px;
+}
+.cell-product-2nd .title{
+	margin-top:2px;
+}
+.cell-product-2nd .title a{
+	height:32px;
+	line-height:28px;
+	color:#474748;
+	font-weight: bold;
+}
+.cell-product-2nd .tag{
+	line-height:14px;
+	color:#acacac;
+}
+.cell-product-2nd .img {
+	max-height: 150px;
+    max-width: 170px;
+}
+.pl-body dt{
+	position: relative;
+}
+.oper-bar{
+	opacity:0.7;
+	position:absolute;
+	left:0;
+	top:120px;
+	padding-top:6px;
+	height:24px;
+	width:100%;
+	background-color:#828282;
+	display:none;
+}
+.oper-bar a {
+	margin-left:10px;
+	display:inline-block;
+	height:20px;
+	width:20px;
+	background-image:url(http://img.china.alibaba.com/cms/upload/2012/681/764/467186_417709751.png?f);
+	background-position-y: -120px;
+	background-repeat: no-repeat;
+}
+.btn-edit {
+	background-position: 0 -120px;	
+}
+.btn-edit:hover {
+	background-position: 0 -80px;	
+}
+.btn-edit:active {
+	background-position: 0 -40px;	
+}
+.btn-apply {
+	background-position: -40px -120px;	
+}
+.btn-apply:hover {
+	background-position: -40px -80px;	
+}
+.btn-apply:active {
+	background-position: -40px -40px;	
+}
+.btn-cancel  {
+	background-position: -80px -120px;	
+}
+.btn-cancel:hover {
+	background-position: -80px -80px;	
+}
+.btn-cancel:active {
+	background-position: -80px -40px;	
+}
+
+.btn-delete  {
+	background-position: -120px -120px;	
+}
+.btn-delete:hover {
+	background-position: -120px -80px;	
+}
+.btn-delete:active {
+	background-position: -120px -40px;	
+}
+.btn-favrite  {
+	background-position: -160px -120px;	
+}
+.btn-favrite:hover {
+	background-position: -160px -80px;	
+}
+.btn-favrite:active {
+	background-position: -160px -40px;	
+}
+.btn-import  {
+	background-position: -200px -120px;	
+}
+.btn-import:hover {
+	background-position: -200px -80px;	
+}
+.btn-import:active {
+	background-position: -200px -40px;	
+}
+.btn-audit  {
+	background-position: -240px -120px;	
+}
+.btn-audit:hover {
+	background-position: -240px -80px;	
+}
+.btn-audit:active {
+	background-position: -240px -40px;	
+}
+.btn-view  {
+	background-position: -280px -120px;	
+}
+.btn-view:hover {
+	background-position: -280px -80px;	
+}
+.btn-view:active {
+	background-position: -280px -40px;	
+}
+li:hover .oper-bar{
+	display:block;	
+}
+.status {
+	opacity:0.95;
+	position:absolute;
+	width:65px;
+	top:0px;
+	min-height:25px;
+	line-height:25px;
+	background-image:url(http://img.china.alibaba.com/cms/upload/2012/681/764/467186_417709751.png?f);
+	background-repeat: no-repeat;
+	background-position:0 30px;
+	color:#fff;
+}
+.status label{
+	padding-left:27px;
+}
+.status .refuse-text {
+	line-height:16px;
+	margin:4px 0;
+	min-height:16px;
+	padding-left:6px;
+	color:#fff;
+}
+.cell-product-2nd .apply{
+	background-position:0 0;
+	background-color: #ff821d;
+}
+.cell-product-2nd .audit{
+	background-position: 0 -160px;
+	background-color: #399dfb;
+}
+.cell-product-2nd .refuse{
+	width:100%;
+	background-position:0 -190px;
+	background-color: #9f9f9f;
+	color:#000;
+}
+.searchbar{
+	height:35px;
+	line-height:35px;
+	width:100%;
+	border-bottom:1px solid #e6e6e6;
+}
+.searchbar .line{   
+	display:inline-block;
+	vertical-align: middle;
+	border-left:1px solid #b6b6b6;
+	height:21px;
+	margin-left:9px;
+}
+.searchbar label{
+	margin-left:15px;
+	margin-right:8px;
+}
+.searchbar .list-color[
+	margin-top:10px;
+£ý
+.searchbar #second-cat {
+	margin-left: 8px;
+}
+.searchbar table{
+	width:100%;
+}
+.searchbar  .keyword{
+	width:155px;
+}
+.searchbar .search-btn{
+	margin-left:8px;
+}
+.searchbar select{
+	width:119px;
+}
+.sortbar {
+	padding:6px 0 6px 0;
+	border-bottom:1px solid #e6e6e6;
+	vertical-align: middle;
+	height:23px;
+}
+.sortbar .list-filter{
+	float:left;
+	margin-left:10px;
+}
+.sortbar .simple-page{
+	float:right;
+}
+.sortbar  .next{
+	margin-right:10px;
+}
+.pages {
+	margin-top:30px;
+	padding-left:100px;
+	width:100%;
+	height:40px;
+	text-align:center;
+}
+.pages .tbl{
+	width:100%;
+}
+.head{
+	padding:10px 10px 0 10px;
+}

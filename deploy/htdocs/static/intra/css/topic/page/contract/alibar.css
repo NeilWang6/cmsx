@@ -1,0 +1,119 @@
+/**
+ * @module alibar
+ * @author Edgar
+ * @version 110901
+ * */
+
+
+#alibar-wholesale,
+#alibar-wholesale .alibar-welcome,
+#alibar-wholesale .alibar-bg-arrow,
+#alibar-wholesale .alibar-service-list dd{
+    background: url(http://img.china.alibaba.com/cms/upload/2011/075/561/165570_1955610150.png) no-repeat -100px 0;
+}
+
+#alibar-wholesale{
+    height: 35px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-color: #eee;
+    color: #333;
+}
+#alibar-wholesale a:link,
+#alibar-wholesale a:visited{
+    color: #666;
+}
+#alibar-wholesale .alibar-container{
+    width: 952px;
+    margin: 0 auto;
+    padding: 0 4px;
+}
+#alibar-wholesale .alibar-account-status{
+    float: left;
+    line-height: 31px;
+}
+#alibar-wholesale .alibar-account-status li{
+    float: left;
+    padding-left: 14px;
+}
+#alibar-wholesale .alibar-account-status .alibar-welcome{
+    padding: 0 16px 0 0;
+    background-position: right -36px;
+}
+
+#alibar-wholesale .alibar-nav{
+    float: right;
+}
+#alibar-wholesale .alibar-service{
+    float: left;
+    position: relative;
+    z-index: 1800;
+    padding: 1px 5px 0;
+}
+#alibar-wholesale .alibar-service-title{
+    width: 153px;
+    height: 33px;
+    padding-left: 21px;
+    line-height: 31px;
+}
+#alibar-wholesale .alibar-bg-arrow{
+    background-position: right -79px;
+    padding-right: 16px;
+}
+#alibar-wholesale .alibar-service:hover,
+#alibar-wholesale .alibar-service-over{
+    border: 1px solid #ccc;
+    border-bottom: 0 none;
+    background-color: #fff;
+    padding: 0 4px;
+}
+#alibar-wholesale .alibar-service:hover .alibar-bg-arrow,
+#alibar-wholesale .alibar-service-over .alibar-bg-arrow{
+    background-position: right -114px;
+}
+#alibar-wholesale .alibar-service:hover .alibar-service-title,
+#alibar-wholesale .alibar-service-over .alibar-service-title{
+    border-bottom: 1px solid #eee;
+}
+#alibar-wholesale .alibar-service:hover .alibar-service-list,
+#alibar-wholesale .alibar-service-over .alibar-service-list{
+    display: block;
+}
+#alibar-wholesale .alibar-service-list{
+    position: absolute;
+    z-index: 1810px;
+    top: 34px;
+    left: -1px;
+    border: 1px solid #ccc;
+    border-top: 0 none;
+    width: 273px;
+    background: #fff;
+    padding: 10px 0;
+}
+#alibar-wholesale .alibar-service-list dl{
+    float: left;
+    width: 120px;
+    padding-left: 16px;
+}
+#alibar-wholesale .alibar-service-list dt{
+    padding-left: 8px;
+    color: #666;
+    font-weight: 700;
+    height: 26px;
+    line-height: 26px;
+}
+#alibar-wholesale .alibar-service-list dd{
+    padding-left: 8px;
+    background-position: -27px -140px;
+    line-height: 22px;
+}
+#alibar-wholesale .alibar-service-seller{
+    border-left: 1px solid #eee;
+}
+
+#alibar-wholesale .alibar-zone{
+    float: left;
+    width: 206px;
+    text-align: center;
+    line-height: 35px;
+}

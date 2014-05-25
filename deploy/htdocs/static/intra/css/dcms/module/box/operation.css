@@ -1,0 +1,276 @@
+/**
+ * @author springyu
+ * @userfor 页面设计,派生CELL操作区域功能CSS
+ * @date 2011-12-21
+ */
+/*
+ * 编辑模块
+ */
+
+.dcms-box-operation-area {
+    position: relative;
+    right: 0;
+     
+    /**
+     -moz-border-radius-bottomleft: 1em;
+     -moz-border-radius-bottomright: 1em;
+     -webkit-border-bottom-left-radius: 1em;
+     -webkit-border-bottom-right-radius: 1em;
+     border-radius: 0em 0em 1em 1em;
+     position: absolute;
+     border-bottom:1px solid #a3a3a3;
+     top: 72px; **/
+}
+.dcms-box-operation-area a:hover {
+    text-decoration: none !important;
+}
+.dcms-box-operation-area .nav {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #C9C9C9;
+}
+.dcms-box-operation-area .operation-nav {
+    display: table;
+}
+.operation-nav .dcms-box-nav-blank {
+    display: table-cell;
+    width: 24px;
+}
+.operation-nav .operation-line {
+    display: table-cell;
+    width: 2px;
+    line-height: 30px;
+    padding: 0px 8px;
+}
+.operation-line s {
+    border-left: 1px solid #C9C9C9;
+    display: block;
+    height: 12px;
+    margin-bottom: 8px;
+}
+.operation-nav .operation-content {
+    display: table-cell;
+    padding-left: 24px;
+}
+.operation-nav ul {
+    float: left;
+}
+.operation-nav .left-padding {
+    padding-right: 0px;
+}
+.operation-nav ul li {
+    float: left;
+    text-align: center;
+}
+.operation-nav .dcms-box-abtn {
+    display: block;
+    line-height: 20px;
+    color: #444;
+    margin: 5px 2px;
+    padding: 0px 6px;
+}
+.operation-nav .dcms-box-abtn:hover {
+    text-decoration: underline !important;
+    -moz-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.operation-nav .disbaled {
+    color: #ccc;
+}
+.operation-nav .disbaled:hover {
+    color: #fff;
+    background-color: #ccc;
+}
+/**
+ * 元素组
+ */
+.operation-content .content-mod {
+    background-position: -0px -80px;
+    width: 67px;
+}
+.operation-content a:hover .content-mod {
+    background-position: -80px -80px;
+}
+.current .dcms-box-bar-a .content-mod {
+    background-position: -160px -80px;
+    color: #000d13;
+}
+.current a:hover .content-mod {
+    background-position: -160px -80px;
+}
+/**
+ *     元素
+ */
+.operation-content .content-cell {
+    background-position: -0px -119px;
+    width: 41px;
+}
+.operation-content a:hover .content-cell {
+    background-position: -60px -120px;
+}
+.current .dcms-box-bar-a  .content-cell {
+    background-position: -120px -120px;
+    color: #000d13;
+}
+.current a:hover .content-cell {
+    background-position: -120px -120px;
+}
+/**
+ *     标签
+ */
+.operation-content .content-label {
+    background-position: -0px -119px;
+    width: 41px;
+}
+.operation-content a:hover .content-label {
+    background-position: -60px -120px;
+}
+.current .dcms-box-bar-a  .content-label {
+    background-position: -120px -120px;
+    color: #000d13;
+}
+.current a:hover .content-label {
+    background-position: -120px -120px;
+}
+/**
+ *     整行
+ */
+.operation-nav .operation-layout {
+    display: table-cell;
+    padding-left: 16px;
+    width: 292px;
+}
+.operation-layout .layout-layout {
+    background-position: -0px -119px;
+    width: 41px;
+}
+.operation-layout a:hover .layout-layout {
+    background-position: -60px -120px;
+}
+.current .dcms-box-bar-a  .layout-layout {
+    background-position: -120px -120px;
+    color: #000d13;
+}
+.current a:hover .layout-layout {
+    background-position: -120px -120px;
+}
+/**
+ *     整列
+ */
+.operation-layout .layout-grid {
+    background-position: -0px -119px;
+    width: 41px;
+}
+.operation-layout a:hover .layout-grid {
+    background-position: -60px -120px;
+}
+.current .dcms-box-bar-a  .layout-grid {
+    background-position: -120px -120px;
+    color: #000d13;
+}
+.current a:hover .layout-grid {
+    background-position: -120px -120px;
+}
+/**
+ *     列内行
+ */
+.operation-layout .layout-row {
+    background-position: -0px -80px;
+    width: 67px;
+}
+.operation-layout a:hover .layout-row {
+    background-position: -80px -80px;
+}
+.current .dcms-box-bar-a .layout-row {
+    background-position: -160px -80px;
+    color: #000d13;
+}
+.current a:hover .layout-row {
+    background-position: -160px -80px;
+}
+/**
+ *     单元格
+ */
+.operation-layout .layout-box {
+    background-position: -0px -80px;
+    width: 67px;
+}
+.operation-layout a:hover .layout-box {
+    background-position: -80px -80px;
+}
+.current .dcms-box-bar-a .layout-box {
+    background-position: -160px -80px;
+    color: #000d13;
+}
+.current a:hover .layout-box {
+    background-position: -160px -80px;
+}
+/**
+ *     背景
+ */
+.operation-nav .operation-background {
+    display: table-cell;
+}
+.operation-background .background {
+    background-position: -0px -80px;
+    width: 67px;
+}
+.operation-background a:hover .background {
+    background-position: -80px -80px;
+}
+.current .dcms-box-bar-a .background {
+    background-position: -160px -80px;
+    color: #000d13;
+}
+.current a:hover .background {
+    background-position: -160px -80px;
+}
+.operation-nav .operation-cp-del,.operation-nav .operation-redo {
+    display: table-cell;
+}
+.operation-cp-del .cp-del-copy {
+    background-position: -0px -80px;
+    width: 67px;
+}
+.operation-cp-del a:hover .cp-del-copy {
+    background-position: -80px -80px;
+}
+/*
+ .operation-cp-del a:active .cp-del-copy {
+ background-position: -160px -80px;
+ color: #000d13;
+ }*/
+
+.mousedown .bar-a-copy .cp-del-copy {
+    background-position: -160px -80px;
+    color: #000d13;
+}
+.operation-cp-del .cp-del-delete {
+    background-position: -0px -119px;
+    width: 42px;
+}
+.operation-cp-del a:hover .cp-del-delete {
+    background-position: -60px -120px;
+}
+.mousedown .bar-a-delete .cp-del-delete {
+    background-position: -120px -120px;
+    color: #000d13;
+}
+.operation-nav .title {
+    color: #a7a7a7;
+    margin: 6px 0px;
+    float: left;
+    line-height: 26px;
+}
+.dcms-box-nt {
+    border: solid 1px #7ba6c9;
+    color: #409ad6;
+    background-color: #fff;
+    width: 38px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+}

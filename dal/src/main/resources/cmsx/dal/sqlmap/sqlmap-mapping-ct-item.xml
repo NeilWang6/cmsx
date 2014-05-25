@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="CT_ITEM">
+	<typeAlias alias="TA-CT-ITEM"	type="com.apachecms.cmsx.dal.dataobject.CtItemDO" />
+  	<resultMap id="RM-CT-ITEM" class="TA-CT-ITEM" >
+	    <result column="ID" 				jdbcType="NUMBER" 		property="id"				javaType="java.lang.Long" />
+	    <result column="GMT_MODIFIED" 		jdbcType="TIMESTAMP" 	property="gmtModified"		javaType="java.util.Date" />
+	    <result column="GMT_CREATE" 		jdbcType="TIMESTAMP" 	property="gmtCreate"		javaType="java.util.Date" />
+	    <result column="NAME" 				jdbcType="VARCHAR" 		property="name"				javaType="java.lang.String" />
+	    <result column="ITEM_TYPE" 			jdbcType="NUMBER" 		property="itemType"			javaType="java.lang.Integer" />
+	    <result column="CTRL_TYPE" 			jdbcType="VARCHAR" 		property="ctrlType" 		javaType="java.lang.String" />
+	    <result column="CTRL_SOURCE_TYPE" 	jdbcType="VARCHAR" 		property="ctrlSourceType" 	javaType="java.lang.String" />
+	    <result column="MAX_LEN" 			jdbcType="NUMBER" 		property="maxLen"			javaType="java.lang.Integer" />
+	    <result column="FORMAT" 			jdbcType="VARCHAR" 		property="format"			javaType="java.lang.String" />
+	    <result column="ATTRIBUTE" 			jdbcType="VARCHAR" 		property="attribute"		javaType="java.lang.String" />
+	    <result column="RULE_NAME" 			jdbcType="VARCHAR" 		property="ruleName"		javaType="java.lang.String" />
+	    <result column="RULE_TYPE" 			jdbcType="VARCHAR" 		property="ruleType"		javaType="java.lang.Integer" />
+  	</resultMap>
+  	
+	<insert id="insertItem" parameterClass="TA-CT-ITEM">
+		<selectKey keyProperty="id" resultClass="java.lang.Long">
+            <![CDATA[
+                SELECT SEQ_CT_ITEM.NEXTVAL AS id FROM DUAL
+            ]]>
+		</selectKey>      
+        <![CDATA[
+			insert into 
+			CT_ITEM (
+				ID,GMT_CREATE,GMT_MODIFIED,NAME,ITEM_TYPE,CTRL_TYPE,CTRL_SOURCE_TYPE,MAX_LEN,FORMAT,ATTRIBUTE,RULE_NAME,RULE_TYPE
+			) values (
+				#id#,SYSDATE,SYSDATE,#name#,#itemType#,#ctrlType#,#ctrlSourceType#,#maxLen#,#format#,#attribute#,#ruleName#,#ruleType#
+			)
+        ]]>
+	</insert>
+	
+	<insert id="insertItemWithId" parameterClass="TA-CT-ITEM">
+        <![CDATA[
+			insert into 
+			CT_ITEM (
+				ID,GMT_CREATE,GMT_MODIFIED,NAME,ITEM_TYPE,CTRL_TYPE,CTRL_SOURCE_TYPE,MAX_LEN,FORMAT,ATTRIBUTE,RULE_NAME,RULE_TYPE
+			) values (
+				#id#,SYSDATE,SYSDATE,#name#,#itemType#,#ctrlType#,#ctrlSourceType#,#maxLen#,#format#,#attribute#,#ruleName#,#ruleType#
+			)
+        ]]>
+	</insert>
+
+	<select id="SQL_QUERY_CT_ITEM_BY_IDS" resultMap="RM-CT-ITEM">
+		 <![CDATA[
+			SELECT  ID,GMT_CREATE,GMT_MODIFIED,NAME,ITEM_TYPE,CTRL_TYPE,CTRL_SOURCE_TYPE,MAX_LEN,FORMAT,ATTRIBUTE,RULE_NAME,RULE_TYPE
+			FROM CT_ITEM ci
+			WHERE  ci.ID  in
+		]]>
+		<iterate property="itemsIdList" open="(" close=")"
+			conjunction=",">
+			#itemsIdList[]#
+		</iterate>
+	</select>
+	
+	<select id="getAllItemList" resultMap="RM-CT-ITEM">
+	<![CDATA[
+		SELECT 	ID,
+				GMT_CREATE,
+				GMT_MODIFIED,
+				NAME,
+				ITEM_TYPE,
+				CTRL_TYPE,
+				CTRL_SOURCE_TYPE,
+				MAX_LEN,
+				FORMAT,
+				ATTRIBUTE,
+				RULE_NAME,
+				RULE_TYPE
+		FROM CT_ITEM ORDER BY ID desc
+	]]>
+	</select>
+	
+	<select id="getItemById" resultMap="RM-CT-ITEM">
+	<![CDATA[
+		SELECT 	ID,
+				GMT_CREATE,
+				GMT_MODIFIED,
+				NAME,
+				ITEM_TYPE,
+				CTRL_TYPE,
+				CTRL_SOURCE_TYPE,
+				MAX_LEN,
+				FORMAT,
+				ATTRIBUTE,
+				RULE_NAME,
+				RULE_TYPE
+		FROM CT_ITEM WHERE ID=#id#
+	]]>
+	</select>
+	
+	<update id="updateItem" parameterClass="TA-CT-ITEM" >
+		<![CDATA[
+        update 	CT_ITEM
+		set 	GMT_MODIFIED = sysdate,
+				NAME = #name#,
+				ITEM_TYPE = #itemType#,
+				CTRL_TYPE = #ctrlType#,
+				CTRL_SOURCE_TYPE = #ctrlSourceType#,
+				MAX_LEN = #maxLen#,
+				FORMAT = #format#,
+				ATTRIBUTE = #attribute#,
+				RULE_NAME = #ruleName#,
+				RULE_TYPE = #ruleType#
+		where ID = #id# 
+    	]]>
+	</update>
+    
+</sqlMap>

@@ -1,0 +1,101 @@
+/**
+ * ��ҳ
+ * @author : zhangyang.maozy  moved by hongss
+ * @createTime : 2011-10-09
+ */
+
+h4 {
+     margin:0;
+     padding:0 0 0 13px;
+     line-height: 29px;
+     font-size:13px;
+     background-color:#ADBCDC;
+     border-left:1px solid #B7C3DD;
+     border-top:1px solid #B7C3DD;
+     color:#fff;
+     text-align:left;
+
+}
+.block {
+     height: auto;
+     width: 854px;
+     padding-top:12px;
+}
+.block-left {
+     margin-left:10px;
+     float: left;
+     width: 414px;
+}
+.block-right {
+     float: left;
+     margin-left: 10px;
+     height: 400px;
+     width: 414px;
+}
+.content, .bulletin {
+    margin-top:12px;
+    height:150px;
+}
+.content {
+    color:#3f3f3f;
+}
+.bulletin li,.bulletin dt,.bulletin dd,.bulletin li,.content li{
+    padding-left:13px;
+}
+.bulletin .content-indent { text-indent:24px;}
+.notify {
+      margin: 0;
+      padding: 3px 0 0 0;
+}
+.notify dl{
+    padding-left:4px;
+    text-align:left;
+}
+.notify dt,.notify dd{
+    padding-left:8px;
+}
+.notify dt{
+    margin:3px 0 3px 0;
+    background-color:#f0f0f0;
+    color:#727272;
+    height:19px;
+    line-height:19px;
+}
+.notify dd{
+    margin:6px 0 10px 0;
+}
+.notify dd div{
+    text-decoration: underline;
+    line-height:18px;
+}
+a.font_index, a.font_index:link {
+    color: #3f3f3f;
+    font-size: 12px;
+    text-decoration: underline;
+}
+a.help_link, a.help_link:link {
+    color: #000;
+    font-size: 12px;
+    text-decoration: underline;
+}
+a.font_index:hover,a.help_link:hover{
+    color:#FF7300
+}
+.help{
+    margin-top:12px;
+}
+.help li{
+    line-height:17px;
+}
+
+/*引导内容*/
+.dcms-main-body { position:relative;}
+.dcms-guide-1,.dcms-guide-2,.dcms-guide-3,.dcms-guide-4,.dcms-guide-5,.dcms-guide-6 {
+    position:absolute;
+}
+.dcms-guide-1{ top:32px; left:202px; display:none;}
+.dcms-guide-2{ top:14px; left:44px; display:none;}
+.dcms-guide-3{ top:92px; left:50px; display:none;}
+.dcms-guide-4{ top:128px; left:56px; display:none;}
+.dcms-guide-5{ top:166px; left:48px; display:none;}
+.dcms-guide-6{ top:32px; left:202px; display:none;}

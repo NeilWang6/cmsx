@@ -1,0 +1,295 @@
+/**
+ * @author jiankai.xujk
+ * @usefor 报名工具审核offer页面
+ * @date   2012.09.10
+ */
+
+.audit-content {
+    width: 990px;
+    padding-bottom:44px;
+}
+
+.loading{
+    background: url("http://img.china.alibaba.com/cms/upload/2012/534/534/435435_51297002.gif") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    margin-left: 490px;
+    margin-top: 20px;
+}
+.display-none {
+    display: none;
+}
+.bold {
+    font-weight:bold;
+	color:black;
+}
+
+/** condition */
+.condition {
+    background-color: #f2f2f2;
+    padding: 5px 0px 5px 0px;
+}
+.condition td {
+	text-align:center;
+}
+.search .state-select, .search{
+    width: 63px;
+}
+.search .sourceref-select {
+    width: 63px;
+}
+.search .category-select {
+    width: 260px;
+}
+.search .input-normal {
+	width:114px;
+}
+.search .input-date {
+	width:112px;
+}
+.search .select-normal {
+	width:123px;
+}
+.search {
+    table-layout:fixed;
+    width:100%;
+    line-height:28px;
+}
+.search .label {
+	text-align:right;
+}
+
+.search .must-fill {
+    background:url("http://img.china.alibaba.com/cms/upload/other/tools/icon-must-fill.png") no-repeat right 12px;
+    padding-right:8px;
+}
+
+.search .align-left {
+	text-align:left;
+}
+.search .search-arrow-up {
+	background: url("http://img.china.alibaba.com/cms/upload/2012/029/724/427920_1294011931.png") no-repeat 61px;
+}
+.search .search-arrow-down {
+	background: url("http://img.china.alibaba.com/cms/upload/2012/629/724/427926_1294011931.png") no-repeat 61px;
+}
+.search .label-margin { 
+	margin-right:5px; 
+}
+
+/** offer info */
+.offer-top-info {
+	background-color: #f2f2f2;
+	padding: 5px 0px 5px 0px;
+    margin: 6px 0px 6px 0px;
+	text-align:left;
+	line-height: 28px;
+	position: relative;
+	z-index: 9;
+}
+
+.offer-top-info .cp-right {
+    float:right;
+}
+
+.offer-top-info .cp-left {
+	margin-left: 10px;
+}
+
+.default-reason {
+	float:right;
+	height:35px;
+	width:250px;
+	line-height:35px;
+	margin-top:6px;
+	background-color:#fefef6;
+	position: absolute;
+	right: 0;
+	border-left:1px solid #f1f5d5;
+	border-bottom:1px solid #f1f5d5;
+	border-right:1px solid #f1f5d5;
+}
+
+.yp-category {
+	float:right;
+	position: absolute;
+	right: 0;
+}
+
+.offer-content {
+	position:relative;
+	margin-bottom:6px;
+	background-color: #f9f9f9;
+	border-left:1px solid #e8eaf6;
+	border-bottom:1px solid #e8eaf6;
+}
+
+.offer-left-info {
+	float:left;
+	width:178px;
+	border-top:1px solid #e8eaf6;
+}
+
+.offer-left-info .state {
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	width:176px;
+	height:28px;
+	line-height:28px;
+	padding-left:12px;
+	background:#aebee0 url("http://img.china.alibaba.com/cms/upload/2012/919/724/427919_1294011931.png") no-repeat 181px 0;
+}
+
+.offer-left-info .state .txt{
+	color:#3e507e;
+}
+
+.offer-left-info .state .txt em {
+	font-weight:bold;
+}
+
+.label-all-opt {
+	margin-left:2px;
+	margin-right:5px;
+}
+
+.offer-left-info .offer-alitalk {
+	float:right;
+	padding-right:15px;
+}
+
+.offer-left-info .offer-img {
+	width:150px;
+	height:150px;
+	margin: 35px 15px 15px 15px;
+	border:1px solid #e8eaf6;
+}
+
+.offer-left-info .offer-time p {
+	margin: 0px 15px 0px 15px;
+	border-bottom:1px dotted #e8eaf6;
+}
+
+.offer-right-info {
+	width: 798px;
+	margin-left:179px;
+	background-color:#fff;
+	border-left:1px solid #e8eaf6;
+	padding-left:12px;
+	overflow:hidden;
+}
+.offer-content hr.hide-bottom {
+	position:absolute;
+	width:809px;
+	border-bottom:1px solid #fff;
+	bottom:-1px;
+	right:0;
+}
+
+/*表格*/
+.offer-right-info .offer-table-info {
+	margin-bottom:5px;
+}
+
+.offer-right-info .offer-table-info th {
+	text-align:left;
+	padding-left:24px;
+}
+
+.offer-right-info .offer-reason-table {
+	width:100%;
+	margin-top:-6px;
+	background-color: #fefef6;
+	border-bottom: 1px solid #f1f5d5;
+}
+
+.offer-right-info .offer-reason-table caption {
+	text-align:left;
+	color:#455e97;
+	font-weight:bold;
+	padding-left: 24px;
+	padding-top: 7px;
+	background-color: #fefef6;
+	border-left: 1px solid #f1f5d5; 
+	border-right: 1px solid #f1f5d5; 
+}
+.offer-right-info .offer-reason-table td {
+	vertical-align:top;
+	line-height: 23px;
+	padding-left:24px;
+}
+
+.offer-right-info .offer-reason-table tr {
+	border-left: 1px solid #f1f5d5; 
+	border-right: 1px solid #f1f5d5;
+}
+
+
+.offer-right-info .ali-taobao {
+	float:right;
+	color:black;
+	font-weight:normal;
+	padding-right: 6px;
+}
+.offer-right-info .ali-taobao .member {
+	padding-left:4px;
+}
+.offer-right-info .ali-taobao .aliwangwang {
+	white-space: nowrap;
+	padding-left:15px;
+}
+
+.table-info {
+    border-bottom:1px solid #d8dbe1;
+    border-collapse:separate;
+}
+.table-info caption {
+	white-space:nowrap;
+    margin-bottom:1px;
+    border-bottom:2px solid #9da5b4;
+    font-weight:bold;
+    color:#000;
+}
+
+/** 底部浮动操作栏 */
+.no-result-position { margin-top:50px; }
+body #fixBottomPageList .fix-bottom-profile {position:absolute; bottom:40px; width:500px; left:289px; }
+.fix-bottom-pagebar { float:right; margin-top:9px; margin-right:10px; }
+.fix-bottom-optbar { float:left; margin-top:9px; margin-left:10px; height:30px;}
+.fixed-body .fix-bottom-pagebar {width: 420px;}
+body .fix-bottom-total { width:490px; line-height: 45px; height:40px; bottom:20px; }
+.fix-bottom-profile .data-table { width:470px; height: 100px; background-color:#fefef6; }
+.fix-bottom-profile .title { 
+	border-top: 1px solid #f1f5d5; 
+	border-left: 1px solid #f1f5d5; 
+	border-right: 1px solid #f1f5d5; 
+	padding-left:10px; 
+	padding-top:4px; 
+	color:#254182; 
+	font-weight:bold; 
+	text-align:left; 
+	background-color:#fefef6; 
+}
+.fix-bottom-profile .data-table tr { border-left: 1px solid #f1f5d5; border-right: 1px solid #f1f5d5; }
+.fix-bottom-profile .data-table .name { padding-left:10px; width:150px; font-weight:bold; }
+.fixed-body .fixed-bottom{position:relative;bottom:10px;}
+.allrejected-reason {
+	background: url("http://img.china.alibaba.com/cms/upload/other/tools/icon-must-fill.png") no-repeat;
+	background-position: 80px 3px;
+	padding-right: 8px;
+	padding-left: 7px;
+}
+.mg-r20{
+	margin-right:20px;
+}
+
+.search .offer-buyer{
+	padding-left: 2px;
+}
+
+.input-offer-buyer{
+	margin-left:2px;
+	width:103px;
+}
+
+

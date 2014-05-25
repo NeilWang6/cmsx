@@ -1,0 +1,147 @@
+/**
+ * ×ÊÔ´Î»offer
+ * @author : pingchun.yupc
+ * @createTime : 2014-01-4
+ */
+html{
+	background-color:#fff;
+}
+body{
+	margin:0px;
+	padding:0px;
+}
+.res-body {
+	width: 635px;
+}
+.res-block {
+	margin: 0 auto;
+	padding: 0 8px;
+	background-color: #fff;
+}
+.res-block .select {
+	margin: 4px 0;
+}
+.res-block .rec-way {
+	margin: 16px 0;
+}
+.rec-way li {
+	margin: 0 12px;
+}
+.res-block .textarea {
+	width: 400px;
+	height: 100px;
+	min-width: 400px;
+	min-height: 100px;
+	max-width: 600px;
+	max-height: 100px;
+}
+.res-block .show-type {
+	margin-bottom: 10px;
+}
+.show-type li {
+	margin: 0 12px;
+}
+
+.show-type a {
+	display: inline-block;
+	color: #474747;
+	padding:0 8px;
+	line-height: 24px;
+	height:24px;
+	background-color: #F5F5F5;
+	border:1px solid #CCCCCC;
+}
+.show-type li a.current {
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 25px;
+	height:25px;
+	border:none;
+	background-color: #FF720D;
+}
+.show-type li .condition {
+	padding: 0 4px;
+}
+.data-list .list-title {
+	background-color: #F2F2F2;
+	padding: 8px 16px;
+}
+.data-list .data-tb .chk {
+	display: inline-block;
+	padding-left: 12px;
+}
+.data-list .ck-td {
+	width: 5%;
+	padding-left: 0;
+}
+.data-list  .main-td {
+	padding-left: 0;
+}
+.data-list  .img-td {
+	width: 15%;
+	padding-left: 0;
+}
+.data-list  .opr-td {
+	width: 18%;
+	padding-left: 0;
+}
+.data-list  .img {
+	width: 100px;
+	height: 100px;
+}
+.show-data .data-param{
+  background-color:#F2F2F2;
+}
+.show-data .data-param .title-td {
+	width: 15%;
+	text-align:right;
+}
+.show-data .data-param .opr-td {
+	width: 85%;
+}
+.data-param .header{
+	background-color:#F2F2F2;
+	margin:10px 0;
+	padding:10px 12px 2px 12px;
+
+}
+.data-param .header h3 {
+	display: inline-block;
+}
+.data-param .header .current {
+	color: #FF9900;
+	text-decoration: none;
+}
+.search-operation{
+	margin:10px ;
+}
+.productionServiceExtend{
+	width:470px;
+	text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    vertical-align:bottom;
+    display:inline-block;
+}
+table.row-data{
+	border-width:0px;
+	width:100%;
+	border-collapse:separate;
+}
+.word-4{
+	width:60px;
+}
+.word-2{
+	width:30px;
+}
+.label{
+	text-align:right;
+}
+.data-param select{
+	line-height:25px;
+	height:25px;
+}
+.data-param .table-sub{
+	line-height:30px;
+	height:30px;
+}

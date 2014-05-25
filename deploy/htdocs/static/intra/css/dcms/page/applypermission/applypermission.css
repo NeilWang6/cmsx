@@ -1,0 +1,130 @@
+.dcms-content .dcms-search {
+    margin-left: 18px;
+    padding-top: 12px;
+}
+.dcms-content .dcms-search h3 {
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #000;
+}
+.dcms-content .dcms-search-form {
+    height: 32px;
+    overflow: hidden;
+}
+.dcms-content .dcms-search-form .perm-type {
+    float: left;
+    padding: 0px 8px;
+}
+.dcms-search-form .perm-type span {
+    display: inline-block;
+    padding: 0px 4px;
+}
+.dcms-content .dcms-apply, .dcms-content .operating-area {
+    margin: 16px;
+}
+
+.dcms-content .dcms-apply .cols {
+    padding: 8px 4px;
+}
+.dcms-apply .cols label {
+    display: inline-block;
+    width: 86px;
+    text-align: right;
+    vertical-align: middle;
+}
+.dcms-apply .cols input[type=text] {
+    margin: 4px 4px;
+    width: 240px;
+    border: 1px solid #BDC7D8;
+    font-size: 12px;
+    padding: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+.dcms-apply .cols .tip-error {
+    margin-left: 72px;
+    color: red;
+}
+.dcms-apply .dcms-select {
+    border: 1px solid #BDC7D8;
+    font-size: 12px;
+    margin: 4px 0;
+    padding: 4px;
+    height: 200px;
+    line-height: 200px;
+    width: 150px;
+}
+.dcms-content .dcms-apply .op-cols {
+    padding: 8px 4px;
+    float: left;
+}
+.dcms-apply-clear:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: "\0020";
+}
+.dcms-apply-clear {
+    zoom: 1;
+}
+.dcms-apply-operation {
+    height: 250px;
+}
+.dcms-apply-catalog {
+    height: 430px;
+}
+.mid-btn {
+    height: 100px;
+    line-height: 100px;
+    margin-top: 70px;
+}
+.mid-btn span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+.mid-btn .btn {
+    height: 30px;
+    line-height: 30px;
+}
+.mid-btn  button {
+    width: 50px;
+    background-color: #F3F8FB;
+    border: 1px solid #B0C6DB;
+    color: #409AD6;
+    text-align: center;
+    vertical-align: middle;
+}
+.box-create-module-tree {
+    background-color: #eee;
+    min-width: 200px;
+    min-height: 400px;
+    max-width: 300px;
+    max-height: 400px;
+    overflow: scroll;
+    -webkit-box-shadow: 0 0 0 1px #b0c6db inset;
+    -moz-box-shadow: 0 0 0 1px #b0c6db inset;
+    box-shadow: 0 0 0 1px #b0c6db inset;
+    border: 2px solid #CDDCEA;
+}
+.close-tree .close-btn {
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    cursor: pointer;
+}
+.close-tree {
+    float: right;
+}
+.catalog-tree {
+    padding: 4px 4px 4px 8px;
+}
+.dcms-apply .apply-text {
+    border: 1px solid #BDC7D8;
+    margin: 4px 0 4px 30px;
+    padding: 3px;
+    width: 200px;
+    height: 390px;
+}

@@ -1,0 +1,23 @@
+.view-tab .check-panel{
+	padding-bottom:4px;
+}
+.refuse-container{
+	margin:0 auto;
+	padding:16px;
+	height:93px;
+}
+.refuse-text{
+	width:100%;
+	height:100%;
+	border:1px solid #9d9d9d;
+	padding:0;
+}
+.list-tab-t #page{
+	display:block;
+}
+html{
+	overflow-y: auto;
+}
+.dcms-box-body{
+	padding-bottom:0px;
+}

@@ -1,0 +1,65 @@
+/**
+ * @author shanshan.hongss
+ * @usefor ELF应用 - 信息补全
+ * @date   2012.09.12
+ */
+
+.tui-suggestion {
+    position:absolute;
+    min-width:120px;
+    max-height:300px;
+    line-height:20px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    border:1px solid #c1cad9;
+    background-color:#fff;
+    z-index:200;
+    display:none;
+    text-align:left;
+}
+/*.tui-suggestion li {
+    padding:0 8px;
+    cursor:pointer;
+}
+.tui-suggestion li.selected, .tui-suggestion li:hover {
+    background-color:#eee;
+}*/
+
+.tui-suggestion .list-sugg {
+    /*background-color:#fcfcfc;*/
+    
+}
+.tui-suggestion .list-sugg dt.series-type-name {
+    float:left;
+    padding:0 6px 0 0;
+    width:102px;
+    text-align:right;
+    /*color:#c3c3c3;*/
+    line-height:20px;
+    font-weight:normal;
+}
+.tui-suggestion .list-sugg dd.series-name {
+    background-color:#fff;
+    border-left:1px solid #c1cad9;
+    margin-left:108px;
+    line-height:20px;
+    padding:0;
+}
+.tui-suggestion .list-sugg dd.last {
+    padding-bottom:8px;
+}
+.tui-suggestion dd.series-name span.txt {
+    display:inline-block;
+    padding:0 8px 0 3px;
+    width:100%;
+    cursor:pointer;
+}
+.tui-suggestion dd.selected span.txt, 
+.tui-suggestion dd.hover span.txt {
+    background-color:#e2e6ee;
+}
+
+.tui-suggestion .key-word {
+    color:#f00;
+    font-style:normal;
+}

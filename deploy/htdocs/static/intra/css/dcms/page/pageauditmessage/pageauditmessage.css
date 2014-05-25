@@ -1,0 +1,14 @@
+/**
+ * @package FD.app.cms.previewpage
+ * @version 1.0.110413
+ * @author  chenyi
+ */
+.dcms-verify { width:1000px; margin: 0 auto; }
+.dcms-verify .warning { margin: 10px 0 5px 10px; color:#e10000; }
+.dcms-verify .modify-area { margin: 10px 0 10px 10px; padding-bottom:10px; border-bottom:1px solid #dfdfdf; color:#333; }
+.dcms-verify .modify-area .info { font-weight:700; }
+.dcms-verify .modify-area a.check { color:#456097; }
+.dcms-verify .modify-list li { clear:both; line-height:20px; }
+.dcms-verify .modify-list .modify-name { float:left; padding-right:24px; }
+.dcms-verify .modify-list .check { float:left; }
+

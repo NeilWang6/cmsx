@@ -1,0 +1,229 @@
+/**
+ * @package FD.sys.head.alibar
+ * @version 1.101013.01
+ * @author  Edgar
+ */
+html{
+    overflow-y:scroll;
+}
+body,
+.alibar ul,
+.alibar li,
+.alibar dl,
+.alibar dt,
+.alibar dd{
+    margin:0;
+    padding:0;
+}
+.alibar ul{
+    list-style:none;
+}
+.alibar a{
+    text-decoration:none;
+}
+.alibar-v1{
+    height:25px;
+    font-size:12px;
+    line-height:1.5;
+    background:#f5f5f5;
+    border-bottom:1px solid #e4e4e4;
+    color:#666;
+}
+.alibar-v1 .alibar-container{
+    width:952px;
+    margin:0 auto;
+}
+.alibar-v1 a:hover,
+.alibar-v1 a:active{
+    color:#ff7300 !important;
+    text-decoration:none;
+}
+.alibar-v1 .fd-hide{
+    display:none;
+}
+.alibar-v1 .account-sign-status{
+    float:left;
+}
+.alibar-v1 .account-sign-status li{
+    float:left;
+    line-height:25px;
+    padding-left:8px;
+}
+.alibar-v1 .account-sign-status a:link,
+.alibar-v1 .account-sign-status a:visited{
+    color:#06c;
+}
+.alibar-v1 .topnav{
+    float:right;
+    background:#f5f5f5;
+    padding-top:2px;
+    height:23px;
+}
+.alibar-v1 .top-item,
+.alibar-v1 .bg-arrow,
+.alibar-v1 .list-cxt-service a,
+.alibar-v1 .top-suppliers-homepage a{
+    background:url(http://img.china.alibaba.com/images/sys/head/alibar/v1-standard.png) no-repeat -100px 100px;
+}
+.alibar-v1 .top-item{
+    float:left;
+    position:relative;
+    z-index:699;
+}
+.alibar-v1 .topnav a:link,
+.alibar-v1 .topnav a:visited{
+    color:#666;
+}
+.alibar-v1 .top-cxt-service,
+.alibar-v1 .top-ali-assistant,
+.alibar-v1 .top-sitemap{
+    background-position:right 5px;
+    border-left:1px solid #f5f5f5;
+}
+.alibar-v1 .top-favorites,
+.alibar-v1 .top-purchase-list,
+.alibar-v1 .top-customer-service,
+.alibar-v1 .top-feedback{
+    height:21px;
+    line-height:20px;
+    line-height:21px\9;
+    padding:0 9px;
+    background-position:right 4px;
+}
+.alibar-v1 .top-feedback{
+    background:none;
+}
+.alibar-v1 .top-suppliers-homepage{
+    height:21px;
+    line-height:18px;
+    line-height:21px\9;
+}
+.alibar-v1 .title-cxt-service,
+.alibar-v1 .title-ali-assistant,
+.alibar-v1 .title-sitemap{
+    position:relative;
+    padding:0 8px;
+    border:solid #f5f5f5;
+    border-width:1px 1px 1px 0;
+    line-height:18px;
+    height:21px;
+    *float:left;
+}
+.alibar-v1 .bg-arrow{
+    margin-right:4px;
+    padding-right:8px;
+    background-position:right -141px;
+    *background-position-y:-142px;
+    _background-position-y:-141px;
+}
+.alibar-v1 .list-cxt-service,
+.alibar-v1 .list-ali-assistant,
+.alibar-v1 .list-sitemap{
+    position:absolute;
+    top:23px;
+    left:-1px;
+    border:1px solid #bfbfbf;
+    padding:0 8px 4px;
+    line-height:26px;
+    background:#fff;
+    z-index:700;
+}
+.alibar-v1 .list-cxt-service{
+    width:108px;
+}
+.alibar-v1 .list-cxt-service a{
+    padding-left:20px;
+}
+.alibar-v1 .list-cxt-service .contact-us-free{
+    background-position:2px -118px;
+}
+.alibar-v1 .list-cxt-service .fill-form-free{
+    background-position:2px -58px;
+}
+.alibar-v1 .list-cxt-service .join-promotions{
+    background-position:2px -88px;
+}
+.alibar-v1 .list-cxt-service a.iconAlitalk{
+    padding-top:2px;
+    padding-bottom:2px;
+    background:url(http://img.china.alibaba.com/images/fdevlib/contact-icon.gif) no-repeat;
+    *line-height:14px;
+    zoom:1;
+    _padding-top:4px;
+}/*update 101013.01*/
+.alibar-v1 .list-cxt-service a.icon-on{
+    background-position:-190px -59px;
+}
+.alibar-v1 .list-cxt-service a.icon-off{
+    background-position:-190px -29px;
+}
+.alibar-v1 .list-cxt-service a.icon-mb{
+    background-position:-190px 1px;
+}
+.alibar-v1 .list-ali-assistant{
+    width:76px;
+}
+.alibar-v1 .list-sitemap{
+    width:225px;
+    padding:0;
+}
+.alibar-v1 .list-sitemap dl{
+    clear:both;
+    margin-left:8px;
+    padding-top:3px;
+    _padding-top:6px;
+}
+.alibar-v1 .list-sitemap dt{
+    font-weight:700;
+}
+.alibar-v1 .list-sitemap .entity-mdash{
+    display:inline-block;
+    background:#e5e5e5;
+    color:#e5e5e5;
+    height:1px;
+    line-height:3px;
+    overflow:hidden;
+    vertical-align:middle;
+    margin-left:8px;
+}
+.alibar-v1 .list-sitemap-service .entity-mdash{
+    width:170px;
+}
+.alibar-v1 .list-sitemap-market .entity-mdash{
+    width:144px;
+}
+.alibar-v1 .list-sitemap-all{
+    clear:both;
+    height:30px;
+    line-height:30px;
+    background:#e5e5e5;
+    padding-left:8px;
+}
+.alibar-v1 .list-sitemap dd{
+    float:left;
+    margin-right:8px;
+    word-break:keep-all;
+}
+.alibar-v1 .top-suppliers-homepage a{
+    display:block;
+    width:75px;
+    height:21px;
+    text-align:center;
+    background-position:0 -30px;
+}
+.alibar-v1 .top-over{
+    border-left-color:#bfbfbf;
+}
+.alibar-v1 .top-over .fd-hide{
+    display:block;
+}
+.alibar-v1 .top-over .title-cxt-service,
+.alibar-v1 .top-over .title-ali-assistant,
+.alibar-v1 .top-over .title-sitemap{
+    background:#fff;
+    border-color:#bfbfbf #bfbfbf #fff;
+    height:22px;
+    position:relative;
+    z-index:701;
+    _margin-bottom:-1px;
+}

@@ -1,0 +1,39 @@
+/**
+ * create by hongss for create/modify page on 2011.09.19
+ */
+.terms-message .message .hide-tag { background:url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png") no-repeat; }
+
+.dcms-form {
+    padding-bottom:20px;
+}
+.dcms-form label { width:86px;}
+.dcms-content .related-pages,
+.dcms-content .operation-log{
+    margin-top: 16px;
+}
+.dcms-content .related-pages h3,
+.dcms-content .operation-log h3{
+    line-height: 26px;
+    /*font-size: 14px;*/
+    font-weight: 700;
+    color:#666;
+}
+.dcms-content .dcms-form input[type="text"]{
+    width: 240px;
+}
+.dcms-content .dcms-form input[type="text"], .dcms-content .dcms-form input[type="button"]{
+    margin: 4px 0;
+}
+.dcms-content .dcms-form input[type="text"]:focus,.dcms-content .dcms-form textarea:focus{
+	 -webkit-box-shadow:0 0 0 1px #6c84b8 inset;
+     -moz-box-shadow:0 0 0 1px #6c84b8 inset;
+     box-shadow:0 0 0 1px #6c84b8 inset;
+}
+.dcms-content .dcms-form input.date-picker {
+    width:110px;
+}
+.dcms-content .dcms-form textarea{
+    width: 365px;
+}
+.dcms-content .operating-area a{ padding:0 4px;}
+

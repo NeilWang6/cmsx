@@ -1,0 +1,5 @@
+@import url(/static/fdevlib/css/fdev-v4/reset/reset-min.css);
+@import url(/static/fdevlib/css/fdev-v4/common/common-min.css);
+@import url(/static/intra/css/dcms/module/detect.css);
+@import url(/static/intra/css/widget/basic.css);
+@import url(/static/intra/css/dcms/page/dataanalysis/page-group-data-stat/data-stat.css);

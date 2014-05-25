@@ -1,0 +1,11 @@
+$rundata.setLayoutEnabled(false)
+<h3 class="f14"><span class="switchs cu on" title="展开与收缩"></span>系统生成</h3>
+<ul><li id="_MP117" class="sub_menu"><a href="javascript:_MP(117,'?type=html&do=indexhtml&rel=index');" hidefocus="true" style="outline:none;">生成首页</a></li></ul>
+<h3 class="f14"><span class="switchs cu on" title="展开与收缩"></span>案例管理</h3>
+<ul><li id="_MP136" class="sub_menu"><a href="javascript:_MP(136,'?type=brand&cn=info&do=list');" hidefocus="true" style="outline:none;">新增案例</a></li><li id="_MP137" class="sub_menu"><a href="javascript:_MP(137,'?type=brand&cn=car&do=list');" hidefocus="true" style="outline:none;">案例列表</a></li><li id="_MP138" class="sub_menu"><a href="javascript:_MP(138,'?type=brand&cn=photo&do=list');" hidefocus="true" style="outline:none;">案例审核</a></li></ul>
+<h3 class="f14"><span class="switchs cu on" title="展开与收缩"></span>案例统计</h3>
+  <ul>
+  	<li id="_MP142" class="sub_menu"><a href="javascript:_MP(142,'?type=content&cn=article&do=list');" hidefocus="true" style="outline:none;">新增案例统计</a></li>
+    <li id="_MP143" class="sub_menu"><a href="javascript:_MP(143,'?type=content&cn=article&do=list');" hidefocus="true" style="outline:none;">案例统计管理</a></li>
+  </ul><h3 class="f14"><span class="switchs cu on" title="展开与收缩"></span>会员管理</h3><ul><li id="_MP141" class="sub_menu"><a href="javascript:_MP(141,'?type=dealer&cn=dealer&do=list');" hidefocus="true" style="outline:none;">新增会员</a></li><li id="_MP144" class="sub_menu"><a href="javascript:_MP(144,'?type=school&cn=school&do=list');" hidefocus="true" style="outline:none;">会员管理</a></li></ul>
+<script language="javascript" type="text/javascript" src="$intraStatic.getURI('js/home/menu.js')"></script>

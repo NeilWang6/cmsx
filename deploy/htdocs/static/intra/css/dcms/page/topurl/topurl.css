@@ -1,0 +1,80 @@
+.dcms-content .title h3{
+	font-size: 14px;
+	font-weight: 700;
+	color: black;
+	line-height:28px;
+}
+
+.dcms-positionrule-data{
+	margin-left:18px;
+	padding-top:12px;
+}
+.dcms-positionrule-data .header{
+	margin-bottom:4px;
+}
+.dcms-positionrule-data .header h4{
+	display: inline-block;
+	font-weight: 700;
+	color: black;
+	*display: inline;
+	*float:left;
+}
+
+.dcms-positionrule-data .content{
+	/*border:solid 1px #ADBCDD;*/
+	border-top:none;
+}
+
+.dcms-positionrule-data .dcms-grid{
+    width: 830px;
+}
+
+.dcms-grid tbody{
+	border:none;
+}
+
+.dcms-grid th{
+	padding-left: 5px;
+	text-align: left;
+}
+
+.dcms-grid th, .dcms-grid td{
+	white-space: nowrap;
+}
+
+.dcms-grid tbody tr:last-child td{
+	border-bottom:none;
+}
+
+.dcms-grid a:link, .dcms-grid a:visited{
+	color:#666;
+}
+.dcms-search-date{
+    background-color: #eeeeee;
+    height: 32px;
+    line-height: 32px;
+}
+.dcms-search-date .date-picker{
+    border: 1px solid #bdc7d8;
+    padding: 2px;
+    width: 72px;
+}
+.dcms-search-date .dcms-validator-tip{
+    color:#c00;
+    padding-left:8px;
+}
+.topurl-data{
+    display:none;
+}
+.dcms-search-date .dcms-confirm-btn{
+    background: url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-repeat.png") repeat-x scroll 0 -40px transparent;
+   border-color:#a0a0a0;
+   border-radius:2px 2px 2px 2px;
+   border-style: solid;
+   border-width: 1px;
+   color:#494949;
+   cursor: pointer;
+   height: 23px;
+   line-height: 22px;
+   padding:0 4px;
+    }

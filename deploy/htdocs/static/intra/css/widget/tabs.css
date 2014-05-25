@@ -1,0 +1,75 @@
+/**
+ * @author shanshan.hongss
+ * @usefor 运营worker平台 一 tab样式统一
+ * @date   2012.11.08
+ */
+
+.tabs-a-topics { background:url("http://img.china.alibaba.com/cms/upload/other/tools/tabs-repeat.png") repeat-x;}
+.tabs-a-topics {
+    height:27px;
+    padding:4px 3px 0 3px;
+    line-height:25px;
+    background-position:0 0;
+    font-size:14px;
+    overflow:hidden;
+}
+.tabs-a-topics li {
+    float:left;
+    padding-right:5px;
+}
+.tabs-a-topics li a {
+    display:inline-block;
+    padding:1px 15px;
+    color:#474747;
+}
+.tabs-a-topics li a:hover {
+    padding:0 14px;
+    border:1px solid #b6b6b6;
+    background-color:#f2f2f2;
+    text-decoration:none;
+}
+.tabs-a-topics li.current a, .tabs-a-topics li.current a:hover {
+    padding:0 14px;
+    border:1px solid #b6b6b6;
+    background-color:#fff;
+    text-decoration:none;
+    border-bottom:1px solid #fff;
+}
+
+/*新的样式*/
+.tui-tabs-header {
+    height:32px;
+    line-height:30px;
+    border-bottom:2px solid #dbdcde;
+    color:#333;
+}
+.tui-tabs-header .title {
+    float:left;
+    margin-right:4px;
+    padding:2px 16px 0;
+    font-size:14px;
+    font-weight:bold;
+}
+.tui-tabs-header .list-tabs-t li {
+    float:left;
+    margin-right:4px;
+    padding:0 14px;
+    border:2px solid #fff;
+    border-bottom:0;
+    cursor:pointer;
+}
+.tui-tabs-header .list-tabs-t li:hover {
+    text-decoration:underline;
+}
+.tui-tabs-header .list-tabs-t a {
+    color:#333;
+}
+.tui-tabs-header .list-tabs-t li.current {
+    border:2px solid #dbdcde;
+    border-bottom:2px solid #fff;
+}
+.tui-tabs-header .description {
+    float:right;
+    padding-top:2px;
+}
+

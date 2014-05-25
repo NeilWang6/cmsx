@@ -1,0 +1,109 @@
+/**
+ * @author shanshan.hongss
+ * @usefor 运营worker平台 一 筛选样式统一
+ * @date   2012.11.09
+ */
+ 
+.list-filter .icon, .list-color .item a.colour, .item a.other {
+    background:url("http://img.china.alibaba.com/cms/upload/other/tools/icon-filter.png?t=0") no-repeat;
+}
+.list-filter {
+    height:23px;
+    line-height:21px;
+}
+.list-filter .item {
+    float:left;
+}
+.list-filter .item a {
+    display:inline-block;
+    border:1px solid #fff;
+    padding:0 6px;
+    color:#818181;
+}
+.list-filter .item a:hover {
+    border:1px solid #d2d2d2;
+    background-color:#f2f2f2;
+    text-decoration:none;
+}
+.list-filter .current a, .list-filter .current a:hover, .list-filter .item a:active {
+    border:1px solid #929292;
+    background-color:#dbdcde;
+    text-decoration:none;
+}
+.list-filter .icon{
+    display:inline-block;
+    width:9px;
+    height:11px;
+    padding-left:4px;
+    line-height:36px;
+    vertical-align:middle;
+    overflow:hidden;
+}
+.list-filter .icon-down {
+    background-position:4px 0;
+}
+.list-filter .icon-up {
+    background-position:-36px 0;
+}
+.list-filter .current .icon-down, .list-filter .current a:hover .icon-down, 
+.list-filter .item a:active .icon-down {
+    background-position:-16px 0;
+}
+.list-filter .current .icon-up, .list-filter .current a:hover .icon-up, 
+.list-filter .item a:active .icon-up {
+    background-position:-56px 0;
+}
+
+.list-color {
+    height:18px;
+}
+.list-color .item {
+    float:left;
+    line-height:10px; 
+    height:10px;
+    width:10px;
+    padding:4px;
+    overflow:hidden;
+}
+.list-color .item a {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    line-height:48px;
+    vertical-align:top;
+}
+.list-color .item a.red { background-color:#f00;}
+.list-color .item a.orange { background-color:#f63;}
+.list-color .item a.yellow { background-color:#fc0;}
+.list-color .item a.green { background-color:#393;}
+.list-color .item a.cyan { background-color:#00ae9d;}
+.list-color .item a.blue { background-color:#145b7d;}
+.list-color .item a.purple { background-color:#8552a1;}
+.list-color .item a.colour, .list-color .item a.other { background-position:0 -20px;}
+.list-color .item a.white { 
+    width:8px;
+    height:8px;
+    background-color:#fff;
+    border:1px solid #c7ccd4;
+}
+.list-color .item a.black { background-color:#000;}
+.list-color .item a.gray { background-color:#77787b;}
+.list-color .item:hover, .list-color .current {
+	line-height:12px;
+    border:1px solid #2d89f1;
+    padding:2px;
+    width:12px;
+    height:12px;
+}
+.list-color .item:hover a, .list-color .current a {
+    width:12px;
+    height:12px;
+}
+.list-color .item:hover a.white, .list-color .current a.white{
+    width:10px;
+    height:10px;
+}
+.list-color .item:hover a.colour, .list-color .current a.colour, .list-color .item:hover a.other, .list-color .current a.other{
+    background-position:-20px -20px;
+}
+

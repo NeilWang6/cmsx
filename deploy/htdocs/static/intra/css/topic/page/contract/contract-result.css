@@ -1,0 +1,19 @@
+/**
+ * wholesale merge css
+ * @author  Arcthur
+ */
+ 
+.mod-failure .error-sign,
+.mod-success .success-sign { background:url("http://img.china.alibaba.com/cms/upload/operation/content.png") no-repeat; }
+
+.mod-failure,
+.mod-success { padding:106px 0 160px; }
+.mod-success .main-info,
+.mod-failure .main-info { height:32px; line-height:32px; margin:0 auto; font-size:24px; color:#333; text-align:center; }
+.mod-success .success-sign,
+.mod-failure .error-sign { display:inline-block; width:32px; height:32px; margin-right:5px; }
+.mod-success .success-content,
+.mod-failure .error-content { display:inline-block; vertical-align:top; }
+
+.mod-success .success-sign { background-position:0 -180px; }
+.mod-failure .error-sign { background-position:0 -360px; }

@@ -1,0 +1,42 @@
+/* tabs */
+.dpl-tab{color: #444;}
+.dpl-tab .dpl-t{position: relative; display: block; height: 24px; border-bottom: solid 1px #a0a0a0;}
+.dpl-tab .dpl-tab-ul{position: absolute; top: 0; left: 0; height: 25px; overflow: hidden;}
+.dpl-tab .dpl-tab-t{float: left; display: inline; border: solid 1px #c8c8c8; border-bottom-width: 0; margin: 1px 4px 0 0; background-color: #fff;}
+.dpl-tab .dpl-tab-t a:link,
+.dpl-tab .dpl-tab-t a:visited,
+.dpl-tab .dpl-tab-t a:hover{float: left; display: inline; height: 18px; padding: 2px 13px 1px; margin-top: 1px; background-color: #f2f2f2; color: #5a5a5a; text-decoration: none;}
+.dpl-tab .dpl-tab-current{border: solid 1px #a0a0a0; border-width: 2px 1px 0; margin-top: 0; height: 23px;}
+.dpl-tab .dpl-tab-current a:link,
+.dpl-tab .dpl-tab-current a:visited,
+.dpl-tab .dpl-tab-current a:hover{padding: 3px 13px 2px; margin-top: 0px; background-color: #fff; color: #444; font-weight: bold;}
+.dpl-tab .dpl-d{overflow: hidden;}			
+
+.dpl-tab-l .dpl-t{height: 30px;}
+.dpl-tab-l .dpl-tab-ul{height: 31px;}
+.dpl-tab-l .dpl-tab-t a:link,
+.dpl-tab-l .dpl-tab-t a:visited,
+.dpl-tab-l .dpl-tab-t a:hover{height: 22px; padding: 3px 13px 2px; font-size: 14px;}
+.dpl-tab-l .dpl-tab-current{height: 29px;}
+.dpl-tab-l .dpl-tab-current a:link,
+.dpl-tab-l .dpl-tab-current a:visited,
+.dpl-tab-l .dpl-tab-current a:hover{padding: 4px 13px 3px;}
+
+.dpl-tab-gray .dpl-tab-current a:link,
+.dpl-tab-gray .dpl-tab-current a:visited,
+.dpl-tab-gray .dpl-tab-current a:hover{background-color: #f8f8f8;}
+.dpl-tab-gray .dpl-d{background-color: #f8f8f8;}
+
+.dpl-tab-box{background-color: #f0f0f0;}
+.dpl-tab-box .dpl-t{position: static; height: 28px; padding: 2px 4px 0 16px; border-width: 0;}
+.dpl-tab-box .dpl-t h3{float: left; display: inline; line-height: 2; font-size: 14px; font-weight: bold;}
+.dpl-tab-box .dpl-tab-ul{position: static; float: right; display: inline; height: 28px;}
+.dpl-tab-box .dpl-tab-t{margin: 0 0 0 8px; border-width: 0;}
+.dpl-tab-box .dpl-tab-t a:link,
+.dpl-tab-box .dpl-tab-t a:visited,
+.dpl-tab-box .dpl-tab-t a:hover{background-color: #f0f0f0; margin-top: 0; padding: 5px 12px; color: #444;}
+.dpl-tab-box .dpl-tab-current{border-width: 0; height: 28px;}
+.dpl-tab-box .dpl-tab-current a:link,
+.dpl-tab-box .dpl-tab-current a:visited,
+.dpl-tab-box .dpl-tab-current a:hover{padding: 5px 12px; background-color: #5f8acf; color: #fff;}
+.dpl-tab-box .dpl-d{background-color: #fff;}

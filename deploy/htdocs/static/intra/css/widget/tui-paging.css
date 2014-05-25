@@ -1,0 +1,59 @@
+/**
+ * @author shanshan.hongss
+ * @usefor work平台 - 分页(目前此处只含一种分页样式，另外两种放在basic下)
+ * @date   2013.01.22
+ */
+ 
+ /*小型完整分页*/
+.paging-m {
+    line-height:17px;
+}
+.paging-m a {
+    color:#333;
+    padding:0 1px;
+}
+.paging-m .current {
+    color:#0074e1;
+    font-weight:bold;
+    padding:0 1px;
+}
+.paging-m .prev, .paging-m .next {
+    background:url("http://img.china.alibaba.com/cms/upload/2013/108/086/680801_133354742.png") repeat-x;
+    diaplay:inline-block;
+    border:1px solid #aeaeae;
+    border-radius:2px;
+    height:15px;
+    line-height:15px;
+    padding:0 10px;
+}
+.paging-m .prev:hover, .paging-m .next:hover {
+    background-position:0 -30px;
+}
+.paging-m .prev:active, .paging-m .next:active {
+    background-position:0 -60px;
+}
+.paging-m .prev-disabled, .paging-m .prev-disabled:hover, 
+.paging-m .prev-disabled:active, .paging-m .next-disabled, 
+.paging-m .next-disabled:hover, .paging-m .next-disabled:active {
+    background-position:0 -90px;
+    cursor:default;
+}
+.paging-m .prev .arrow, .paging-m .next .arrow{
+    font-size:0;
+    line-height:0;
+    vertical-align:4px;
+    border-top:5px solid rgba(255,255,255,0);
+    border-bottom:5px solid rgba(255,255,255,0);
+}
+.paging-m .prev .arrow {
+    border-right:5px solid #333;
+}
+.paging-m .next .arrow {
+    border-left:5px solid #333;
+}
+.paging-m .prev-disabled .arrow {
+    border-right:5px solid #a8a8a8;
+}
+.paging-m .next-disabled .arrow {
+    border-left:5px solid #a8a8a8;
+}

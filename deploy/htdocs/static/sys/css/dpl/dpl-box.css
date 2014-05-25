@@ -1,0 +1,16 @@
+/* box */
+.dpl-box{background-color: #fff; color: #444;}
+.dpl-box .dpl-t{background-color: #f0f0f0; height: 28px; padding: 2px 4px 0 16px;}
+.dpl-box .dpl-t h3{line-height: 2; font-size: 14px; font-weight: bold;}
+.dpl-box .dpl-d{border: solid 2px #f0f0f0; padding: 8px;}
+.dpl-box .dpl-d .dpl-detail{padding: 8px;}
+.dpl-box .dpl-d .dpl-line{border-bottom: solid 1px #f0f0f0;}
+
+.dpl-box-gray{background: #fafafa;}
+.dpl-box-gray .dpl-t{padding: 2px 16px;}
+.dpl-box-gray .dpl-d{border-width: 0 0 1px 0;}
+
+.dpl-box-s .dpl-t{padding: 2px 8px;}
+.dpl-box-s .dpl-d{padding: 0;}
+
+.dpl-box-no-border .dpl-d{border-width: 0;}

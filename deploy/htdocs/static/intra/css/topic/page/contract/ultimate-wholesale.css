@@ -1,0 +1,66 @@
+/**
+ * masthead css ( ultimate )
+ * @author  Edgar
+ * @version 1.4.110603 // add combo search tab
+ */
+/* ali-masthead */
+#ali-masthead .ali-masthead-container{
+    width:952px;
+    height:81px;
+    text-align:left;
+    font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+}
+#ali-logo .logo,
+#ali-search .alisearch-basic li,
+#ali-search .alisearch-container,
+#ali-search .alisearch-arrow,
+#ali-search .alisearch-more,
+#ali-search .alisearch-ext{
+    background:url(http://img.china.alibaba.com/cms/upload/other/sys/masthead-v1.4.png) no-repeat -600px 100px;
+}/*update 110412*/
+#ali-logo,
+#ali-search{
+    float:left;
+}
+/* ali-logo */
+#ali-logo .logo{
+    width:367px;
+    height:38px;
+    margin-top:28px;
+    overflow:hidden;
+    background-position:-40px -50px;
+}
+#ali-logo .alibaba-logo{
+    float:left;
+    display:inline-block;
+    width:154px;
+    height:38px;
+    line-height:160px;
+    overflow:hidden;
+    margin-right:22px;
+}
+#ali-logo .sub-logo{
+    float:left;
+    display:inline-block;
+    height:34px;
+    text-decoration:none;
+    margin-top:3px;
+    font-weight:700;
+    cursor:pointer;
+}
+#ali-logo .sub-logo .sub-logo-txt{
+    font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,\534E\6587\7EC6\9ED1;
+    font-size:22px;
+    display:block;
+    color:#666;
+}
+#ali-logo .sub-logo .sub-logo-url{
+    -webkit-text-size-adjust:none;
+    font-size:10px;
+    font-family:Tahoma,Arial,sans-serif;
+    color:#999;
+}
+#ali-logo .sub-logo:hover .sub-logo-txt,
+#ali-logo .sub-logo:hover .sub-logo-url{
+    color:#ff7300;
+}

@@ -1,0 +1,215 @@
+/**
+ * æ≤Ã¨“≥√Êπ‹¿Ì
+ * @author : arcthur.cheny
+ * @createTime : 2011-09-19
+ */
+.booth-management {
+    margin-left: 18px;
+    padding-top: 12px;
+}
+
+.booth-management h3 {
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    height: 38px;
+}
+
+.booth-management .dcms-search-line-list-input li {
+    float: left;
+    padding-right: 12px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.booth-management .dcms-search-line-list-input select {
+    border: 1px solid #bdc7d8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    width: 115px;
+    height: 24px;
+}
+
+.booth-management .dcms-search-line-list-input .input-man {
+    width: 98px;
+}
+
+.booth-management .dcms-search-line-list-input .input-keywords {
+    width: 174px;
+}
+
+.booth-management .dcms-search-line-list-input .dcms-btn {
+    margin-top: 3px;
+}
+
+.dcms-grid tfoot td {
+    text-align: right;
+}
+
+.dcms-grid tbody td {
+    padding: 10px 0 10px 8px;
+    line-height: 1.2;
+    text-indent: 0;
+}
+
+.booth-management .current-key {
+    color: #06c;
+    font-weight: 700;
+}
+
+.dcms-form input[type =
+"text"], .dcms-input-text {
+    width: 218px;
+}
+
+.dcms-select {
+    width: 226px;
+}
+
+.dcms-form label {
+    width: 50px;
+}
+
+.dcms-form textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.checkbox {
+    vertical-align: middle;
+    height:18px;
+}
+
+.dcms-form label {
+    color: #666666;
+    display: inline-block;
+    margin-top: 0;
+    text-align: left;
+    vertical-align: top;
+    width: 50px;
+}
+
+.dcms-box-search {
+    color: #444444;
+    float: none;
+    padding-top: 6px;
+    padding-left: 0px;
+}
+
+.dcms-box-cell {
+    padding-bottom: 32px;
+}
+
+.dcms-box-cell-left {
+    padding: 4px;
+    width: 150px;
+    height: 250px;
+    margin-right: 24px;
+	 float: left;
+}
+
+.dcms-box-cell-left img {
+    width: 150px;
+    height: 250px;
+    vertical-align: bottom;
+}
+
+.dcms-box-cell-right .import {
+    margin-right: 4px;
+    padding: 4px 12px;
+    border: 1px solid #8aba56;
+    background: #8aba56;
+    font-weight: 700;
+    color: #f7f7f7;
+    vertical-align: top;
+}
+
+.dcms-box-cell-right div {
+    margin-bottom: 8px;
+}
+.dcms-box-cell-right{
+    float:left;
+    width:500px;
+}
+
+.dcms-box-search  .page-color .red {
+    background-position: 0 0;
+}
+.dcms-box-search  .page-color .red.selected {
+    background-position: 0 -14px;
+}
+.dcms-box-search  .page-color .blue {
+    background-position: -15px 0;
+}
+.dcms-box-search  .page-color .blue.selected {
+    background-position: -15px -14px;
+}
+.dcms-box-search  .page-color .green {
+    background-position: -30px 0;
+}
+.dcms-box-search .page-color .green.selected {
+    background-position: -30px -14px;
+}
+.dcms-box-search  .page-color .orange {
+    background-position: -45px 0;
+}
+.dcms-box-search .page-color .orange.selected {
+    background-position: -45px -14px;
+}
+.dcms-box-search  .page-color .other {
+    background-position: -60px 0;
+}
+.dcms-box-search .page-color .other.selected {
+    background-position: -60px -14px;
+}
+.dcms-box-search .page-color span {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background: url(http://img.china.alibaba.com/cms/upload/2012/500/472/274005_1357790532.png) no-repeat;
+    vertical-align: -2px;
+    cursor: pointer;
+}
+#template-setting {
+	width: 697px;
+	background: white;
+	border: 2px solid #CDDCEA;
+	-webkit-box-shadow: 0 0 0 1px #b0c6db inset;
+	-moz-box-shadow: 0 0 0 1px #b0c6db inset;
+	box-shadow: 0 0 0 1px #b0c6db inset;
+	padding: 10px;
+	z-index: 1000;
+	margin: 0;
+}
+.pic-desc{
+	display:inline-block;
+	padding: 0 4px;
+}
+#template-setting label {
+	width: 53px;
+	margin-top: auto;
+	vertical-align: middle;
+}
+#template-setting .label {
+	width:auto;
+}
+#template-setting .dcms-box-tag label {
+	vertical-align: top;
+}
+#template-setting .cancelBtn {
+    height: 23px;
+    padding-left: 22px;
+    padding-right: 22px;
+    color: #409ad6;
+    background-color: #f3f8fb;
+    border: 1px solid #7ba6c9;
+    border-bottom: 1px solid #374c7a;
+    font-weight: 700;
+    cursor: pointer;
+}	
+#template-setting .submit-btn {
+	padding-left: 22px;
+	padding-right: 22px;
+}

@@ -1,0 +1,7 @@
+/********* 数据统计控件 ColumStat 相关 css 样式  ************/
+.columStat ul{list-style:none;width:890px;zoom:1;margin:0 0 0 0;padding:0;}
+.columStat li{height:23px;line-height:23px;margin:0;padding:0;+margin-bottom:-4px}
+.columStat s{float:left;+display:inline;width:190px;text-decoration:none}
+.columStat u{float:left;+display:inline;text-decoration:none;margin-left:7px;font-weight:bold}
+.columStat i{float:right;+display:inline;margin-right:14px;font-style:normal;font-size:14px;font-weight:bold}
+.columStat div.thecolum{width:1px;height:10px;margin:5px 0px 0px 14px;float:left;+display:inline;overflow:hidden;border:1px solid #c00101;background:url(http://img.china.alibaba.com/images/cn/mov/20071224/video_bg_02.gif)}

@@ -1,0 +1,208 @@
+#businessCard_float_float_parent {
+	width: 420px;
+	height: 300px;
+	padding-top: 0px ;
+	padding-left: 8px ;
+	z-index:1000;
+	background: url("http://img.china.alibaba.com/cms/upload/2011/469/342/243964_748560284.png") no-repeat scroll 0 -48px transparent;
+}
+#businessCard_float_float_parent_close {
+	display: inline-block;
+	/*	cursor: auto; */
+	cursor: pointer;
+	width: 26px;
+	height: 19px;
+	margin-right: 20px;
+	margin-top: 6px;
+	float:right;
+	background: url("http://img.china.alibaba.com/cms/upload/2011/469/342/243964_748560284.png") no-repeat scroll -89px 0 transparent;
+}
+#businessCard_float_float {
+	background-color: white;
+	margin-top: 12px ;
+	_margin-top: 13px;
+	font-size: 12px;
+	height: 243px;
+	width: 400px;
+	float:left;
+	border: 1px solid #A3A1A1;
+}
+#businessCard_float_float_title {
+	height: 34px;
+	clear: both;
+	background: url("http://img.china.alibaba.com/cms/upload/2011/512/832/238215_748560284.png") repeat-x scroll 0 0 transparent;
+}
+#businessCard_float_float_title font {
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 15px;
+	line-height: 34px;
+}
+
+#businessCard_float_float_title a{
+	color: #000000;
+    font-weight: bold;
+	text-decoration: none;
+} 
+
+#businessCard_float_float_title span {
+	margin-left: 10px;
+	line-height: 34px;
+}
+#businessCard_float_person_content {
+	padding-bottom: 4px ;
+	margin-left: 15px;
+	padding-top: 7px;
+	margin-right: 15px;
+	margin-bottom: 7px;
+	border-bottom: 1px dotted #CDCDCD;
+}
+#businessCard_float_float_title .tplogo {
+	height: 18px;
+	margin-bottom: -4px;
+	margin-left: 9px;
+	_margin-bottom: -4px;
+	_margin-left: -4px;
+	_margin-top: 9px;
+}
+/*.clear {
+	clear: both;
+}
+a {
+	text-decoration: none;
+	color: #0048A2;
+}*/
+
+#businessCard_float_person_content a.alitalk {
+	background: url("http://img.china.alibaba.com/images/fdevlib/contact-icon.gif") no-repeat scroll 0 -5000px transparent;
+	padding-bottom: 2px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	_margin-top: 0px;
+	margin-top: -4px;
+	color: #00349A;
+	display: inline-block;
+	font-size: 12px;
+	height: 21px;
+	line-height: 21px;
+	padding-left: 21px;
+	vertical-align: middle;
+	width: 57px;
+	text-decoration: none !important;
+}
+#businessCard_float_person_content a.alitalk:hover {
+	color: #FF7300;
+	text-decoration: none;
+}
+#businessCard_float_person_content a.alitalk-on {
+	background-position: 0 -60px;
+}
+#businessCard_float_person_content a.alitalk-on:hover {
+	background-position: -90px -60px;
+}
+#businessCard_float_person_content a.alitalk-off {
+	background-position: 0 -30px;
+}
+#businessCard_float_person_content a.alitalk-off:hover {
+	background-position: -90px -30px;
+}
+#businessCard_float_person_content a.alitalk-mb {
+	background-position: 0 0;
+}
+#businessCard_float_person_content a.alitalk-mb:hover {
+	background-position: -90px 0;
+}
+#businessCard_float_float_personTitle .name_class {
+	font-size: 25px;
+	font-weight: bold;
+	color: #0048A2;
+	float: left;
+}
+#businessCard_float_float_personTitle ul {
+	margin-left: 3px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin-top: 16px;
+	list-style: none;
+	float: left;
+	vertical-align: bottom;
+}
+#businessCard_float_float_personTitle li {
+	padding-left: 4px;
+	float: left;
+	font-variant: normal;
+}
+#businessCard_float_personDetail table {
+	font-size: 12px;
+	margin-left: 15px;
+}
+#businessCard_float_personDetail .lock {
+	display: inline-block;
+	background: url("http://img.china.alibaba.com/cms/upload/2011/469/342/243964_748560284.png") repeat scroll -150px 0 transparent;
+	height: 14px;
+	width: 16px;
+}
+#businessCard_float_float_title .tp_year {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 4px;
+	width: 61px;
+	height: 26px;
+	text-indent: -100000px;
+	background: url("http://img.china.alibaba.com/cms/upload/2011/783/142/241387_748560284.png") no-repeat;
+}
+#businessCard_float_float_title .tp_year1 {
+	background-position: 0 -0px;
+}
+#businessCard_float_float_title .tp_year2 {
+	background-position: 0 -29px;
+}
+#businessCard_float_float_title .tp_year3 {
+	background-position: 0 -58px;
+}
+#businessCard_float_float_title .tp_year4 {
+	background-position: 0 -87px;
+}
+#businessCard_float_float_title .tp_year5 {
+	background-position: 0 -116px;
+}
+#businessCard_float_float_title .tp_year6 {
+	background-position: 0 -145px;
+}
+#businessCard_float_float_title .tp_year7 {
+	background-position: 0 -174px;
+}
+#businessCard_float_float_title .tp_year8 {
+	background-position: 0 -203px;
+}
+#businessCard_float_float_title .tp_year9 {
+	background-position: 0 -232px;
+}
+#businessCard_float_float_title .tp_year10 {
+	background-position: 0 -261px;
+}
+#businessCard_float_float_title .tp_year11 {
+	background-position: 0 -290px;
+}
+#businessCard_float_float_title .tp_year12 {
+	background-position: 0 -319px;
+}
+#businessCard_float_float_title .tp_year13 {
+	background-position: 0 -348px;
+}
+#businessCard_float_float_title .tp_year14 {
+	background-position: 0 -377px;
+}
+#businessCard_float_float_title .tp_year15 {
+	background-position: 0 -406px;
+}
+#businessCard_float_personDetail .col1 {
+	width: 36px;
+}
+#businessCard_float_person_content .enterprise {
+	display: inline-block;
+	width: 23px;
+	height: 16px;
+	background: url("http://img.china.alibaba.com/cms/upload/integrity/promotion/certificate2.gif") no-repeat scroll 0 0 transparent;
+}
+

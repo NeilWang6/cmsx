@@ -1,0 +1,9 @@
+/* loading */
+.dpl-loading{float: left; background-color: #fff; padding: 4px 20px; height: 24px; display: none; cursor: default; white-space:nowrap; 
+	 border-radius: 3px;}
+.dpl-loading .dpl-ico{float: left; display: inline; height: 24px; width: 24px;}
+.dpl-loading .dpl-txt{float: left; display: inline; padding: 3px 0 3px 12px; height: 18px; color: #999;}
+.dpl-loading-part{padding: 3px 12px; height: 18px;}
+.dpl-loading-part .dpl-ico{height: 18px; width: 18px; background-position: 1px 1px; 
+	border-radius: 2px;}
+.dpl-loading-part .dpl-txt{padding: 0 0 0 7px;}

@@ -1,0 +1,44 @@
+/*
+* 报名工具后台——活动页面
+* @author : wb_xiaojun.wangxj
+* @createTime : 2012-07-11
+*/
+.search-keywords {
+	position:absolute;
+	padding:0 4px;
+	width:350px;
+	height:300px;
+	overflow:auto;
+	background-color:#FFFFFF;
+	font-family: Tahoma,Arial,"宋体",sans-serif;
+    font-size: 13px;
+    left:700px;
+    top:70px;
+    display:none;
+    border:1px solid #bcc8d8;
+    z-index:1001;
+}
+		
+.web-suggestion {
+	display: inline;
+	margin:0px;
+}
+.web-suggestion li {
+	color:#999;
+	line-height:23px;
+	height:23px;
+	cursor:pointer;
+	list-style-type:none;
+}
+.web-suggestion .suggest-key {
+	color:#666;
+	float:left;
+	padding-left:4px;
+	font-weight:700;
+}
+
+.selected {
+	width:100%;
+	font-weight: bold ;
+	background-color:#e7edfb;
+}

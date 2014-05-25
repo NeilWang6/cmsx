@@ -1,0 +1,545 @@
+/**
+ * copied from app/search/v2.0/control/widget/search.purchase-assist-v2.css
+ * honglun.menghl 2011-11-6
+ */
+.purchaseAssist2 .searchS,
+.purchaseAssist2 .webww,
+.purchaseAssist2 .pa-head {
+background-image:url(http://img.china.alibaba.com/cms/upload/search/searchweb/beta/purchaseAssist-repeatX.png);
+background-repeat:repeat-x;
+}
+
+.purchaseAssist2 .min,
+.purchaseAssist2 .pa-delete,
+.purchaseAssist2 .pa-delete:hover,
+.purchaseAssist2 .preDisable,
+.purchaseAssist2 .nextDisable,
+.purchaseAssist2 .pre,
+.purchaseAssist2 .next,
+.purchaseAssist2 .pre:hover,
+.purchaseAssist2 .next:hover {
+background-image:url(http://img.china.alibaba.com/cms/upload/search/searchweb/beta/purchaseAssist.png);
+background-repeat:no-repeat;
+display:inline-block;
+}
+
+.pa-login {
+background-image:url(http://img.china.alibaba.com/cms/upload/search/searchweb/beta/purchaseAssist-repeatY.png);
+background-repeat:repeat-y;
+}
+
+.purchaseAssist2 {
+position:fixed;
+bottom:0;
+right:20px;
+height:26px;
+float:right;
+display:inline-block;
+z-index:999;
+_position:absolute;
+_top:expression(documentElement.scrollTop+documentElement.clientHeight-27+"px");
+box-shadow:0 0 5px #000;
+border-color:#999;
+border-style:solid;
+border-width:0 1px;
+margin:0 20px;
+}
+
+.purchaseAssist2 .mainTab {
+float:left;
+background-color:#fff;
+height:26px;
+border-top:1px solid #999;
+}
+
+.purchaseAssist2 .searchS ,
+.purchaseAssist2 .webww {
+text-align:center;
+height:23px;
+line-height:24px;
+width:99px;
+background-position:0 -1px;
+cursor:pointer;
+position:relative;
+z-index:1;
+margin:1px 0;
+}
+
+.purchaseAssist2 .mainTab .hover {
+background-image:none;
+}
+
+.purchaseAssist2 .lb {
+border-right:1px solid #999;
+}
+
+.purchaseAssist2 .avail {
+height:25px;
+top:-2px;
+background-position:0 0;
+line-height:28px;
+}
+
+.purchaseAssist2 .searchRecord,
+.purchaseAssist2 .searchOffer,
+.purchaseAssist2 .searchCompany {
+height:216px;
+border:1px solid #999;
+bottom:25px;
+_bottom:28px;
+overflow:hidden;
+background-color:#fff;
+position:absolute;
+}
+
+.purchaseAssist2 .searchRecord,
+.purchaseAssist2 .searchCompany {
+width:299px;
+left:-1px;
+display:none;
+}
+
+.purchaseAssist2 .searchOffer {
+width:474px;
+right:-1px;
+_right:-2px;
+display:none;
+}
+
+.purchaseAssist2 .pa-head {
+height:32px;
+line-height:32px;
+overflow:hidden;
+background-position:0 -30px;
+padding-left:14px;
+position:relative;
+}
+
+.purchaseAssist2 .min {
+height:17px;
+width:17px;
+display:inline-block;
+background-position:0 -60px;
+position:absolute;
+top:6px;
+right:7px;
+}
+
+.purchaseAssist2 .min:hover {
+background-position:0 -90px;
+}
+
+.purchaseAssist2 .searchRecordContent .noResult,
+.purchaseAssist2 .searchCompany .noResult {
+border:none;
+}
+
+.purchaseAssist2 .searchRecordContent {
+overflow:hidden;
+height:160px;
+position:relative;
+padding-left:10px;
+width:280px;
+}
+
+.purchaseAssist2 .searchRecordContent ul {
+position:relative;
+zoom:1;
+overflow:hidden;
+width:280px;
+}
+
+.purchaseAssist2 .searchRecordContent a span {
+color:#999;
+white-space:nowrap;
+word-break:keep-all;
+}
+
+.purchaseAssist2 .searchRecordContent .searchRecordTitle {
+color:#00349a;
+}
+
+.purchaseAssist2 .searchRecordContent a:hover,
+.purchaseAssist2 .searchCompany a:hover {
+text-decoration:none;
+}
+
+.purchaseAssist2 .searchRecordContent li,
+.purchaseAssist2 .searchCompany li {
+padding-left:8px;
+height:17px;
+line-height:17px;
+color:#999;
+float:left;
+border:1px solid #dcdcdc;
+margin-right:8px;
+margin-bottom:8px;
+white-space:nowrap;
+}
+
+.purchaseAssist2 .searchRecordContent .searchGo,
+.purchaseAssist2 .searchCompany .searchGo {
+display:inline-block;
+cursor:pointer;
+vertical-align:top;
+max-width:244px;
+overflow:hidden;
+}
+
+.purchaseAssist2 .searchRecordContent .mOver,
+.purchaseAssist2 .searchCompany .mOver {
+border:1px solid #FA6;
+color:#FF7300;
+}
+
+.purchaseAssist2 .searchRecordContent .mOver a,
+.purchaseAssist2 .searchCompany .mOver a,
+.purchaseAssist2 .searchRecordContent .mOver span,
+.purchaseAssist2 .searchCompany .mOver span {
+color:#FF7300;
+}
+
+.purchaseAssist2 .searchRecordContent .pa-delete,
+.purchaseAssist2 .searchCompany .pa-delete {
+background-position:0 1px;
+height:17px;
+width:15px;
+visibility:hidden;
+margin:0 1px 0 10px;
+}
+
+.purchaseAssist2 .searchOfferDetail .pa-delete {
+position:absolute;
+top:0;
+background-position:0 0;
+height:15px;
+width:15px;
+display:none;
+left:102px;
+box-shadow:2px 2px 2px #cacaca;
+}
+
+.purchaseAssist2 .searchRecordContent .pa-delete:hover,
+.purchaseAssist2 .searchCompany .pa-delete:hover {
+background-position:0 -29px;
+display:none;
+}
+
+.purchaseAssist2 .searchOfferDetail .pa-delete:hover {
+background-position:0 -30px;
+display:none;
+}
+
+.purchaseAssist2 .searchRecordContent .mOver .pa-delete,
+.purchaseAssist2 .searchOfferDetail .mOver .pa-delete,
+.purchaseAssist2 .searchRecordContent .mOver .pa-delete:hover,
+.purchaseAssist2 .searchOfferDetail .mOver .pa-delete:hover,
+.purchaseAssist2 .searchCompany .mOver .pa-delete,
+.purchaseAssist2 .searchCompany .mOver .pa-delete:hover {
+display:inline-block;
+visibility:visible;
+}
+
+.purchaseAssist2 .searchOfferContent {
+padding:10px 0 0 20px;
+}
+
+.purchaseAssist2 .pre,.purchaseAssist2 .next,
+.purchaseAssist2 .preDisable,.purchaseAssist2 .nextDisable {
+height:102px;
+width:12px;
+float:left;
+}
+
+.purchaseAssist2 .preDisable,.purchaseAssist2 .nextDisable {
+cursor:auto;
+}
+
+.purchaseAssist2 .pre {
+background-position:-20px -240px;
+}
+
+.purchaseAssist2 .preDisable {
+background-position:0 -240px;
+}
+
+.purchaseAssist2 .next {
+background-position:-20px -120px;
+}
+
+.purchaseAssist2 .nextDisable {
+background-position:0 -120px;
+}
+
+.purchaseAssist2 .pre:hover {
+background-position:-38px -240px;
+}
+
+.purchaseAssist2 .next:hover {
+background-position:-38px -120px;
+}
+
+.purchaseAssist2 .searchOfferDetail {
+width:410px;
+float:left;
+overflow:hidden;
+position:relative;
+}
+
+.purchaseAssist2 .searchOfferDetail ul {
+overflow:hidden;
+width:5000px;
+margin-left:26px;
+}
+
+.purchaseAssist2 .searchOffer li {
+height:155px;
+width:102px;
+float:left;
+margin-right:26px;
+position:relative;
+}
+
+.purchaseAssist2 .searchOffer .noResult {
+width:300px;
+}
+
+.purchaseAssist2 .searchOffer .noResult p {
+text-align:left;
+width:300px;
+color:#999;
+font-weight:400;
+}
+
+.purchaseAssist2 .offerImg {
+height:100px;
+width:100px;
+border:1px solid #cdcdcd;
+}
+
+.purchaseAssist2 .offerTitle {
+line-height:18px;
+display:block;
+height:36px;
+overflow:hidden;
+width:102px;
+}
+
+.purchaseAssist2 .searchOffer p {
+width:102px;
+line-height:18px;
+text-align:center;
+height:18px;
+overflow:hidden;
+color:red;
+font-weight:700;
+}
+
+.purchaseAssist2 .offerImg img {
+width:98px;
+height:98px;
+padding:1px;
+}
+
+.purchaseAssist2 .searchCompany p {
+color:#999;
+}
+
+.purchaseAssist2 .searchCompanyList {
+overflow:hidden;
+height:160px;
+padding-left:10px;
+width:280px;
+}
+
+.purchaseAssist2 .tips-box .tip-small-content {
+padding:3px 6px 5px;
+}
+
+.purchaseAssist2 .tip-small-close {
+display:none;
+}
+
+.purchaseAssist2 .tips-box .arrow-3 {
+bottom:-4px;
+}
+
+.purchaseAssist2 .pa-login {
+background-position:0 0;
+width:28px;
+border:1px solid #CCC;
+position:absolute;
+right:-36px;
+top:-217px;
+_top:-216px;
+display:none;
+}
+
+.purchaseAssist2 .pa-login div {
+line-height:13px;
+padding:10px 8px;
+}
+
+.purchaseAssist2 .pa-login div a {
+word-break: break-all;
+display:block;
+}
+
+.purchaseAssist2 .pa-login div a:hover,
+.purchaseAssist2 .pa-login div a:hover span {
+text-decoration:none;
+color:#ff7300;
+}
+
+.purchaseAssist2 .pa-login div a span {
+color:#666;
+}
+
+*html {
+background-image:url(about:blank);
+background-attachment:fixed;
+}
+
+/* add web wangwang honglun.menghl 2011-11-6 */
+.purchaseAssist2 .webww .unlogin ,
+.purchaseAssist2 .webww .logined ,
+.purchaseAssist2 .unread-amount ,
+.purchaseAssist2 .contacts-list .no-contact ,
+.purchaseAssist2 .contacts-list .no-login ,
+.purchaseAssist2 .list-container .uname ,
+.purchaseAssist2 .list-container .unread-count {
+    /*background:url(http://img.china.alibaba.com/cms/upload/2011/740/132/231047_426256670.png) no-repeat;*/
+    background:url(http://img.china.alibaba.com/cms/upload/2011/392/932/239293_426256670.gif) no-repeat;
+}
+.purchaseAssist2 .webww {
+    width:46px;
+}
+.purchaseAssist2 .webww .trigger {
+    display:block;
+    width:46px;
+    height:23px;
+    line-height:75px;
+    overflow:hidden;
+}
+.purchaseAssist2 .webww .unlogin {
+    background-position:14px -46px;
+}
+.purchaseAssist2 .webww .logined {
+    background-position:14px 4px;
+}
+.purchaseAssist2 .avail .unlogin {
+    background-position:14px -44px;
+}
+.purchaseAssist2 .avail .logined {
+    background-position:14px 6px;
+}
+.purchaseAssist2 .unread-amount {
+    display:none;
+    width:16px;
+    height:22px;
+    position:absolute;
+    top:-11px;
+    right:4px;
+    background-position:0 -100px;
+    color:#fff;
+    font-size:10px;
+    line-height:16px;
+    text-align:center;
+}
+.purchaseAssist2 .avail .unread-amount {
+    top:-9px;
+}
+.purchaseAssist2 .webww-contacts {
+    position:absolute;
+    bottom:25px;
+    _bottom:27px;
+    right:-1px;
+    width:198px;
+    border:1px solid #999;
+    background-color:#fff;
+}
+.purchaseAssist2 .webww-contacts .pa-head {
+    height:28px;
+    line-height:28px;
+    padding-left:16px;
+    font-weight:700;
+}
+.purchaseAssist2 .webww-contacts .pa-head .count{
+    font-weight:400;
+    margin-left:8px;
+}
+.purchaseAssist2 .contacts-list .no-contact ,
+.purchaseAssist2 .contacts-list .no-login {
+    height:16px;
+    padding:4px 0 0 35px;
+    line-height:16px;
+    background-position:16px -195px;
+    margin-bottom:8px;
+    color:#808080;
+}
+.purchaseAssist2 .rec-aliwwsoft {
+    width:182px;
+    margin:0 auto;
+    border-top:1px solid #ccc;
+    height:26px;
+    line-height:26px;
+}
+.purchaseAssist2 .rec-aliwwsoft a:link,
+.purchaseAssist2 .rec-aliwwsoft a:visited {
+    color:#0066cc;
+}
+.purchaseAssist2 .rec-aliwwsoft a:hover,
+.purchaseAssist2 .rec-aliwwsoft a:active {
+    color:#ff7300;
+}
+.purchaseAssist2 .list-container {
+    margin-bottom:8px;
+    max-height:240px;
+    overflow-y:auto;
+}
+.purchaseAssist2 .list-container li {
+    height:24px;
+    line-height:24px;
+    padding-left:16px;
+    color:#000;
+    cursor:pointer;
+}
+.purchaseAssist2 .list-container span{
+    cursor:pointer;
+}
+.purchaseAssist2 .list-container li a:link,
+.purchaseAssist2 .list-container li a:visited,
+.purchaseAssist2 .list-container li a:hover,
+.purchaseAssist2 .list-container li a:active {
+    color:#000;
+    text-decoration:none;
+}
+.purchaseAssist2 .list-container li.hover {
+    background-color:#f0f0f0;
+}
+.purchaseAssist2 .list-container .uname {
+    display:inline-block;
+    padding:0 14px 0 20px;
+    width:100px;
+    height:24px;
+    overflow:hidden;
+    float:left;
+}
+.purchaseAssist2 .list-container .online {
+    background-position:0 4px;
+}
+.purchaseAssist2 .list-container .offline {
+    background-position:0 -46px;
+}
+.purchaseAssist2 .list-container .unread-count {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    line-height:16px;
+    font-size:10px;
+    color:#fff;
+    text-align:center;
+    background-position:0 -150px;
+    float:left;
+    margin-top:4px;
+}

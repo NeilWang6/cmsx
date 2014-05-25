@@ -1,0 +1,579 @@
+/*
+ * @Author      changbin.wangcb
+ * @Date        2012.11.20
+ * @Description 行业应用/横向产品头部，迁移自 http://static.c.aliimg.com/sys/css/universal/header/industry-v5.css
+ * !!cmd:compress=true
+ */
+/*雅黑字体*/
+#ali-masthead-5h .ali-logo .sub-logo .sub-logo-txt{
+    font-family: "Microsoft YaHei", /* 微软雅黑，默认特殊标题字体 */
+                SimHei, /* 黑体，win下替换字体 */
+                "WenQuanYi Micro Hei", /* 文泉驿微米黑，unix/linux下替换字体 */
+                STHeiti;/* 华文黑体，mac os下替换字体 */
+}
+#ali-masthead-5h .alisearch-type ul,
+#ali-nav-5h .ali-nav-category .cat-title span.dropdown {
+    background: url(http://img.china.alibaba.com/cms/upload/2012/380/974/479083_1625054590.png) no-repeat;
+}
+
+/* 代理加盟 */
+.daili #ali-masthead-5h,
+.daili #ali-nav-5h,
+.daili #ali-nav-5h .ali h4,
+.daili #ali-masthead-5h .alisearch-action button {
+    background: url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/daili.png) no-repeat;
+}
+.daili #ali-masthead-5h .ali-masthead-container {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/daili-light.jpg) no-repeat 0 1px;
+}
+.daili #ali-masthead-5h .ali-logo .sub-logo-txt {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/daili-sub.png) no-repeat 0 1px;   
+}
+.daili #ali-masthead-5h {
+    background-color: #17788f;
+}
+.daili #ali-nav-5h {
+    background-color: #014051; 
+}
+.daili #ali-masthead-5h .main-logo {
+    border-right:1px solid #4aa8b8;
+}
+.daili #ali-masthead-5h .alisearch-box{
+    border-color: #163b59;
+}
+.daili #ali-nav-5h .ali-nav-category .cat-title {
+    background-color: #009bac;
+}
+.daili #ali-nav-5h .ali-nav-list .current {
+    background-color: #ff9d00;
+}
+.daili #ali-nav-5h .ali-nav-list a {
+    border-left-color: #255b6a; 
+}
+
+/* 产业带 */
+.ye #ali-masthead-5h,
+.ye #ali-nav-5h,
+.ye #ali-nav-5h .ali h4,
+.ye #ali-masthead-5h .alisearch-action button {
+    background:url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/ye.png) no-repeat;
+}
+.ye #ali-masthead-5h .ali-masthead-container {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/ye-light.jpg) no-repeat 0 1px;
+}
+.ye #ali-masthead-5h .ali-logo .sub-logo-txt {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/2012/723/684/486327_1625054590.png) no-repeat 0 1px;   
+}
+.ye #ali-masthead-5h {
+    background-color: #ae251a;
+}
+.ye #ali-nav-5h {
+    background-color: #610000; 
+}
+.ye #ali-masthead-5h .main-logo {
+    border-right:1px solid #d15f47;
+}
+.ye #ali-masthead-5h .alisearch-box{
+    border-color: #981510;
+}
+.ye #ali-nav-5h .ali-nav-category .cat-title {
+    background-color: #780000;
+}
+.ye #ali-nav-5h .ali-nav-list .current {
+    background-color: #f66300;
+}
+.ye #ali-nav-5h .ali-nav-list a {
+    border-left-color: #772424; 
+}
+.ye #ali-masthead-5h .ali-search {
+    width: 382px;
+}
+.ye #ali-masthead-5h .alisearch-type {
+    display: block;
+}
+.ye #ali-masthead-5h .alisearch-type ul {
+    width: 48px;
+}
+.ye #ali-masthead-5h .alisearch-type {
+    width: 82px;
+}
+
+/* 工业品品牌商城 */
+.imall #ali-masthead-5h,
+.imall #ali-nav-5h,
+.imall #ali-nav-5h .ali h4,
+.imall #ali-masthead-5h .alisearch-action button {
+    background:url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/imall.png) no-repeat;
+}
+.imall #ali-masthead-5h .ali-masthead-container {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/imall-light.jpg) no-repeat 0 1px;
+}
+.imall #ali-masthead-5h .ali-logo .sub-logo-txt {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/imall-sub.png) no-repeat 0 1px;   
+}
+.imall #ali-masthead-5h {
+    background-color: #3a6485;
+}
+.imall #ali-nav-5h {
+    background-color: #163b59; 
+}
+.imall #ali-masthead-5h .main-logo {
+    border-right:1px solid #6a96b2;
+}
+.imall #ali-masthead-5h .alisearch-box{
+    border-color: #163b59;
+}
+.imall #ali-nav-5h .ali-nav-category .cat-title {
+    background-color: #74a357;
+}
+.imall #ali-nav-5h .ali-nav-list .current {
+    background-color: #ff9d00;
+}
+.imall #ali-nav-5h .ali-nav-list a {
+    border-left-color: #375770; 
+}
+
+/* vip批发 */
+.vip #ali-masthead-5h,
+.vip #ali-nav-5h,
+.vip #ali-nav-5h .ali h4,
+.vip #ali-masthead-5h .alisearch-action button {
+    background:url(http://img.china.alibaba.com/cms/upload/2012/556/084/480655_1625054590.png) no-repeat;
+}
+.vip #ali-masthead-5h .ali-masthead-container {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/vip-light.jpg) no-repeat 0 1px;
+}
+.vip #ali-masthead-5h .ali-logo .sub-logo-txt {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/vip-sub.png) no-repeat 0 1px;   
+}
+.vip #ali-masthead-5h {
+    background-color: #7d4827;
+}
+.vip #ali-nav-5h {
+    background-color: #48210e; 
+}
+.vip #ali-masthead-5h .main-logo {
+    border-right:1px solid #aa8267;
+}
+.vip #ali-masthead-5h .alisearch-box{
+    border-color: #6d3817;
+}
+.vip #ali-nav-5h .ali-nav-category .cat-title {
+    background-color: #e5504c;
+}
+.vip #ali-nav-5h .ali-nav-list .current {
+    background-color: #f0d8aa;
+}
+.vip #ali-nav-5h .ali-nav-list .current a {
+    color: #6a3c31!important;
+}
+.vip #ali-nav-5h .ali-nav-list a {
+    border-left-color: #624030; 
+}
+
+/* 样品中心 */
+.yang #ali-masthead-5h,
+.yang #ali-nav-5h,
+.yang #ali-nav-5h .ali h4,
+.yang #ali-masthead-5h .alisearch-action button {
+    background:url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/yang.png) no-repeat;
+}
+.yang #ali-masthead-5h .ali-masthead-container {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/yang-light.jpg) no-repeat 0 -1px;
+}
+.yang #ali-masthead-5h .ali-logo .sub-logo-txt {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/yang-sub.png) no-repeat 0 1px;   
+}
+.yang #ali-masthead-5h {
+    background-color: #00709f;
+}
+.yang #ali-nav-5h {
+    background-color: #003f5a; 
+}
+.yang #ali-masthead-5h .main-logo {
+    border-right:1px solid #3899c1;
+}
+.yang #ali-masthead-5h .alisearch-box{
+    border-color: #0c5060;
+}
+.yang #ali-nav-5h .ali-nav-category .cat-title {
+    background-color: #239bcf;
+}
+.yang #ali-nav-5h .ali-nav-list .current {
+    background-color: #ff9d00;
+}
+.yang #ali-nav-5h .ali-nav-list a {
+    border-left-color: #245a71; 
+}
+.yang #ali-masthead-5h .ali-search {
+    width: 384px;
+}
+.yang #ali-masthead-5h .alisearch-type {
+    display: block;
+    width: 84px;
+}
+.yang #ali-masthead-5h .alisearch-type ul {
+    width: 48px;
+}
+
+/* 酒店管理 */
+.jiudian #ali-masthead-5h,
+.jiudian #ali-nav-5h .ali h4,
+.jiudian #ali-masthead-5h .alisearch-action button {
+    background:url(http://img.china.alibaba.com/cms/upload/2012/531/084/480135_1625054590.png) no-repeat;
+}
+.jiudian #ali-masthead-5h .ali-masthead-container {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/detail/lateral/yebg/jiudian-light.jpg) no-repeat 0 0;
+}
+.jiudian #ali-masthead-5h .ali-logo .sub-logo-txt {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/2012/331/084/480133_1625054590.png) no-repeat 0 1px;   
+}
+.jiudian #ali-masthead-5h {
+    background-color: #e3e3e7;
+}
+.jiudian #ali-nav-5h {
+    background-color: #a33f32; 
+}
+.jiudian #ali-masthead-5h .main-logo {
+    border-right:1px solid #bfbeaf;
+}
+.jiudian #ali-masthead-5h .alisearch-box{
+    border-color: #cccdce;
+}
+.jiudian #ali-nav-5h .ali-nav-category .cat-title {
+    background-color: #ac4638;
+}
+.jiudian #ali-nav-5h .ali-nav-list .current {
+    background-color: #513531;
+}
+.jiudian #ali-nav-5h .ali-nav-list a {
+    border-left-color: #863d33; 
+}
+.jiudian .ali-search .hot-keywords a:link, 
+.jiudian .ali-search .hot-keywords a:visited {
+    color: #4a4a4a;
+}
+
+/* 加工定制 */
+.jiagong #ali-masthead-5h,
+.jiagong #ali-nav-5h,
+.jiagong #ali-masthead-5h .alisearch-action button {
+    background:url(http://img.china.alibaba.com/cms/upload/2012/862/994/499268_1625054590.png) no-repeat;
+}
+.jiagong #ali-masthead-5h .ali-masthead-container {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/2012/072/994/499270_1625054590.png) no-repeat 0 0;
+}
+.jiagong #ali-masthead-5h .ali-logo .sub-logo-txt {
+    background: transparent url(http://img.china.alibaba.com/cms/upload/2012/962/994/499269_1625054590.png) no-repeat 0 1px;   
+}
+.jiagong #ali-masthead-5h {
+    background-color: #55646d;
+}
+.jiagong #ali-nav-5h {
+    background-color: #2f3b43; 
+}
+.jiagong #ali-masthead-5h .main-logo {
+    border-right:1px solid #869299;
+}
+.jiagong #ali-masthead-5h .alisearch-box{
+    border-color: #46555f;
+}
+.jiagong #ali-nav-5h .ali-nav-category .cat-title {
+    background-color: #c47505;
+}
+.jiagong #ali-nav-5h .ali-nav-list .current {
+    background-color: #e39b2a;
+}
+.jiagong #ali-nav-5h .ali-nav-list a {
+    border-left-color: #4c575e; 
+}
+.jiagong .ali-search .hot-keywords a:link, 
+.jiagong .ali-search .hot-keywords a:visited {
+    color: #fff;
+}
+.jiagong #ali-masthead-5h .alisearch-action button.global {
+    text-indent: -9999px;
+}
+.jiagong #ali-masthead-5h .ali-search {
+    width: 360px;
+}
+.jiagong #ali-masthead-5h .alisearch-type {
+    display: block;
+}
+
+#header #ali-masthead-5h {
+    background-repeat: repeat-x;
+    background-position: 0 -60px;
+}
+#ali-masthead-5h .ali-masthead-container{
+    padding:16px 0px;
+    height:58px;
+    _overflow:hidden;
+}
+#ali-masthead-5h .ali-logo{
+    float:left;
+    margin-top:4px;
+}
+#ali-masthead-5h .main-logo {
+    float:left;
+    margin:4px 16px 4px 0;
+    padding-right:14px;
+    width:152px;
+    height:38px;
+    text-decoration:none;
+}
+#ali-masthead-5h .ali-logo .sub-logo {
+    float:left;
+    margin: 4px 0;
+    width:160px;
+    height:38px;
+}
+#ali-masthead-5h .ali-logo .sub-logo .sub-logo-txt {
+    display: block;
+    width: 160px;
+    height: 38px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+#ali-masthead-5h .ali-logo a:link,
+#ali-masthead-5h .ali-logo a:visited{
+    color:#fff;
+    text-decoration: none;
+}
+#ali-masthead-5h .ali-logo a:hover{
+    color:#FF7300;
+    text-decoration: none;
+}
+
+/* 活动推广容器 */
+#ali-masthead-5h .ali-slogan {
+    float: left;
+}
+
+/* 搜索 */
+#ali-masthead-5h .ali-search {
+    display: block;
+    float:right;
+    padding:4px 0;
+    width:300px;
+    zoom: 1;
+}
+#ali-masthead-5h legend{
+    display: none;
+}
+#ali-masthead-5h .alisearch-container{
+    height: 30px;
+}
+#ali-masthead-5h .alisearch-box,
+#ali-masthead-5h .alisearch-type,
+#ali-masthead-5h .alisearch-keywords,
+#ali-masthead-5h .alisearch-action{
+    float: left;
+}
+#ali-masthead-5h .alisearch-box{
+    height: 28px;
+    border: 1px solid #163b59;
+}
+#ali-masthead-5h .alisearch-type {
+    display: none;
+}
+#ali-masthead-5h .alisearch-type {
+    position: relative;
+    width: 60px;
+    height: 28px;
+    z-index: 101;
+}
+#ali-masthead-5h .alisearch-type ul {
+    position: absolute;
+    height: 28px;
+    width: 24px;
+    padding: 0 26px 0 10px;
+    background-color: #F5F5F5;
+    background-position: right -35px;
+    overflow: hidden;
+}
+#ali-masthead-5h .alisearch-type ul.hover {
+    height: auto;
+    background-position: right -77px;
+    z-index: 102;
+}
+#ali-masthead-5h .alisearch-type li{
+    height: 28px;
+    line-height: 28px;
+    *line-height: 30px;
+}
+#ali-masthead-5h .alisearch-type li a{
+    color:#333!important;
+}
+#ali-masthead-5h .alisearch-type li a:hover{
+    color:#333!important;
+}
+#ali-masthead-5h .alisearch-keywords {
+    padding:4px 4px;
+    width:220px;
+    height:20px;
+    background-color:#fff;
+}
+#ali-masthead-5h .alisearch-keywords input {
+    position: relative;
+    width: 219px;
+    height: 20px;
+    *height: 18px;
+    line-height: 1.5;
+    line-height: 24px\0;
+    overflow: hidden;
+    border: 0 none;
+    z-index: 998;
+}
+#ali-masthead-5h .alisearch-keywords input.empty {
+    color:gray;
+}
+#ali-masthead-5h .alisearch-action button{
+    float:left;
+    width:70px;
+    height:30px;
+    line-height:30px;
+    *line-height: 31px;
+    overflow:hidden;
+    border:0 none;
+    cursor:pointer;
+    color:#FFF;
+    font-size:12px;
+    text-align: left;
+}
+#ali-masthead-5h .alisearch-action button.market{
+    display: none;
+}
+#ali-masthead-5h .alisearch-action button.global{
+    padding-left: 27px;
+    background-position: 0 0;
+}
+#ali-masthead-5h .alisearch-action button.global:hover{
+    background-position: 0 -30px;
+}
+.ali-search .hot-keywords{
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.ali-search .hot-keywords a{
+    margin: 0 4px 0 10px;
+}
+.ali-search .hot-keywords a:link,
+.ali-search .hot-keywords a:visited{
+    color: #fff;
+}
+.ali-search .hot-keywords a:hover{
+    color: #ff7300;
+    text-decoration: underline;
+}
+
+/* alinav */
+#header #ali-nav-5h {
+    background-position: 0 -150px;
+    background-repeat: repeat-x;
+    height: 36px;
+}
+#ali-nav-5h .ali-nav-container {
+    height: 36px;
+}
+#ali-nav-5h .ali-nav-category {
+    position: relative;
+    float: left;
+}
+#ali-nav-5h .ali-nav-category .cat-title {
+    position: relative;
+    width: 200px;
+    height: 36px;
+    background-color: #74a456;
+    overflow: hidden;
+}
+#ali-nav-5h .ali-nav-category .cat-title h3{
+    padding: 6px 10px;
+    height: 24px;
+    line-height: 24px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+#ali-nav-5h .ali-nav-category .cat-title span.eng {
+    display: inline-block;
+    margin-left: 4px;
+    line-height: 24px;
+    -webkit-text-size-adjust:none;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+}
+#ali-nav-5h .ali-nav-category .cat-title span.dropdown {
+    background-position: 0 0;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    display: none;
+    width: 15px;
+    height: 15px;
+}
+#ali-nav-5h .ali-nav-category .cat-content {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    display: none;
+    width: 200px;
+}
+#ali-nav-5h .hover .cat-content {
+    display: block;
+    z-index: 1000;
+}
+#ali-nav-5h .ali-nav-list{
+    float: left;
+    height: 36px;
+    overflow: hidden;
+    font-size: 14px;
+}
+#ali-nav-5h .ali-nav-list ul {
+    margin-left: -1px;
+}
+#ali-nav-5h .ali-nav-list ul,
+#ali-nav-5h .ali-nav-list li{
+    float: left;
+}
+#ali-nav-5h .ali-nav-list a{
+    margin: 7px 0;
+    display: block;
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    border-left: 1px solid #426481;
+    text-align: center;
+}
+#ali-nav-5h .ali-nav-list a:link,
+#ali-nav-5h .ali-nav-list a:visited{
+    color: #fff;
+}
+#ali-nav-5h .ali-nav-list a:hover{
+    color: #ff7300;
+    text-decoration: underline;
+}
+#ali-nav-5h .ali-nav-list .current {
+    position: relative;
+    margin-right: -1px;
+    background-color: #FF9D00;
+    font-weight: 700;
+}
+#ali-nav-5h .ali-nav-list .current a{
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    border-left: 0 none;
+    color: #fff!important;
+    text-decoration: none;
+    cursor: default;
+}
+#ali-nav-5h .ali-nav-promotion {
+    float: right;
+    display: none;
+}

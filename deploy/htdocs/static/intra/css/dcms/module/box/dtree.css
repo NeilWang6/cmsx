@@ -1,0 +1,94 @@
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landr               |
+|--------------------------------------------------*/
+
+.dtree {
+	color: #666;
+	white-space: nowrap;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+	margin-left: 4px;
+}
+.dtree a.node:hover, .dtree a.elem:hover {
+	color: #409ad6;
+	text-decoration: underline;
+	 
+}
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+.dtree .clip {
+	overflow: hidden;
+}
+.dtree .checkbox {
+    box-sizing: border-box;
+}
+.dtree a.leaf{
+    display:inline-block;
+    margin-left: 4px;
+}
+.dtree a.selected{
+    background-color:#234691;
+   
+}
+
+.mmTree {
+    position: absolute;
+    border: 1px solid #999;
+    background-color: #fff;
+    min-width: 150px;
+    padding: 4px;
+    z-index: 1000;
+    border-radius: 4px 4px 4px 4px;
+}
+.mmTree .head,.mmTree .foot {
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 4px;
+    background-color: #fff;
+}
+.mmTree .foot{
+    margin-top:8px;
+}
+.mmTree .foot button{
+    float: right;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    height: 23px;
+    line-height: 20px;
+    padding: 0 8px;
+    border: 1px solid #A0A0A0;
+    color: #494949;
+}
+.mmTree .head .label {
+    display: inline-block;
+    line-height: 24px;
+}
+.mmTree .head .close-btn {
+    float: right;
+    line-height: 24px;
+    width:24px;
+    text-align:center;
+    padding: 0px 4px;
+    cursor: pointer;
+}
+.mmTree .tree-body{
+    overflow-y:scroll;
+    max-height: 300px;
+    max-width:200px;
+}
+ 

@@ -1,0 +1,79 @@
+$rundata.setLayout('default.vm') 
+<div class="dcms-box-body fd-clr"> 
+	<!-- header begin -->
+    <div class="head">
+        <ul class="tabs-a-topics"> 
+           <li #if($!resourceType=='url' || '$!resourceType'=='') class="current"#end><a href="manage_url_list.htm?action=AclPermissionAction&event_submit_do_permission_list=true&resourceType=url">URL资源</a></li>
+           <li #if($!resourceType=='action') class="current"#end><a href="manage_url_list.htm?action=AclPermissionAction&event_submit_do_permission_list=true&resourceType=action">Action资源</a></li>
+        </ul>
+		<form method="post" id="js-search-page" name="" action="">
+			<input type="hidden" name="action" value="AclPermissionAction">
+			<input type="hidden" name="event_submit_do_permission_list" value="true" id="dcms-form-event-type">
+			<input type="hidden" name="page" id="js-page-num" value="1">
+			<input type="hidden" id="listPageResourceType" name="resourceType" value="$!resourceType">
+            <div class="searchbar">
+        	   <select name="appName">
+ 					<option value="">系统名称</option>
+					<option value="cmsx" #if("$!appName" == "cmsx") selected #end >案例库</option> 						
+				</select> 				 
+				<input type="text" class="keyword" name="name" id="name" placeholder="请输入关键字" value="$!name"/>
+				
+				<input type="submit" class="search-btn btn-basic btn-gray" id="search-btn" value="搜索"/>
+				<a  class="btn-basic btn-blue" id="add_permission" >添加</a>
+             </div>
+             <div class="sortbar"> 
+                <div class="simple-page">
+                    #unifiedPageSimpleList($paginator)
+                </div>			
+	        </div> 
+	 	</form>
+    </div>
+	<!-- header end -->
+	<!-- body begin -->
+	<div class="pl-body fd-clr">
+	 	<div class="dcms-box-list">
+			#if($list && $list.size() > 0)
+				<table  class="page-tab table-sub">
+					<thead>
+						<tr>
+							<th class="name">名称</th>
+							<th class="system">所属系统</th>							
+							<th class="url">URL</th>
+                            <th class="code">CODE</th>								
+							<th class="operator">操作</th>
+						</tr>
+					</thead>
+					<tbody class="page-body">		
+					   #foreach( $resource in $list)
+						<tr>     
+							   <td class="des">$!resource.name</td>
+								<td class="system">
+									$!resource.appName
+								</td>
+								<td class="url">
+									$!resource.url
+								</td>
+								<td class="code">$!resource.code</td>
+								
+								<td class="operator">
+									<a class="js-modification operate-btn"  data-id="$!{resource.id}">修改</a>
+									<a class="js-delete operate-btn" data-status="invalid" data-id="$!{resource.id}">删除</a>
+						            
+								</td>
+						</tr>
+						#end
+					</tbody>
+				</table>
+			#else
+				<div class="dcms-box-no-result">目前没有权限信息!</div>
+			#end
+		</div>
+     </div>
+     <!-- body end -->
+	 #if( $paginator && $paginator.pages>0 )
+		<div class="pages fd-clr" align="center">
+			#unifiedPageList($paginator, 5)
+		</div>
+	 #end 
+</div> 
+ 

@@ -53,7 +53,7 @@
     <!-- Dal/biz配置。 --> 
     <beans:import resource="classpath:cmsx/dal/data-source.xml" />
     <beans:import resource="classpath:cmsx/dal/dao.xml" />
-    <beans:import resource="classpath:cmsx/biz/manager.xml" />
+    <beans:import resource="classpath:cmsx/biz/biz-acl.xml" />
 
     <!-- 综合设置。 -->
     <services:webx-configuration>

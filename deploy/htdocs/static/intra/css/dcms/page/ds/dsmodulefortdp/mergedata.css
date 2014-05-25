@@ -1,0 +1,15 @@
+/**
+ * create by quxiao for create/modify mergedata on 2012.07.30
+ */
+
+.dcms-content .readonly-field {
+	background-color: #E6EFFB; 
+}
+
+.dcms-content .edit-field {
+	background-color: #FFFFFF; 
+}
+
+.dcms-content .merged-data {
+	background-color: #E8979B; 
+}

@@ -1,0 +1,2 @@
+var jsonUsers= $!{jsonUsers};
+displayUsers(jsonUsers);

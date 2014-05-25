@@ -1,0 +1,28 @@
+.dcms-module-type {
+	margin: 0px auto;
+}
+.dcms-form input[type='text'] {
+	width: 250px;
+}
+.dcms-form textarea {
+	height: 200px;
+	width: 500px;
+}
+.dcms-form .btn {
+	color: #fff;
+}
+.operate-area {
+	margin: 0px auto;
+	width: 300px;
+}
+
+.dcms-form label {
+	width: 120px;
+}
+#box_choose_level{
+	display:none;
+}
+.tip{
+	color:red;
+	font-weight: bold;
+}

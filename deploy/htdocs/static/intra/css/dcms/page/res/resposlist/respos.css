@@ -1,0 +1,104 @@
+/**
+ * 资源位管理：列表搜索页面，新增/编辑，查找相关页面，设置数据
+ * @author: wb-zhangchunyi
+ * @Date: 2014-01-29
+ */
+
+.list-tab-t #page {
+	display: none;
+}
+
+.res-search-form li {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	padding-right: 12px;
+}
+
+.res-input-name {
+	width: 145px;/*110px*/
+}
+
+.res-input-url {
+	width: 145px;/*320px*/
+}
+
+.search-body-list .sortbar {
+	margin: 10px 20px 10px 0;
+}
+
+.table-sub {
+	line-height: 35px;
+}
+
+.dcms-grid thead tr {
+	line-height: 38px;
+}
+
+.dcms-grid .word-all {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.res-dialog-add {
+	margin-left: 90px;
+}
+.res-dialog-add .row{
+	margin-top: 10px;
+}
+.res-dialog-add .row .label{
+	display:inline-block;
+	width:100px;
+	text-align: right;
+}
+.res-dialog-add .res-name-text {
+	width: 185px;
+}
+
+.dialog-search-pages .search-res-pages .res-basic-info {
+	margin-left: 25px;
+}
+
+.dialog-search-pages .search-res-pages .res-basic-info-span {
+	margin-right: 30px;
+}
+
+.dialog-search-pages .search-res-pages .dialog-content-center {
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.dialog-search-pages .search-res-pages .publish-content {
+	margin-top: 10px;
+	max-height: 400px;
+}
+
+.publish-dialog .publish-content table  thead tr {
+	line-height: 1.5em;
+}
+
+.publish-dialog .publish-content tbody td {
+	border: 0px solid #E2E2E2;
+	border-bottom: 1px solid #D8DBE1;
+}
+
+.dialog-basic .simple .icon-fail {
+	background: url("http://img.china.alibaba.com/cms/upload/2013/905/386/683509_133354742.png") no-repeat 0 -100px;
+}
+
+.dialog-basic .simple .icon-fail {
+	float: left;
+	width: 36px;
+	height: 36px;
+}
+.ext-width {
+	width: auto !important;
+	min-width: 500px;
+}
+.cms-body,.join-datasource{
+	display:none;
+}
+.dialog-basic  .add-btn{
+	display:none;
+}

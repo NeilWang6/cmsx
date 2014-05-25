@@ -1,0 +1,219 @@
+#businessCard_little_float .businessCard_member_lock , #businessCard_little_float .businessCard_sns_follow_null, #businessCard_little_float .businessCard_sns_follow_friend, #businessCard_little_float .businessCard_sns_follow_followed ,#businessCard_little_float .businessCard_sns_follow_mutualFollowed{
+	background: url("http://img.china.alibaba.com/cms/upload/2012/736/553/355637_936034060.png") no-repeat scroll 0 -5000px transparent;
+}
+
+#businessCard_little_float .businessCard_word_break{
+	word-break:keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:block;
+}
+#businessCard_little_float .businessCard_member_lock {
+	background-position: 0px -298px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+#businessCard_little_float span {
+	color: #333333;
+}
+#businessCard_little_float {
+	border: 1px solid #d9d9d9;
+	height: 100px;
+	width: 270px;
+	background-color: #e0e6f0;
+	padding: 5px;
+	font: 12px/20px Tahoma, Arial, "ËÎÌו", sans-serif;
+}
+#businessCard_little_float a {
+	text-decoration: none;
+}
+#businessCard_little_float img{
+	border: 0px;
+}
+#businessCard_little_float .businessCard_member_info {
+	height: 66px;
+	width: 260px;
+	margin: 0px;
+	padding: 4px;
+	background-color: #FFFFFF;
+}
+#businessCard_little_float .businessCard_member_pic {
+	float: left;
+	margin-right: 10px;
+}
+#businessCard_little_float .businessCard_member_baseinfo {
+	float: left;
+	width: 180px;
+}
+#businessCard_little_float .businessCard_member_name{
+	color: #336699;
+	width: 65px;
+	float: left;
+}
+#businessCard_little_float .businessCard_member_name span{
+	color: #336699;
+}
+#businessCard_little_float .businessCard_member_department {
+	color: #999999;
+	width: 90px;
+	margin-left:18px;
+	float: left;
+}
+#businessCard_little_float .businessCard_member_companyname {
+	float: left;
+	width: 164px;
+}
+#businessCard_little_float .businessCard_member_tpicon {
+	float: left;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+#businessCard_little_float .businessCard_member_mobileno {
+	clear: both;
+	line-height: 18px;
+}
+#businessCard_little_float .businessCard_member_login_float span {
+	color: #336699;
+}
+#businessCard_little_float .businessCard_member_contact {
+	height: 21px;
+	width: 264px;
+	padding: 4px 2px;
+}
+#businessCard_little_float .businessCard_alitalk {
+	float: left;
+}
+#businessCard_little_float .businessCard_sns {
+	float: right;
+	height: 22px;
+	position: relative;
+}
+#businessCard_little_float .businessCard_sns a {
+	text-decoration: none;
+	display: block;
+	height: 20px;
+	float: right;
+}
+#businessCard_little_float .businessCard_sns s {
+	display: inline-block;
+	width:12px;
+	height:16px;
+	position: absolute;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+#businessCard_little_float .businessCard_sns .businessCard_sns_follow_cancel {
+	border-left: 1px solid #b7b9bb;
+	padding-left: 8px;
+	margin-right: 11px;
+	color: #336699;
+}
+#businessCard_little_float .businessCard_sns_follow_status {
+	margin-left: 18px;
+}
+#businessCard_little_float .businessCard_sns_follow_null {
+	background-position: 5px -394px;
+	background-color: #75a0e7;
+	height:20px;
+	width: 57px;
+	display: none;
+	border: 1px solid #5377b2;
+}
+#businessCard_little_float .businessCard_sns_follow_null a {
+	color: #FFFFFF;
+	float: left;
+}
+#businessCard_little_float .businessCard_sns_follow_null span {
+	color: #FFFFFF;
+}
+#businessCard_little_float .businessCard_sns_follow_friend {
+	background-position: 5px -374px;
+	display: none;
+	height: 20px;
+	width: 68px;
+	background-color: #75a0e7;
+	border: 1px solid #5377b2;
+}
+#businessCard_little_float .businessCard_sns_follow_friend a {
+	color: #FFFFFF;
+	float: left;
+}
+#businessCard_little_float .businessCard_sns_follow_friend span {
+	color: #FFFFFF;
+}
+#businessCard_little_float .businessCard_sns_follow_friend .businessCard_sns_follow_status {
+	border-left: 1px solid #6082b8;
+	padding-left: 8px;
+	margin-left: 20px;
+}
+#businessCard_little_float .businessCard_sns_follow_mutualFollowed {
+	background-position: 5px -356px;
+	border: 1px solid #aeaeae;
+	background-color: #f1f1f1;
+	color: #FFFFFF;
+	width: 122px;
+	height: 20px;
+	display: none;
+}
+#businessCard_little_float .businessCard_sns_follow_mutualFollowed .businessCard_sns_follow_status {
+	color: #666666;
+	margin-left: 22px;
+	padding-right: 4px;
+	float: left;
+}
+
+#businessCard_little_float .businessCard_sns_follow_followed {
+	background-position: 5px -434px;
+	border: 1px solid #aeaeae;
+	background-color: #f1f1f1;
+	color: #FFFFFF;
+	width: 108px;
+	height:20px;
+	display: none;
+}
+#businessCard_little_float .businessCard_sns_follow_followed .businessCard_sns_follow_status {
+	color: #666666;
+	margin-left: 20px;
+	padding-right: 4px;
+	float: left;
+}
+
+#businessCard_little_float a.alitalk {
+	background: url("http://img.china.alibaba.com/images/fdevlib/contact-icon.gif") no-repeat scroll 0 -5000px transparent;
+	color: #00349A;
+	display: inline-block;
+	font-size: 12px;
+	height: 21px;
+	line-height: 21px;
+	margin-bottom: 0;
+	padding-bottom: 2px;
+	padding-left: 21px;
+	padding-top: 0;
+	text-decoration: none !important;
+	vertical-align: middle;
+	width: 57px;
+}
+#businessCard_little_float a.alitalk:hover {
+	color: #FF7300;
+	text-decoration: none;
+}
+#businessCard_little_float a.alitalk-on {
+	background-position: 0 -60px;
+}
+#businessCard_little_float a.alitalk-on:hover {
+	background-position: -90px -60px;
+}
+#businessCard_little_float a.alitalk-off {
+	background-position: 0 -30px;
+}
+#businessCard_little_float a.alitalk-off:hover {
+	background-position: -90px -30px;
+}
+#businessCard_little_float a.alitalk-mb {
+	background-position: 0 0;
+}
+#businessCard_little_float a.alitalk-mb:hover {
+	background-position: -90px 0;
+}

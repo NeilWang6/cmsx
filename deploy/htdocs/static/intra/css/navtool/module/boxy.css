@@ -1,0 +1,101 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+.boxy-wrapper {
+	position: absolute;
+}
+.boxy-wrapper.fixed {
+	position: fixed;
+}
+
+/* Modal */
+
+.boxy-modal-blackout {
+	position: absolute;
+	background-color:#CCC;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+}
+/* Border */
+
+.boxy-wrapper {
+	empty-cells: show;
+}
+.boxy-wrapper .top-left,
+.boxy-wrapper .top-right,
+.boxy-wrapper .bottom-right,
+.boxy-wrapper .bottom-left {
+	width: 2px;
+	height: 2px;
+	padding: 0;
+}
+
+.boxy-wrapper .top-left, .boxy-wrapper .top-right, .boxy-wrapper .bottom-right, .boxy-wrapper .bottom-left, .boxy-wrapper .top,.boxy-wrapper .bottom
+,.boxy-wrapper .left, .boxy-wrapper .right,.boxy-wrapper .title-bar{
+	background-color:#5881D6;
+}
+
+.boxy-wrapper .top,
+.boxy-wrapper .bottom {
+	height: 2px;
+	padding: 0;
+}
+
+.boxy-wrapper .left,
+.boxy-wrapper .right {
+	width: 2px;
+	padding: 0;
+}
+
+/* Title bar */
+
+.boxy-wrapper .title-bar {
+	padding: 6px;
+	position: relative;
+}
+.boxy-wrapper .title-bar.dragging {
+	cursor: move;
+}
+.boxy-wrapper .title-bar h2 {
+	font-size: 12px;
+	color: white;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+.boxy-wrapper .title-bar .boxy-close {
+	color: white;
+	position: absolute;
+	top:2px;
+	right: 16px;
+	font-size: 90%;
+}
+/*.close¸ÄÎª.boxy-close modifyed by lenny ÓëELF³åÍ» */
+/* Content Region */
+
+.boxy-inner {
+	background-color: white;
+	padding: 0;
+/*
+	width: 500px;
+	background-color: rgba(22, 22, 22, 0.7);
+	padding: 5px;*/
+}
+
+.boxy-content {
+	padding: 15px;
+}
+
+/* Question Boxes */
+
+.boxy-wrapper .question {
+	width: 350px;
+	min-height: 80px;
+}
+.boxy-wrapper .answers {
+	text-align: right;
+}

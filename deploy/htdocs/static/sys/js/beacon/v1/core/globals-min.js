@@ -1,0 +1,1 @@
+(function(){var a=true;if(window.MAGNETO===undefined){MAGNETO={};a=false}MAGNETO.globals={win:window,doc:document,opener:opener,pageId:null,jsUrlRoot:"http://style.c.aliimg.com/sys/js/beacon/v1/",customize:window.WolfSmoke||{},protocol:document.location.protocol,isConflicted:a,version:"44"}})();

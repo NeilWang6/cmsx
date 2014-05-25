@@ -1,0 +1,31 @@
+
+.content{overflow: hidden;width:990px;}
+#demo-tabs-1{width:990px;}
+.form-vertical{margin-top:15px;float:left;}
+.form-vertical .item-form .topic{width:90px;}
+.form-vertical .item-form select{width:220px;}
+.form-vertical dl.item-form dd{padding-left: 106px;}
+.form-vertical .item-form textarea{margin-top:5px;}
+.form-vertical .form-foot{text-align: right;}
+#submitButton{margin-right:10px;}
+.float{float:left;}
+.tips{
+	border: 1px solid #CCC;
+    float: left;
+    margin-left: 40px;
+    padding: 10px;
+    width: 400px;
+    margin-top:21px;
+}
+ul li{
+	padding:3px;
+}
+.blod{
+	color: red;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.item-form textarea{width:212px;}
+.item-form .item-input{width:212px;}
+#dialog-sure .only-txt{padding:15px;}
+#dialog-sure{width:200px;}

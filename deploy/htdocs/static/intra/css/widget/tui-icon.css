@@ -1,0 +1,32 @@
+/**
+ * @author shanshan.hongss
+ * @usefor work平台 - 公用图标(icon)
+ * @date   2013.01.22
+ */
+
+.tui-icon-36 {
+    display:inline-block;
+    width:36px;
+    height:36px;
+    background:url("http://img.china.alibaba.com/cms/upload/2013/905/386/683509_133354742.png") no-repeat;
+}
+
+.tui-icon-36.icon-success {
+    background-position:0 -50px;
+}
+.tui-icon-36.icon-message {
+    background-position:0 0;
+}
+.tui-icon-36.icon-warning {
+    background-position:-65px 0;
+}
+.tui-icon-36.icon-question {
+    background-position:-65px -50px;
+}
+.tui-icon-36.icon-fail {
+    background-position:0 -100px;
+}
+.tui-icon-36.icon-l-arrow {
+    background-position:-65px -100px;
+}
+

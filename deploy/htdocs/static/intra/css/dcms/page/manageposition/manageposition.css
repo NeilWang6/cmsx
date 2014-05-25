@@ -1,0 +1,40 @@
+/**
+ * 投放位管理
+ * @author : yu.yuy
+ * @createTime : 2011-03-11
+ */
+ .booth-management{
+     margin-left: 18px;
+     padding-top:12px;
+}
+.booth-management h3{
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+    height:38px;
+}
+.booth-management .dcms-search-line-list-input li { float:left; padding-right:12px;}
+.booth-management .dcms-search-line-list-input select { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 3px; width:115px; height:24px;}
+.booth-management .dcms-search-line-list-input .input-man { width:98px;}
+.booth-management .dcms-search-line-list-input .input-keywords { width:174px;}
+.booth-management .dcms-search-line-list-input .dcms-btn { margin-top:3px;}
+.booth-management .dcms-grid-operations{
+    /*width: 144px;
+    right: 0px;*/
+}
+.booth-management tfoot td{
+    text-align: right;
+}
+.booth-management td { word-break:keep-all; white-space:nowrap;}
+.booth-management .chinese-name { width:200px;}
+.booth-management .directory-name, .booth-management .site-name, .booth-management.directory-content { overflow:hidden; width:100px;}
+.booth-management .quote-name{
+    width: 226px;
+}
+.booth-management .modify-time{
+    width: 100px;
+}
+.booth-management .creator{
+    width: 86px;
+}

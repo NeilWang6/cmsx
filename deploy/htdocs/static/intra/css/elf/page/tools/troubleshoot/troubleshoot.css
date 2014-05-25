@@ -1,0 +1,133 @@
+.header {
+margin: 0 auto 25px;
+width: 990px;
+}
+
+.single {
+width: 988px;
+border: 1px solid #e5e5e5;
+color: #666;
+}
+
+.div {
+display: block;
+}
+
+.single h2 {
+text-align: center;
+line-height: 68px;
+font-size: 26px;
+color: #666;
+}
+.udc-detail-tab {
+height: 50px;
+background: #fff;
+border-bottom: solid 1px #e5e5e5;
+margin-bottom: 10px;
+}
+.single .detail-entity h3 {
+height: 40px;
+line-height: 40px;
+font-size: 14px;
+font-weight: bold;
+}
+
+.udc-detail-tab span.select {
+font-weight: bold;
+height: 33px;
+line-height: 33px;
+margin-top: 16px;
+background: #fff;
+border-bottom: solid 1px #fff;
+}
+.udc-detail-tab span{
+width: 110px;
+border: solid 1px #e5e5e5;
+background: #f8f8f8;
+height: 30px;
+line-height: 30px;
+color: #333;
+text-align: center;
+display: block;
+float: left;
+margin: 19px 0 0 10px;
+}
+
+.single .tbl-indexies .hover {
+background-color: #ffc;
+}
+.history-crumb {
+padding-left: 15px;
+height: 30px;
+line-height: 30px;
+border-bottom: 1px solid #e5e5e5;
+color: #666;
+overflow: hidden;
+}
+
+.single .attach {
+height: 68px;
+background: transparent url(http://img04.taobaocdn.com/tps/i4/T1ZR12XeBkXXXXXXXX-4-68.png) repeat-x scroll 0 0;
+border-bottom: 1px solid #e5e5e5;
+}
+
+.single .layout-col-entity {
+border-top: 1px solid #E5E5E5;
+border-left: 1px solid #e5e5e5;
+border-right: 1px solid #e5e5e5;
+float: right;
+padding: 0 20px;
+min-height: 760px;
+background-color: #fff;
+}
+
+.single .detail-entity .section {
+margin-bottom: 15px;
+}
+
+.single .word-break{
+word-break:break-all;
+}
+
+.single .tbl-indexies {
+width: 100%;
+table-layout: fixed;
+border: 1px solid #e4e4e4;
+}
+
+.single .tbl-indexies th {
+font-weight: 400;
+background-color: #f9f9f9;
+text-align: center;
+}
+
+.single .tbl-indexies th, .single .tbl-indexies td {
+height: 29px;
+border-width: 0 1px 1px 0;
+border-color: #e4e4e4;
+border-style: solid;
+}
+
+.single .tbl-indexies .cell-entity {
+padding: 0 0 0 15px;
+line-height: 29px;
+}
+
+.single .tbl-indexies .ext {
+float: right;
+width: 100px;
+height: 29px;
+background-color: #ffc;
+text-align: center;
+}
+
+.tbody {
+display: table-row-group;
+vertical-align: middle;
+border-color: inherit;
+}
+
+.errormsg {
+	color: red; 
+	font-weight: bold;
+}

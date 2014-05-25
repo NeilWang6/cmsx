@@ -1,0 +1,19 @@
+/**
+add by tina.tanglz @2011-5-13
+for 论坛发布普通帖页面级merge文件
+@公用模块
+@thread/add 页面独有的样式
+*/
+
+/*选择发帖论坛*/
+@import url(http://style.c.aliimg.com/css/app/hood/club/module/club-cate.css);
+/*弹出层*/
+@import url(http://style.c.aliimg.com/css/app/hood/club/module/block.css);
+
+/*浮出层登录框*/
+@import url("http://style.c.aliimg.com/sys/css/popsignin/loginreg.css");
+@import url("http://style.c.aliimg.com/css/baike/part/windowMgr.css");
+
+@import url(http://style.c.aliimg.com/css/app/hood/club-admin/module/post.css);
+
+@import url(http://style.c.aliimg.com/css/app/hood/club/page/post-edit.css);

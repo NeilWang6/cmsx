@@ -11,7 +11,7 @@ import com.alibaba.citrus.turbine.TurbineRunData;
 import com.alibaba.citrus.turbine.util.TurbineUtil;
 import com.alibaba.citrus.util.Assert;
 import com.apachecms.cmsx.auth.access.AccessService;
-import com.apachecms.cmsx.auth.permission.service.PermissionService;
+import com.apachecms.cmsx.auth.permission.service.AuthPermissionService;
 
 /**
  * 类AuthSecurityValve.java的实现描述：TODO 类实现描述
@@ -23,7 +23,7 @@ public class AuthSecurityValve extends AbstractValve {
     @Autowired
     private AccessService      accessService;
     @Autowired
-    private PermissionService  permissionService;
+    private AuthPermissionService  permissionService;
 
     @Autowired
     private HttpServletRequest request;

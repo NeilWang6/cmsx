@@ -1,0 +1,256 @@
+ 
+body {
+    background-color:#f7f7f7;
+}
+.top-state {
+	background-color: #f2f2f2;
+	padding: 1rem;
+}
+
+.top-state .state-topic {
+	height: 2.7rem;
+	line-height: 2.7rem;
+	border: 1px solid #ff7300;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.top-state .state-topic .item-state {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.top-state .state-topic .item-state.current {
+	background-color: #ff7300;
+}
+
+.top-state .state-topic .trigger {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #ff7109;
+}
+
+.top-state .state-topic .trigger:hover {
+	text-decoration: none;
+}
+
+.top-state .state-topic .current .trigger {
+	color: #fff;
+}
+
+.list-activity {
+	background-color: #f7f7f7;
+}
+
+.list-activity li {
+	border-top: 1px solid #d9d9d9;
+	padding: 0.7rem 1rem;
+}
+
+.list-activity a {
+	display: block;
+    padding-right:2.4rem;
+	background:
+		url("http://img.china.alibaba.com/cms/upload/other/dcms/m-s-arr-right.png")
+		no-repeat right center;
+}
+
+@media only screen and (-o-min-device-pixel-ratio: 2/1) , /* Opera */ only
+		screen and (min--moz-device-pixel-ratio: 2) , /* Firefox 16 之前 */ only
+		screen and (-webkit-min-device-pixel-ratio: 2) , /* Webkit */ only
+		screen and (min-resolution: 240dpi) , /* 标准 */ only screen and
+	(min-resolution: 2dppx) /* 标准 */ {
+	/*.list-activity a {
+		background-image: url(http://img.china.alibaba.com/cms/upload/other/dcms/m-b-arr-right.png);
+        -o-background-size: 19px 12px;
+        -moz-background-size: 19px 12px;
+        -webkit-background-size: 19px 12px;
+        background-size: 19px 12px;
+	}*/
+}
+
+.list-activity a:hover {
+	text-decoration: none;
+}
+
+.list-activity li:first-child {
+	border-top: 0;
+}
+
+.list-activity h6 {
+	/*height: 2.2rem;*/
+	line-height: 2.2rem;
+	font-size: 1.6rem;
+	color: #000;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+.list-activity .decoration,.list-activity .fail-reason {
+	line-height: 1.8rem;
+	color: #666;
+    overflow:hidden;
+}
+
+.list-activity .fail-reason .label {
+	float: left;
+}
+
+.list-activity .decoration .success {
+	color: #037c1b;
+}
+
+.list-activity .decoration .fail {
+	color: #ff0300;
+}
+
+
+.page {
+	/*padding: 0 1.2rem*/
+    background-color:#e4e4e4;
+}
+
+.page a.btn-next{
+	display: block;
+	height: 4rem;
+	line-height: 4rem;
+	padding: 0;
+    margin:0 1.2rem;
+	background-color:#e4e4e4;
+	text-align: center;
+    font-size:16px;
+	color: #666;
+}
+
+.page a.btn-next:hover {
+	text-decoration: none;
+}
+
+/*暂无数据*/
+.without, .hand-refresh {
+    padding:4.5rem 0 1.2rem;
+    color:#999;
+}
+.without .txt, .hand-refresh .txt {
+    line-height:1.6rem;
+    text-align:center;
+}
+.without .niu-cry, .hand-refresh .niu-cry {
+    margin-top:2rem;
+    height:11.2rem;
+    background:url("http://img.china.alibaba.com/cms/upload/2013/923/968/1869329_133354742.png") no-repeat center center;
+}
+@media only screen and (-o-min-device-pixel-ratio: 2/1), /* Opera */
+       only screen and (min--moz-device-pixel-ratio: 2), /* Firefox 16 之前 */
+       only screen and (-webkit-min-device-pixel-ratio: 2), /* Webkit */
+       only screen and (min-resolution: 240dpi), /* 标准 */
+       only screen and (min-resolution: 2dppx) /* 标准 */
+{
+    .without .niu-cry, .hand-refresh .niu-cry {
+        background-image:url(http://img.china.alibaba.com/cms/upload/2013/823/968/1869328_133354742.png);
+        -o-background-size: 104px 111px;
+        -moz-background-size: 104px 111px;
+        -webkit-background-size: 104px 111px;
+        background-size: 104px 111px;
+    }
+}
+
+.hand-refresh .btn {
+    text-align:center;
+    padding-top:1.2rem;
+}
+.hand-refresh .btn-refresh {
+    display:inline-block;
+    height:3.8rem;
+    line-height:3.8rem;
+    padding:0 3.8rem;
+    border:1px solid #ddd;
+    border-radius:2px;
+    font-size:1.4rem;
+    color:#666;
+    background:-webkit-linear-gradient(top,#eee,#e4e4e4);
+    background:-moz-linear-gradient(top,#eee,#e4e4e4);
+    background:-o-linear-gradient(top,#eee,#e4e4e4);
+}
+.hand-refresh .btn-refresh:hover {
+    text-decoration:none;
+}
+.state-waiting .waiting {
+    display:block;
+}
+.state-waiting .list-activity, .state-waiting .page, .state-waiting a.btn-next {
+    display:none;
+}
+.page .waiting {
+    height:4rem;
+    line-height:4rem;
+}
+.page .waiting .icon-waiting {
+    top:1.2rem;
+}
+.waiting {
+    display:none;
+    height:6.2rem;
+    line-height:6.2rem;
+    text-align:center;
+    
+}
+.waiting .txt {
+    display:inline-block;
+    padding-left:2.8rem;
+    color:#5c5c5c;
+    position:relative;
+}
+@-webkit-keyframes ajax-loader-rotate {
+    from {-webkit-transform: rotate(0deg);}
+  	to {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes ajax-loader-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes ajax-loader-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.waiting .icon-waiting {
+    position:absolute;
+    display:inline-block;
+    top:2.2rem;
+    left:0;
+    background: url(http://img.china.alibaba.com/cms/upload/2013/266/078/1870662_133354742.png) no-repeat center;
+	width:2.1rem;
+	height:2.1rem;
+	border-radius:20px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-animation: ajax-loader-rotate 1s steps(8) infinite;
+    -moz-animation: ajax-loader-rotate 1s steps(8) infinite;
+    animation: ajax-loader-rotate 1s steps(8) infinite;
+    -webkit-background-size:2.1rem 2.1rem;
+    background-size:2.1rem 2.1rem;
+}
+
+.android .waiting .icon-waiting {
+    background:url("http://img.china.alibaba.com/cms/upload/2013/166/078/1870661_133354742.png") no-repeat center;
+}
+
+@media only screen and (-o-min-device-pixel-ratio: 2/1), /* Opera */
+       only screen and (min--moz-device-pixel-ratio: 2), /* Firefox 16 之前 */
+       only screen and (-webkit-min-device-pixel-ratio: 2), /* Webkit */
+       only screen and (min-resolution: 240dpi), /* 标准 */
+       only screen and (min-resolution: 2dppx) /* 标准 */
+{
+    .waiting .icon-waiting {
+        background-image:url("http://img.china.alibaba.com/cms/upload/2013/753/968/1869357_133354742.png");
+    }
+    .android .waiting .icon-waiting {
+    background-image:url("http://img.china.alibaba.com/cms/upload/2013/299/078/1870992_133354742.png");
+}
+}
+
+
+

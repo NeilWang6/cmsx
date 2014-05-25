@@ -1,0 +1,6 @@
+section, article, aside, header, footer, nav, dialog, figure{
+    display: block;
+}
+figure{
+    margin: 0;
+}

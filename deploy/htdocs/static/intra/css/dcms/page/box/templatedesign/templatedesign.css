@@ -1,0 +1,37 @@
+/**
+ * @author springyu
+ * @userfor 页面设计功能CSS
+ * @date 2011-12-21
+ */
+.dcms-box-grid {
+    height: 45px;
+    margin: 0 auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+ 
+
+.dcms-box-nt{
+    border:1px solid #7ba6c9;
+    color:#409ad6;
+    background-color: #fff;
+    width:38px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.dcms-relative {
+    position:relative;
+} 
+.dcms-save-success {
+    position:absolute;
+    display:none;
+    width:14px;
+    height:14px;
+    background:url("http://img.china.alibaba.com/cms/upload/other/dcms/icon-save.png") no-repeat;
+    top:15px;
+    left:49px;
+    line-height:42px;
+    overflow:hidden;
+}

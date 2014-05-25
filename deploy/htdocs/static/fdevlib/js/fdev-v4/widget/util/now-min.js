@@ -1,0 +1,1 @@
+(function(e){"use strict";e.namespace("jQuery.util.now");var t="http://wholesale.1688.com/json/get_server_time.jsx";e.util.now={now:function(n){e.ajax({url:t,dataType:"jsonp"}).done(function(e){var t;var r=null;if(typeof e==="object"&&e&&e.success==="true"){t=e.data;r=+t.serverTimeMillis}n(r)}).fail(function(){n(null)})},getAPI:function(){return t}};e.add("util-now")})(jQuery);

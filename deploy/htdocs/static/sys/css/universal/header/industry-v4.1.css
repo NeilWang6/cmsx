@@ -1,0 +1,467 @@
+/*
+ * 行业搜索公用头部masthead
+*/
+#ali-masthead-v4-1 .ali-logo,
+#ali-masthead-v4-1 .ali-market .ali-market-more,
+#ali-masthead-v4-1 .alisearch-type li,
+#ali-masthead-v4-1 .alisearch-action button{
+	background:url(http://img.china.alibaba.com/cms/upload/2012/160/183/381061_1573916616.png) no-repeat;
+} 
+#ali-masthead-v4-1{padding:14px 4px;height:72px;}
+
+#ali-masthead-v4-1 .ali-logo{float:left;margin-top:23px;background-position:156px -196px;}
+#ali-masthead-v4-1 .main-logo {display:block;float:left;margin:4px 12px 0 0;padding:4px;width:153px;height:37px;text-decoration:none;}
+#ali-masthead-v4-1 .ali-logo .sub-logo{
+    float:left;
+    display:inline-block;
+    height:34px;
+    text-decoration:none;
+    margin-top:8px;
+    font-weight:700;
+    line-height:1.1;
+    cursor:pointer;
+}
+#ali-masthead-v4-1 .ali-logo .sub-logo .sub-logo-txt{
+    font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,\534E\6587\7EC6\9ED1;
+    font-size:20px;
+    display:block;
+    color:#666;
+}
+#ali-masthead-v4-1 .ali-logo .sub-logo .sub-logo-url{
+    -webkit-text-size-adjust:none;
+    font-size:10px;
+	line-height: 18px;
+    font-family:Tahoma,Arial,sans-serif;
+    color:#999;
+}
+#ali-masthead-v4-1 .ali-logo .sub-logo:hover .sub-logo-txt,
+#ali-masthead-v4-1 .ali-logo .sub-logo:hover .sub-logo-url{
+    color:#ff7300;
+}
+
+#ali-masthead-v4-1 .ali-market{
+	margin-top:32px;
+	padding-left:2px;
+	width:72px;
+	height:20px;
+	float:left;
+}
+
+#ali-masthead-v4-1 .ali-market .ali-market-list{
+	position:relative;
+	z-index:101;
+	width:80px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+
+#ali-masthead-v4-1 .ali-market-list .ali-market-more{
+	height:18px;
+	line-height:22px\0;
+	*line-height:22px;
+	_line-height:18px;
+	margin-left:8px;
+	overflow:hidden;
+	background-position:58px -77px
+}
+
+#ali-masthead-v4-1 .ali-market .ali-market-list span,
+#ali-masthead-v4-1 .ali-market .ali-market-list a{
+	color:#999;
+	text-decoration: none;
+}
+
+#ali-masthead-v4-1 .ali-market .ali-market-list a:hover{
+	color:#FF7300;
+}
+
+#ali-masthead-v4-1 .ali-market .ali-market-list ul{
+	display:none;
+	padding:6px 0 2px 8px;
+	background-color:#FFF;
+	border:1px solid #DDD;
+	border-top:0 none;
+	width:72px;
+	background-color:#FFF;
+}
+
+#ali-masthead-v4-1 .ali-market-list.hover .ali-market-more,
+#ali-masthead-v4-1 .ali-market-list:hover .ali-market-more{
+	background-position:57px -118px;
+}
+
+#ali-masthead-v4-1 .ali-market  .ali-market-list.hover span,
+#ali-masthead-v4-1 .ali-market  .ali-market-list:hover span,
+#ali-masthead-v4-1 .ali-market  .ali-market-list.hover a,
+#ali-masthead-v4-1 .ali-market  .ali-market-list:hover a{
+	color:#333;
+}
+
+#ali-masthead-v4-1 .ali-market .ali-market-list.hover ul,
+#ali-masthead-v4-1 .ali-market .ali-market-list:hover ul{
+	position:absolute;
+	top:18px;
+	left:-1px;
+	display:block;
+	z-index:102;
+}
+
+#ali-masthead-v4-1 .ali-search{float:right;width:540px;padding:4px 0;}
+#ali-masthead-v4-1 legend{display:none;}
+#ali-masthead-v4-1 .alisearch-type {height:26px;_overflow:hidden;}
+#ali-masthead-v4-1 .alisearch-type li{float:left;width:48px;height:20px;line-height:1.5;text-align:center;cursor:pointer;background-position:-5px -42px;}
+#ali-masthead-v4-1 .alisearch-type li.first{background-position:0 0;}
+#ali-masthead-v4-1 .alisearch-type li.current{position:relative;width:48px;height:21px;font-weight:700;}
+#ali-masthead-v4-1 .alisearch-type li a {color:#000;text-decoration:none;}
+
+#ali-masthead-v4-1 .alisearch-container{height:38px;_overflow:hidden;}
+#ali-masthead-v4-1 .alisearch-keywords,
+#ali-masthead-v4-1 .alisearch-action{float:left;}
+
+#ali-masthead-v4-1 .alisearch-keywords{padding:5px 4px;width:344px;height:20px;border:3px solid #CCC;border-right:0 none;background-color:#fff;}
+#ali-masthead-v4-1 .alisearch-keywords input {width:100%;height:20px;*height:18px;line-height:1.5;line-height:24px\0;overflow:hidden;border:0 none;}
+#ali-masthead-v4-1 .alisearch-keywords input.empty {color:gray;}
+#ali-masthead-v4-1 .alisearch-action button{
+	display:block;
+	float:left;
+	width:90px;
+	height:36px;
+	line-height:36px;
+	overflow:hidden;
+	border:0 none;
+	cursor:pointer;
+	color:#FFF;
+	font-size:16px;
+	font-family: "\5FAE\8F6F\96C5\9ED1", /* 微软雅黑，默认特殊标题字体 */
+                "\9ED1\4F53", /* 黑体，win下替换字体 */
+                "\6587\6CC9\9A7F\6B63\9ED1\4F53", /* 文泉驿正黑体，unix/linux下替换字体 */
+                "\534E\6587\7EC6\9ED1"; /* 华文细黑，mac os下替换字体 */
+    font-weight: 400; /* 默认为细体 */
+	background-repeat:repeat-x;
+}
+
+#ali-masthead-v4-1 .alisearch-action button.global{margin-left:2px;background-color:#FF7300;background-position:0 -300px;}
+#ali-masthead-v4-1 .alisearch-action button.global:hover{background-position:0 -350px;}
+
+/*行业色系调整*/
+/*选中色*/
+#ali-masthead-v4-1.clothing .alisearch-type li.current a{color:#C00;}
+#ali-masthead-v4-1.home .alisearch-type li.current a{color:#DC1640;}
+#ali-masthead-v4-1.industrial .alisearch-type li.current a{color:#1F546F;}
+#ali-masthead-v4-1.commodity .alisearch-type li.current a{color:#D53114;}
+#ali-masthead-v4-1.material .alisearch-type li.current a{color:#397EBE;}
+#ali-masthead-v4-1.food .alisearch-type li.current a{color:#649802;}
+
+/*按钮色*/
+#ali-masthead-v4-1.clothing .alisearch-action button.market{background-color:#C00;background-position:0 -400px;}
+#ali-masthead-v4-1.home .alisearch-action button.market{background-color:#DC1640;background-position:0 -600px;}
+#ali-masthead-v4-1.industrial .alisearch-action button.market{background-color:#1F546F;background-position:0 -500px;}
+#ali-masthead-v4-1.commodity .alisearch-action button.market{background-color:#D53114;background-position:0 -800px;}
+#ali-masthead-v4-1.material .alisearch-action button.market{background-color:#397EBE;background-position:0 -700px;}
+#ali-masthead-v4-1.food .alisearch-action button.market{background-color:#649802;background-position:0 -900px;}
+
+#ali-masthead-v4-1.clothing .alisearch-action button.market:hover{background-position:0 -450px;}
+#ali-masthead-v4-1.home .alisearch-action button.market:hover{background-position:0 -650px;}
+#ali-masthead-v4-1.industrial .alisearch-action button.market:hover{background-position:0 -550px;}
+#ali-masthead-v4-1.commodity .alisearch-action button.market:hover{background-position:0 -850px;}
+#ali-masthead-v4-1.material .alisearch-action button.market:hover{background-position:0 -750px;}
+#ali-masthead-v4-1.food .alisearch-action button.market:hover{background-position:0 -950px;}
+/*搜索框边框色*/
+#ali-masthead-v4-1.clothing .alisearch-keywords{border-color:#C00;}
+#ali-masthead-v4-1.home .alisearch-keywords{border-color:#DC1640;}
+#ali-masthead-v4-1.industrial .alisearch-keywords{border-color:#1F546F;}
+#ali-masthead-v4-1.commodity .alisearch-keywords{border-color:#D53114;}
+#ali-masthead-v4-1.material .alisearch-keywords{border-color:#3D86C8;}
+#ali-masthead-v4-1.food .alisearch-keywords{border-color:#649802;}
+/**/
+
+/*
+ * 行业搜索公用头部导航
+*/
+#ali-nav-main,
+#ali-nav-main .ali-nav-promotion{
+	background:url(http://img.china.alibaba.com/cms/upload/2012/260/183/381062_1573916616.png) no-repeat;
+}
+
+#ali-nav-main{
+    height:34px;
+    background-color:#C00;
+    padding-top:2px;
+	background-repeat:repeat-x;
+}
+
+#ali-nav-main .ali-nav-category{
+	float:left;
+}
+
+#ali-nav-main .ali-nav-category ul{
+	position:relative;
+	_float:left;
+}
+
+#ali-nav-main .ali-nav-category ul li{
+    float:left;
+    height:34px;
+    line-height:32px;
+    line-height:34px\0;
+    *line-height:32px;
+    margin:0 3px;
+	/* overflow:hidden; */
+}
+
+#ali-nav-main .ali-nav-category ul a{
+    display:inline-block;
+    padding:0 15px;
+    font-weight:700;
+	font-size:14px;
+    color:#FFF!important;
+	overflow:hidden;
+}
+
+#ali-nav-main .ali-nav-category ul a:hover{
+	text-decoration: underline;
+}
+
+#ali-nav-main .ali-nav-category li.hover,
+#ali-nav-main .ali-nav-category li.current{
+	border:1px solid #AF0000;
+	border-bottom:0 none;
+	height:33px;
+	line-height:30px;
+    line-height:32px\0;
+    *line-height:30px;
+	margin:0 2px;
+}
+
+#ali-nav-main .ali-nav-category li.current a,
+#ali-nav-main .ali-nav-category li.hover a{
+	padding:0 14px;
+	border:1px solid #BF0000;
+   	border-bottom:0 none;
+	height:32px;
+	color:#333!important;
+}
+
+#ali-nav-main .ali-nav-category li.current a{
+	background-color:#FBF3E9!important;
+}
+
+#ali-nav-main .ali-nav-category li.hover a{
+    background-color:#FFE4C3;
+}
+
+#ali-nav-main .ali-nav-promotion{
+	float:right;
+	padding-left:20px;
+}
+
+#ali-nav-main .ali-nav-promotion ul{
+	_float:left;
+}
+
+#ali-nav-main .ali-nav-promotion li{
+	float:left;
+	height:34px;
+	line-height:32px;
+	line-height:34px\0;
+	*line-height:32px;
+	padding:0 8px;
+	overflow:hidden;
+}
+
+#ali-nav-main .ali-nav-promotion a{
+	color:#FFF!important;
+}
+
+/*--子导航---*/
+#ali-nav-sub{
+	border-bottom:1px solid #F2D6B4;
+	background-color:#FBF3E9;
+	height:29px;
+	overflow:hidden;
+	margin-bottom:8px;
+}
+
+#ali-nav-sub.hover{
+	background-color:#FFE4C3;
+}
+
+#ali-nav-sub ul{
+	display:none;
+	position:relative;
+	float:left;
+}
+
+#ali-nav-sub ul.current{
+	display:block;
+}
+
+#ali-nav-sub li{
+	float:left;
+	padding:0 12px;
+	height:29px;
+	line-height:30px;
+	line-height:32px\0;
+	*line-height:30px;
+}
+
+#ali-nav-sub li a{
+	color:#333;
+}
+
+#ali-nav-sub li.current a{
+	font-weight:700;
+	color:#C00;
+}
+
+/*行业个性化*/
+/**/
+#ali-nav-v4-1.clothing #ali-nav-main{background-color:#C00;}
+#ali-nav-v4-1.home #ali-nav-main{background-color:#DC1640;}
+#ali-nav-v4-1.industrial #ali-nav-main{background-color:#1F546F;}
+#ali-nav-v4-1.commodity #ali-nav-main{background-color:#D53114;}
+#ali-nav-v4-1.material #ali-nav-main{background-color:#397EBE;}
+#ali-nav-v4-1.food #ali-nav-main{background-color:#5f9001;}
+/**/
+#ali-nav-v4-1.clothing #ali-nav-sub li.current a{color:#C00;}
+#ali-nav-v4-1.home #ali-nav-sub li.current a{color:#DC1640;}
+#ali-nav-v4-1.industrial #ali-nav-sub li.current a{color:#1F546F;}
+#ali-nav-v4-1.commodity #ali-nav-sub li.current a{color:#D53114;}
+#ali-nav-v4-1.material #ali-nav-sub li.current a{color:#397EBE;}
+#ali-nav-v4-1.food #ali-nav-sub li.current a{color:#5f9001;}
+/**/
+#ali-nav-v4-1.industrial #ali-nav-main .ali-nav-category li.hover,
+#ali-nav-v4-1.industrial #ali-nav-main .ali-nav-category li.current{
+	border-color:#16445C;
+}
+#ali-nav-v4-1.commodity #ali-nav-main .ali-nav-category li.hover,
+#ali-nav-v4-1.commodity #ali-nav-main .ali-nav-category li.current{
+	border-color:#B5062B;
+}
+#ali-nav-v4-1.material #ali-nav-main .ali-nav-category li.hover,
+#ali-nav-v4-1.material #ali-nav-main .ali-nav-category li.current{
+	border-color:#0D5699;
+}
+#ali-nav-v4-1.food #ali-nav-main .ali-nav-category li.hover,
+#ali-nav-v4-1.food #ali-nav-main .ali-nav-category li.current{
+	border-color:#558101;
+}
+/**/
+#ali-nav-v4-1.industrial #ali-nav-main .ali-nav-category li.current a,
+#ali-nav-v4-1.industrial #ali-nav-main .ali-nav-category li.hover a{
+	border:1px solid #205570;
+}
+#ali-nav-v4-1.commodity #ali-nav-main .ali-nav-category li.current a,
+#ali-nav-v4-1.commodity #ali-nav-main .ali-nav-category li.hover a{
+	border:1px solid #CE123A;
+}
+#ali-nav-v4-1.material #ali-nav-main .ali-nav-category li.current a,
+#ali-nav-v4-1.material #ali-nav-main .ali-nav-category li.hover a{
+	border:1px solid #0D5699;
+}
+#ali-nav-v4-1.food #ali-nav-main .ali-nav-category li.current a,
+#ali-nav-v4-1.food #ali-nav-main .ali-nav-category li.hover a{
+	border:1px solid #558101;
+}
+/**/
+#ali-nav-v4-1.industrial #ali-nav-main .ali-nav-category li.current a{
+	background-color:#EEF4F5!important;
+}
+#ali-nav-v4-1.industrial #ali-nav-sub{
+	background-color:#EEF4F5;
+}
+#ali-nav-v4-1.commodity #ali-nav-main .ali-nav-category li.current a{
+	background-color:#FFEAE2!important;
+}
+#ali-nav-v4-1.commodity #ali-nav-sub{
+	background-color:#FFEAE2;
+}
+#ali-nav-v4-1.material #ali-nav-main .ali-nav-category li.current a{
+	background-color:#F2F9FF!important;
+}
+#ali-nav-v4-1.material #ali-nav-sub{
+	background-color:#F2F9FF;
+}
+/**/
+#ali-nav-v4-1.clothing #ali-nav-sub.hover,
+#ali-nav-v4-1.clothing #ali-nav-main .ali-nav-category li.hover a{
+    background-color:#FFE4C3;
+}
+#ali-nav-v4-1.commodity #ali-nav-sub.hover,
+#ali-nav-v4-1.commodity #ali-nav-main .ali-nav-category li.hover a{
+    background-color:#FFD9BD;
+}
+#ali-nav-v4-1.material #ali-nav-sub.hover,
+#ali-nav-v4-1.material #ali-nav-main .ali-nav-category li.hover a{
+    background-color:#D7ECFF;
+}
+
+#ali-nav-v4-1.industrial #ali-nav-sub.hover,
+#ali-nav-v4-1.industrial #ali-nav-main .ali-nav-category li.hover a{
+    background-color:#DCE6E8;
+}
+
+#ali-nav-v4-1.home #ali-nav-sub.hover,
+#ali-nav-v4-1.home #ali-nav-main .ali-nav-category li.hover a{
+    background-color:#FEF5C9;
+}
+
+#ali-nav-v4-1.food #ali-nav-sub.hover,
+#ali-nav-v4-1.food #ali-nav-main .ali-nav-category li.hover a{
+    background-color:#FEF5C9;
+}
+/**/
+#ali-nav-v4-1.clothing #ali-nav-main{
+	background-position:0 -50px;
+}
+#ali-nav-v4-1.clothing #ali-nav-main .ali-nav-promotion{
+	background-position:-14px -102px;
+}
+
+#ali-nav-v4-1.home #ali-nav-main{
+	background-position:0 -150px;
+}
+#ali-nav-v4-1.home #ali-nav-main .ali-nav-promotion{
+	background-position:-14px -202px;
+}
+
+#ali-nav-v4-1.industrial #ali-nav-main{
+	background-position:0 -250px;
+}
+#ali-nav-v4-1.industrial #ali-nav-main .ali-nav-promotion{
+	background-position:-14px -302px;
+}
+
+#ali-nav-v4-1.commodity #ali-nav-main{
+	background-position:0 -350px;
+}
+#ali-nav-v4-1.commodity #ali-nav-main .ali-nav-promotion{
+	background-position:-14px -402px;
+}
+
+#ali-nav-v4-1.material #ali-nav-main{
+	background-position:0 -450px;
+}
+#ali-nav-v4-1.material #ali-nav-main .ali-nav-promotion{
+	background-position:-14px -502px;
+}
+
+#ali-nav-v4-1.food #ali-nav-main{
+	background-position:0 -550px;
+}
+#ali-nav-v4-1.food #ali-nav-main .ali-nav-promotion{
+	background-position:-14px -602px;
+}
+/**/
+#ali-nav-v4-1.clothing #ali-nav-sub,
+#ali-nav-v4-1.home #ali-nav-sub,
+#ali-nav-v4-1.industrial #ali-nav-sub{border-bottom:1px solid #DFD9D1;}
+#ali-nav-v4-1.commodity #ali-nav-sub{border-bottom:1px solid #E4D3CD;}
+#ali-nav-v4-1.material #ali-nav-sub{border-bottom:1px solid #D5E3EE;}
+#ali-nav-v4-1.food #ali-nav-sub{border-bottom:1px solid #e3daad;}
+
+#ali-nav-v4-1.clothing #ali-nav-sub.hover{border-bottom:1px solid #ECD3B5;}
+#ali-nav-v4-1.home #ali-nav-sub.hover{border-bottom:1px solid #E3DAAD;}
+#ali-nav-v4-1.industrial #ali-nav-sub.hover{border-bottom:1px solid #C6D2D4;}
+#ali-nav-v4-1.commodity #ali-nav-sub.hover{border-bottom:1px solid #E8C4AA;}
+#ali-nav-v4-1.material #ali-nav-sub.hover{border-bottom:1px solid #BCD2E7;}

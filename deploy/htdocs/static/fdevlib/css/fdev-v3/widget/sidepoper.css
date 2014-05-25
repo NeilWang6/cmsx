@@ -1,0 +1,19 @@
+.f-sidepop-tt .ttc,.f-sidepop-tt .ttl,.f-sidepop-tt .ttr,.f-sidebar a{background-image:url(http://img.china.alibaba.com/images/unsort/fuchu.gif);background-repeat:no-repeat;}
+.f-sidebar{position:absolute;top:2px;right:0;margin-right:6px;}
+.f-sidebar a{float:left;+display:inline;width:27px;height:17px;overflow:hidden;}
+.f-sidemin:link,.f-sidemin:visited{background-position:0 -100px;}
+.f-sidemin:hover{background-position:-40px -100px;}
+.f-sideres:link,.f-sideres:visited{background-position:0 -120px;}
+.f-sideres:hover{background-position:-40px -120px;}
+.f-sideclose:link,.f-sideclose:visited{background-position:0 -80px;}
+.f-sideclose:hover{background-position:-40px -80px;}
+
+.f-sidepop{font-size:12px;font-family:ËÎÌו}
+.f-sidepop-tt{height:25px !important;line-height:27px; overflow:hidden;}
+.f-sidepop-tt .ttl,.f-sidepop .ttr{width:4px;height:100%;}
+.f-sidepop-tt .ttc{float:none;+float:left;font-size:14px;color:#fff;font-weight:bold;padding:0 0 0 8px;background-repeat:repeat-x;overflow:hidden;height:100%;line-height:27px;}
+.f-sidepop-tt .ttc p{float:right; font-size:0;}
+.f-sidepop-tt .ttl{float:left;background-position:0 -40px;}
+.f-sidepop-tt .ttr{float:right;background-position:-20px -40px;}
+.f-sidepop-cont{border:1px solid #ffa563;border-top:none;padding:2px;background-color:#fff;}
+.f-sidepop-contin{border:1px solid #ffa563;}

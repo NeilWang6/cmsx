@@ -1,0 +1,298 @@
+/**
+ * @author shanshan.hongss
+ * @usefor ELF应用 - 橱窗展示
+ * @date   2012.09.12
+ */
+
+/*.show-win-1st, .show-win-2nd {background:url("http://img.china.alibaba.com/cms/upload/other/tools/window-shade.png") no-repeat 0 bottom;}*/
+.show-win-1st .icon, .show-win-2nd .icon, .show-win-2nd .operate .hide { background:url("http://img.china.alibaba.com/cms/upload/2013/319/927/1729913_1585461192.png") no-repeat;}
+ 
+.show-win-1st, .show-win-2nd {
+    width:240px;
+    /*padding-bottom:7px;*/
+    border-bottom:1px solid #f2f2f2;
+    overflow:hidden;
+}
+.show-win-1st dl, .show-win-2nd dl {
+    border:1px solid #e0e0e0;
+    border-bottom:0;
+    padding: 0 12px 4px;
+}
+.show-win-1st dt {
+    height:34px;
+    line-height:34px;
+    border-bottom:1px dotted #eaeaea;
+    margin-bottom:4px;
+    text-overflow:ellipsis;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.show-win-1st dd {
+    line-height:26px;
+}
+.show-win-1st .active {
+    border:1px solid #ddd;
+    border-top:0;
+    height:30px;
+    line-height:30px;
+    padding:0 12px;
+    background-color:#fbfbfb;
+}
+.show-win-1st .icon {
+    display:inline-block;
+    width:18px;
+    height:26px;
+    vertical-align:middle;
+}
+.show-win-1st .active a {
+    color:#a0a0a0;
+    line-height:26px;
+    text-decoration:none !important;
+}
+.show-win-1st a.alitalk-off {
+    background-position:-190px -23px;
+}
+.show-win-1st a.alitalk-on {
+    background-position:-190px -53px;
+}
+.show-win-1st a.alitalk-mb {
+    background-position:-190px 6px;
+} 
+.show-win-1st .active a:hover {
+    color:#3967C6;
+    text-decoration:none;
+}
+/*.show-win-1st .active a:hover .icon-modify{
+    background-position:-30px 8px;
+}*/
+.show-win-1st .icon-modify{
+    background-position:0px 8px;
+}
+
+.show-win-1st .icon-delet {
+	background-position:0 -297px;
+}
+.show-win-1st .active a:hover .icon-delet{
+    background-position:-30px -297px;
+}
+
+.show-win-1st .icon-time {
+    background-position:-60px 8px;
+}
+.show-win-1st .icon-list {
+    background-position:-90px 9px;
+}
+
+.show-win-2nd {
+    position:relative;
+}
+.show-win-2nd dl {
+    height:204px;;
+    padding-bottom:0;
+}
+.show-win-2nd dt {
+    padding:11px 0 5px;
+    line-height:18px;
+    height: 36px;
+    max-height:56px;
+    /*border-bottom:1px dotted #eaeaea;*/
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.show-win-2nd dd {
+    height:28px;
+    line-height:28px;
+    /*border-bottom:1px dotted #eaeaea;*/
+    color:#a0a0a0;
+}
+.show-win-2nd dd.last {
+    border-bottom:0;
+}
+.show-win-2nd .active {
+    height:32px;
+    line-height:32px;
+    border:1px solid #e0e0e0;
+    border-top:0;
+    background-color:#f2f2f2;
+    padding:0 8px 0 12px;
+}
+.show-win-2nd .icon {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+}
+.show-win-2nd .active .icon {
+    width:14px;
+}
+.show-win-2nd .icon-time {
+    background-position:0 -23px;
+}
+.show-win-2nd .icon-time-ov {
+    background-position:-30px -23px;
+}
+.show-win-2nd .icon-member {
+    background-position:-60px -26px;
+}
+.show-win-2nd .icon-member-ov {
+    background-position:-90px -26px;
+}
+.show-win-2nd .icon-offer {
+    background-position:-60px -55px;
+}
+.show-win-2nd .icon-offer-ov {
+    background-position:-90px -55px;
+}
+.show-win-2nd .icon-designer {
+    background-position:0 -144px;
+}
+.show-win-2nd .icon-designer-ov {
+    background-position:-30px -144px;
+}
+.show-win-2nd .icon-creater {
+    background-position:0 -264px;
+}
+.show-win-2nd .icon-creater-ov {
+    background-position:-30px -264px;
+}
+.show-win-2nd .icon-top {
+    background-position:-60px -81px;
+}
+.show-win-2nd .icon-collect {
+    background-position:0 -110px;
+}
+.show-win-2nd .icon-collect-rm {
+    background-position:-60px -109px;
+}
+.show-win-2nd .active a {
+    display:inline-block;
+    color:#818181;
+    padding-right:10px;
+}
+.show-win-2nd .active .icon-handle {
+    width:18px;
+    background-position:6px -51px;
+}
+.show-win-2nd .active a.fd-right {
+    padding-right:0;
+}
+.show-win-2nd .active a:hover {
+    color:#3967C6;
+    text-decoration:none !important;
+}
+/*.show-win-2nd a:hover .icon-top{
+    background-position:-90px -81px;
+}
+.show-win-2nd a:hover .icon-collect {
+    background-position:-30px -110px;
+}
+.show-win-2nd a:hover .icon-collect-rm {
+    background-position:-90px -109px;
+}
+.show-win-2nd a:hover .icon-handle {
+    background-position:-24px -51px;
+}*/
+.show-win-2nd .operate {
+    position:absolute;
+    top:0;
+    left:0;
+    width:240px;
+    height:230px;
+    background-color:#4896e0;
+    padding:8px 0 0;
+    display:none;
+}
+.show-win-2nd .operate ul.list-normal {
+    border-bottom:1px dotted #fefdff;
+    padding-bottom:8px;
+}
+.show-win-2nd .operate ul.list-new {
+    padding-top:3px;
+    height:66px;
+}
+.show-win-2nd .operate a {
+    color:#fff;
+}
+.show-win-2nd .operate a:hover {
+    /*text-decoration:none;*/
+}
+/*右上角：收藏图标和hover时的收藏图标*/
+.show-win-2nd .js-topic-name .js-act-collect-topic {
+	 float:right;
+	 margin-top: -6px;
+}
+.show-win-2nd .js-topic-name a .icon-collection {
+	background-position:-90px -326px;
+}
+.show-win-2nd .js-topic-name a:hover .icon-collection{
+	background-position:-60px -326px;
+}
+.show-win-2nd .operate li {
+    float:left;
+    width:100px;
+    line-height:26px;
+    height:26px;
+    padding-left:20px;
+    overflow:hidden;
+}
+.show-win-2nd .operate .icon {
+    width:18px;
+}
+.show-win-2nd .operate .icon-modify{
+    background-position:-60px -140px;
+}
+.show-win-2nd .operate .icon-delet{
+    background-position:0 -168px;
+}
+.show-win-2nd .operate .icon-over{
+    background-position:-60px -170px;
+}
+.show-win-2nd .operate .icon-members{
+    background-position:-90px -141px;
+}
+.show-win-2nd .operate .icon-offers{
+    background-position:-30px -170px;
+}
+.show-win-2nd .operate .icon-copy{
+    background-position:-60px -200px;
+}
+.show-win-2nd .operate .icon-data{
+    background-position:-90px -200px;
+}
+.show-win-2nd .operate .icon-ps{
+    background-position:-30px -230px;
+}
+.show-win-2nd .operate .icon-view{
+    background-position:0 -230px;
+}
+.show-win-2nd .operate .icon-info{
+    background-position:-60px -230px;
+}
+.show-win-2nd .operate .icon-confirm {
+    background-position:-90px -230px;
+}
+.show-win-2nd .operate .icon-data-classify {
+    background-position:-60px -295px;
+}
+.show-win-2nd .operate .icon-make-page {
+    background-position:-90px -295px;
+}
+.show-win-2nd .operate .icon-page-mgr {
+    background-position:0px -326px;
+}
+.show-win-2nd .operate .icon-collection {
+    background-position:-30px -326px;
+}
+.show-win-2nd .operate .hide {
+    position:absolute;
+    right:0;
+    bottom:0;
+    display:inline-block;
+    width:42px;
+    height:32px;
+    margin-right:9px;
+    background-position:-46px -259px;
+    cursor:pointer;
+}
+

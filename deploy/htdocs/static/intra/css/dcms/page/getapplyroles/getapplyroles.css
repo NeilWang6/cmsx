@@ -1,0 +1,122 @@
+.box-right {
+    padding:18px;
+    margin-left:200px;
+}
+.page-title {
+    font-size:14px;
+    font-weight:bold;
+    line-height:28px;
+    border-bottom:2px solid #dbdcde;
+    margin-bottom:1px;
+    color:#000;
+}
+.tab-focus {
+    height:16px;
+    padding:8px 0;
+    background-color:#f2f2f2;
+    font-size:0;
+}
+.tab-focus .tab-f {
+    display:inline-block;
+    line-height:16px;
+    font-size:12px;
+    padding:0 20px;
+    border-right:1px solid #dbdbdb;
+    color:#000;
+    cursor:pointer;
+}
+.tab-focus .tab-f:last-child {
+    border-right:0;
+}
+.tab-focus .tab-f.current a {
+    color:#ff7300;
+}
+.tab-b.resolved {
+    padding-top:20px;
+}
+.area-active{
+    padding:12px 8px;
+    color:#000;
+}
+.area-active .date-choose {
+    display:inline-block;
+    padding-right:12px;
+}
+.area-active .txt {
+    padding:0 10px;
+}
+.table-sub {
+    table-layout:auto;
+}
+.table-sub th {
+    color:#000;
+}
+.table-sub th, .table-sub td {
+    text-align:center;
+}
+.table-sub .align-left {
+    text-align:left;
+}
+.table-sub .pass, .table-sub .no-pass, .table-sub .remove-permisson {
+    background:url("http://img.china.alibaba.com/cms/upload/2014/360/288/1882063_133354742.png") no-repeat;
+    display:inline-block;
+    padding-left:20px;
+    line-height:16px;
+}
+.table-sub .pass {
+    background-position:0 0;
+    padding-right:20px;
+}
+.table-sub .no-pass, .table-sub .remove-permisson {
+    background-position:-84px 0;
+}
+.table-sub .passed {
+    color:#367200;
+    font-weight:bold;
+}
+.table-sub .no-passed {
+    color:#fc0000;
+    font-weight:bold;
+}
+.dcms-page .table-sub a:link, .dcms-page .table-sub a:visited {
+    color:#3967C6;
+}
+.paging-t {
+    padding:24px 12px 12px;
+    width:506px;
+    margin:0 auto;
+}
+.explain .tui-tips {
+    line-height:18px;
+}
+.explain .tui-tips .arrow-up {
+    left:67px;
+}
+.explain.hide .hanler:before {
+    content:"²é¿´";
+}
+.explain .hanler:before {
+    content:"Òþ²Ø"; 
+}
+.explain.hide .tui-tips {
+    display:none;
+}
+.explain .tui-tips {
+    display:show;
+}
+
+.dialog-basic {
+    width: 538px;
+}
+.dcms-form { margin:0;}
+.dcms-form label {
+    width:82px;
+}
+.dcms-form textarea {
+    height: 100px;
+    width: 400px;
+}
+.dcms-form .text {
+    display: inline-block;
+    padding-top: 7px;
+}

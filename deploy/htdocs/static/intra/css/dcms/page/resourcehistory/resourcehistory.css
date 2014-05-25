@@ -1,0 +1,39 @@
+/**
+ * æ≤Ã¨“≥√Êπ‹¿Ì
+ * @author : arcthur.cheny
+ * @createTime : 2011-09-19
+ */
+
+.booth-management{
+     margin-left: 18px;
+     padding-top:12px;
+}
+.booth-management h3{
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+    height:38px;
+}
+.info-bar .current-version {
+    height:30px;
+    line-height:30px;
+}
+
+.dcms-grid th {
+    width:164px;
+}
+
+.dcms-grid tfoot td {
+    text-align:right;
+}
+.dcms-grid tbody td {
+    padding:10px 0 10px 8px;
+    line-height:1.2;
+    text-indent: 0;
+}
+.manage-template td {     
+    word-break:keep-all;
+    white-space:normal;
+    overflow:hidden;
+}

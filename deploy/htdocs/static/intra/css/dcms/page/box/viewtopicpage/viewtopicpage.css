@@ -1,0 +1,47 @@
+.dcms-header-view {
+	background-color:#f2f2f2;
+	padding:0px;
+}
+.dcms-header-view .nav{
+	margin:0 auto;
+	padding:10px 0;
+	width:980px;
+}
+.dcms-header-view .dcms-header-view-container {
+}
+.dcms-header-view .tip {
+	font-weight:bold;
+	color:red;
+}
+.dcms-header-view .box-btn {
+	border-radius:2px;
+	padding:0px 10px 1px 10px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	cursor:pointer;
+}
+.dcms-header-view  a.box-btn:link, .dcms-header-view  a.box-btn:visited {
+	color:#E9EEF2;
+	height:17px;
+	display:inline-block;
+	text-decoration:none;
+}
+.dcms-header-view .box-disable-btn {
+	background-color:#dfdfdf;
+	color:#828282;
+	cursor:default
+}
+html {
+	overflow-y:auto;
+}
+.btn-cancel{
+	margin-left:20px;
+}
+section .msg{
+	line-height:45px;
+	padding-left:50px;
+}
+.remark{
+	width:460px;
+	height:100px;
+}

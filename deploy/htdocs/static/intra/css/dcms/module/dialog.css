@@ -1,0 +1,92 @@
+.dcms-dialog .close-btn { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png) no-repeat;}
+.dcms-dialog .page-btn { background:url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-repeat.png") repeat-x;}
+
+.dcms-dialog{
+    display: none;
+    width: 680px;
+    padding: 10px;
+    background-color: rgba(102,102,102,0.5);
+    -moz-border-radius: 4px / 4px;
+    border-radius: 4px / 4px;
+}
+.dcms-dialog .close-btn{
+    display:inline-block;
+    width:15px;
+    height:16px;
+    line-height:60px;
+    background-position:-135px -210px;
+    overflow:hidden;
+}
+.dcms-dialog .dialog-body{
+    background-color: #FFF;
+    padding: 0 10px;
+}
+.dcms-dialog header, .dcms-dialog .tree-header{
+    height: 40px;
+    line-height: 40px;
+}
+.dcms-dialog header .title, .dcms-dialog .tree-header .title{
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6c84b8;
+}
+.dcms-dialog .content{
+    height: 364px;
+}
+.dcms-dialog .search-bar{
+
+}
+.dcms-dialog .search-bar .dcms-select {
+    margin:0;
+    width:122px;
+}
+.dcms-dialog .dcms-grid{
+    width: 660px;
+}
+.dcms-dialog .dcms-grid tbody tr{
+    cursor: pointer;
+}
+
+.dcms-dialog footer, .dcms-dialog .tree-footer{
+    padding: 14px 0;
+}
+.dcms-dialog footer button, .dcms-dialog .tree-footer button{
+    float: right;
+    margin-left: 14px;
+}
+.dcms-dialog .dcms-dialog-tips{
+    height: 290px;
+    line-height: 290px;
+    text-align: center;
+    font-size: 14px;
+    text-align: center;
+}
+.dcms-dialog .dcms-dialog-tips:hover{
+    background-color: #FFF;
+    cursor: default;
+}
+.dcms-dialog .dcms-input-text {
+    width:285px;
+}
+.dcms-dialog .page-btn {
+    margin-top:8px;
+    color:#666;
+    background-position:0 -40px;
+    height:24px;
+    line-height:22px;
+    padding:0 4px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#a0a0a0;
+    -moz-border-radius:2px;
+    -khtml-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}
+.dcms-dialog .dcms-next-btn,
+.dcms-dialog .dcms-previous-btn,
+.dcms-dialog .dcms-first-page-btn{
+    color: #38569c;
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+/**
+ * @userfor Message - 信息提示便签
+ * @author hongss
+ * @date 2011.09.06
+ */
+.dcms-grid-tips-arrow-down { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/tips-arrow.png) no-repeat;}
+ 
+.dcms-grid-tips-wrap { display:none; position:absolute; padding-bottom:8px;}
+.dcms-grid-tips-wrap .dcms-grid-tips-content { border:1px solid #ffcc66; padding:8px 12px; min-width:180px; max-width:230px; white-space:normal; background-color:#fff7ee;}
+.dcms-grid-tips-arrow-down { position:absolute; width:16px; height:7px; bottom:2px; left:28px;}

@@ -1,0 +1,313 @@
+/**
+ * @author springyu
+ * @userfor 派生CELL功能CSS
+ * @date 2012-2-1
+ */
+html{overflow:hidden;}
+.dcms-box-grid {
+	height: 32px;
+	margin: 0 auto;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.cell-nav {
+	background-color: #b3dcfc;
+}
+.link-upload {
+	display: inline-block;
+	position: relative;
+	margin: 0 3px !important;
+}
+
+.dcms-box-upload .link-upload {
+    margin-top: 0;
+    width: auto;
+}
+.module-upload dd {
+	margin: 8px auto;
+	width: 150px;
+}
+.module-form .dcms-input-text{
+	width:198px;
+}
+.module-form .textarea {
+	width: 198px;
+	min-width: 198px;
+	max-width: 198px;
+	height: 18px;
+	min-height: 18px;
+	max-height: 62px;
+	/*margin-left:3px;*/
+}
+
+.d-material {
+    position:relative;
+}
+#dgPopTree {
+    display:none;
+    width:260px;
+    position:absolute;
+    z-index:2147483647;
+    top:4px;
+    left:150px;
+}
+#dgPopTree .dcms-right {
+    float:right;
+}
+#dgPopTree .treePanel input {
+    margin-right:4px;
+}
+/*
+ * 页面属性样式重设
+ */
+
+.operation-nav .operation-content {
+	width: 150px;
+}
+/* add by hongss on 2012.02.14 for 拖拽元素 */
+#crazy-box-transport {
+	display: none;
+	position: absolute;
+	z-index: 1000;
+}
+/* 属性设置  add by hongss on 2012.02.06 */
+ .module-form .dcms-textarea {
+	width: 260px;
+}
+/* 自适应　*/
+.auto-size {
+	margin: 4px 0;
+}
+
+.auto-size .pic-desc {
+	padding: 0 4px;
+	display: inline-block;
+}
+.auto-size .checkbox {
+	height: 18px;
+	vertical-align: middle;
+}
+.auto-size input.width {
+	width: 50px;
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: #eee;
+}
+
+.auto-size span.width {
+	display: inline-block;
+}
+.module-form .auto-size label {
+	margin-top: 0;
+}
+.module-form .module-upload {
+
+}
+.module-form img {
+	width: 170px;
+	height: 150px;
+}
+
+.module-form form {
+	float: left;
+}
+.module-form .page-color {
+	display: inline-block;
+	margin-top: 8px;
+}
+
+/* add by hongss on 2012.05.08 for 选择宽度 */
+.db-operation-nav .box-operation .module-navs {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 8px;
+}
+.db-operation-nav .box-operation a.grid-cell-base {
+	color: #2571b0;
+}
+.tools-panel {
+	overflow: visible;
+}
+.panel-module-width {
+	position: relative;
+}
+.list-module-width {
+	overflow-y: scroll;
+	background-color: #fff;
+}
+.list-module-width li {
+	padding: 0 0 0 8px;
+	border: 1px solid #fff;
+}
+.list-module-width li:hover {
+	border: 1px solid #7ba6c9;
+}
+.list-module-width .span-radio {
+	vertical-align: -16px;
+}
+.list-module-width .span-img {
+	cursor: pointer;
+}
+.list-module-width .span-img img {
+	vertical-align: top;
+}
+.tip-choose-width {
+	position: absolute;
+	top: 64px;
+	left: 236px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 12px;
+	background-color: #dcdcdc;
+	border-radius: 5px;
+	z-index: 11;
+}
+.tip-choose-width .msg-choose-width {
+	height: 30px;
+	background: url(http://img.china.alibaba.com/cms/upload/other/dcms/arrow-blue.png) no-repeat center left;
+	padding-left: 32px;
+	white-space: nowrap;
+	color: #000;
+}
+.box-create-module-tree {
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	background-color: #eee;
+	min-width: 200px;
+	-webkit-box-shadow: 0 0 0 1px #b0c6db inset;
+	-moz-box-shadow: 0 0 0 1px #b0c6db inset;
+	box-shadow: 0 0 0 1px #b0c6db inset;
+	border: 2px solid #CDDCEA;
+}
+.catalog-btn {
+	color: #409AD6;
+	background-color: white;
+	border-top: 1px solid #B0C6DB;
+	border-left: 1px solid #B0C6DB;
+	border-right: 1px solid #B0C6DB;
+	border-bottom: 1px solid #6F849E;
+	height: 24px;
+	padding: 0px 8px;
+	margin-right: 8px;
+}
+.close-tree .close-btn {
+	display: inline-block;
+	width: 15px;
+	height: 16px;
+	cursor: pointer;
+}
+.close-tree {
+	float: right;
+}
+.tree-body {
+	padding: 0px 4px 4px 8px;
+}
+.add-catalog-btn {
+
+}
+.add-catalog-btn:hover {
+	background-color: #eee;
+	cursor: pointer;
+	color: #409AD6;
+}
+/*add by hongss on 2012.06.20*/
+.cell-derive-attr {
+	position: absolute;
+	z-index: 11;
+	display: none;
+}
+.catalog-content select {
+	margin: 0 3px !important;
+}
+
+/*add by hongss on 2012.09.04 for 查看源码*/
+.db-operation-nav .box-right {
+	display: table-cell;
+	padding-left: 48px;
+}
+.db-operation-nav .box-right a.dcms-box-grid-a {
+	color: #4c6bac;
+}
+#cell-view-code .cell-content {
+	padding: 8px;
+}
+#cell-view-code .code-container {
+	width: 100%;
+	height: 180px;
+}
+#cell-view-code .cell-header .node {
+	padding-left: 12px;
+	color: #fff;
+}
+#cell-view-code .cell-header .title {
+	float: left;
+}
+#cell-view-code .cell-header .close {
+	float: right;
+	width: 16px;
+	height: 24px;
+	background: url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png") no-repeat -40px -44px;
+}
+#cell-view-code .cell-header .close:hover {
+	background-position: 0px -44px;
+}
+
+/**qiuxq*/
+#moduleSetting .dcms-grid .title:hover, .dcms-grid .operation:hover {
+	color: #f60;
+}
+#moduleSetting .dcms-grid .title {
+	font-weight: bold;
+	color: #353638;
+}
+#moduleSetting a:hover {
+	color: #3967c6;
+	text-decoration: underline;
+}
+#moduleSetting .dcms-grid .word-all {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#moduleSetting #syncModulePageList{
+	max-height: 400px;
+	overflow-y: scroll;
+	overflow:hidden;
+	
+}
+#noModuleContent{
+	height:120px;
+	vertical-align:middle;
+	padding-left:200px;	
+}
+#moduleSetting td{
+line-height: 28px;
+}
+
+#moduleSetting th {
+color: #666;
+}
+#moduleSetting .btn-blue{
+border: 1px solid #2c75bf;
+background-position: 0 -90px;
+color: #fff;
+}
+.sync_tip{
+	padding-top:30px;
+	line-height: 22px;
+	text-align: left;
+	padding-left:70px;
+	padding-right:70px;
+}
+
+.sync_tip .font_style_bold_big{
+	font-weight: bold;
+	color: #474747;
+	font-size:14px;
+ 
+}
+.sync_tip .font_style_normal_big{
+	color: #474747;
+	font-size:14px;
+	 
+}

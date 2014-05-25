@@ -1,0 +1,45 @@
+/**
+ * 	资源位公用css
+ *
+ */
+
+.res-info {
+	margin-top: 8px;
+}
+.res-info  .txt {
+	display: inline-block;
+	padding: 4px;
+	width:72px;
+	text-align:right;
+}
+.res-info .ds-desc a{
+	margin-left:8px;
+	margin-top:4px;
+}
+.res-info .list-tab-ds .block{
+	color:#000;
+}
+.res-info .list-tab-ds li {
+	background-color: #FFFFFF;
+	border:2px solid transparent;
+	border-bottom:none;
+	border-top:none;
+}
+.res-info .list-tab-ds li.current {
+	border:2px solid #DBDBDD;
+	border-bottom:none;
+	margin-bottom:-2px;
+}
+.res-info .res-schedule-nav{
+	display:none;
+	border-bottom:2px solid #DBDBDD;
+	margin-right:16px;
+	margin-top:4px;
+}
+.res-info .list-tab-ds .block .title{
+	width:40px;
+	display:inline;
+}
+.res-info .start-date{
+	display:none;
+}

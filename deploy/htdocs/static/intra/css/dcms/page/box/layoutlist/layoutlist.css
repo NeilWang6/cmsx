@@ -1,0 +1,138 @@
+/**
+ * @authur zhuguo.nizg
+ * @usefor Ä£°å¿â
+ * @date   2012-01-05
+ */
+.dcms-box-content-header {
+    padding: 0 ! important;
+    border-bottom: 1px solid #7ba6c9;
+}
+
+.dcms-box-list {
+    padding: 20px 10px;
+}
+
+.dcms-box-content-tree {
+    float: left;
+    padding: 12px 20px;
+    width: 154px;
+}
+
+.dcms-box-content-tree li {
+	height:24px;
+	line-height:24px;
+}
+
+.dcms-box-content-right {
+    float: left;
+    width: 718px;
+    padding: 12px 20px;
+    background: #fff;
+    -webkit-border-radius: 0 0 6px 0;
+    -moz-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.dcms-box-content-header-nav {
+    width: 150px;
+    height: 20px;
+}
+
+.dcms-box-content-body {
+    padding: 0 ! important;
+}
+
+.dcms-box-hr {
+    color: #e6f2fc;
+}
+
+.image img {
+    width: 130px;
+    height: 110px;
+    vertical-align: bottom;
+}
+
+.image-cell img {
+    height: 110px;
+    width: 130px;
+}
+
+.image {
+    width: 130px;
+    height: 110px;
+    vertical-align: bottom;
+}
+
+.dcms-box-left {
+    float: left;
+}
+
+.dcms-box-right {
+    float: left;
+}
+
+.li {
+    float: left;
+    margin-bottom: 32px;
+    margin-left: 60px;
+    width: 143px;
+}
+
+.dcms-box-list dd {
+    padding: 0 6px;
+}
+
+.dl {
+    width: 143px;
+}
+
+.dcms-box-list .title, .dcms-box-list .tags {
+    height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dcms-box-list .image img {
+    height: 110px;
+    vertical-align: bottom;
+    width: 130px;
+    cursor: pointer;
+	border: 1px solid #FFFFFF;
+}
+
+.dcms-box-list .image {
+    height: 110px;
+    padding: 0px;
+}
+
+.dcms-box-search .searchform .orderby {
+    display: inline;
+    margin-left: 24px;
+}
+
+.dcms-box-content-header-nav {
+    height: 30px ! important;
+    width: 150px;
+}
+
+.dcms-box-search .searchform {
+    padding-top: 4px;
+}
+.dcms-box-list dd {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 0 6px;
+}
+.dcms-box-list dl {
+    border: 0px solid #D4D4D4;
+    line-height: 2em;
+}
+.dcms-box-list li {
+    float: left;
+    margin-bottom: 32px;
+    margin-left: 58px;
+    width: 130px;
+}
+.dcms-box-list .image img:hover{
+	  
+    border-color:#409ad6;
+}

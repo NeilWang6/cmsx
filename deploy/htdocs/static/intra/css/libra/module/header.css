@@ -1,0 +1,478 @@
+/*
+ * @author lusheng.linls
+ * @usefor 运营worker平台 一 统一头部
+ * @update 添加统一前缀 防止冲突
+ * @date   2013.3.19
+ */
+
+.libra-page-header .libra-member-info .libra-icon-setting, .libra-bar-operate .libra-icon-dropdown, .libra-bar-operate .libra-icon-dorpleft, .libra-page-header .libra-last .libra-menu_nav, .libra-member-info .libra-icon-dropdown,.libra-member-info .libra-account-detail .libra-icon-right,.libra-left-menu .libra-item .libra-icon-close,.libra-left-menu .libra-item .libra-icon-open,.libra-icon-new {
+    background: url("http://img.china.alibaba.com/cms/upload/2013/104/539/935401_51297002.png") no-repeat;
+}
+.libra-bar-operate, .libra-left-menu .libra-item dt {
+    background: url("http://img.china.alibaba.com/cms/upload/2012/310/574/475013_133354742.png") repeat-x;
+}
+
+.libra-page-work{
+    min-width: 1024px;
+}
+.libra-content{
+    padding-left: 215px;
+    padding-top: 20px;
+}
+.libra-page-header {
+    height: 63px;
+    line-height: 63px;
+    background-color: #2f3031;
+    border-bottom: 1px solid #000;
+    color: #d2d2d2;
+}
+.libra-page-header .libra-main {
+    background-color: #2f3031;
+    float:right;
+}
+.libra-page-header .libra-work-logo {
+    float: left;
+    height: 62px;
+    overflow: hidden;
+}
+.libra-page-header .libra-member-info {
+    float: right;
+    padding-right: 30px;
+    text-shadow: 0 0 1px #222324;
+}
+.libra-member-info .libra-info-base {
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+    border-left: #2f3031 1px solid;
+    border-right: #2f3031 1px solid;
+}
+.libra-member-info .libra-info {
+    width: 44px;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+    border-left: #2f3031 1px solid;
+    border-right: #2f3031 1px solid;
+    position: relative;
+}
+.libra-member-info .libra-info-out{
+    width: 44px;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+    border-left: #2f3031 1px solid;
+    border-right: #2f3031 1px solid;
+    position: relative; 
+}
+.libra-member-info .libra-info-out a{
+    color:#409AD6;
+}
+.libra-member-info .libra-info-out a:hover{
+    color:#3967c6;
+}
+.libra-member-info .libra-icon-dropdown {
+    float: right;
+    width: 16px;
+    height: 28px;
+    background-position: 0 8px;
+}
+.libra-member-info .libra-info:hover .libra-icon-dropdown{
+    background-position: 5px -147px;
+}
+.libra-member-info .libra-info:hover,.libra-member-info .libra-info-detail{
+    color: #383838;
+    background: #ebeced;
+    border-radius: 2px 2px 0 0;
+    text-shadow: none;
+    border-left: #cbcbcb 1px solid;
+    border-right: #cbcbcb 1px solid;
+}
+.libra-member-info .libra-info:hover .libra-info-detail{
+    display: block;
+}
+.libra-member-info .libra-info-detail{
+    white-space: nowrap;
+    position: absolute;
+    top: 26px;
+    left: -1px;
+    border-radius: 0 2px 2px 2px;
+    border-bottom: #cbcbcb 1px solid;
+    cursor: default;
+    display: none;
+    z-index: 10;
+}
+.libra-member-info .libra-info-detail .libra-last{
+    margin-bottom: 8px;
+}
+.libra-member-info .libra-info-detail ul{
+    width: 100%;
+    min-width: 80px;
+}
+body .libra-member-info .libra-info-detail li{
+    padding: 0 12px;
+    min-width: 65px;
+}
+.libra-member-info .libra-info-detail a{
+    white-space: nowrap;
+}
+.libra-msg {
+    color: #d2d2d2;
+}
+.libra-msg:hover {
+    color: #d2d2d2;
+    text-decoration: none;
+}
+.libra-msg .libra-unread-msg{
+    color: #ffffff;
+    background: #ff5400;
+    display: none;
+    height: 13px;
+    line-height: 12px;
+    width: 20px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 11px;
+}
+.libra-member-info .libra-account-detail a{
+    color: #383838;
+}
+.libra-member-info .libra-account-detail .libra-backup{
+    color: #b3b3b3;
+    padding-left: 36px;
+    text-decoration: none;
+}
+.libra-member-info .libra-account-detail .libra-backup:hover{
+    color: #0074e1;
+}
+.libra-member-info .libra-account-detail .libra-icon-right{
+    width: 16px;
+    line-height: 14px;
+    display: inline-block;
+    background-position: -11px -160px;
+}
+.libra-member-info .libra-help-detail .libra-split{
+    padding-top: 10px;
+}
+.libra-member-info .libra-js-alitalk{
+    color: #0074e1;
+    padding: 2px 0 2px 20px;
+}
+.libra-member-info .libra-sys-detail li{
+    padding: 0px;
+}
+.libra-page-work .libra-member-info .libra-sys-detail a{
+    color: #383838;
+    display: block;
+    padding: 0 12px;
+}
+.libra-member-info .libra-sys-detail a:hover{
+    text-decoration: none;
+    background: #2381da;
+    border-color: #2381da;
+    color: #ffffff;
+}
+.libra-page-header .libra-member-info .libra-icon-setting {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-position: 0 -30px;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.libra-page-header .libra-member-info .libra-icon-setting:hover {
+    background-position: -30px -30px;
+}
+.libra-page-header .libra-member-info .libra-icon-setting:active {
+    background-position: -60px -30px;
+}
+.libra-page-header .libra-inline {
+    /*display:inline-block;*/
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    border-left: 1px solid #444548;
+    border-right: 1px solid #000;
+    margin: 21px 0;
+    padding: 0 16px;
+}
+.libra-page-header .libra-last {
+    border-right: 0;
+    padding: 0 12px;
+}
+.libra-page-header .libra-last .libra-menu_nav {
+    position: relative;
+    background-position: 80px 80px;
+}
+.libra-page-header .libra-last .libra-menu_nav:hover {
+    /*background-position:0 -90px;*/
+    background-position: 0 -120px;
+    text-decoration: none;
+}
+.libra-page-header .libra-last .libra-menu_nav:hover .libra-menu {
+    display: block;
+}
+.libra-page-header .libra-last .libra-menu_nav:active {
+    background-position: 0 -120px;
+}
+/*.libra-page-header .libra-last .libra-menu_nav.libra-active .libra-menu{
+ display:block;
+ }*/
+.libra-page-header .libra-last .libra-menu {
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    width: 62px;
+    border: 1px solid #383838;
+    background-color: #fff;
+    color: #383838;
+    z-index: 10;
+    display: none;
+}
+.libra-page-header .libra-last .libra-menu a {
+    color: #383838;
+}
+.libra-page-header .libra-last .libra-menu li {
+    padding: 0 6px;
+}
+.libra-page-header .libra-last .libra-menu li:hover {
+    background-color: #dbdcde;
+}
+.libra-page-header .libra-inline .libra-menu_nav {
+    display: inline-block;
+    margin-top: -4px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    color: #d2d2d2;
+    cursor: pointer;
+}
+.libra-page-header .libra-inline .libra-menu_nav_app{
+    background-color: #1b1b1b;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    border: 1px #0a1a29 solid;
+    border-right-color: #2e2f30;
+    border-bottom-color: #2e2f30;
+    margin-top: -4px;
+}
+.libra-page-header .libra-inline .libra-menu_nav_curapp{
+    background-color: #2663a0;
+    color: #ffffff;
+}
+.libra-page-header .libra-hotkey {
+    color: #7b7b7b;
+}
+
+.libra-bar-operate {
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+.libra-bar-operate .libra-my-work2 {
+    float: left;
+    width: 200px;
+}
+.libra-bar-operate .libra-my-work {
+    float: left;
+    width: 184px;
+    padding: 0 8px;
+}
+.libra-bar-operate .libra-title{
+    display: inline-block;
+    color: #cfcfcf;
+}
+.libra-bar-operate .libra-icon-dropdown {
+    float: right;
+    width: 16px;
+    height: 28px;
+    background-position: 0 8px;
+}
+.libra-bar-operate .libra-icon-dropdown:hover {
+    background-position: -30px 8px;
+}
+.libra-bar-operate .libra-icon-dorpleft {
+    display: inline-block;
+    width: 18px;
+    height: 28px;
+    vertical-align: top;
+    background-position: 0 -191px;
+    margin-right: 10px;
+    cursor: pointer;
+    float:left;
+}
+.libra-bar-operate .toright{float:right;background-position:-36px -225px;margin-left:-1px;margin-right:0;}
+
+.libra-bar-operate .libra-icon-dorpleft:hover {
+    background-position: -36px -191px;
+}
+.libra-bar-operate .toright:hover{background-position:0px -225px;}
+.libra-bar-operate .libra-icon-dorpleft:active {
+    background-position: -72px -191px;
+}
+.libra-bar-operate .toright:hover{background-position:-72px -225px;}
+.libra-bar-operate .libra-icon-dorpright {
+    display: inline-block;
+    width: 18px;
+    height: 28px;
+    vertical-align: top;
+    background-position: -72px -225px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 165px;
+}
+.libra-bar-operate .libra-icon-dorpright:hover {
+    background-position: -36px -225px;
+}
+.libra-bar-operate .libra-icon-dorpright:active {
+    background-position: 0px -225px;
+}
+.libra-bar-operate .libra-txt {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+.libra-bar-operate .libra-txt:hover {
+    text-decoration: none;
+}
+.libra-page-content{
+    width:200px;
+}
+.libra-tools-panel {
+    width:200px;
+    float:left;
+}
+/*左侧工作菜单*/
+.libra-left-menu {
+    width:200px;
+    height: 600px;
+    background-color: #dbdcde;
+    border-right: 1px solid #cdcdcf;
+}
+.libra-left-menu .libra-item {
+    color: #383838;
+    line-height: 28px;
+}
+.libra-left-menu .libra-item .libra-icon-close{
+    background-position: 0 -259px;
+    width: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 21px;
+}
+.libra-left-menu .libra-item .libra-icon-open{
+    background-position: 0 -277px;
+    width: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 21px;
+}
+.libra-left-menu .libra-item dt {
+    padding-left: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #a5a8ac;
+    background-position: 0 -120px;
+    cursor: pointer;
+}
+.libra-left-menu .libra-item dd {
+    padding-left: 32px;
+    background-color: #dbdcde;
+}
+.libra-left-menu .libra-item dd a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #383838;
+}
+.libra-left-menu .libra-item dd a:hover {
+    text-decoration: none;
+}
+.libra-left-menu .libra-item dd:hover {
+    background-color: #e6e7e8;
+}
+.libra-left-menu .libra-item dd:active {
+    background-color: #fff;
+}
+.libra-left-menu .libra-item .libra-cur-menu,.libra-left-menu .libra-item .libra-cur-menu a,.libra-left-menu .libra-item .libra-cur-menu:hover {
+    background-color: #2381da;
+    color: #fff;
+}
+.libra-icon-base{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.libra-icon-new{
+    background-position: 0 -303px;
+    width: 24px;
+    vertical-align: middle;
+    display: block;
+    height: 18px;
+    left: 2px;
+    position: absolute;
+    top: -21px;
+}
+.libra-announcement{
+    float: left;
+    height: 62px;
+    width: 500px;
+    overflow: hidden;
+}
+
+/*头部导航页*/
+.libra-navgation{height:63px;display:inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 21px 12px;
+    float:left;
+}
+.libra-navgation .menu_nav{float:left;color: #D2D2D2;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 20px;
+    margin-top: -4px;
+    text-align: center;
+    width: 62px;}
+.libra-navgation .menu_nav {
+    background: url("http://img.china.alibaba.com/cms/upload/2013/025/096/690520_51297002.png") no-repeat scroll 0 0 transparent;
+}
+.libra-navgation .menu_nav {
+    background-position: 80px 80px;
+    position: relative;}
+
+
+.libra-navgation .menu_nav a {
+    color: #D2D2D2;
+    cursor: pointer;
+    line-height: 26px;
+    text-decoration: none;
+}
+.libra-navgation .menu_nav:hover{
+    background-position:0 -120px;
+};
+
+
+/*左侧栏*/
+body .dcms-box-body{padding-left:0px;margin-left:200px;left:0;}
+
+body .libra-navgation  .nowapply {
+background-position: 0 -120px;
+}
+
+.libra-page-header{min-width: 1204px;}
+.libra-icon-dorpleft,.libra-icon-close {
+background: url('http://img.china.alibaba.com/cms/upload/2013/104/539/935401_51297002.png') no-repeat;
+}

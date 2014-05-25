@@ -1,0 +1,29 @@
+/* table */
+.dpl-table{width: 100%; max-width: 100%; border-collapse: collapse; border-spacing: 0; color: #444;}
+.dpl-table th,
+.dpl-table td{border: solid 1px #dcdcdc; height: 18px; padding: 3px 2px; text-align: center; vertical-align: middle;}
+.dpl-table-align-left th,
+.dpl-table-align-left td{text-align: left;}
+.dpl-table .dpl-a-l{text-align: left;}
+.dpl-table-align-right th,
+.dpl-table-align-right td{text-align: right;}
+.dpl-table .dpl-a-r{text-align: right;}
+.dpl-table .dpl-a-c{text-align: center;}
+.dpl-table th{background-color: #f0f0f0;}
+.dpl-table .dpl-odd td{background-color: #fafafa;}
+.dpl-table-hover tr:hover td{background-color: #fafafa;}
+
+.dpl-table-s th,
+.dpl-table-s td{padding: 1px 2px;}
+.dpl-table-l th,
+.dpl-table-l td{padding: 5px 2px;}
+
+.dpl-table-striped th,
+.dpl-table-striped td{border-width: 1px 0;}
+
+.dpl-table-action th,
+.dpl-table-action td{border-width: 1px 0; padding: 8px; text-align: left;}
+.dpl-table-action .dpl-img{padding: 8px 12px; width: 64px;}
+.dpl-table-action .dpl-img img{display: block; padding: 0; margin: 0;}
+.dpl-table-action .dpl-txt{vertical-align: top;}
+.dpl-table-action .dpl-act{padding: 8px 12px; text-align: right; white-space: nowrap;}

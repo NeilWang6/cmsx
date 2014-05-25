@@ -1,0 +1,18 @@
+.i-treebtn{ width:12px; height:12px; display:inline-block; background:url(http://img.china.alibaba.com/cms/upload/2011/286/791/197682_548721671.png) no-repeat; position:relative; top:2px; margin-right:5px; }
+
+.dcms-tree-name{ padding:4px 10px; position:relative; }
+.dcms-tree-name:hover{ background:#f1f1f1;}
+
+.dcms-tree-open { font-weight: bold;;}
+.dcms-tree-open .i-treebtn{ background-position:0 -12px;}
+
+
+.dcms-tree-fn{ position:absolute; right:10px; top:2px; visibility:hidden;}
+.dcms-tree-able:hover .dcms-tree-fn{ visibility:visible;}
+.dcms-tree-fn .modify, .dcms-tree-fn .add{ margin-right:5px;}
+.dcms-tree-fn .delate{}
+
+.dcms-tree-wrapper{ }
+.dcms-tree-list{ padding-left:20px;}
+/*add by hongss 专用于节点搜索*/
+.dcms-search-hide{ display:none;}

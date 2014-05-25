@@ -1,0 +1,60 @@
+/**
+ * Industry Masthead 1.0
+ * @version FDev4 1.0 2012.08.29
+ * @author raywu
+ * @update xxx
+ */
+#ali-masthead-industry{height:55px;zoom:1;}
+#ali-masthead-industry:after{clear:both;content:"\0020";display:block;height:0;}
+#ali-masthead-industry .ali-logo{float:left;display:inline;}
+#ali-masthead-industry .ali-logo a:hover{color:#ff7300 !important;text-decoration:none !important;}
+#ali-masthead-industry .ali-search{float:right;display:inline;margin-top:14px;}
+#ali-masthead-industry .main-logo{float:left;display:inline;padding-right:8px;margin:14px 0 0 3px;border-right:1px solid #ccc;}
+#ali-masthead-industry .main-logo img{vertical-align:bottom;}
+#ali-masthead-industry .sub-logo{float:left;display:inline;margin-left:8px;color:#666;}
+#ali-masthead-industry .sub-logo a:link,
+#ali-masthead-industry .sub-logo a:visited{color:#666;}
+#ali-masthead-industry .sub-logo .sub-logo-txt{
+	float:left;
+	display:inline;
+	margin-top:9px;
+	font-weight:bold;
+	font-size:18px;
+	font-family: "Microsoft YaHei", /* 微软雅黑，默认特殊标题字体 */
+		SimHei, /* 黑体，win下替换字体 */
+		"WenQuanYi Micro Hei", /* 文泉驿微米黑，unix/linux下替换字体 */
+		STHeiti;/* 华文黑体，mac os下替换字体 */
+}
+#ali-masthead-industry .sub-logo .sub-logo-url{
+	float:left;
+	display:inline;
+	clear:left;
+	margin-top:-4px;
+	-webkit-text-size-adjust:none;
+	font-size:9px;
+
+}
+#ali-masthead-industry .alisearch-hint,
+#ali-masthead-industry .search-focus .alisearch-txt,
+#ali-masthead-industry .alisearch-action button{background:url(http://img.china.alibaba.com/cms/upload/2012/059/714/417950_261003913.png) no-repeat;}
+#ali-masthead-industry .extra-tags{float:left;display:inline;width:240px;margin:10px 0 0 7px;overflow:hidden;color:#666;}
+#ali-masthead-industry .extra-tags a:link,
+#ali-masthead-industry .extra-tags a:visited{color:#666;}
+#ali-masthead-industry .extra-tags .hot a:link,
+#ali-masthead-industry .extra-tags .hot a:visited{color:#ff7300;}
+#ali-masthead-industry .extra-tags li{float:left;display:inline;width:48px;height:18px;margin-left:12px;overflow:hidden;}
+#ali-masthead-industry .ali-search .alisearch-txt{float:left;display:inline;width:232px;height:26px;border:2px solid #ccc;border-right:0 none;}
+#ali-masthead-industry .ali-search .alisearch-action{float:left;display:inline;}
+#ali-masthead-industry .ali-search{position:relative;z-index:90;}
+#ali-masthead-industry .search-focus .alisearch-txt{background-position:0 -60px;}
+#ali-masthead-industry .alisearch-hint{position:absolute;top:5px;left:10px;padding-left:19px;background-position:-190px 4px;color:#ccc;cursor:text;vertical-align:middle;}
+#ali-masthead-industry .alisearch-hint{top:7px\9;background-position:-190px 2px\9;_top:5px;_background-position:-190px 4px;background-position:-190px 4px\0/IE9;}
+#ali-masthead-industry .search-input .alisearch-hint{display:none;}
+#ali-masthead-industry .alisearch-txt .search-keywords{float:left;display:inline;width:226px;height:18px;margin:4px 0 0 5px;border:0 none;outline:0 none;line-height:1.5;overflow:hidden;}
+#ali-masthead-industry .alisearch-action button{float:left;display:inline;width:67px;height:30px;line-height:30px;outline:0 none;border:0 none;overflow:hidden;background-color:#ffae00;background-position:0  0;font-weight:bold;color:#fff;text-indent:-9999px;cursor:pointer;vertical-align:middle;}
+#ali-masthead-industry .alisearch-action button:hover{background-position:0 -30px;}
+#ali-masthead-industry .alisearch-action .search-site-btn{margin-left:2px;background-color:#f3f3f3;background-position:-69px 0;color:#666;}
+#ali-masthead-industry .alisearch-action .search-site-btn:hover{background-position:-69px -30px;}
+#ali-masthead-industry .ui-autocomplete .ui-menu-item .suggest-key{color:#555;}
+#ali-masthead-industry .ui-autocomplete .ui-menu-item .suggest-key em{color:#ff7300;}
+#ali-masthead-industry .ui-autocomplete .ui-menu-item .suggest-result{color:#999;}

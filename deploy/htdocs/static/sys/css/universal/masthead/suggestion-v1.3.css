@@ -1,0 +1,86 @@
+/**
+ * masthead suggestion css
+ * @authro  Arcthur & Edgar
+ * @version 1.4.110607
+ * 此样式只用于masthead.js请求使用，禁止直接merge使用
+ * */
+#ali-search .ui-autocomplete{
+    border:1px solid #ccc;
+    position:absolute;
+    background:#fff;
+}
+#ali-search .ui-autocomplete a{
+    cursor:default;
+}
+#ali-search .ui-autocomplete li{
+    color:#555;
+    line-height:21px;
+    height:21px;
+    overflow:hidden;
+}
+#ali-search .suggest-key{
+    float:left;
+    text-align:left;
+    padding-left:5px;
+}
+#ali-search .suggest-result{
+    float:right;
+    text-align:right;
+    padding-right:5px;
+    color:#c3c3c3;
+}
+#ali-search .suggest-city{
+    float:right;
+    text-align:right;
+    padding-right:5px;
+    color:#1f61c0;
+}
+#ali-search .ui-autocomplete li.selected span{
+    color:#3c3c3c;
+    cursor:default;
+}
+#ali-search .ui-autocomplete li span em{
+    color:#ff7300;
+    font-style:normal;
+    font-weight:normal;
+}
+#ali-search .ui-autocomplete .ui-state-hover{
+    background-color:#edecec;
+    overflow:hidden;
+}
+#ali-search .ui-autocomplete .ui-state-hover a{
+    color:#ff7300;
+}
+#ali-search .ui-autocomplete .ui-state-hover em{
+    color:#f00;
+}
+#ali-search .suggest-bottom{
+    padding:0 5px 5px;
+    background-color:#e5e5e5;
+    height:12px;
+    overflow:hidden;
+}
+#ali-search .suggest-bottom a:link,
+#ali-search .suggest-bottom a:visited{
+    color:#1c60c2;
+    text-decoration:none;
+}
+#ali-search .suggest-bottom a:hover{
+    color:#ff7300;
+    text-decoration:underline;
+}
+#ali-search .suggest-close-btn{
+    float:right;
+    line-height:14px;
+}
+#ali-search .ui-autocomplete li,
+#ali-search .suggest-bottom{
+    overflow:hidden;
+    zoom:1;
+    clear:both;
+}
+#ali-search .ui-autocomplete{
+    *margin-left:0;
+    _margin-left:-2px;
+    _margin-top:-3px;
+}

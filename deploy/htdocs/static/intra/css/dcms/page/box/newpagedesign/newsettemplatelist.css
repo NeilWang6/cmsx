@@ -1,0 +1,87 @@
+.template-content {
+    background-color: #dbdcde;
+}
+.template-body {
+
+}
+.template-content .template-search {
+    margin: 0px 4px;
+    padding: 10px 0;
+    background-color: #dbdcde;
+}
+.template-content .template-search li {
+    float: left;
+}
+.template-content .template-search .search-keyword {
+    width: 80px;
+    border: 1px solid #9d9d9d;
+}
+.template-content .template-search .template-search-btn button{
+    margin:0;
+    padding:0 8px;
+    color:#6b6b6b;
+    border: 1px solid #9d9d9d;
+    border-left: none;
+      background-color: #dbdcde;
+}
+.template-page .footer {
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+.template-page ul {
+    width: 150px;
+    margin: 0 auto;
+}
+.template-page .page{
+    padding:0 4px;
+} 
+.template-page .disabled .desc{
+    color:#999;
+}
+.template-page .desc {
+    display: block;
+    color: #333333;
+    height: 20px;
+    line-height: 20px;
+    margin: 2px 0;
+    padding: 0px 4px;
+    cursor:pointer;
+}
+
+	#template-box {
+		width:172px;
+		border:1px solid #bababa;
+		padding:3px;
+		background:#fff;		
+	}
+	.add-head{
+		margin-top:10px;
+	}
+	#template-box dd{
+		background:none;
+	}
+	#template-box .box-img {
+		height:160px;
+		width:170px;
+		padding-bottom:10px;
+	}
+	#template-box .name{
+		height:10px;
+		line-height:10px;
+		font: 10px,"ËÎÌו";
+		font-weight:bold;
+	}
+	#template-box .meta{
+		margin-top:10px;
+		height:12px;
+		line-height:12px;
+		font: 12px,"ËÎÌו";
+		text-align:right;
+	}
+	#template-box .meta a{
+		display:inline-block;
+		padding-right:10px;
+	}
+	#template-box .meta a:hover, #template-box .meta a:visited{
+		text-decoration: none;
+	}	

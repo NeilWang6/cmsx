@@ -1,0 +1,90 @@
+#macro ( errorMessage $field )
+  #if ( !$field.valid )
+		$field.message
+  #end
+#end
+  
+
+#macro (showJavascripts) 
+ #foreach( $script in $page.scripts ) 
+        <script src="$script"></script> 
+ #end 
+#end
+ 
+## 统一样式分页
+#macro( unifiedPageList $paginator $sliderNum)
+	#set ($navPages = $paginator.getSlider($sliderNum))
+	#set ($nextPage = $paginator.getNextPage())
+	#set ($prevPage = $paginator.getPreviousPage())
+	#set ($totalPage = $paginator.getPages())
+	<ul class="paging-t fd-clr">
+	<li class="pagination">
+		<a href="#" data-pagenum="$prevPage" class="box-page-btn prev #if($paginator.isDisabledPage($prevPage)) pre-disabled#{end}">上一页</a>
+		#* first page *#		
+		#if($navPages.size() > 0 && $navPages.get(0) > 1)
+			<a href="#" class="page">1</a>
+			#if($navPages.get(0) - 1 ==  2)
+			<a href="#" class="page">2</a>
+			#elseif($navPages.get(0) >  2)
+			<span class="omit">...</span>
+			#end
+		#end
+		#* page nav *#	
+		#foreach ($p in $navPages)
+	        #if ($paginator.isDisabledPage($p))
+			<span class="current">$p</span>
+	        #else
+	        <a href="#" class="page">$p</a>
+	         #end
+		#end
+		#* last page *#					
+		#set ($p = $navPages.size() - 1)
+		#if($navPages.size() > 0 && $navPages.get($p) < $totalPage)
+			#set ($p=$navPages.get($p) + 1)
+			#if($p + 1 == $totalPage)
+			<a href="#" class="page">$p</a>
+			#elseif($p < $totalPage)
+			<span class="omit">...</span>
+			#end
+		#end	
+        <a href="#" data-pagenum="$nextPage" class="box-page-btn next dcms-box-btn #if($paginator.isDisabledPage($nextPage)) next-disabled#{end}">下一页</a>
+    </li>
+    <li>
+        共<em>$!totalPage</em>页 到<input type="text" id="dcms-page-num" class="pnum" maxlength="4" autocomplete="off"/>页
+    </li>
+    <li>
+    	<button type="button" class="go btn-basic btn-gray" data-input="#dcms-page-num">确定</button>
+    </li>
+    </ul>
+#end
+
+#macro( unifiedPageSimpleList $paginator)
+	#set ($total=$paginator.getItems())
+	#set ($totalPage = $paginator.getPages())
+	#set ($prevPage = $paginator.getPreviousPage())	
+	#set ($nextPage = $paginator.getNextPage())	
+	#if($paginator)
+			<div class="paging-s">
+                <span class="description">共$!{total}个结果</span>
+                <span class="pnum">$paginator.getPage()/$totalPage</span>
+                <a href="#" title="上一页" data-pagenum="$prevPage" class="box-page-btn btn-basic prev #if($paginator.isDisabledPage($prevPage)) btn-disabled-gray#{else} btn-gray#{end}"><span></span></a><a href="#" data-pagenum="$nextPage" class="box-page-btn btn-basic #if($paginator.isDisabledPage($nextPage)) btn-disabled-gray#{else} btn-gray#{end} next">下一页</a>
+            </div>	
+    #end
+#end
+ 
+
+#** -------------------------------------------
+
+ * 显示stylesheets
+
+ * -------------------------------------------- *#
+
+#macro (showStylesheets)
+
+#foreach( $styleSheet in $page.styleSheets )
+
+        <link rel="stylesheet" href="$styleSheet.Url" />
+
+#end
+
+#end

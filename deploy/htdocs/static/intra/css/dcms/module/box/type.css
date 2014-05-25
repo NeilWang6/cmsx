@@ -1,0 +1,153 @@
+/**
+ * @author zhuguo.nizg
+ * @usefor 盒子的公用样式
+ * @date   2012.12.31
+ */
+
+a{
+    color:#409ad6;
+}
+html{
+    background-color:#ebebeb;
+}
+#doc{
+    background-color:#ebebeb;
+    padding-bottom:20px;
+}
+input:focus::-webkit-input-placeholder { 
+    color: transparent;
+}
+.dcms-box-btn, .dcms-box-btn-disable{
+    display:inline-block;
+    height:18px;
+    line-height:18px;
+    padding:4px 7px;
+    border:1px solid #b0c6db;
+    border-bottom-color:#506581;
+    background:#f3f8fb;
+    color:#4091d6;
+    cursor:pointer;
+}
+.dcms-box-btn:hover{
+    color:#4091d6;
+    text-decoration:none;    
+    box-shadow:inset 0 0 0 1px #9fe9ef;
+    -webkit-box-shadow:inset 0 0 0 1px #9fe9ef;
+    -moz-box-shadow:inset 0 0 0 1px #9fe9ef;
+}
+.dcms-box-btn:active{
+    color:#4091d6;
+    border-left-color:#374c7a;
+    border-top-color:#374c7a;
+    border-right-color:#7ba6c9;
+    border-bottom-color:#7ba6c9;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+}
+.dcms-box-btn-add{
+    display:inline-block;
+    height:18px;
+    line-height:18px;
+    padding:4px 8px;
+    border:1px solid #8aba56;
+    border-bottom-color:#435a29;
+    background:#8aba56;
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+}
+.dcms-box-btn-import{
+    display:inline-block;
+    height:18px;
+    line-height:18px;
+    padding:4px 7px;
+    border:1px solid #8aba56;
+    border-bottom-color:#435a29;
+    background:#8aba56;
+    color:#f7f7f7;
+    cursor:pointer;
+    vertical-align:top;
+    text-decoration:none;
+}
+.dcms-box-btn-import:hover{
+    background:#9cd461;
+    border-color:#8aba56;
+    border-bottom-color:#435a29;
+    color:#f7f7f7;
+    text-decoration:none;
+}
+.dcms-box-btn-import:active{
+    border-left-color:#435a29;
+    border-top-color:#435a29;
+    border-right-color:#9cd461;
+    border-bottom-color:#9cd461;
+    color:#f7f7f7;
+    text-decoration:none;
+}
+.dcms-box-btn-disable, .dcms-box-btn-disable:hover {
+    background:#dfdfdf;
+    color:#787878;
+    border:1px solid #9e9e9e;
+    border-bottom-color:#414141; 
+    text-decoration:none;
+    cursor:default;
+}
+.dcms-box-inset-shadow{
+    -moz-box-shadow:2px 2px 2px #e1ecf6 inset; 
+    -webkit-box-shadow:2px 2px 2px #e1ecf6 inset; 
+    box-shadow:2px 2px 2px #e1ecf6 inset; 
+}
+.dcms-box-input-focus{
+    -moz-box-shadow:0 0 4px #6c84b8 inset; 
+    -webkit-box-shadow:0 0 4px #6c84b8 inset; 
+    box-shadow:0 0 4px #6c84b8 inset; 
+}
+
+.dcms-box-content-bg{
+    height:60px;
+    margin-bottom:-60px;
+    background:#4c6bac;
+}
+.dcms-box-content-wrap{
+    width:952px;
+    margin:0 auto;
+    padding:0;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    -webkit-box-shadow:0 0 8px rgba(68,68,68,.4);
+    -moz-box-shadow:0 0 8px rgba(68,68,68,.4);
+    box-shadow:0 0 8px rgba(68,68,68,.4);
+}
+.dcms-box-content-header{
+    -webkit-border-radius:6px 6px 0 0;
+    -moz-border-radius:6px 6px 0 0;
+    border-radius:6px 6px 0 0;
+    background:#a1c5e3;
+}
+.dcms-box-content-header:after{
+    display:block;
+    clear:both;
+    height:0;
+    content:'\0020';
+}
+.dcms-box-content-header-nav{
+    float:left;
+    padding:12px 22px;
+    background:#b3dcfc;
+    border-radius:6px 0 0 0;
+}
+.dcms-box-content-body{
+    padding:24px;
+    background:#fff;
+    -webkit-border-radius:0 0 6px 6px;
+    -moz-border-radius:0 0 6px 6px;
+    border-radius:0 0 6px 6px;
+}
+.dcms-page-box-celllist   .dcms-box-content-body,
+.dcms-page-box-modulelist .dcms-box-content-body,
+.dcms-page-box-layoutlist .dcms-box-content-body,
+.dcms-page-box-derivecelllist .dcms-box-content-body{
+    background:#fff url("http://img.china.alibaba.com/cms/upload/2012/656/282/282656_1357790532.gif") repeat-y;
+}

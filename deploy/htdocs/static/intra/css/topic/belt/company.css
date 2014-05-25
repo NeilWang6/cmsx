@@ -1,0 +1,309 @@
+/**
+ * @author vivian.xul@alibaba-inc.com
+ * @vision 2011-04-18
+ * @info 发布公司信息
+ */
+.tb-a th span.must,
+.tb-a .btn-more,
+.company-form .equ-pic .rmlink,
+.company-form .more-lnk-fold,
+.company-form .more-lnk-show{ background:url(http://img.china.alibaba.com/cms/upload/2011/252/470/74252_1446014988.png) no-repeat}
+
+.company-form .company-pic .folder{ background:url(http://img.china.alibaba.com/cms/upload/2011/840/952/259048_748560284.png) no-repeat}
+
+.company-tip {padding:8px 8px 8px 30px;}
+.info-tit { padding:5px 20px; margin:8px 0; border-top:1px solid #b0d6e9; background:#ebf3ff;}
+.info-tit h2 { font-size:14px; font-weight:bold; display:inline;}
+.info-tit a.view-lnk{margin-left:43px;*margin-left:48px;}
+/*table*/
+.tb-a { table-layout: fixed; width: 100%; border-collapse: separate; word-wrap: break-word; word-break: break-all; }
+.tb-a td { vertical-align: top; padding:3px 8px; }
+.tb-a th { vertical-align: top; text-align:left;}
+.tb-a th span.must{ background-position: -90px 10px}
+.tb-a .c1, .tb-a th { width: 126px; }
+.tb-a .c1 span, .tb-a th span{display: inline-block;width: 100px;padding: 3px 8px 3px 18px;}
+/*信息提示 样式*/
+.company-form .input-text {padding: 2px; height: 16px; line-height: 16px; border: 1px solid #7F9DB9; background: url(http://img.china.alibaba.com/images/common/icon_v02/bg5.gif) repeat-x;}
+.company-form .input-err { border: 1px solid #ED8F8F; background-color: #FFF2F2; }
+.company-form .input-focus { background-color: #E6EDFD; }
+.company-form .err, .company-form .ok { display:inline; padding-left: 16px; background: url("http://img.china.alibaba.com/images/common/icon_v02/form-icons.gif") no-repeat; }
+.company-form .err { background-position: 0 -42px; color: #ff0000; }
+.company-form .ok { background-position: 0 -83px; color: #9fcd57; }
+.company-form .def { color: #999; }
+.company-form .none { color: #999; text-indent: -9999px; }
+.company-form .tip-rel{position: relative;}
+.company-form .tip-rel .err{background: url("http://img.china.alibaba.com/images/common/icon_v03/p8/25.png") no-repeat; position: absolute; left: 386px; top: 2px;width:248px;}
+/*form*/
+.company-form {padding-bottom:20px; z-index:5}
+.company-form .txt-01 { width:313px;}
+.company-form .txt-02 { width:86px;}
+.company-form .txt-03 { width:217px;}
+.company-form .txt-04 { width:50px;}
+.company-form .txt-05 { width:181px;}
+.company-form .txt-06 { width:96px;}
+.company-form .txt-07 { width:84px;}
+.company-form .txt-08 { width:40px;}
+.company-form .txt-09 { width:70px;}
+.company-form .txt-10 { width:80px;}
+.company-form .select-01 { width:223px;}
+.company-form .select-02 { width:125px;}
+.company-form .txtarea { width:610px; height:150px;padding:2px;}
+
+/*form resize*/
+.company-form div .re-txt-01 { width:378px;}
+.company-form div .re-select-01 { width:227px;}
+
+.company-form select { margin: 0 4px 0 0; padding:2px 2px 2px 0;}
+.company-form .feedback {display:inline; width:380px;}
+/*btn*/
+.company-form .btn-more { float:left; width:51px; height:19px; padding:3px 0 0 18px; color:#333; background-position:0 -16px;}
+.company-form .btn-more:hover { text-decoration:none; background-position:0 -48px;}
+.company-form .more-lnk {margin:8px 0}
+.company-form .more-lnk-fold {padding-left:20px; margin-left:18px; background-position:0 -102px;}
+.company-form .more-lnk-show {padding-left:20px; margin-left:18px; background-position:0 -123px;}
+
+/*主营产品*/
+.company-form .product { float:left; width:680px;}
+.company-form .product ul {float:left; margin-right:6px; _margin-right:0}
+.company-form .product li { margin-bottom:5px;}
+#auto-note.note{color:#008200}
+/*主要设备*/
+.company-form .equ-box {float:left; width:380px;}
+.company-form .equ-box li {margin-bottom:6px;}
+.company-form .equ-pic { position:relative;}
+.company-form .equ-pic .equ-pic-box {float:left;width:61px; height:61px; border:1px solid #cecece;overflow: hidden; line-height: 1;}
+.company-form .equ-pic .con-img {display: table-cell; vertical-align: middle; text-align: center; width: 61px; height: 61px; *display:block;*font-family:Arial;*font-size:53px;}
+.equ-pic .con-img img {vertical-align: middle;}
+
+/*仓库*/
+.company-form div.j-ware-box ul.ware-box {float:left; width:485px;}
+.company-form div.j-ware-box div.address {margin-right: 0;}
+.company-form div.j-ware-box li div.feedback {display: none;}
+.company-form div.j-ware-box div.form-line {margin-top:2px;margin-bottom:6px;}
+.company-form div.j-ware-box .ware-box li.ware-item-li {margin-bottom:6px;}
+/*--over--*/
+.company-form .equ-pic .rmlink {float:left; width:14px; height:14px; overflow:hidden; text-indent:-9999px; position:absolute; bottom:1px;_bottom:0; right:1px;_right:0; background-position:0 -80px;}
+.company-form .equ-pic .rmlink:hover{background-position:-24px -80px;}
+.company-form .j-equ-box , .company-form .j-ware-box{float:left;padding-top:2px;padding-bottom:2px;border-bottom:1px solid #f2f2f2}
+/*公司图片*/
+.company-form .company-pic-btn,.company-form .company-pic-btn p{float:left;}
+.company-form .company-pic-btn p{ margin-bottom:10px;}
+.company-form .company-pic-btn p.company-pic-btn-certificate{ margin-bottom:0px;}
+.company-form .company-pic .folder{ 
+	width:66px; 
+	text-align:center; 
+	height:65px; 
+	padding:0px 8px 0px 8px;
+	line-height: 65px;
+    vertical-align: middle;
+    overflow:hidden;;
+    cursor: pointer;
+	display: table-cell;
+}
+.company-form .company-pic .folder .fixVerticalCenterInner {display: block;}
+* html .company-form .company-pic .folder .fixVerticalCenterAdd {
+	width:0;
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+* html .company-form .company-pic .folder .fixVerticalCenterInner {
+    vertical-align:middle;
+    display:inline-block;
+}
+.company-form .company-pic .folder img {vertical-align: middle;margin-top:6px;margin-bottom:1px;}
+.company-form .company-pic .folder-lnk{ background: url("http://img.china.alibaba.com/cms/upload/2011/640/952/259046_748560284.png") no-repeat 0 0;padding-left:16px;}
+.company-form .company-pic .top-com-pic{ position: relative; height: 65px; width:82px; display:block;overflow:hidden;padding:0;}
+.company-form .company-pic .com-pic-num span{ position:absolute; width:16px; height:13px; line-height:13px; bottom:2px; right: 2px; z-index: 6; background-color:#990000;text-align:center;color: #FFFFFF; }
+.company-form .clear-both{ clear:both; }
+.company-form .text-center{ text-align:center; }
+
+/*浮出层*/
+.company-pop{width:450px;}
+.company-industry-top{width:696px;}
+.company-upload-box{width:786px;}
+
+/*.modal {width:770px; border: solid 8px #585858; background-color: #FFF; font-family: \5B8B\4F53; line-height: 1.5; }
+.modal h3 { margin: 0; padding: 0 8px !important; height: 35px; border-bottom: solid 1px #C1D2E6; background: url(http://img.china.alibaba.com/images/trade/quotation/100426/bg6.gif) repeat-x; line-height: 2.5; }
+.modal h3 em { display: block; float: left; font-size: 14px; font-weight: bold; color: #06C; }
+.modal h3 .close { display: block; float: right; margin-top: 7px; width: 21px; height: 22px; overflow: hidden; background: url(http://img.china.alibaba.com/images/trade/quotation/100426/close1.png) no-repeat; cursor: pointer; }
+*/
+/*add by changbin.wangcb for 浮出层*/
+.modal .notice{margin: 24px auto 0;width:470px;}
+.modal .notice span{display:inline-block;padding-bottom:4px; color:#c00;font-weight:700;}
+#dialogCom .notice{background: url("http://img.china.alibaba.com/images/common/icon_v03/p8/24.png") no-repeat 0 1px;padding-left: 24px;} 
+
+.modal {background-color: #FFFFFF;border: 6px solid #898989;font-family: \5B8B\4F53;line-height: 1.5;}
+.modal h3 {background: url("http://img.china.alibaba.com/images/app/member/common/bg2.gif") repeat-x scroll 0 0 transparent;border-bottom: 1px solid #DCDCDC;height: 31px;line-height: 31px;margin: 0;padding: 0 12px !important;}
+.modal h3 em {display: block;float: left;font-size: 14px;font-weight: bold;color: #666;}
+.modal h3 .close {background: url("http://img.china.alibaba.com/cms/upload/member/close3.gif") no-repeat scroll 0 0 transparent;display: block;float: right;height: 18px;margin-top: 6px;overflow: hidden;width: 18px;cursor: pointer;}
+.modal h3 .close:hover {background-position: 0 -18px;}
+/**/
+.submit-box {padding:30px 0 0px 0px;}
+.submit-box a{
+	float:none;
+	width:115px;
+	margin:0px auto;
+}
+.ycl {float:left; margin-right:5px;}
+.dqhid { visibility:hidden;}
+.address{margin-right:5px;}
+.address #zydz-gj{width: 130px;}
+.form-line{width:100%; float:left;}
+.warn {color:#ff0000; margin-left:8px;}
+
+/*add bu changbin.wangcb for完整度*/
+.company-degree,.company-degree .mod-ride{ background: url(http://img.china.alibaba.com/cms/upload/2011/159/222/222951_1625054590.png) no-repeat 0 0;}
+.company-degree-container{ height:40px;width:792px;margin-top:12px;}
+.company-degree { position:relative; padding:0 5px; width:780px;height:38px; border:1px solid #c0d5e9; background-position:0 0;background-repeat:repeat-x;}
+.company-degree .mod-con { padding:6px 8px;}
+.company-degree .orange { color:#ff7300}
+.company-degree .mt4{margin-top:4px;color:#666;font-weight:700;}
+.company-degree .mod-ride{position: absolute;left: 791px;top:-1px; width:26px;height: 36px;padding:2px 1px 2px 3px; background-position:0 -50px; }
+.company-degree .mod-ride a{display:inline-block;height:36px;width:26px; color:#06c; text-decoration:none;}
+/*begin:add by chenwu for 完整度模块*/
+.company-degree .integrity-box {float:left; margin-top:7px;}
+.company-degree .integrity-box {width:83px; height:13px; overflow:hidden; background:url(http://img.china.alibaba.com/cms/upload/2011/571/462/264175_748560284.png) no-repeat;}
+.company-degree .integrity-box-lev1 {background-position:0 -45px;}
+.company-degree .integrity-box-lev2 {background-position:0 -86px;}
+.company-degree .integrity-box-lev3 {background-position:0 -126px;}
+.company-degree .integrity-box-lev4 {background-position:0 -168px;}
+.company-degree .integrity-box-lev5 {background-position:0 -209px;}
+/* 公司完整度的样式 */
+.company-degree .company-degree-note{padding-right: 20px;margin-top: 0px;font-weight: bold;}
+/* 公司星级的说明 */
+.company-degree .integrity-box-title {padding-left:10px;padding-right: 12px;font-weight: bold;}
+/* 公司星级的后面的描述 */
+.company-degree .integrity-box-comment{padding-right: 12px;padding-left: 12px;margin-top: 0px;}
+/* 所有星级描述块的统一高度等定义 */
+.company-degree span{float:left;display:inline-block;height: 28px;line-height: 28px;}
+/* 建议*/
+.company-degree .top-link-advice{
+	display:inline-block;
+    background: url("http://img.china.alibaba.com/cms/upload/2012/575/323/323575_748560284.png") no-repeat 0 7px;
+    padding-left: 17px;
+}
+/*end:add by chenwu for 完整度模块*/
+/* begin:add by chenwu for 法律文案 */
+.company-rule-notice{
+	padding:30px 0 0 0;
+	text-align: center;
+}
+/* end:add by chenwu for 法律文案*/
+/*取消screen的overflow：hidden,确保漂浮部分超出显示*/
+#screen{overflow: visible !important;}  
+
+/*主营产品，主要设备显示行背景*/
+.company-form .input-text-hover-bg {background:#F2F2F2;display: block;}
+/*mod*/
+.company-mod1 { background-color: #FFF7EB;border: 1px solid #FFC590;padding: 8px 8px 8px 8px;margin-bottom: 8px;}
+.company-mod1 .mod-tip {padding:12px 8px; }
+.company-mod1 .mod-con { padding:12px 8px;}
+.company-mod1 .orange { color:#ff7300}
+.company-mod1 .red { color:red;font-size: 14px; margin-bottom: 8px;}
+.company-mod1 .mt4{margin-top:4px;}
+
+/*发布上网的样式*/
+.company-mod1 .publish-tip {
+    background: url("http://img.china.alibaba.com/cms/upload/2011/812/832/238218_748560284.png") no-repeat scroll 0px -30px transparent;
+    padding:4px 18px 4px 24px;
+    margin-right: 8px;
+}
+
+/*审核未通过样式*/
+.company-mod1 .unpass-tip {
+    background: url("http://img.china.alibaba.com/cms/upload/2011/812/832/238218_748560284.png") no-repeat scroll 0px 0px transparent;
+   	width:24px;
+   	height:24px;
+    padding:4px 18px 4px 35px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/*主营产品删除或清空行宽度*/
+.company-form .delli{
+	width: 550px;padding-top:2px;padding-left:2px;padding-bottom:2px;
+}
+
+/*删除或清空设备宽度*/
+.company-form .equ-del{
+	width: 620px;
+}
+/*删除或清空仓库宽度*/
+.company-form .ware-del{
+	width: 485px;
+}
+
+/*清空主营产品样式*/
+.company-form .clear_product{
+	height: 22px;
+	line-height: 16px;
+	margin-left: 5px;
+}
+
+/*删除主营产品样式*/
+.company-form .delete_product{
+	height: 22px;
+	line-height: 16px;
+	margin-left: 5px;
+}
+
+/*更多主营产品样式*/
+.company-form .more-product{
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+/*删除主营产品列表 链接*/
+.company-form .delete_product  a:hover{
+	text-decoration: none;
+}
+
+/*清空主营产品列表 链接*/
+.company-form .clear_product  a:hover{
+	text-decoration: none;
+}
+
+.company-form .j-del-equ{
+	margin-left: 5px;
+}
+
+.company-form .j-del-ware-li{
+	position: relative;
+	margin-bottom: 0 !important;
+}
+
+.company-form .j-del-ware{
+	position: absolute;
+	bottom: 4px;
+    right: 8px;
+	margin-bottom: 4px;
+}
+
+/*删除主要设备列表 链接*/
+.company-form .j-del-equ a:hover,.company-form .j-del-ware a:hover{
+	text-decoration: none;
+}
+
+/*更多设备 链接*/
+.company-form .more-equ{
+	text-decoration: none;
+}
+/*公司详细信息提示*/
+.company-form .company-detail-tip{
+	background: url("http://img.china.alibaba.com/cms/upload/2011/812/832/238218_748560284.png") no-repeat scroll 0px -30px transparent;
+    padding:1px 18px 0 22px;
+    margin-left: 20px;
+}
+
+/*实名认证提示*/
+.company-mod1 .auth-tip {
+   color: #923F01;
+   padding:4px 4px 4px 6px;
+}
+
+/*已认证字段样式*/
+.company-form .cert{color:red;}
+
+/*设备，仓库，主营行业以及主营产品等选中置灰时，input不置灰*/
+.company-form .input-text-hover-bg input{background-color:#ffffff;}

@@ -1,0 +1,108 @@
+/**
+ * create by hongss on 2012.08.24 for add tag task
+ */
+ 
+#doc { margin:12px 0; width:990px;color:#666; font-size:12px; line-height:1.8em;}
+h3 { color:#333; font-size:14px; font-weight:bold; line-height:32px;}
+.red { color:#c00; }
+
+.form-container .info-basic, .form-container .info-common { width:990px;}
+.form-container .info-basic {
+	padding:12px 0 0 0;
+}
+
+.form-container .info-item { padding:8px 0;overflow: hidden;}
+.form-container .info-item dt { 
+	float:left; 
+	width:215px; 
+	padding-right:4px; 
+	text-align:right;
+	font-weight:bold;
+	padding-right:12px;
+}
+.form-container .info-item-submit { 
+	padding:20px 0 0 0;
+	overflow: hidden;
+}
+.form-container .info-item-submit dt { float:left; width:227px;}
+.form-container .info-item dd { float:left;}
+.form-container .info-item span.info { 
+	color:#C3C3C3;
+}
+.form-container .task-desc-area {
+	width:240px;
+	height:100px;
+}
+.form-container .task-desc-error {
+	vertical-align:top;
+}
+
+/*
+.member-dialog .info-item { padding:6px 0;overflow: hidden;}
+.member-dialog .info-item dt { float:left; width:195px; padding-right:4px; text-align:right;}
+.member-dialog .info-item dd { float:left;}
+*/
+
+.special-hr {
+	background: url("http://img.china.alibaba.com/cms/upload/2012/467/584/485764_51297002.png") no-repeat scroll 0 6px transparent;
+    border-bottom: 2px solid #9DA4B4;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 2px;
+	padding-left: 15px;
+	margin-bottom:10px;
+}
+
+.form-container input[type="text"], .form-container select { padding:3px; min-width:60px; vertical-align:top;}
+.form-container input.nomal { width:240px; }
+.form-container input.small { width:60px;}
+.form-container h4 { font-weight:bold;}
+.form-container .city-btns { display:inline-block; width:76px; padding:0px 12px 0; }
+.form-container .city-btns button { display:block;}
+.form-container .category-btns { display:inline-block; width:86px; padding:0 2px;}
+.form-container button { font-family:"\5b8b\4f53"; }
+.form-container .select-small { min-width:128px; }
+.form-container .select-big { min-width:160px; }
+.form-container .select-county { min-width:160px; }
+
+.form-container .validator-tip, .title .validator-tip{
+    display: none;
+    padding: 0 3px 0 23px;
+    border: 1px solid;
+    line-height:20px;
+}
+.form-container .validator-error, .title .validator-error{
+    background-image:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png);
+    display: inline-block;
+    border-color: #ff8080;
+    background-color: #fff2f2;
+    color: #666;
+    background-position:-129px -250px;
+    background-repeat:no-repeat;
+}
+
+.title .validator-tip { margin-left:57px;}
+
+/** dialog */
+/*
+#member-dialog {
+	width:850px;
+}
+.member-dialog section{
+	height:400px;
+	overflow-y:scroll;
+}
+*/
+.form-container .validator-error-pay {
+	background-image: url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png);
+	display: inline-block;
+	background-color: #fff2f2;
+	color: #666;
+	background-position: -129px -250px;
+	background-repeat: no-repeat;
+	padding-left: 23px;
+	padding: 0 3px 0 23px;
+	border: 1px solid #ff8080;
+	line-height: 20px;
+}

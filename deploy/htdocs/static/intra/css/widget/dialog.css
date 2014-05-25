@@ -1,0 +1,113 @@
+/**
+ * @author shanshan.hongss
+ * @usefor ¸¡³ö²ãÑùÊ½
+ * @date   2012.10.12
+ */
+ 
+.dialog-basic {
+    width:500px;
+    background-color:rgba(22, 22, 22, 0.7);
+    padding:5px;
+    display:none;
+}
+.dialog-basic .mg-16 {
+    margin-right:16px;
+}
+.dialog-basic.small {
+    width:auto;
+}
+.dialog-basic.normal {
+    width:auto;
+}
+.dialog-basic .dialog-b {
+    background-color:#fff;
+}
+.dialog-basic header {
+    height:28px;
+    border-bottom:1px solid #d9d9d9;
+    background-color:#e2e2e2;
+    padding:0 12px;
+}
+.dialog-basic header h5,.dialog-basic header .title {
+    line-height:28px;
+    font-size:12px;
+    font-weight:bold;
+    color:#2e2e2e;
+}
+.dialog-basic header .close {
+    background:url("http://img.china.alibaba.com/cms/upload/2013/813/316/1613318_133354742.png") no-repeat -81px 8px;
+    float:right;
+    width:12px;
+    height:28px;
+    line-height:150px;
+    overflow:hidden;
+}
+.dialog-basic header .close:hover {
+	cursor:pointer;
+}
+.dialog-basic header .close:active {
+    background-position:-40px 8px;
+}
+.dialog-basic .content{
+	display:block;
+}
+.dialog-basic .content .has-draft{
+	width:300px;
+	margin:0 auto;
+}
+.dialog-basic .content .self-draft{
+	width:250px;
+	margin:0 auto;
+}
+.dialog-basic .page-tip-btn{
+	margin:0 4px;
+}
+.dialog-basic .content .lock{
+	margin:0 auto;
+	width:440px;
+}
+.dialog-basic section,.dialog-basic .content {
+    padding:15px;
+}
+.dialog-basic .only-txt {
+    padding:46px 15px;
+    line-height:22px;
+    font-size:14px;
+    color:#444;
+}
+
+.dialog-basic .simple {
+    padding:16px 70px 16px 40px;
+}
+
+
+.dialog-basic .simple .icon-success {
+    background:url("http://img.china.alibaba.com/cms/upload/2013/905/386/683509_133354742.png") no-repeat 0 -50px;
+}
+.dialog-basic .simple .icon-success {
+    float:left;
+    width:36px;
+    height:36px;
+}
+.dialog-basic .tui-icon-36 {
+    float:left;
+}
+.dialog-basic .simple .msg {
+    line-height:24px;
+    padding:6px 0 6px 48px;
+    word-break:keep-all;
+    white-space:nowrap;
+    font-size:14px;
+    color:#444;
+}
+
+.dialog-basic footer {
+    height:44px;
+    line-height:44px;
+    border-top:1px solid #ddd;
+    padding-top:1px;
+    background-color:#f5f5f5;
+    text-align:center;
+    padding:0 20px;
+}
+

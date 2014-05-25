@@ -1,0 +1,98 @@
+#set($defaultTabTitle="资源管理")
+#set($defaultPanel="toolsPanelMywork.vm") 
+<div class="dcms-box-body fd-clr">
+	<div>
+		<!-- header begin -->
+	    <div class="head">
+			 <div class="role-desc">
+				<span class="role-now">当前角色 </span>：<span class="role-title">$!role.name</span> <a class="btn-basic btn-blue" id="return_role_manage" >返回角色管理</a>
+			 </div>
+            <ul class="tabs-a-topics"> 
+			   <li #if($!isSelect!='false') class="current"#end><a href="$intraModule.setTarget("acl/aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_GetPermission2Role","true").addQueryData("roleId","$!roleId").addQueryData("isSelect","true").addQueryData("resourceType","$!resourceType").addQueryData("appName","$!appName")">已选择</a></li>
+               <li #if($!isSelect=='false') class="current"#end><a href="$intraModule.setTarget("acl/aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_GetPermission2Role","true").addQueryData("roleId","$!roleId").addQueryData("isSelect","false").addQueryData("resourceType","$!resourceType").addQueryData("appName","$!appName")">未选择</a></li>
+            </ul>
+			<form method="post" id="js-search-page" name=""  action="/admin/acl_role_2_permission.html" >
+    			<input type="hidden" name="action" value="AclPermissionAction">
+    			<input type="hidden" name="event_submit_do_GetPermission2Role" value="true" id="dcms-form-event-type">
+    			<input type="hidden" name="page" id="js-page-num" value="1">
+				<input type="hidden" name="isSelect" value="$!isSelect">
+				<input type="hidden" name="roleId" id="roleId" value="$!roleId"> 
+			
+            <div class="searchbar">
+				               <select name="appName">
+    								<option value="">系统名称</option>
+    								<option value="dcms" #if("$!appName" == "dcms") selected #end >CASE</option> 						
+    							</select>
+								
+								<select name="resourceType">
+    								<option value="">资源类型</option>
+    								<option value="url" #if("$!resourceType" == "url") selected #end >url资源</option>
+        							<option value="action" #if("$!resourceType" == "action") selected #end >action资源</option>
+        							<option value="menu" #if("$!resourceType" == "menu") selected #end >菜单资源</option>							
+    							</select> 
+    							<input type="submit" class="search-btn btn-basic btn-gray" id="search-btn" value="搜索"/>
+    							
+                 </div>
+                 <div class="sortbar"> 
+                        <div class="simple-page">
+						#if( $paginator && $paginator.pages>0 )
+                            #unifiedPageSimpleList($paginator)
+						#end
+                        </div>			
+		        </div> 
+		 	</form>
+        </div>
+ 		<!-- header end -->
+		<!-- body begin -->
+		<div class="pl-body fd-clr">
+		 	<div class="dcms-box-list">
+				#if($list && $list.size() > 0)
+					<table  class="page-tab table-sub">
+						<thead>
+							<tr>
+								<th class="name">名称</th>
+								<th class="system">所属系统</th>							
+								<th class="url">URL</th>
+                                <th class="code">CODE</th>								
+								<th class="operator">操作</th>
+							</tr>
+						</thead>
+						<tbody class="page-body">		
+						   #foreach( $resource in $list)
+							<tr>     
+								   <td class="des">$!resource.name</td>
+									<td class="system">
+										$!resource.appName
+									</td>
+									<td class="url">
+										$!resource.url
+									</td>
+									<td class="code">$!resource.code</td> 
+									<td class="operator">	
+										#if ($!isSelect=='true') 
+											<a class="js-assign-permission operate-btn gone"  data-id=$!{resource.id}>添加权限</a>			
+											<a class="js-cancel-permission operate-btn visible"  data-id=$!{resource.id}>取消权限</a>		
+										#else
+											<a class="js-assign-permission operate-btn visible"  data-id=$!{resource.id}>添加权限</a>		
+											<a class="js-cancel-permission operate-btn gone"  data-id=$!{resource.id}>取消权限</a>		
+										#end
+																				
+									</td>
+							</tr>
+							#end
+						</tbody>
+					</table>
+				#else
+					<div class="dcms-box-no-result">目前没有权限信息!</div>
+				#end
+			</div>
+	     </div>
+	     <!-- body end -->
+		 #if( $paginator && $paginator.pages>0 )
+			<div class="pages fd-clr" align="center">
+				#unifiedPageList($paginator, 5)
+			</div>
+		 #end
+	</div>
+</div> 
+ 

@@ -1,0 +1,78 @@
+$rundata.setLayoutEnabled(false)
+<div>
+	<div class="form-vertical dcms-form">
+	<form id="permission-submit-form" method="POST" action="#">
+		 <input type="hidden" name="action" value="AclPermissionAction"/>
+	     <input type="hidden" name="event_submit_do_saveOrUpdatePermission" value="true"/>
+		 <input type="hidden" name="id" id="id" value="$!resource.id"/>  
+			 <dl class="item-form">
+                <!-- 加class名“must-fill”，则自动加上必选标识(红色星号) -->
+                <dt class="topic must-fill">所属系统：</dt>  
+                <dd>
+						<select name="appName" id="appName">							
+							<option value="dcms"  #if("$!resource.appName" == "dcms") selected #end >DCMS</option>
+							<option value="site" #if("$!resource.appName" == "site") selected #end >SITE</option>
+                        </select>
+                        
+                </dd>
+            </dl>
+			 <dl class="item-form">
+                <!-- 加class名“must-fill”，则自动加上必选标识(红色星号) -->
+                <dt class="topic must-fill">资源类型：</dt>  
+                <dd>
+						<select name="resourceType" id="resourceType">							
+							<option value="url"  #if("$!resource.resourceType" == "url") selected #end >url</option>
+							<option value="action" #if("$!resource.resourceType" == "action") selected #end >action</option>					
+                        </select> 
+                </dd>
+            </dl>
+			
+			 <dl class="item-form">
+                <!-- 加class名“must-fill”，则自动加上必选标识(红色星号) -->
+                <dt class="topic must-fill">是否白名单资源：</dt>  
+                <dd>
+						<select name="isWhite" id="isWhite">							
+							<option value="0"  #if("$!resource.isWhite" == "0") selected #end >普通资源</option>
+							<option value="1" #if("$!resource.isWhite" == "1") selected #end >白名单资源</option>					
+                        </select> 
+                </dd>
+            </dl> 
+			<dl class="item-form">
+                <!-- 加class名“must-fill”，则自动加上必选标识(红色星号) -->
+                <dt class="topic must-fill">资源名称：</dt>  
+                <dd>
+					  <input data-valid="{required:true,key:'资源名称'}" value="$!resource.name"  name="name" style="width:200px"  id="name" type="text"   maxlength="50" placeholder="请填写资源名称" />
+                    <!-- 错误信息提示框，加上"validator-error"class显示错误信息，去除此class则隐藏错误信息 -->
+                    <!-- 当错误信息需要同输入框在一行内显示时，放在同一个dd内 -->
+                    <span class="dcms-validator-tip">资源名称不能为空</span>	 	
+                        
+                </dd>
+            </dl>
+			<dl class="item-form">
+                <!-- 加class名“must-fill”，则自动加上必选标识(红色星号) -->
+                <dt class="topic must-fill">CODE：</dt>  
+                <dd>
+                    <!-- "data-valid"用于验证信息配置，所以需要验证的表单元素都需要加此属性 -->
+                    <input data-valid="{required:true,key:'CODE'}" value="$!resource.code"  name="code" style="width:200px" id="code" type="text"   maxlength="50" placeholder="请填写权限CODE" />
+                    <!-- 错误信息提示框，加上"validator-error"class显示错误信息，去除此class则隐藏错误信息 -->
+                    <!-- 当错误信息需要同输入框在一行内显示时，放在同一个dd内 -->
+                    <span class="dcms-validator-tip">CODE不能为空</span>
+                </dd>
+            </dl>
+			<dl class="item-form">
+                <dt class="topic must-fill">URL：</dt>  
+                <dd>
+                    <input data-valid="{required:true,key:'URL'}" value="$!resource.url"  name="url" style="width:260px" id="url" type="text"  maxlength="50" placeholder="请填写权限URL" />
+                    <span class="dcms-validator-tip">URL不能为空</span>
+                </dd>
+            </dl> 
+			<dl class="item-form">
+                <dt class="topic">描述：</dt>  
+                <dd>
+                    <input data-valid="{key:'描述'}" value="$!resource.description"  name="description"  style="width:260px"  id="description"  type="text"  maxlength="50" placeholder="请填写权限描述" />
+                    <span class="dcms-validator-tip"></span>
+                </dd>
+            </dl> 
+	</form>
+	</div>
+</div>

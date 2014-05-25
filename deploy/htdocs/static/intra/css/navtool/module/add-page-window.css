@@ -1,0 +1,96 @@
+@charset "gb2312";
+/* CSS Document */
+.apw{ display:none; width:900px; background-color: #FFF;font-size: 12px;}
+.apw-title{float:left;}
+.apw-row{line-height:1em;text-align: center;margin-top: 0px;padding: 0px;clear:both;position: relative;margin-top: 5px;}
+.apw-pageNum{
+	float: right;
+}
+
+.apw-pageInfo{
+	position: relative;
+	left:10px;
+	float: left;
+}
+/* cms“≥√Êtable—˘ Ω*/
+.apw-table {
+	text-align:left;
+ 	border-collapse: collapse;
+	width: 100%;;
+	border: 2px solid #C6DBF6;
+}
+
+.apw-table caption {
+	border:1px solid #C6DBF6;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 0px;
+	height: 1.2em;
+}
+
+.apw-table thead {
+	font-size:12px;
+  	background: #C6DBF6 ;
+	border-top: 1px solid #C6DBF6;
+	border-bottom: 1px solid #C6DBF6;
+}
+.apw-table col {
+  border-right: 1px solid #C6DBF6;
+}
+.apw-table th {
+  font-weight: normal;
+	text-align: left;
+  border-right: 1px solid #C6DBF6;
+  padding: 0.1em 1em;
+}
+.apw-table td{
+	overflow: hidden;
+	white-space:nowrap;
+	font-size:12px;
+  padding: 0.1em 1em;
+}
+.apw-table tr{
+	height: 2em;
+}
+.apw-table .odd {
+  background-color:#edf5ff;
+}
+
+.apw-table tr:hover {
+	cursor:pointer;
+  background-color:#BAD0EE;
+	color: #fff;
+}
+
+.apw-table thead tr:hover {
+  background-color: transparent;
+	color: inherit;
+}
+.apw .apw-pagelist{background-color:#E6EAF5;margin-top:0px;padding:5px 0;}
+.apw .apw-none{margin-top:0px;}
+.apw .page-button{background: url("http://img.china.alibaba.com/cms/upload/2013/108/086/680801_133354742.png") no-repeat scroll 0 0 transparent;    border: 1px solid #CCCCCC;
+    color: #B4B4B4;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 3px;
+    min-width: 12px;
+    padding: 0 4px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    word-break: keep-all;}
+.apw .prev-button{      background-position: -9px -113px;
+    padding-left: 16px;    }
+.apw .next-button{background-position: 46px -113px;
+    padding-right: 16px;}
+.apw .next-button:hover {
+background-position: 46px -143px;
+border-color: #6d83af;
+color: #3b5995;
+}
+.apw .prev-button:hover {
+background-position: -9px -143px;
+border-color: #6d83af;
+color: #3b5995;
+}

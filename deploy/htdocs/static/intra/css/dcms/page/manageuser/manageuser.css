@@ -1,0 +1,54 @@
+/**
+ * @package FD.app.dcms.member.manage
+ * @author: hongss
+ * @Date: 2011-09-06
+ */
+.dcms-clr { zoom:1;}
+.dcms-clr:after { display:block; clear:both; height:0; content:"\0020";}
+
+table.dcms-grid { width:788px;}
+.dcms-content .dcms-search { margin-left:18px; padding-top:12px;}
+.dcms-content .dcms-search h3 { height:38px; line-height:38px; font-size:14px; font-weight:bolder; color:#000;}
+.dcms-content .dcms-search-form { height:32px; overflow:hidden;}
+.dcms-content .list-input li { float:left; padding-right:12px;}
+.dcms-content .list-input input { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 3px; color: #333; height:16px;}
+.dcms-content .list-input select { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 2px; width:115px; height:24px;}
+.dcms-content .list-input input.name { width:98px;}
+.dcms-content .list-input .dcms-btn { margin-top:3px;}
+
+.dcms-search-list .td-user-id { width:156px;}
+.dcms-search-list .td-user-name { width:112px;}
+.dcms-search-list .td-source-category { width:218px; overflow:hidden;}
+.dcms-search-list .td-user-part { width:96px;}
+.dcms-search-list .td-update-date { width:96px;}
+.dcms-search-list .td-user-state { width:96px;}
+.dcms-search-list td { white-space:nowrap;}
+
+/*信息提示便签*/
+.dcms-grid-tips-wrap .dcms-grid-tips-content li, 
+.dcms-grid-tips-wrap .dcms-grid-tips-content li:hover{ line-height:20px; color:#666;}
+
+/*权限管理设置对话框*/
+#js-set-userinfo-dialog { width:auto;}
+#js-set-userinfo-dialog .left-content { float:left; padding-right:10px;}
+#js-set-userinfo-dialog .dl-container { padding-bottom:8px;}
+#js-set-userinfo-dialog .detail-userinfo { color:#333; line-height:24px; width:630px; /*padding-bottom:8px;*/ overflow:hidden;}
+#js-set-userinfo-dialog .detail-userinfo dt { font-weight:700;}
+#js-set-userinfo-dialog .detail-userinfo dd { padding-left:8px;}
+#js-set-userinfo-dialog .detail-userinfo dd.small { width:202px;}
+#js-set-userinfo-dialog .detail-userinfo .dcms-input { width:158px;}
+#js-set-userinfo-dialog .table-title { width:630px; background-color:#adbcdc; height:28px;line-height:28px;}
+#js-set-userinfo-dialog .table-title li { float:left; color:#fff; font-weight:700; padding-left:8px;}
+#js-set-userinfo-dialog .table-container td { word-break:break-word;}
+#js-set-userinfo-dialog .table-container .popedom-name { width:230px;}
+#js-set-userinfo-dialog .table-content { height:87px; width:628px; border:1px solid #adbcdc; overflow-y:scroll;}
+#js-set-userinfo-dialog .dcms-grid { width:610px; border:none;}
+#js-set-userinfo-dialog .options-container { float:left; width:210px; height:357px; display:none;}
+#js-set-userinfo-dialog .show-options-bar { float:left; width:10px; height:100%; background:url(http://img.china.alibaba.com/cms/upload/other/dcms/choose-bar.png) no-repeat center;}
+#js-set-userinfo-dialog .options-content { float:left; padding-left:4px; width:196px; height:357px; overflow-y:scroll;}
+#js-set-userinfo-dialog .options-content h6 { height:20px; line-height:20px; padding-left:8px; background-color:#eee;}
+#js-set-userinfo-dialog .list-options { padding-left:8px; line-height:26px; color:#333;}
+#js-set-userinfo-dialog .list-options input { vertical-align:middle;}
+#js-set-userinfo-dialog .list-options .description { color:#666;}
+#js-set-userinfo-dialog  footer { /*width:630px; overflow:hidden;*/}
+

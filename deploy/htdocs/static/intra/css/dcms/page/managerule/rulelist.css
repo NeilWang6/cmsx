@@ -1,0 +1,27 @@
+/**
+ * @package FD.app.dcms.rule.manage
+ * @author: hongss
+ * @Date: 2011-03-09
+ */
+.dcms-clr { zoom:1;}
+.dcms-clr:after { display:block; clear:both; height:0; content:"\0020";}
+
+.dcms-content .dcms-search { margin-left:18px; padding-top:12px;}
+.dcms-content .dcms-search h3 { height:38px; line-height:38px; font-size:14px; font-weight:bolder; color:#000;}
+.dcms-content .dcms-search-form { height:32px; overflow:hidden;}
+.dcms-content .list-input li { float:left; padding-right:12px;}
+.dcms-content .list-input input { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 3px; color: #333; height:16px;}
+.dcms-content .list-input select { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 2px; width:115px; height:24px;}
+.dcms-content .list-input input.name { width:98px;}
+.dcms-content .list-input input.keywords { width:174px;}
+.dcms-content .list-input .dcms-btn { margin-top:3px;}
+.dcms-content .list-page li {}
+
+.dcms-search-list .dcms-grid-operations-wrap { /*right:-138px;*/}
+.dcms-search-list .dcms-grid-operations { /*width:104px;*/}
+.dcms-search-list .td-chanese-name { width:200px;}
+.dcms-search-list .td-validity-term { width:208px;}
+.dcms-search-list .td-site  { width:168px; overflow:hidden;}
+.dcms-search-list .td-catalog  { width:108px; overflow:hidden;}
+.dcms-search-list .td-create-man { width:100px;}
+.dcms-search-list td { white-space:nowrap;}

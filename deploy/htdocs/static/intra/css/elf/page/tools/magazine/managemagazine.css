@@ -1,0 +1,86 @@
+
+
+.sample .show-win-2nd {
+margin-bottom: 6px;
+margin-right: 20px;
+}
+.show-win-2nd {
+position: relative;
+}
+.show-win-2nd dl {
+height: 114px;
+padding-bottom: 0;
+}
+.show-win-2nd dt {
+padding: 5px 0 5px;
+line-height: 18px;
+height: 20px;
+max-height: 56px;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+.show-win-2nd dd {
+line-height: 16px;
+color: #a0a0a0;
+}
+
+.show-win-2nd .txt2 {
+padding: 10px 0px 0px;
+height: 16px;
+}
+.show-win-2nd .txt {
+height: 16px;
+}
+
+.show-win-2nd .md{
+padding-left: 20px;
+}
+
+.blue{
+	color: #3366CC;
+}
+.magazine_title{
+	line-height: 18px;
+	font-weight: bold;
+	font-size:16px;
+}
+.data-table-title1{
+	font-size:12px;
+	font-weight: bold;
+	color:#5D5C5C;
+}
+.dialog-series-confirm-delete .dialog-b .section {
+height: 90px;
+line-height: 100px;
+text-align: center;
+}
+.dialog-basic section {
+padding: 15px;
+}
+.dialog-series-confirm-delete .dialog-b .section {
+line-height: 100px;
+text-align: center;
+}
+.dialog-series-confirm-delete .section span {
+font-size: 18px;
+}
+
+.blue{
+	color: #3366CC;
+}
+.bgblue{
+	background-color: #2073c0;
+	padding: 2px;
+	width:40px;
+	color: #ffffff;
+	float:left;
+}
+.bgyello{
+	background-color: #ff5400;
+	padding: 2px;
+	width:40px;
+	color: #ffffff;
+	float:left;
+}
+.js-rs-detail .detail{max-width:990px;}

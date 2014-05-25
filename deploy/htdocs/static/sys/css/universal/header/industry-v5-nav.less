@@ -1,0 +1,161 @@
+#ali-nav-5i{
+	margin-bottom:8px;
+}
+
+#ali-nav-main{
+    height:34px;
+    background-color:#CCC;
+    padding-top:2px;
+	
+	.ali-nav-category{
+		float:left;
+		ul{
+			position:relative;
+			_float:left;
+			li{
+				float:left;
+				_display:inline;
+				height:34px;
+				line-height:32px;
+				line-height:34px\0;
+				*line-height:32px;
+				margin:0 3px;
+				a{
+					display:inline-block;
+					padding:0 15px;
+					font-weight:700;
+					font-size:14px;
+					color:#FFF!important;
+					overflow:hidden;
+				}
+				a:hover{
+					text-decoration: underline;
+				}
+			}
+			li.hover,
+			li.current{
+				border:1px solid #CCC;
+				border-bottom:0 none;
+				height:33px;
+				line-height:30px;
+				line-height:32px\0;
+				*line-height:30px;
+				margin:0 2px;
+				a{
+					padding:0 14px;
+					border:1px solid #CCC;
+					border-bottom:0 none;
+					height:32px;
+					color:#333!important;
+				}
+			}
+			li.current a{
+				background-color:#FBF3E9!important;
+			}
+			li.hover a{
+				background-color:#FFE4C3;
+			}
+			/*ICON BLOCK*/
+			li{
+				position:relative;
+				z-index:9;
+			}
+			li.hover{
+				z-index:8;
+			}
+			li.current{
+				z-index:7;
+			}
+			li sup{
+				position:absolute;
+				display:block;
+				vertical-align:baseline;
+				background:url(http://img.china.alibaba.com/cms/upload/2012/364/844/448463_1643551954.png) no-repeat;
+				font-size:0;
+				line-height:0;
+				height:18px;
+				width:45px;
+				overflow:hidden;
+				top:-8px;
+				right:-22px;
+				z-index:10;
+			}
+			li.hover sup{
+				top:-9px;
+			}
+			li sup.hot{
+				background-position:0 -40px;
+			}
+			li sup.new{
+				background-position:0 -80px;
+			}
+			/*END*/
+		}
+	}
+	.ali-nav-promotion{
+		float:right;
+		padding-left:20px;
+		
+		ul{
+			_float:left;
+		}
+		li{
+			float:left;
+			height:34px;
+			line-height:32px;
+			line-height:34px\0;
+			*line-height:32px;
+			padding:0 8px;
+			overflow:hidden;
+			a{
+				color:#FFF!important;
+			}
+		}
+	}
+}
+
+#ali-nav-sub{
+	border-bottom:1px solid #F2D6B4;
+	background-color:#FBF3E9;
+	height:29px;
+	overflow:hidden;
+	
+	.ali-nav-container{
+		height:29px;
+		position:relative;
+		overflow:hidden;
+		ul{
+			display:none;
+			position:relative;
+			float:left;
+		}
+		ul.current{
+			display:block;
+		}
+		li{
+			float:left;
+			padding:0 12px;
+			height:29px;
+			line-height:30px;
+			line-height:32px\0;
+			*line-height:30px;
+			a{
+				color:#333;
+				white-space:nowrap;
+			}
+		}
+		li.new{
+			padding-right:18px;
+			background:url(http://img.china.alibaba.com/cms/upload/2012/883/494/494388_1643551954.png) no-repeat right 8px;
+		}
+		li.current
+		{
+			a{
+				font-weight:700;
+			}
+		}
+	}
+}
+#ali-nav-sub.hover{
+	background-color:#FFE4C3;
+}

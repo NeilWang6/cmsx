@@ -1,0 +1,33 @@
+/**
+ * @authur 
+ * @usefor 定义dialog里面的文字样式
+ * @date   
+ */
+.dialog-basic .dialog-b section .text{
+    font-size: 14px;
+    color:#474748;
+}
+.dialog-basic .dialog-b section .title{
+    font-weight: bold;
+    font-size: 14px;
+    color:#474748;
+}
+
+.dialog-basic .dialog-b section .middle{	
+	text-align: center;
+	vertical-align: middle;
+	margin: 30px 120px;
+}
+.dialog-basic .dialog-b section .msg{
+	
+}
+.dialog-basic .dialog-b section .left{
+	float: left;
+	height: 40px;
+	line-height: 28px;
+	margin-left: 10px;
+	text-align: left;
+}
+.dialog-basic .tui-icon-36 {	
+	margin-top: 15px;
+}

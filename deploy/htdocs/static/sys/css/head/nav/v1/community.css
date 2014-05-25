@@ -1,0 +1,157 @@
+/**
+ * @package FD.sys.head.nav.community
+ * @version 1.0.110113
+ * @version 1.0.110117 //hover color fix
+ * @version 1.0.110119 //normal for em
+ * @author  Edgar
+ */
+
+.ali-nav,
+.ali-nav .hood-nav,
+.ali-nav .hood-nav li,
+.ali-nav .hood-nav a,
+.ali-nav .hood-nav em,
+.ali-nav .community-nav,
+.ali-nav .community-nav-over .to-others-a{
+    background:url(http://img.china.alibaba.com/cms/upload/other/sys/nav-v1.3.png) no-repeat -150px 0;
+}
+.ali-nav{
+    height:36px;
+    background-position:0 -100px;
+    background-repeat:repeat-x;
+    font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+}
+.ali-nav .hood-nav{
+    float:left;
+    height:36px;
+    background-position:-110px -50px;
+    padding-left:16px;
+}
+.ali-nav .hood-nav li{
+    float:left;
+    height:31px;
+    padding:5px 2px 0 0;
+    background-position:right 0;
+    overflow:hidden;
+}
+.ali-nav .hood-nav .nav-last{
+    background-position:-150px 0;
+}
+.ali-nav .hood-nav a{
+    display:inline-block;
+    height:31px;
+    padding-left:17px;
+    text-decoration:none !important;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    *padding-top:4px;
+    *height:27px;
+    vertical-align:top;
+}
+.ali-nav .hood-nav a:link,
+.ali-nav .hood-nav a:visited{
+    color:#b75200;
+}
+.ali-nav .hood-nav a:hover,
+.ali-nav .hood-nav a:active{
+    color:#ff7300;
+} 
+.ali-nav .hood-nav em{
+    display:inline-block;
+    height:31px;
+    padding-right:16px;
+    vertical-align:top;
+    line-height:26px;
+    *margin-top:-4px;
+    font-style:normal;
+}
+.ali-nav .community-nav{
+    float:right;
+    position:relative;
+    z-index:100;
+    width:107px;
+    height:36px;
+    background-position:right -250px;
+}
+.ali-nav .community-nav-over .fd-hide{
+    display:block;
+}
+.ali-nav .community-nav-over{
+    width:105px;
+    height:33px;
+    border:1px solid #b75200;
+    border-bottom-width:1px;
+    background-position:-200px 0;
+}
+.ali-nav .community-nav .to-others{
+    padding-top:1px;
+}
+.ali-nav .community-nav-over .to-others{
+    width:103px;
+    height:30px;
+    border:1px solid #f90;
+    border-bottom-color:#cfa046;
+}
+.ali-nav .community-nav .to-others-a{
+    display:block;
+    width:81px;
+    height:29px;
+    padding:3px 23px 3px 3px;
+    color:#b75200 !important;
+    text-decoration:none !important;
+    text-align:right;
+    line-height:27px;
+    line-height:30px\9;
+    _line-height:27px;
+}
+.ali-nav .community-nav-over .to-others-a{
+    width:81px;
+    height:29px;
+    overflow:hidden;
+    border:1px solid #fffabd;
+    border-bottom:0 none;
+    padding:0 20px 0 0;
+    background-position:right -300px;
+}
+.ali-nav .community-nav-list{
+    position:absolute;
+    top:33px;
+    left:-1px;
+    width:105px;
+    border:1px solid #b75200;
+    border-top:0 none;
+    background:#fff;
+}
+.ali-nav .community-nav-list ul{
+    border:1px solid #f90;
+    border-top:0 none;
+    padding-bottom:3px;
+}
+.ali-nav .community-nav li{
+    height:20px;
+    margin:0 1px;
+    padding:1px 0;
+    border-top:1px dashed #ccc;
+}
+.ali-nav .community-nav li.first-row{
+    padding-top:7px;
+    border-top:2px solid #ccc;
+    margin:0;
+    padding-left:1px;
+}
+.ali-nav .community-nav li a{
+    display:block;
+    width:84px;
+    height:20px;
+    overflow:hidden;
+    line-height:18px;
+    line-height:22px\9;
+    _line-height:18px;
+    padding-left:17px;
+    color:#333 !important;
+    text-decoration:none !important;
+}
+.ali-nav .community-nav li a:hover{
+    background:#ccc;
+}

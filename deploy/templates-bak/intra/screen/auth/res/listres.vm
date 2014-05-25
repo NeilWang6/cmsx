@@ -1,0 +1,48 @@
+$page.setTitle("权限资源列表-管理中心") 
+$page.setTitle("文章列表")
+$page.addStyleSheet("${staticDomainUrl}/intra/css/dialog.css")
+$page.addScript("${staticDomainUrl}/intra/js/dialog.js") 
+$page.addScript("${staticDomainUrl}/intra/js/request.js")
+$page.addScript("${staticDomainUrl}/intra/js/drop_new.js") 
+$page.addStyleSheet("${staticDomainUrl}/intra/css/jquery.treeview.css")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.cookie.js")
+$page.addScript("${staticDomainUrl}/intra/js/jquery.treeview.js")
+$page.addScript("${staticDomainUrl}/intra/js/cookie.js") 
+<div class="pad-lr-10">
+<div class="pad-10">
+<div class="content-menu ib-a blue line-x"> 
+<a class="add fb" href="javascript:add()"><em>添加权限资源</em></a> <span> | </span>
+<a class="on" href="listRes.htm"><em>权限资源列表</em></a>  
+</div> </div> 
+</div>
+ <div class="pad-10">
+<div class="table-list">
+    <table width="100%">
+        <thead>
+            <tr>
+            <th width="40">ID</th>
+			<th align="left">名称</th>
+            <th width="130" >创建时间</th>
+			<th width="150">管理操作</th>
+            </tr>
+        </thead>
+		<tbody> 
+			#foreach($res in $reslist)
+				<tr>
+					<td align='center' >$res.id</td>
+					<td style=''>$res.resname</td>
+					<td align='center'>
+						$res.gmtCreate
+					</td>
+					<td align='center'><a href='javascript:addpid($res.id)'><em><strong>添加</strong></em></a> | <a href="javascript:edit($res.id,'$res.name')"><em>修改</em></a> | <a href="javascript:;" onclick="delFun('','$res.id')">删除</a></td>
+				</tr>
+			#end
+		</tbody>
+     </table>
+    <div class="btn">
+	</div>
+    <div id="pages"></div> 
+</div>
+</form> 
+ </div>
+<script type="text/javascript" src="${staticDomainUrl}/intra/js/auth/res/listres.js"></script>  

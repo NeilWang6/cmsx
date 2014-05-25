@@ -1,0 +1,198 @@
+/**
+ * @authur zhuqh
+ * @usefor cell库
+ * @date   2012-01-05
+ */
+.dcms-box-search {
+	display: block;
+	height: 40px;
+}
+
+.submit-error-message {
+	color: #f00 ! important;
+}
+
+.module-attribute {
+	margin: 0 auto;
+}
+.dcms-box-cell-left, .dcms-box-cell-right {
+	float: left;
+	margin: 8px;
+}
+
+.vertical-img {
+	width: 170px;
+	height: 150px;
+	border: 1px solid #BDC7D8;
+}
+.box-img img {
+	max-width: 170px;
+	max-height: 150px;
+}
+.dcms-box-upload {
+	margin: 8px auto;
+}
+.dcms-box-upload .local-upload {
+    font-size:0;
+    line-height:0;
+    vertical-align:middle;
+    width:70px;
+}
+.dcms-box-upload .link-upload {
+ 	margin:0 2px !important;
+ 	width:auto !important;
+	display: inline-block;
+}
+.dcms-box-upload .link-upload .dcms-box-grid-a {
+	display: inline-block;
+}
+.dcms-box-upload .cell-upload {
+	display: inline-block;
+    vertical-align:middle;
+    
+}
+.dcms-box-upload .txt {
+    
+}
+.cell-attribute .label {
+	display: inline-block;
+	width: 50px;
+	text-align: right;
+}
+.cell-attribute .row {
+	margin: 8px 4px;
+}
+.row .dcms-input-text {
+	width: 205px !important;
+}
+
+
+
+
+.pic-desc{
+	padding: 0 4px;
+	display:inline-block;
+}
+.form-vertical dl.item-form {
+    padding:4px 0;
+}
+.form-vertical dl.item-form .container-img {
+    line-height:0;
+    font-size:0;
+}
+.form-vertical dl.item-form .thumb-img {
+    max-width:422px;
+    max-height:134px;
+}
+.form-vertical dl.item-form .link-addr {
+    border:1px solid #aeaeae;
+    border-right:0;
+    
+}
+.form-vertical dl.item-form .btn-ok {
+    border-radius:0 2px 2px 0;
+}
+.form-vertical dl.item-form .auto-size .checkbox {
+	height: 18px;
+	vertical-align: middle;
+}
+.form-vertical dl.item-form .module-name{
+    width:320px;
+}
+.form-vertical dl.item-form .topic {
+    width:96px;
+}
+.form-vertical dl.item-form dd {
+    padding-left:108px;
+}
+.form-vertical input[type=text] {
+    width:194px;
+}
+.form-vertical dl.item-form .width-input {
+    width:84px;
+}
+.form-vertical dl.textarea {
+    padding-top:12px;
+}
+
+.form-vertical dl.item-form .module-width {
+    padding-right:42px;
+}
+.form-vertical dl.last {
+    padding:12px 0;
+}
+/*add by hongss for 保证不被代码编辑器给遮挡*/
+#popup {
+    display:none;
+    z-index:100;
+}
+
+.ext-width {
+min-width: 500px;
+width: auto !important;
+}
+
+.dcms-box-body, .dcms-box-body .dcms-box-center {
+    position:static;
+}
+
+.CodeMirror{
+	width:100%;
+}
+.CodeMirror-scroll{
+	height:480px;
+}
+.CodeMirror{ border-top: 1px solid black; border-bottom: 1px solid black;}
+.CodeMirror-fullscreen {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	margin: 0;
+	padding: 0;
+	border: 0px solid #bbb;
+	opacity: 1;
+}
+
+.dcms-save-success {
+	position: absolute;
+	display: none;
+	width: 14px;
+	height: 14px;
+	background: url("http://img.china.alibaba.com/cms/upload/other/dcms/icon-save.png") no-repeat;
+	top: 10px;
+	left: 120px;
+	line-height: 42px;
+	overflow: hidden;
+}
+
+.header-dialog-content .dialog-content-text{
+	line-height: 20px;
+}
+.header-dialog-content .m-remark{
+	line-height: 20px;
+	margin-top:10px;
+}
+.header-dialog-content  .remark{
+	min-width:400px;
+	max-width:400px;
+	min-height:70px;
+	max-height:70px;
+}
+
+.dialog-error-msg .msg-content {
+    padding-left:52px;
+}
+.dialog-error-msg .msg {
+    padding:8px 0 0 42px;
+    font-size:14px;
+}
+
+
+.con-auto-tdp {
+    display:inline-block;
+    padding-left:32px;
+}

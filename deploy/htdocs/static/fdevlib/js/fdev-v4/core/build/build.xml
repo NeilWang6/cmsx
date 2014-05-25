@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<project name="fdev4-build" default="build" basedir="./">
+    <description>fdev4 Build File</description>
+    
+    <dirname property="root.dir" file="${ant.file.fdev4-build}/.."/>
+    <property name="build.dir" location="${root.dir}/build/"/>
+
+    <property name="yuic.jar" location="${build.dir}/yuicompressor-2.4.2.jar"/>
+    <property name="charset" value="gbk"/>
+    <property name="target.file" value="${root.dir}/fdev-min.js"/>
+    <property name="jquery.file" value="${root.dir}/jquery-1.7.2.min.js"/>
+    <!--
+    <property name="cut.file" value="${build.dir}/cut.sh"/>
+    <property name="pre.file" value="${root.dir}/pre-jquery.js"/>
+    
+    <target name="copy">
+        <copy file="${jquery.file}" tofile="${jquery.file}.license" overwrite="true"/>
+        <copy file="${jquery.file}" tofile="${jquery.file}.main" overwrite="true"/>
+    </target>
+    
+    <target name="cut" depends="copy">
+        <exec executable="${cut.file}">
+            <arg value="${jquery.file}.license"/>
+            <arg value="${jquery.file}.main"/>
+        </exec>
+    </target>
+    
+    <target name="concat_jquery" depends="cut">
+        <concat destfile="${pre.file}.tmp">
+            <path path="${root.dir}/pre-jquery.js"/>
+            <filterchain>
+                <deletecharacters chars="\t\r\n"/>
+            </filterchain>
+        </concat>
+        <concat destfile="${jquery.file}.tmp" encoding="${charset}" outputencoding="${charset}" fixlastline="no">
+            <path path="${pre.file}.tmp"/>
+            <path path="${jquery.file}.main"/>
+        </concat>
+    </target>
+    -->
+    <target name="compress">
+        <apply executable="java" verbose="true" dest="${root.dir}" failonerror="true">
+            <fileset dir="${root.dir}">
+                <include name="gears.js"/>
+                <include name="web.js"/>
+                <include name="config.js"/>
+            </fileset>
+
+            <arg line="-jar"/>
+            <arg path="${yuic.jar}"/>
+            <arg line="--charset ${charset}"/>
+            <arg value="--type"/>
+            <arg value="js"/>
+            <arg value="-o"/>
+            <targetfile/>
+            <mapper type="regexp" from="^(.*)\.js$" to="\1-min.js"/>
+        </apply>
+    </target>
+
+    <target name="concat" depends="compress">
+        <concat destfile="${target.file}" encoding="${charset}" outputencoding="${charset}" fixlastline="yes">
+            <path path="${jquery.file}"/>
+            <path path="${root.dir}/gears-min.js"/>
+            <path path="${root.dir}/web-min.js"/>
+            <path path="${root.dir}/config-min.js"/>
+        </concat>
+    </target>
+    
+    <target name="clean">
+        <delete file="${root.dir}/gears-min.js"/>
+        <delete file="${root.dir}/web-min.js"/>
+        <delete file="${root.dir}/config-min.js"/>
+    </target>
+
+    <target name="build_fdev4" depends="concat,clean"/>
+</project>

@@ -1,0 +1,24 @@
+.token-line {
+    margin-top:4px;
+    border-top: 1px solid #B7C3DD;
+
+}
+
+.token-line h3 {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    height: 38px;
+    line-height: 38px;
+}
+
+.open-template-link {
+    padding-left:10px;
+}
+
+.dcms-content .dcms-form input[readonly="readonly"] {
+    background-color: #EEEEEE;
+}
+.dcms-form input[type="text"], .dcms-input-text { width:218px; }
+.dcms-form select, .dcms-select { width:226px; }
+.dcms-form label { width: 110px; }

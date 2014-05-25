@@ -1,0 +1,111 @@
+.cat {
+	margin-bottom:10px;
+}
+.cat .btn{
+	padding:3px 22px;
+	color:#409ad6;
+	background-color:#f3f8fb;
+	border:1px solid #7ba6c9;
+	border-bottom:1px solid #374c7a;
+}
+.cat label,.keyword label {
+	display:inline-block;
+	width:50px;
+	text-align:right;
+	padding-right:3px;
+}
+.order label{
+	padding-left:20px;
+	padding-right:3px;
+}
+.searchform select{
+	padding:2px 3px 2px 3px;
+}
+.keyword input[type="text"]{
+	padding-top:1px;
+	padding-bottom:1px;
+}
+body:first-of-type  .keyword .search-btn{
+	top:-1px;
+}
+body:first-of-type .keyword .search-btn, x:-moz-any-link, x:default{
+	top:0px;
+}
+.dcms-box-paging .total{
+	padding-left:0;
+}
+
+.page-tab{
+	width:100%;
+}
+.page-tab tr{
+	display:block;
+	margin-top:1px;
+}
+.page-tab td, .page-tab th{
+	text-align:left;
+}
+.page-tab thead tr{
+	height:20px;
+	padding:4px 8px 4px 8px;
+	border:1px solid #7ba6c9;
+	background:#a1c5e3;
+	-webkit-box-shadow:0 0 0 1px #cfe1f0 inset;
+	-moz-box-shadow:0 0 0 1px #cfe1f0 inset;
+	box-shadow:0 0 0 1px #cfe1f0 inset;
+}
+.page-tab thead th{
+	font-weight:400;
+	color:#444;
+}
+.page-tab tr{
+	padding:10px 8px;
+	border:1px solid #a1c5e3;
+}
+.page-tab tbody tr:hover{
+	background:#d9edfa;
+}
+.page-tab .name, .page-tab .user, .page-tab .time, .page-tab .tag, .page-tab .operator{
+	display:inline-block;
+	padding-right:10px;
+}
+.page-tab .name{
+	width:264px;
+}
+
+.page-tab .user{
+	width:104px;
+        word-wrap: break-word;
+}
+.page-tab .time{
+	width:100px;
+}
+.page-tab .tag{
+	width:220px;
+}
+.page-tab .operator{
+	width:142px;
+	padding-right:0px;
+}
+.page-tab tbody .name{
+	width:254px;
+	padding-left:10px;
+}
+.page-tab tbody .time{
+	color:#787878;
+}
+.page-tab .tag a{
+	margin-right:8px;
+}
+.page-tab .operator .import{
+	margin-right:4px;
+}
+.catalogsName{
+	display:inline-block;
+	width:645px
+}
+.cat .catalogsName, .cat label{	
+	display:inline-block;
+	vertical-align:top;	
+	padding-top:4px
+}

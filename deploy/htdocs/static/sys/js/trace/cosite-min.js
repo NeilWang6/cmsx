@@ -1,0 +1,1 @@
+(function(){var C=window.location.search,D="track_cookie",B,A=/\b1688\.com$/.test(window.location.hostname);if(C.indexOf("cosite=")>=0){if(A){B=D+"=y&"+C.substring(1)+("; path=/")+("; domain=.1688.com")}else{B=D+"=y&"+C.substring(1)+("; path=/")+("; domain=.alibaba.com")}document.cookie=B}})();

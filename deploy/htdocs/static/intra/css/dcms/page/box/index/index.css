@@ -1,0 +1,79 @@
+/* CSS Document */
+.nav-main {
+	width:844px;
+	overflow:hidden;
+}
+.quickstart{
+	margin-top:4px;
+	margin-left:20px;
+}
+.quickstart dt,.mine dt,.lib dt{
+	height:46px;
+	color:#000;
+	line-height:46px;
+	font-weight:700;
+}
+.quickstart li, .mine li, .lib li{
+	float:left;
+	margin-right:24px;
+}
+.quickstart li a, .mine li a, .lib li a{
+	display:block;
+	width:78px;
+	height:78px;
+	height:20px;
+	padding-top: 60px;
+	text-align:center;
+	border:1px solid #fff;
+	border-radius: 5px;
+	background-image:url(http://i00.c.aliimg.com/cms/upload/2012/226/762/267622_417709751.png);	
+}
+.quickstart li a{
+	
+}
+.mine, .lib{
+	clear:left;
+	margin-left:20px;
+}
+.quickstart li a:hover, .mine li a:hover, .lib li a:hover{
+	text-decoration:none;
+	border:1px solid #a1c5e3;
+       -moz-box-shadow: 0 0 4px #ddd;
+    -webkit-box-shadow: 0 0 4px #ddd;
+            box-shadow: 0 0 4px #ddd;
+}
+.quickstart li a:link,.quickstart li a:visited, .mine li a:link,.mine li a:visited, .lib li a:link,.lib li a:visited{
+	color:#409ad6;
+}
+.new-template{
+	background-position:-100px 0;	
+}
+.new-cell{
+	background-position:-200px 0;	
+}
+.new-module{
+	background-position:-300px 0;	
+}
+.my-favorite{
+	background-position:0 -100px;
+}
+.my-draft{
+	background-position:-100px -100px;
+}
+.page-lib{
+	background-position:0 -200px;
+}
+.template-lib{
+	background-position:-100px -200px;
+}
+.cell-lib{
+	background-position:-200px -200px;
+}
+.module-lib{
+	background-position:-300px -200px;
+}
+.layout-lib{
+	background-position:-400px -200px;
+}
+
+

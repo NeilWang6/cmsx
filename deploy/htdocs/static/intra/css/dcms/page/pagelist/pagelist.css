@@ -1,0 +1,61 @@
+/**
+ * œ‡πÿ“≥√Ê
+ * @author : arcthur.cheny
+ * @createTime : 2011-09-26
+ */
+
+.booth-management {
+	margin-left: 18px;
+	padding-top: 12px;
+}
+.booth-management h3 {
+	line-height: 38px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+	height: 38px;
+}
+
+.booth-management .info-bar {
+	height: 30px;
+	line-height: 30px;
+}
+.booth-management .info-bar span {
+	padding-right: 10px;
+}
+.dcms-grid {
+	width: 832px;
+}
+.dcms-grid tfoot td {
+	text-align: right;
+}
+.dcms-grid tbody td {
+	padding: 10px 0 10px 8px;
+	line-height: 1.2;
+	text-indent: 0;
+}
+.custom-page td {
+	word-break: keep-all;
+	white-space: normal;
+	overflow: hidden;
+}
+
+.custom-page .page-id, .custom-page .page-states {
+	width: 60px;
+}
+.custom-page .page-rules {
+	width: 80px;
+}
+.custom-page .page-name {
+	width: 200px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.custom-page .page-url {
+	width: 298px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.custom-page .page-update-time {
+	width: 120px;
+}

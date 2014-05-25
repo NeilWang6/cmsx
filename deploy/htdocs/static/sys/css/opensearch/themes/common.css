@@ -1,0 +1,112 @@
+/**
+ * @package opensearch.theme.common
+ * @author  Arcthur
+ * @version 04.11.2010
+ * @version 12.11.2010
+*/
+.vertical-img{
+    display:table;
+    text-align:center;
+    overflow:hidden;
+    font-size:0;
+    *display:block; /* for IE6/7 */
+}
+.vertical-img .box-img{
+    display:table-cell;
+    vertical-align:middle;
+    *display:inline; /* for IE6/7 */
+    *writing-mode:tb-rl; /* for IE6/7，改变书写方向，从上至下，从右至左 */
+    *text-align:center;
+    *height:100%;
+}
+.vertical-img img{
+    vertical-align:middle;
+}
+.opensearch-common .cell-product-2nd dd{
+    width:152px;
+    height:18px;
+    line-height:18px;
+}
+.opensearch-common .cell-product-2nd dd.price{
+    float:left;
+}
+.opensearch-common .cell-product-2nd dd.quantity{
+    float:right;
+}
+.opensearch-common .cell-product-2nd dd.info{
+    clear:both;
+}
+.opensearch-common .cell-product-2nd dd.description { height:36px; }
+.opensearch-common .cell-product-2nd .city{
+	float:left;
+	width:115px;
+	overflow:hidden;
+}
+.opensearch-common .cell-product-2nd .service{
+	float:right;
+}
+.opensearch-common .cell-product-2nd .service .icon-alipay,
+.opensearch-common .cell-product-2nd .service .icon-bussiness-trust,
+.opensearch-common .cell-product-2nd .service .icon-personal-trust{
+	display:inline-block;
+	width:18px;
+	height:16px;
+	background:url("http://img.china.alibaba.com/cms/upload/2010/104/200/2401_1428599264.png") no-repeat;
+}
+.opensearch-common .cell-product-2nd .service .icon-alipay {
+	background-position:-60px 0;
+}
+.opensearch-common .cell-product-2nd .service .icon-bussiness-trust {
+	background-position:-60px -40px;
+}
+.opensearch-common .cell-product-2nd .service .icon-personal-trust {
+	background-position:-90px -40px;
+}
+.opensearch-common .fd-cny,
+.opensearch-common .usd{
+    color:#f33;
+}
+.opensearch-common .value{
+    color:#f33;
+	font-size:14px;
+	font-weight:700;
+}
+.opensearch-common .price .txt{
+    color:#c00;
+    padding-left:4px;
+}
+.opensearch-common .cell-product-2nd dt{
+    border:1px solid #ddd;
+}
+.type-img-100 .cell-product-2nd dt{
+    width:108px;
+    height:108px;
+}
+.type-img-150 .cell-product-2nd dt{
+    width:152px;
+    height:152px;
+}
+.type-img-220 .cell-product-2nd dt{
+    width:228px;
+    height:228px;
+}
+.type-img-310 .cell-product-2nd dt{
+    width:318px;
+    height:318px;
+}
+.type-img-100 .cell-product-2nd{
+    width:110px;
+    margin:0 13px 6px;
+}
+.type-img-150 .cell-product-2nd{
+    width:160px;
+    margin:10px 14px 6px;
+}
+.type-img-220 .cell-product-2nd{
+    width:230px;
+    margin:0 4px 6px;
+}
+.type-img-310 .cell-product-2nd{
+    width:320px;
+    margin:0 78px 6px;
+}

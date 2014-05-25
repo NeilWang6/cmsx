@@ -1,0 +1,130 @@
+/**
+ * @authur zhuguo.nizg
+ * @usefor 模板库
+ * @date   2012-01-05
+ */
+body{
+    background:#ebebeb;
+    padding-bottom:1px;
+}
+.dcms-box-nav-bg2{
+    height:60px;
+    margin-bottom:-60px;
+    background:#4c6bac;
+}
+.template-wrap{
+    border-radius:6px;
+    box-shadow:0 0 8px rgba(68,68,68,.4);
+    padding:0 ! important;
+}
+.template-top{
+    padding:12px 32px;
+    border-radius:6px 6px 0 0;
+    background:#a1c5e3;
+}
+.template-top .add-template{
+    float:left;
+    width:100px;
+}
+.template-top .search-form{
+    float:left;
+}
+.template-body{
+    padding:24px;
+    border-radius:0 0 6px 6px;
+    background:#ffffff;
+}
+.dcms-box-list{
+    padding:20px 10px;
+}
+.all{
+    cursor:pointer;
+	color:#409ad6;
+}
+.selected{
+    cursor:pointer;
+	
+	color:#000000;
+
+}
+.dl-preview{
+ cursor:pointer;
+}
+
+/*dcms模板库类型选择区域*/
+.dcms-template-filter{overflow:hidden;}
+.dcms-template-filter ul{margin-left:-1px;overflow:hidden;zoom:1;}
+.dcms-template-filter ul:after{clear:both;content:"\0020";display:block;height:0;}
+.dcms-template-filter li{float:left;display:inline;margin-top:7px;padding:0 21px;border-left:1px solid #2a5ebd;}
+.dcms-template-filter li a{display:block;padding:0 9px;line-height:19px;}
+.dcms-template-filter li .current{background-color:#fff;-moz-border-radius:4px;border-radius:4px;}
+.dcms-search-filter{margin-left:21px;padding-bottom:10px;color:#444;}
+.dcms-search-filter .line{margin-top:16px;}
+.dcms-search-filter label{padding-right:6px;}
+.dcms-search-filter .scope{margin-right:32px;}
+.dcms-search-filter select{margin-right:8px;}
+.dcms-search-filter .page-color{margin-right:24px;}
+.dcms-search-filter .page-color span{
+    display:inline-block;
+    width:15px;
+    height:14px;
+    background:url(http://img.china.alibaba.com/cms/upload/2012/500/472/274005_1357790532.png);
+    vertical-align:-2px;
+    cursor:pointer;
+}
+.dcms-search-filter .page-color .red{
+    background-position:0 0;
+}
+.dcms-search-filter .page-color .red.selected{
+    background-position:0 -14px;
+}
+.dcms-search-filter .page-color .blue{
+    background-position:-15px 0;
+}
+.dcms-search-filter .page-color .blue.selected{
+    background-position:-15px -14px;
+}
+.dcms-search-filter .page-color .green{
+    background-position:-30px 0;
+}
+.dcms-search-filter .page-color .green.selected{
+    background-position:-30px -14px;
+}
+.dcms-search-filter .page-color .orange{
+    background-position:-45px 0;
+}
+.dcms-search-filter .page-color .orange.selected{
+    background-position:-45px -14px;
+}
+.dcms-search-filter.page-color .other{
+    background-position:-60px 0;
+}
+.dcms-search-filter .page-color .other.selected{
+    background-position:-60px -14px;
+}
+
+.dcms-search-filter .search-keyword{
+    width:200px;
+    height:18px;
+	margin-right:8px;
+    padding:2px 2px 2px 2px;
+    border:1px solid #679dc9;
+}
+.dcms-search-filter .search-submit-btn{
+}
+.dcms-box-addnewtemp {
+    
+}
+.dcms-template-filter .dcms-box-addnewtemp {
+    border-left:0;
+    margin-top:4px;
+}
+.dcms-template-filter .dcms-box-addnewtemp a {
+    height:24px;
+    line-height:24px;
+    background:#679dc9;
+    border:1px solid #6295bf;
+    border-bottom-color:#294963;
+    border-radius:4px;
+    color:#e9eef2;
+}

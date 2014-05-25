@@ -1,0 +1,49 @@
+/**
+ * @author shanshan.hongss
+ * @usefor work平台 - 浮出信息提示框(tip)
+ * @date   2013.08.30
+ */
+
+.tui-mult-choice {}
+.tui-mult-choice .item-choice {
+    display:inline-block;
+    border:1px solid #9d9d9d;
+    color:#666;
+    line-height:26px;
+    padding:0 8px;
+    margin-right:4px;
+    cursor:pointer;
+}
+.tui-mult-choice .item-choice.current, 
+.tui-mult-choice .item-choice:hover {
+    position:relative;
+    background-color:#faf6f7;
+    color:#ff7300;
+    border-color:#ff7300;
+}
+.tui-mult-choice .item-choice.current:before {
+    position:absolute;
+    bottom:0;
+    right:0;
+    content:"";
+    border-width:7px;
+    border-style:solid;
+    border-bottom-color:#ff7300;
+    border-right-color:#ff7300;
+    border-top-color:rgba(255, 255, 255, 0);
+    border-left-color:rgba(255, 255, 255, 0);
+    font-size:0;
+    line-height:0;
+}
+.tui-mult-choice .item-choice.current:after {
+    position:absolute;
+    bottom:1px;
+    right:2px;
+    content:"";
+    width:3px;
+    height:5px;
+    border-bottom:2px solid #fff;
+    border-right:1px solid #fff;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}

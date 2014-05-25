@@ -1,0 +1,26 @@
+.libra-message-select-link {
+    padding: 2px 0 0 0;
+}
+.message{
+	position:relative;
+}
+
+.libra-message{
+    float: left;
+    height:17px;
+    position:absolute;
+		top:-14px;
+		left:33px;
+		background:url("http://img.china.alibaba.com/cms/upload/2012/131/054/450131_1020367891.png") no-repeat center bottom;
+ }
+.libra-message span {
+		display:inline-block;
+		background-color:#f00;
+		width:18px;
+		text-align:center;
+}
+.fd-hide{
+	display:none;
+}
+ 
+ 

@@ -1,0 +1,13 @@
+/**
+ * @author hongss
+ * @userfor global merge 
+ * @date 2011.12.29
+ */
+@import url(/static/fdevlib/css/fdev-v4/reset/reset-min.css);
+@import url(/static/intra/css/dcms/module/html5-reset.css);
+@import url(/static/intra/css/dcms/module/layout.css);
+@import url(/static/intra/css/dcms/module/type.css);
+@import url(/static/intra/css/dcms/module/detect.css);
+@import url(/static/intra/css/dcms/module/box/type.css);
+@import url(/static/intra/css/dcms/module/header-menu.css);
+@import url(/static/intra/css/dcms/module/box/header.css);

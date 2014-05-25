@@ -1,0 +1,108 @@
+.data-intervention-list {
+    margin: 8px;
+}
+.data-intervention-list .data-intervention-search {
+    padding: 8px;
+    margin: 8px auto;
+    border: 1px solid #eee;
+}
+.data-intervention-list .data-intervention-operation {
+    padding: 8px;
+    margin: 8px auto;
+    border: 1px solid #eee;
+}
+.data-intervention-list .data-intervention-operation button{
+    padding:1px 8px;
+}
+.data-intervention-list h3 {
+    padding: 8px;
+    margin: 8px auto;
+    font-weight: bolder;
+    color: #000;
+}
+
+.data-intervention-list .data-list {
+
+}
+.list-product .readonly{
+    background-color: #eee;
+}
+.list-product .change{
+    border:1px solid #FF0000 !important;
+}
+
+/* 图片垂直居中 */
+.vertical-img {
+    display: table;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    _display: block; /* for IE6/7 */
+}
+.vertical-img .box-img {
+    display: table-cell;
+    vertical-align: middle;
+    _display: inline; /* for IE6/7 */
+    _writing-mode: tb-rl; /* for IE6/7，改变书写方向，从上至下，从右至左 */
+    _text-align: center;
+    _height: 100%;
+}
+.vertical-img img {
+    vertical-align: middle;
+    max-height: 150px;
+    max-width: 150px;
+}
+.data-intervention-list .list-product {
+    margin: 0 auto;
+}
+.list-product li {
+    float: left !important;
+        padding-top: 16px;
+}
+.list-product .cell-product-2nd {
+    padding: 2px 8px;
+    width: 260px;
+}
+
+.list-product .cell-product-2nd dt {
+    width: 100%;
+    padding: 8px 0;
+}
+.cell-product-2nd dt .op {
+    width: 60px;
+}
+.cell-product-2nd dt .op span {
+    margin: 0 auto;
+    display:block;
+}
+.cell-product-2nd dt .pic {
+    width: 200px;
+    height: 100px;
+}
+.cell-product-2nd dt .pic-btn {
+    padding: 1px 8px;
+}
+.list-product .input-text {
+    border: 1px solid #BDC7D8;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    width: 150px;
+    margin: 4px 0;
+    padding: 3px;
+}
+.list-product .txt {
+    display: inline-block;
+}
+.list-product .label {
+    width: 80px;
+    text-align: right;
+    display: inline-block;
+}
+.data-intervention-search dt, .data-intervention-search dd {
+    margin: 2px 8px;
+}
+.data-intervention-search label {
+    margin: 0 4px;
+    display: inline-block;
+}

@@ -1,0 +1,303 @@
+/**
+ * create by wxj on 2012.12.10  
+ */
+ 
+.content{
+	width:809px;
+}
+.head{width:990px;}
+.head h1{
+	font-weight: bold;
+  color: #4E82BC;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #4E82BC;
+}
+.tag-handle .select-attribute a ,.offerIds-area ,.tag-pic ,.tag-handle .select-attribute a , .header, .header-success{
+	background-image:url(http://img.china.alibaba.com/cms/upload/2012/213/294/492312_1020367891.png);
+	background-repeat: no-repeat;
+}
+.mod-content .left-grid{
+	width:190px;
+  float:left;
+}
+.mod-content .layout{
+	overflow: hidden;
+}
+.tips{
+	  margin-top:10px;
+		float:left;
+		font-weight: bold;
+    color: #FFFFFF;
+    width:190px;
+		line-height:28px;
+		background-color:#8F9CC8;
+}
+.offerIds-area{
+	 width:188px;
+	 height:490px;
+	 float:left;
+	 background-position:7px 0px;
+	 border:1px solid #ccc;
+	 border-top:0px;
+}
+.offerIds-area textarea{
+	 margin-top:5px;
+	 border:none;
+	 height:470px;
+	 width:182px;
+	 box-shadow: 0 0 0 0;
+}
+.tag-grid{
+	  margin-top:10px;
+		width:618px;
+		color:#646464;	
+		height:693px;
+		border-top:1px solid #ccc;	
+		border-right:1px solid #ccc;	
+		float:left;		
+}
+.tag-title{
+	margin-left:6	px;
+	font-weight:bold;
+	line-height:28px;
+	padding-left:15px;
+	color:#4E82BC;
+}
+
+.isearch{
+	 width:616px;
+}
+.isearch-result{
+	 height:20px;
+	 width:616px;
+}
+.isearch-result span{
+	height:20px;
+	width:360px;
+	line-height:20px;
+  display:none;
+	margin-left:160px;
+	float:left;
+	overflow:hidden;
+}
+.isearch-result label{
+	color:red;
+	font-weight:bold;
+}
+.sousuo{
+	width:310px;
+	height:36px;
+	margin:0px auto;
+	border:2px solid #CAD6E9;
+	border-top-left-radius: 5px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.isearch .isearch-sousuo{
+	 width:250px;
+	 float:left;
+}
+.isearch .isearch-text{
+	 line-height:26px;
+	 height:28px;
+	 width:242px;
+   border: none;
+   float:left;
+}
+.isearch .isearch-button{
+	 background-color:#e6eaf4;
+	 line-height:36px;
+	 height:36px;
+	 width:58px;
+	 float:left;
+	 border-left:2px solid #CAD6E9;
+	 cursor: pointer;
+}
+.isearch .isearch-button span{
+	padding-left:15px;
+	font-size: 14px;
+	line-height:35px;
+	float:left;
+	width:42px;
+ }
+.tag-center{
+	 width:605px;
+	 margin-left:10px;
+	 margin-top:5px;
+	 max-height:490px;
+}
+.tag-center .no-tag{
+	 white-space:nowrap;
+	 padding-left:50px;
+}
+ 
+.tag-center li{
+	float: left;
+	padding-left: 3px;
+	width: 193px;
+	height:22px;
+	line-height: 22px;
+}
+
+.tag-center li:hover div.txt {
+	position:relative;
+	width:auto;
+	background-color:#e6efff;
+}
+ 
+.tag-center div.txt{
+	padding:3px;
+	display:inline-block;
+	width:193px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.web-listbox {
+	height: 410px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.tag-handle {
+	background-color:#e6eaf4;
+	width:810px;
+	max-height:172px;
+	float:left;
+	border:2px solid #bdc7d8;
+	position:fixed;
+	bottom:1px;
+}
+.tag-handle .tag-pic{
+	 width:5px;
+	 height:5px;
+	 float:left;
+	 position:absolute;
+	 top:-7px;
+	 left:806px;
+	 background-position:0px -15px;
+}
+
+.tag-handle .select-attribute{
+	width:785px;
+	max-height:110px;
+	margin-left:10px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.tag-handle .select-attribute .attribute-one{
+	padding:2px;
+	background-color: #FDFDB0;
+	border: 1px solid #FF6A00;
+	color: #2A2A2A;
+	height: 22px;
+	width:135px;
+	line-height: 22px;
+	float:left;
+	margin-left:6px;
+	margin-top:2px;
+}
+.tag-handle .select-attribute .attribute{
+	background-color: #FDFDB0;
+	color: #2A2A2A;
+	height: 22px;
+	width:110px;
+	line-height: 22px;
+	float:left;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.tag-handle .select-attribute a{
+	margin:5px;
+ 	float:right;
+	width:10px;
+	height:10px;
+	background-position: 0px -30px;
+}
+.tag-handle .tag-button{
+	width:600px;
+	margin-top:10px;
+	margin-left:16px;
+}
+.back-yellow{
+	background-color:#FFD735;
+	padding:1px;
+}
+.header{
+	text-align: center;
+  line-height: 40px;
+	float:left;
+	width:400px;
+	height:40px;
+	margin-left:30px;
+	margin-top:15px;
+	background-position:0px -80px;
+}
+.header span{
+	float:left;
+	line-height:50px;
+	margin-left:40px;
+}
+
+.ui-progressbar{
+    width: 470px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+.ui-progressbar-value{
+    border: 1px solid #66CD00;
+    background: #32CD32;
+    color: white;
+    font-weight: bold;
+    height:100%;
+    margin: -1px;
+    border-radius: 2px;
+}
+
+.dialog-success {
+    width:135px;
+    background-color:rgba(102, 102, 102, 0.7);
+    border-radius:2px;
+    padding:10px;
+    display:none;
+}
+.dialog-success .header-success{
+	float:left;
+	margin-top:10px;
+	height:40px;
+	background-position:0px -40px;
+	line-height:40px;
+	margin-left:20px;
+}
+.dialog-success .header-success span{
+  float:left;
+	margin-top:10px;
+	margin-left:35px;
+}
+.dialog-success .dialog-b {
+    background-color:#fff;
+}
+.dialog-success .dialog-b section{
+    margin:0 auto;
+    height:70px;
+    text-align: center;
+    line-height: 70px; 
+}
+.dialog-close{
+	float:left;
+	margin-left:10px;
+	margin-top:8px;
+}
+.tag-button .button{
+	float:left;
+}
+.message{
+	display:none;
+	color:#FC0655;
+	font-weight:bold;
+	font-size:14px;
+	margin-left:20px;
+	float:left;
+}

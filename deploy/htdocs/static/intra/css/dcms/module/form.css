@@ -1,0 +1,77 @@
+/*.dcms-form*/ .dcms-validator-error { background-image:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png);}
+.dcms-form .btn-template-choose,  .dcms-small-btn { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-repeat.png) repeat-x;}
+
+.dcms-red { color:#c00; vertical-align:-2px; }
+.dcms-form legend, .dcms-form h3{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 38px;
+    color:#000;
+}
+.dcms-form label{
+    display: inline-block;
+    width: 68px;
+    margin-top: 7px;
+    text-align: right;
+    color: #666;
+    vertical-align: top;
+}
+.dcms-form input[type="text"],
+.dcms-input-text{
+    border: 1px solid #bdc7d8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    /*color: #333;*/
+    height:16px;
+    line-height:16px;
+}
+.dcms-form input:-webkit-input-placeholder, .dcms-form input:-moz-placeholder { color:#aaa;}
+
+.dcms-form select,
+.dcms-select{
+    border: 1px solid #bdc7d8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    width:122px;
+    height:24px;
+    line-height:24px;
+}
+.dcms-form textarea{
+    border: 1px solid #bdc7d8;
+    margin: 4px 0;
+    padding: 3px;
+}
+.dcms-content .dcms-form textarea[readonly=readonly] { background-color:#eee;}
+.dcms-form .operating-area{
+    padding: 14px 0;
+}
+.dcms-form .dcms-validator-tip{
+    display: none;
+    padding: 3px 3px 3px 23px;
+    border: 1px solid;
+}
+.dcms-form .dcms-validator-error{
+    display: inline-block;
+    border-color: #ff8080;
+    background-color: #fff2f2;
+    color: #666;
+    background-position:-129px -248px;
+    background-repeat:no-repeat;
+}
+.dcms-form .btn-template-choose, .dcms-small-btn {
+    background-position:0 -40px;
+    color:#494949;
+    height:23px;
+    line-height:21px;
+    cursor:pointer;
+    padding:0 3px 0 4px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#a0a0a0;
+    -moz-border-radius:2px;
+    -khtml-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}

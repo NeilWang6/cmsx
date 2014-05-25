@@ -1,0 +1,143 @@
+/**
+ * ×ÊÔ´Î»offer
+ * @author : pingchun.yupc
+ * @createTime : 2014-01-4
+ */
+.data-id-rec .form-vertical {
+	max-height: 256px;
+	overflow-y: auto;
+}
+.data-id-rec .title {
+	vertical-align: top;
+	font-weight: bold;
+}
+.data-id-rec .form-vertical dl.item-form dt {
+	width: auto;
+	padding: 0;
+}
+.data-id-rec .form-vertical dl.item-form dd {
+	padding: 0;
+}
+
+.data-list .data-tb .chk {
+	display: inline-block;
+	padding-left: 12px;
+}
+.data-list .ck-td {
+	width: 32px;
+	padding-left: 0;
+}
+.data-list  .main-td {
+	width: 502px;
+	padding-left: 0;
+}
+.data-list  .opr-td {
+	width: 240px;
+	padding-left: 0;
+	text-align: center;
+}
+.data-list  .img {
+	width: 100px;
+	height: 100px;
+}
+.show-data .data-param {
+
+}
+.show-data .data-param .title-td {
+	width: 30%;
+}
+.show-data .data-param .opr-td {
+	width: 70%;
+}
+
+.res-table .offer {
+	width: 150px;
+	border-right: 1px solid #E8E8E8;
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+}
+.res-table .offer:first-child {
+	margin-left: 12px;
+	border-left: 1px solid #E8E8E8;
+}
+.res-table .vertical-img {
+	height: 100px;
+	line-height: 100px;
+	width: 150px;
+	padding: 8px 0;
+}
+.res-table .vertical-img .box-img {
+	padding: 0;
+}
+.res-table .attr-row {
+	margin: 0 8px;
+	padding: 2px 0;
+}
+.res-table .attr-row:last-child {
+	padding-bottom: 8px;
+}
+.res-table .offer-title {
+	width: 96px;
+}
+.res-table .tr-row .offer-id {
+	width: 80px;
+}
+.res-table .tr-row .offer-price {
+	color: red;
+	font-weight: bold;
+}
+.res-table .offer-label, .res-table .offer-title {
+	display: inline-block;
+	vertical-align: top;
+}
+.res-table .member-offer {
+	margin-top: 12px;
+	width: 782px;
+	position: relative;
+}
+.res-table .member-offer .offer-tip {
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 0 10px 10px;
+	border-style: solid;
+	border-color: rgba(255,255,255,0) rgba(255,255,255,0) #E8E8E8;
+	left:44px;
+	top:-10px;
+}
+.res-table .member-offer .offer-tip span{
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 0 9px 9px;
+	border-style: solid;
+	border-color: rgba(255,255,255,0) rgba(255,255,255,0) #fff; 
+	left:-9px;
+	top:2px;
+}
+.res-table .rec-operation {
+	display: inline-block;
+	margin: 8px 0;
+}
+.dialog-basic .textarea {
+	width: 370px;
+	min-width: 60px;
+	max-width: 370px;
+	height: 60px;
+	max-height: 120px;
+}
+.all-open{
+	padding:0 8px;
+}
+.modify-offer .label-desc{
+	padding:0 4px;
+}
+.list-intervention .main{
+		margin:10px;
+}
+.list-intervention .main .row{
+	margin:4px 0;
+	margin-right:32px;
+}

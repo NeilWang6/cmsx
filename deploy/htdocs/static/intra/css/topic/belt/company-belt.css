@@ -1,0 +1,76 @@
+/**
+ * @author vivian.xul@alibaba-inc.com
+ * @vision 2011-04-18
+ * @info 发布公司信息
+ */
+a:link,a:visited,a:active { color:#0066cc}
+a:hover { color:#ff7300}
+.gray{color:#999}
+/*公告,提示*/
+.company-notice,
+.company-tip{background: url(http://img.china.alibaba.com/images/common/icon_v02/caution1.gif) no-repeat 8px 8px}
+.company-notice { padding:8px 8px 8px 30px; border:1px solid #ffc590; font-family:\5B8B\4F53; background-color:#fff7eb}
+.company-notice .orange { color:#ff7300}
+.company-notice .b { font-weight:bold;}
+.note-txt { color:#999}
+.note-txt2 { color:#009c00}
+.note-txt3 { color:#999; width:616px;}
+/*btn*/
+.btn-a { float: left; overflow: hidden; height: 32px; line-height:32px; text-decoration: none !important; }
+.btn-a span { display: block; float: left; height: 100%; background: url(http://img.china.alibaba.com/images/common/icon_v02/btn2.png) no-repeat; cursor: pointer; }
+.btn-a .btn-l { padding-left: 2px; background-position: left top; }
+.btn-a .btn-r { width: 2px; background-position: right top; }
+.btn-a button { float:left; margin: 0; padding: 0; height: 100%; outline: none; border: 0 none; background: none; cursor: pointer; overflow:visible;}
+.btn-a em { padding: 0 12px; font: bold 14px/28px "\5B8B\4F53"; color: #934002; }
+.btn-a:hover .btn-l { background-position: left -33px; }
+.btn-a:hover .btn-r { background-position: right -33px; }
+.btn-a:hover em { color: #333; }
+.btn-a:active .btn-l { background-position: left top; }
+.btn-a:active .btn-r { background-position: right top; }
+.btn-a-disabled .btn-l { background-position: left -64px !important; }
+.btn-a-disabled .btn-r { background-position: right -64px !important; }
+.btn-a-disabled, .btn-a-disabled button, .btn-a-disabled span { cursor: default !important; }
+.btn-a-disabled em { color: #999 !important; }
+
+.btn-a2 { float: left; overflow: hidden; height: 22px; margin-right:8px; line-height:22px; text-decoration: none !important; }
+.btn-a2 span { display: block; float: left; height: 100%; background: url(http://img.china.alibaba.com/images/common/icon_v02/btn3.png) no-repeat; cursor: pointer; }
+.btn-a2 .btn-l { padding-left: 2px; background-position: left top; }
+.btn-a2 .btn-r { width: 2px; background-position: right top; }
+.btn-a2 button { float:left; margin: 0; padding: 0; height: 100%; outline: none; border: 0 none; background: none; cursor: pointer; overflow:visible;}
+.btn-a2 em { padding: 0 8px; font: normal 12px/20px "\5B8B\4F53"; color: #333 !important;}
+.btn-a2:hover .btn-l { background-position: left -22px; }
+.btn-a2:hover .btn-r { background-position: right -22px; }
+.btn-a2-disabled .btn-l { background-position: left top !important; }
+.btn-a2-disabled .btn-r { background-position: right top !important; }
+.btn-a2-disabled, .btn-a2-disabled button, .btn-a2-disabled span { cursor: default !important; }
+.btn-a2-disabled em { color: #999 !important; }
+/*浮出层*/
+.company-mod {display:none; border: solid 8px #585858; background-color: #FFF; line-height: 1.5; }  
+.company-mod .title { padding: 0 8px; border-bottom: solid 1px #C1D2E6; background: url(http://img.china.alibaba.com/images/trade/quotation/100426/bg6.gif) repeat-x; }  
+.company-mod .title .close { display: block; float: right; margin-top: 7px; text-indent:-9999px; width: 21px; height: 22px; overflow: hidden; background: url(http://img.china.alibaba.com/images/trade/quotation/100426/close1.png) no-repeat; cursor: pointer; }  
+.company-mod h3 { float: left; height: 35px; margin:0; line-height: 2.5; font-size: 14px; font-weight: bold; color: #333; }  
+.company-mod .info{margin:20px auto;width:365px; padding-left:20px; font-size:14px; font-family:\5B8B\4F53; background:url(http://img.china.alibaba.com/images/common/icon_v03/p8/55.png) no-repeat 0 3px} 
+.company-mod .info p{margin:0 0 5px 0}
+.company-mod .info p.p01{ text-indent:2em;}
+.company-mod .info .gray{color:#999}
+.company-mod .btn-box{ height:30px;padding-top:10px; background:#f7f7f7;border-top:1px solid #eee;margin:0;width:auto; float:none;}
+.company-mod .btn-box .no-tips{margin-left:10px;float:left}
+.company-mod .btn-a2,.company-mod .btn-a3{float:right;margin:0 8px;}
+/*主营行业浮层*/
+.company-mod .company-industry-pop .industry-info{margin:6px auto;width:675px; height:281px; font-size:12px; font-family:\5B8B\4F53;background-color:#e0efff;border:1px solid #bfcfe6;}
+.company-mod .company-industry-pop .choosed-show{margin:6px auto;width:656px; height:auto; font-size:12px; font-family:\5B8B\4F53;background-color:#fff7ec;border:1px solid #e4ccb2;padding:6px 10px;}
+.company-mod .company-industry-pop .industry-info li{width:190px;margin: 0 6px;height: 23px;line-height: 23px;cursor: pointer;border:1px solid #ffffff;}
+.company-mod .company-industry-pop .industry-info .has-sub{background-image: url("http://img.china.alibaba.com/cms/upload/2011/748/780/87847_1446014988.png");background-position:180px -108px; background-repeat:no-repeat;background-attachment:scroll;}
+.company-mod .company-industry-pop .industry-info .industry-li-hover{background-color:#d6edf3;border:1px solid #a6b6c3;}
+.company-mod .company-industry-pop .industry-info .industry-li-click{background-color:#d6edf3;border:1px solid #a6b6c3;}
+.company-mod .company-industry-pop .industry-info .check-box{display: block;float: left;height: 23px;line-height: 23px;margin: 0 0 0 6px;_margin-left:1px;}
+.company-mod .company-industry-pop .choosed-show li{float:left;margin-right:6px;white-space: nowrap;}
+.company-mod .company-industry-pop .choosed-show .warninfo{color:red;}
+.company-mod .company-industry-pop .industry-info .ul-to-hide ul{display:none;}
+.company-mod .company-industry-pop .industry-info .menu1{float:left;margin-right:3px;}
+.company-mod .company-industry-pop .industry-info .menu2{float:left;}
+.company-mod .company-industry-pop .industry-info .menu3{float:right;}
+.company-mod .company-industry-pop .industry-info .menu-basic{width:223px;}
+.company-mod .company-industry-pop .industry-info .menu1-sub{overflow-y:scroll;overflow-x:hidden;padding:6px 0px;height:268px;background-color:#ffffff;border-right-width:1px;border-right-style:solid;border-right-color:#bfcfe6;}
+.company-mod .company-industry-pop .industry-info .menu2-sub{overflow-y:scroll;overflow-x:hidden;padding:6px 0px;height:268px;background-color:#ffffff;border-width:0 1px 0 1px;border-left-style:solid;border-right-style:solid;border-left-color:#bfcfe6;border-right-color:#bfcfe6;}
+.company-mod .company-industry-pop .industry-info .menu3-sub{overflow-y:scroll;overflow-x:hidden;padding:6px 0px;height:268px;background-color:#ffffff;border-width:0 0 0 1px;border-left-style:solid;border-left-color:#bfcfe6;}

@@ -1,0 +1,23 @@
+.dialog-join-wedget {
+    width:800px;
+}
+.dialog-join-wedget .list-widgets h6 {
+    font-weight:bold;
+    line-height:24px;
+}
+.dialog-join-wedget .list-widgets .tui-mult-choice {
+    padding:4px 0 4px 24px;
+}
+
+.dialog-set-floor {
+    width:660px;
+}
+.dialog-set-floor .form-vertical .topic {
+    width:120px;
+}
+.dialog-set-floor .form-vertical  dl.item-form dd {
+    padding-left:132px;
+}
+.dialog-set-floor .form-vertical input[type=text] {
+    width:380px;
+}

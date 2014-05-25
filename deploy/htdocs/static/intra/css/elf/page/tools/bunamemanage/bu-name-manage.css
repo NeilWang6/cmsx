@@ -1,0 +1,62 @@
+
+.table-sub .th1{
+    width: 50px;
+}
+
+.table-sub .th2{
+     width: 120px; 
+}
+
+.table-sub .th4{
+     width: 600px;   
+}
+
+
+.libra-content{padding-top:10px;}
+.head-blank{
+    height: 5px;
+}
+
+.content{
+	width: 990px;
+	padding-bottom: 46px;
+}
+
+
+.top-area .tab-b {
+	height: 27px;
+	border-bottom: solid 2px #8e9dc6;
+	padding: 0;
+}
+
+.top-area .tab-b .subject-info span {
+	color: #4a6bae;
+	font-weight: bold;
+}
+.condition {
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	padding: 0px 0px 0px 0px;
+}
+
+.seach-row {
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left:10px; 
+}
+
+.dialog-add-bu{
+	width: 400px;
+}
+
+.dialog-delete-bu{
+	width: 400px;
+}
+
+.dialog-basic .dialog-content{
+	margin-top: 10px;
+	height: 40px;
+}

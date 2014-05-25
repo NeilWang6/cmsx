@@ -1,0 +1,309 @@
+/*
+* 报名工具后台——活动页面
+* @author : jiankai.xujk
+* @createTime : 2012-06-16
+*/
+
+.hiddenDiv {
+	display:none;
+}
+	
+.showDiv {
+	display:block;
+}
+.dialog {
+	display: none;
+	background-color: #FFFFFF;
+	border: 6px solid #DCDCDC;
+	width: 520px;
+	height: 340px;
+	overflow-y:scroll;
+ }
+.alertDialog {
+	display: none;
+	background-color: #FFFFFF;
+	border: 6px solid #DCDCDC;
+	width: 300px;
+	height: 200px;
+}
+		
+.header {
+	padding: 4px;
+	background-color: #CCC;
+	color: #FFF;
+	line-height: 2;
+	font-weight: 700;
+}
+		
+.header {
+	cursor: move;
+}
+	
+.dialog p {
+	line-height: 200px;
+	text-align: center;
+}
+
+.divcenter {
+	text-align: center;
+}	
+.divright {
+	padding-left: 50px;
+	text-align: right;
+}
+
+
+.uidialog {
+	display: none;
+	border: solid 5px #112435;
+	width: 460px;
+	height: 440px;
+	overflow-y: scroll;
+	background-color: #EFEFEF;
+}
+
+.uidialog .header {
+	padding: 4px;
+	background-color: #CCC;
+	color: #FFF;
+	line-height: 2;
+	font-weight: 700;
+}
+
+.uidialog .header {
+	cursor: move;
+}
+
+.uidialog p {
+	line-height: 10px;
+	text-align: center;
+}
+
+.data-table { width:740px; }
+.data-table .data-table-title-width { width:180px; }
+.data-table .data-table-bread {padding-top:30px; padding-bottom:5px;}
+.data-table .data-table-title { text-align:right; vertical-align:top; padding-top:15px; font-weight:bold; }
+.data-table .data-table-input {padding-top:15px; padding-bottom:12px;}
+.data-table input { width:500px; }
+.data-table .errmsg {color:red; line-height:20px;}
+.crumbs-unorder-width { width:240px; }
+.crumbs-unorder {
+border: 1px solid #DFDFDF;
+border-radius: 8px;
+height: 28px;
+line-height: 28px;
+width: -moz-fit-content;
+background-color: #FBFBFB;
+}
+.crumbs-unorder li .inline {
+display: inline-block;
+padding: 0 16px;
+background-position: right -210px;
+}
+.crumbs-unorder li.current {
+position: relative;
+padding-bottom: 5px;
+background-position: center bottom;
+}
+.crumbs-unorder li.last .inline {
+background: none;
+}
+ul, ol {
+list-style: none;
+}
+/*.paging-t .pagination a.prev, .paging-t .pagination .prev-disabled, .paging-t .pagination a.next, .paging-t .pagination .next-disabled, .crumbs-unorder li .inline, .crumbs-unorder li.current {
+background: url("http://img.china.alibaba.com/cms/upload/other/tools/dcms-repeat.png") no-repeat;
+}*/
+.crumbs-unorder li {
+float: left;
+}
+.crumbs-unorder li.current .inline {
+background-color: #F4F9FF;
+}
+.crumbs-unorder {
+line-height: 28px;
+}
+body, button, input, select, textarea {
+font: 12px/1.5 Tahoma,Arial,"宋体b8b\4f53",sans-serif;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+.form-vertical h5 {
+    border-bottom:2px solid #9da4b4;
+    font-weight:bold;
+    line-height:20px;
+    padding: 2px 15px 0;
+    margin-bottom: 10px;
+    width: 960px;
+    background: url(http://img.china.alibaba.com/cms/upload/2012/467/584/485764_51297002.png) no-repeat 0 6px;
+}
+
+.form-vertical dl.item-form dt{
+	width: 185px;
+}
+.backcolor, .backcolor1 {
+    line-height:22px;
+    padding:3px 0;
+}
+.backcolor {
+    font-weight:bold;
+    width:187px;
+    padding-right:12px;
+    vertical-align: top;
+}
+.must-fill {
+    background:url("http://img.china.alibaba.com/cms/upload/other/tools/icon-must-fill.png") no-repeat 180px 12px;
+}
+
+.wireless-icon {
+	padding-left:30px;
+    background:url("http://img.china.alibaba.com/cms/upload/2013/321/958/1859123_852617703.jpg") no-repeat 1px 1px;
+}
+
+.form-vertical { margin:0px 18px 50px 0px;width: 990px;}
+.list li {width: 100px;padding-right: 12px;}
+.list label{display: inline-block;width: 60px;text-align: center;}
+.topicinput {width:200px;}
+.topicselect {width:100px;}
+.topicdesignType {width:150px;}
+.topictextarea {width:300px;height:100px;}
+select{height:auto; margin-right:4px;}
+.btn-inline{
+	margin-bottom: 5px;
+	display: block;
+	width: 85px;
+}
+.backcolor1 .tips-hover{
+	visibility: visible!important;
+}
+.backcolor1 .tips{
+	color: #a3a3a3;
+	visibility: hidden;
+}
+#js-surveyframe{
+	width: auto;
+}
+#js-surveyframe section{
+	padding: 0;
+}
+.form-vertical textarea{
+	width: 535px;
+	height: 80px;
+}
+.form-vertical .check-blank{
+	margin-left: 24px;
+}
+.form-vertical .checkbox-area{
+	width: 600px;
+	display: block;
+}
+.form-vertical .radio-area{
+	width: 600px;
+	display: block;
+}
+.form-vertical .checkbox-area label,.form-vertical .radio-area label{
+	display: inline-block;
+}
+.form-vertical .radio-blank{
+	margin-left: 24px;
+}
+.form-vertical .check{
+	cursor: pointer;
+}
+.form-vertical .winport-item{
+	line-height: 30px;
+}
+.form-vertical textarea,.form-vertical input{
+	margin-right: 4px;
+}
+
+.sign-url{
+	display:block;
+	margin: 5px 0px;
+}
+
+.must-fill-content{
+	line-height: 22px;
+	width: 178px;
+	padding-right: 12px;
+	vertical-align: top;
+	background: url("http://img.china.alibaba.com/cms/upload/other/tools/icon-must-fill.png") no-repeat ;
+}
+#sale-rate-level{
+	display: none;
+}
+#sale-rate-level .compare{
+	width: 50px;
+}
+#sale-rate-level .level{
+	width: 55px;
+}
+#offer-muti-date{
+	width:50px;
+}
+
+#contract-template-url{
+	width:400px;
+}
+
+#extra-content-url{
+	width:400px;
+}
+
+/*底部保存*/
+.no-result-position { margin-top:50px; }
+body #fixBottomPageList .fix-bottom-profile {position:absolute; bottom:40px; width:500px; left:230px; }
+.fix-bottom-optbar { float:left; margin-top:9px; margin-left:0px; height:30px;}
+.fixed-body  {width: 1008px;}
+body .fix-bottom-total { width:1008px; line-height: 45px; height:40px; bottom:0px; }
+.fix-bottom-profile .data-table { width:470px; height: 100px; background-color:#fefef6; }
+.fixed-body .fixed-bottom{position:relative;bottom:10px;}
+.decorate {width:1008px;}
+.barDiv{margin-left:50px;}
+
+.two-dimension-code {
+    width: 126px;
+    position: fixed;
+    top: 250px;
+    z-index: 999;
+    display: block;
+    right: 50px;
+    display: none;
+}
+
+.dimen-close {
+    top: -25px;
+    right: -30px;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.dimen-open {
+    top: -10px;
+    right: -40px;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+}
+
+.dimen-open-content {
+    display: block;
+    width: 10px;
+    height: 100px;
+    color: #FF0000;
+    font-size: 14px;
+}
+
+.dimen-close-content {
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #FF0000;
+    font-size: 18px;
+}

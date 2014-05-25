@@ -1,0 +1,42 @@
+/**
+ * @auther hongss
+ * @date 2011-05-24
+ */
+
+.dcms-message-container {
+    margin:102px 0 0 106px;
+}
+.dcms-message-container .dcms-message-img {
+    float:left;
+    width:48px;
+    height:48px;
+    line-height:600px;
+    background:url(http://img.china.alibaba.com/cms/upload/other/dcms/success_icon.png) no-repeat;
+    padding:0 12px 160px 0;
+    overflow:hidden;
+}
+.dcms-message-container .error { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/error-icon.png) no-repeat;}
+.dcms-message-container .dcms-message dd {
+    /*height:24px;*/ 
+    line-height:24px;
+}
+.dcms-message-container .dcms-message .dcms-message-keynote{
+    color:#000;
+    font-size:14px;
+    font-weight:bolder;
+}
+.dcms-message-container .dcms-message .a-blue {
+    color:#06c;
+    padding-right:12px;
+}
+.dcms-message-container .dcms-message .dcms-message-prompt{
+    color:red;
+}
+.dcms-message-container .dcms-message .dcms-message-rule a{
+    display:inline-block;
+    margin-right:5px;
+    padding-left:5px;
+    text-align:center;
+    border:1px solid #8493A6;
+    line-height:20px;
+}

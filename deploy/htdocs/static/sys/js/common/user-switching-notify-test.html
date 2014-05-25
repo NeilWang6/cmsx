@@ -1,0 +1,45 @@
+<?DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="http://style.c.aliimg.com/fdevlib/css/fdev-v3/fdev.css" type="text/stylesheet" />
+    <link rel="stylesheet" href="http://style.c.aliimg.com/sys/css/logist/logist-min.css" type="text/stylesheet" />
+    <title>user switch notify test</title>
+</head>
+
+<body>
+
+    <!-- prevent auto touch -->
+    <div class="fd-session-keeper" data-auto-start="false"></div>
+
+    <!-- dependencies -->
+    <script src="http://style.c.aliimg.com/js/common/aliclick.js" type="text/javascript"></script>
+    <script src="http://style.c.aliimg.com/fdevlib/js/fdev-v4/core/fdev-min.js" type="text/javascript"></script>
+
+    <!-- function -->
+    <script src="http://style.c.aliimg.com/sys/js/common/user-switching-notify.js" type="text/javascript"></script>
+
+    <!-- runner -->
+    <script src="http://style.c.aliimg.com/fdevlib/js/fdev-v4/widget/external/jasmine.js" type="text/javascript"></script>
+    <script src="http://style.c.aliimg.com/fdevlib/js/fdev-v4/widget/external/jasmine-jquery.js" type="text/javascript"></script>
+    <script src="http://style.c.aliimg.com/fdevlib/js/fdev-v4/widget/external/jasmine-html.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="http://style.c.aliimg.com/fdevlib/css/fdev-v4/widget/external/jasmine.css"/>
+    <style type="text/css" media="all">
+        body { overflow-y: auto; }
+    </style>
+
+    <!-- spec -->
+    <script src="http://style.c.aliimg.com/fdevlib/js/fdev-v4/widget/util/cookie.js" type="text/javascript"></script>
+    <script src="user-switching-notify-spec.js" type="text/javascript"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        jQuery(function($){
+            var jasmineEnv = jasmine.getEnv();
+            var htmlReporter = new jasmine.HtmlReporter();
+            jasmineEnv.addReporter(htmlReporter);
+            jasmineEnv.execute();
+        });
+    </script>
+</body>
+</html>

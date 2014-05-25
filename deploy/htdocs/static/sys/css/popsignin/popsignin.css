@@ -1,0 +1,57 @@
+/*!
+* PopUpSignIn Window
+* @author yongming.baoym@alibaba-inc.com
+* @version 20100907
+* @modify 
+*/
+.hide{display:none !important;;}
+.mod-popsignin-win {width:387px;height:292px;font-family:"\5B8B\4F53"/*songti*/;}
+.mod-popsignin-wrap {position:relative;}
+.mod-popsignin-win .over-lay{background-color:#b2b2b2;filter:alpha(opacity=50);opacity:0.5;width:387px;height:292px;position:absolute;}
+/*sprite*/
+.mod-popsignin-con h1,.mod-popsignin-con h1 a,
+.mod-popsignin-con .top-tip,
+.mod-popsignin-con .bot-tip,
+.mod-popsignin-con .tip-line,
+.mod-popsignin-con .success-line,
+.mod-popsignin-con .tip-line .goback,
+.mod-popsignin-con .registerurl,
+.mod-popsignin-con .submit{background:url(http://img.china.alibaba.com/images/app/member/widgets/popsignin.gif) no-repeat;}
+.mod-popsignin-con{width:371px;height:276px;border:1px solid #7a7a7a;color:#333;position:absolute;background-color:#fff;top:7px;right:7px;line-height:150%;}
+.mod-popsignin-con .con-wrap{margin-top:28px;}
+.mod-popsignin-con h1{padding-left:88px;height:33px;line-height:32px;cursor:default;}
+.mod-popsignin-con h1 em{font-weight:bold;font-size:14px;float:left;}
+.mod-popsignin-con h1 a:link,.mod-popsignin-con h1 a:visited{background-position:0 -103px;float:right;text-indent:-9999px;display:inline-block;;width:19px;margin-right:8px;}
+.mod-popsignin-con h1 a:hover{background-position:0 -67px;}
+.mod-popsignin-con .top-tip{padding-left:18px;background-position:0 -40px;color:#666;margin:16px 0 14px 40px;}
+.mod-popsignin-con .input-line{margin:10px 0 0 58px;}
+.mod-popsignin-con .input-line em{margin-right:4px;}
+.mod-popsignin-con .input-line .input{border:1px solid #c8c8c8;padding:2px;height:20px;width:176px;ime-mode:disabled;vertical-align:middle;line-height:18px;}
+.mod-popsignin-con .input-line .sinput{width:133px;}
+.mod-popsignin-con .input-line .mtype{margin-left:4px;}
+.mod-popsignin-con .input-line .input:focus,.mod-popsignin-con .input-line .input.focus{background-color:#e6edfd}
+.mod-popsignin-con .code-line{margin:10px 0 0 52px;}
+.mod-popsignin-con .code-line em{margin-right:4px;}
+.mod-popsignin-con .code-line input{border:1px solid #c8c8c8;padding:2px;height:20px;width:70px;margin-right:6px;ime-mode:disabled;vertical-align:middle;line-height:18px;}
+.mod-popsignin-con .code-line input:focus,.mod-popsignin-con .code-line input.focus{background-color:#e6edfd}
+.mod-popsignin-con .code-line img{vertical-align:middle;width:100px;height:20px;}
+.mod-popsignin-con .tip-line{background-position:7px -234px;position:absolute;left:16px;top:52px;padding:4px 4px 3px 22px;color:#f00;border:1px solid #ed8f8f;background-color:#fff2f2;width:310px;}
+.mod-popsignin-con .tip-line.tip-line2{background-position:31px -221px;margin-top:24px;padding-left:49px;padding-top:17px;width:284px;}
+.mod-popsignin-con .tip-line .goback{background-position:0 -146px;width:60px;height:27px;border:0 none;color:#fff;font-weight:bold;font-size:14px;cursor:pointer;margin:10px 0 18px 82px;}
+.mod-popsignin-con .tip-line a:link,.mod-popsignin-con .tip-line a:visited{color:#06c;margin-left:12px;}
+.mod-popsignin-con .loading-line{margin:18px 0 9px 98px;}
+.mod-popsignin-con .loading-line em{color:#ff7300;padding-top:2px;}
+.mod-popsignin-con .loading-line img{vertical-align:middle;width:32px;height:32px;}
+.mod-popsignin-con .success-line{background-position:-71px -108px;margin:19px 0 19px 104px;color:#090;padding:2px 0 0 16px;}
+.mod-popsignin-con .success-line em{font-weight:bold;}
+.mod-popsignin-con .success-line a:link,.mod-popsignin-con .success-line a:visited{color:#06c;margin-left:0;}
+.mod-popsignin-con .success-line a:hover{color:#ff7300;margin-left:0;}
+.mod-popsignin-con .submit-line{margin:20px 0 12px 104px;}
+.mod-popsignin-con .submit-line .submit{background-position:-284px -71px;width:87px;height:29px;border:0 none;color:#fff;font-weight:bold;font-size:12px;cursor:pointer;line-height:29px;vertical-align:middle;}
+.mod-popsignin-con .submit-line .submit.over,.mod-popsignin-con .submit-line .submit:hover{background-position:-284px -100px;}
+.mod-popsignin-con .submit-line .submit.disabled{color:#ccc;cursor:default;}
+.mod-popsignin-con .submit-line a.registerurl:link,.mod-popsignin-con .submit-line a.registerurl:visited{background-position:-284px -129px;width:87px;height:29px;border:0 none;color:#333;font-size:12px;cursor:pointer;line-height:30px;vertical-align:middle;display:inline-block;text-align:center;}
+.mod-popsignin-con .submit-line a.registerurl:hover{background-position:-284px -158px;text-decoration:none;}
+
+.mod-popsignin-con a:link,.mod-popsignin-con a:visited{color:#666;margin-left:12px;}
+.mod-popsignin-con a:hover{color:#ff7300;}

@@ -1,0 +1,177 @@
+.dcms-btn, .dcms-del-btn,
+.dcms-choose-btn { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-repeat.png) repeat-x;}
+.dcms-last-page, .dcms-next-page { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png) no-repeat;}
+
+/* color */
+.dcms-page {
+    color:#666;
+}
+.dcms-page a:link,
+.dcms-page a:visited{
+    color:#333;
+}
+.dcms-hide {
+    display: none;
+}
+.dcms-show {
+    display: block;
+}
+.dcms-clear{
+    zoom:1;
+}
+.dcms-clear:after{
+    display:block;
+    clear:both;
+    height:0;
+    content:"\0020";
+}
+.dcms-right{
+    float: right;
+}
+.dcms-left{
+    float: left;
+}
+.dcms-btn{
+    display: inline-block;
+    padding:0 8px;
+    height: 23px;
+    line-height: 20px;
+    font-weight: 700;
+    background-color:#5f78ab;
+    cursor: pointer;
+}
+.submit-btn{ 
+    border:1px solid #29447e; 
+    border-bottom:1px solid #1a356e;
+    background-position:0 0;
+    color:#fff;
+}
+.cancel-btn, .search-btn{
+    border:1px solid #a0a0a0;
+    background-position:0 -40px;
+    color:#494949;
+}
+/*.dcms-prev-page, .dcms-next-page{
+    display:inline-block;
+    width:44px;
+    height:20px;
+    line-height:20px;
+    border:1px solid #ccc;
+    color:#395898;
+    margin-top:3px;
+}
+.dcms-prev-page {
+    background-position:6px -207px;
+    padding-left:20px;
+    text-align:left;
+}*/
+.dcms-help-text{
+    color: #999;
+    margin-left: 5px;
+}
+.dcms-page-btn{
+    display: inline-block;
+    margin: 10px 8px 10px 0;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    width: 66px;
+    height: 24px;
+    line-height: 22px;
+    color: #999;
+    text-align: center;
+    cursor:pointer;
+}
+.dcms-next-btn,
+.dcms-previous-btn,
+.dcms-first-page-btn,
+.dcms-could-point{
+    color: #38569c;
+    cursor: pointer;
+}
+
+.dcms-input { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 3px; color: #333; height:16px;}
+.dcms-choose-btn, .dcms-del-btn {
+    background-position:0 -40px;
+    color:#494949;
+    height:24px;
+    line-height:22px;
+    cursor:pointer;
+    padding:0 4px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#a0a0a0;
+    -moz-border-radius:2px;
+    -khtml-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}
+
+.dcms-disable { /*display:inline-block; width:74px;*/ /*height:22px; line-height:21px;*/ border:1px solid #535353; background-color:#838383; text-align:center; background-position:0 -80px; color:#fff;}
+/*.dcms-disable em { display:inline-block; height:21px; width:74px; border-top:1px solid #a6a6a6; color:#fff; font-weight:700; }*/
+.dcms-disable:hover, .dcms-disable:active { color:#fff; text-decoration:none; cursor:default; }
+
+/*导入、改、藏、取消收藏*/
+.dcms-box-btn-import{
+    display:inline-block;
+    height:18px;
+    line-height:18px;
+    padding:4px 7px;
+    border:1px solid #8aba56;
+    border-bottom-color:#435a29;
+    background:#8aba56;
+    color:#f7f7f7 !important;
+    cursor:pointer;
+    vertical-align:top;
+    text-decoration:none;
+}
+.dcms-box-btn-import:hover{
+    background:#9cd461;
+    border-color:#8aba56;
+    border-bottom-color:#435a29;
+    color:#f7f7f7 !important;
+    text-decoration:none;
+}
+.dcms-box-btn-import:active{
+    border-left-color:#435a29;
+    border-top-color:#435a29;
+    border-right-color:#9cd461;
+    border-bottom-color:#9cd461;
+    color:#f7f7f7 !important;
+    text-decoration:none;
+}
+.dcms-box-btn-import:visited {
+    color:#f7f7f7 !important;
+}
+.dcms-box-btn{
+    display:inline-block;
+    height:18px;
+    line-height:18px;
+    padding:4px 7px;
+    border:1px solid #b0c6db;
+    border-bottom-color:#506581;
+    background:#f3f8fb;
+    color:#4091d6 !important;
+    cursor:pointer;
+}
+.dcms-box-btn:hover{
+    color:#4091d6 !important;
+    text-decoration:none;    
+    box-shadow:inset 0 0 0 1px #9fe9ef;
+    -webkit-box-shadow:inset 0 0 0 1px #9fe9ef;
+    -moz-box-shadow:inset 0 0 0 1px #9fe9ef;
+}
+.dcms-box-btn:active{
+    color:#4091d6;
+    border-left-color:#374c7a;
+    border-top-color:#374c7a;
+    border-right-color:#7ba6c9;
+    border-bottom-color:#7ba6c9;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+}
+.dcms-box-btn:visited{
+    color:#4091d6 !important;
+}
+
+

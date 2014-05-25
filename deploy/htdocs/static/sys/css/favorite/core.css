@@ -1,0 +1,54 @@
+/**
+ * @file add to favorite (offer | company)
+ * @author xianxia.jianxx
+ * @date 2013-08-29
+ * @example
+ * /static/fdevlib/css/lofty/ui/dialog/1.0/back/dialog-min.css;
+ * /static/fdevlib/css/lofty/ui/button/1.0/back/button-min.css;
+ *
+ */
+.mod-favorite-dialog{
+    _display:inline;
+} 
+.mod-favorite-dialog .fui-dialog-body{
+    display:block;
+    width:572px;
+}
+.mod-favorite-dialog .fui-dialog-body .d-alert{
+    padding: 8px 0 0 0;
+}
+.mod-favorite-dialog .unit-info{
+    display:inline-block;
+    text-align:left;
+    _zoom:1;
+    *display:inline;
+}
+
+.mod-favorite-dialog .unit-info .org{
+    color:#ff7300;
+    margin:0 4px;
+}
+.mod-favorite-dialog .unit-info a.link:link,
+.mod-favorite-dialog .unit-info a.link:visited{
+    margin-left:8px;
+    color:#0066cc;
+}
+.mod-favorite-dialog .unit-info a.link:hover{
+    color:#ff7300;
+}
+.mod-favorite-dialog .unit-info .c-desc,
+.mod-favorite-dialog .unit-info .c-subheader{
+    font-weight:500;
+    font-size:12px;
+}
+.mod-favorite-dialog .unit-info dd{
+    margin-left:36px;
+}
+.mod-favorite-dialog .unit-info .c-desc{
+    margin-top:20px;
+}
+.mod-favorite-dialog .unit-info .c-subheader{
+    margin-top:8px;
+}
+
+ 

@@ -1,0 +1,70 @@
+@charset "gb2312";
+/* CSS Document */
+.mp h2{text-align: center;}
+.mp{ width:100%; font-size:12px;}
+.mp-row{height:40px; line-height:40px;text-align: center;margin: 10px;0px;}
+
+.mp-table {
+	margin:0 10px;
+  	border-collapse: collapse;
+	width: 98%;;
+	border: 1px solid #5881D6;
+}
+#mp-table,#mp-table td,#mp-table th{
+	font-size: 12px;
+}
+.mp-table caption {
+	border:1px solid #5881D6;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 0px;
+	height: 1.2em;
+}
+
+.mp-table thead {
+	color:white;
+  	background: #5881D6 ;
+	border-top: 1px solid #5881D6;
+	border-bottom: 1px solid #5881D6;
+}
+
+.mp-table th {
+  font-weight: normal;
+	text-align: left;
+}
+.mp-table col {
+  border-right: 1px solid #ccc;
+}
+
+
+.mp-table th{
+  padding: 0.1em 1em;
+}
+.mp-table td{
+  padding: 0.1em 1em;
+}
+.mp-table tr{
+	height: 2em;
+}
+.mp-table .odd {
+  background-color:#ECF1FA;
+}
+
+.mp-table tr:hover {
+  background-color:#FFCB95;
+}
+
+.mp-table thead tr:hover {
+  	background: #5881D6 ;
+	color:white;
+}
+.fix-row {
+    width:580px;
+}
+.fix-row .fd-left{
+    float:left;
+}
+.fix-row div{
+   height: 26px;
+   line-height: 26px;
+}

@@ -1,0 +1,60 @@
+$rundata.setLayout('default.vm')
+<div class="dcms-box-body">
+	<div class="searchform">
+		<form method="post" id="js-search-page" name="" action="">
+			<input type="hidden" name="action" value="ACLRoleAction">
+			<input type="hidden" name="event_submit_do_queryList" value="true" id="dcms-form-event-type">
+			<input type="hidden" name="page" id="js-page-num" value="1">
+			<div class="searchbar"> 
+				<a  class="btn-basic btn-blue" id="add_role" >添加</a> 
+			</div> 
+		</form>
+	</div> 
+		<div class="search-skin-list"> 
+			<div class="sortbar fd-clr">
+				<div class="simple-page">
+					##unifiedPageSimpleList($!paginator)
+				</div>
+			</div> 
+			<div class="dcms-box-list">
+				#if($list && $list.size() > 0)
+					<table  class="page-tab table-sub">
+						<thead>
+							<tr>
+								<th class="name">角色</th>
+								<th class="desc">描述</th>                   
+								<th class="operator">操作</th>
+							</tr>
+						</thead>
+						<tbody class="page-body">	
+								#foreach( $role in $list)
+							   <tr>
+									<td class="name">
+										$!{role.name} 
+									</td>
+									<td class="desc">
+										$!{role.description} 
+									</td>							
+									<td class="operator">
+										<a class="js-setting operate-link"  data-id=$!{role.id}  data-type="url" href="$adminModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","url")">设置url权限</a>
+										<a class="js-setting operate-link"  data-id=$!{role.id} data-type="menu" href="$adminModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","menu")">设置菜单权限</a>
+							            <a class="js-setting operate-link"  data-id=$!{role.id} data-type="action" href="$adminModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","action")">设置action权限</a>		
+										<a class="js-modification operate-btn"  data-id=$!{role.id} >修改</a>	
+										<a class="js-delete operate-btn"  data-id=$!{role.id} >删除</a>		
+									</td>
+								</tr>
+								#end
+							
+						</tbody>
+					</table>
+				#else
+					<div class="dcms-box-no-result">目前没有角色!</div>
+				#end
+			</div>
+			#if( $paginator && $paginator.pages>0 )
+			<div class="pages fd-clr" align="center">
+				##unifiedPageList($paginator, 5)
+			</div>
+			#end
+	</div>
+</div>

@@ -1,0 +1,64 @@
+/**
+ * @package FD.app.cms.previewpage
+ * @version 1.0.110413
+ * @author  hongss
+ */
+operate.dcms-operate-dialog .dcms-get-rule btn,
+operate.dcms-operate-dialog .dcms-edit-other-operate,
+.dcms-edit-page-bar .dcms-choose-show .choose-btn { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png) no-repeat;}
+
+operate.dcms-operate-dialog { position:absolute; display:none; height:24px; line-height:24px; padding:0 8px; background-color:#8b9ec9; z-index:10000;}
+/*operate.dcms-operate-dialog a { display:inline-block; height:24px;}*/
+operate.dcms-operate-dialog a:link, operate.dcms-operate-dialog a:visited  { color:#fff !important; padding:0 4px; text-decoration:none;}
+operate.dcms-operate-dialog a.dcms-get-rule { position:relative; display:inline-block; height:24px; padding-right:0;}
+operate.dcms-operate-dialog a.dcms-get-rule btn{ padding-right:15px; background-position:-116px -84px; color:#fff;}
+
+ruleselect.dcms-rules-select { position:absolute; display:none; top:23px; left:0; max-height:220px; background-color:#fff; border:1px solid #8b9ec9; padding:0; color:#333; overflow-y:auto; z-index:1000;}
+ruleselect.dcms-rules-select li { white-space:nowrap; height:22px; width:auto; line-height:22px; padding:0 6px; margin:0; list-style:none; overflow:hidden;}
+ruleselect.dcms-rules-select li:hover { background-color:#7f95c5;}
+
+cover.dcms-cover-div,
+editcover.dcms-edit-cover { position:absolute; display:block; top:0; left:0; /*z-index:9999;*/ filter: alpha(opacity=50); opacity:.5; -khtml-opacity:.5; -moz-opacity: 0.5;}
+editcover.dcms-edit-cover { background-color:#1F6ADA; }
+/*.dcms-dialog .content { height:auto;}*/
+
+/*add by hongss on 2011.08.18 for edit operate*/
+operate.dcms-operate-dialog btn.dcms-edit-other-operate { position:relative; display:inline-block; width:10px; vertical-align:middle; height:24px; background-position:-142px -79px;}
+operate.dcms-operate-dialog .dcms-other-operate-list { position:absolute; display:none; top:23px; left:-20px; background-color:#fff; border:1px solid #8b9ec9;padding:0; color:#333; z-index:1000;}
+operate.dcms-operate-dialog .dcms-other-operate-list list { display:block; height:22px; line-height:22px; padding:0 6px; width:24px; cursor:pointer; overflow:hidden;}
+operate.dcms-operate-dialog .dcms-other-operate-list list:hover { background-color:#7f95c5;}
+
+/*add by hongss on 2011.08.16 for edit dialog*/
+.dcms-edit-dialog { display:none; position:absolute; font-size:12px; font-weight:normal; color:#333; z-index:9999; width:432px; background-color:#fff; border:1px solid #adbcdc; overflow:hidden;}
+.dcms-edit-dialog .dcms-list-edit-titles { display:block; width:424px; height:20px; padding:8px 0 0 8px; background-color:#adbcdc; overflow:hidden;}
+.dcms-edit-dialog .dcms-list-edit-titles .dcms-tab-t { float:left; width:66px; color:#333; height:19px; border-right:8px solid #adbcdc; line-height:19px; text-align:center; cursor:pointer; padding-bottom:0;background-color:#ebf0fc; text-indent:0; overflow:hidden;}
+.dcms-edit-dialog .dcms-list-edit-titles .dcms-current { background-color:#fff; padding-bottom:1px;}
+.dcms-edit-dialog .dcms-tab-b { display:block; padding:8px; width:416px; overflow:hidden;}
+.dcms-edit-dialog .dcms-tab-b list { display:block; height:42px; line-height:42px; text-align:left; text-indent:0;}
+.dcms-edit-dialog .dcms-tab-b editlabel { display:inline-block; color:#333; width:60px; text-align:right;}
+.dcms-edit-dialog .dcms-tab-b input { border: 1px solid #bdc7d8; /*width:292px;*/ width:208px; font-size:12px; height:16px; line-height:16px; padding:3px;}
+.dcms-edit-dialog .dcms-edit-button-container { display:block; height:40px; line-height:40px; border-top:2px dotted #dedede; text-align:right; padding-right:32px;}
+.dcms-edit-dialog .dcms-edit-button-container button { padding:0 4px;}
+edit.dcms-edit-boxes { display:none;}
+.dcms-edit-dialog .dcms-validator-tip { line-height:16px;}
+.dcms-edit-dialog .dcms-validator-error { background-position:-129px -248px;}
+
+/*add by hongss on 2011.08.24 for page edit bar*/
+.dcms-edit-page-bar { position:fixed; display:block; bottom:0; height:52px; width:100%; background-color:#fff; overflow:hidden; z-index:10000;}
+.dcms-edit-page-bar-hide { height:6px;} 
+.dcms-edit-page-bar .dcms-choose-show { width:100%; height:6px; background-color:#aebee0; text-align:center; cursor:n-resize; overflow:hidden;}
+.dcms-edit-page-bar .dcms-choose-show .choose-btn { display:block; width:10px; height:6px; margin:0 auto; background-position:0 -79px; line-height:20px; overflow:hidden;}
+.dcms-edit-page-bar-hide .dcms-choose-show .choose-btn { background-position:-50px -79px;} 
+.dcms-edit-page-bar util { display:block; width:952px; margin:0 auto; padding:14px 0; height:24px; text-align:left;}
+.dcms-edit-page-bar list { display:inline-block; padding-right:16px;}
+.dcms-edit-page-bar list .dcms-btn { width:auto; padding:0 12px; height:22px;}
+.dcms-edit-page-bar list .dcms-btn:hover, .dcms-edit-page-bar list .dcms-btn:active { text-decoration:none;}
+.dcms-edit-page-bar list .cancel-btn:hover, .dcms-edit-page-bar list .cancel-btn:active { color:#666 !important;} 
+
+notecode { display:none;}
+
+/*add by zhaoyang on 2011.11.08 for template save*/
+.dcms-save-templates dt{ margin:5px auto 4px auto; color: red}
+.dcms-save-templates li a { display: inline-block; border: 1px solid #8493A6; line-height: 20px; margin-right: 5px; padding-left:5px; padding-right:5px; text-align: center;}
+.dcms-save-templates a:link, .dcms-save-templates a:visited{color: #0066CC;}
+

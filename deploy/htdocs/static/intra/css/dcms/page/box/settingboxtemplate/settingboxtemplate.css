@@ -1,0 +1,76 @@
+.describe {
+	width: 198px;
+	margin-left: 3px !important;
+}
+.ext-width {
+	width: auto !important;
+	min-width: 500px;
+}
+.dcms-search-form .row{
+	margin:2px 16px;
+}
+.template-attr-form .d-material .lib-material {
+    margin:0 3px;
+}
+.dcms-box-tag .textarea {
+	width: 198px;
+	min-width: 198px;
+	max-width: 198px;
+	height: 18px;
+	min-height: 18px;
+	max-height: 62px;
+	margin-left:3px;
+}
+#select-grid {
+    margin:0 3px;
+}
+.row .dcms-input-text[type=text] {
+    margin:0 3px;
+}
+#param-panel .pic-desc {
+	padding: 0 4px;
+	display: inline-block;
+}
+.dcms-search-form label {
+	width: 56px;
+}
+.dcms-search-form .label{
+	margin-top:0;
+}
+.dcms-search-form .list-color{
+	display:inline-block;
+	vertical-align: middle;
+}
+.dcms-box-pic img {
+	width: 170px;
+	height: 150px;
+}
+.dcms-box-upload .btn-upload{
+	width:auto !important;
+	display:inline-block;
+	margin: 0 3px !important;
+}
+.dcms-box-pic .dcms-box-upload{
+	margin:8px auto;
+	width:150px;
+}
+
+
+.d-material {
+    position:relative;
+}
+#dgPopTree {
+    display:none;
+    width:260px;
+    position:absolute;
+    z-index:2147483647;
+    top:4px;
+    left:150px;
+}
+#dgPopTree .dcms-right {
+    float:right;
+}
+#dgPopTree .treePanel input {
+    margin-right:4px;
+}
+ 

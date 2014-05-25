@@ -1,0 +1,17 @@
+
+
+.dcms-form input[type="text"], .dcms-input-text { width:250px; }
+.dcms-form select, .dcms-select { width:260px; }
+.dcms-form label { 
+    width: 86px;
+    color: #666666;
+    display: inline-block;
+    margin-top: 7px;
+    text-align: right;
+    vertical-align: top;
+}
+.dcms-content .dcms-form input[readonly="readonly"] {
+    background-color: #EEEEEE;
+}
+
+

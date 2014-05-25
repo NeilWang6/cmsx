@@ -1,0 +1,116 @@
+/**
+ * @author zhuguo.nizg
+ * @userfor list and paging
+ * @date 2012-01-05
+ */
+.dcms-box-list {
+    color: #444444;
+    overflow-y:scroll;
+}
+.dcms-box-list ul {
+    width: 176px;
+    margin: 4px;
+}
+.dcms-box-list li {
+    float: left;
+}
+.dcms-box-list dl {
+    border: 1px solid #d4d4d4;
+}
+.dcms-box-list dl:hover {
+    border-color: #409ad6;
+}
+.dcms-box-list .image {
+    padding: 2px;
+    margin: 4px;
+}
+.dcms-box-list .image img {
+    width: 160px;
+}
+.vertical-img {
+    display: table;
+    text-align: center;
+    font-size: 0;
+    _display: block;
+}
+.box-img {
+    display: table-cell;
+    margin-right: 8px;
+    vertical-align: middle;
+    _display: inline;
+    _writing-mode: tb-rl;
+    _text-align: center;
+    _height: 100%;
+}
+.box-img img {
+    vertical-align: middle;
+}
+.dcms-box-list dd {
+    padding: 0 6px;
+    background: #e6e6e8;
+}
+.dcms-box-list .title, .dcms-box-list .tags {
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dcms-box-list .tags a {
+    margin-right: 4px;
+}
+.dcms-box-list .operation {
+    margin-top: 8px;
+}
+.dcms-box-list .operation .import {
+    margin-right: 4px;
+}
+.dcms-box-paging {
+    padding: 10px 0;
+    text-align: right;
+    color: #409ad6;
+}
+.dcms-box-paging .total {
+    float: left;
+    color: #444444;
+}
+.dcms-box-paging .count {
+    padding: 0;
+    color: #444444;
+}
+.dcms-box-paging a, .dcms-box-paging span {
+    padding: 4px 10px;
+    color: #409ad6;
+}
+.dcms-box-paging input {
+    width: 38px;
+    height: 18px;
+    margin: 0;
+    line-height: 18px;
+    -moz-box-shadow: 2px 2px 2px #e1ecf6 inset;
+    -webkit-box-shadow: 2px 2px 2px #e1ecf6 inset;
+    box-shadow: 2px 2px 2px #e1ecf6 inset;
+}
+.dcms-box-paging .page:hover {
+    padding: 4px 9px;
+    border: 1px solid #b0c6db;
+    border-bottom-color: #506581;
+}
+.dcms-box-paging .current {
+    color: red;
+}
+.dcms-box-paging .omit {
+    padding-bottom: 4px;
+}
+.dcms-box-paging .pre, .dcms-box-paging .next {
+    padding: 3px 26px;
+}
+.dcms-box-paging .pre-disabled, .dcms-box-paging .next-disabled {
+    padding: 3px 26px;
+    border-color: #ccc !important;
+    color: #ccc !important;
+    cursor: default;
+}
+.dcms-box-paging .pre-disabled:hover, .dcms-box-paging .next-disabled:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}

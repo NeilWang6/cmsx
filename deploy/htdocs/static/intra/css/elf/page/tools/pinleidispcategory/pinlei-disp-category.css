@@ -1,0 +1,47 @@
+
+
+.table-sub .th1{
+    width: 400px;
+}
+
+.table-sub .th2{
+     width: 400px; 
+}
+
+.head-blank{
+    height: 5px;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff7300;
+}
+
+.content{
+	width: 990px;
+	margin-left: 5px;
+	padding-bottom: 46px;
+}
+
+
+.condition {
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	padding: 0px 0px 0px 0px;
+}
+
+.seach-row {
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.mg-20{
+	margin-left: 20px;
+}
+
+.list-width{
+	width: 475px;
+}

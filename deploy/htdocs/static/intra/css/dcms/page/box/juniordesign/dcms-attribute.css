@@ -1,0 +1,354 @@
+/**
+ * @author zhuguo.nizg
+ * @usefor
+ * @date 2011.12.29
+ */
+/**
+ *     属性展示通用CSS
+ */
+.ui-colorbox {
+	z-index: 9000 !important;
+}
+.dcms-box-attr {
+	color: #444444;
+	padding: 0 0px;
+}
+.dcms-box-attr .elem-name {
+	margin-right: 24px;
+}
+.dcms-box-attr .attr-type {
+	padding: 8px 4px;
+	margin: 0px 12px;
+	/*border-bottom: 1px solid #8abbe3;*/
+}
+.dcms-box-attr button, .dcms-box-attr .btn {
+    background:url("http://img.china.alibaba.com/cms/upload/other/tools/panel-repeat.png?t=1") repeat-x;
+}
+.dcms-box-attr button, .dcms-box-attr .btn {
+    display: inline-block;
+    height: 23px !important;
+    line-height: 23px;
+    padding: 0 10px;
+    border: 1px solid #a3a3a3;
+    color: #2a2b2b;
+    background-position:0 -30px;
+    cursor: pointer;
+}
+ 
+.dcms-box-attr .btn-disable {
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 4px;
+	padding: 0 8px;
+	border: 1px solid #9e9e9e;
+	border-bottom-color: #414141;
+	background: #dfdfdf;
+	color: #787878;
+	cursor: pointer;
+}
+.dcms-box-attr .btn:hover, .dcms-box-attr .btn-disable:hover {
+	text-decoration: none;
+}
+.dcms-box-attr input[type=text] {
+	height: 16px;
+	line-height: 16px;
+	padding: 4px;
+	border: 1px solid #b0c6db;
+	color: #444444;
+	-webkit-box-shadow: 2px 2px #e1ecf6 inset;
+	-moz-box-shadow: 2px 2px #e1ecf6 inset;
+	box-shadow: 2px 2px #e1ecf6 inset;
+}
+.dcms-box-attr input[type=checkbox] {
+	vertical-align: -2px;
+}
+.dcms-box-attr textarea {
+	padding: 4px;
+	border: 1px solid #b0c6db;
+	color: #444444;
+}
+.dcms-box-attr .color-preview {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding: 4px;
+	border: 1px solid #b0c6db;
+	border-bottom-color: #506581;
+	background: #4e637f;
+	text-indent: 9999px;
+	-webkit-box-shadow: 0 0 0 6px #f3f8fb inset;
+	-moz-box-shadow: 0 0 0 6px #f3f8fb inset;
+	box-shadow: 0 0 0 6px #f3f8fb inset;
+}
+.dcms-box-attr .color-box {
+	width: 58px;
+	vertical-align: top;
+}
+.dcms-box-attr .readonly {
+	box-shadow: none ! important;
+	color: #b0c6db ! important;
+	background: #dcdcdc;
+}
+/**
+ *     设置连接
+ */
+.dcms-box-attr .link-attr .title input {
+	vertical-align: top;
+	margin-top: 3px;
+}
+.dcms-box-attr .link-attr .title label {
+	vertical-align: top;
+}
+.dcms-box-attr .link-attr .a-title span {
+	display: inline-block;
+	line-height: 14px;
+	margin-left: 20px;
+	text-align: right;
+}
+.dcms-box-attr .link-attr textarea {
+	width: 347px;
+	max-width:347px;
+	height: 50px;
+	min-height: 50px;
+	max-height: 50px;
+}
+.dcms-box-attr .link-attr input[name="link-title"] {
+	width: 347px;
+}
+/**
+ *     字体
+ */
+.dcms-box-attr .font-attr .tool-bar {
+	display:none;
+	padding: 4px;
+	border: 1px solid #b0c6db;
+	background: #b9d0e3;
+}
+.dcms-box-attr .font-attr .font-bold, .dcms-box-attr .font-attr .align-left, .dcms-box-attr .font-attr .align-center, .dcms-box-attr .font-attr .align-right {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999px;
+	vertical-align: top;
+	cursor: pointer;
+	background: url(http://img.china.alibaba.com/cms/upload/2012/025/072/270520_1357790532.png);
+}
+.dcms-box-attr .font-attr .font-bold {
+	margin-right: 6px;
+	background-position: 0 0;
+}
+.dcms-box-attr .font-attr .align-left {
+	margin-right: -3px;
+	background-position: -26px 0;
+}
+.dcms-box-attr .font-attr .align-center {
+	margin-right: -3px;
+	background-position: -52px 0;
+}
+.dcms-box-attr .font-attr .align-right {
+	margin-right: 6px;
+	background-position: -78px 0;
+}
+.dcms-box-attr .font-attr textarea {
+	min-width: 428px;
+	max-width: 428px;
+	min-height: 50px;
+	max-height: 50px;
+}
+.dcms-box-attr .font-attr .font-family {
+	width: 75px;
+}
+.dcms-box-attr .font-attr .font-size {
+	width: 60px;
+}
+/**
+ *     边距
+ */
+.dcms-box-attr .margin-attr li, .dcms-box-attr .padding-attr li {
+	float: left;
+	margin-left: 16px;
+}
+.dcms-box-attr .margin-attr input[type="text"], .dcms-box-attr .padding-attr input[type="text"], .dcms-box-attr .height-width-attr input[type="text"], .dcms-box-attr .border-attr input[name="border-radius"] {
+	width: 28px;
+	margin: 0 4px;
+	text-align: right;
+}
+.dcms-box-attr .border-color {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #b0c6db;
+}
+.dcms-box-attr .border-radius {
+	margin-bottom: 0px ! important;
+	padding-top: 10px;
+	border-top: 1px solid #b0c6db;
+}
+.dcms-box-attr .border-attr div {
+	margin-bottom: 8px;
+}
+.dcms-box-attr .border-attr li {
+	float: left;
+	margin-right: 24px;
+}
+/**
+ *     图片
+ */
+.dcms-box-attr .image-attr .bg-title {
+	display: inline-block;
+	float: left;
+	margin-right: 8px;
+	min-width: 72px;
+	max-width: 120px;
+	text-align: right;
+}
+.dcms-box-attr .image-attr .alt {
+	margin-top: 8px;
+} 
+.dcms-box-attr .image-attr .small{
+	width:347px;
+}
+.dcms-box-attr .image-attr .limit {
+	display: inline-block;
+	margin-left: 8px;
+}
+.ds-image-attr .img-tip {
+	display: inline-block;
+	width: 110px;
+	text-align: right;
+}
+/**
+ *     文本
+ */
+.dcms-box-attr .height-attr {
+	width:64px;
+	display:inline-block;
+	text-align: right;
+}
+.dcms-box-attr .height-width-attr input.edit-attr {
+	width: 120px;
+	text-align: left;
+}
+/**
+ *     背景
+ */
+.dcms-box-attr .background-attr .bg-image {
+	border-bottom: 1px solid #8abbe3;
+	padding: 8px 0px;
+}
+.dcms-box-attr .background-attr .bg-color {
+	padding: 8px 0px;
+}
+.dcms-box-attr .background-attr .bg-title {
+	margin-right: 8px;
+	min-width: 60px;
+	max-width: 120px;
+	text-align: right;
+}
+.background-attr .bg-color .bg-title {
+	max-width: 120px;
+	min-width: 60px;
+	text-align: right;
+}
+.dcms-box-attr .image-preview {
+	margin-right: 8px;
+	padding: 5px;
+	border: 1px solid #b0c6db;
+}
+.dcms-box-attr .image-setting {
+	padding: 0px 0;
+}
+.dcms-box-attr .background-attr .uploads, .dcms-box-attr .image-attr      .uploads {
+
+}
+.dcms-box-attr .background-attr .repeat label {
+	margin-right: 16px;
+}
+.dcms-box-attr .background-attr .limit {
+
+}
+.dcms-box-attr .background-attr .limit .size, .dcms-box-attr .image-attr .limit .size {
+	color: #a1a1a1;
+}
+.dcms-box-attr .background-attr .bg-repeat {
+	border-bottom: 1px solid #8abbe3;
+	padding: 8px 0px;
+}
+.dcms-box-attr .background-attr .bg-position {
+	border-bottom: 1px solid #8abbe3;
+	padding: 8px 0px;
+}
+.dcms-box-attr .background-attr .bg-position li.vertical-img {
+	padding: 4px;
+	cursor: pointer;
+}
+.dcms-box-attr .background-attr .bg-position li.current {
+	background-color: #ddd;
+}
+.dcms-box-attr .local-upload{
+	width:0px;
+	
+}
+/**
+ *     上传公用CSS
+ */
+ .dcms-box-attr .link-upload {
+   display:inline-block;
+	width: 80px;
+	position: relative;
+	margin:0 4px;
+	vertical-align: -2px;
+}
+.dcms-box-attr .link-upload .popup {
+	position: absolute;
+	display: none;
+	left: 2px;
+	top: 34px;
+	width: 550px;
+	height: 30px;
+	border: 1px solid #b0c6db;
+	box-shadow: 0 0 0 2px #cbdcea;
+	background: #fff;
+}
+.dcms-box-attr .link-upload .arrow {
+	position: absolute;
+	top: -8px;
+	left: 26px;
+	border-left: 5px solid rgba(255,255,255,1);
+	border-right: 5px solid rgba(255,255,255,1);
+	border-bottom: 5px solid #cbdcea;
+}
+.dcms-box-attr .link-upload .link-addr {
+	width: 503px;
+	border: none;
+	box-shadow: none;
+	color: #B0C6DB;
+}
+.dcms-box-attr .link-upload .btn-ok {
+	display:inline-block;
+	height: 16px;
+	margin-top:2px;
+	line-height: 16px;
+}
+.dcms-box-attr .banner-maker-upload{
+	display:none;
+}
+
+.dcms-box-attr .link-upload button:hover, .dcms-box-attr .banner-maker-upload button:hover {
+	border-color: #7ba6c9;
+	border-bottom-color: #394e7c;
+	box-shadow: 0 0 0 1px #9fe9ef inset;
+}
+.dcms-box-attr .repeat-attr input {
+	width: 34px;
+}
+.dcms-box-attr .ds-text-attr .title {
+	height: 16px;
+	/* border: 1px solid #adbcdc;
+	 background-color: #adbcdc;
+	 color: #FFF;*/
+	text-align: left;
+}
+.dcms-box-attr .ds-text-attr .a-title span {
+	width: 50px;
+}
+

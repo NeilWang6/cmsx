@@ -1,0 +1,26 @@
+.module-attr .input-text {
+	border: 1px solid #BDC7D8;
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	margin: 4px 0;
+	padding: 3px;
+	width: 198px;
+}
+.module-attr span {
+	padding: 0;
+	display: inline;
+}
+.module-attr .row {
+	margin-bottom: 10px;
+}
+.module-attr {
+	padding: 8px;
+	margin: 10px auto;
+	width: 250px;
+}
+.header-dialog-content .dialog-content-text{
+	padding-top:40px;
+	height: 24px;
+	line-height: 24px;	
+}

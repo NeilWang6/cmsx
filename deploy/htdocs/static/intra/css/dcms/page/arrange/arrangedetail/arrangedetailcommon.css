@@ -1,0 +1,190 @@
+/**
+ * create by hongss for search page on 2011.09.27
+ */
+.dialog-body{
+	min-width:470px;
+}
+
+.dcms-dialog header .title {
+    color: #FFFFFF;
+}
+header {
+	 background-color: #ADBCDC;
+	 padding-left:10px;
+}
+header .title{
+	   color: #FFFFFF;
+}
+.dcms-content{
+	margin-left: 166px;
+    margin-top: 12px;
+}
+.page-info{
+	font-size:13px;
+	font-weight:700;
+}
+.template-info{
+	margin-top :6px;
+}
+.block-info{
+	float: left;
+}
+.block-detail-add{
+	float: right;
+}
+.boxPadding{
+	margin-top: 4px;
+}
+.bgwhite
+{
+		margin-bottom:22px;
+
+}
+.terms-message .message .hide-tag {
+    background: url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png") no-repeat;
+}
+
+.booth-management {
+	margin-top: 12px;
+}
+.booth-management h3 {
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    height: 38px;
+}
+.dcms-form {
+    padding-bottom: 20px;
+}
+.dcms-form label {
+    width: 86px;
+}
+.dcms-content .related-pages, .dcms-content .operation-log {
+    margin-top: 16px;
+}
+.dcms-content .related-pages h3, .dcms-content .operation-log h3 {
+    line-height: 26px;
+    /*font-size: 14px;*/
+    font-weight: 700;
+    color: #666;
+}
+.booth-management .dcms-search-line-list-input li {
+    float: left;
+    padding-right: 12px;
+}
+.booth-management .dcms-search-line-list-input select {
+    border: 1px solid #bdc7d8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    width: 115px;
+    height: 24px;
+}
+.booth-management .dcms-search-line-list-input select.dcms-host-name {
+    width: 234px;
+}
+.dcms-content .dcms-form input[type="text"] {
+    width: 240px;
+}
+.booth-management tfoot td.dcms-page-module {
+    height: 48px;
+    line-height: 48px;
+    text-align: right;
+    padding-right: 12px;
+}
+.booth-management tfoot .dcms-jump-page {
+    width: 24px;
+}
+.booth-management tfoot .dcms-page-btn {
+    margin: 0;
+}
+.booth-management tfoot a.pages:link, .booth-management tfoot a.pages:visited {
+    color: #4C6BAC;
+    text-decoration: underline;
+}
+.booth-management .dcms-search-line-list-input .dcms-btn {
+    margin-top: 4px;
+}
+
+.dcms-content .dcms-grid {
+    width: 100%;
+}
+.dcms-content .dcms-grid .word-all {
+    word-break: break-all;
+}
+
+
+
+.clearfloat {
+    clear: both;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0px;
+    width: 100%;
+}
+
+.dcms-content .list-input li {
+    float: left;
+    padding-right: 12px;
+}
+.dcms-content .list-input input, .mydivContent .list-input input {
+    border: 1px solid #BDC7D8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    color: #333;
+    height: 16px;
+}
+.mydivContent .list-input input{
+    width:152px;
+    border: 1px solid #BDC7D8;
+}
+.mydivContent .list-input {
+    width:400px;
+}
+.mydivContent .list-input textarea{
+    width:157px;
+}
+.mydivContent .list-input select {
+    border: 1px solid #BDC7D8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 2px;
+    width: 160px;
+    height: 24px;
+}
+.mydivContent .list-input label {
+    width: 160px;
+    text-align: right;
+    padding-right:8px;
+    display: inline-block;
+}
+
+.img-operator{
+	border-style:none none none dotted; border-width:1px;
+	
+	border-color:#ddd;
+	width:30px;
+	text-align:center;
+
+}
+
+.specialItem .add {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("http://i01.c.aliimg.com/cms/upload/2012/451/324/423154_286271235.png") 0 0 no-repeat;
+  margin-top: 5px;
+  margin-bottom: 5px;	  
+}
+.specialItem .delete {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("http://i01.c.aliimg.com/cms/upload/2012/451/324/423154_286271235.png") 0 -30px no-repeat;
+}
+.specialItem .item {
+    margin-top: 5px;
+    margin-bottom: 5px;	
+}

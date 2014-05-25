@@ -1,0 +1,63 @@
+/**
+ * 	站点管理样式
+ */
+body {
+
+}
+.dcms-awake{
+	display:none;
+}
+.dcms-content .dcms-select {
+	border: 1px solid #BDC7D8;
+	height: 250px;
+	line-height: 250px;
+	margin: 4px 0;
+	padding: 4px;
+	width: 200px;
+}
+.dcms-content .topic {
+	margin-left: 24px;
+	width: 500px;
+	height: 300px;
+}
+.dcms-content .operation {
+	margin-left: 24px;
+	width: 500px;
+}
+.dcms-content .op-cols {
+	float: left;
+	padding: 8px 4px;
+}
+.dcms-content .op-cols button {
+	display: block;
+	margin: 10px 0;
+	background-color: #F3F8FB;
+	border: 1px solid #B0C6DB;
+	color: #409AD6;
+	text-align: center;
+	vertical-align: middle;
+	width: 50px;
+}
+.dcms-content .mid-btn {
+	height: 100px;
+	line-height: 100px;
+	margin-top: 90px;
+}
+.dcms-content .dcms-search {
+	margin-left: 18px;
+	padding: 8px 0px;
+}
+.dcms-content .dcms-search h3 {
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+}
+.dcms-content .title {
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+}

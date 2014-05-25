@@ -1,0 +1,477 @@
+/** 
+ * @author shanshan.hongss
+ * @usefor 工具后台样式统一 - 基础部分
+ * @date   2012.09.07
+ * @modify by hongss on 2013.01.21 视觉设计师确定最终版的统一样式，做统一调正
+ */
+
+html {
+    color:#666;
+}
+a {
+    color:#3967c6;
+}
+a:hover {
+    color:#3967c6;
+    text-decoration:underline;
+}
+
+/*表单元素*/
+input[type=checkbox], input[type=radio] {
+    border: 1px solid #dbdcde;
+    vertical-align: middle;
+}
+input[type=text] {
+    border: 1px solid #dbdcde;
+    padding: 3px;
+    height: 15px;
+    line-height: 15px;
+    vertical-align: middle;
+    /*border-radius:2px;*/
+    background-color:#fff;
+    box-shadow:inset 1px 1px 1px rgba(68,89,132,0.14);
+}
+
+select {
+    border: 1px solid #dbdcde;
+    padding: 3px;
+    width: 122px;
+    height: 23px;
+    line-height: 23px;
+    vertical-align: middle;
+    background-color:#fff;
+}
+select[size] {
+    height:auto;
+}
+
+textarea {
+    border: 1px solid #dbdcde;
+    padding: 3px;
+    background-color:#fff;
+    box-shadow:inset 1px 1px 1px rgba(68,89,132,0.14);
+}
+
+input.error, textarea.error, select.error {
+    border:1px solid #ff5502;
+}
+
+input[type=text]:focus, textarea:focus, select:focus {
+    border:1px solid #2381da;
+}
+input[type=text]:disabled, textarea:disabled, select:disabled {
+    border:1px solid #d1d2d4;
+    background-color:#eee;
+    color:#888;
+    box-shadow:none;
+}
+
+
+/*颜色*/
+.red {
+    color:#f00;
+}
+.green {
+    color:#50b31a;
+}
+
+/*按钮*/
+.btn-basic {
+    display: inline-block;
+    padding:0 8px;
+    height: 22px;
+    cursor: pointer;
+    border: 1px solid #aeaeae;
+    color: #2a2b2b;
+    border-radius:2px;
+    vertical-align:middle;
+}
+a.btn-basic {
+    height:20px;
+    /*vertical-align:middle;*/
+    line-height:20px;
+    padding:0 10px;
+}
+.btn-blue, .btn-gray, .btn-disabled-gray, .btn-basic:disabled, 
+.btn-disabled-blue, .btn-disabled {
+    background:url("http://img.china.alibaba.com/cms/upload/2013/931/566/665139_133354742.png") repeat-x;
+}
+.btn-blue {
+    border:1px solid #2c75bf;
+    background-position:0 -90px;
+    color:#fff;
+}
+.btn-blue:hover {
+    background-position:0 -120px;
+}
+.btn-blue:active {
+    background-position:0 -150px;
+}
+a.btn-blue:hover {
+    color:#fff;
+    text-decoration:none;
+}
+.btn-gray {
+    background-position:0 0;
+}
+.btn-gray:hover {
+    background-position:0 -30px;
+}
+a.btn-gray:hover {
+    color:#666;
+    text-decoration:none;
+}
+.btn-gray:active {
+    background-position:0 -60px;
+}
+.btn-yellow{
+    border:1px solid #f66f00;
+    background:-moz-linear-gradient(top, #fd923a,#ff7402);
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#fd923a), to(#ff7402));
+    color:#fff;
+}
+.btn-yellow:hover {
+    box-shadow:inset 0 1px 0 #fdb67b;
+    text-decoration:none;
+    color:#fff;
+    background:-moz-linear-gradient(top, #fd9037, #ff7604);
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#fd9037), to(#ff7604));
+}
+.btn-yellow:active {
+    box-shadow:inset 0 0 0 #fdb67b;
+    background:-moz-linear-gradient(top, #ff7706,#fd8d32);
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(ff7706), to(#fd8d32));
+}
+.btn-disabled-blue, .btn-disabled-blue:hover,
+.btn-disabled-gray, .btn-disabled-gray:hover, .btn-disabled:hover,
+.btn-disabled, .btn-basic:disabled, .btn-basic:disabled:hover {
+    border: 1px solid #aeaeae;
+    background-position:0 -180px;
+    color:#a8a8a8;
+    text-decoration:none;
+    cursor:default;
+}
+
+/*列表*/
+.list-divided .d-right {
+    float:right;
+}
+
+/*表格*/
+.table-basic, .table-sub, .table-info {
+    width:100%;
+    line-height:28px; 
+    table-layout:fixed;
+}
+.table-basic caption {
+    text-align:left;
+}
+
+.table-no-header caption {
+    border-bottom:1px solid #c5c9d2;
+}
+.table-no-header tbody td {
+    border:1px solid #c5c9d2;
+    padding:0 6px;
+}
+.table-no-header tbody td:hover {
+    background-color:#f8f8f8;
+}
+
+/*.table-simple caption {
+    padding-left:6px;
+    
+}
+.table-simple thead tr {
+    background-color:#e8e9eb;
+    border-top:2px solid #c3cad2;
+    text-align:left;
+}
+.table-simple thead th, .table-simple tbody td {
+    padding-left:6px;
+}
+.table-simple tbody tr.even {
+    background-color:#fbfbfb;
+}*/
+
+.table-sub {
+    /*table-layout:fixed;
+    border-bottom:1px solid #d8dbe1;*/
+}
+.table-sub caption {
+    text-align:left;
+    border-bottom:1px solid #9da5b4;
+    margin-bottom:1px;
+}
+.table-sub .cp-right, .table-basic .cp-right {
+    float:right;
+}
+.table-sub caption .label, .table-basic caption .label {
+    font-weight:bold;
+}
+.table-sub thead tr {
+    background-color:#f6f6f7;
+    text-align:left;
+}
+.table-sub th, .table-sub td {
+    padding-left:12px;
+}
+.table-sub tbody tr {
+    border-bottom:1px solid #d8dbe1;
+}
+.table-sub tbody tr:hover {
+    background-color:#f6f6f7;
+}
+/*.table-sub .even {
+    background-color:#fff;
+}*/
+
+.table-info {
+    border-bottom:1px solid #d8dbe1;
+    border-collapse:separate;
+}
+.table-info caption {
+    text-align:left;
+    margin-bottom:1px;
+    border-bottom:2px solid #9da5b4;
+    font-weight:bold;
+    color:#000;
+}
+.table-info span.txt {
+    font-weight:500;
+    color:#666;
+}
+.table-info .label {
+    width:126px;
+    background-color:#f6f6f7;
+}
+.table-info td, .table-info th {
+    border-bottom:1px solid #fff;
+}
+.table-info td {
+    padding-left:12px;
+}
+
+/*分页*/
+/*简易*/
+.paging-s {
+    line-height:24px;
+}
+.paging-s .description {
+    color:#888;
+}
+.paging-s .pnum {
+    display:inline-block;
+    padding:0 8px;
+    color:#333;
+}
+.paging-s .prev {
+    border-right:0;
+    border-radius:2px 0 0 2px;
+}
+.paging-s .prev span {
+	display:inline-block;
+    border-right:5px solid #212121;
+    border-top:5px solid rgba(225,225,225,0);
+    border-bottom:5px solid rgba(225,225,225,0);
+    font-size:0;
+    vertical-align:middle;
+}
+.paging-s .btn-disabled-gray span {
+    border-right:5px solid #a8a8a8;
+}
+.paging-s .next {
+    border-radius:0 2px 2px 0;
+}
+
+/*完整*/
+.paging-t {
+    line-height:24px;
+}
+.paging-t li {
+    float: left;
+    padding: 0 2px;
+    color: #989898;
+    font-family: Tahoma;
+}
+.paging-t .pnum {
+    width:30px;
+    margin: 0 2px;
+}
+.paging-t .pagination a, .paging-t .pagination span {
+    display: inline-block; 
+    margin-right: 3px; 
+    padding:0 4px; 
+    min-width: 12px; 
+    height: 20px; 
+    border: solid 1px #ccc; 
+    color: #b4b4b4; 
+    text-decoration: none; 
+    line-height: 20px; 
+    text-align:center; 
+    word-break: keep-all;
+    vertical-align:middle;
+}
+.paging-t .pagination a.prev, .paging-t .pagination .prev-disabled,
+.paging-t .pagination a.next, .paging-t .pagination .next-disabled,
+.crumbs-unorder li .inline, .crumbs-unorder li.current {
+    background:url("http://img.china.alibaba.com/cms/upload/2013/108/086/680801_133354742.png") no-repeat;
+}
+.paging-t .pagination a:hover { 
+    border-color: #6d83af; 
+    color: #3b5995; 
+}
+.paging-t .pagination a:active {
+    background-color:#f4f8ff;
+}
+.paging-t .pagination .prev-disabled, .paging-t .pagination .prev-disabled:hover,
+.paging-t .pagination .next-disabled, .paging-t .pagination .next-disabled:hover {
+    cursor: default;
+    border-color:#ccc;
+    color:#ccc;
+}
+.paging-t .pagination .prev-disabled, .paging-t .pagination .prev-disabled:hover {
+    padding-left:16px; 
+    background-position: -9px -173px;
+}
+.paging-t .pagination .next-disabled, .paging-t .pagination .next-disabled:hover {
+    padding-right:16px; 
+    background-position: 46px -173px;
+}
+.paging-t .pagination .next-disabled:active, .paging-t .pagination .prev-disabled:active {
+    background-color:#fff;
+}
+.paging-t .pagination a.prev { 
+    padding-left:16px; 
+    background-position: -9px -113px; 
+}
+.paging-t .pagination a.prev:hover {
+    background-position: -9px -143px;
+}
+.paging-t .pagination a.next { 
+    padding-right:16px; 
+    background-position: 46px -113px; 
+}
+.paging-t .pagination a.next:hover {
+    background-position: 46px -143px;
+}
+.paging-t .pagination .omit { 
+    padding: 1px 4px; 
+    border: 0 none; 
+    color: #666 !important; 
+    cursor: default; 
+}
+.paging-t .pagination .current { 
+    border-color: #6d83af  !important; 
+    color: #3b5995 !important; 
+    background-color:#f4f8ff; 
+    cursor: default; 
+}
+
+/*警示信息*/
+.msg-warning {
+    background: url("http://img.china.alibaba.com/cms/upload/other/tools/icon-warning.png") no-repeat;
+    padding-left:64px;
+    width:280px;
+    margin:0 auto;
+    color:#000;
+}
+.msg-warning .summary {
+    font-size:16px;
+    line-height:32px;
+    font-weight:bold;
+}
+.msg-warning dl {
+    line-height:24px;
+}
+.msg-warning dt {
+    font-weight:bold;
+}
+
+.tui-info-bar-caution { display:inline-block; border:1px solid #f1cb6f; background-color:#fffdc6; padding:3px 12px 4px 6px; line-height:20px; }
+.tui-info-bar-caution .icon-caution-16 { position:relative; float:left; border: 1px solid #e0452f; border-radius: 50% 50% 50% 50%; height:14px; width:14px; vertical-align:middle; background-color:#fe7006; margin-top:3px; box-shadow:inset 0 0 0 1px #fe932c;}
+.tui-info-bar-caution .icon-caution-16:after { content: ""; position:absolute; display:inline-block; border-right:2px solid #fff; height:2px; width:2px; top:9px; left:4px;}
+.tui-info-bar-caution .icon-caution-16:before { content: ""; position:absolute; display:inline-block; border-right:2px solid #fff; height:6px;top:2px; left:6px; }
+.tui-info-bar-caution .txt { padding-left:4px; color:#888; }
+
+/*图片垂直居中*/
+.vertical-img{
+    display: table;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    *display: block; /* for IE6/7 */
+}
+.vertical-img .box-img{
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline; /* for IE6/7 */
+    *writing-mode: tb-rl; /* for IE6/ */
+    *text-align: center;
+    *height: 100%;
+}
+.vertical-img img{
+    vertical-align: middle;
+}
+
+/*无序面包屑*/
+.crumbs-unorder {
+    border:1px solid #dfdfdf;
+    border-radius:8px;
+    height:28px;
+    line-height:28px;
+    width:-moz-fit-content;
+    background-color:#fbfbfb;
+}
+.crumbs-unorder li {
+    float:left;
+}
+.crumbs-unorder li .inline {
+    display:inline-block;
+    padding:0 16px;
+    background-position:right -210px;
+}
+.crumbs-unorder li.last .inline {
+    background:none;
+}
+.crumbs-unorder li.current {
+    position:relative;
+    padding-bottom:5px;
+    background-position:center bottom;
+}
+.crumbs-unorder li.current .inline {
+    background-color:#f4f9ff;
+}
+
+/*浮窗 - 下浮窗*/
+.fixed-bottom {
+    position:fixed;
+    bottom:0;
+    width:800px;
+}
+.fixed-bottom .decorate {
+    height:6px;
+    overflow:hidden;
+}
+.fixed-bottom .arrow-left {
+    float:left;
+    border-bottom:6px solid #8da0c0;
+    border-left:6px solid rgba(225, 225, 225, 0);
+}
+.fixed-bottom .arrow-right {
+    float:right;
+    border-bottom:6px solid #8da0c0;
+    border-right:6px solid rgba(225, 225, 225, 0);
+}
+.fixed-bottom .fixed-body {
+    border:1px solid #bec7d8;
+    min-height:36px;
+    line-height:36px;
+    background-color:#e6eaf5;
+}
+
+
+
+
+
+

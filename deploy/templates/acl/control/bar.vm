@@ -1,0 +1,39 @@
+<header class="dcms-header">
+    <div class="dcms-header-container">
+        <h1 class="dcms-logo"><a title="case" href="#"><img src="http://img.china.alibaba.com/cms/upload/other/dcms/logo-dcms.png" alt="cms"/></a></h1>
+        <nav>
+            <div class="inline last libra-member-info">
+                    <div class="menu_nav menu-page" >
+                        <a href="#">案例库</a> 
+                    </div>
+                    <div class="menu_nav menu-layout">
+                        <a href="#">个人信息</a> 
+                    </div>
+                    <div class="menu_nav menu-template"> 
+                        <a href="#">操作日志</a> 
+                    </div> 
+
+            <div class="dcms-nav">
+                <ul> 
+					<li class="dcms-linkcolor">欢迎&nbsp;<span>$!rundata.getSession().getAttribute("__cms_user_id__")</span></li>
+                    <li><a class="dcms-nav-link" href="/common/ssoLogout.htm">退出</a></li>
+                </ul>
+            </div> 
+           <div class="dcms-nav-search fd-clr">
+                <form method="post" id="dcms-hdsearch-form" name="compositesearch">
+                    <select id="dcms-hdsearch-choose"> 
+                        <option value="case">案例库</option>
+                        <option value="knowledge">工程知识</option> 
+                    </select>
+                    <div class="dcms-search-input">
+                        <input type="text" id="dcms-hdsearch-keywords" placeholder="搜索"/>
+                        <input type="hidden" id="dcms-hdsearch-action" value="" />
+                        <input type="hidden" id="dcms-hdsearch-hidden" value="" />
+						<input type="hidden" id="dcms-total-site-hidden" name="totalSite" value="true" />
+                        <button id="dcms-hdsearch-btn" type="button"><span>搜索</span></button>
+                    </div> 
+                </form>
+            </div> 
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,242 @@
+/**
+ * create by lusheng.linls on 2012.09.07
+ */
+
+.content {
+    width: 800px;
+}
+.vline {
+    color: #979797;
+}
+.loading{
+    background: url("http://img.china.alibaba.com/cms/upload/2012/534/534/435435_51297002.gif") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    margin-left: 413px;
+    margin-top: 20px;
+}
+/** tab */
+#tab{max-width:990px;}
+#tab .f-tab-b {
+    display: none;
+}
+.tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.tab-b li {
+    position: relative;
+    float: left;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+    cursor: pointer;
+}
+.tab-b a {
+    text-decoration: none !important;
+    padding: 0 0 8px 10px;
+    color: #323232;
+}
+.tab-b .current {
+    border: solid 2px #8e9dc6;
+    border-bottom-color: #ffffff;
+    line-height: 28px;
+}
+.tab-b .current a {
+    color: #4a6bae;
+    font-weight: bold;
+}
+/** condition */
+.condition {
+    background-color: #f2f2f2;
+    padding: 15px 0px 5px 0px;
+}
+.condition table {
+    line-height: 26px;
+    table-layout: fixed;
+    width: 100%;
+}
+.condition td {
+    padding-bottom: 10px;
+}
+.condition select {
+    width: 98px;
+}
+.condition .select-long {
+    width: 250px;
+}
+.condition .select-date {
+    width: 113px;
+}
+.condition .col-2 {
+    text-align: right;
+    width: 45px;
+}
+.condition .col-3 {
+    text-align: right;
+    width: 55px;
+}
+.condition .col-4 {
+    text-align: right;
+    width: 70px;
+}
+.condition .col-button {
+    padding-left: 8px
+}
+.condition .col-r7{
+    width: 100px;
+    padding-right: 5px;
+}
+.condition .col-r7 input{
+    width: 95px;
+}
+.condition .col-r10{
+    width: 130px;
+    padding-right: 5px;
+}
+.condition .col-r10 input{
+    width: 120px;
+}
+.condition .col-r20{
+    width: 260px;
+    padding-right: 5px;
+}
+.condition .col-date{
+    width: 220px;
+    padding-right: 5px;
+}
+.condition .col-date input{
+    width: 90px;
+}
+.condition .tui-select .s-text{
+    width: 65px;
+}
+.condition .pull-down{
+    z-index: 10;
+    height: 400px;
+    overflow: auto;
+    line-height: 18px;
+}
+.condition .pull-down .item dd{
+    padding-left: 73px;
+    padding-right: 20px;
+}
+.condition .pull-down .item dt{
+    width: 70px;
+}
+.collection-area{
+	line-height: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+}
+.collection-area a{
+    text-decoration: none !important;
+    padding: 0 0 8px 10px;
+    color: #323232;
+    margin-right:7px;
+}
+.collection-area .current a  {
+    color: #4a6bae;
+}
+/** detail */
+.msg {
+    padding-top: 60px;
+    display: none;
+}
+.js-sublist-more {
+    background-color: #8a9fca;
+    color: #fefffd;
+    cursor: pointer;
+    line-height: 28px;
+    margin-left: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+}
+.detail {
+    padding-top: 10px;
+    padding-bottom:40px;
+}
+.detail .sample {
+    display: none;
+}
+.detail .wangwang {
+    margin-bottom: -5px;
+}
+.detail .vline {
+    padding: 0 5px;
+}
+.sample {
+    margin-bottom: 10px;
+}
+.sample th, .sample td {
+    padding-left: 15px;
+}
+.sample .column-a {
+    width: 105px;
+}
+.sample .column-b {
+    width: 339px;
+}
+.sample .column-c {
+    width: 70px;
+}
+.table-sub .sub-sample-msg {
+    display: none;
+    border: 1px solid #f2f3eb;
+}
+.table-sub .sub-sample-msg span {
+    padding-left: 365px;
+}
+.sub-sample-msg td {
+    background-color: #fefef6;
+}
+.display-none {
+    display: none!important;
+}
+.removed {
+    display: none;
+}
+.inline {
+    display: inline;
+}
+.sample .show-win-1st {
+    margin-right: 20px;
+}
+.sample .show-win-2nd {
+    margin-bottom: 6px;
+    margin-right: 20px;
+}
+.js-seriesid-del {
+	margin-left:7px;
+}
+
+/** page */
+.paging {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+.paging .paging-t {
+    float: right;
+}
+/*dialog*/
+.dialog-series-confirm-delete .dialog-b .section {
+	height:90px;
+	line-height:100px;
+	text-align: center;
+}
+.dialog-series-confirm-delete .section span {
+	font-size:18px;
+}
+.dialog-series-confirm-delete {
+	width:360px;
+}
+/*showin*/
+/*add:zhuliqi show-win css文件被多处调用，所以写在此处 覆盖老样式*/
+.show-win-1st, .show-win-2nd{width:224px;}
+.show-win-2nd .operate li{padding-left:12px;width:100px;}

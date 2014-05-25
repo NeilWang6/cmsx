@@ -1,0 +1,98 @@
+/**
+ * @author vivian.xul@alibaba-inc.com
+ * @vision 2011-04-18
+ * @info 多选控件样式
+ */
+.selectbox .sel-btn,
+.suggest-container .submit-btn,
+.suggest-container .cancle-btn,
+.suggest-container li.hassub{ background:url(http://img.china.alibaba.com/cms/upload/2011/748/780/87847_1446014988.png) no-repeat}
+.selectbox { position:relative; width:390px; }
+.selectbox .sel-box-default,.selectbox .sel-box { float:left; width:302px; padding: 2px; border: 1px solid #7F9DB9; background: url(http://img.china.alibaba.com/images/common/icon_v02/bg5.gif) repeat-x;}
+.selectbox input.sel-box-default {height:16px; line-height: 16px;cursor:pointer;}
+
+.selectbox .sel-box{ padding:0 2px; height:auto}
+.selectbox .disable{ background:#d2d2d2}
+.selectbox .sel-box .item-list {  width:302px; padding:2px 0;}
+.selectbox .sel-box li {height:18px; display:inline;margin:1px 0;}
+.selectbox .sel-box li span{display:inline-block;}
+.selectbox .sel-box li .item { height:14px; line-height:14px; padding:1px; border:1px solid #c0c3c3;border-radius:2px; }
+
+.selectbox .sel-btn,.selectbox .sel-btn:link,.selectbox .sel-btn:visited,.selectbox .sel-btn:active,.selectbox .sel-btn:hover { float:left; position:absolute; left:307px;top:0; width:76px; height:22px; line-height:22px; cursor:pointer; text-align:center; color:#666;}
+.selectbox .sel-btn:hover { text-decoration:none; color:#666; background-position:0 -28px;}
+.selectbox .sel-box-item {height:auto;}
+.suggest-container .submit-btn,.suggest-container .cancle-btn { float:left;width:64px; height:23px; margin:0 4px; color:#333; text-decoration:none; text-align:center; line-height:22px; background-position: 0 -55px;}
+.suggest-container .submit-btn:hover,.suggest-container .cancle-btn:hover {background-position: 0 -83px; color:#333; text-decoration:none;}
+
+.suggstionbox{ float:left; padding: 2px; height: 16px; line-height: 16px; border: 1px solid #7F9DB9; background: url(http://img.china.alibaba.com/images/common/icon_v02/bg5.gif) repeat-x;}
+.suggest-container{ background:#fff;}
+.suggest-container{border:1px solid #ccc;z-index:10;}
+.suggest-shim{z-index:9}
+.suggest-container ul{zoom:1;overflow:hidden; }
+.suggest-container li{color:#333;padding:1px 0 2px;font-size:12px;line-height:18px;height:18px;}
+.suggest-container li.selected,.suggest-container li.selectedli,.suggest-container li.current{background-color:#0066cc; color:#fff;cursor:default}
+.suggest-key{text-align:left;padding-left:5px; float:left;}
+.item-checkbox{ margin:0 0 0 2px; float:left;}
+.suggest-result{float:right;text-align:right;padding-right:5px;color:#c3c3c3}
+.suggest-container li.hassub{ background-position:90px -108px;}
+.suggest-container li.selected span,.suggest-container li.selectedli span{color:#fff;cursor:default}
+.suggest-container li.hassub.selectedli,.suggest-container li.hassub.current{ background-position:90px -128px;}
+.suggest-container li span b{color:#ff7300;font-style:normal;font-weight:normal;}
+.suggest-tips{margin-bottom:2px;clear:both;padding:3px 5px 5px;background-color:#EDECEC;height:12px;overflow:hidden;font:12px/1 Tahoma;}
+.suggest-tips em {color:#ff0000;}
+.suggest-bottom{}
+.suggest-bottom a:link,.suggest-bottom a:visited,.suggest-bottom a:hover{color:#a3a7a8; text-decoration:none; position:absolute; right:5px; top:3px; text-align:center; float:left; width:12px;height:12px;font:12px/14px; border:1px solid #a3a7a8;border-radius:2px; background:#fff}
+.suggest-close-btn{float:right;line-height:10px;}
+.suggest-container li,.suggest-bottom{zoom:1;}
+.suggest-container{*margin-left:0px;_margin-left:-2px;_margin-top:-3px}
+.hot-btn { float:left;}
+.suggest-zero-input {width: 550px; padding-bottom:0px;}
+.suggest-zero-input .top-text{padding:3px 24px 3px 8px;color:#aaa;}
+.suggest-zero-input .top-multi{ background:#f8f8f8}
+.suggest-zero-input .top-multi .warninfo{color:red;}
+.suggest-zero-input li { float: left; width: 105px; height:18px; overflow:hidden;}
+.suggest-zero-input li.order {color: #aaa;text-align: center; width: 25px;}
+.suggest-container .transparent{margin-top:-5px;filter:alpha(opacity=85);opacity:0.85;height:8px;line-height:8px;background:#fff;margin-right:20px;}
+.suggest-container .up{height: 15px;line-height:8px;padding-bottom:7px;background:#fff url(http://img.china.alibaba.com/cms/upload/2011/878/540/45878_329576842.png) repeat-x 0 0;}
+.suggest-container .up a{display:block;background:url(http://img.china.alibaba.com/cms/upload/2011/202/490/94202_1446014988.png) no-repeat center 3px;height:15px;line-height:8px;}
+.suggest-container .up a:hover{ background-position:center -33px}
+.suggest-container .up a.disable,.suggest-container .up a.disable:hover{ display:none; background-position:center -1px;}
+.suggest-container .up a.fd-hide,.suggest-container .up a.fd-hide:hover{ display:none;}
+
+.suggest-container .down {background:url(http://img.china.alibaba.com/cms/upload/2011/526/740/47625_329576842.gif) repeat-x left -5px;height: 15px;line-height:8px;padding-top:7px;}
+.suggest-container .down a{display:block;background:url(http://img.china.alibaba.com/cms/upload/2011/202/490/94202_1446014988.png) no-repeat center -14px;height:15px;line-height:8px;}
+.suggest-container .down a:hover{ background-position:center -50px}
+.suggest-container .down a.disable,.suggest-container .down a.disable:hover{ display:none;background-position:center -14px;}
+.suggest-container .down a.fd-hide,.suggest-container .down a.fd-hide:hover{ display:none;}
+
+.complet-box{ border-bottom:1px dotted #b4b4b4; background:#f8f8f8;padding:2px 0;width:100%}
+.complet-box li{display:inline-block; position:relative; width:auto;margin:0 15px 0 5px;padding:0 18px 0 2px; border:1px solid #f8f8f8;border-radius:2px; overflow:visible; word-break:normal; white-space:nowrap; word-wrap:normal;}
+.complet-box li.h{border-color:#c5c5c5}
+.complet-box .item {display:inline-block; word-break:normal; white-space:nowrap; word-wrap:normal;}
+.complet-box .del-item{display:inline-block; position:absolute; right:2px;top:2px; color:#666; border:1px solid #e3e3e3;border-radius:2px; width:11px; height:11px; line-height:9px;_line-height:11px;font-size:14px; cursor:pointer;word-break:normal; white-space:nowrap; word-wrap:normal;}
+.complet-box .h .del-item { background:#0c73db;color:#fff; border-color:#0c73db}
+.complet-box .del-item:hover{ text-decoration:none;}
+
+.red {color:#ff0000;}
+.shrime {margin-left:-2px;}
+
+.suggest-container li.selected .subcontainer span,.suggest-container li.selectedli .subcontainer span{color:#333;}
+.suggest-container li.selectedli span.current-key,.suggest-container li.selected span.current-key{color:#fff}
+.suggest-container li.current span.current-key{color:#fff;}
+.subcontainer {width:332px; position:absolute; background:#fff}
+.subcontainer .subbox {float:left; width:330px; border:1px solid #a4a4a4}
+.subcontainer .subbox li {float:left;width:100px;padding-right:10px;}
+
+.multistage li{ padding-right:10px; overflow:hidden;}
+.multistage li.hassub{ background-position:100px -108px;}
+.multistage li.hassub.selectedli,.multistage li.hassub.current{ background-position:100px -128px;}
+
+.selectbox .sel-box .item-list .multi-li {background-color: #EFEFEF; border: 1px solid #C0C3C3; cursor: default; float: left; height: 14px; line-height: 14px; margin: 2px 2px 1px 0; padding: 0 2px; white-space: nowrap;}
+.selectbox .sel-box .item-list .multi-li span {vertical-align: middle;}
+.selectbox .sel-box .item-list .del-item {overflow:hidden;display:inline-block;height:12px;line-height:12px;text-decoration: none;width:15px;background: url("http://img.china.alibaba.com/images/common/icon_v02/close4.gif") no-repeat scroll 0 0 transparent;vertical-align: middle;cursor:pointer;}
+.selectbox .sel-box .item-list a:hover {background-position:0 -12px;}
+.selectbox .sel-box .item-list li span {border:0;}
+.selectbox input.industry-sel-box-default-w {width:402px;}
+.selectbox div.industry-sel-box-w {width:402px;}
+.selectbox div.industry-sel-box-w ul.item-list {width:402px;}
+div.selectbox .industry-sel-btn, div.selectbox .industry-sel-btn:link, div.selectbox .industry-sel-btn:visited, div.selectbox .industry-sel-btn:active, div.selectbox .industry-sel-btn:hover { left: 407px;}

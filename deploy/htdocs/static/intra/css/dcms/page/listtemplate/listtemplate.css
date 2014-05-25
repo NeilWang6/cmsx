@@ -1,0 +1,77 @@
+/**
+ * æ≤Ã¨“≥√Êπ‹¿Ì
+ * @author : arcthur.cheny
+ * @createTime : 2011-09-19
+ */
+
+.booth-management{
+     margin-left: 18px;
+     padding-top:12px;
+}
+.booth-management h3{
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+    height:38px;
+}
+.booth-management .dcms-search-line-list-input li { 
+    float:left;
+    padding-right:12px;
+    height:32px;
+    line-height:32px;
+}
+.booth-management .dcms-search-line-list-input select { border: 1px solid #bdc7d8; margin: 4px 0; font-size: 12px; padding: 3px; width:115px; height:24px;}
+.booth-management .dcms-search-line-list-input .input-man { width:98px;}
+.booth-management .dcms-search-line-list-input .input-keywords { width:174px;}
+.booth-management .dcms-search-line-list-input .dcms-btn { margin-top:3px;}
+
+.dcms-grid tfoot td {
+    text-align:right;
+}
+.dcms-grid tbody td {
+    padding:10px 0 10px 8px;
+    line-height:1.2;
+    text-indent: 0;
+}
+.manage-template td {     
+    word-break:keep-all;
+    white-space:normal;
+    overflow:hidden;
+}
+
+.manage-template .tp-id { width:60px; }
+.manage-template .tp-name { width:116px; }
+.manage-template .tp-state,
+.manage-template .tp-category { width:80px; }
+.manage-template .tp-calledname { width:190px; }
+.manage-template .tp-cname { width:150px; }
+.manage-template .tp-opration { width:140px; }
+
+.manage-template .sth-opration p { line-height:18px; }
+.manage-template .sth-opration a { padding-right:10px; }
+.cancel-btn { display:none; }
+.mydiv{	z-index:99;	width:450px;overflow:hidden; border:1px solid #406049; background-color:#fff;}
+.mydiv .mydivTop{ height:29px; background:#30a3c8  repeat-x 0 0; position:relative}
+.mydiv .mydivClose{ position:absolute; right:5px; top:-1px; width:22px; height:15px; background:url(http://img.china.alibaba.com/cms/upload/2012/757/603/306757_263469893.gif) no-repeat 0 0}
+.mydiv .mydivTop h3{ font-size:14px; color:#fff; line-height:30px; padding-left:15px;}
+.mydiv .mydivClose:hover{ background-position:100% 0}
+.mydiv .mydivContent{ padding:10px 20px;}
+.mydiv .mydivBot{ margin:1px; border-top:1px solid #b5d5e4;}
+.mydiv .mydivBotIn{border-top:1px solid #fff; background-color:#c9e9f9; text-align:center; padding:8px 15px;}
+.bg {
+	background-color: #666;
+	width: 100%;
+	height: 100%;
+	left:0;
+	top:0;/*FF IE7*/
+	filter:alpha(opacity=50);/*IE*/
+	opacity:0.5;/*FF*/
+	z-index:1;
+	position:fixed!important;/*FF IE7*/
+	position:absolute;/*IE6*/
+ _top:       expression(eval(document.compatMode &&  document.compatMode=='CSS1Compat') ?  documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+ document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+}
+
+.mydivWider{width:800px;}

@@ -1,0 +1,144 @@
+#arrange-tabs-1{
+    width:990px;
+	margin:10px 10px;
+}
+.fleft{
+	float:left;
+}
+.display-none {
+    display: none!important;
+}
+.must-fill {
+    background:url("http://img.china.alibaba.com/cms/upload/other/tools/icon-must-fill.png") no-repeat right 12px;
+    padding-right:8px;
+}
+.form-vertical .txt-des { padding-left:12px; font-weight:bold;}
+.form-vertical .input-small { width:104px;}
+.topicinput {width:200px;}
+.topicselect {width:100px;}
+.topicdesignType {width:150px;}
+.topictextarea {width:540px;height:100px;}
+.button-area{padding-bottom:40px;}
+.item-form .validator-tip{
+    color:#c00;
+    padding-left:8px;
+}
+/* tabs*/
+.tui-tabs-header {
+    height:32px;
+    line-height:30px;
+    border-bottom:2px solid #8e9dc6;
+    color:#333;
+}
+.tui-tabs-header .title {
+    float:left;
+    margin-right:4px;
+    padding:2px 16px 0;
+    font-size:14px;
+    font-weight:bold;
+	color:#4368c3;
+}
+.tui-tabs-header .list-tabs-t li {
+    float:left;
+    margin-right:4px;
+    padding:0 14px;
+    border:2px solid #fff;
+    border-bottom:0;
+    cursor:pointer;
+}
+.tui-tabs-header .list-tabs-t li:hover {
+    text-decoration:underline;
+}
+.tui-tabs-header .list-tabs-t a {
+    color:#333;
+}
+.tui-tabs-header .list-tabs-t li.current {
+    border:2px solid #8e9dc6;
+    border-bottom:2px solid #fff;
+}
+.tui-tabs-header .description {
+    float:right;
+    padding-top:2px;
+}
+.tui-tabs-header .list-tabs-t{
+	float:right;
+}
+.tab-a-box{
+	display:none;
+}
+/* msg */
+.blockwarn {
+    margin: 80px auto;
+    text-align: center;
+    font-size:14px;
+}
+.blockwarn .icon-message{
+    vertical-align: middle;
+}
+.blockwarn a.uline{
+	text-decoration:underline;
+}
+.relatpagew {
+   margin: 10px 0px 10px 50px;
+   font-size:14px;
+}
+.relatpagew .icon-message{
+    vertical-align: middle;
+}
+.button-area{padding:20px 0px 40px 200px;}
+
+/*arrange rule*/
+.block-arg-nav{
+   background-color:#f1f1f1;
+   padding:5px 0px;
+   vertical-align: middle;
+}
+.loading{
+    background: url("http://img.china.alibaba.com/cms/upload/2012/534/534/435435_51297002.gif") no-repeat scroll 0 0 transparent;
+    height: 186px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 512px;
+    background-position-x: 378px;
+    background-position-y: 120px;
+}
+#arg-rule{
+	position: relative;
+}
+.block-arg-rule {
+    line-height:28px;
+    width:-moz-fit-content;
+    overflow:hidden;
+}
+.block-arg-rule li {
+    float:left;
+    padding:0 10px;
+}
+.block-arg-rule li .inline {
+	display:inline;
+    padding:2px 3px;
+    cursor: pointer;
+}
+.block-arg-rule li.current .inline {
+    background-color:#dbdadf;
+    border:1px solid #333333;
+    padding:2px 3px;
+}
+.rulebox{
+	border-top:2px solid #c4c3c8;
+	border-left:1px solid #c4c3c8;
+	border-right:1px solid #c4c3c8;
+	border-bottom:1px solid #c4c3c8;
+	background-color:#f1f1f1;
+	margin:10px 10px 0px 10px;
+}
+.rulebtns{
+	margin:0px 10px;
+}
+.rulebox .sortType {
+	width:180px!important;
+}
+.rule-alert-dialog .msg{
+margin-left:50px;width:300px;word-wrap: break-word;
+}

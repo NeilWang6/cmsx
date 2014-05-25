@@ -1,0 +1,98 @@
+/**
+ * create by lusheng.linls on 2012.10.29
+ */
+
+.content {
+    width: 800px;
+}
+.loading{
+    background: url("http://img.china.alibaba.com/cms/upload/2012/534/534/435435_51297002.gif") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    margin-left: 320px;
+    margin-top: 20px;
+    padding: 3px 30px;
+}
+.load-failed{
+    height: 26px;
+    margin-left: 297px;
+    margin-top: 20px;
+    padding: 3px 30px;
+}
+/** page */
+.paging {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 6px;
+    clear:both;
+}
+.paging .paging-t {
+    float: right;
+}
+.condition h1{
+	font-weight: bold;
+	color:#4E82BC;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #4E82BC;
+}
+.condition h1 .txt{
+    color: #C2C2C2;
+    padding-left: 5px;
+}
+/** detail */
+.msg {
+    padding-top: 60px;
+    display: none;
+}
+.detail {
+    padding-top: 10px;
+    overflow: hidden;
+    height: 262px;
+}
+.detail .sample {
+    display: none;
+}
+.sample ,.sample-new{
+    margin-bottom: 10px;
+    float: left;
+}
+.display-none {
+    display: none!important;
+}
+.removed {
+    display: none;
+}
+.inline {
+    display: inline;
+}
+.sample .show-win-2nd {
+    margin-bottom: 6px;
+    margin-right: 20px;
+}
+
+.sample-new{
+    text-align: center;
+    background-color: #fbfbfb;
+    margin-right: 20px;
+
+}
+.sample-new .icon-new{
+     background: url("http://img.china.alibaba.com/cms/upload/2012/113/634/436311_51297002.png") no-repeat scroll -10px -28px transparent;
+     padding: 9px 19px;
+    
+}
+.sample-new .active{
+    height:237px;
+    line-height: 237px;
+    border-top: 1px solid #DDDDDD;
+    padding: 0;
+}
+.sample-new .active a{
+    width: 100%;
+}
+.libra-content #tab{width:990px;}
+/*showin*/
+/*add:zhuliqi show-win css文件被多处调用，所以写在此处 覆盖老样式*/
+.show-win-1st, .show-win-2nd{width:224px;}
+.show-win-2nd .operate li{padding-left:12px;width:100px;}

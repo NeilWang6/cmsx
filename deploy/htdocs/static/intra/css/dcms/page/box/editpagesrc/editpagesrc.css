@@ -1,0 +1,19 @@
+.content-body {
+	padding: 8px;
+	width: 1000px;
+}
+.content-body textarea {
+	max-width: 1000px;
+	min-width: 900px;
+	min-height: 450px;
+}
+.prototype-body{
+	margin: 0 auto;
+}
+
+.prototype-body textarea {
+	max-width: 460px;
+	min-width: 460px;
+	min-height: 300px;
+	max-height: 300px;
+}

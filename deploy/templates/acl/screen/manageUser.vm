@@ -1,0 +1,110 @@
+$rundata.setLayout('default.vm')
+<link href="/static/intra/css/dcms/global/merge.css" rel="stylesheet">
+<link href="/static/intra/css/dcms/page/poptree/merge.css" rel="stylesheet">
+#set ($group = $form.searchRule.defaultInstance)
+        <div id="js-dcmscontent" class="dcms-content">
+            <div id="js-dcmstoggle" class="dcms-toggle fd-hide">
+                <div class="dcms-toggle-icon"></div>
+            </div>
+            <div class="dcms-search">
+                <h3>管理用户</h3>
+                <div class="dcms-search-form">
+                    <form id="js-search-user-form" method="post" action="$adminModule.setTarget('manageUser.vm')">  
+                        <input type="hidden" name="action" value="UserManagerAction">
+                        <input type="hidden" name="page" id="js-page-num" value="$!paginator.page">
+                        <input name="event_submit_do_search_user_list" type="hidden" value="true">
+                        <ul class="list-input">
+                            <li>
+                                <label for="input-man">用户ID或姓名：</label>
+                                <input id="input-man" class="name" name="userId" type="text" placeholder="请输入ID或姓名" value="$!userId" />
+                            </li>
+                            <li>
+                                <label>角色：</label>
+                                <select id="js-select-role" name="roleId">
+                                <option value="-1" selected></option>
+                                #foreach($role in $!roleList) 
+                                <option value="$!role.roleId" #if($!role.roleId == $!roleId) selected #end>$!role.roleName</option>
+                                #end
+                                </select>
+                            </li>
+                            <li>
+                                <label for="input-category">站点：</label>
+		                        <input type="text" size="15" name="selcategoryName" id="selcategoryName" value="$!selcategoryName" autocomplete="off" readonly="readonly"/>
+		                        <input type="hidden" name="selCategoryId" id="selCategoryId" value="$!selCategoryId" autocomplete="off"/>
+                            </li>
+                            <li>
+                                <label>是否激活：</label>
+                                <select id="js-is-actived" name="status">
+                                    <option value="1" #if('1' == $!status) selected #end>已激活</option>
+                                    <option value="0" #if('0' == $!status) selected #end>未激活</option>
+                                </select>
+                            </li>
+                            <li>
+                                <button id="js-user-search-btn" class="dcms-btn submit-btn" type="button">搜索</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="dcms-search-list">
+                    <table class="dcms-grid">
+                        <thead>
+                            <tr>
+                                <th class="td-user-id">用户ID</th>
+                                <th class="td-user-name">姓名</th>
+                                <th class="td-source-category">归属站点</th>
+                                <th class="td-user-part">角色</th>
+                                <th class="td-update-date">更新日期</th>
+                                <th class="td-user-state">是否激活</th>
+                            </tr>
+                        </thead>
+                         #if( $paginator && $paginator.pages>0 )
+                        <tfoot>
+                            <tr>
+                                <td colspan="6" align="right">
+                                   #if($!countNum&&$!countNum>0) 共找到($!countNum)$!paginator.page/$!paginator.getPages() #end
+                                    <button type="button" data-pagenum="1" class="dcms-page-btn  #if($paginator.getPage()!= $paginator.getFirstPage()) dcms-first-page-btn #end">首页</button>
+                                    <button type="button" data-pagenum="$paginator.getPreviousPage()" class="dcms-page-btn #if($paginator.getPage()!= $paginator.getFirstPage()) dcms-previous-btn #end">上一页</button>
+                                    <button type="button" data-pagenum="$paginator.getNextPage()" class="dcms-page-btn #if($paginator.getPage()!= $paginator.getLastPage()) dcms-next-btn #end">下一页</button>
+                                    <button type="button" data-pagenum="$paginator.getLastPage()" class="dcms-page-btn #if($paginator.getPage()!= $paginator.getLastPage()) dcms-next-btn #end">末页</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                        #end
+                        <tbody>
+                         #foreach($user in $!userList) 
+                            <tr data-userinfo='$!user.json' data-userid="$!user.userId" data-activation="$!status">
+                                <td class="js-tips-userinfo">$!user.userId</td>
+                                <td class="js-tips-userinfo">$!user.fullName</td>
+                                <td class="js-tips-category td-source-category" data-category='$!user.sitesToJson'>$!user.site #if($!user.sites.size()>1)...#end</td>
+                                <td class="js-tips-role" data-role='$!user.roleToJson'>$!user.role #if($!user.roleList.size()>1)...#end</td>
+                                <td>$dateUtil.toLocaleString($user.gmtModified,'yyyy-MM-dd')</td>
+                                <td>#if('1' == $!status) 已激活 #end #if('0' == $!status) <a href="#" class="js-user-active">激活</a> #end</td>
+                            
+                            </tr>
+                        #end
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+            <!--<div class="related-pages">
+                
+            </div>-->
+            
+        </div>
+
+        <div id="manage-user-operations" class="dcms-grid-operations-wrap">
+            <ul class="dcms-grid-operations dcms-clear">
+                <li><a class="js-manage-user-setting" href="#">设定</a></li>
+            </ul>
+        </div>
+        ##信息提示便签
+        $control.setTemplate("tips.vm")
+        ##类目选择对话框
+        $control.setTemplate("category.vm")
+        ##用户权限设置对话框
+        $control.setTemplate("userinfoDialog.vm")
+        ##信息提示框
+        $control.setTemplate("page:confirmAwake.vm")
+        
+        

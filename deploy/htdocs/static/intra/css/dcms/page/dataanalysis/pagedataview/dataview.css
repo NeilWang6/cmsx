@@ -1,0 +1,53 @@
+.part1 { 
+    margin:10px 20px;
+} 
+.choose-date .label { 
+    font-size:14px; 
+    font-weight:bold; 
+}
+.choose-date .date {
+    padding-right:12px;
+}
+.choose-date .click-stat {
+    display:inline-block;
+    padding:0 8px;
+}
+.choose-date .click-stat.current {
+	border-bottom:2px solid #ff7300;
+}
+h3 {
+    font-size:14px; 
+    font-weight:bold; 
+    padding:12px 0;
+}
+.con-iframe iframe {
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+.con-fiex {
+	height: 30px;
+	line-height: 30px;
+    background: #424D5D;
+    border: 1px solid #C7CCCF;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2;
+}
+.con-fiex li {
+	float: left;
+	margin-right: 10px;
+}
+.con-fiex li.title {
+	margin-left: 20px;
+	color: #fff;
+}
+.con-fiex li label {
+    color: #fff;
+    margin-right: 5px;
+}
+.con-fiex li span {
+    font-weight: bold;
+    color: #ff6d00;
+}

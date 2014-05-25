@@ -1,0 +1,143 @@
+/**
+ * æ≤Ã¨“≥√Êπ‹¿Ì
+ * @author : arcthur.cheny
+ * @createTime : 2011-09-19
+ */
+.booth-management {
+    margin-left: 18px;
+    padding-top: 12px;
+}
+
+.booth-management h3 {
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    height: 38px;
+}
+
+.booth-management .dcms-search-line-list-input li {
+    float: left;
+    padding-right: 12px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.booth-management .dcms-search-line-list-input select {
+    border: 1px solid #bdc7d8;
+    margin: 4px 0;
+    font-size: 12px;
+    padding: 3px;
+    width: 115px;
+    height: 24px;
+}
+
+.booth-management .dcms-search-line-list-input .input-man {
+    width: 98px;
+}
+
+.booth-management .dcms-search-line-list-input .input-keywords {
+    width: 174px;
+}
+
+.booth-management .dcms-search-line-list-input .dcms-btn {
+    margin-top: 3px;
+}
+
+.dcms-grid tfoot td {
+    text-align: right;
+}
+
+.dcms-grid tbody td {
+    padding: 10px 0 10px 8px;
+    line-height: 1.2;
+    text-indent: 0;
+}
+
+.booth-management .current-key {
+    color: #06c;
+    font-weight: 700;
+}
+
+.dcms-form input[type="text"], .dcms-input-text {
+    width: 218px;
+}
+
+.dcms-form select, .dcms-select {
+    width: 226px;
+}
+
+.dcms-form label {
+    width: 50px;
+}
+
+.dcms-form textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.checkbox {
+    height:18px;
+    vertical-align:middle;
+}
+
+.dcms-form .templateName{
+    height:24px;
+    vertical-align:middle;
+}
+
+.dcms-form label {
+    color: #666666;
+    display: inline-block;
+    margin-top: 0;
+    text-align: left;
+    vertical-align: top;
+    width: 50px;
+}
+
+.dcms-box-search {
+    color: #444444;
+    float: none;
+    padding-top: 6px;
+    padding-left: 0px;
+}
+
+.dcms-box-cell {
+    padding-bottom: 32px;
+}
+
+.dcms-box-cell-left {
+    padding: 4px;
+    width: 150px;
+    height: 250px;
+    margin-right: 24px;
+    float: left;
+}
+
+.dcms-box-cell-right{
+    float: left;
+}
+
+.dcms-box-cell-left img {
+    width: 150px;
+    height: 250px;
+    vertical-align: bottom;
+}
+
+.dcms-box-cell-right .import {
+    margin-right: 4px;
+    padding: 4px 12px;
+    border: 1px solid #8aba56;
+    background: #8aba56;
+    font-weight: 700;
+    color: #f7f7f7;
+    vertical-align: top;
+}
+
+.dcms-box-cell-right div {
+    margin-bottom: 8px;
+}
+.image-cell {
+    height: 110px;
+    width: 130px;
+}

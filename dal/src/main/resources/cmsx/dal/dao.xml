@@ -9,9 +9,10 @@
 		<property name="autoCount" value="true"></property>
 	</bean>
 
-	<!-- <context:component-scan base-package="com.apachecms.cmsx.dal.dao.ibatis"> 
-		<context:include-filter type="regex" expression=".*DAO,.*DAOImpl*" /> </context:component-scan> -->
-	<bean id="cmsxAdminDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxAdminDAOImpl" />
+<!-- 	<context:component-scan base-package="com.apachecms.cmsx.dal.dao.impl"> 
+		<context:include-filter type="regex" expression=".*DAO,.*DAOImpl*" /> 
+	</context:component-scan> -->
+	<!-- <bean id="cmsxAdminDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxAdminDAOImpl" />
 	<bean id="cmsxAdminRoleDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxAdminRoleDAOImpl" />
 	<bean id="cmsxAuthResDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxAuthResDAOImpl" />
 	<bean id="cmsxAuthRoleDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxAuthRoleDAOImpl" />
@@ -24,4 +25,16 @@
 	<bean id="cmsxMetaPropDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxMetaPropDAOImpl" />
 	<bean id="cmsxMetaPropenumDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxMetaPropenumDAOImpl" />
 	<bean id="cmsxAuthMenuDAO" class="com.apachecms.cmsx.dal.dao.impl.CmsxAuthMenuDAOImpl" />
+	-->
+ 	<bean id="aclRoleDAO"      class="com.apachecms.cmsx.dal.dao.impl.ACLRoleDAOImpl"      parent="baseSqlMapClientDAO_cms"/>
+	<bean id="aclResourceDAO"  class="com.apachecms.cmsx.dal.dao.impl.ACLResourceDAOImpl"  parent="baseSqlMapClientDAO_cms"/>
+	<bean id="aclPermssionDAO" class="com.apachecms.cmsx.dal.dao.impl.ACLPermssionDAOImpl" parent="baseSqlMapClientDAO_cms"/> 
+	<bean id="resourceSiteDAO" class="com.apachecms.cmsx.dal.dao.impl.ResourceSiteDAOImpl" parent="baseSqlMapClientDAO_cms"/> 
+	<bean id="userDAO" class="com.apachecms.cmsx.dal.dao.impl.UserDAOImpl" parent="baseSqlMapClientDAO_cms"/> 
+	
+	<bean id="ctItemDAO" class="com.apachecms.cmsx.dal.dao.ibatis.IBatisCtItemDAO" parent="baseSqlMapClientDAO_cms"/> 
+	<bean id="ctItemMetaDataDAO" class="com.apachecms.cmsx.dal.dao.ibatis.IBatisCtItemMetaDataDAO" parent="baseSqlMapClientDAO_cms"/> 
+	<bean id="ctClobDAO" class="com.apachecms.cmsx.dal.dao.ibatis.IBatisCtClobDAO" parent="baseSqlMapClientDAO_cms"/> 
+	<bean id="ctStConfDAO" class="com.apachecms.cmsx.dal.dao.ibatis.IBatisCtStConfDAO" parent="baseSqlMapClientDAO_cms"/> 
+	<bean id="ctStInsExpDAO" class="com.apachecms.cmsx.dal.dao.ibatis.IBatisCtStInsExpDAO" parent="baseSqlMapClientDAO_cms"/> 
 </beans>

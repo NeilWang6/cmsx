@@ -1,0 +1,178 @@
+.content {
+    width: 990px;
+	padding-bottom:60px;
+}
+.cursor {
+	cursor: pointer;
+}
+.header {
+	margin: 0 auto 25px;
+	width: 990px;
+}
+
+.header .logo {
+	padding: 25px 0 0 0;
+}
+
+.header .search-form {
+	float: right;
+	width: 300px;
+	height: 50px;
+	border: 1px solid #d9d9d9;
+	background-position: 0 -55px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.header .search-form a {
+	float: right;
+	margin-right: 8px;
+	margin-left: 8px;
+	line-height: 50px;
+	font-weight: 700;
+	color: #a2aa60;
+}
+
+.header .search-field .entity {
+	padding: 14px 0 0 13px;
+	height: 44px;
+	border-right: 1px solid #d9d9d9;
+	overflow: hidden;
+}
+
+.header .search-field {
+	border-right: 1px solid #fff;
+	background-position: 0 0;
+}
+
+.tui-tabs-header {
+	height: 32px;
+	line-height: 30px;
+	border-bottom: 2px solid #dbdcde;
+	color: #333;
+}
+
+.fontWeight{
+	font-weight: bold;
+}
+
+.preview-items {
+border: 1px solid #dddddd;
+}
+
+.preview-items .items {
+border-bottom: 1px solid #ddd;
+border-collapse: separate;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.preview-items .items span {
+float: left;
+border-right: 1px solid #ddd;
+width: 160px;
+height: 100%;
+overflow: hidden;
+padding: 0 8px;
+}
+
+.preview-items dl {
+float: left;
+}
+
+.preview-items dt {
+line-height: 38px;
+font-weight: bold;
+}
+
+.preview-items dd {
+margin: 0;
+height: 32px;
+line-height: 32px;
+}
+
+.multisearch .dpl-table th, .multisearch .dpl-table td {
+	width:50%;
+	padding-left: 20px;
+}
+
+.memberdatalist  .td-1 {
+	width:25%;
+}
+
+.memberdatalist .td-2 {
+	width:75%;
+}
+
+.memberdatalist .countword {
+height: 35px;
+line-height: 35px;
+}
+
+.search-arrow-up {
+	background: url("http://img.china.alibaba.com/cms/upload/2012/029/724/427920_1294011931.png") no-repeat 61px;
+}
+.search-arrow-down {
+	background: url("http://img.china.alibaba.com/cms/upload/2012/629/724/427926_1294011931.png") no-repeat 61px;
+}
+
+.multisearch fieldset {
+width: 98%;
+margin-bottom: 8px;
+padding: 8px;
+border: solid 1px #ddd;
+}
+
+.multisearch legend {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.dpl-a-l .validator-tip{
+    color: #ff7300;
+    padding-left:8px;
+}
+
+.top-area {
+	padding-bottom:15px;
+}
+
+.top-select{
+padding-bottom:10px;
+padding-left:8px;
+}
+.top-area .tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.top-area .tab-b .subject-info {
+    float: left;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+}
+.top-area .tab-b .subject-info  span {
+	color: #4a6bae;
+	font-weight: bold;
+}
+.top-area .tab-b .f-tab-t {
+    float: right;
+    height: 25px;
+    line-height: 32px;
+    cursor: pointer;
+	padding-left:15px;
+}
+.dpl-a-l .select-width{
+	width:45px;
+}
+
+.data-table {
+	max-height: 440px;
+	height: auto;
+}
+
+.show-tip{
+    color: #ff7300;
+}

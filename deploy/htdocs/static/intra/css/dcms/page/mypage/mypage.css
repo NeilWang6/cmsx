@@ -1,0 +1,173 @@
+.dcms-main-body,
+.dcms-footer{
+    width: 850px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family:Tahoma,Arial,"ËÎÌåb8b\4f53",sans-serif;
+}
+
+.dcms-main-body a,.dcms-main-body a:link,.dcms-main-body a:hover,.dcms-main-body a:visited,.dcms-main-body a:active{
+    font-size: 12px;
+    font-family:Tahoma,Arial,"ËÎÌåb8b\4f53",sans-serif;
+}
+
+.dcms-main-body td,.dcms-main-body th,.dcms-main-body p,.ui-dialog button{
+    font-size: 12px;
+    font-family:Tahoma,Arial,"ËÎÌåb8b\4f53",sans-serif;
+}
+
+.dcms-grid{
+	border:0 none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 28px;
+}
+	
+.dcms-grid tbody{
+	border: 0 none;
+}
+
+.dcms-grid tbody tr{
+	border:0 none;
+}
+	
+.dcms-grid tbody td{
+	border:0 none;
+	border-bottom: 1px solid #f4f4f4;
+	text-indent: 5px;
+	padding-left:0;
+}
+
+.dcms-grid .float-button{
+	text-indent: 0;
+}
+
+.dcms-grid th{
+	border:0 none;
+	text-align:left;
+	text-indent: 5px;
+	padding-left:0;
+}
+
+.dcms-page-customize{
+	padding-top: 20px;
+}
+.dcms-mod-customize .tilte{
+	padding-bottom: 4px;
+}
+
+.dcms-mod-customize .tilte h3{
+	display: inline-block;
+	*display: inline;
+	*float:left;
+	font-size: 14px;
+	font-weight: 700;
+	color: black;
+}
+
+.dcms-mod-customize .tilte .comment{
+	color: #6E84B6;
+	line-height:20px;
+	height:20px;
+	vertical-align: bottom;
+	*float:left;
+	*padding-left:4px;
+}
+
+.dcms-mod-customize .button{
+	padding:0 8px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	background: #ADBCDB;
+	text-align: center;
+}
+
+.dcms-mod-customize a.button:link,.dcms-mod-customize a.button:visited{
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.dcms-mod-customize a.button:hover{
+	color: #FF7300;
+	text-decoration: none;
+}
+
+.dcms-mod-customize .content{
+	border: 1px solid #b7c3dd;
+}
+
+.dcms-grid{
+    width: 100%;
+}
+
+.dcms-grid tbody{
+    border: none;
+}
+
+.dcms-grid .fd-locate{
+	position: relative;
+}
+
+.dcms-grid th{
+	padding-left: 5px;
+	text-align: left;
+}
+.dcms-mod-customize .float-button{
+	position: absolute;
+	top: -42px;
+	right: 0px;
+	height: 20px;
+	line-height:20px;
+	background: #8B9EC8;
+	display: none;
+	-moz-border-radius-topleft: 2px / 2px;
+	-moz-border-radius-topright: 2px / 2px;
+	border-top-left-radius: 2px ;
+	border-top-right-radius: 2px ;
+	width:140px;
+}
+.dcms-mod-customize .float-button a{
+	padding: 0 8px;
+}
+.dcms-mod-customize .float-button a:link,.dcms-mod-customize .float-button a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+.dcms-mod-customize .float-button a:hover{
+	color: #FF7300;
+	text-decoration: none;
+}
+
+.dcms-dialog .header{
+	padding-top:6px;
+}
+.dcms-dialog .content{
+	height:auto;
+	padding-bottom:10px;
+}
+.dcms-dialog .content p{
+	font-size:14px;
+	font-weight:700;
+	padding:6px 0;
+}
+.dcms-dialog .content span{
+	font-size:14px;
+	font-weight:700;
+	padding:6px 0;
+	color:#445D95;
+}
+.dcms-dialog .dcms-btn{
+	border: solid 1px #29437E;
+	color: white;
+	*margin-right:5px;
+}
+.dcms-dialog .cancel-btn{
+    display: inline-block;
+    width: 66px;
+    height: 24px;
+    line-height: 22px;
+    cursor: pointer;
+}

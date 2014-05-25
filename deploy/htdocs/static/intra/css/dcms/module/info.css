@@ -1,0 +1,8 @@
+.dcms-info{padding:40px 0;}
+.dcms-info h4 { font-weight: bold; font-size: 14px; line-height: 2; }
+.dcms-info p { line-height: 1.5 !important; }
+.dcms-info em { font-weight: bold; color: #F00; }
+.dcms-info a { padding: 0 2px; }
+.dcms-info div { margin: 8px auto; padding: 2px 0 2px 56px; width:260px; }
+.dcms-info .info { background: url(http://img.china.alibaba.com/images/common/icon_v02/warn5.png) no-repeat; }
+.dcms-info a:link,.dcms-info a:visited{	color:#475C95;}

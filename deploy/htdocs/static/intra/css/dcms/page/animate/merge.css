@@ -1,0 +1,16 @@
+/*
+ * @Author      changbin.wangcb
+ * @Date        2014.02.18
+ * @Description 题图动画工具
+ * !!cmd:compress=true
+ */
+
+@import url(/static/fdevlib/css/fdev-v4/core/fdev-op.css);
+@import url(/static/fdevlib/css/gallery/animate/animate-min.css);
+@import url(/static/intra/css/widget/basic.css);
+@import url(/static/intra/css/widget/dialog.css);
+@import url(/static/intra/css/dcms/module/form.css);
+@import url(/static/intra/css/dcms/module/codemirror/lib/codemirror.css);
+@import url(/static/intra/css/dcms/module/codemirror/theme/rubyblue.css);
+@import url(/static/intra/css/dcms/page/animate/index.css);
+@import url(/static/intra/css/dcms/page/animate/design.css);

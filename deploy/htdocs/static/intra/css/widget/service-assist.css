@@ -1,0 +1,174 @@
+/**
+ * @author changbin.wangcb
+ * @vision 2011-09-15
+ * @info 免费服务帮助
+ */
+
+/** common **/
+.freeside-catalog .sidebar,.freeside-catalog .sidebar .popup,.freeside-catalog .sidebar .packup,.freeside-catalog .side-list .phone{
+	background:url(http://img.china.alibaba.com/cms/upload/winport/freeservice/freeservicebg.png) no-repeat 0 0;
+}
+/** serviceassist **/
+.freeside-catalog{
+	position:fixed;
+	right:0;
+	height:130px;
+	border:2px solid #8bbaeb;
+	border-right:1px solid #8bbaeb;
+	overflow:hidden;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop) + 200);
+}
+.freeside-catalog .sidebar{
+	float:left;
+	height:100%;
+	width:27px;
+	background-position:-33px 0;
+	background-repeat:repeat-y;
+	cursor:pointer;
+}
+.freeside-catalog .sidebar h4{
+	display:inline-block;
+	margin:12px 0 4px 6px;
+    width:16px;
+	line-height:100%;
+	font-size:14px;
+	font-weight:700;
+	color:#054d94;
+}
+
+.freeside-catalog .sidebar .popup{
+	float:left;
+	width:27px;
+	height:27px;
+	background-position:0 -35px;
+}
+.freeside-catalog .sidebar .packup{
+	float:left;
+	width:27px;
+	height:27px;
+	background-position:0 0;
+}
+.freeside-catalog .side-content{
+	float:left;
+	padding:8px;
+	width:202px;
+	background:#fff;
+}
+.freeside-catalog .side-content p{
+	font-weight:700;
+	color:#ff7300;
+}
+.freeside-catalog .side-list{
+	padding:4px;
+	border:1px solid #c4dbf4;
+	background:#ebf3ff;
+}
+.freeside-catalog .side-list h4{
+	line-height:180%;
+}
+.freeside-catalog .side-list li{
+	float:left;
+	width:80px;
+}
+.freeside-catalog .side-list a{
+	color:#0066cc;
+	text-decoration:none !important;
+}
+.freeside-catalog .side-list a:hover{
+	text-decoration:underline !important; 
+}
+.freeside-catalog .side-list .phone{
+	background-position:-70px -1px;
+	padding-left:20px;
+}
+.freeside-catalog .side-list p{
+	color:#666;
+	font-weight:300;
+}
+/** 免费接通服务浮层 **/ 
+.callme-window {
+	display: none;
+    padding: 8px;
+    width: 340px;
+    height: 365px;
+	overflow: hidden;
+}
+.callme-mask {
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 356px;
+    height: 374px;
+	background: #000;
+    filter: alpha(opacity = 35);
+    -moz-opacity: .35;
+    opacity: .35;
+    z-index: 2;
+}
+/*.callme-mask-ifr {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 460px;
+    height: 368px;
+	background:#000;
+    z-index: -1;
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0;
+    opacity: 0;
+}*/
+.popup-window-wrapper {
+    position: relative;
+    border: 1px solid #feba65;
+	background:#fff;
+	overflow: hidden;
+	z-index:1000;
+}
+.callme-window .bd {
+    display: block;
+    position: relative;
+	background:#FFF;
+	overflow: hidden;
+    z-index: 2;
+}
+.callme-window .hd {
+    position: relative;
+    z-index: 3;
+}
+.callme-window .hd a.close-btn:link, .callme-window .hd a.close-btn:visited {
+    display: block;
+	position: absolute;
+    right: 8px;
+    top: 7px;
+    height: 18px;
+    width: 18px;
+	background: transparent url("http://img.china.alibaba.com/cms/upload/2010/450/100/1054_1301427272.gif") no-repeat 0 0;
+    overflow: hidden;
+    text-decoration: none; 
+}
+
+.callme-window .hd a.close-btn:hover {
+    background-position: 0 -22px;
+}
+.callme-window .bd {
+}
+.callme-window .bd .call-title{
+	padding:0 12px;
+	height:34px;
+	background:#ffffcd;
+	border-bottom:#c2d2e7;
+	line-height:34px;
+	font-size:14px;
+	font-weight:700;
+}
+.callme-window .bd .call-content{
+	margin-top:-9px;
+}
+
+
+/*右侧浮动栏目ie6 fixed*/
+*html {
+    background-image:url(about:blank);
+    background-attachment:fixed;
+}

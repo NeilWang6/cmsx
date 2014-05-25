@@ -1,0 +1,90 @@
+.gradient(@color,@percent : 5%){
+	@lightColor: lighten(@color,@percent);
+	background: @color; /* Old browsers */
+	background: linear-gradient(to bottom, @lightColor 0%,@color 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{lightColor}', endColorstr='@{color}',GradientType=0 );/* IE6-9 */
+}
+
+.buttonColor(@color,@percent : 4%){
+	.alisearch-box,
+	.alisearch-action button.market{
+		.gradient(@color);
+	}
+	.alisearch-action button.market:hover{
+		.gradient(lighten(@color,@percent));		
+	}
+}
+
+#ali-masthead-5i{
+	.alisearch-action button.global{
+		.gradient(#FF7300,15%);
+	}
+	.alisearch-action button.global:hover{
+		.gradient(lighten(#FF7300,8%),15%);
+	}
+}
+
+#ali-masthead-5i{
+	.buttonColor(#CCC);
+}
+
+#ali-masthead-5i.clothing{
+	.buttonColor(#C00);
+}
+
+#ali-masthead-5i.home{
+	.buttonColor(#DC1640);
+}
+
+#ali-masthead-5i.af,
+#ali-masthead-5i.zmyb,
+#ali-masthead-5i.jd,
+#ali-masthead-5i.dzdg,
+#ali-masthead-5i.industrial{
+	.buttonColor(#1F546F);
+}
+
+#ali-masthead-5i.commodity{
+	.buttonColor(#D53114);
+}
+
+#ali-masthead-5i.bz,
+#ali-masthead-5i.fangzhi,
+#ali-masthead-5i.chem,
+#ali-masthead-5i.steel,
+#ali-masthead-5i.plas,
+#ali-masthead-5i.material{
+	.buttonColor(#397EBE,6%);
+}
+
+#ali-masthead-5i.food{
+	.buttonColor(#649802);
+}
+
+#ali-masthead-5i.bizservice{
+	.buttonColor(#A88462);
+}
+
+#ali-masthead-5i.beauty{
+	.buttonColor(#69277C,6%);
+}
+
+#ali-masthead-5i.xiebaopeishi{
+	.buttonColor(#DC3633);
+}
+
+#ali-masthead-5i.jia{
+	.buttonColor(#893208,6%);
+}
+
+#ali-masthead-5i.app{
+	.buttonColor(#21429E,6%);
+}
+
+#ali-masthead-5i.muying{
+	.buttonColor(#F34F73);
+}
+
+#ali-masthead-5i.sport{
+	.buttonColor(#069139);
+}

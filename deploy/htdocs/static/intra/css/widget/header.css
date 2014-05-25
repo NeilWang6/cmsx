@@ -1,0 +1,516 @@
+/**
+ * @author shanshan.hongss
+ * @usefor 运营worker平台 一 统一头部
+ * @date   2012.10.27
+ */
+
+.page-header .member-info .icon-setting, .bar-operate .icon-dropdown, .bar-operate .icon-dorpleft, .page-header .last .menu_nav, .member-info .icon-dropdown,.member-info .libra-account-detail .icon-right,.left-menu .item .icon-close,.left-menu .item .icon-open {
+    background: url("http://img.china.alibaba.com/cms/upload/2013/025/096/690520_51297002.png") no-repeat;
+}
+.bar-operate, .left-menu .item dt {
+    background: url("http://img.china.alibaba.com/cms/upload/2012/310/574/475013_133354742.png") repeat-x;
+}
+.dcms-page .btn-blue:link,.dcms-page .btn-blue:visited {
+border: 1px solid #2c75bf;
+background-position: 0 -90px;
+color: #fff;
+}
+.dcms-page .btn-blue:hover{
+    background-position: 0 -120px;
+}
+.libra-page{
+    min-width: 1440px;
+}
+.libra-content{
+    padding-left: 210px;
+    padding-top: 10px;
+}
+.page-header {
+    height: 67px;
+    line-height: 67px;
+    background-color: #28292a;
+    border-bottom: 1px solid #000;
+    color: #d2d2d2;
+}
+.page-header .main {
+    background-color: #28292a;
+}
+.page-header .work-logo {
+    float: left;
+    height: 66px;
+    width:200px;
+    overflow: hidden;
+}
+.page-header .member-info {
+    float: right;
+    padding-right: 30px;
+    text-shadow: 0 0 1px #222324;
+}
+.member-info .info-base {
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+    border-left: #28292a 1px solid;
+    border-right: #28292a 1px solid;
+}
+.member-info .info {
+    width: 44px;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+    border-left: #28292a 1px solid;
+    border-right: #28292a 1px solid;
+    position: relative;
+}
+.member-info .icon-dropdown {
+    float: right;
+    width: 16px;
+    height: 28px;
+    background-position: 0 8px;
+}
+.member-info .info:hover .icon-dropdown{
+    background-position: 5px -147px;
+}
+.member-info .info:hover,.member-info .info-detail{
+    color: #383838;
+    background: #ebeced;
+    border-radius: 2px 2px 0 0;
+    text-shadow: none;
+    border-left: #cbcbcb 1px solid;
+    border-right: #cbcbcb 1px solid;
+}
+.member-info .info:hover .info-detail{
+    display: block;
+}
+.member-info .info-detail{
+    white-space: nowrap;
+    position: absolute;
+    top: 26px;
+    left: -1px;
+    border-radius: 0 2px 2px 2px;
+    border-bottom: #cbcbcb 1px solid;
+    cursor: default;
+    display: none;
+    z-index: 10;
+}
+.member-info .info-detail .last{
+    margin-bottom: 8px;
+}
+.member-info .info-detail ul{
+    width: 100%;
+    min-width: 80px;
+}
+.member-info .info-detail li{
+    padding: 0 12px;
+    min-width: 65px;
+}
+.member-info .info-detail a{
+    white-space: nowrap;
+}
+.libra-msg {
+    color: #d2d2d2;
+}
+.libra-msg:hover {
+    color: #d2d2d2;
+    text-decoration: none;
+}
+.libra-msg .libra-unread-msg{
+    color: #ffffff;
+    background: #ff5400;
+    display: none;
+    height: 13px;
+    line-height: 12px;
+    width: 20px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 11px;
+}
+.member-info .libra-account-detail a{
+    color: #383838;
+}
+.member-info .libra-account-detail .backup{
+    color: #b3b3b3;
+    padding-left: 36px;
+    text-decoration: none;
+}
+.member-info .libra-account-detail .backup:hover{
+    color: #0074e1;
+}
+.member-info .libra-account-detail .icon-right{
+    width: 16px;
+    line-height: 14px;
+    display: inline-block;
+    background-position: -11px -160px;
+}
+.member-info .libra-help-detail .split{
+    padding-top: 10px;
+}
+.member-info .js-alitalk{
+    color: #0074e1;
+    padding: 2px 0 2px 20px;
+}
+.member-info .libra-sys-detail li{
+    padding: 0px;
+}
+.member-info .libra-sys-detail a{
+    color: #383838;
+    display: block;
+    padding: 0 12px;
+}
+.member-info .libra-sys-detail a:hover{
+    text-decoration: none;
+    background: #2381da;
+    border-color: #2381da;
+    color: #ffffff;
+}
+.page-header .member-info .icon-setting {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-position: 0 -30px;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.page-header .member-info .icon-setting:hover {
+    background-position: -30px -30px;
+}
+.page-header .member-info .icon-setting:active {
+    background-position: -60px -30px;
+}
+.page-header .inline {
+    /*display:inline-block;*/
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    border-left: 1px solid #444548;
+    border-right: 1px solid #000;
+    margin: 22px 0;
+    padding: 0 16px;
+}
+.page-header .last {
+    border-right: 0;
+}
+.page-header .last .menu_nav {
+    position: relative;
+    background-position: 80px 80px;
+}
+.page-header .last .menu_nav:hover {
+    /*background-position:0 -90px;*/
+    background-position: 0 -120px;
+    text-decoration: none;
+}
+.page-header .last .menu_nav:hover .menu {
+    display: block;
+}
+.page-header .last .menu_nav:active {
+    background-position: 0 -120px;
+}
+.page-header .last .menu_nav.active {
+    background-position: 0 -120px;
+}
+/*.page-header .last .menu_nav.active .menu{
+ display:block;
+ }*/
+.page-header .last .menu {
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    width: 62px;
+    border: 1px solid #383838;
+    background-color: #fff;
+    color: #383838;
+    z-index: 10;
+    display: none;
+}
+.page-header .last .menu a {
+    color: #383838;
+}
+.page-header .last .menu li {
+    padding: 0 6px;
+}
+.page-header .last .menu li:hover {
+    background-color: #dbdcde;
+}
+.page-header .inline .menu_nav {
+    display: inline-block;
+    margin-top: -4px;
+    height: 26px;
+    line-height: 26px;
+    width:62px;
+    color: #d2d2d2;
+    cursor: pointer;
+    margin-right:20px;
+    text-align:center;
+}
+.page-header .inline .menu_nav_app{
+    background-color: #1b1b1b;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    border: 1px #0a1a29 solid;
+    border-right-color: #2e2f30;
+    border-bottom-color: #2e2f30;
+    margin-top: -4px;
+}
+.page-header .inline .menu_nav_curapp{
+    background-color: #2663a0;
+    color: #ffffff;
+}
+.page-header .hotkey {
+    color: #7b7b7b;
+}
+
+.bar-operate {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.bar-operate .my-work2 {
+    float: left;
+    width: 184px;
+    padding: 0 8px 0 0;
+}
+.bar-operate .my-work {
+    float: left;
+    width: 184px;
+    padding: 0 8px;
+}
+.bar-operate .title{
+    display: inline-block;
+    color: #cfcfcf;
+}
+.bar-operate .icon-dropdown {
+    float: right;
+    width: 16px;
+    height: 28px;
+    background-position: 0 8px;
+}
+.bar-operate .icon-dropdown:hover {
+    background-position: -30px 8px;
+}
+.bar-operate .icon-dorpleft {
+    display: inline-block;
+    width: 18px;
+    height: 28px;
+    vertical-align: top;
+    background-position: 0 -191px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.bar-operate .icon-dorpleft:hover {
+    background-position: -36px -191px;
+}
+.bar-operate .icon-dorpleft:active {
+    background-position: -72px -191px;
+}
+.bar-operate .icon-dorpright {
+    display: inline-block;
+    width: 18px;
+    height: 28px;
+    vertical-align: top;
+    background-position: -72px -225px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.bar-operate .icon-dorpright:hover {
+    background-position: -36px -225px;
+}
+.bar-operate .icon-dorpright:active {
+    background-position: 0px -225px;
+}
+.bar-operate .txt {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+.bar-operate .txt:hover {
+    text-decoration: none;
+}
+
+/*左侧工作菜单*/
+.left-menu {
+    width: 200px;
+    background-color: #dbdcde;
+    border-right: 1px solid #cdcdcf;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+}
+.left-menu .item {
+    color: #383838;
+    line-height: 29px;
+}
+.left-menu .item .icon-close{
+    background-position: 0 -259px;
+    width: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 21px;
+}
+.left-menu .item .icon-open{
+    background-position: 0 -277px;
+    width: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 21px;
+}
+.left-menu .item dt {
+    padding-left: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #a5a8ac;
+    background-position: 0 -120px;
+    cursor: pointer;
+}
+.left-menu .item dd {
+    padding-left: 32px;
+}
+.left-menu .item dd a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #383838;
+}
+.left-menu .item dd a:hover {
+    text-decoration: none;
+}
+.left-menu .item dd:hover {
+    background-color: #e6e7e8;
+}
+.left-menu .item dd:active {
+    background-color: #fff;
+}
+.left-menu .item .cur-menu,.left-menu .item .cur-menu a,.left-menu .item .cur-menu:hover {
+    background-color: #2381da;
+    color: #fff;
+}
+
+/**
+ * 盒子 头部下拉菜单中新建库 弹出对话框内部内容样式
+ */
+.header-dialog-content {
+
+}
+.header-dialog-content a {
+    margin: 0 10px;
+    vertical-align: middle;
+}
+/**
+ *     end
+ */
+/**
+ *     查询结果为0 展示样式
+ */
+.dcms-box-no-result {
+    background: url(http://img.china.alibaba.com/cms/upload/2012/500/684/486005_983650061.png) no-repeat;
+    background-position: 0px -48px;
+    vertical-align: middle;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 50px;
+    margin: 50px 50px 100px 50px;
+    
+    font-weight: bold;
+    color: #353638;
+}
+.dcms-box-no-result li{
+    margin:4px 0 !important;
+    padding:0 4px !important;
+}
+.dcms-box-no-result .line {
+    border-left: 1px solid #A3A3A3;
+    margin-left:8px;
+    padding-right:10px;
+    
+}
+.dcms-box-no-result a{
+    color:#0066CC;
+}
+
+/*add:zhuliqi;左侧栏*/
+.icon-moveposition,.cms-icon-close{background:url('http://img.china.alibaba.com/cms/upload/2013/104/539/935401_51297002.png') no-repeat;}
+.page-content .icon-moveposition{display:inline-block;width:18px;height:28px;vertical-align: top;margin-right:10px;cursor:pointer;background-position: 0 -191px;}
+.page-content .icon-moveposition:hover{background-position:-36px -191px}
+.page-content .my-work{padding:0;width:200px;}
+.page-content .my-work a{display:inline-block;}
+.page-content .my-work a span{color:#cfcfcf;font-weight:normal;}
+.page-content .toright{float:right;background-position:-72px -225px;margin-left:-1px;margin-right:0;}
+.page-content .toright:hover{background-position:-36px -225px;}
+.dcms-box-layout .cms-icon-close{background-position: 0 -259px;width:15px;vertical-align: middle;display:inline-block;height:21px;}
+
+/*css3动画终点*/
+body .move-moveend--182{margin-left:-182px;transition:margin-left 500ms;}
+body .move-moveend-0{margin-left:0px;transition:margin-left 500ms;}
+body .move-paddingend19-500ms{padding-left:19px;transition:padding-left 500ms;}
+body .move-paddingend201-500ms{padding-left:201px;transition:padding-left 500ms;}
+
+
+/*头部应用*/
+.libra-member-info{padding-right: 30px;
+text-shadow: 0 0 1px #222324;}
+body .page-header .inline .libra-info {text-align:left;}
+.libra-info {
+width: 44px;
+cursor: pointer;
+display: inline-block;
+height: 26px;
+line-height: 26px;
+padding: 0 8px;
+position: relative;
+}
+.libra-member-info .libra-info-detail {
+white-space: nowrap;
+position: absolute;
+top: 26px;
+left: -1px;
+border-radius: 0 2px 2px 2px;
+border-bottom: #cbcbcb 1px solid;
+cursor: default;
+display: none;
+z-index: 10;
+}
+.libra-member-info .libra-info-detail li {
+padding: 0;
+min-width: 65px;
+}
+.libra-member-info .libra-info-detail .libra-last {
+margin-bottom: 8px;
+}
+.libra-member-info .libra-info:hover, .libra-member-info .libra-info-detail {
+color: #383838;
+background: #ebeced;
+border-radius: 2px 2px 0 0;
+text-shadow: none;
+border-left: #cbcbcb 1px solid;
+border-right: #cbcbcb 1px solid;
+}
+.libra-member-info .libra-info:hover .libra-info-detail {
+display: block;
+}
+ .libra-member-info .libra-info .libra-sys-detail li a {
+    color: #383838;
+    display: block;
+    padding: 0 12px;
+}
+ .libra-member-info .libra-info .libra-sys-detail li a:hover{
+    text-decoration: none;
+    background: #2381da;
+    border-color: #2381da;
+    color: #ffffff; 
+}
+
+.page-header .inline .menu_nav a{
+text-decoration: none;
+line-height: 26px;
+color: #d2d2d2;
+cursor: pointer;
+}
+.page-header .inline .menu_nav a:hover{
+    text-decoration: none;
+}
+/*end:zhuliqi;*/

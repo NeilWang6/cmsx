@@ -1,0 +1,18 @@
+/**
+ * This is only used in development and test environments
+ * DO NOT commit it
+ */
+FE.test = {
+    'style.picman.url'          : 'http://picman-test.china.alibaba.com:40100',
+    'style.checkcode.url'       : 'http://checkcode.china.alibaba.com:8888',
+    'style.exodus2.url'         : 'http://exodus2.china.alibaba.com:2100',
+    'style.loginchina.url'      : 'https://loginchina-test.alibaba.com:3300',
+    'style.alipayauth.url'      : 'http://auth.alipay.net',
+    'style.member1dailytaobao.url' : 'http://member1.daily.taobao.net',
+    'style.loginchinahttp.url'  : 'http://loginchina-test.alibaba.com',
+    'style.luna.url'            : 'http://luna-test.china.alibaba.com:37100',
+    'style.jumpdailytaobao.url'  : 'http://jump.daily.taobao.net/jump',
+    'style.logindailytaobao.url' : 'http://login.daily.taobao.net',
+    'style.logintaobao.sync.url' : 'http://b2bsync.daily.taobao.net/tbc',
+    'style.jumptaobao.url'       : 'http://jump.daily.taobao.net/jump'
+}

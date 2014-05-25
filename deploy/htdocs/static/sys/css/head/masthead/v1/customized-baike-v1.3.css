@@ -1,0 +1,23 @@
+/**
+ * customized masthead for baike
+ * @vserion 1.3.110713
+ * @author  Edgar
+ */
+
+/* ali-masthead customized-baike */
+#ali-search .customized-baike button.fd-hide{
+    display:inline-block;
+}
+#ali-search .customized-baike .alisearch-container{
+    background:url(http://img.china.alibaba.com/cms/upload/other/sys/customized-baike-v1.4.png) no-repeat;
+}
+#ali-search .customized-baike input{
+    width:394px;
+}
+#ali-search .customized-baike button{
+    width:74px;
+    font-size:16px;
+}
+#ali-search .customized-baike #alisearch-submit-ask{
+    margin-left:2px;
+}

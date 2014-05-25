@@ -1,0 +1,44 @@
+/**
+ * create by hongss for create/modify viframe page on 2011.09.27
+ */
+.terms-message .message .hide-tag { background:url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png") no-repeat; }
+
+.dcms-form {
+    padding-bottom:20px;
+}
+.dcms-form label { width:86px;}
+.dcms-content .related-pages,
+.dcms-content .operation-log{
+    margin-top: 16px;
+}
+.dcms-content .related-pages h3,
+.dcms-content .operation-log h3{
+    line-height: 26px;
+    /*font-size: 14px;*/
+    font-weight: 700;
+    color:#666;
+}
+.dcms-content .dcms-form input[type="text"]{
+    width: 240px;
+}
+.dcms-content .dcms-form input.date-picker {
+    width:110px;
+}
+.dcms-content .dcms-form textarea{
+    width: 365px;
+}
+.dcms-content .operating-area a{ padding:0 4px;}
+
+.dcms-content .dcms-title { width:832px; overflow:hidden;}
+.dcms-content .dcms-title h3 { float:left; width:auto;}
+.dcms-content .dcms-title .list-btn { float:left; line-height:38px; font-size:14px;}
+.dcms-content .dcms-title .list-btn li { float:left; padding-left:12px;}
+.dcms-content .dcms-form span.description { color:#4c6bac;}
+.dcms-content .dcms-form span.state { color:#c00; padding-left:12px;}
+.dcms-form span.content { display:inline-block; padding-top:7px;}
+/*Ñ¡Ôñlayout¶Ô»°¿ò*/
+#dcms-select-layout { width:600px;}
+#dcms-select-layout content { display:block; padding:0 28px 16px; overflow:hidden;}
+#dcms-select-layout .list-layout li { float:left; width:220px; line-height:24px;}
+#dcms-select-layout footer { overflow:hidden;}
+

@@ -1,0 +1,298 @@
+/**
+ * create by lusheng.linls on 2012.11.15
+ */
+
+.topic-scroll .icon-scrollleft,.topic-scroll .icon-scrollright,.dcms-going-tabs .icon-uncommit,.dcms-going-tabs .icon-unpass{
+    background: url("http://img.china.alibaba.com/cms/upload/2013/326/396/693623_51297002.png") no-repeat;
+}
+
+.libra-content{
+    padding-top: 10px;
+}
+.content{
+    width: 1230px;
+    padding-bottom: 20px;
+}
+.loading{
+    background: url("http://img.china.alibaba.com/cms/upload/2012/534/534/435435_51297002.gif") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    margin-left: 582px;
+    margin-top: 80px;
+}
+.designer-home .op-link{
+    color: #0074e1;
+    cursor: pointer;
+}
+
+/**待执行任务*/
+.show-win-3_{
+    border: 1px solid #d0d2d4;
+    width: 210px;
+    box-shadow: 2px 2px 0 #e5e5e5;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    word-break:break-all;
+}
+.show-win-3_ .show-win-boder{
+    border: 1px solid #fff;
+    border-bottom: none;
+}
+.show-win-3_ .show-win-boder-2{
+    border: 1px solid #ecedf1;
+    border-top: none;
+}
+.show-win-3_ .detail{
+    padding: 0 8px;
+    height: 82px;
+}
+
+.show-win-3_ .serial{
+    color: #fefefe;
+    background: #2073c0;
+    width: 19px;
+    height: 18px;
+    margin-bottom: 8px;
+    margin: -1px 0 8px -1px;
+    text-align: center;
+}
+.show-win-3_ .title{
+    margin-bottom: 5px;
+    font-weight: bold;
+    height: 36px;
+}
+.show-win-3_ .txt{
+    color: #b3b3b3;
+}
+.show-win-3_ .txt-2{
+    color: #818181;
+}
+.show-win-3_ .operate{
+    border-top: 1px dotted #d9dee6;
+    background: #ecedf1;
+    padding: 6px 10px;
+}
+.show-win-3_ .operate .op-link{
+    float: right;
+    display: none;
+}
+.show-win-3_:hover{
+    border: 1px solid #2381da;
+}
+.show-win-3_:hover .show-win-boder{
+    border: 1px solid #2381da;
+    border-bottom: none;
+}
+.show-win-3_:hover .show-win-boder-2{
+    border: 1px solid #2381da;
+    border-top: none;
+}
+.show-win-3_:hover .operate .op-link{
+    display: inline;
+}
+
+.topic-scroll{
+    margin-top: 25px;
+}
+.topic-scroll .topic-scroll-shade{
+    display: inline-block;
+    height: 155px;
+    overflow: hidden;
+    position: relative;
+
+}
+.topic-scroll .topic-scroll-detail{
+    width: 300000px;
+    position: absolute;
+}
+.topic-scroll .icon-scrollleft{
+    visibility: hidden;
+    cursor: pointer;
+    display: inline-block;
+    width: 23px;
+    height: 155px;
+    background-position: 1px 5px;
+}
+.topic-scroll .icon-scrollleft:hover{
+    background-position: -24px 5px;
+}
+.topic-scroll .icon-scrollright{
+    visibility: hidden;
+    cursor: pointer;
+    display: inline-block;
+    width: 23px;
+    height: 155px;
+    background-position: -52px 5px;
+}
+.topic-scroll .icon-scrollright:hover{
+    background-position: -77px 5px;
+}
+/**正在创建*/
+.dcms-going-tabs .items{
+    padding-left: 11px;
+    height: 538px;
+}
+.dcms-going-tabs .item .txt{
+    color: #b3b3b3;
+}
+.dcms-going-tabs .item{
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    width: 208px;
+    border: 1px solid #eaeaea;
+    position: relative;
+    word-break:break-all;
+}
+.dcms-going-tabs .item .item-detail{
+    line-height: 17px;
+    height: 84px;
+}
+.dcms-going-tabs .items .title{
+    padding: 8px 8px 3px 8px;
+    font-weight: bold;
+}
+.dcms-going-tabs .txt{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.dcms-going-tabs .icon-uncommit{
+    background-position: -32px -179px;
+    display: inline-block;
+    height: 16px;
+    width: 13px;
+    vertical-align: middle;
+}
+.dcms-going-tabs .icon-unpass{
+    background-position: -2px -179px;
+    display: inline-block;
+    height: 16px;
+    width: 13px;
+    vertical-align: middle;
+}
+.dcms-going-tabs .txt-warn{
+    color: #ff5400;
+}
+.dcms-going-tabs .operate{
+    background: #f2f2f2;
+    color: #818181;
+    padding: 6px 9px 4px 10px;
+}
+.dcms-going-tabs .operate .op-link{
+    float: right;
+    display: none;
+}
+.dcms-going-tabs .item:hover .operate .op-link{
+    display: inline;
+}
+.dcms-going-tabs .tui-tips{
+    display: none;
+    top: 116px;
+    left: -1px;
+}
+.dcms-going-tabs .tips-content{
+    width: 184px;
+}
+.dcms-going-tabs .item:hover .tui-tips{
+    display: block;
+}
+.msg-warn{
+    margin: 80px auto;
+    text-align: center;
+}
+.msg-warn .icon-message{
+    vertical-align: middle;
+}
+.msg-warn .summary{
+}
+.designer-home .tui-show-win-add{
+    margin-left: 33px;
+    margin-top: 20px;
+}
+.dcms-going-tabs .paging-s{
+    margin-right: 69px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.view-content {
+    width: 800px;
+}
+
+.topic-name {
+	border-bottom: 2px solid #9DA5B4;
+	margin:10px;
+}
+
+.topic-name span {
+	padding-right:20px;
+}
+
+.topic-table .left-td {
+	text-align: right;
+	vertical-align:top;
+	padding-right: 6px;
+	line-height: 30px;
+}
+
+.topic-table .right-td {
+	text-align: left;
+	vertical-align:top;
+	padding-right: 6px;
+	line-height: 30px;
+}
+
+.banner-size a {
+	padding-right:25px;
+}
+
+.banner-size p {
+	padding-bottom:15px;
+}
+
+.topic-info {
+    display: none;
+	text-align: center;
+	border: 1px solid #D0D2D4;
+    box-shadow: 2px 2px 0 #E5E5E5;
+    width: 600px;
+    word-break: break-all;	
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+.topic-table {
+	margin:auto;
+	padding-top:20px;	
+	text-align: center;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.dotted-line {
+	/*border:1px dashed #334455;*/
+	border: 1px solid #ecedf1;
+    border-top: none;
+	color: #818181;
+	border-top: 1px dotted #d9dee6;
+    background: #ecedf1;
+    padding: 6px 10px;
+	width: 600px;
+}
+
+.logo-img {
+	color: #fefefe;
+	font-size: 14pt;
+	font-weight:bold;
+    margin: 3px 0 1px -5px;
+    text-align: center;
+    width: 70px;
+	line-height: 35px;
+	background-image: url("http://img.china.alibaba.com/cms/upload/2013/217/628/826712_1294011931.jpg");
+    background-repeat: no-repeat;	
+    
+}
+
+

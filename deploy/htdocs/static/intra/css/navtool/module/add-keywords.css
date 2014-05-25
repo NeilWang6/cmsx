@@ -1,0 +1,45 @@
+@charset "gb2312";
+/* CSS Document */
+
+.ak{ display:none; width:400px;height:400px; font-size:13px;}
+.ak-row{margin-top:10px;}
+.ak-form-text{ width:150px;}
+.ak-form-checkbox{}
+.ak-form-button{margin-left:60px; width:80px; height:30px; font-size:14px;}
+#ak-switch-custom-url{width:350px;}
+
+.next-cate-link{
+	display:none;
+	text-decoration: none;
+}
+
+.ak-title{ font-size:14px; margin:4px auto;}
+.ak-block:after, ak-categorylist-addbar:after{display:block;clear:both;height:0;content:"\0020";}
+.ak-block{margin:0 20px;}
+.ak-categorylist{ width:80px; margin:0 20px;}
+.ak-categorylist-title{font-size:14px; font-weight:normal; margin:8px 0;}
+.ak-result-box{ border:1px solid #CCC;width: 300px;height: 100px; overflow-y: auto;}
+.ak-categorylist-box{width:100px;float:left; border:1px solid #CCC;margin-left: 10px;overflow-y: scroll;height: 130px;}
+.ak-category-item:hover{
+	cursor:pointer;
+  	background-color:#DEE7F6;
+	color: #000  ;
+}
+.ak-category-item-active{
+	cursor:pointer;
+  	background-color:#DEE7F6;
+	color: #000  ;
+}
+.ak-hotkey-item{ background:url("http://img.china.alibaba.com/cms/upload/2011/231/031/130132_1070828466.gif") no-repeat 4px 4px;}
+.ak-keyword-item{ background:url("http://img.china.alibaba.com/cms/upload/2011/411/031/130114_1070828466.gif") no-repeat 0 4px;}
+.ak-item-selected{ background-color:#A6CAF0 ;}
+span.ak-item-delete{ position:absolute; right:0; width:20px; height:30px; background:url("http://img.china.alibaba.com/cms/upload/2011/741/031/130147_1070828466.gif") no-repeat;}
+.ak-categorylist-addbar{ height:26px;}
+.ak-categorylist-add{ cursor:pointer; float:left; width:49%; text-align:left; line-height:26px; background:#eee url("http://img.china.alibaba.com/cms/upload/2011/511/031/130115_1070828466.png") no-repeat 0 4px;border:1px solid #ccc;}
+.ak-categorylist-addtext{ padding-left:20px; }
+
+.ak-hr{ clear:both;}
+.ak-hotkeylist{float:left; width:200px; margin-left:20px;}
+.ak-urlinfo{ float:left; width:630px; margin-left:40px;}
+
+#ak-block-foot{ margin:30px 0 20px 120px;}

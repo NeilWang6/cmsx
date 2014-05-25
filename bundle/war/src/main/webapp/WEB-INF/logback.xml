@@ -4,12 +4,14 @@
         <target>System.out</target>
         <encoding>${loggingCharset}</encoding>
         <layout class="ch.qos.logback.classic.PatternLayout">
+           <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+           <!-- 
             <pattern><![CDATA[
 %n%-4r [%d{yyyy-MM-dd HH:mm:ss} %X{productionMode}] - %X{method} %X{requestURIWithQueryString} [ip=%X{remoteAddr}, ref=%X{referrer}, ua=%X{userAgent}, sid=%X{cookie.JSESSIONID}]%n  %-5level %logger{35} - %m%n
-            ]]></pattern>
+            ]]></pattern> -->
         </layout>
         <filter class="com.alibaba.citrus.logconfig.logback.LevelRangeFilter">
-            <levelMax>WARN</levelMax>
+            <levelMax>DEBUG</levelMax>
         </filter>
     </appender>
 
@@ -17,12 +19,14 @@
         <target>System.err</target>
         <encoding>${loggingCharset}</encoding>
         <layout class="ch.qos.logback.classic.PatternLayout">
+           <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+         <!-- 
             <pattern><![CDATA[
 %n%-4r [%d{yyyy-MM-dd HH:mm:ss} %X{productionMode}] - %X{method} %X{requestURIWithQueryString} [ip=%X{remoteAddr}, ref=%X{referrer}, ua=%X{userAgent}, sid=%X{cookie.JSESSIONID}]%n  %-5level %logger{35} - %m%n
-            ]]></pattern>
+            ]]></pattern> -->
         </layout>
         <filter class="com.alibaba.citrus.logconfig.logback.LevelRangeFilter">
-            <levelMin>WARN</levelMin>
+            <levelMin>DEBUG</levelMin>
         </filter>
     </appender>
 
@@ -36,6 +40,22 @@
             ]]></pattern>
         </layout>
     </appender>
+    
+    <logger name="org.apache">
+        <level value="WARN" />
+    </logger>
+
+    <logger name="org.springframework">
+        <level value="WARN" />
+    </logger>
+
+    <logger name="com.alibaba.citrus.springext.support.context">
+        <level value="WARN" />
+    </logger>
+
+    <logger name="com.alibaba.citrus.webx.context">
+        <level value="WARN" />
+    </logger>
 
     <root>
         <level value="${loggingLevel}" />

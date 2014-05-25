@@ -1,0 +1,112 @@
+/**
+ * @author cheng.zhangch
+ * @date   2014.01.25
+ */
+
+::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+.qn-topic-recommend{
+	float:left;
+	width: 332px;
+	height: 179px;
+	margin-right: 4px;
+	padding: 20px 12px 12px 12px;
+	background-color: #F9FAFC;
+}
+
+.qn-topic-recommend .title .topic-title{
+	margin-right: 6px;
+	color: #000000;
+	font: bold 14px/1.5 "Î¢ÈíÑÅºÚ",Arial,sans-serif;
+	line-height: 16px;
+}
+
+.qn-topic-recommend .title .more{
+	cursor: pointer;
+	color: #0066CC;
+	font-size: 12px;
+}
+
+.qn-topic-recommend .title .refresh {
+	float: right;
+	cursor: pointer;
+	padding-left: 20px;
+	color: rgb(88,130,156);
+	background-position: 0px 0px;
+	background-image: url(http://img.china.alibaba.com/cms/upload/2014/685/888/1888586_1364804284.png);
+	background-color: transparent;
+	background-repeat: no-repeat;	
+}
+
+.qn-topic-recommend .title .refresh:hover{
+	text-decoration: underline;
+}
+
+.qn-topic-recommend div.rank {
+	padding-top: 10px;
+}
+
+.qn-topic-recommend ul.rank-list {
+	height: 160px;
+}
+
+.qn-topic-recommend ul.rank-list li {
+	position: relative;
+	height: 24px;
+	border-bottom: 1px solid  #C9C9C9;
+	overflow: hidden;
+	line-height: 12px;
+}
+
+.qn-topic-recommend ul.rank-list li.current {
+    height: 76px;
+}
+
+.qn-topic-recommend ul.rank-list li.last {
+    border-bottom: 0px;
+}
+
+.qn-topic-recommend ul.rank-list dt {
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+}
+
+.qn-topic-recommend ul.rank-list dt a {
+	color: #333333;
+	font: 12px/20px "ËÎÌå",Arial,sans-serif;
+}
+
+.qn-topic-recommend ul.rank-list dd {
+	height: 20px;
+	overflow: hidden;
+}
+
+.qn-topic-recommend ul.rank-list .current dt {
+	height: 0px;
+}
+
+.qn-topic-recommend ul.rank-list dd.pic {
+	float: left;
+	width: 120px;
+	height: 65px;
+	margin: 6px 10px 6px 0;
+}
+
+.qn-topic-recommend ul.rank-list dd.subject {
+	margin-top: 6px;
+	font-weight: bold;
+}
+
+.qn-topic-recommend ul.rank-list dd.subject a {
+	font: bold 13px/20px "ËÎÌå",Arial,sans-serif;
+	color: #333333;
+}
+
+.qn-topic-recommend ul.rank-list dd.apply-time {
+	line-height: 24px;
+	color: #666666;
+}

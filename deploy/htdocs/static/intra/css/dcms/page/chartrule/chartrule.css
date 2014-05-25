@@ -1,0 +1,73 @@
+.dcms-content .title h3{
+	font-size: 14px;
+	font-weight: 700;
+	color: black;
+	line-height:28px;
+}
+.dcms-ruleeffect-chart{
+	margin-left:18px;
+}
+.dcms-ruleeffect-chart .header{
+	padding-top:12px;
+	margin-bottom:4px;
+    line-height:20px;
+    height:80px;
+}
+.dcms-ruleeffect-chart .header h4{
+	font-weight: 700;
+	color: black;
+    width:368px;
+    height:24px;
+}
+/*add by hongss on 2011.07.05 for datepicker*/
+.chart-term-date {
+    height:32px; 
+    line-height:32px;
+    background-color:#eee;
+}
+.chart-term-date .chart-confirm-date {
+    background: url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-repeat.png") repeat-x 0 -40px;
+    color:#494949;
+    height:23px;
+    line-height:22px;
+    cursor:pointer;
+    padding:0 4px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#a0a0a0;
+    -moz-border-radius:2px;
+    -khtml-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}
+.chart-term-date .dcms-validator-tip {
+    color: #c00;
+    padding-left:8px;
+}
+.chart-term-date .date-picker {
+    border:1px solid #BDC7D8;
+    padding:2px;
+    width:72px;
+}
+.chart-term-type .fd-right li {
+    float:left;
+    height:24px;
+    line-height:24px;
+    padding-left:12px;
+}
+/*end*/
+.dcms-ruleeffect-chart .header span{
+	/*padding:0 6px;*/
+}
+
+
+.dcms-ruleeffect-chart .content {
+	/*height:510px;*/
+	border:solid 1px #ADBCDD;
+	border-top:solid 2px #ADBCDD;
+}
+
+.dcms-ruleeffect-chart .content h5{
+    padding-left:12px;
+    font-weight:bolder;
+}

@@ -1,0 +1,187 @@
+/*add by hongss on 2013.12.30*/
+.part-set .setting .icon,
+.part-items .close,
+table.t-data .icon-up, table.t-data .icon-down {
+    background:url("http://img.china.alibaba.com/cms/upload/2013/159/278/1872951_133354742.png") no-repeat;
+}
+
+
+.doc { 
+    margin:0 20px;
+}
+.part1 { 
+    margin:10px 0;
+} 
+.data-resolve {
+	padding-right:20px;
+}
+.choose-date .label { 
+    font-size:14px; 
+    font-weight:bold; 
+}
+h3 {
+    font-size:14px; 
+    font-weight:bold; 
+    padding:12px 0;
+}
+.part-set {
+    padding-bottom:8px;
+}
+.part-set .setting {
+    display:inline-block;
+    border:1px solid #a3a3a3;
+    border-radius:2px;
+    background: -moz-linear-gradient(top, #fff, #e8e8e8); 
+    background: -webkit-linear-gradient(top, #fff, #e8e8e8);
+    background: -o-linear-gradient(top, #fff, #e8e8e8);
+    background: linear-gradient(top, #fff, #e8e8e8);
+    height:22px;
+    line-height:22px;
+    color:#333;
+    padding:0 4px;
+}
+.part-set .setting:hover {
+    text-decoration:none;
+}
+.part-set .setting .icon {
+    display:inline-block;
+    height:16px;
+    width:16px;
+    vertical-align:middle;
+    padding-right:4px;
+}
+.part-set .tui-info-bar-caution {
+    padding:0px 12px 1px 6px;
+}
+.part-set .tui-info-bar-caution .icon-caution-16.blue {
+    border:1px solid #5d85cd;
+    box-shadow:0 0 0 1px #90b5e9 inset;
+    background: -moz-linear-gradient(top, #9fc1f1, #7399e0); 
+    background: -webkit-linear-gradient(top, #9fc1f1, #7399e0);
+    background: -o-linear-gradient(top, #9fc1f1, #7399e0);
+    background: linear-gradient(top, #9fc1f1, #7399e0);
+}
+.hide-items .part-items {
+    display:none;
+}
+.part-items {
+    position:relative;
+    border:1px solid #d4d4d4;
+    border-radius:2px;
+    box-shadow:0 1px 0 0 #d5d5d5;
+    padding:8px 12px;
+    font-size:0;
+}
+.part-items .close {
+    position:absolute;
+    display:inline-block;
+    height:9px;
+    width:9px;
+    padding:6px;
+    top:0;
+    right:0;
+    background-position:center -114px;
+    cursor:pointer;
+}
+.part-items .group-items {
+    padding:4px 0;
+}
+.part-items .close:hover {
+    background-position:center -154px;
+}
+.part-items .label, .part-items label {
+    font-size:12px;
+}
+.part-items .label {
+    display:inline-block;
+    width:80px;
+    text-align:right;
+}
+.part-items label {
+    padding-right:22px;
+}
+.part-items input[type="checkbox"] {
+    margin-right:4px;
+}
+.part-data {
+    padding-top:8px;
+}
+table.t-data {
+    border:1px solid #c7cccf;
+    width:100%;
+    table-layout:fixed;
+}
+table.t-data td, table.t-data th {
+    padding:6px 0;
+    text-align:center;
+    word-break:keep-all;
+    white-space:pre;
+    overflow:hidden;
+}
+table.t-data td {
+    border:0;
+    display:none;
+    
+}
+table.t-data th {
+    border:1px solid #c7cccf;
+    background-color:#f0f0f0;
+}
+table.t-data td.def-show, table.t-data td.show {
+    display:table-cell;
+    word-break:break-all;
+    white-space:normal;
+    width:auto;
+    border:1px solid #c7cccf;
+}
+
+table.t-data .icon-up, table.t-data .icon-down {
+    display:inline-block;
+    width:12px;
+    height:9px;
+}
+table.t-data .icon-up {
+    background-position:0 -40px;
+}
+table.t-data .icon-down {
+    background-position:0 -80px;
+}
+
+.fix-right {
+    position:fixed;
+    right:8px;
+    top:20%;
+}
+.fix-right .focus {
+    float:left;
+    background-color:#7399E0;
+    color:#fff;
+    width:24px;
+    font-size:14px;
+    font-weight:bold;
+    word-spacing:3px;
+    text-align:center;
+    line-height:1.2;
+    padding:8px 0;
+    border:1px solid #7399E0;
+    border-radius:8px 0 0 8px;
+    cursor:pointer;
+}
+.fix-right .explain {
+    float:left;
+    display:none;
+    height:128px;
+    width:280px;
+    padding:6px;
+    border:1px solid #7399E0;
+    background-color:#fff;
+    overflow-y:auto;
+}
+.fix-right .explain li {
+    padding:2px;
+    border-bottom:1px dotted #d4d4d4;
+}
+.fix-right .explain label {
+    color:#7399E0;
+    font-weight:bold;
+}

@@ -1,0 +1,107 @@
+.dcms-form{
+    padding-bottom:20px;
+    border-bottom:1px solid #bbb;
+}
+.dcms-content .related-rules{
+    display: inline-block;
+    margin-top: 6px;
+    margin-left:71px;
+}
+.dcms-content .related-rules h3{
+    margin-bottom: 3px;
+}
+/*add by hongss 2011.05.20*/
+.dcms-content .related-rules .dcms-name {
+    width:190px;
+    overflow:hidden;
+}
+.dcms-content .related-rules .dcms-time {
+    width:90px;
+}
+.dcms-content .related-rules td{
+    white-space:nowrap;
+    /*overflow:hidden;*/
+}
+/*end*/
+.dcms-content .related-rules .dcms-grid-operations{
+    right: 0px;
+    width: 248px;
+    -moz-border-radius: 4px / 4px;
+    border-radius: 4px / 4px;
+}
+.dcms-content .related-pages,
+.dcms-content .operation-log{
+    margin-top: 16px;
+}
+.dcms-content .related-pages h3,
+.dcms-content .operation-log h3{
+    line-height: 26px;
+    /*font-size: 14px;*/
+    font-weight: 700;
+    color:#666;
+}
+
+.dcms-content .dcms-form input[type="text"]{
+    width: 240px;
+}
+.dcms-content .dcms-form textarea{
+    width: 365px;
+}
+.dcms-content .related-rules .dcms-grid{
+    width: 696px;
+    position:relative;
+}
+#relatedRulesDialog .rules-dialog-name{
+    width: 215px;
+}
+#relatedRulesDialog .rules-dialog-period{
+    width: 95px;
+}
+#relatedRulesDialog .rules-dialog-radio,
+#templatesDialog .template-dialog-radio{
+    width: 20px;
+}
+#templatesDialog .template-dialog-name{
+
+}
+.dcms-content .related-rules .related-rule-name{
+    width: 214px;
+}
+.dcms-content .related-rules .related-rule-period,
+.dcms-content .related-rules .related-rule-modify-time{
+    width: 114px;
+}
+.dcms-content .related-rules .status{
+    width: 50px;
+}
+.dcms-form .dcms-form-text { display:inline-block; margin-top:7px;}
+
+.related-pages .dcms-grid, .operation-log .dcms-grid {
+    border:1px solid #bbb;
+}
+.related-pages .dcms-grid th, .operation-log .dcms-grid th{
+    background-color:#bbb;
+    border:1px solid #bbb;
+}
+.related-pages .td-chinese-name { width:210px;}
+.related-pages .td-related-page { width:388px;}
+.related-pages .td-preview { width:100px;}
+.related-pages .td-catalog { width:162px; overflow:hidden;}
+.related-pages td { white-space:nowrap;}
+
+/*style for choose rules dialog  add by hongss on 2011.04.23*/
+/* modify by xutao 2011-07-05*/
+#relatedRulesDialog .dcms-grid .td-radio, #defaultRelatedRulesDialog .dcms-grid .td-radio { width:22px;}
+#relatedRulesDialog .dcms-grid .td-chinese-name, #defaultRelatedRulesDialog .dcms-grid .td-chinese-name { width:300px;}
+#relatedRulesDialog .dcms-grid .td-valid-time, #defaultRelatedRulesDialog .dcms-grid .td-valid-time { width:100px;}
+#relatedRulesDialog .dcms-grid .td-directory, #defaultRelatedRulesDialog .dcms-grid .td-directory { width:230px; overflow:hidden;}
+#relatedRulesDialog .dcms-grid td, #defaultRelatedRulesDialog .dcms-grid td { white-space:nowrap;}
+#relatedRulesDialog .dcms-grid tfoot td, #defaultRelatedRulesDialog tfoot td { padding:0 12px 6px 12px;}
+
+
+#templatesDialog .dcms-grid .td-radio { width:22px;}
+#templatesDialog .dcms-grid .td-chinese-name { width:224px;}
+#templatesDialog .dcms-grid .td-quote-name { width:220px;}
+#templatesDialog .dcms-grid .td-directory { width:184px; overflow:hidden;}
+#templatesDialog .dcms-grid td { white-space:nowrap; overflow:hidden;}
+#templatesDialog tfoot td { padding:0 12px 6px 12px;}

@@ -1,0 +1,51 @@
+/**
+ * ×ÊÔ´Î»offer
+ * @author : pingchun.yupc
+ * @createTime : 2014-01-4
+ */
+.data-list .data-tb .chk {
+	display: inline-block;
+	padding-left: 12px;
+}
+.data-list .ck-td {
+	width: 32px;
+	padding-left: 0;
+}
+.data-list  .main-td {
+	width: 420px;
+	padding-left: 0;
+}
+.data-list  .img-td {
+	width: 110px;
+	padding-left: 0;
+}
+.data-list  .opr-td {
+	width: 200px;
+	padding-left: 0;
+	text-align: center;
+}
+.data-list  .img {
+	width: 100px;
+	height: 100px;
+}
+.res-table .title{
+	width:380px;
+}
+.show-data .data-param {
+
+}
+.show-data .data-param .title-td {
+	width: 30%;
+}
+.show-data .data-param .opr-td {
+	width: 70%;
+}
+.res-table .selected {
+	color:#999;
+	text-decoration: none;
+	cursor: text;
+}
+.data-set .data-set-body{
+	height:290px;
+}
+

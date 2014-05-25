@@ -1,0 +1,43 @@
+/**
+ * create by hongss for search page on 2011.09.27
+ */
+.terms-message .message .hide-tag { background:url("http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png") no-repeat; }
+
+.booth-management{
+}
+.booth-management h3{
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+    height:38px;
+}
+.dcms-form {
+    padding-bottom:20px;
+}
+.dcms-form label { width:86px;}
+.dcms-content .related-pages,
+.dcms-content .operation-log{
+    margin-top: 16px;
+}
+.dcms-content .related-pages h3,
+.dcms-content .operation-log h3{
+    line-height: 26px;
+    /*font-size: 14px;*/
+    font-weight: 700;
+    color:#666;
+}
+.dcms-content .dcms-form input[type="text"] { width: 240px; }
+.dcms-jump-page { width:24px;}
+.dcms-content .dcms-grid { width:826px;}
+.dcms-content .dcms-grid .word-all { word-break:break-all;word-wrap:break-word;}
+
+.dcms-dsmodule-grid th{
+    height: 16px;
+    border: 1px solid #adbcdc;
+    background-color: #adbcdc;
+    color: #FFF;
+    /*padding-left:6px;*/
+    text-align:left;
+}
+

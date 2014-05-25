@@ -1,0 +1,66 @@
+/**
+ * @authur zhuguo.nizg
+ * @usefor Ä£°å¿â
+ * @date   2012-01-05
+ */
+body{
+    background:#ebebeb;
+    padding-bottom:1px;
+}
+.dcms-box-nav-bg2{
+    height:60px;
+    margin-bottom:-60px;
+    background:#4c6bac;
+}
+.template-wrap{
+    border-radius:6px;
+    box-shadow:0 0 8px rgba(68,68,68,.4);
+    padding:0 ! important;
+}
+.template-top{
+    padding:12px 32px;
+    border-radius:6px 6px 0 0;
+    background:#a1c5e3;
+}
+.template-top .add-template{
+    float:left;
+    width:100px;
+}
+.template-top .search-form{
+    float:left;
+}
+.template-body{
+    padding:24px;
+    border-radius:0 0 6px 6px;
+    background:#ffffff;
+}
+.dcms-box-list{
+    padding:20px 10px;
+}
+.tab .clr li.current {
+    background-color: #CC0000;
+    color: #FFFFFF;
+}
+
+.tab .clr .f-tab-t {
+    background-color: #DDDDDD;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 78px;
+}
+
+.tab .clr li {
+    float: left;
+    list-style: none outside none;
+    width: 150px;
+}
+
+ul, li {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}

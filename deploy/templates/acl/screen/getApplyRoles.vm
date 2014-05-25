@@ -1,0 +1,116 @@
+$rundata.setLayout('default.vm')<style type="text/css">
+.dcms-tree-wrapper{ }
+.dcms-tree-list{ padding-left:20px;}
+</style>
+<div class="box-right">
+            <h3 class="page-title">#if($!error)<font color="red">$!error</font>#else审核权限#end</h3>
+            <div class="js-tab">
+                <ul class="tab-focus">
+                     #if ('false' == $!isHandle)
+                        <li class="current tab-f"><a class="pass" href="/admin/get_apply_roles.html?isHandle=false">待处理</a></li>
+                        <li class="tab-f"><a class="pass" href="/admin/get_apply_roles.html?isHandle=true">已处理</a></li>
+                     #elseif ('true' == $!isHandle)   
+                       <li class="tab-f"><a class="pass" href="/admin/get_apply_roles.html?isHandle=false">待处理</a></li>
+                        <li class="current tab-f"><a class="pass" href="/admin/get_apply_roles.html?isHandle=true">已处理</a></li>
+                     #end  
+                </ul>
+                <div class="tab-b">
+                	
+                    <form action="/admin/get_apply_roles.html" method="post"/>
+                    
+                    <div class="area-active">
+                        #if('false' == $!isHandle) 
+                        <div class="date-choose"><span class="label">时间选择：</span><input name="start" class="time-start" type="text" value="$!start" /><span class="txt">到</span><input class="time-end" name="end" type="text" value="$!end" /></div>
+                        <button class="btn-basic btn-gray" type="submit">搜索</button>
+                        <button class="btn-basic btn-blue btn-batch-pass" type="button" >批量通过</button>
+                        #end
+                    </div>
+                    
+                    </form>
+                    
+                    <div align="right" style="margin:3px auto;">
+                       #unifiedPageSimpleList($paginator)
+                    </div>			
+                    
+                    <form action="#" method="post" id="batch-pass" />
+                    $csrfToken.hiddenField
+                    <input type="hidden" name="action" value="AclGrantAction"/>
+                    <input type="hidden" name="event_submit_do_add_roles2_user" value="true"/>
+				    <input type="hidden" name="isPass"                          value="true"/>
+				    <input type="hidden" name="userName"                        value="$!userName" />
+				    <input type="hidden" name="departmentName"                  value="$!departmentName" />
+				    <input type="hidden" name="message"                         value="batchPass" />
+				    
+				    
+                    <table class="table-sub #if ('0' != $!tstatus)resolved#end">
+                        <caption></caption>
+                        <thead>
+                            <tr>
+                                #if('false' == $!isHandle) 
+                                <th width="6%" class="no-bold align-left"><label><input id="js-choose-all" type="checkbox" value="" />全选</label></th>
+                                #end
+                                <th>站点名称</th>
+                                <th>用户ID</th>
+                                <th>站点类型</th>
+                                <th>角色</th>
+                                <th>申请日期</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            #foreach($!param in $!pageParam.getList())
+                            #set( $tstatus = $!param.getStatus()) 
+                            <tr>
+                                #if('0' == $!tstatus) 
+                                <td class="align-left"><input type="checkbox" name="ids" value="$!param.getId()" /></td>
+                                #end
+                                <td>$!siteName</td>
+                                <td><a href="#">$!param.getUserID()</a></td>
+                                <td>站点权限</td>
+                                <td>$!param.getRoleName()</td>
+                                <td>$!param.getGmtGreateStr()</td>
+                                #if ('0' == $!tstatus)
+                                <td>待处理</td>
+                                <td>
+                                    <a class="pass" href="/admin/get_apply_roles.html?action=ACLGrantAction&event_submit_do_add_roles2_user=true&ids=$!param.getId()&isPass=true&isHandle=false&page=$!page&message=pass&type=0">通过</a>
+                                    <a class="no-pass" data-role-resource="$!param.getId()" href="#">不通过</a>
+                                    
+                                </td>
+                                #elseif ('-1' == $!tstatus)
+                                <td>不通过</td>
+                                <td>
+                                   <div class="explain hide">
+                                   <a class="hanler" href="#">原因</a>
+                                   <div class="tui-tips">
+                                       <span class="arrow-up"></span>
+                                       <div class="tips-content">$!param.getMessage()</div>
+                                   </div>
+                                   </div>
+                                </td>
+                                #elseif ('1' == $!tstatus)
+                                <td>通过</td>
+                                <td><a class="remove-permisson" data-ids="$!param.getId()" data-page="$!page">移除权限</a></td>
+                                #end
+                            </tr>
+                            #end
+                        </tbody>
+                    </table>
+                    </form>
+                    
+                    <form id="js-search-page" action="" method="post"/>
+                        <input type="hidden" name="page" id="js-page-num" value="$!page">
+                        <input type="hidden" name="start" value="$!start">
+                        <input type="hidden" name="end"   value="$!end">
+                    </form>
+                    
+                    <div class="pages fd-clr" align="center">
+                       #if($!paginator)
+			    	   #unifiedPageList($paginator, 5)
+			    	   #end
+		            </div>
+                </div>
+                
+            </div>
+        </div>
+      

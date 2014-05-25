@@ -1,0 +1,203 @@
+#sys-logist dd{
+    text-align:left;
+}
+
+#sys-logist a.login{
+    text-indent:0px;
+    width:auto;
+}
+
+div#businessCard-embed-container{
+	width:402px;
+	height:265px;
+}
+
+#businessCard-embed-container a{
+	color:#0066CC;
+	line-height:1.5;
+}
+
+#businessCard-embed-container a:hover{
+	color:#0066CC;
+	text-decoration:none !important;; 
+}
+
+.businessCard-embed-body{
+	border:1px solid #A3A1A1;
+	width:400px;
+	height:245px;
+}
+
+.businessCard-embed-head{
+	background:url("http://img.china.alibaba.com/cms/upload/2011/512/832/238215_748560284.png") repeat-x;
+	line-height:34px;
+	height:34px;
+	padding:0 15px;
+}
+
+.businessCard-embed-head a{
+	color:#000000 !important;
+	line-height:34px !important;
+}
+
+.businessCard-embed-head div{
+	font-size:12px;
+	font-weight:bold;
+	float:left;
+}
+
+.businessCard-embed-head img{
+	font-size:12px;
+	font-weight:bold;
+	float:left;
+}
+
+.businessCard-embed-head-tpLogo{
+	margin-top:7px;
+	height:18px;
+}
+
+.businessCard-embed-head-tpYear{
+	background:url("http://img.china.alibaba.com/cms/upload/2011/783/142/241387_748560284.png") no-repeat;
+	margin-top:5px;
+	width:61px;
+	height:26px;
+}
+
+.businessCard-embed-title{
+	height:46px;
+	border-bottom:1px dashed #CCCCCC;
+	margin:11px 15px 0 15px;
+	clear:both;
+}
+
+.businessCard-embed-title-name{
+	font-weight:bold;
+	color:#0048A2;
+	float:left;
+}
+
+.businessCard-embed-title-name a{
+	color:#0048A2 !important;
+	font-size:27px;
+}
+
+.businessCard-embed-title-property img{
+	margin-top:2px;
+}
+
+.businessCard-embed-title li{
+	list-style:none outside;
+	float:left;
+	font-size:12px;
+	margin-left:4px;
+	margin-top:17px;
+}
+
+.businessCard-embed-content{
+	margin:7px 15px 0 15px;
+}
+
+.businessCard-embed-content li{
+	clear:both;
+	list-style:none outside;
+	font-size:12px;
+	margin-left:0;
+	line-height:18px;
+	width:370px;
+	height:18px;
+}
+
+.businessCard-embed-content-nologin span{
+	float:left;
+}
+
+.businessCard-embed-content-nologinIcon{
+	display:inline-block;
+	background:url("http://img.china.alibaba.com/cms/upload/2011/683/142/241386_748560284.png") no-repeat -150px 0px;
+	width:12px;
+	height:14px;
+	margin-top:0.5px;
+}
+
+span.businessCard-embed-content-nologinIcon+a{
+	float:left;
+	margin-left:5px;
+}
+
+.businessCard-embed-content-url span{
+	display:inline-block;
+	width:36px;
+}
+
+.businessCard-embed-foot{
+	font-size:12px;
+	margin-top:10px;
+}
+
+.businessCard-embed-foot div{
+	background:url("http://img.china.alibaba.com/cms/upload/2011/683/142/241386_748560284.png") no-repeat -200px 0;
+	height:16px;
+	width:21px;
+	float:right;
+	margin-right:6px;
+}
+
+.businessCard-embed-foot a{
+	float:right;
+}
+
+.tp_year1{background-position:0 -0px;}
+.tp_year2{background-position:0 -29px;}
+.tp_year3{background-position:0 -58px;}
+.tp_year4{background-position:0 -87px;}
+.tp_year5{background-position:0 -116px;}
+.tp_year6{background-position:0 -145px;}
+.tp_year7{background-position:0 -174px;}
+.tp_year8{background-position:0 -203px;}
+.tp_year9{background-position:0 -232px;}
+.tp_year10{background-position:0 -261px;}
+.tp_year11{background-position:0 -290px;}
+.tp_year12{background-position:0 -319px;}
+.tp_year13{background-position:0 -348px;}
+.tp_year14{background-position:0 -377px;}
+.tp_year15{background-position:0 -406px;}
+
+#businessCard-embed-container a.alitalk {
+	background: url("http://img.china.alibaba.com/images/fdevlib/contact-icon.gif") no-repeat scroll 0 -5000px transparent;
+	padding-bottom: 2px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	color: #00349A;
+	display: inline-block;
+	font-size: 12px;
+	height: 21px;
+	line-height: 21px;
+	padding-left: 21px;
+	vertical-align: middle;
+	width: 57px;
+	text-decoration: none !important;
+}
+
+#businessCard-embed-container a.alitalk:hover {
+	color: #FF7300;
+	text-decoration: none;
+}
+#businessCard-embed-container a.alitalk-on {
+	background-position: 0 -60px;
+}
+#businessCard-embed-container a.alitalk-on:hover {
+	background-position: -90px -60px;
+}
+#businessCard-embed-container a.alitalk-off {
+	background-position: 0 -30px;
+}
+#businessCard-embed-container a.alitalk-off:hover {
+	background-position: -90px -30px;
+}
+#businessCard-embed-container a.alitalk-mb {
+	background-position: 0 0px;
+}
+#businessCard-embed-container a.alitalk-mb:hover {
+	background-position: -90px 0px;
+}

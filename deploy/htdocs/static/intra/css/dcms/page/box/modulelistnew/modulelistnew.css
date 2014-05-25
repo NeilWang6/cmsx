@@ -1,0 +1,24 @@
+/**
+ * @author hongss
+ * @userfor 组件管理列表
+ * @date 2013-10-08
+ */
+.publish-content table {
+    line-height:1.5em;
+}
+.dcms-dialog { width:auto; }
+
+.publish-content{
+	padding-top:10px;
+}
+.margin-left-25{
+	margin-left: 25px;
+}
+.dialog-content-center{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.publish-dialog .publish-content{
+	max-height:400px;
+	overflow-x:scroll;	
+}

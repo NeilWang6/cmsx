@@ -1,0 +1,48 @@
+/*
+ * @Author      Sway Deng
+ * @Email       shiwei.dengsw@alibaba-inc.com
+ * @Date        13-4-9 上午17:21
+ * @Description 轻量简版顶通banner提醒，提醒用户升级浏览器到IE最新版本。若是xp用户，并且检测到在使用IE6或IE7，由于能够升级到IE8，则会提醒升级；若是vista和win7用户
+ * ，由于至少能够升级到IE9，则会提醒升级。这一版不再明确指定升级到某一版本。特别的，它一天最多出现一次。
+ * 使用方式就是在页面上引入该文件和对应的css文件即可。
+ * !!cmd:compress=true
+ */
+.iepush-banner{
+    background: url(http://img.china.alibaba.com/cms/upload/2013/104/359/953401_1573916616.png) repeat;
+}
+.iepush-banner .iepush-b1{
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url(http://img.china.alibaba.com/cms/upload/2013/204/359/953402_1573916616.png);
+}
+.iepush-banner .iepush-b2{
+    width: 990px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.iepush-banner .iepush-content{
+    position: relative;
+    float: left;
+    width: 966px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.iepush-banner .iepush-text{
+    position: absolute;
+    left: 255px;
+    top: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+.iepush-banner .iepush-text strong{
+    color: #ffea00;
+}
+.iepush-banner .iepush-cls{
+    float: right;
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+}

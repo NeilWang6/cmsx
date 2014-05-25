@@ -1,0 +1,25 @@
+/**
+ * package  auth header
+ * @author  Arcthur
+ */
+
+.ali-masthead-info { margin-top:42px; }
+.ali-masthead-info .info-list { margin-right:16px; }
+.ali-masthead-info .info-list li { float:left; font-size:14px; color:#a7a7a7; padding:0 16px; }
+.ali-masthead-buyer-info .info-list li {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 60px;
+    background: url("http://img.china.alibaba.com/cms/upload/2011/230/361/163032_1955610150.png") no-repeat scroll -600px 100px transparent;
+}
+.ali-masthead-buyer-info .info-list li.supply {
+    background-position: 23px 6px;
+}
+
+.ali-masthead-buyer-info .info-list li.auth {
+    background-position: 23px -47px;
+}
+
+.ali-masthead-buyer-info .info-list li.rebate {
+    background-position: -250px 5px;
+}

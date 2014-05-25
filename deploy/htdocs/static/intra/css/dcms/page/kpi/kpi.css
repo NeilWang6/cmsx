@@ -1,0 +1,141 @@
+.dcms-main-body,
+.dcms-footer{
+    width: 850px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family:Tahoma,Arial,"ËÎÌåb8b\4f53",sans-serif;
+}
+
+.dcms-main-body a,.dcms-main-body a:link,.dcms-main-body a:hover,.dcms-main-body a:visited,.dcms-main-body a:active{
+    font-size: 12px;
+    font-family:Tahoma,Arial,"ËÎÌåb8b\4f53",sans-serif;
+}
+
+.dcms-main-body td,.dcms-main-body th,.dcms-main-body p{
+    font-size: 12px;
+    font-family:Tahoma,Arial,"ËÎÌåb8b\4f53",sans-serif;
+}
+
+.dcms-grid{
+	border:0 none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 28px;
+}
+	
+.dcms-grid tbody{
+	border: 0 none;
+}
+
+.dcms-grid tbody tr{
+	border:0 none;
+}
+	
+.dcms-grid tbody td{
+	border:0 none;
+	border-bottom: 1px solid #f4f4f4;
+	text-indent: 5px;
+	padding-left:0;
+}
+
+.dcms-grid th{
+	border:0 none;
+	text-align:left;
+	text-indent: 5px;
+	padding-left:0;
+}
+
+.dcms-page-kpi{
+	padding-top: 20px;
+}
+
+.dcms-main-body .title h3{
+	font-size: 14px;
+	font-weight: 700;
+	color: black;
+	line-height:28px;
+}
+
+.dcms-kpi-datepicker{
+	height:40px;
+	border:none;
+	background:#F1F1F1;
+	margin-bottom:12px;
+	position:relative;
+}
+
+.dcms-kpi-datepicker .content{
+	padding:10px 10px;
+	height:20px;
+	overflow:hidden;
+}
+
+#js-datepacker{
+	width:68px;
+	cursor:text;
+}
+
+.dcms-grid tbody{
+	border:none;
+}
+
+.dcms-kpi-chart, .dcms-kpi-data{
+	margin-bottom:12px;
+}
+.dcms-kpi-data .header,.dcms-kpi-chart .header{
+	margin-bottom:4px;
+}
+.dcms-kpi-path .header h4, .dcms-kpi-data .header h4,.dcms-kpi-chart .header h4{
+	display: inline-block;
+	font-weight: 700;
+	color: black;
+	*display: inline;
+	*float:left;
+}
+.dcms-kpi-data .header .comment,.dcms-kpi-chart .header .comment{
+	color: #6E84B6; 
+	line-height:18px;
+	vertical-align: bottom;
+	*float:left;
+}
+
+.dcms-kpi-chart .header span{
+	padding:0 6px;
+}
+
+
+.dcms-kpi-chart .content {
+	height:410px;
+	border:solid 1px #ADBCDD;
+	border-top:solid 2px #ADBCDD;
+}
+
+.dcms-kpi-data .content{
+	border:solid 1px #ADBCDD;
+	border-top:none;
+	clear:both;
+}
+
+.dcms-kpi-data .dcms-grid{
+    width: 848px;
+}
+.dcms-grid th{
+	padding-left: 5px;
+	text-align: left;
+}
+
+.dcms-grid span.up{
+	color:red;
+	padding-right:10px;
+	background-position: 28px -47px;
+}
+
+.dcms-grid span.down{
+	color:#333;
+	padding-right:10px;
+	background-position: 28px -77px;
+}
+
+.dcms-grid a:link, .dcms-grid a:visited{
+	color:#666;
+}

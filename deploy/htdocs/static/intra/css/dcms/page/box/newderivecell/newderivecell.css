@@ -1,0 +1,88 @@
+/**
+ * @author springyu
+ * @userfor ≈……˙CELLπ¶ƒ‹CSS
+ * @date 2012-2-1
+ */
+
+.list-tab-t li {
+	color: #222;
+}
+.header-dialog-content a {
+	margin: 0 10px;
+	vertical-align: middle;
+}
+.ext-width{
+	min-width: 500px;
+	width:auto !important;
+}
+.dcms-box-upload .link-upload {
+	margin-top: 0;
+	width: auto;
+}
+.dcms-box-upload .link-upload .popup {
+	top: 24px;
+}
+.dcms-box-upload .cell-upload {
+	margin: 4px;
+	display: inline-block;
+}
+.dialog-basic .vertical-img img {
+	width: 170px;
+	height: 150px;
+	max-height: 150px;
+	max-width: 170px;
+}
+.cell-attribute-img {
+	float: left;
+	margin: 4px;
+}
+.cell-attribute-img .cell-img-con {
+	border: 1px solid #D4D4D4;
+	padding: 4px;
+}
+.cell-attribute {
+	float: left;
+}
+.cell-attribute .label {
+	display: inline-block;
+	width: 50px;
+	text-align: right;
+}
+.cell-attribute .row {
+	margin: 8px 4px;
+}
+.dialog-basic-cell {
+	min-width: 584px;
+	width: 630px;
+	max-width: 630px;
+}
+.row .dcms-textarea {
+	max-width: 195px;
+	max-height: 50px;
+}
+.row .dcms-input-text {
+	width: 195px !important;
+}
+.auto-size .checkbox {
+	height: 18px;
+	vertical-align: middle;
+}
+
+.auto-size label {
+	margin-top: 0;
+}
+.auto-size .auto {
+	text-align: left;
+	vertical-align: middle;
+	margin-top: 0;
+	width: 68px;
+}
+.row .width{
+	display:inline-block;
+}
+.auto-size .width-input {
+width: 50px !important;
+}
+.pic-desc{
+	padding:0 4px;
+}

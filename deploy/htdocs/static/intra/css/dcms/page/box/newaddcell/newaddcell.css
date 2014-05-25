@@ -1,0 +1,94 @@
+/**
+ * @authur zhuqh
+ * @usefor cell¿â
+ * @date   2012-01-05
+ */
+.dcms-box-search {
+	display: block;
+	height: 40px;
+}
+
+.submit-error-message {
+	color: #f00 ! important;
+}
+
+.cell-attribute {
+	margin: 0 auto;
+}
+.dcms-box-cell-left, .dcms-box-cell-right {
+	float: left;
+	margin: 8px;
+}
+
+.vertical-img {
+	width: 170px;
+	height: 150px;
+	border: 1px solid #BDC7D8;
+}
+.box-img img {
+	max-width: 170px;
+	max-height: 150px;
+}
+.dcms-box-upload {
+	margin: 8px auto;
+}
+.dcms-box-upload .link-upload {
+ 	margin:0 2px !important;
+ 	width:auto !important;
+	display: inline-block;
+}
+.dcms-box-upload .link-upload .dcms-box-grid-a {
+	display: inline-block;
+}
+.dcms-box-upload .cell-upload {
+
+	display: inline-block;
+}
+
+.cell-attribute .label {
+	display: inline-block;
+	width: 50px;
+	text-align: right;
+}
+.cell-attribute .row {
+	margin: 8px 4px;
+}
+.row .dcms-input-text {
+	width: 205px !important;
+}
+.auto-size .checkbox {
+	height: 18px;
+	vertical-align: middle;
+}
+
+.auto-size label {
+	margin-top: 0;
+}
+.auto-size .auto {
+	text-align: left;
+	vertical-align: middle;
+	margin-top: 0;
+	width: 68px;
+}
+.row .width {
+	display: inline-block;
+}
+.auto-size .width-input {
+	width: 50px !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+.pic-desc{
+	padding: 0 4px;
+	display:inline-block;
+}
+.textarea{
+	margin:0 auto;
+	padding:0 10px;
+}
+.textarea textarea{
+	display:block;
+	max-width: 900px;
+	max-height: 500px;
+}
+

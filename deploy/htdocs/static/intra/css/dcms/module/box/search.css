@@ -1,0 +1,101 @@
+/**
+ * @author  zhuguo.nizg 
+ * @userfor search bar
+ * @date    2012-01-06
+ */
+.dcms-box-search{
+    float:left;
+    color:#444444;
+    padding:12px 22px;
+}
+.dcms-box-search .add{
+    float:left;
+    width:100px;
+}
+.dcms-box-search .add a{
+    height:30px;
+    line-height:30px;
+    padding:6px 12px;
+    background:#679dc9;
+    border:1px solid #6295bf;
+    border-bottom-color:#294963;
+    border-radius:4px;
+    color:#e9eef2;
+}
+.dcms-box-search .add a:hover{
+    text-decoration:none;
+}
+.dcms-box-search .searchform{
+    float:left;
+}
+.dcms-box-search .searchform .scope{
+    margin-right:32px;
+}
+.dcms-box-search .searchform .page-color{
+    margin-right:24px;
+}
+.dcms-box-search .page-color span{
+    display:inline-block;
+    width:15px;
+    height:14px;
+    background:url(http://img.china.alibaba.com/cms/upload/2012/500/472/274005_1357790532.png);
+    vertical-align:-2px;
+    cursor:pointer;
+}
+.dcms-box-search .searchform .search-btn{
+    background:url(http://i05.c.aliimg.com/cms/upload/2012/376/962/269673_1357790532.png);
+}
+.dcms-box-search .page-color .red{
+    background-position:0 0;
+}
+.dcms-box-search .page-color .red.selected{
+    background-position:0 -14px;
+}
+.dcms-box-search .page-color .blue{
+    background-position:-15px 0;
+}
+.dcms-box-search .page-color .blue.selected{
+    background-position:-15px -14px;
+}
+.dcms-box-search .page-color .green{
+    background-position:-30px 0;
+}
+.dcms-box-search .page-color .green.selected{
+    background-position:-30px -14px;
+}
+.dcms-box-search .page-color .orange{
+    background-position:-45px 0;
+}
+.dcms-box-search .page-color .orange.selected{
+    background-position:-45px -14px;
+}
+.dcms-box-search .page-color .other{
+    background-position:-60px 0;
+}
+.dcms-box-search .page-color .other.selected{
+    background-position:-60px -14px;
+}
+.dcms-box-search .searchform .keyword{
+    position:relative;
+}
+.dcms-box-search .searchform input[name=keyword]{
+    width:292px;
+    height:18px;
+    padding:2px 28px 2px 2px;
+    border:1px solid #679dc9;
+}
+.dcms-box-search .searchform .search-btn{
+    position:absolute;
+    right:4px;
+    top:-2px;
+    width:20px;
+    height:20px;
+    border:none;
+    text-indent:-9999px;
+    cursor:pointer;
+    background-position:-2px -74px;
+}
+.dcms-box-search .searchform .orderby{
+    display:block;
+    padding-top:12px;
+}

@@ -1,0 +1,177 @@
+@charset "gb2312";
+/* CSS Document */
+.mjc h2{
+	text-align: center;
+}
+.mjc{
+	width:100%;
+	font-size:12px;
+}
+.mjc-row{
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	margin: 10px;
+	0px;
+}
+
+.bmc{
+	display: none;
+	width:500px;
+	height:150px;
+	font-size:12px;
+	background-color: #FFF;
+}
+.bmc-row{
+	height:26px;
+	line-height: 26px;
+	text-align: left;
+	padding: 5px;
+}
+.bmc-row label{
+	display: inline-block;
+	width:80px;
+	text-align: right;
+}
+.bmc-row span.choose-category{
+	display: inline-block;
+	cursor:pointer;
+	height:24px;
+	line-height:24px;
+	background:url("http://img.china.alibaba.com/cms/upload/2011/711/031/130117_1070828466.gif") no-repeat 0 4px;
+	padding-left:18px;
+	color:#FF7F00;
+}
+.bmc input{
+	width:200px;
+	height:24px;
+}
+.bmc input.form-button{
+	width:80px;
+	height:30px;
+}
+.bp{
+	display: none;
+	width:600px;
+	font-size:13px;
+	background-color: #FFF;
+}
+
+
+.mjc-table {
+	width: 100%;
+	line-height: 28px;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#mjc-table,#mjc-table td,#mjc-table th{
+	font-size: 12px;
+}
+
+.mjc-table caption {
+	text-align: left;
+	border-bottom: 1px solid #9da5b4;
+	margin-bottom: 1px;
+}
+
+.mjc-table thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.mjc-table thead tr {
+	background-color: #f6f6f7;
+	text-align: left;
+}
+
+.mjc-table th {
+	padding-left: 12px;
+}
+
+.mjc-table col {
+	border-right: 1px solid #ccc;
+}
+
+.mjc-table td{
+	display: table-cell;
+	vertical-align: inherit;
+	padding-left: 12px;
+}
+
+.mjc-table tr{
+	border-bottom: 1px solid #d8dbe1;
+}
+
+.mjc-table thead tr{
+	border-bottom: 0px;
+}
+/*.mjc-table .odd {
+	background-color:#ECF1FA;
+}*/
+
+.mjc-table tr:hover {
+	cursor:pointer;
+	background-color:#f6f6f7;
+}
+
+/*.mjc-table thead tr:hover {
+	background: #5881D6;
+	color:white;
+}*/
+
+.bp-table {
+	margin:0 auto;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #5881D6;
+}
+.bp-table caption {
+	border:1px solid #5881D6;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 0px;
+	height: 1.2em;
+}
+
+.bp-table thead {
+	color:white;
+	background: #5881D6;
+	border-top: 1px solid #5881D6;
+	border-bottom: 1px solid #5881D6;
+}
+
+.bp-table th {
+	font-weight: normal;
+	text-align: left;
+}
+
+.bp-table col {
+	border-right: 1px solid #ccc;
+}
+
+
+.bp-table th{
+	padding: 0.1em 1em;
+}
+.bp-table td{
+	padding: 0.1em 1em;
+}
+.bp-table tr{
+	height: 2em;
+}
+.bp-table .odd {
+	background-color:#ECF1FA;
+}
+
+.bp-table tr:hover {
+	cursor:pointer;
+	background-color:#FFCB95;
+}
+
+.bp-table thead tr:hover {
+	background: #5881D6;
+	color:white;
+}

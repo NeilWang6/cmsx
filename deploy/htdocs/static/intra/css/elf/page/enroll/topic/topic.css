@@ -1,0 +1,41 @@
+/**
+ * @author huangxt
+ * @date   2012.09.11
+ */
+.doc { width:990px;}
+.addrow { cursor:pointer; margin-left:5px; }
+.delrow { cursor:pointer; margin-left:3px;}
+.data-table { width:740px; }
+.data-table .data-table-title-width { width:180px; }
+.data-table .data-table-bread {padding-top:30px; padding-bottom:5px;}
+.data-table .data-table-title { text-align:right; vertical-align:top; padding-top:15px; font-weight:bold; }
+.data-table .data-table-input {padding-top:15px; padding-bottom:12px;}
+.data-table input { width:500px; }
+.data-table .errmsg {color:red; line-height:20px;}
+.hiddenDiv { display:none; }
+.showDiv { display:block; }
+
+.crumbs-unorder-width { width:240px; }
+.list-info { padding-left:12px; line-height:22px; width:760px;}
+.list-info li { border-bottom:1px solid #eaeef1; padding:15px 0;}
+.list-info dd { width:630px;}
+.list-info dt { float:right;}
+.list-info dt.ht-three { padding-top:38px;}
+.list-info dt.ht-two { padding-top:16px;}
+.list-info .select-type {text-align:center; width:95px;}
+.button-area{padding-left:200px;padding-top:20px;}
+.list-imgs li { font-size:0; line-height:0;}
+.list-imgs li {width: 100px;padding-right: 12px;}
+.list-imgs label{display: inline-block;width:100px;text-align:center; font-size:12px; line-height:20px;padding-top:4px;}
+.topicinput {width:200px;}
+.topicselect {width:100px;}
+.topicdesignType {width:150px;}
+.topictextarea {width:540px;height:100px;}
+.button-area{padding-bottom:40px;}
+.special-hr{border-bottom:2px solid #9da4b4;padding-top:10px;font-size:12px;font-weight:bold;line-height:20px;}
+.form-vertical .txt-des { padding-left:12px; font-weight:bold;}
+.form-vertical .input-small { width:104px;}
+.form-vertical .layout{overflow: hidden;}
+.form-vertical .use-other-item{
+	display: none;
+}

@@ -41,7 +41,7 @@
     </services:module-loader> 
 
 	
-	<beans:bean id="permissionService" class="com.apachecms.cmsx.auth.permission.service.PermissionServiceImpl">
+	<beans:bean id="authPermissionService" class="com.apachecms.cmsx.auth.permission.service.AuthPermissionServiceImpl">
     	<beans:property name="urlProtected">
     		<beans:value>
    		       member.screen.modifyLoginId=FREE,EMPLOYEE,TP					

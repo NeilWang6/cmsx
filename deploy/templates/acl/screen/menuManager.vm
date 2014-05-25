@@ -1,0 +1,35 @@
+$rundata.setLayout('default.vm')
+<style type="text/css">
+.dcms-tree-wrapper{ }
+.dcms-tree-list{ padding-left:20px;}
+</style>
+<div class="dcms-content">
+	<input id="dcms-page-title" type="hidden" value="菜单管理">
+	<div class="dcms-toggle fd-hide" id="js-dcmstoggle">
+		<div class="dcms-toggle-icon"></div>
+	</div>
+
+	<div class="dcms-form">
+        <fieldset>
+            <legend>#if($!error)<font color="red">$!error</font>#else菜单管理#end</legend>
+            <div class="cagegory-show">
+                <div class="cagegory-show-hd">
+                    <h3>菜单展示</h3>
+                    <button id="addNode" type="submit" class="dcms-btn submit-btn">新增顶级菜单</button>
+                </div>
+
+                <div class="cagegory-show-bd">
+                    <div id="treeshow">
+
+
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<form id="del-menu" method="post" action="#">
+	<input type="hidden" name="action"                   value="AclMenuAction" />
+	<input type="hidden" name="event_submit_do_del_menu" value="true" />
+	<input type="hidden" name="id" value="" />
+</form>

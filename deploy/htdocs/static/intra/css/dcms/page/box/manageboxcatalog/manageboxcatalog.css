@@ -1,0 +1,61 @@
+/**
+ *     素材库类目管理样式
+ *  springyu
+ */
+
+.dcms-box-body {
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+    padding-left: 201px;
+}
+.catalog-body {
+    margin: 10px;
+    width: 500px;
+    border: 1px solid #dedede;
+}
+.catalog-body .dTreeNode {
+    margin: 2px 4px;
+    display: block;
+    line-height: 32px;
+}
+.catalog-body .dTreeNode:hover {
+    background-color: #F1F1F1;
+}
+.catalog-body .head {
+    background-color: #dbdcde;
+    line-height: 32px;
+    padding: 4px 8px;
+    font-size: 2em;
+}
+.dtree img {
+    vertical-align: -4px !important;
+}
+.dTreeNode .plus-minus {
+    display: inline-block;
+    padding: 0 4px;
+}
+.dTreeNode .elem {
+    display: inline-block;
+}
+.catalog-body .blank {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.dcms-box-module-tree {
+    display: none;
+    margin: 0px 16px 0 16px;
+    padding: 0;
+}
+.dcms-box-module-tree .btn-template-choose {
+    display: inline-block;
+    margin-top: 4px;
+}
+.dialog-content {
+    line-height: 100px;
+    height:100px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+

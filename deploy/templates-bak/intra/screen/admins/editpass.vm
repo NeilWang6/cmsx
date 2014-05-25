@@ -1,0 +1,30 @@
+$page.setTitle("修改密码")
+<form method="post" id="info_post">
+<div class="bk8"></div> 
+<div class="pad_10">
+<div style='overflow-y:auto;overflow-x:hidden' class='scrolltable'>
+<table width="100%" cellspacing="0" class="table_form contentWrap">
+<tr>
+  <th width="80">我的用户名</th>
+  <td><strong>admin </strong></td>
+</tr>
+<tr>
+   <th width="80"><font color="red">*</font>原密码</th>
+   <td><input type="password"  name="olduserpass" id="olduserpass" class="input-text" ></td>
+</tr> 
+<tr>
+   <th width="80"><font color="red">*</font>新密码</th>
+   <td><input type="password"  name="user_pass" id="user_pass" class="input-text" ></td>
+</tr> 
+<tr>
+   <th width="80"><font color="red">*</font>重复新密码</th>
+   <td><input type="password"  name="pwdconfirm" id="pwdconfirm" class="input-text" ></td>
+</tr> 
+</table>
+</div>
+<div class="bk10" ></div>
+<div class="btn">
+<input class="button" type="submit" value="提交表单">
+</div> 
+</div>
+</form> 

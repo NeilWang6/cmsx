@@ -1,0 +1,77 @@
+#page-setting {
+    width:697px;
+    background:#fff;
+    border:2px solid #cddcea;
+    -webkit-box-shadow:0 0 0 1px #b0c6db inset;
+    -moz-box-shadow:0 0 0 1px #b0c6db inset;
+    box-shadow:0 0 0 1px #b0c6db inset;
+    padding:10px;
+    z-index:1000;
+    margin:0;
+}
+#page-setting label {
+    width: 86px;
+}
+#page-setting #js-get-hostname{
+    width:auto;
+    max-width:240px;
+}
+#page-setting input[type="text"], #page-setting input[type="button"]{
+    margin: 4px 0;
+}
+#page-setting .dcms-form input[type="text"], #page-setting .dcms-form textarea{
+    width:247px;
+}
+#page-setting .dcms-form input[type="text"]:focus, #page-setting .dcms-form textarea:focus{
+   -webkit-box-shadow:0 0 0 1px #6c84b8 inset;
+   -moz-box-shadow:0 0 0 1px #6c84b8 inset;
+   box-shadow:0 0 0 1px #6c84b8 inset;
+}
+#page-setting .title {
+   width:86px;
+   font-weight:700;
+   line-height:30px;
+   text-align:right;
+   color:#000000;
+}
+#page-setting .title span{
+	font-weight:400;
+}
+#page-setting .cancelBtn{
+   height:23px;
+   padding-left:22px;
+   padding-right:22px;
+   color:#409ad6;
+   background-color:#f3f8fb;
+   border:1px solid #7ba6c9;
+   border-bottom:1px solid #374c7a;
+   font-weight: 700;
+   cursor: pointer;
+}
+#page-setting .description {
+    margin-left: 88px;
+    text-align: left;
+    color:#787878;
+}
+#page-setting .dcms-page-release-time{
+    display: none;
+}
+#page-setting .line {
+    border-top: 1px solid #BDC7D8;
+    margin: 10px 0 5px 5px;
+    width: 610px;
+}
+.selectCatBtn{
+    height:23px;
+    padding:0 20px;
+    cursor: pointer;
+}
+.catsName {
+    display:inline-block;
+    vertical-align:top;
+    padding-top:6px;
+    max-width:450px;
+}
+
+
+

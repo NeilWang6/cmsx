@@ -1,0 +1,98 @@
+/**
+ * create by lusheng.linls on 2012.09.20
+ */
+ #tab{width:990px;}
+.content {
+    width: 800px;
+}
+.vline {
+    color: #979797;
+}
+/** tab */
+#tab .f-tab-b {
+    display: none;
+}
+.tab-b {
+    height: 27px;
+    border-bottom: solid 2px #8e9dc6;
+    padding: 0;
+}
+.tab-b li {
+    position: relative;
+    float: left;
+    height: 25px;
+    overflow: hidden;
+    line-height: 32px;
+    cursor: pointer;
+}
+.tab-b a {
+    text-decoration: none !important;
+    padding: 0 0 8px 10px;
+    color: #323232;
+}
+.tab-b .current {
+    border: solid 2px #8e9dc6;
+    border-bottom-color: #ffffff;
+    line-height: 28px;
+}
+.tab-b .current a {
+    color: #4a6bae;
+    font-weight: bold;
+}
+.detail {
+    padding-top: 10px;
+}
+.detail .sample {
+    float: left;
+}
+.detail .wangwang {
+    margin-bottom: -5px;
+}
+.detail .vline {
+    padding: 0 5px;
+}
+.sample {
+    margin-bottom: 10px;
+}
+.display-none {
+    display: none;
+}
+.removed {
+    display: none;
+}
+.inline {
+    display: inline;
+}
+.js-series-detail .sample {
+    padding-bottom: 0;
+}
+.sample .show-win-1st {
+    margin-right: 20px;
+}
+.sample .sample-new{
+    text-align: center;
+    background-color: #fbfbfb;
+}
+.sample .sample-new .icon-new{
+     background: url("http://img.china.alibaba.com/cms/upload/2012/113/634/436311_51297002.png") no-repeat scroll -10px -28px transparent;
+     padding: 9px 19px;
+    
+}
+.sample-new .active{
+    height:127px;
+    line-height: 127px;
+    border-top: 1px solid #DDDDDD;
+    padding: 0;
+}
+.sample-new .active a{
+    width: 100%;
+    display: inline-block;
+    line-height: 125px;
+}
+.js-seriesid-del {
+	margin-left:7px;
+}
+/*showin*/
+/*add:zhuliqi show-win css文件被多处调用，所以写在此处 覆盖老样式*/
+.show-win-1st, .show-win-2nd{width:224px;}
+.show-win-2nd .operate li{padding-left:12px;width:100px;}

@@ -1,0 +1,91 @@
+/**
+ * @package opensearch.theme.classic
+ * @author  Edgar
+ * @version 0.3.100809
+ * @version 0.3.101111
+*/
+.vertical-img{
+    display:table;
+    text-align:center;
+    overflow:hidden;
+    font-size:0;
+    *display:block; /* for IE6/7 */
+}
+.vertical-img .box-img{
+    display:table-cell;
+    vertical-align:middle;
+    *display:inline; /* for IE6/7 */
+    *writing-mode:tb-rl; /* for IE6/7，改变书写方向，从上至下，从右至左 */
+    *text-align:center;
+    *height:100%;
+}
+.vertical-img img{
+    vertical-align:middle;
+}
+.opensearch-classic .cell-product-2nd dd{
+    height:18px;
+}
+.opensearch-classic .cell-product-2nd dd.price{
+    float:left;
+}
+.opensearch-classic .cell-product-2nd dd.quantity{
+    float:right;
+}
+.opensearch-classic .cell-product-2nd dd.company{
+    clear:both;
+}
+.opensearch-classic .fd-cny,
+.opensearch-classic .usd{
+    color:#c00;
+    padding:0 4px;
+}
+.opensearch-classic .value{
+    color:#c00;
+    font-size:14px;
+    font-weight:700;
+}
+.opensearch-classic .price .txt{
+    color:#c00;
+    padding-left:4px;
+}
+.opensearch-classic .cell-product-2nd dt{
+    border:1px solid #ddd;
+}
+.type-img-100 .cell-product-2nd dt{
+    width:108px;
+    height:108px;
+}
+.type-img-150 .cell-product-2nd dt{
+    width:158px;
+    height:158px;
+}
+.type-img-220 .cell-product-2nd dt{
+    width:228px;
+    height:228px;
+}
+.type-img-310 .cell-product-2nd dt{
+    width:318px;
+    height:318px;
+}
+.type-img-100 .cell-product-2nd{
+    width:110px;
+    margin:0 13px 6px;
+}
+.type-img-150 .cell-product-2nd{
+    width:160px;
+    margin:0 15px 6px;
+}
+.type-img-220 .cell-product-2nd{
+    width:230px;
+    margin:0 4px 6px;
+}
+.type-img-310 .cell-product-2nd{
+    width:320px;
+    margin:0 78px 6px;
+}
+/* private offer 图片加锁 by lixd 2010.11.17*/
+.type-img-150  .cell-product-2nd dt{position:relative;}
+.type-img-150 .cell-product-2nd dt .vertical-img {width:158px;height:158px;text-align:center;}
+.type-img-150  .cell-product-2nd dt .block{position:absolute;width:158px;height:158px;}
+.type-img-150  .cell-product-2nd dt .block p{background:url(http://img.china.alibaba.com/cms/upload/2010/396/200/2693_110323176.png) no-repeat;top:0;left:0;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.china.alibaba.com/cms/upload/2010/396/200/2693_110323176.png', sizingMethod='crop');width:158px;height:158px;}
+.type-img-150  .cell-product-2nd dt .block a{width:158px;height:158px;display:inline-block;position:relative;z-index:999}

@@ -1,0 +1,137 @@
+$rundata.setLayout('default.vm')
+<div class="tabs" id="tabs">
+    <div class="tui-tabs-header site-tab">
+        <ul class="list-tabs-t">
+            <li class="current"><a href="$adminModule.setTarget('getMyPermission.html?status=1')">我的站点权限</a></li>
+            <li><a href="$positionModule.setTarget('primarySites.vm')">全部站点</a></li><!-- current需要加粗 -->
+        </ul>
+    </div>
+    <div class="status">
+		<a #if($!status=='1') class="current" #end href="$adminModule.setTarget('getMyPermission.html?status=1')">已授权</a>|
+		<a #if($!status=='0') class="current" #end href="$adminModule.setTarget('getMyPermission.html?status=0')">申请中</a>|
+		<a #if($!status=='-1') class="current" #end href="$adminModule.setTarget('getMyPermission.html?status=-1')">被驳回</a>
+	</div>
+	
+    <input type="hidden" id="userName" value="$!userName"/>
+	<input type="hidden" id="status" value="$!status"/>
+	
+    #if($!cmsSiteParams)
+       	<!-- 我的站点权限  -->
+        <div class="tab-a-box">
+            <div class="site-list">
+                <ul class="">
+    				#foreach($cmsSiteParam in $!cmsSiteParams)
+    					<li>
+                        	<span class="original-name">$!cmsSiteParam.name</span>
+                            <dl>
+    							<input type="hidden" class="site-id" value="$!cmsSiteParam.id"/>
+                                <dt><span class="site-name">$!cmsSiteParam.name</span></dt>
+                                <dd>站点类型：<span class="site-type">$!cmsSiteParam.pname</span></dd>
+        	                    <dd class="user-name">业务负责人：
+                                    <a href="http://work.alibaba-inc.com/work/search?keywords=$!cmsSiteParam.siteManager.get(0).userID&type=person" target="_blank">$!cmsSiteParam.siteManager.get(0).userName </a>
+                				</dd>
+        	                    #if($!status=='1')
+    								<dd>已授权角色：
+        								<span class="grant-roles">
+        									#foreach($grantRole in $!cmsSiteParam.siteRoleParam.grantRoles)
+        										$!grantRole.name
+        										#if($velocityCount<$!cmsSiteParam.siteRoleParam.grantRoles.size())
+        											,
+        										#end
+        									#end
+        								</span>
+        							</dd>
+    								<dd>
+                            			<a class="btn-basic btn-blue scan-site"  target="_blank" href="$positionModule.setTarget('index.html').addQueryData('siteid',$!cmsSiteParam.id)"">进入站点</a>
+										<a class="btn-basic btn-gray apply-roles" href="javascript:void(0);">申请权限</a>
+									</dd>
+								#elseif($!status=='0')
+            	                    <dd>申请中角色：
+        								<span class="applying-roles">
+        									#foreach($applyRole in $!cmsSiteParam.siteRoleParam.applyRoles)
+        										$!applyRole.name
+        										#if($velocityCount<$!cmsSiteParam.siteRoleParam.applyRoles.size())
+            										,
+            									#end
+            								#end
+        								</span>
+        							</dd>
+									<dd>
+                            			<a class="btn-basic btn-gray scan-site"  target="_blank" href="$positionModule.setTarget('index.html').addQueryData('siteid',$!cmsSiteParam.id)">浏览站点</a>
+										<a class="btn-basic btn-gray apply-roles" href="javascript:void(0);">申请权限</a>
+									</dd>
+								#elseif($!status=='-1')
+									<dd>被驳回角色：
+        								<span class="applying-roles">
+        									#foreach($cancelRole in $!cmsSiteParam.siteRoleParam.cancelRoles)
+        										$!cancelRole.name
+        										#if($velocityCount<$!cmsSiteParam.siteRoleParam.cancelRoles.size())
+            										,
+            									#end
+            								#end
+        								</span>
+        							</dd>
+									<dd>
+                            			<a class="btn-basic btn-blue apply-roles" href="javascript:void(0);">再次申请</a>
+                						<a class="btn-basic btn-gray scan-site"  target="_blank" href="$positionModule.setTarget('index.html').addQueryData('siteid',$!cmsSiteParam.id)">浏览站点</a>
+									</dd>
+								#end
+                            </dl>
+                        </li>
+    				#end
+                </ul>
+            </div>
+        </div>
+    	
+    	<!-- 全部站点  -->
+        <div class="tab-a-box">
+        </div>
+    	
+    	##申请站点弹出框
+    	<div class="dialog-basic dialog-apply-roles">
+            <div class="dialog-b">
+                <header class="apply-roles-draggable-area">
+                    <a href="#" class="close">关闭</a>
+                    <h5>站点申请</h5>
+                </header>
+                <section class="dialog-content">
+    				<form name="applyRolesForm" class="apply-roles-form" action="" method="post">
+    					<input type="hidden" name="siteId" id="siteId" value="$!siteId" />
+    					<input type="hidden" name="catId" id="catId" value="" />
+    					$csrfToken.hiddenField
+    					<div class="apply-roles-dialog">
+    						<dl>
+                                <dt>申请人：<span id="applyUser"></span></dt>
+    							<dt>申请站点：<span id="siteName"></span></dt>
+        	                    <dd>站点类型：<span id="siteType"></span></dd>
+        	                    <dd>已申请角色：<span id="grantRoles"></span></dd>
+        	                    <dd>申请中角色：<span id="applyingRoles"></span></dd>
+    							<dd>权限期限：一年</dd>
+    							<dd>
+    								<span class="bold-font">选择申请角色：</span>
+    								<span id="roles" class="roles-list"></span>
+    							</dd>
+                            </dl>
+                        </div>
+    					
+                    </form>
+                </section>
+                <footer>
+                    <button type="button" class="btn-basic btn-blue mg-16 btn-ok">提交</button>
+                    <button type="button" class="btn-basic btn-gray btn-cancel">取 消</button>
+                </footer>
+            </div>
+        </div>
+	#else
+		<div class="no-info">
+    		#if($!status=='1')
+    			您没有已授权的站点
+    		#elseif($!status=='0')
+    			您没有申请中的站点
+    		#elseif($!status=='-1')
+    			您没有被驳回的站点
+    		#end
+		</div>
+	#end
+</div>
+

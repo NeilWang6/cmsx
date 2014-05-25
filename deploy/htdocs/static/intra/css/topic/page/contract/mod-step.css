@@ -1,0 +1,24 @@
+/**
+ * package  module step
+ * @author  Arcthur
+ */
+
+.mod-authentic-steps dl,
+.mod-authentic-steps dd li,
+.mod-seller-steps dl,
+.mod-seller-steps dd li,
+.mod-seller-steps .extend { background:url("http://img.china.alibaba.com/cms/upload/operation/step.png") no-repeat; }
+
+.mod-authentic-steps dl { background-repeat:repeat-x; }
+.mod-authentic-steps dt { float:left; width:196px; padding-top:14px; font-size:22px; color:#333; text-align:center; }
+.mod-authentic-steps dd li { float:left; width:150px; padding-top:8px; font-size:14px; color:#7f7f7f; text-align:center; background-position:left -54px; }
+.mod-authentic-steps dd li em { padding:0 12px; font: bold 30px/1.5 Arial,Tahoma,"ËÎÌו",sans-serif; }
+.mod-authentic-steps dd .active { color:#ff7300; }
+
+.mod-seller-steps dl { background-repeat:repeat-x; }
+.mod-seller-steps dt { float:left; width:196px; padding-top:14px; font-size:22px; color:#333; text-align:center; }
+.mod-seller-steps dd li { float:left; width:188px; padding-top:8px; font-size:14px; color:#7f7f7f; text-align:center; background-position:left -54px; }
+.mod-seller-steps dd li em { padding:0 12px; font: bold 30px/1.5 Arial,Tahoma,"ËÎÌו",sans-serif; }
+.mod-seller-steps dd .active { color:#ff7300; }
+
+.mod-seller-steps .extend { padding:14px 0 0 14px; font-size:22px; background-repeat:repeat-x; }

@@ -1,0 +1,11 @@
+/**
+ * @author cheng.zhangch
+ * @usefor ���߱����б�ҳ��
+ * @date   2013.12.09
+ */
+    
+@import url(http://style.c.aliimg.com/app/static/css/box/global/m/reset.css);
+@import url(http://style.c.aliimg.com/app/static/css/box/global/m/type.css);
+@import url(/static/intra/css/widget/wireless/header.css);
+@import url(/static/intra/css/topic/wireless/wireless-topic.css);
+@import url(/static/intra/css/topic/wireless/topicdetail.css);

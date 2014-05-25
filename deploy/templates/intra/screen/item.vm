@@ -1,0 +1,53 @@
+ $rundata.setLayout('acl:default.vm')  
+ <div class="dcms-box-body fd-clr"> 
+<table>
+	<form name="itemForm" action="item_list.htm" method="post">
+		$csrfToken.hiddenField
+		<input type="hidden" name="action" value="ItemAction" />
+		<input type="hidden" name="event_submit_do_add_item" value="true"/>
+		#if($!item.id)
+			<input type="hidden" name="actionType" value="modify"/>
+		#end
+        <tr>
+            <td>指标id：</td>
+    		<td><input type="text" name="itemId" placeholder="123" value="$!item.id" #if($!item.id) readonly #end/></td>
+        </tr>
+    	<tr>
+            <td>指标名称：</td>
+    		<td><input type="text" name="itemName" placeholder="名称" value="$!item.name"/></td>
+        </tr>
+    	<tr>
+            <td>指标类型：</td>
+    		<td><input type="text" name="ctrlType" placeholder="textarea" value="$!item.ctrlType"/></td>
+        </tr>
+    	<tr>
+            <td>指标数据类型：</td>
+    		<td>
+    			<select id="itemType" name="itemType">
+        			<option value="1" #if($!item.itemType == 1) selected #end>普通文本</option>
+    				<option value="2" #if($!item.itemType == 2) selected #end>clob大字段</option>
+    			</select>
+    		</td>
+        </tr>
+    	<tr>
+            <td>指标数据来源：</td>
+    		<td><input type="text" name="ctrlSourceType" placeholder="meta" value="$!item.ctrlSourceType"/></td>
+        </tr>
+    	<tr>
+            <td>指标长度限制：</td>
+    		<td><input type="text" name="maxLen" placeholder="64" value="$!item.maxLen"/></td>
+        </tr>
+    	<tr>
+            <td>指标格式：</td>
+    		<td><input type="text" name="format" placeholder="/^(?:\d|(?:1\d))$/|||值必须小于20" value="$!item.format"/></td>
+        </tr>
+    	<tr>
+            <td>指标属性：</td>
+    		<td><input type="text" name="attribute" placeholder="img" value="$!item.attribute"/></td>
+        </tr> 
+    	<tr>
+            <td><input type="submit" value="保存"/> </td>
+        </tr>
+    </form>
+</table>
+</div>

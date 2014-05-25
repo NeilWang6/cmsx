@@ -1,0 +1,84 @@
+/**
+ * tool-bar.css
+ * 阿里巴巴头部(toolbar)样式
+ *
+ * by leijun.wulj@alibaba-inc.com
+ * 20100624
+ */
+
+/********* reset ********/
+#header h1,#header h2,#header p,#header dl,#header dt,#header dd,#header ul,#header li,#header fieldset,#header lengend,#header button,#header input,#header form{margin:0;padding:0}
+#header,#header button,#header input{font:12px/1 Tahoma,Helvetica Arial,"\5b8b\4f53",sans-serif}
+#header h1,#header h2{font-size:100%;font-weight:normal}
+#header ul{list-style:none}
+#header legend {color:#000}
+#header fieldset,#header img{border:none}
+#header button,#header input{font-size:100%}
+:focus{outline:0;}
+/********* public ********/
+#header{position:relative;color:#333;z-index:200}
+#header a:link,#header a:visited{color:#333;text-decoration:none}
+#header a:hover{color:#FF7300;text-decoration:underline}
+#header .hide{display:none}
+#top-nav .top-cont{width:952px;margin:0 auto}
+#header .float-clr{zoom:1} 
+#header .float-clr:after{content:"\0020";display:block;height:0;clear:both}
+/********* tool-bar ********/
+#top-nav,
+#top-nav .cur .trigger-base,
+.nav-trigger .trigger-base a,
+#top-nav .trigger-down .trigger-bottom,
+#top-nav .quick-link li,
+#top-nav .cur .trigger-down,
+#top-nav .trigger-down dt,
+#top-nav .cxt-phone,#top-nav .cxt-fill,#top-nav .cxt-promotion,
+#top-seller a{background-image:url(http://img.china.alibaba.com/images/sys/head/tool-bar.gif);background-repeat:no-repeat}
+/********* top-nav ********/
+#top-nav .cxt-phone{padding-left:20px !important;background-position:0 -120px}
+#top-nav .cxt-fill{padding-left:20px !important;background-position:0 -60px}
+#top-nav .cxt-promotion{padding-left:20px !important;background-position:0 -90px}
+#top-nav{position:relative;height:26px;background-color:#F5F5F5;line-height:26px;background-repeat:repeat-x;color:#666;font-family:"\5B8B\4F53";z-index:203}
+#top-nav a:link, #top-nav a:visited{color:#666;text-decoration:none}
+#top-nav a:hover{color:#FF7300;text-decoration:none}
+#top-nav .user-login{float:left;padding-left:8px}
+#top-nav .user-login a:link, #top-nav .user-login a:visited{color:#06C}
+#top-nav .user-login a:hover{color:#FF7300}
+#top-nav .quick-link{float:right;}
+#top-nav .quick-link li{float:left;height:24px;margin-top:2px;background-position:right -400px;line-height:21px}
+#top-nav .quick-link li a{padding:0 12px 0 8px}
+#top-nav .quick-link li.last{background:none}
+#top-nav .quick-link li#top-seller{background:none}
+#top-nav .quick-link li#top-seller a{display:block;width:75px;height:20px;line-height:20px;padding:0 0;text-align:center;background-position:0 -30px}
+#top-nav .nav-trigger{position:relative;z-index:1001}
+#top-nav .nav-trigger .trigger-base{float:left;height:24px;}
+#top-nav .nav-trigger .trigger-base a{float:left;padding-right:22px;background-position:right -370px}
+#top-nav .nav-trigger .trigger-down{position:absolute;display:none;width:126px;top:23px;left:0;background-color:#FFF;background-position:right -30px}
+#top-nav .nav-trigger .trigger-down li{float:none;height:auto;margin-top:0;background-position:9999px 9999px;padding-left:8px;border-left:1px solid #BFBFBF}
+#top-nav .nav-trigger .trigger-down li a{line-height:26px;padding:0 0}
+#top-nav .cur .trigger-base{position:relative;background-position:0 -340px;z-index:1002}
+#top-nav .cur .trigger-base a{padding:0 22px 0 8px;height:24px;background-position:right -340px}
+#top-nav .cur .trigger-down{display:block}
+#top-nav .top-guide-title{color:#666}
+#top-nav #top-cxt.cur .trigger-down{width:126px}
+#top-nav #top-myali.cur .trigger-down{width:96px}
+#top-nav #top-guide.cur .trigger-down{width:228px}
+#top-nav .nav-trigger .trigger-down .trigger-bottom{height:2px;background-position:right -330px;font-size:0;line-height:0;border-left:0 none;}
+#top-nav .trigger-down dl{padding-right:5px;overflow:hidden}
+#top-nav .trigger-down dt{margin:8px 8px 0 0;font-weight:bold;color:#666;background-position:0 -390px}
+#top-nav .trigger-down dt strong{background-color:#FFF;padding-right:4px}
+#top-nav .trigger-down dd{vertical-align:bottom}
+#top-nav .trigger-down dd{float:left;margin-right:8px;white-space:nowrap}
+#top-nav .nav-trigger .all-service{display:block;height:30px;margin-right:2px;background-color:#E5E5E5;font-family:"\5B8B\4F53";line-height:30px}
+
+/**********过期样式************/
+#top-nav .nav-trigger fieldset{margin:0 13px 0 -8px;border-top:1px solid #E5E5E5}
+#top-nav .nav-trigger legend{*margin-left:-7px;padding:0 4px 0 8px;font-weight:bold}
+#top-nav .nav-trigger fieldset div a{float:left;display:inline;margin-left:8px;white-space:nowrap}
+/**********过期样式************/
+
+/* alitalk */
+#header a.iconAlitalk{float:none;padding:2px 0 3px 20px !important;background:url(http://img.china.alibaba.com/images/fdevlib/contact-icon.gif) no-repeat;}
+#header a.iconAlitalk:hover{float:none;color:#FF7300}
+#header a.icon-on{float:none;background-position:-190px -61px}
+#header a.icon-off{float:none;background-position:-190px -29px}
+#header a.icon-mb{float:none;background-position:-190px 1px}

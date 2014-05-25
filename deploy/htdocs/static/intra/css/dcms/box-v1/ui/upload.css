@@ -1,0 +1,30 @@
+.upload-progress {
+    display: none;
+    z-index: 9999;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    opacity: 0.7;
+}
+.upload-progress .progress-holder {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    float: left;
+    margin: 5px;
+    padding: 2px;
+    width: 300px;
+}
+.upload-progress .percents {
+    color: red;
+}
+.upload-progress #progress {
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000));  for webkit browsers */
+    background: -webkit-gradient(linear,center top ,center top, from(#13DD13), to(#209340)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top , #13DD13 20%, #209340 80%) repeat scroll 0 0 transparent;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); for webkit browsers */
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0px 0px 3px 4px #888888;
+    display: block;
+    height: 6px;
+    width: 0;
+}

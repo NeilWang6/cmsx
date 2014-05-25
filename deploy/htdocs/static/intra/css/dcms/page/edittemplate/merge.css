@@ -1,0 +1,11 @@
+@import url(/static/intra/css/dcms/module/header.css);
+@import url(/static/intra/css/dcms/module/left-nav.css);
+@import url(/static/intra/css/dcms/module/footer.css);
+@import url(/static/intra/css/dcms/module/form.css);
+@import url(/static/intra/css/dcms/module/grid.css);
+@import url(/static/intra/css/dcms/module/tree.css);
+@import url(/static/intra/css/dcms/module/dialog.css);
+@import url(/static/intra/css/dcms/page/poptree/poptree.css);
+@import url(/static/intra/css/dcms/module/codemirror/lib/codemirror.css);
+@import url(/static/intra/css/dcms/module/codemirror/theme/rubyblue.css);
+@import url("/static/intra/css/dcms/page/edittemplate/edittemplate.css");

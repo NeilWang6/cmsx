@@ -1,0 +1,391 @@
+/**
+ * @author springyu
+ * @userfor 底部属性CSS
+ * @date 2011-12-21
+ */
+/**
+ *     弹出对话框
+ */
+.dialog {
+    display: none;
+    border: solid 1px #8abbe3;
+    background-color: #fff;
+}
+.dialog-module-tag, .dialog-template-tag {
+    display: none;
+    border: 1px solid #999;
+    background-color: #ffffff;
+}
+.dialog .dcms-right, .dialog-module-tag .dcms-right {
+    float: right;
+    height: 26px;   
+}
+.dcms-right .close-btn {
+    background-position: -40px -200px;
+    display: inline-block;
+    text-indent: -999px;
+    overflow: hidden;
+    width: 25px;
+}
+.dialog .nav, .dialog-module-tag .nav, .dialog-template-tag .nav {
+    background-color: #8abbe3;
+}
+.dialog-template-tag .nav{
+    height: 26px;
+}
+.dialog .nav .tip, .dialog-module-tag .nav .tip, .dialog-template-tag .nav .tip {
+    float: left;
+    padding: 0px 12px;
+    color: #2571b0;
+}
+.dialog .attr-tab {
+    border-bottom: 1px solid #8abbe3;
+    height: 25px;
+    line-height: 25px;
+    background-color: #eee;
+    color: #2571b0;
+}
+.attr-tab .attr-tab-li {
+    float: left;
+}
+.attr-tab li:first-child {
+    margin-left: 10px;
+}
+.attr-tab label {
+    margin-left: 8px;
+}
+.attr-tab .tab-elem:hover {
+    text-decoration: none;
+}
+.attr-tab .current .tab-elem {
+    text-decoration: none;
+    background-color: #fff;
+    line-height: 23px;
+}
+.attr-tab .tab-elem {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+    line-height: 22px;
+    border-left: 1px solid #8abbe3;
+    border-top: 1px solid #8abbe3;
+    padding: 0 16px;
+    color: #2571b0;
+    background-color: #eee;
+    -moz-border-radius-topleft: 4 px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-radius: 4px 4px 0px 0px;
+}
+.attr-tab .last {
+    border-right: 1px solid #8abbe3;
+}
+.dialog .attr {
+    min-height: 128px;
+    min-width: 400px;
+}
+.dcms-box-attr div.favorit-attr {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: none;
+    padding: 2px 12px;
+    float: left;
+}
+.dcms-box-attr div.attr-elem-layout {
+    float: left;
+    position: relative;
+}
+div.attr-elem-layout li.current {
+    position: relative;
+}
+div.attr-elem-layout div.tip-current {
+    position: absolute;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-position: -40px -259px;
+    top: -2px;
+    left: 26px;
+}
+div.attr-elem-layout ul, div.attr-elem-layout li, div.attr-elem-layout .line {
+    float: left;
+}
+div.attr-elem-layout .line {
+    line-height: 40px;
+    height: 40px;
+    width: 2px;
+}
+div.attr-elem-layout .line s {
+    display: block;
+    border-left: 1px solid #8abbe3;
+    height: 12px;
+    margin-top: 14px;
+}
+div.attr-elem-layout ul {
+    line-height: 40px;
+    margin-left: 6px;
+}
+div.attr-elem-layout span {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #409ad6;
+}
+div.attr-elem-layout a {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0px 8px;
+    margin: 0px 4px;
+    color: #409ad6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+div.attr-elem-layout a:hover {
+    text-decoration: underline;
+}
+div.attr-elem-layout .current a {
+    background-color: #4083a9;
+    color: #fff;
+}
+div.attr-elem-layout .disabled a {
+    background-color: #dcdcdc;
+    color: #2c2c2c;
+}
+div.attr-elem-layout .disabled a:hover {
+    text-decoration: none;
+    cursor: text;
+}
+/**
+ * 2012－03－14改版以后样式
+ */
+div.box-attr-toolbar {
+    display: none;
+    background-color: #fff;
+    -moz-box-shadow: 0px 0px 0px 1px #8abbe3;
+    -webkit-box-shadow: 0px 0px 0px 1px #8abbe3;
+    box-shadow: 0px 0px 0px 1px #8abbe3;
+}
+div.box-attr-toolbar .dcms-box-attr {
+
+}
+#dcms_box_content {
+    border-bottom: 1px solid #A3A3A3;
+}
+.dcms-box-attr .attr-content:last-child .attr-type {
+    border-bottom: none;
+}
+.dcms-box-attr .attr-content .font-attr {
+    padding: 0px;
+    margin: 0px;
+}
+.dcms-box-attr .font-attr textarea {
+    height: 90px;
+    border: none;
+}
+.height-width-attr .repeat-tip {
+    display: inline-block;
+    padding: 0px 4px;
+}
+.height-width-attr .repeat-tip a:hover {
+    text-decoration: none;
+}
+.height-width-attr .repeat-tip a {
+    display: inline-block;
+    line-height: 24px;
+    padding: 0px 4px;
+    background-color: #fff;
+    border: 1px solid #a1c9e9;
+    color: #409ad6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-bottom-color: #506581;
+    cursor: pointer;
+}
+.box-attr-toolbar .attr-toolbar {
+    line-height: 34px;
+    background-color: #4083a9;
+}
+.attr-toolbar .toolbar-comm {
+    display: none;
+    float: left;
+}
+.attr-toolbar ul, .attr-toolbar ul li {
+    float: left;
+    background-color: #4083a9;
+}
+.attr-toolbar .description {
+    display: none;
+    line-height: 20px;
+    height: 20px;
+    padding: 0px 8px;
+    margin: 7px 8px 7px 8px;
+    color: #fff;
+}
+.attr-toolbar .description:hover {
+    text-decoration: underline;
+}
+.attr-toolbar .current .description {
+    text-decoration: none;
+    background-color: #fff;
+    color: #409ad6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.attr-toolbar s {
+    float: left;
+    border-left: 1px solid #306380;
+    border-right: 1px solid #4e9ecc;
+    margin-top: 12px;
+    height: 12px;
+}
+.attr-toolbar .delete-elem {
+    display: none;
+}
+.attr-toolbar .delete-elem a.elem-desc {
+    line-height: 20px;
+    height: 20px;
+    padding: 0px 8px;
+    margin: 7px 8px 7px 8px;
+    color: #fff;
+}
+.dialog-module-tag .module-body {
+    min-height: 300px;
+    min-width: 500px;
+    overflow: scroll;
+}
+.dialog-module-tag .module-body .module-list {
+    min-height: 100px;
+    margin: 8px 16px;
+    padding: 4px 8px;
+    border-bottom: 1px solid #8ABBE3;
+}
+.dialog-module-tag .module-body .module-list:last-child {
+    border-bottom: none;
+}
+.dialog-module-tag .module-page {
+    padding: 0px 8px;
+}
+.dialog-module-tag .module-page li {
+    float: left;
+}
+.dialog-module-tag .module-page ul {
+
+}
+.dialog-module-tag .module-page a.elem {
+    display: block;
+    line-height: 20px;
+    padding: 0px 4px;
+    margin: 10px 2px;
+    border: 1px solid transparent;
+}
+
+.dialog-module-tag .module-page .disabled a.elem {
+    color: #999;
+    border: 1px solid transparent;
+    cursor: text;
+}
+
+.dialog-module-tag .module-page .disabled a.elem:hover {
+    border: 1px solid transparent;
+    background-color: #fff;
+    cursor: text;
+    color: #999;
+    text-decoration: none;
+}
+
+.dialog-module-tag .module-page a.elem:hover {
+    background-color: #F3F8FB;
+    border: 1px solid #B0C6DB;
+    text-decoration: none;
+    border-bottom-color: #506581;
+    color: #409AD6;
+    cursor: pointer;
+}
+
+.dialog-module-tag .module-page a.desc {
+    display: block;
+    line-height: 20px;
+    padding: 0px 6px;
+    margin: 10px 0px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: #409AD6;
+}
+
+.module-high-light {
+    box-shadow: 0 0 0 2px #409ad6;
+}
+
+.dialog-template-tag .template-body {
+    min-height: 300px;
+    min-width: 500px;
+    max-width: 800px;
+    max-height:500px;
+    overflow-y:scroll;
+}
+
+.dialog-template-tag .template-page {
+    padding: 0px 8px;
+}
+.dialog-template-tag .template-page li {
+    float: left;
+}
+.dialog-template-tag .template-page a.elem {
+    display: block;
+    line-height: 20px;
+    padding: 0px 4px;
+    margin: 10px 2px;
+    border: 1px solid transparent;
+}
+.dialog-template-tag .template-page .disabled a.elem {
+    color: #999;
+    border: 1px solid transparent;
+    cursor: text;
+}
+.dialog-template-tag .template-page .disabled a.elem:hover {
+    border: 1px solid transparent;
+    background-color: #fff;
+    cursor: text;
+    color: #999;
+    text-decoration: none;
+}
+.dialog-template-tag .template-page a.elem:hover {
+    background-color: #F3F8FB;
+    border: 1px solid #B0C6DB;
+    text-decoration: none;
+    border-bottom-color: #506581;
+    color: #409AD6;
+    cursor: pointer;
+}
+.dialog-template-tag .template-page a.desc {
+    display: block;
+    line-height: 20px;
+    padding: 0px 6px;
+    margin: 10px 0px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: #409AD6;
+}
+.dialog-template-tag .template-page ul{
+    float: left;
+}
+.dcms-box-list ul{
+    margin-left:0px !important;
+    margin-top:8px;
+    
+}
+.template-search{
+    padding:8px;
+}
+.template-search ul li{
+    float: left;   
+}
+.template-search .btn{
+    padding:0 8px;
+}
+

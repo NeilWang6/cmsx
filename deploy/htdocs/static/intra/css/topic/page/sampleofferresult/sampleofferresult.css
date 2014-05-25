@@ -1,0 +1,46 @@
+/**
+ * @author lusheng.linls
+ * @usefor 样品中心结果页面
+ * @date   2013.2.21
+ */
+
+ /** ppcall相关 */
+.callmodal { border: solid 4px #585858; background-color: #FFFFCD; line-height: 1.5; }
+.callmodal .title { padding: 0 8px; }
+.callmodal .title .close { display: block; float: right; margin-top: 12px; width: 14px; height: 14px; overflow: hidden; background: url(http://img.china.alibaba.com/cms/upload/2011/346/142/241643_1012621481.jpg) no-repeat; cursor: pointer;}
+.callmodal h3 { float: left; margin: 7px 0 0 0; line-height:21px; font-size: 14px; font-weight: bold; color:#000;}
+#callmodalbd { width: 340px; }
+
+.icon-mouse, .icon-wangwang, .icon-call
+{
+	background-image: url(http://img.china.alibaba.com/cms/upload/2013/307/437/734703_51297002.png);
+	background-repeat: no-repeat;
+}
+.icon-call{
+	background-position: -43px 0px;
+	padding-left: 22px;
+	display: inline-block;
+	width: 1px;
+	height: 16px;
+	line-height: 16px;
+}
+.icon-wangwang{
+	background-position: -14px 0px;
+	padding-left: 26px;
+	display: inline-block;
+	width: 1px;
+	height: 16px;
+	line-height: 16px;
+}
+.icon-mouse{
+	background-position: 12px 0px;
+	padding-left: 26px;
+	display: inline-block;
+	width: 1px;
+	height: 16px;
+	line-height: 16px;
+}
+.sample-lnk{
+	font-size: 12px;
+	color: #369;
+}

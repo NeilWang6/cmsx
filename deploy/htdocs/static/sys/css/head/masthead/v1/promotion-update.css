@@ -1,0 +1,23 @@
+/**
+ * for promotion pages
+ * @author  Edgar
+ * 110215
+ */
+#ali-masthead .ali-masthead-container,
+#ali-logo,
+#ali-search{
+    background:url(http://img.china.alibaba.com/cms/upload/2010/205/600/6502_1651874970.png) no-repeat -40px 0;
+}
+#ali-masthead .ali-masthead-container{
+    height:85px;
+    background-position:0 81px;
+    background-repeat:repeat-x;
+}
+#ali-logo{
+    height:85px;
+    background-position:left -115px;
+}
+#ali-search{
+    height:85px;
+    background-position:right -15px;
+}

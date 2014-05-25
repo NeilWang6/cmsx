@@ -1,0 +1,48 @@
+/**
+ * create by hongss on 2012.08.24 for add tag task
+ */
+ 
+#doc { margin:12px 0px;width:990px; color:#666; font-size:12px; line-height:1.8em;}
+h3 { color:#333; font-size:14px; font-weight:bold; line-height:32px;}
+.red { color:#c00; }
+
+.form-container .info-basic, .form-container .info-common, .form-container .info-spot { padding:12px 0; border-bottom:1px solid #e4e4e4; width:990px;}
+.form-container .info-app { padding:12px 0;}
+.form-container .info-common{
+	 width:990px;
+}
+
+.form-container .info-item { padding:6px 0;overflow: hidden;}
+.form-container .info-item dt { float:left; width:195px; padding-right:4px; text-align:right;}
+.form-container .info-item dd { float:left};
+
+.form-container input[type="text"], .form-container select { padding:3px; min-width:60px; vertical-align:top;}
+.form-container input.nomal { width:240px; }
+.form-container input.small { width:60px;}
+.form-container h4 { font-weight:bold;}
+.form-container .city-btns { display:inline-block; width:76px; padding:0px 12px 0; vertical-align: middle;}
+.form-container .city-btns button { display:block;}
+.form-container .category-btns { display:inline-block; width:86px; padding:0 2px;vertical-align: middle;}
+.form-container button { font-family:"\5b8b\4f53"; }
+.form-container .select-small { min-width:128px; }
+.form-container .select-big { min-width:160px; }
+.form-container .select-county { min-width:160px; }
+
+.form-container .validator-tip, .title .validator-tip{
+    display: none;
+    padding: 0 3px 0 23px;
+    border: 1px solid;
+    line-height:20px;
+}
+.form-container .validator-error, .title .validator-error{
+    background-image:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png);
+    display: inline-block;
+    border-color: #ff8080;
+    background-color: #fff2f2;
+    color: #666;
+    background-position:-129px -250px;
+    background-repeat:no-repeat;
+}
+
+.title .validator-tip { margin-left:120px;}
+ 

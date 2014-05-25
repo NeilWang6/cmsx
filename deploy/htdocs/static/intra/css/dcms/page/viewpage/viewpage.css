@@ -1,0 +1,20 @@
+/**
+ * @package FD.app.cms.viewpage
+ * @version 1.0.110411
+ * @author  hongss
+ */
+
+.dcms-header-view .dcms-choose-show .choose-btn { background:url(http://img.china.alibaba.com/cms/upload/other/dcms/dcms-header.png) no-repeat;}
+
+.dcms-header-view .dcms-choose-show { height:6px; line-height:0; width:100%; min-width:952px; background-color:#e5e5e5; text-align:center; cursor:pointer; overflow:hidden;}
+.dcms-header-view .dcms-choose-show .list-selects { display:block;}
+.dcms-header-view .choose-hide .list-selects { display:none;}
+.dcms-header-view .list-selects li { width:350px; overflow:hidden;}
+.dcms-header-view .list-selects select { max-width:176px; *width:168px;}
+/* modified by xutao 2011.06.25 */
+.dcms-header-view .list-selects li.last-one { width:250px;}
+/*-----*/
+.dcms-header-view .dcms-choose-rule-container .choose-btn { display:inline-block; width:10px; height:6px; background-position:-50px -79px; line-height:20px; overflow:hidden;}
+.dcms-header-view .choose-hide .choose-btn { background-position:0 -79px;}
+
+
