@@ -13,6 +13,7 @@ ImportJavscript.url("/static/intra/js/dcms/box-v1/common/tools.js");
 ImportJavscript.url("/static/intra/js/dcms/module/dcms.js");
 ImportJavscript.url("/static/intra/js/dcms/module/left-nav.js");
 ImportJavscript.url("/static/intra/js/dcms/module/box/pagelist.js");
+ImportJavscript.url("/static/intra/js/common/common.js");
 ImportJavscript.url("/static/intra/js/acl/aclrole2permission/aclrole2permission.js");
 
 

@@ -8,10 +8,10 @@
 				<span class="role-now">当前角色 </span>：<span class="role-title">$!role.name</span> <a class="btn-basic btn-blue" id="return_role_manage" >返回角色管理</a>
 			 </div>
             <ul class="tabs-a-topics"> 
-			   <li #if($!isSelect!='false') class="current"#end><a href="$intraModule.setTarget("acl/aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_GetPermission2Role","true").addQueryData("roleId","$!roleId").addQueryData("isSelect","true").addQueryData("resourceType","$!resourceType").addQueryData("appName","$!appName")">已选择</a></li>
-               <li #if($!isSelect=='false') class="current"#end><a href="$intraModule.setTarget("acl/aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_GetPermission2Role","true").addQueryData("roleId","$!roleId").addQueryData("isSelect","false").addQueryData("resourceType","$!resourceType").addQueryData("appName","$!appName")">未选择</a></li>
+			   <li #if($!isSelect!='false') class="current"#end><a href="$aclModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_GetPermission2Role","true").addQueryData("roleId","$!roleId").addQueryData("isSelect","true").addQueryData("resourceType","$!resourceType").addQueryData("appName","$!appName")">已选择</a></li>
+               <li #if($!isSelect=='false') class="current"#end><a href="$aclModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_GetPermission2Role","true").addQueryData("roleId","$!roleId").addQueryData("isSelect","false").addQueryData("resourceType","$!resourceType").addQueryData("appName","$!appName")">未选择</a></li>
             </ul>
-			<form method="post" id="js-search-page" name=""  action="/admin/acl_role_2_permission.html" >
+			<form method="post" id="js-search-page" name=""  action="acl_role_2_permission.htm" >
     			<input type="hidden" name="action" value="AclPermissionAction">
     			<input type="hidden" name="event_submit_do_GetPermission2Role" value="true" id="dcms-form-event-type">
     			<input type="hidden" name="page" id="js-page-num" value="1">

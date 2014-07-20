@@ -11,7 +11,7 @@
             ]]></pattern> -->
         </layout>
         <filter class="com.alibaba.citrus.logconfig.logback.LevelRangeFilter">
-            <levelMax>DEBUG</levelMax>
+            <levelMax>WARN</levelMax>
         </filter>
     </appender>
 
@@ -26,7 +26,7 @@
             ]]></pattern> -->
         </layout>
         <filter class="com.alibaba.citrus.logconfig.logback.LevelRangeFilter">
-            <levelMin>DEBUG</levelMin>
+            <levelMin>WARN</levelMin>
         </filter>
     </appender>
 
@@ -55,6 +55,10 @@
 
     <logger name="com.alibaba.citrus.webx.context">
         <level value="WARN" />
+    </logger>
+
+    <logger name="java.sql">
+        <level value="DEBUG" />
     </logger>
 
     <root>

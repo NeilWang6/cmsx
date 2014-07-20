@@ -36,9 +36,9 @@ $rundata.setLayout('default.vm')
 										$!{role.description} 
 									</td>							
 									<td class="operator">
-										<a class="js-setting operate-link"  data-id=$!{role.id}  data-type="url" href="$adminModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","url")">设置url权限</a>
-										<a class="js-setting operate-link"  data-id=$!{role.id} data-type="menu" href="$adminModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","menu")">设置菜单权限</a>
-							            <a class="js-setting operate-link"  data-id=$!{role.id} data-type="action" href="$adminModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","action")">设置action权限</a>		
+										<a class="js-setting operate-link"  data-id=$!{role.id}  data-type="url" href="$aclModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","url")">设置url权限</a>
+										<a class="js-setting operate-link"  data-id=$!{role.id} data-type="menu" href="$aclModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","menu")">设置菜单权限</a>
+							            <a class="js-setting operate-link"  data-id=$!{role.id} data-type="action" href="$aclModule.setTarget("aclRole2Permission.vm").addQueryData("action","AclPermissionAction").addQueryData("event_submit_do_get_permission_2_role","true").addQueryData("role_id","$!{role.id}").addQueryData("resourceType","action")">设置action权限</a>		
 										<a class="js-modification operate-btn"  data-id=$!{role.id} >修改</a>	
 										<a class="js-delete operate-btn"  data-id=$!{role.id} >删除</a>		
 									</td>

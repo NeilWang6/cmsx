@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+#set( $curpage = $webUtil.pn($rundata))
+#set( $curmodule = $webUtil.getModuleName($rundata))
+#set($v = $webUtil.getCurrentVersion())
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DCMS 2.3 </title>
+        <meta name="description" content="重大工程案例库平台"/>
+        <meta name="keywords" content="重大工程案例库平台"/>
+        <link href="${staticDomainUrl}/intra/css/dcms/global/v1.css" rel="stylesheet"/>
+        <link href="${staticDomainUrl}/intra/css/$curmodule/$curpage/merge.css?v=$!v" rel="stylesheet"/>
+        <!--[if lt IE 9]>
+            <script src="${staticDomainUrl}/intra/js/dcms/globel/html5-for-ie.js"></script>
+        <![endif]-->
+    </head>
+     #showStylesheets()
+     #showJavascripts() 
+    <body class="dcms-page dcms-page-$webUtil.cssMenu($rundata)">
+      <div id="detect_tip" class="detect-tip fd-hide"><span class="detectClose" title="关闭">X</span>提示：为了更好的为您服务，请使用firefox、chrome浏览器，给您带来的不便敬请见谅！ </div>
+	    $control.setTemplate("acl:bar.vm")
+		<section class="dcms-main-body">
+            <section class="page-content">
+                <div class="bar-operate">
+                    <div class="my-work">
+                        <i class="icon-moveposition"></i>
+                        <a href="#"><span class="txt">案例库</span></a>
+                    </div>
+                    <ul class="list-tab-t" id="box_choose_level">
+                        <li id="page" class="current" data-val="module"><span class="block">$!{defaultTabTitle}</span></li>
+                    </ul>
+                </div>
+            </section>
+			$control.setTemplate("acl:toolsPanelMywork")
+			$screen_placeholder
+		</section>
+		<footer class="dcms-footer"></footer>
+			##信息提示框
+		$control.setTemplate("acl:newConfirmAwake.vm") 
+	<script src="${staticDomainUrl}/intra/js/dcms/global/merge.js"></script>
+	<script src="${staticDomainUrl}/intra/js/$curmodule/$curpage/merge.js?v=$!v"></script>
+	</body>
+</html>

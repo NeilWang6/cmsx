@@ -34,7 +34,8 @@
 				var json = $.parseJSON(text);
 				if(json && json.status === 'success') {
 					alert('操作成功！');
-					window.location.reload();
+					//window.location.reload();
+					$("#js-search-page").submit();
 				} else {
 					alert('删除失败！');
 				}
@@ -116,7 +117,8 @@
 						if(json && json.status === 'success') {
 							alert('保存成功！');
 							ext && ext.data.dialog.dialog('close');
-							window.location.reload();
+							//window.location.reload();
+							$("#js-search-page").submit();
 						} else {
 							//alert('保存失败！');
 							if(json.msg && json.msg!=''){

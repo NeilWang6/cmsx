@@ -29,9 +29,15 @@ public class UserDAOImpl extends SqlMapClientDaoSupport implements IUserDAO {
 	}
 
 	@Override
-	public PageInfo<CmsUser> findByWhere(CmsUser bean, Integer currentPage, Integer pageSize) { 
+	public PageInfo<CmsUser> findByWhere(CmsUser bean, String keyword, Integer currentPage, Integer pageSize) { 
+		
+		Map<String, Object> values = new HashMap<String, Object> ();
+		values.put("userId",  bean.getUserId());
+		values.put("fullName", bean.getFullName());
+		values.put("keyword", keyword);
+		values.put("status",    bean.getStatus());  
 		PageInfo<CmsUser> ret = null;
-		Integer count = (Integer) this.getSqlMapClientTemplate().queryForObject("cms_CmsUser.findCmsUserCountByWhere", bean);
+		Integer count = (Integer) this.getSqlMapClientTemplate().queryForObject("cms_CmsUser.findCmsUserCountByWhere", values);
 		if (null == count || 0 == count) {
 			return ret;
 		}
@@ -40,11 +46,6 @@ public class UserDAOImpl extends SqlMapClientDaoSupport implements IUserDAO {
 		pageSize  = null == pageSize ? 15 : pageSize;
 		int start = (currentPage - 1) * pageSize + 1;
 		int end   = currentPage * pageSize;
-		
-		Map<String, Object> values = new HashMap<String, Object> ();
-		values.put("userId",  bean.getUserId());
-		values.put("fullName", bean.getFullName());
-		values.put("status",    bean.getStatus());  
 		values.put("start",        start);
 		values.put("end",          end); 
 		

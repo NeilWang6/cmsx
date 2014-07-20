@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="CT_CONF">
+	<typeAlias alias="TA-CASE-CONF" type="com.apachecms.cmsx.dal.dataobject.CtConfDO" />
+	<resultMap id="RM-CASE-CONF" class="TA-CASE-CONF">
+		<result column="ID"				property="id"			jdbcType="NUMBER"		javaType="java.lang.Long" />
+		<result column="GMT_MODIFIED"	property="gmtModified"	jdbcType="TIMESTAMP"	javaType="java.util.Date" />
+		<result column="GMT_CREATE"		property="gmtCreate"	jdbcType="TIMESTAMP"	javaType="java.util.Date" />
+		<result column="CONF_TYPE"		property="confType"		jdbcType="CHAR"			javaType="java.lang.String" />
+		<result column="CATALOG_ID"   	property="catalogId"	jdbcType="NUMBER"		javaType="java.lang.Long" />
+		<result column="ITEM_ID"		property="itemId"		jdbcType="NUMBER"		javaType="java.lang.Long" />
+		<result column="DEFAULT_VALUE"	property="defaultValue" jdbcType="VARCHAR"		javaType="java.lang.String" />
+		<result column="ORDER_NUM"		property="orderNum"		jdbcType="NUMBER"		javaType="java.lang.Integer" />
+		<result column="FG_TYPE"		property="fgType"		jdbcType="CHAR"			javaType="java.lang.String" />
+		<result column="IS_HIDDEN"		property="isHidden"		jdbcType="CHAR"			javaType="java.lang.String" />
+		<result column="IS_NEED"		property="isNeed"		jdbcType="CHAR"			javaType="java.lang.String" />
+		<result column="IS_ENABLE"		property="isEnable"		jdbcType="CHAR"			javaType="java.lang.String" />
+		<result column="TIPS"			property="tips" 		jdbcType="VARCHAR"		javaType="java.lang.String" /> 
+	</resultMap>
+	
+	 <select id="SQL_QUERY_ST_CONF" parameterClass="java.util.Map" resultMap="RM-CASE-CONF">
+		 <![CDATA[
+		 	SELECT ID,GMT_CREATE,GMT_MODIFIED,CONF_TYPE,CATALOG_ID,ITEM_ID,DEFAULT_VALUE,ORDER_NUM,FG_TYPE,IS_HIDDEN,IS_NEED,IS_ENABLE,TIPS
+		 	FROM CT_CONF
+		    WHERE CONF_TYPE = #confType# and CATALOG_ID = #catalogId# ORDER BY ORDER_NUM ASC
+		 ]]>
+    </select>
+    
+    <insert id="insertCtStConf" parameterClass="TA-CASE-CONF">
+		<selectKey keyProperty="id" resultClass="java.lang.Long">
+        <![CDATA[
+            SELECT SEQ_CT_CONF.NEXTVAL AS VALUE FROM DUAL
+        ]]>
+		</selectKey>      
+       <![CDATA[
+			INSERT INTO CT_CONF (
+				ID,GMT_CREATE,GMT_MODIFIED,CONF_TYPE,CATALOG_ID,ITEM_ID,DEFAULT_VALUE,ORDER_NUM,FG_TYPE,IS_HIDDEN,IS_NEED,IS_ENABLE,TIPS 
+			) values (
+				#id#,SYSDATE,SYSDATE,#confType#,#catalogId#,#itemId#,#defaultValue#,#orderNum#,#fgType#,#isHidden#,#isNeed#,#isEnable#,#tips# 
+			)
+       ]]>
+	</insert>
+    
+    <delete id="deleteCaseConfByConfTypeAndCatalog" parameterClass="java.util.Map">
+    	<![CDATA[
+            DELETE FROM CT_CONF WHERE CONF_TYPE=#confType# AND CATALOG_ID=#catalogId#
+        ]]>
+    </delete>
+</sqlMap>

@@ -34,17 +34,25 @@ public interface IUserService {
 	void delete(String userID, String opUserID) throws ACLException;
 	
 	/**
-	 * 根据id查询资源
+	 * 根据id查询用户
 	 * @param userID
 	 * @return
 	 * @throws ACLException
 	 */
-	CmsUser findById(String userID) throws ACLException;
+	CmsUser findByUserId(String userID) throws ACLException;
+	
+	/**
+	 * 根据id查询用户
+	 * @param userID
+	 * @return
+	 * @throws ACLException
+	 */
+	CmsUser findById(String id) throws ACLException;
 	
 	/**
 	 * 分页查询
 	 * @return
 	 * @throws ACLException
 	 */
-	PageInfo<CmsUser> findByWhere(UserParam param, Integer currentPage, Integer pageSize) throws ACLException;
+	PageInfo<CmsUser> findByWhere(UserParam param, String keyword, Integer currentPage, Integer pageSize) throws ACLException;
 }

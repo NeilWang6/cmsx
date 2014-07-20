@@ -12,7 +12,7 @@
 #end
  
 ## 统一样式分页
-#macro( unifiedPageList $paginator $sliderNum $option)
+#macro( unifiedPageList $paginator $sliderNum)
 	#set ($navPages = $paginator.getSlider($sliderNum))
 	#set ($nextPage = $paginator.getNextPage())
 	#set ($prevPage = $paginator.getPreviousPage())

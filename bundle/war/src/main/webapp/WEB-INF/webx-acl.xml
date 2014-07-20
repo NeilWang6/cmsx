@@ -29,6 +29,8 @@
 
     <!-- 执行管道。 -->
     <beans:import resource="common/pipeline-intra.xml" />
+    <!-- 异常管道。 -->
+    <beans:import resource="common/pipeline-exception.xml" />
 
     <!-- 表单验证。 -->
     <beans:import resource="acl/form.xml" />

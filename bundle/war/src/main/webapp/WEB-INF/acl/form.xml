@@ -21,7 +21,7 @@
 		<group name="userParam" extends="csrfTokenCheckGroup" trimmingByDefault="true">
 			<field name="id"></field>
 			<field name="userId"></field>
-			<field name="password"></field>
+			<field name="password"></field> 
 			<field name="fullName"></field>
 			<field name="email"></field>
 			<field name="deptId"></field>

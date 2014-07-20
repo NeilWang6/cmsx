@@ -10,11 +10,11 @@ $rundata.setLayout('default.vm')
 				<input type="text" class="keyword" name="name" id="name" placeholder="请输入用户名或姓名" value="$!name"/>
 				
 				<input type="submit" class="search-btn btn-basic btn-gray" id="search-btn" value="搜索"/>
-				<a  class="btn-basic btn-blue" id="add_uesr" >添加</a>
+				<a  class="btn-basic btn-blue" id="add_user" >添加</a>
              </div>
              <div class="sortbar"> 
                 <div class="simple-page">
-                    ##unifiedPageSimpleList($paginator)
+                    #unifiedPageSimpleList($paginator)
                 </div>			
 	        </div> 
 	 	</form>
@@ -27,8 +27,8 @@ $rundata.setLayout('default.vm')
 				<table  class="page-tab table-sub">
 					<thead>
 						<tr>
-							<th class="td-user-id">用户ID</th>
-                            <th class="td-user-name">姓名</th> 
+                            <th class="td-user-name">姓名</th>
+							<th class="td-user-id">用户ID</th> 
                             <th class="td-update-date">更新日期</th>
                             <th class="td-user-state">是否激活</th>				
 							<th class="operator">操作</th>
@@ -37,17 +37,14 @@ $rundata.setLayout('default.vm')
 					<tbody class="page-body">		
 					   #foreach( $user in $list)
 						<tr>     
-							   <td class="des">$!user.userId</td>
-								<td class="system">
-									$!user.fullName
-								</td> 
-								<td>$dateUtil.toLocaleString($user.gmtModified,'yyyy-MM-dd')</td> 
-								<td>#if('1' == $!isActivation) 已激活 #end #if('0' == $!isActivation) <a href="#" class="js-user-active">激活</a> #end</td>
-								<td class="operator">
-									<a class="js-modification operate-btn"  data-id="$!{user.id}">修改</a>
-									<a class="js-delete operate-btn" data-status="invalid" data-id="$!{user.id}">删除</a>
-						            
-								</td>
+							<td class="system">$!user.fullName</td> 
+						    <td class="des">$!user.userId</td>
+							<td>$!{dateUtil.toLocaleString($user.gmtModified, "yyyy-MM-dd HH:mm")}</td> 
+							<td>#if('1' == $!user.status) 已启用 #end #if('0' == $!user.status) <a href="#" class="js-user-active">已禁用</a> #end</td>
+							<td class="operator">
+								<a class="js-modification operate-btn"  data-id="$!{user.id}">修改</a>
+								<!--<a class="js-delete operate-btn" data-status="invalid" data-id="$!{user.id}">删除</a>-->
+							</td>
 						</tr>
 						#end
 					</tbody>
@@ -60,7 +57,7 @@ $rundata.setLayout('default.vm')
      <!-- body end -->
 	 #if( $paginator && $paginator.pages>0 )
 		<div class="pages fd-clr" align="center">
-			##unifiedPageList($paginator, 5)
+			#unifiedPageList($paginator, 5)
 		</div>
 	 #end 
 </div> 

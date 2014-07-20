@@ -57,6 +57,9 @@
 		<uris:turbine-uri id="intraModule" exposed="true" extends="cmsxServer">
 			<componentPath>/intra</componentPath>
 		</uris:turbine-uri>
+		<uris:turbine-uri id="aclModule" exposed="true" extends="cmsxServer">
+			<componentPath>/acl</componentPath>
+		</uris:turbine-uri>
 		<uris:turbine-content-uri id="intraContent" exposed="true" extends="intraModule" />
 		<!-- ================================================================ -->
 		<!-- Link Level： 继承前述各类links。                                 -->

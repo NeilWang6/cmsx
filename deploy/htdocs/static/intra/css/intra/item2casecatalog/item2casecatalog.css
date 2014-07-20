@@ -1,0 +1,299 @@
+	/* CSS Document */
+table,div{word-break:break-all} 
+A
+{
+    COLOR: #000000;
+    FONT-FAMILY: "Arial", "Helvetica", "sans-serif";
+    FONT-SIZE: 12px;
+    TEXT-DECORATION: none
+}
+A:link
+{
+    COLOR: #369BD7;
+    FONT-FAMILY: "Arial", "Helvetica", "sans-serif";
+    FONT-SIZE: 12px
+}
+A:active
+{
+    FONT-FAMILY: "Arial", "Helvetica", "sans-serif";
+    FONT-SIZE: 12px
+}
+
+
+A:visited
+{
+    COLOR: #660099;
+    FONT-FAMILY: "Arial", "Helvetica", "sans-serif";
+    FONT-SIZE: 12px
+
+
+}
+.font10
+{
+    COLOR: black;
+    FONT-FAMILY: "Arial", "Helvetica", "sans-serif";
+    FONT-SIZE: 12px;
+    TEXT-TRANSFORM: capitalize
+}
+.font11
+{
+    COLOR: #666; font: 12px "Arial", "Helvetica", "sans-serif"
+}
+.font12
+{
+    COLOR: #666; font: 12px "Arial", "Helvetica", "sans-serif"
+}
+
+
+ .font14 {  
+              font: 16px "宋体"
+	      }
+
+.leftnav {
+		background-color: #E3E3E6; 
+		padding:4px 3px 3px 10px; 
+		cursor:hand;
+}
+
+.leftnav2 {
+		background-color: #AEC6DF; 
+		padding:4px 3px 3px 10px; 
+		cursor:hand;}
+
+.leftnavsub2 {
+		border-top:   1px solid #999999;
+		border-right: 1px solid #999999;
+		border-bottom:1px solid #999999;
+		border-left:  1px solid #999999;	
+		background-color: #e8e8e8;
+		font-size: 11px;
+		cursor:hand
+		}
+
+.leftnavsub {
+		border-top:   0px solid #999999;
+		border-right: 0px solid #999999;
+		border-bottom:0px solid #999999;
+		border-left:  0px solid #999999;
+
+		}
+.focusme {
+		border-top:   1px solid #999999;
+		border-right: 1px solid #999999;
+		border-bottom:1px solid #999999;
+		border-left:  1px solid #999999;	
+		background-color: #cccccc;
+		font-size: 11px
+
+		}
+	
+.close {
+               display: none
+	       }
+
+.open {
+               display:block
+	       }
+
+
+
+.backlightyello { 
+              background-color: #DFE7F7; 
+	      font-family: "Arial", "Helvetica", "sans-serif";
+	      font-size: 12px 
+	      }
+
+.backcolor {  background-color: #70A6CF;
+              font-family: "Arial", "Helvetica", "sans-serif";
+	      color: #FFF;
+	      font-size: 12px; 
+		  text-shadow: 1px 0px 1px #666666;
+	      }
+.backcolor1 {  
+              background-color: #e8e8e8; 
+	      font-family: "Arial", "Helvetica", "sans-serif";
+	      font-size: 13px
+	      }
+
+.backlor2 {  
+              background-color: #E79305
+	      }
+
+.backcolor3 {  
+              background-color: #8FD86F; 
+	      color: #000000 font-size:"15px"
+	      }
+.closetab{
+              display: none
+	      }
+
+
+.text { 
+          color: #234747;
+	  font-family: "Arial", "Helvetica", "sans-serif"; 
+	  font-size: 13px
+	  }
+
+.backorange{  
+          background-color: #FFCC00; 
+	  font-family: "Arial", "Helvetica", "sans-serif"; 
+	  font-size: 13px
+	  }
+
+.textarea1 { 
+           height: 80px;
+	   width: 300px
+	   }
+ 
+
+
+BODY,td,p{
+          font-size:12px;
+	  font-family:宋体
+	  }
+
+
+A.top{
+         color:#ffffff;
+	 font-size:10px
+	 
+	 }
+ 
+.f3{
+    background-color: #FFFFFF;
+    font-size:16px
+ }
+.f5{
+    background-color: #FFDDDD;
+    font-size:16px
+ }
+.f6{
+    background-color: #eeeee6;
+    font-size:16px
+ }
+.f4{
+    background-color: #DFE7F7;
+    font-size:16px
+ }
+.f10{
+	background:yellow;
+	mso-highlight:yellow;
+	font-size:16px
+}
+
+.STYLE6 {
+	color: #FF0000;
+	font-weight: bold;
+}
+ 
+.tfthin {
+	background-color: #F5F8F3;
+	font-size:15px;
+	font-family:"宋体";
+}
+.tfthinalert {
+	background-color: #DFF1F9;
+	font-size:16px;
+	font-family:"宋体";
+}
+.tfthinquickmatch{
+	background-color: #FFCC33;
+	font-size:15px;
+	font-family:"宋体";
+}
+
+.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Verdana
+}
+.navtd {
+	FONT-SIZE: 12px; COLOR: f1f3fb; FONT-FAMILY: Tahoma, Verdana; TEXT-DECORATION: none
+}
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: f1f3fb; FONT-FAMILY: Tahoma, Verdana
+}
+.category {
+	FONT-SIZE: 11px; COLOR: d9d9e9; FONT-FAMILY: Tahoma
+}
+.multi {
+	FONT-SIZE: 11px; COLOR: 3a4273; FONT-FAMILY: Tahoma
+}
+.smalltxt {
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+}
+.mediumtxt {
+	FONT-SIZE: 12px; COLOR: 464f86; FONT-FAMILY: Tahoma, Verdana
+}
+.bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px
+}
+.DPFrame {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: black 1px solid; WIDTH: 140px; LINE-HEIGHT: normal; BORDER-BOTTOM: black 1px solid; FONT-STYLE: normal; BACKGROUND-COLOR: transparent; FONT-VARIANT: normal
+}
+#dpDropDownTable {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: lightgrey 1px solid; DISPLAY: none; BORDER-LEFT: lightgrey 1px solid; CURSOR: default; BORDER-BOTTOM: black 1px solid; POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}
+.DPTitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #000000; LINE-HEIGHT: normal; FONT-STYLE: normal; BACKGROUND-COLOR: #e5e5e5; TEXT-ALIGN: center; FONT-VARIANT: normal
+}
+.DPWeekName {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #000000; LINE-HEIGHT: normal; BORDER-BOTTOM: black 1px solid; FONT-STYLE: normal; TEXT-ALIGN: center; FONT-VARIANT: normal
+}
+.DPCellOther {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; CURSOR: hand; COLOR: silver; LINE-HEIGHT: normal; FONT-STYLE: normal; TEXT-ALIGN: center; FONT-VARIANT: normal
+}
+.DPCell {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; CURSOR: hand; COLOR: #000000; LINE-HEIGHT: normal; FONT-STYLE: normal; TEXT-ALIGN: center; FONT-VARIANT: normal
+}
+.DPCellSelect {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; CURSOR: hand; COLOR: #000000; LINE-HEIGHT: normal; FONT-STYLE: normal; BACKGROUND-COLOR: #cccccc; TEXT-ALIGN: center; FONT-VARIANT: normal
+}
+.DPYear {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT: 9pt 宋体; BORDER-LEFT: 0px; COLOR: #333333; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: right
+}
+.DPYearDes {
+	BACKGROUND-COLOR: transparent
+}
+.DPMonth {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT: 9pt 宋体; BORDER-LEFT: 0px; COLOR: #333333; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: right
+}
+.DPMonthDes {
+	BACKGROUND-COLOR: transparent
+}
+.DPDay {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT: 9pt 宋体; BORDER-LEFT: 0px; COLOR: #333333; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: right
+}
+.DPDayDes {
+	BACKGROUND-COLOR: transparent
+}
+.DPSep {
+	WIDTH: 10px; BACKGROUND-COLOR: transparent
+}
+A.DPDropBtn:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.DPDropBtn:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.DPDropBtn:hover {
+	TEXT-DECORATION: none
+}
+.DPBtn {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: white 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: white 1px solid; WIDTH: 16px; COLOR: black; LINE-HEIGHT: normal; BORDER-BOTTOM: black 1px solid; FONT-STYLE: normal; BACKGROUND-COLOR: #cccccc; FONT-VARIANT: normal
+}
+
+	.backcolor {  background-color: #70A6CF;
+              font-family: "Arial", "Helvetica", "sans-serif";
+			  color: #FFF;
+			  font-size: 12px; }
+
+.backcolor1 {  background-color: #e8e8e8; font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px}
+.text {  color: #234747; font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px}
+.backlor2 {  background-color: #E79305}
+.backorange{  background-color: #FFCC00; font-family: "Arial", "Helvetica", "sans-serif"; font-size: 11px}.textarea1 {  height: 80px; width: 300px}
+
+.small {font-size: 9pt}
+.normal {font-size: 10pt}
+.middle {font-size: 14px}
+.big {font-size: 16px}
+.huge {font-size: 18px}
+	.fd-hide{display:none;}

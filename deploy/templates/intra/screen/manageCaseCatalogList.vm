@@ -1,0 +1,64 @@
+$rundata.setLayout('acl:default.vm') 
+<div class="dcms-box-body fd-clr"> 
+	<!-- header begin -->
+    <div class="head"> 
+		<form method="post" id="js-search-page" name="" action="">
+			<input type="hidden" name="action" value="CaseCatalogAction">
+			<input type="hidden" name="event_submit_do_list" value="true" id="dcms-form-event-type">
+			<input type="hidden" name="page" id="js-page-num" value="1"> 
+            <div class="searchbar"> 	 
+				<input type="text" class="keyword" name="name" id="name" placeholder="请输入名称" value="$!name"/>
+				
+				<input type="submit" class="search-btn btn-basic btn-gray" id="search-btn" value="搜索"/>
+				<a  class="btn-basic btn-blue" id="add_data" >添加</a>
+             </div>
+             <div class="sortbar"> 
+                <div class="simple-page">
+                    #unifiedPageSimpleList($paginator)
+                </div>			
+	        </div> 
+	 	</form>
+    </div>
+	<!-- header end -->
+	<!-- body begin -->
+	<div class="pl-body fd-clr">
+	 	<div class="dcms-box-list">
+			#if($list && $list.size() > 0)
+				<table  class="page-tab table-sub">
+					<thead>
+						<tr>
+                            <th>ID</th>
+							<th>上级分类</th> 
+							<th>分类名称</th> 
+                            <th class="td-update-date">更新日期</th> 		
+							<th class="operator">操作</th>
+						</tr>
+					</thead>
+					<tbody class="page-body">		
+					   #foreach( $data in $list)
+						<tr>     
+							<td class="system">$!data.id</td> 
+						    <td class="des">#if($!data.parentId) $!catalogMap.get($!data.parentId) #else 顶级分类 #end</td>
+						    <td class="des">$!data.name</td>
+							<td>$!{dateUtil.toLocaleString($data.gmtModified, "yyyy-MM-dd HH:mm")}</td>  
+							<td class="operator">
+								<a class="js-modification operate-btn"  data-id="$!{data.id}">修改</a>
+								<a class="js-setting operate-link"  data-id=$!{data.id}  href="$intraModule.setTarget("item2CaseCatalog.vm").addQueryData("action","CaseCatalogAction").addQueryData("event_submit_do_get_item_2_catalog","true").addQueryData("catalog_id","$!{data.id}")">设置指标</a>
+							</td>
+						</tr>
+						#end
+					</tbody>
+				</table>
+			#else
+				<div class="dcms-box-no-result">目前没有信息!</div>
+			#end
+		</div>
+     </div>
+     <!-- body end -->
+	 #if( $paginator && $paginator.pages>0 )
+		<div class="pages fd-clr" align="center">
+			#unifiedPageList($paginator, 5)
+		</div>
+	 #end 
+</div> 
+ 

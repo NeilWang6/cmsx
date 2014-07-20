@@ -22,7 +22,7 @@ public interface IUserDAO {
 	 * @param pageSize
 	 * @return
 	 */
-	public PageInfo<CmsUser> findByWhere(CmsUser bean, Integer currentPage, Integer pageSize);
+	public PageInfo<CmsUser> findByWhere(CmsUser bean, String keyword, Integer currentPage, Integer pageSize);
 
 	public Object addCmsUser(CmsUser bean);
 

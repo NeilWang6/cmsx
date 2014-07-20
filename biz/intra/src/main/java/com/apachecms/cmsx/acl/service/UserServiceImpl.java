@@ -20,7 +20,7 @@ import com.apachecms.cmsx.exception.DuplicateException;
 
 @Resource(name="userService")
 public class UserServiceImpl implements IUserService {
-	private static final String SALT = "CASE$SYS";
+	private static final String SALT = "$1$CUSER";
 	protected static final Log LOG = LogFactory.getLog(UserServiceImpl.class);
 	@Autowired
 	private IUserDAO userDAO;
@@ -73,8 +73,21 @@ public class UserServiceImpl implements IUserService {
 		if(existUser!=null && !id.equals(existUser.getId())){
 			throw new DuplicateException("用户名已存在:" + userId);
 		}
-		CmsUser user = new CmsUser();
-		BeanUtils.copyProperties(param, user);
+		CmsUser user = userDAO.findById(id); 
+		if(user==null){
+			throw new ACLException("id not exists!");
+		}
+		user.setEmail(param.getEmail());
+		user.setFullName(param.getFullName());
+		user.setDepId(param.getDepId());
+		user.setGroupids(param.getGroupids());
+		user.setGroups(param.getGroups());
+		user.setUserId(param.getUserId());
+		if(user.getPassword()==null || !user.getPassword().equals(param.getPassword())){
+			String md5password = Md5Crypt.md5Crypt(param.getPassword().getBytes(), SALT);
+			user.setPassword(md5password);
+		}
+		user.setStatus(param.getStatus());
 		userDAO.updateCmsUser(user);
 	}
 
@@ -88,17 +101,22 @@ public class UserServiceImpl implements IUserService {
 	}
 
 	@Override
-	public CmsUser findById(String userID) throws ACLException { 
+	public CmsUser findByUserId(String userID) throws ACLException { 
 		return userDAO.findByUserId(userID);
 	}
 
 	@Override
-	public PageInfo<CmsUser> findByWhere(UserParam param, Integer currentPage, Integer pageSize) throws ACLException {
+	public CmsUser findById(String id) throws ACLException { 
+		return userDAO.findById(id);
+	}
+
+	@Override
+	public PageInfo<CmsUser> findByWhere(UserParam param, String keyword, Integer currentPage, Integer pageSize) throws ACLException {
 		CmsUser user = new CmsUser();
 		if(param!=null){
 			BeanUtils.copyProperties(param, user);
 		}
-		return userDAO.findByWhere(user, currentPage, pageSize); 
+		return userDAO.findByWhere(user, keyword, currentPage, pageSize); 
 	}
 
 }

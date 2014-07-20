@@ -1,0 +1,59 @@
+$rundata.setLayoutEnabled(false)
+#set ($group = $form.userParam.defaultInstance)
+<div>
+	<div class="form-vertical dcms-form">
+	<form id="user-submit-form" method="POST" action="#">
+		$csrfToken.hiddenField
+		 <input type="hidden" name="action" value="UserAction"/>
+	     <input type="hidden" name="event_submit_do_saveOrUpdateUser" value="true"/>
+		 <input type="hidden" name="$group.id.key" id="id" value="$!user.id"/>
+		 <input type="hidden" name="$group.profileSite.key" id="profileSite" value="1"/>
+			<dl class="item-form">
+                <dt class="topic must-fill">姓名：</dt>  
+                <dd>
+                    <input data-valid="{required:true,key:'姓名'}" value="$!user.fullName"  name="$group.fullName.key" style="width:260px" id="$group.fullName.key" type="text"  maxlength="50" placeholder="请填写姓名" />
+                    <span class="dcms-validator-tip">姓名不能为空</span>
+                </dd>
+            </dl> 
+			<dl class="item-form">
+                <!-- 加class名“must-fill”，则自动加上必选标识(红色星号) -->
+                <dt class="topic must-fill">登录名：</dt>  
+                <dd>
+					  <input data-valid="{required:true,key:'登录名'}" value="$!user.userId"  name="$group.userId.key" style="width:200px"  id="$group.userId.key" type="text"   maxlength="50" placeholder="请填写登录名" />
+                    <!-- 错误信息提示框，加上"validator-error"class显示错误信息，去除此class则隐藏错误信息 -->
+                    <!-- 当错误信息需要同输入框在一行内显示时，放在同一个dd内 -->
+                    <span class="dcms-validator-tip">登录名不能为空</span>	 	
+                        
+                </dd>
+            </dl>
+			<dl class="item-form">
+                <!-- 加class名“must-fill”，则自动加上必选标识(红色星号) -->
+                <dt class="topic">密码：</dt>  
+                <dd>
+                    <!-- "data-valid"用于验证信息配置，所以需要验证的表单元素都需要加此属性 --> 
+                    <input data-valid="{required:true,key:'密码'}" value="$!user.password"  name="$group.password.key" style="width:200px" id="$group.password.key" type="password"   maxlength="50" placeholder="请填写密码" />
+                    <!-- 错误信息提示框，加上"validator-error"class显示错误信息，去除此class则隐藏错误信息 -->
+                    <!-- 当错误信息需要同输入框在一行内显示时，放在同一个dd内 -->
+                    <span class="dcms-validator-tip">密码不能为空</span>
+                </dd>
+            </dl>
+			<dl class="item-form">
+                <dt class="topic">email：</dt>  
+                <dd>
+                    <input data-valid="{key:'email'}" value="$!user.email"  name="$group.email.key"  style="width:260px"  id="$group.email.key"  type="text"  maxlength="120" placeholder="请填写email" />
+                    <span class="dcms-validator-tip"></span>
+                </dd>
+            </dl> 
+		 
+			 <dl class="item-form"> 
+                <dt class="topic must-fill">状态：</dt>  
+                <dd>
+						<select name="$group.status.key" id="$group.status.key">							
+							<option value="1"  #if("$!user.status" == "1") selected #end >启用</option>
+							<option value="0" #if("$!user.status" == "0") selected #end >禁用</option>					
+                        </select> 
+                </dd>
+            </dl>
+	</form>
+	</div>
+</div>

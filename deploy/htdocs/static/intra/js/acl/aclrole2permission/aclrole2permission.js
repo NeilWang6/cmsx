@@ -4,9 +4,12 @@
 ;(function($, D) {
 	var form = $('#js-search-page');
 	var readyFun = [
+	   function(){
+	    	//$('#js-search-page').submit();
+	    	//FE.dcms.doPage();
+	    },
 
-	function() {
-        
+	  function() { 
 		$('#return_role_manage').bind('click', function(event) {
 			event.preventDefault();
 			window.location = 'manage_role_list.htm?action=acl_role_action&event_submit_do_get_all_roles=true';

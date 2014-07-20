@@ -1,4 +1,23 @@
 <aside id="js-dcmsleftnav" class="dcms-left-nav">	
+	<nav>
+		<h2><i class="cms-icon-close"></i>权限管理</h2>
+		<ul>
+			<li><a class="dcms-nav-manageuserlist" href="/acl/manage_user_list.htm?action=UserAction&event_submit_do_user_list=true">用户管理</a></li>
+			<li><a class="dcms-nav-manageurllist" href="/acl/manage_url_list.htm?action=acl_permission_action&event_submit_do_permission_list=true&resource_type=url">资源管理</a></li>
+			<li><a class="dcms-nav-managerolelist dcms-nav-aclrole2permission" href="/acl/manage_role_list.htm?action=acl_role_action&event_submit_do_get_all_roles=true">角色管理</a></li>
+			<li><a class="dcms-nav-menumanager" href="/acl/menu_manager.htm?app_name=dcms">菜单管理</a></li>
+		 </ul>
+	</nav>	
+	<nav>
+		<h2><i class="cms-icon-close"></i>案例管理</h2>
+		<ul>
+			<li><a class="dcms-nav-itemlist" href="/intra/item_list.htm?action=ItemAction&event_submit_do_list=true">指标管理</a></li>
+			<li><a class="dcms-nav-managecasecataloglist" href="/intra/manage_case_catalog_list.htm?action=CaseCatalogAction&event_submit_do_list=true">案例分类管理</a></li>
+			<li><a class="dcms-nav-managecaselist" href="/intra/manage_case_list.htm?action=CaseAction&event_submit_do_list=true">案例管理</a></li>
+			
+			
+		</ul>
+    </nav>
 	#if($!listResourceParam)
 	#foreach($resourceParam in $!listResourceParam)
 	<nav>

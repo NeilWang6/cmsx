@@ -36,7 +36,7 @@ public class AclRoleAction extends BaseAction{
 		try {
 			RoleParam param = this.roleService.getRoleByID(id);
 			if (null != param) {
-				context.put("roleParam", param);
+				context.put("role", param);
 			} 
 		} catch (ACLException e) {
 			LOG.error("ACLRoleAO.doGetRoleByID.ACLException", e);

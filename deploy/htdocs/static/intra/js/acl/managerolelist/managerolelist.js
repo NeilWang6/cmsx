@@ -14,7 +14,9 @@
 		$('.js-modification').bind('click', function(event) {
 			var $self = $(this), id = $self.data('id');
 			showDialog({
-				id : id
+				id : id,
+				action:'AclRoleAction',
+				event_submit_do_getRoleByID:'true' 
 			});
 		});
         //FIXME 删除

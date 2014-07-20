@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title>DCMS 2.1 </title>
+        <title>DCMS 2.3 </title>
         <meta name="description" content="重大工程案例库平台"/>
         <meta name="keywords" content="重大工程案例库平台"/>
         <link href="${staticDomainUrl}/intra/css/dcms/global/v1.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 		</section>
 		<footer class="dcms-footer"></footer>
 			##信息提示框
-		$control.setTemplate("newConfirmAwake.vm") 
+		$control.setTemplate("acl:newConfirmAwake.vm") 
 	<script src="${staticDomainUrl}/intra/js/dcms/global/merge.js"></script>
 	<script src="${staticDomainUrl}/intra/js/$curmodule/$curpage/merge.js?v=$!v"></script>
 	</body>

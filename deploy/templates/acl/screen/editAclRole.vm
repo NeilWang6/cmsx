@@ -30,8 +30,8 @@ $rundata.setLayoutEnabled(false)
                 <dt class="topic">站点类型：</dt>  
                 <dd>
                     <select name="isOutsite" id="isOutsite">							
-							<option value="0" #if("$!role.isOutsite" == "0") selected #end>内站点角色</option>
-							<option value="1" #if("$!role.isOutsite" == "1") selected #end>外站角色</option>							
+							<option value="0" #if("$!role.isOutsite" == "0") selected #end>后台管理角色</option>
+							<option value="1" #if("$!role.isOutsite" == "1") selected #end>前台网站角色</option>				
                     </select> 
                 </dd>
 			</dl> 

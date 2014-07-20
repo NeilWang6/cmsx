@@ -16,10 +16,12 @@ import com.alibaba.citrus.util.Paginator;
 import com.alibaba.citrus.util.StringUtil;
 import com.alibaba.citrus.webx.WebxException;
 import com.apachecms.cmsx.acl.IUserService;
+import com.apachecms.cmsx.acl.exception.ACLException;
 import com.apachecms.cmsx.acl.param.UserParam;
 import com.apachecms.cmsx.common.AuthToken;
 import com.apachecms.cmsx.dal.dao.common.PageInfo;
 import com.apachecms.cmsx.dal.dataobject.CmsUser;
+import com.apachecms.cmsx.exception.DuplicateException;
 import com.apachecms.cmsx.web.common.action.BaseAction;
 import com.apachecms.cmsx.web.common.util.CommonUtil;
 
@@ -46,12 +48,10 @@ public class UserAction extends BaseAction {
 		Paginator paginator = new Paginator(PAGE_SIZE);
 		paginator.setPage(currentPage); 
 		try {
-			UserParam param = new UserParam(); 
-			param.setUserId(name);
-			param.setFullName(name);
+			UserParam param = new UserParam();  
 			param.setStatus(status);
 			 
-			PageInfo<CmsUser> data = userService.findByWhere(param, currentPage, pageSize);
+			PageInfo<CmsUser> data = userService.findByWhere(param, name, currentPage, pageSize);
 			int count = 0;
 			List list = new ArrayList();
 			if (data != null) {
@@ -66,6 +66,18 @@ public class UserAction extends BaseAction {
 		} catch (Exception e) {
 			LOG.error("system error", e);
 			rundata.setRedirectTarget("error.vm");
+		}
+	}
+	
+	public void doGetUser(TurbineRunData rundata, Context context) throws WebxException{
+		String id=rundata.getParameters().getString("id");
+		if(!StringUtil.isBlank(id)){
+			try {
+				CmsUser user = userService.findById(id); 
+				context.put("user", user);
+			} catch (Exception e) { 
+				LOG.error("system error", e);
+			}
 		}
 	}
 
@@ -146,6 +158,9 @@ public class UserAction extends BaseAction {
 				userService.update(data, authToken.getUserId());
 			}
 			context.put("json", retJson(data.getId(), SUCCESS, ""));
+		}catch(DuplicateException de){
+			context.put("msg", "用户名已存在");
+			context.put("json", retJson(null, FAIL, "用户名已存在"));
 		} catch (Exception e) {
 			LOG.error(e.getMessage(), e);
 			context.put("msg", e.getMessage());

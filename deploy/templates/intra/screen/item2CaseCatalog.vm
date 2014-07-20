@@ -1,0 +1,133 @@
+<table width="200" border="0" cellspacing="1">
+	<form name="search_condition" action="$intraModule.setTarget("item2CaseCatalog.vm")" method="get">
+	$csrfToken.hiddenField
+	<input type="hidden" name="action" value="CaseCatalogAction" />
+	<input type="hidden" name="event_submit_do_get_item_2_catalog" value="true"/> 
+	<tr>
+		<td>案例类型：</td>
+		<td> 
+			<select id="catalogId" name="catalogId" onchange="searchStConf()">
+				<option value=""> --请选择案例类型-- </option>
+				#foreach($catalog in $catalogList)
+				<option value="$!catalog.id" #if($!catalogId == $!{catalog.id}) selected="true" #end> $catalog.name </option>
+				#end
+			</select>
+		</td>
+	</tr> 
+	<tr>
+		<td>&nbsp;</td>
+		<td><a href="$intraModule/item.htm">新建item</a></td>
+	</tr>
+	</form>
+</table>
+
+<form method="post" action="$intraModule.setTarget("item2CaseCatalog.vm")" id="auditForm">
+	<input type="hidden" name="action" value="CaseCatalogAction" />
+	<input type="hidden" name="event_submit_do_saveCaseConf" value="true"/>
+	<input type="hidden" id="catalogId" name="catalogId" value="$!catalogId">
+	<input type="hidden" id="confType" name="confType" value="C">
+	$csrfToken.hiddenField
+
+<table>
+	<tr> 
+		<td><input type="submit" value="设置"/></td>
+    </tr>	
+	<tr> 
+		<td align="center" valign="top" > 
+			
+  		</td>
+	</tr>
+</table>
+<!-- 控件列表开始 -->
+<table border="0" cellpadding="1" cellspacing="1" bgcolor="a3b9e9" class="font11">
+	<tr align="center"> 
+		<td align="center"  class="backcolor"><div align=center><strong>操作</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>控件名称</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>控件所在区域</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>控件顺序</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>是否必填</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>是否隐藏</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>是否可用</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>默认值</strong></div></td>
+		<td align="center" class="backcolor"><div align=center><strong>提示</strong></div></td> 
+	</tr>
+    
+	#foreach($stConf in $stConfList)
+	<tr align="center" bgcolor="#FFFFFF" class="font11">
+		<td  class="font12" align=center><input type="checkbox" id="itemId" name="itemId" value="$!stConf.itemId"  checked/></td>
+        <td class="font12" align="left"><a href="$enrollModule/item.htm?id=$!stConf.itemId">$!itemMap.get($!stConf.itemId) ($!stConf.itemId)</a></td>
+		<td class="font12">
+			<select id="fgType" name="fgType_$!stConf.itemId">
+    			<option value="b" #if($!stConf.fgType == 'b') selected #end>基本要求</option>
+    			<option value="m" #if($!stConf.fgType == 'm') selected #end>会员要求</option>
+    			<option value="f" #if($!stConf.fgType == 'f') selected #end>offer要求</option> 
+			</select>
+		</td>
+		<td class="font12" style="width:80px;"><input type="text" id="orderNum" name="orderNum_$!stConf.itemId" value="$!stConf.orderNum" style="width:80px;"/></td>
+		<td class="font12" style="width:80px;">
+			<select id="isNeed" name="isNeed_$stConf.itemId" style="width:80px;">
+    			<option value="Y" #if($!stConf.isNeed == 'Y') selected #end>必填</option>
+    			<option value="N" #if($!stConf.isNeed == 'N') selected #end>非必填</option>
+			</select>
+		</td>
+		<td class="font12" style="width:80px;">
+			<select id="isHidden" name="isHidden_$stConf.itemId" style="width:80px;">
+				<option value="N" #if($!stConf.isHidden == 'N') selected #end>不隐藏</option>
+    			<option value="Y" #if($!stConf.isHidden == 'Y') selected #end>隐藏</option>
+			</select>
+		</td>
+		<td class="font12" style="width:80px;">
+			<select id="isEnable" name="isEnable_$stConf.itemId" style="width:80px;">
+    			<option value="Y" #if($!stConf.isEnable == 'Y') selected #end>可用</option>
+    			<option value="N" #if($!stConf.isEnable == 'N') selected #end>不可用</option>
+			</select>
+		</td>
+		<td class="font12" style="width:80px;"><input type="text" id="defaultValue" name="defaultValue_$!stConf.itemId" value="$!stConf.defaultValue" style="width:80px;"/></td>
+		<td class="font12" align="left" style="width:80px;"><input type="text" id="tips" name="tips_$!stConf.itemId" value="$!stConf.tips" style="width:80px;"/></td>
+    </tr>
+	#end
+	#foreach($item in $itemList)
+	<tr align="center" bgcolor="#FFFFFF" class="font11">
+		<td  class="font12" align=center><input type="checkbox" id="itemId" name="itemId" value="$!item.id"/></td>
+        <td class="font12" align="left"><a href="$enrollModule/item.htm?id=$!item.id">$!item.name ($!item.id)</a></td>
+		<td class="font12">
+			<select id="fgType" name="fgType_$!item.id">
+    			<option value="b">基本信息</option>
+    			<option value="b">造价信息</option>
+			</select>
+		</td>
+		<td class="font12"><input type="text" id="orderNum" name="orderNum_$!item.id" style="width:80px;"/></td>
+		<td class="font12">
+			<select id="isNeed" name="isNeed_$!item.id" style="width:80px;">
+    			<option value="Y">必填</option>
+    			<option value="N">非必填</option>
+			</select>
+		</td>
+		<td class="font12">
+			<select id="isHidden" name="isHidden_$!item.id" style="width:80px;">
+				<option value="N">不隐藏</option>
+    			<option value="Y">隐藏</option>
+			</select>
+		</td>
+		<td class="font12">
+			<select id="isEnable" name="isEnable_$!item.id" style="width:80px;">
+    			<option value="Y">可用</option>
+    			<option value="N">不可用</option>
+			</select>
+		</td>
+		<td class="font12"><input type="text" id="defaultValue" name="defaultValue_$!item.id" style="width:80px;"/></td>
+		<td class="font12" align="left"><input type="text" id="tips" name="tips_$!item.id" style="width:80px;"/></td> 
+    </tr>
+    #end
+</table>
+</form>
+
+<script type="text/javascript">
+	function searchStConf(){
+		document.search_condition.submit();
+	}
+	var success="${success}";
+	if(success=="true"){
+		alert("设置成功！");
+	}
+</script>

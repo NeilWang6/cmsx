@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding="gb2312"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+    "http://www.ibatis.com/dtd/sql-map-2.dtd"> 
+<sqlMap namespace="cms_CmsxCaseCatalog">
+	<typeAlias alias="CaseCatalog" type="com.apachecms.cmsx.dal.dataobject.CaseCatalog" />
+	<resultMap id="CmsxCaseCatalog-result" class="CaseCatalog"> 
+	    <result property="id" column="ID"  javaType="java.lang.Long"/>
+	    <result property="parentId" column="PARENT_ID"  javaType="java.lang.Long"/>
+	    <result property="name" column="NAME"  javaType="java.lang.String"/>
+	    <result property="gmtCreate" column="GMT_CREATE" javaType="java.sql.Timestamp"/>
+	    <result property="gmtModified" column="GMT_MODIFIED" javaType="java.sql.Timestamp"/>
+	    <result property="createUser" column="CREATE_USER" javaType="java.lang.String"/>
+	    <result property="modifyUser" column="MODIFY_USER" javaType="java.lang.String"/> 
+	    <result property="orderNum" column="ORDER_NUM" javaType="java.lang.Integer"/> 
+	    
+	</resultMap>
+	
+	<select id="findCmsxCaseCatalogById" resultClass="CaseCatalog" parameterClass="java.lang.Long"
+		resultMap="CmsxCaseCatalog-result">
+        <![CDATA[
+            select
+                ID, 
+                PARENT_ID,
+                NAME,
+                GMT_CREATE,
+                GMT_MODIFIED,
+                CREATE_USER,
+                MODIFY_USER,
+                ORDER_NUM
+            from
+                CASE_CATALOG
+            where
+                ID = #id# 
+        ]]>
+	</select>
+
+	<update id="updateCmsxCaseCatalog" parameterClass="CaseCatalog">
+		update
+		CASE_CATALOG
+		set
+		GMT_MODIFIED = sysdate
+		<dynamic prepend="">
+		    <isNotNull property="parentId" prepend=",">PARENT_ID = #parentId#</isNotNull>
+			<isNotNull property="name" prepend=",">NAME = #name#</isNotNull>
+			<isNotNull property="modifyUser" prepend=",">MODIFY_USER = #modifyUser#</isNotNull> 
+			<isNotNull property="orderNum" prepend=",">ORDER_NUM = #orderNum#</isNotNull> 
+		</dynamic>
+		where
+		ID = #id#
+	</update>
+
+
+	<insert id="addCmsxCaseCatalog" parameterClass="CaseCatalog">
+		<selectKey resultClass="java.lang.Long" keyProperty="id">
+				SELECT
+				SEQ_CASE_CATALOG.NEXTVAL AS id FROM DUAL
+	    </selectKey>
+        <![CDATA[
+            insert into CASE_CATALOG
+              (ID, GMT_CREATE, GMT_MODIFIED, PARENT_ID, NAME, CREATE_USER, MODIFY_USER,ORDER_NUM)
+            values
+              (#id#, sysdate, sysdate, #parentId#, #name#, #createUser#, #modifyUser#,#orderNum#)
+        ]]>
+	</insert>
+
+	<delete id="deleteCmsxCaseCatalog" parameterClass="java.lang.String">
+        <![CDATA[
+            delete from CASE_CATALOG where ID = #id#
+        ]]>
+	</delete> 
+    
+	<sql id="BASE-SELECT-CONDITION">
+		<dynamic prepend="where"> 
+	          <isNotEmpty prepend="and" property="name">
+	              t.NAME like '%' || #name# || '%'
+	          </isNotEmpty> 
+	          <isNotEmpty prepend="and" property="parentId">
+	              t.parent_Id= #parentId#
+	          </isNotEmpty> 
+		</dynamic>
+	</sql>
+	<sql id="selectCmsxCaseCatalogSql">
+		select ID, GMT_CREATE, GMT_MODIFIED, PARENT_ID, NAME, CREATE_USER, MODIFY_USER,ORDER_NUM  from CASE_CATALOG t 
+	</sql>
+
+	<select id="findCmsxCaseCatalogCountByWhere" parameterClass="CaseCatalog" resultClass="java.lang.Integer">
+	    <![CDATA[
+			select count(*) from CASE_CATALOG t
+		]]>
+		<include refid="BASE-SELECT-CONDITION"/>
+	</select>
+	
+	<select id="findCmsxCaseCatalogPageByWhere" parameterClass="java.util.Map" resultMap="CmsxCaseCatalog-result">
+	    <![CDATA[
+	         select * from (select a.*, rownum num from (
+	    ]]>     
+	    <include refid="selectCmsxCaseCatalogSql"/>
+	    <include refid="BASE-SELECT-CONDITION"/>
+		<![CDATA[
+		        order by t.ORDER_NUM desc,t.name asc
+		     ) a where rownum <= #end# ) where num >= #start#
+		]]> 
+	</select>
+	
+	<select id="findCmsxCaseCatalogByWhere" parameterClass="aclResource" resultMap="CmsxCaseCatalog-result">
+	    <include refid="selectCmsxCaseCatalogSql"/>
+	    <include refid="BASE-SELECT-CONDITION"/>
+		<![CDATA[
+			order by t.ORDER_NUM desc,t.name asc
+		]]>
+	</select>
+</sqlMap>

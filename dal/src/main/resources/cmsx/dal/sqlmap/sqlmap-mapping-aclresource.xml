@@ -292,7 +292,7 @@
                 t.modify_user = #modifyUser#
             </isNotEmpty>
             <isNotEmpty prepend="and" property="name">
-                t.name = #name#
+                (t.name like  '%'||#name#||'%' or t.resource_code=#name#)
             </isNotEmpty>
             <isNotEmpty prepend="and" property="resourceCode">
                 t.resource_code = #resourceCode#
@@ -343,7 +343,7 @@
                 t.modify_user = #modifyUser#
             </isNotEmpty>
             <isNotEmpty prepend="and" property="name">
-                t.name = #name#
+                (t.name like  '%'||#name#||'%' or t.resource_code=#name#)
             </isNotEmpty>
             <isNotEmpty prepend="and" property="resourceCode">
                 t.resource_code = #resourceCode#

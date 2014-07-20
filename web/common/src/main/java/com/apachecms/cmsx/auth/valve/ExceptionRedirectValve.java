@@ -27,7 +27,7 @@ public class ExceptionRedirectValve extends AbstractValve {
 
     public void invoke(PipelineContext pipelineContext) throws Exception {
     	Exception exp = (Exception)pipelineContext.getAttribute("myexception");
-    	logger.error(exp); 
+    	logger.error(exp.getMessage(), exp);
         TurbineRunData rundata = TurbineUtil.getTurbineRunData(request);
         URIBroker uriBroker = uriBrokerService.getURIBroker(DEFAULT_ERROR_URL);
         rundata.setRedirectLocation(uriBroker.render());

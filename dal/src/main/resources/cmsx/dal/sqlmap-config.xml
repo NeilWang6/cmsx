@@ -2,30 +2,15 @@
 <!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
 <sqlMapConfig>
 	<settings useStatementNamespaces="true"/>
-	 <!-- 
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAdmin.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAdminRole.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthRes.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthRole.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthRoleRes.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCase.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCaseCatalog.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCaseCatalogProp.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxCasePropval.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxContent.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxMetaProp.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxMetaPropenum.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap_CmsxAuthMenu.xml"/> -->
     <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-aclresource.xml"/>
     <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-aclrole.xml"/>
     <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-aclroleresource.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-aclusersiterole.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-ResourceSite.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-CmsUser.xml"/>
-    
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-aclusersiterole.xml"/> 
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-acl-user.xml"/> 
     <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-ct-item.xml"/>
     <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-ct-item-meta-data.xml"/>
     <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-ct-clob.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-ct-st-conf.xml"/>
-    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-ct-st-ins-exp.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-ct-conf.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-case-ins-props.xml"/>
+    <sqlMap resource="cmsx/dal/sqlmap/sqlmap-mapping-case-catalog.xml"/>
 </sqlMapConfig>
